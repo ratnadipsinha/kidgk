@@ -1,0 +1,44 @@
+{
+  "space": [
+    { "question": "Which planet is known as the Red Planet?", "options": ["Venus", "Mars", "Jupiter", "Mercury"], "answer": 1, "explanation": "Mars looks red because its surface is covered in iron oxide — rust — dust.", "image_keyword": "planet mars" },
+    { "question": "What is the closest star to Earth?", "options": ["Proxima Centauri", "The Sun", "Sirius", "Polaris"], "answer": 1, "explanation": "The Sun is about 150 million km away — every other star is far further.", "image_keyword": "the sun" },
+    { "question": "Which planet has the most famous rings?", "options": ["Uranus", "Neptune", "Saturn", "Mars"], "answer": 2, "explanation": "Saturn's rings are made mostly of ice and rock chunks.", "image_keyword": "planet saturn" },
+    { "question": "What do we call a large group of stars held together by gravity?", "options": ["A comet", "A galaxy", "A nebula", "An asteroid belt"], "answer": 1, "explanation": "Earth sits in the Milky Way galaxy, home to billions of stars.", "image_keyword": null },
+    { "question": "Which is the largest planet in our solar system?", "options": ["Saturn", "Earth", "Jupiter", "Neptune"], "answer": 2, "explanation": "Jupiter is so big that over 1,300 Earths could fit inside it.", "image_keyword": "planet jupiter" }
+  ],
+  "wildlife": [
+    { "question": "Which big cat is known as the 'king of the jungle'?", "options": ["Tiger", "Leopard", "Lion", "Cheetah"], "answer": 2, "explanation": "Lions actually live on grasslands, not jungles — the nickname just stuck.", "image_keyword": "lion" },
+    { "question": "What is a baby kangaroo called?", "options": ["Cub", "Joey", "Kid", "Pup"], "answer": 1, "explanation": "A joey stays in its mother's pouch for months after birth.", "image_keyword": "kangaroo joey" },
+    { "question": "Which animal is the tallest in the world?", "options": ["Elephant", "Giraffe", "Camel", "Ostrich"], "answer": 1, "explanation": "A giraffe's neck alone can be about 2 metres long.", "image_keyword": "giraffe" },
+    { "question": "Which bird cannot fly but is a fast runner?", "options": ["Ostrich", "Eagle", "Parrot", "Owl"], "answer": 0, "explanation": "Ostriches can run up to 70 km/h — faster than most land animals.", "image_keyword": "ostrich" },
+    { "question": "Where do polar bears mainly live?", "options": ["Antarctica", "Africa", "The Arctic", "Australia"], "answer": 2, "explanation": "Polar bears live in the Arctic region near the North Pole.", "image_keyword": "polar bear" }
+  ],
+  "countries": [
+    { "question": "What is the capital city of Japan?", "options": ["Seoul", "Beijing", "Tokyo", "Bangkok"], "answer": 2, "explanation": "Tokyo is one of the most populated cities in the world.", "image_keyword": null },
+    { "question": "Which country is home to the Eiffel Tower?", "options": ["Italy", "France", "Spain", "Germany"], "answer": 1, "explanation": "The Eiffel Tower stands in Paris, France's capital.", "image_keyword": "eiffel tower" },
+    { "question": "Which is the largest country in the world by area?", "options": ["Canada", "China", "USA", "Russia"], "answer": 3, "explanation": "Russia spans 11 time zones — the widest of any country.", "image_keyword": null },
+    { "question": "The Great Wall is a famous landmark in which country?", "options": ["India", "China", "Egypt", "Peru"], "answer": 1, "explanation": "The Great Wall of China stretches thousands of kilometres.", "image_keyword": "great wall of china" },
+    { "question": "Which country has a maple leaf on its flag?", "options": ["Canada", "Norway", "Ireland", "Sweden"], "answer": 0, "explanation": "Canada's flag has featured the red maple leaf since 1965.", "image_keyword": "canada flag" }
+  ],
+  "history": [
+    { "question": "Who is known for building the Egyptian pyramids' civilization?", "options": ["The Romans", "The Ancient Egyptians", "The Greeks", "The Aztecs"], "answer": 1, "explanation": "The pyramids were built by the Ancient Egyptians as tombs for pharaohs.", "image_keyword": "egyptian pyramids" },
+    { "question": "Which ancient civilization built the Colosseum?", "options": ["Ancient Rome", "Ancient Greece", "Ancient Egypt", "Ancient China"], "answer": 0, "explanation": "The Colosseum in Rome hosted gladiator contests almost 2,000 years ago.", "image_keyword": "colosseum rome" },
+    { "question": "Who was the first President of the United States?", "options": ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"], "answer": 2, "explanation": "George Washington served from 1789 to 1797.", "image_keyword": null },
+    { "question": "What ship is famously known for sinking in 1912?", "options": ["The Titanic", "The Mayflower", "The Beagle", "The Endeavour"], "answer": 0, "explanation": "The Titanic sank after hitting an iceberg on its first voyage.", "image_keyword": "titanic ship" },
+    { "question": "Which ancient wonder was located in Giza, Egypt?", "options": ["Hanging Gardens", "Great Pyramid", "Colossus of Rhodes", "Lighthouse of Alexandria"], "answer": 1, "explanation": "The Great Pyramid of Giza is the only ancient wonder still standing today.", "image_keyword": "great pyramid of giza" }
+  ],
+  "famous_people": [
+    { "question": "Who is known for developing the theory of gravity?", "options": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Nikola Tesla"], "answer": 1, "explanation": "Newton described gravity after supposedly watching an apple fall.", "image_keyword": "isaac newton portrait" },
+    { "question": "Who painted the Mona Lisa?", "options": ["Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci", "Michelangelo"], "answer": 2, "explanation": "Leonardo da Vinci painted it in the early 1500s in Italy.", "image_keyword": "mona lisa painting" },
+    { "question": "Who is known as the inventor of the light bulb?", "options": ["Thomas Edison", "Alexander Bell", "Benjamin Franklin", "Nikola Tesla"], "answer": 0, "explanation": "Thomas Edison developed a practical, long-lasting light bulb in 1879.", "image_keyword": "thomas edison portrait" },
+    { "question": "Who was the first person to walk on the Moon?", "options": ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "John Glenn"], "answer": 2, "explanation": "Neil Armstrong stepped onto the Moon in July 1969.", "image_keyword": "neil armstrong moon" },
+    { "question": "Which scientist developed the theory of relativity?", "options": ["Isaac Newton", "Albert Einstein", "Stephen Hawking", "Charles Darwin"], "answer": 1, "explanation": "Einstein published his theory of relativity in the early 1900s.", "image_keyword": "albert einstein portrait" }
+  ],
+  "science": [
+    { "question": "What gas do plants absorb from the air to make food?", "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"], "answer": 2, "explanation": "Plants use carbon dioxide, water and sunlight to make their own food.", "image_keyword": null },
+    { "question": "How many bones are in the adult human body?", "options": ["206", "150", "300", "120"], "answer": 0, "explanation": "Babies are born with more bones that fuse together as they grow.", "image_keyword": null },
+    { "question": "What is the boiling point of water at sea level (Celsius)?", "options": ["50°C", "90°C", "100°C", "120°C"], "answer": 2, "explanation": "Water boils at 100°C at normal sea-level air pressure.", "image_keyword": null },
+    { "question": "Which organ pumps blood around the human body?", "options": ["Lungs", "Liver", "Heart", "Kidney"], "answer": 2, "explanation": "The heart beats about 100,000 times a day, pumping blood everywhere.", "image_keyword": "human heart diagram" },
+    { "question": "What force pulls objects toward the Earth?", "options": ["Magnetism", "Gravity", "Friction", "Tension"], "answer": 1, "explanation": "Gravity is what keeps our feet on the ground and things from floating away.", "image_keyword": null }
+  ]
+}
