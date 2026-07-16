@@ -58,7 +58,9 @@ powershell -ExecutionPolicy Bypass -File scripts\update.ps1
 
 `installer/kidgk-setup.iss` builds a self-contained Windows installer that bundles
 Git/Python/Node so a target PC needs nothing pre-installed. See
-[installer/README.md](installer/README.md) for how to build and distribute it.
+[installer/README.md](installer/README.md) for how to build and distribute it, and
+[DEPLOYMENT.md](DEPLOYMENT.md) for the full source → GitHub → target PC flow, exactly
+what the installer does step by step, and how the update mechanism works end to end.
 
 ## Project structure
 
