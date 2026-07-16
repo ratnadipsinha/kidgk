@@ -10,7 +10,7 @@ one-click installer works, and how updates flow afterward.
 | Machine | Role |
 |---|---|
 | **Source PC** | This dev machine. Code is written and tested here, then pushed to GitHub. |
-| **GitHub** (`github.com/ratnadipsinha/kidgk`) | The single source of truth. Holds all source code. Does nothing on its own — no CI, no notifications, purely passive storage. |
+| **GitHub** (`<your-repo-url>`) | The single source of truth. Holds all source code. Does nothing on its own — no CI, no notifications, purely passive storage. |
 | **Target PC** | Wherever the app actually runs day-to-day (a kid's PC). Gets set up once via the installer, then stays in sync by pulling from GitHub on demand. |
 
 Nothing pushes *to* a target PC. It's one-way: **source → GitHub → target pulls when asked.**
