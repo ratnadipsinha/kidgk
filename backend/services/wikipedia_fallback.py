@@ -92,6 +92,13 @@ async def generate_from_wikipedia(category_id: str, count: int) -> list[dict]:
     if len(facts) < 4:
         return []
 
+    # Only a minority of questions get an image, matching the mostly-text
+    # mix the Groq prompt targets - pick which ones up front.
+    picture_count = max(1, round(count * 0.25))
+    picture_titles = set(
+        f["title"] for f in random.sample(facts, min(picture_count, len(facts)))
+    )
+
     questions = []
     for fact in facts:
         distractor_pool = [f["sentence"] for f in facts if f["title"] != fact["title"]]
@@ -108,7 +115,7 @@ async def generate_from_wikipedia(category_id: str, count: int) -> list[dict]:
                 "options": options,
                 "answer": answer,
                 "explanation": f"{fact['sentence']} (from Wikipedia)",
-                "image_keyword": fact["title"],
+                "image_keyword": fact["title"] if fact["title"] in picture_titles else None,
             }
         )
         if len(questions) >= count:

@@ -25,7 +25,7 @@ CATEGORY_IDS = {c["id"] for c in CATEGORIES}
 # Generated question sets are cached per category+grade and reused across
 # sessions/rounds — cuts Groq calls roughly in line with proposal §5's
 # ~80% reduction target while staying well within free-tier rate limits.
-POOL_SIZE = 15
+POOL_SIZE = 20
 CACHE_TTL_SECONDS = 6 * 60 * 60  # 6 hours
 
 _pool_cache: TTLPool[list[dict]] = TTLPool(CACHE_TTL_SECONDS)

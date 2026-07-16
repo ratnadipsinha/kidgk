@@ -13,6 +13,7 @@ SYSTEM_PROMPT = (
 
 
 def build_prompt(category: str, grade: int, count: int) -> str:
+    picture_count = max(1, round(count * 0.25))
     return (
         f"Generate {count} multiple-choice general knowledge questions about "
         f"{category.upper()} for a Grade {grade} student. "
@@ -21,6 +22,10 @@ def build_prompt(category: str, grade: int, count: int) -> str:
         '"answer" (integer index 0-3 of the correct option), '
         '"explanation" (string, max 15 words), '
         '"image_keyword" (string or null, a short search term for a matching image). '
+        f"Most questions should be text-only - set image_keyword to null for those. "
+        f"Only about {picture_count} of the {count} questions should be picture-based "
+        f"(where the image itself is the subject, e.g. \"Which animal is this?\") - "
+        f"only those should have a non-null image_keyword. "
         "Distractors should be plausible and similar in length to the correct answer. "
         "No repeated questions. Kid-safe, factually accurate content only."
     )
