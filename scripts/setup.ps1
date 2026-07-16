@@ -53,12 +53,9 @@ npm install --silent
 Pop-Location
 Write-Host "Frontend dependencies installed."
 
-Write-Host "== 5/5: Starting the app ==" -ForegroundColor Cyan
-& "$PSScriptRoot\start-app.ps1"
-
 Write-Host ""
 Write-Host "Setup complete." -ForegroundColor Green
-Write-Host "  App running at:      http://localhost:5173"
+Write-Host "  Play:                run scripts\launch.ps1 - opens the app in its own"
+Write-Host "                       window and stops everything when you close it"
 Write-Host "  Updates:             use the 'Check for updates' button in the app,"
 Write-Host "                       or run scripts\update.ps1 manually"
-Write-Host "  Stop the app with:   scripts\stop-app.ps1"

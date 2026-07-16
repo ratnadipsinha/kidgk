@@ -31,12 +31,11 @@ Source: "vendor\git-installer.exe"; DestDir: "{tmp}"; Flags: deleteafterinstall
 Source: "vendor\python-installer.exe"; DestDir: "{tmp}"; Flags: deleteafterinstall
 Source: "vendor\node-installer.msi"; DestDir: "{tmp}"; Flags: deleteafterinstall
 Source: "post-install.ps1"; DestDir: "{app}\installer"; Flags: ignoreversion
-Source: "KidGK.url"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\*"; DestDir: "{app}"; Excludes: "installer\*,.git\*,backend\.venv\*,backend\.env,backend\__pycache__\*,backend\services\__pycache__\*,frontend\node_modules\*,.run\*,frontend\dist\*,*.tsbuildinfo"; Flags: recursesubdirs createallsubdirs ignoreversion
 
 [Icons]
-Name: "{group}\{#MyAppName}"; Filename: "{app}\KidGK.url"
-Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\KidGK.url"
+Name: "{group}\{#MyAppName}"; Filename: "powershell.exe"; Parameters: "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File ""{app}\scripts\launch.ps1"""; WorkingDir: "{app}"
+Name: "{autodesktop}\{#MyAppName}"; Filename: "powershell.exe"; Parameters: "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File ""{app}\scripts\launch.ps1"""; WorkingDir: "{app}"
 
 [Run]
 Filename: "{tmp}\git-installer.exe"; Parameters: "/VERYSILENT /NORESTART /NOCANCEL /SP- /SUPPRESSMSGBOXES"; StatusMsg: "Installing Git for Windows..."; Check: NeedsGit; Flags: waituntilterminated

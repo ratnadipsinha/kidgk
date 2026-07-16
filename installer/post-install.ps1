@@ -63,24 +63,9 @@ Push-Location (Join-Path $InstallDir "frontend")
 & $npm install --silent
 Pop-Location
 
-Write-Host "== Registering start-at-logon task =="
-$startScript = Join-Path $InstallDir "scripts\start-app.ps1"
-$runTaskName = "KidGK-RunAtLogon"
-try {
-    if (-not (Get-ScheduledTask -TaskName $runTaskName -ErrorAction SilentlyContinue)) {
-        $runAction = New-ScheduledTaskAction -Execute "powershell.exe" `
-            -Argument "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File `"$startScript`""
-        $runTrigger = New-ScheduledTaskTrigger -AtLogOn
-        Register-ScheduledTask -TaskName $runTaskName -Action $runAction -Trigger $runTrigger -Force `
-            -Description "Starts KidGK backend/frontend at user logon" | Out-Null
-        Write-Host "KidGK-RunAtLogon registered."
-    }
-} catch {
-    Write-Warning "Could not register KidGK-RunAtLogon: $_. The app won't auto-start after a reboot; run scripts\start-app.ps1 manually or re-run this installer as Administrator."
-}
-
-Write-Host "== Starting the app now =="
-& powershell.exe -NoProfile -ExecutionPolicy Bypass -File $startScript
-
-Write-Host "Done."
+# Launch-on-demand, not auto-start-at-logon: the installer's Desktop/Start
+# Menu shortcuts (see [Icons] in kidgk-setup.iss) run scripts\launch.ps1,
+# which opens the app in its own window and stops backend/frontend the
+# moment that window closes - nothing runs silently between sessions.
+Write-Host "Done. Use the KidGK shortcut (Desktop or Start Menu) to play - closing its window stops the app."
 Stop-Transcript | Out-Null

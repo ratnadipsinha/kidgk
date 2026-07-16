@@ -3,7 +3,8 @@
 Builds `KidGK-Setup.exe` — a self-contained Windows installer that bundles
 Git, Python, and Node.js (so the target PC needs nothing pre-installed),
 copies the app, writes `backend\.env` with a baked-in Groq key, installs
-all dependencies, and registers the `KidGK-AutoUpdate` scheduled task.
+all dependencies, and adds a Desktop/Start Menu shortcut that launches the
+app on demand and stops it when its window is closed.
 
 **Security note:** the Groq API key is embedded in `kidgk-setup.iss` as
 plain text and ends up extractable from the compiled `.exe` (strings/hex
@@ -38,14 +39,17 @@ and register scheduled tasks):
    the missing ones.
 2. Copies the app to `%ProgramFiles%\KidGK`.
 3. Runs `post-install.ps1`, which:
-   - `git init` + points the copy at `origin/main` so future auto-updates work
+   - `git init` + points the copy at `origin/main` so the in-app "Check for
+     updates" button works
    - creates the backend virtualenv, installs Python deps
    - writes `backend\.env` with the baked-in `GROQ_API_KEY`
    - installs frontend deps
-   - registers `KidGK-AutoUpdate` (pulls + restarts every 15 min)
-   - registers `KidGK-RunAtLogon` (restarts the app after a reboot)
-   - starts the app immediately (http://localhost:5173)
-4. Adds a Start Menu / Desktop shortcut that opens the app in a browser.
+4. Adds a Desktop and Start Menu shortcut ("KidGK") that runs
+   `scripts\launch.ps1` — starts the backend/frontend, opens the app in its
+   own window (no tabs/address bar), and **stops both processes the moment
+   that window is closed**. Nothing runs in the background between sessions;
+   there's no auto-start-at-logon or auto-update-on-a-timer by design —
+   updates are pulled on demand via the in-app button.
 
 ## Bugs found and fixed while testing this
 
@@ -67,7 +71,24 @@ and register scheduled tasks):
   are batch wrappers that exec `node.exe` as a child process on Windows —
   killing the wrapper's PID leaves the real server (and its port) running.
   Fixed by launching `node vite.js` directly.
+- **`DETACHED_PROCESS` on the update-trigger subprocess** (`backend/services/updater.py`):
+  made `powershell.exe` exit immediately with code 0 without running
+  `update.ps1` at all — the "Check for updates" button appeared to work but
+  silently did nothing. A plain `Popen` with no special creation flags works
+  fine; `Stop-Process -Force` (what `update.ps1` uses to stop the backend)
+  doesn't cascade to child processes on Windows, so no detachment was ever
+  needed.
+- **`${env:ProgramFiles(x86)}` vs `$env:ProgramFiles(x86)`** (`scripts/launch.ps1`):
+  parentheses break bare `$env:` variable parsing in PowerShell — the braced
+  form is required for env var names containing them.
+- **`Invoke-WebRequest` hanging** (`scripts/launch.ps1`'s readiness check):
+  Windows PowerShell 5.1's default engine can stall for its full timeout
+  against a perfectly reachable `localhost` endpoint (a WinINET quirk).
+  Replaced with a raw `System.Net.Sockets.TcpClient` connect check.
 
 All verified by actually running `post-install.ps1` against a throwaway
-copy of the app and confirming `backend\.env` was byte-correct and a live
-`/api/round` call returned `"source":"groq"`.
+copy of the app (confirming `backend\.env` was byte-correct and a live
+`/api/round` call returned `"source":"groq"`), and by running
+`scripts\launch.ps1`, confirming a real Edge app-window process appears,
+then killing that process and confirming the backend and frontend both
+stop and their ports free up.
