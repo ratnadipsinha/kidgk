@@ -4,6 +4,7 @@ import logging
 import random
 from pathlib import Path
 
+from services.cache import TTLPool
 from services.groq_client import generate_questions
 from services.images import fetch_image_url
 from services.safety import filter_safe
@@ -19,6 +20,14 @@ with open(DATA_DIR / "fallback_questions.json", encoding="utf-8") as f:
     FALLBACK_BANK = json.load(f)
 
 CATEGORY_IDS = {c["id"] for c in CATEGORIES}
+
+# Generated question sets are cached per category+grade and reused across
+# sessions/rounds — cuts Groq calls roughly in line with proposal §5's
+# ~80% reduction target while staying well within free-tier rate limits.
+POOL_SIZE = 15
+CACHE_TTL_SECONDS = 6 * 60 * 60  # 6 hours
+
+_pool_cache: TTLPool[list[dict]] = TTLPool(CACHE_TTL_SECONDS)
 
 
 def fallback_round(category_id: str, count: int) -> list[dict]:
@@ -36,24 +45,41 @@ async def _attach_images(questions: list[dict]) -> list[dict]:
     return questions
 
 
+async def _get_pool(category_id: str, category_name: str, grade: int) -> tuple[list[dict], str]:
+    """Returns a cached (or freshly generated) pool of questions plus its source.
+    Fallback results are never cached, so the next request retries Groq."""
+    key = f"{category_id}:{grade}"
+    cached = _pool_cache.get(key)
+    if cached is not None:
+        return cached, "cache"
+
+    async with _pool_cache.lock_for(key):
+        cached = _pool_cache.get(key)  # re-check after acquiring the lock
+        if cached is not None:
+            return cached, "cache"
+
+        try:
+            raw = await generate_questions(category_name, grade, POOL_SIZE)
+            filtered = filter_safe(raw)
+            if len(filtered) < min(5, POOL_SIZE):
+                raise RuntimeError(
+                    f"Only {len(filtered)}/{POOL_SIZE} Groq questions passed validation/safety checks"
+                )
+            _pool_cache.set(key, filtered)
+            return filtered, "groq"
+        except Exception as exc:
+            logger.warning("Falling back to offline bank for %s: %s", category_id, exc)
+            return FALLBACK_BANK.get(category_id, []), "fallback"
+
+
 async def get_round(category_id: str, grade: int, count: int = 5) -> dict:
     if category_id not in CATEGORY_IDS:
         raise ValueError(f"Unknown category: {category_id}")
 
     category_name = next(c["name"] for c in CATEGORIES if c["id"] == category_id)
 
-    try:
-        raw = await generate_questions(category_name, grade, count)
-        questions = filter_safe(raw)
-        if len(questions) < count:
-            raise RuntimeError(
-                f"Only {len(questions)}/{count} Groq questions passed validation/safety checks"
-            )
-        source = "groq"
-    except Exception as exc:
-        logger.warning("Falling back to offline bank for %s: %s", category_id, exc)
-        questions = fallback_round(category_id, count)
-        source = "fallback"
-
+    pool, source = await _get_pool(category_id, category_name, grade)
+    questions = random.sample(pool, min(count, len(pool)))
     questions = await _attach_images(questions)
+
     return {"category": category_id, "source": source, "questions": questions}
