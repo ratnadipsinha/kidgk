@@ -10,3 +10,4 @@ dist/
 installer/vendor/
 installer/output/
 installer/post-install.log
+installer/update-trigger.log

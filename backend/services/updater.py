@@ -1,6 +1,5 @@
 import logging
 import subprocess
-import sys
 from pathlib import Path
 
 logger = logging.getLogger("kidgk.updater")
@@ -39,12 +38,15 @@ def check_for_update() -> dict:
 
 
 def trigger_update() -> None:
-    """Launches update.ps1 as a fully detached process so it survives this
-    process being killed (update.ps1 stops the running backend as its first
-    step, then pulls, reinstalls deps, and restarts everything)."""
-    creationflags = 0
-    if sys.platform == "win32":
-        creationflags = subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP
+    """Launches update.ps1 as a background process. update.ps1 stops the
+    running backend as its first step, but that doesn't kill this child:
+    Windows' TerminateProcess (what Stop-Process -Force uses) never cascades
+    to children, so no special detachment flags are needed here - and
+    DETACHED_PROCESS was actually found to make powershell.exe exit
+    immediately without running the script at all, so don't add it back."""
+    log_path = REPO_ROOT / "installer" / "update-trigger.log"
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    log_file = open(log_path, "a")
 
     subprocess.Popen(
         [
@@ -56,9 +58,7 @@ def trigger_update() -> None:
             str(UPDATE_SCRIPT),
         ],
         cwd=REPO_ROOT,
-        creationflags=creationflags,
-        close_fds=True,
         stdin=subprocess.DEVNULL,
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
+        stdout=log_file,
+        stderr=log_file,
     )

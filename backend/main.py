@@ -11,7 +11,7 @@ from services.updater import check_for_update, trigger_update
 load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
-app = FastAPI(title="KidGK API")  # update-flow test marker
+app = FastAPI(title="KidGK API")
 
 app.add_middleware(
     CORSMiddleware,
