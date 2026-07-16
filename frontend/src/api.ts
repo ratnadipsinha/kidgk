@@ -16,7 +16,7 @@ export type Question = {
 
 export type RoundResponse = {
   category: string;
-  source: "groq" | "fallback";
+  source: "groq" | "cache" | "wikipedia" | "fallback";
   questions: Question[];
 };
 

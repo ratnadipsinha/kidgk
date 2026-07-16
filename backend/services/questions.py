@@ -8,6 +8,7 @@ from services.cache import TTLPool
 from services.groq_client import generate_questions
 from services.images import fetch_image_url
 from services.safety import filter_safe
+from services.wikipedia_fallback import generate_from_wikipedia
 
 logger = logging.getLogger("kidgk.questions")
 
@@ -47,7 +48,10 @@ async def _attach_images(questions: list[dict]) -> list[dict]:
 
 async def _get_pool(category_id: str, category_name: str, grade: int) -> tuple[list[dict], str]:
     """Returns a cached (or freshly generated) pool of questions plus its source.
-    Fallback results are never cached, so the next request retries Groq."""
+    Three tiers, in order: Groq (fresh, cached) -> Wikipedia-derived facts
+    (cached, so a Groq outage/rate-limit doesn't re-hit Wikipedia every
+    request) -> static offline bank (never cached, always retries the live
+    tiers next time)."""
     key = f"{category_id}:{grade}"
     cached = _pool_cache.get(key)
     if cached is not None:
@@ -68,7 +72,19 @@ async def _get_pool(category_id: str, category_name: str, grade: int) -> tuple[l
             _pool_cache.set(key, filtered)
             return filtered, "groq"
         except Exception as exc:
-            logger.warning("Falling back to offline bank for %s: %s", category_id, exc)
+            logger.warning("Groq unavailable for %s (%s) - trying Wikipedia", category_id, exc)
+
+        try:
+            wiki = await generate_from_wikipedia(category_id, POOL_SIZE)
+            filtered = filter_safe(wiki)
+            if len(filtered) < min(5, POOL_SIZE):
+                raise RuntimeError(
+                    f"Only {len(filtered)}/{POOL_SIZE} Wikipedia questions passed safety checks"
+                )
+            _pool_cache.set(key, filtered)
+            return filtered, "wikipedia"
+        except Exception as exc:
+            logger.warning("Wikipedia fallback failed for %s (%s) - using offline bank", category_id, exc)
             return FALLBACK_BANK.get(category_id, []), "fallback"
 
 

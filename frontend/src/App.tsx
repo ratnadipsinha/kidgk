@@ -14,7 +14,9 @@ export default function App() {
   const [screen, setScreen] = useState<Screen>("wheel");
   const [category, setCategory] = useState<Category | null>(null);
   const [questions, setQuestions] = useState<Question[]>([]);
-  const [source, setSource] = useState<"groq" | "fallback" | null>(null);
+  const [source, setSource] = useState<
+    "groq" | "cache" | "wikipedia" | "fallback" | null
+  >(null);
   const [score, setScore] = useState(0);
   const [error, setError] = useState<string | null>(null);
 
@@ -85,9 +87,14 @@ export default function App() {
       {screen === "quiz" && category && questions.length > 0 && (
         <>
           <Quiz category={category} questions={questions} onFinish={finishQuiz} />
+          {source === "wikipedia" && (
+            <p className="source-note">
+              Groq is unavailable right now — these questions were built from Wikipedia instead.
+            </p>
+          )}
           {source === "fallback" && (
             <p className="source-note">
-              Using the offline fallback bank — live Groq generation unavailable.
+              Using the offline fallback bank — live question sources are unavailable.
             </p>
           )}
         </>
