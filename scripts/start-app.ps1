@@ -37,7 +37,7 @@ if (-not (Test-Path $viteJs)) {
 }
 # Launched as `node vite.js` directly (not `npm run dev` or vite.cmd) so the
 # tracked PID is the actual server process. Both npm.cmd and vite.cmd are
-# batch wrappers that exec node.exe as a *child* process on Windows — killing
+# batch wrappers that exec node.exe as a *child* process on Windows - killing
 # the wrapper's PID leaves that child (and the listening port) running.
 Start-Tracked -Name "Frontend" -PidFile $frontendPidFile -WorkDir (Join-Path $root "frontend") `
     -FilePath "node" -ArgumentList "`"$viteJs`" --host 0.0.0.0 --port 5173"

@@ -11,7 +11,7 @@ $action = New-ScheduledTaskAction `
     -Execute "powershell.exe" `
     -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$updateScript`""
 
-$trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Minutes 15) -RepetitionDuration ([TimeSpan]::MaxValue)
+$trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Minutes 15) -RepetitionDuration ((New-TimeSpan -Days 3650))
 
 Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $trigger -Force `
     -Description "Pulls KidGK updates from origin/main every 15 minutes"

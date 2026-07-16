@@ -18,7 +18,7 @@ if ($local -eq $remote) {
 }
 
 # Was the app running before we touch anything? Restart it after updating
-# only if it was already up — this script shouldn't start the app cold.
+# only if it was already up - this script shouldn't start the app cold.
 $backendPidFile = Join-Path $runDir "backend.pid"
 $wasRunning = $false
 if (Test-Path $backendPidFile) {

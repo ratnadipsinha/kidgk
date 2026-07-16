@@ -7,3 +7,6 @@ dist/
 *.tsbuildinfo
 .DS_Store
 .run/
+installer/vendor/
+installer/output/
+installer/post-install.log

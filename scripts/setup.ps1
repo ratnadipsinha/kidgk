@@ -23,7 +23,7 @@ Require-Command "python" "https://www.python.org/downloads/"
 Require-Command "npm" "https://nodejs.org/"
 Write-Host "git, python, npm all found."
 
-Write-Host "== 2/6: Backend — virtual environment + dependencies ==" -ForegroundColor Cyan
+Write-Host "== 2/6: Backend - virtual environment + dependencies ==" -ForegroundColor Cyan
 $venvPath = Join-Path $root "backend\.venv"
 if (-not (Test-Path $venvPath)) {
     python -m venv $venvPath
@@ -32,7 +32,7 @@ $venvPython = Join-Path $venvPath "Scripts\python.exe"
 & $venvPython -m pip install -r "$root\backend\requirements.txt" --quiet
 Write-Host "Backend dependencies installed."
 
-Write-Host "== 3/6: Backend — API key ==" -ForegroundColor Cyan
+Write-Host "== 3/6: Backend - API key ==" -ForegroundColor Cyan
 $envFile = Join-Path $root "backend\.env"
 if (-not (Test-Path $envFile)) {
     Copy-Item "$root\backend\.env.example" $envFile
@@ -41,13 +41,13 @@ if (-not (Test-Path $envFile)) {
         (Get-Content $envFile) -replace "your_groq_api_key_here", $key | Set-Content $envFile
         Write-Host "Groq API key saved to backend\.env."
     } else {
-        Write-Host "No key entered — the app will use the offline fallback question bank until backend\.env is updated."
+        Write-Host "No key entered - the app will use the offline fallback question bank until backend\.env is updated."
     }
 } else {
-    Write-Host "backend\.env already exists — leaving it as is."
+    Write-Host "backend\.env already exists - leaving it as is."
 }
 
-Write-Host "== 4/6: Frontend — dependencies ==" -ForegroundColor Cyan
+Write-Host "== 4/6: Frontend - dependencies ==" -ForegroundColor Cyan
 Push-Location "$root\frontend"
 npm install --silent
 Pop-Location
@@ -57,7 +57,7 @@ Write-Host "== 5/6: Registering auto-update task ==" -ForegroundColor Cyan
 $taskName = "KidGK-AutoUpdate"
 $existing = Get-ScheduledTask -TaskName $taskName -ErrorAction SilentlyContinue
 if ($existing) {
-    Write-Host "Scheduled task '$taskName' already registered — skipping."
+    Write-Host "Scheduled task '$taskName' already registered - skipping."
 } else {
     & "$PSScriptRoot\register-auto-update.ps1"
 }
