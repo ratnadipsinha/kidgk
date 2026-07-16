@@ -3,6 +3,7 @@
 
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
+$runDir = Join-Path $root ".run"
 
 Set-Location $root
 
@@ -16,12 +17,33 @@ if ($local -eq $remote) {
     exit 0
 }
 
+# Was the app running before we touch anything? Restart it after updating
+# only if it was already up — this script shouldn't start the app cold.
+$backendPidFile = Join-Path $runDir "backend.pid"
+$wasRunning = $false
+if (Test-Path $backendPidFile) {
+    $existing = Get-Content $backendPidFile -ErrorAction SilentlyContinue
+    if ($existing -and (Get-Process -Id $existing -ErrorAction SilentlyContinue)) {
+        $wasRunning = $true
+    }
+}
+
+if ($wasRunning) {
+    Write-Host "Stopping running app before update..."
+    & "$PSScriptRoot\stop-app.ps1"
+}
+
 Write-Host "Pulling latest changes..."
 git pull origin main
 
 if (Test-Path "$root\backend\requirements.txt") {
     Write-Host "Updating backend dependencies..."
-    & python -m pip install -r "$root\backend\requirements.txt" --quiet
+    $venvPip = Join-Path $root "backend\.venv\Scripts\python.exe"
+    if (Test-Path $venvPip) {
+        & $venvPip -m pip install -r "$root\backend\requirements.txt" --quiet
+    } else {
+        & python -m pip install -r "$root\backend\requirements.txt" --quiet
+    }
 }
 
 if (Test-Path "$root\frontend\package.json") {
@@ -29,6 +51,11 @@ if (Test-Path "$root\frontend\package.json") {
     Push-Location "$root\frontend"
     npm install --silent
     Pop-Location
+}
+
+if ($wasRunning) {
+    Write-Host "Restarting app with updated code..."
+    & "$PSScriptRoot\start-app.ps1"
 }
 
 Write-Host "KidGK updated to $((git rev-parse --short HEAD))."
