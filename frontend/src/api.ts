@@ -11,6 +11,7 @@ export type Question = {
   answer: number;
   explanation: string;
   image_keyword: string | null;
+  image_url: string | null;
 };
 
 export type RoundResponse = {

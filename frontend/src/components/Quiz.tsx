@@ -50,6 +50,15 @@ export default function Quiz({ category, questions, onFinish }: Props) {
         />
       </div>
 
+      {item.image_url && (
+        <img
+          className="question-image"
+          src={item.image_url}
+          alt=""
+          loading="lazy"
+        />
+      )}
+
       <p className="question-text">{item.question}</p>
 
       <div className="options">
