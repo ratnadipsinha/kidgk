@@ -1,5 +1,6 @@
 # Pulls the latest KidGK source and reinstalls dependencies on a target PC.
-# Run manually, or register via scripts\register-auto-update.ps1 for a recurring pull.
+# Triggered by the "Check for updates" button in the app (POST /api/update/apply),
+# or run directly for a manual check.
 
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot

@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from services.questions import CATEGORIES, get_round
+from services.updater import check_for_update, trigger_update
 
 load_dotenv()
 logging.basicConfig(level=logging.INFO)
@@ -42,3 +43,14 @@ async def create_round(req: RoundRequest):
 @app.get("/api/health")
 def health():
     return {"status": "ok"}
+
+
+@app.get("/api/update/check")
+def update_check():
+    return check_for_update()
+
+
+@app.post("/api/update/apply")
+def update_apply():
+    trigger_update()
+    return {"status": "started"}

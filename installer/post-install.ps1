@@ -28,7 +28,7 @@ Write-Host "Using npm: $npm"
 
 Set-Location $InstallDir
 
-Write-Host "== Linking to origin/main so future auto-updates work =="
+Write-Host "== Linking to origin/main so the in-app update button works =="
 if (-not (Test-Path (Join-Path $InstallDir ".git"))) {
     & $git init | Out-Null
     & $git remote add origin "https://github.com/ratnadipsinha/kidgk.git"
@@ -38,7 +38,7 @@ try {
     & $git checkout -B main origin/main --force --quiet
     Write-Host "Repo aligned with origin/main."
 } catch {
-    Write-Warning "No internet (or fetch failed) during install - keeping bundled files. KidGK-AutoUpdate will sync once online."
+    Write-Warning "No internet (or fetch failed) during install - keeping bundled files. Use the in-app 'Check for updates' button once online."
 }
 
 Write-Host "== Backend: virtual environment + dependencies =="
@@ -62,23 +62,6 @@ Write-Host "== Frontend: dependencies =="
 Push-Location (Join-Path $InstallDir "frontend")
 & $npm install --silent
 Pop-Location
-
-Write-Host "== Registering auto-update scheduled task =="
-$updateScript = Join-Path $InstallDir "scripts\update.ps1"
-$taskName = "KidGK-AutoUpdate"
-try {
-    if (-not (Get-ScheduledTask -TaskName $taskName -ErrorAction SilentlyContinue)) {
-        $action = New-ScheduledTaskAction -Execute "powershell.exe" `
-            -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$updateScript`""
-        $trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) `
-            -RepetitionInterval (New-TimeSpan -Minutes 15) -RepetitionDuration ((New-TimeSpan -Days 3650))
-        Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $trigger -Force `
-            -Description "Pulls KidGK updates from origin/main every 15 minutes" | Out-Null
-        Write-Host "KidGK-AutoUpdate registered."
-    }
-} catch {
-    Write-Warning "Could not register KidGK-AutoUpdate: $_. Run scripts\update.ps1 manually, or re-run scripts\register-auto-update.ps1 as Administrator."
-}
 
 Write-Host "== Registering start-at-logon task =="
 $startScript = Join-Path $InstallDir "scripts\start-app.ps1"

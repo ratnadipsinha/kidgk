@@ -28,6 +28,24 @@ export async function fetchCategories(): Promise<Category[]> {
   return res.json();
 }
 
+export type UpdateCheck = {
+  update_available: boolean;
+  local?: string;
+  remote?: string;
+  error?: string;
+};
+
+export async function checkForUpdate(): Promise<UpdateCheck> {
+  const res = await fetch(`${BASE}/update/check`);
+  if (!res.ok) throw new Error("Failed to check for updates");
+  return res.json();
+}
+
+export async function applyUpdate(): Promise<void> {
+  const res = await fetch(`${BASE}/update/apply`, { method: "POST" });
+  if (!res.ok) throw new Error("Failed to start update");
+}
+
 export async function fetchRound(
   category: string,
   grade: number,

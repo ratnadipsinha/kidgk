@@ -4,6 +4,7 @@ import type { Category, Question } from "./api";
 import SpinWheel from "./components/SpinWheel";
 import Quiz from "./components/Quiz";
 import Results from "./components/Results";
+import UpdateBar from "./components/UpdateBar";
 
 type Screen = "wheel" | "loading" | "quiz" | "results" | "error";
 
@@ -110,6 +111,8 @@ export default function App() {
           </button>
         </div>
       )}
+
+      <UpdateBar />
     </div>
   );
 }
