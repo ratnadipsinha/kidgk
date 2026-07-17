@@ -20,6 +20,14 @@ with open(DATA_DIR / "categories.json", encoding="utf-8") as f:
 with open(DATA_DIR / "fallback_questions.json", encoding="utf-8") as f:
     FALLBACK_BANK = json.load(f)
 
+with open(DATA_DIR / "fallback_questions_expanded.json", encoding="utf-8") as f:
+    FALLBACK_BANK_EXPANDED = json.load(f)
+
+
+def _offline_pool(category_id: str) -> list[dict]:
+    expanded = FALLBACK_BANK_EXPANDED.get(category_id) or []
+    return expanded if expanded else FALLBACK_BANK.get(category_id, [])
+
 CATEGORY_IDS = {c["id"] for c in CATEGORIES}
 
 # Generated question sets are cached per category+grade and reused across
@@ -32,7 +40,7 @@ _pool_cache: TTLPool[list[dict]] = TTLPool(CACHE_TTL_SECONDS)
 
 
 def fallback_round(category_id: str, count: int) -> list[dict]:
-    pool = FALLBACK_BANK.get(category_id, [])
+    pool = _offline_pool(category_id)
     picked = random.sample(pool, min(count, len(pool)))
     return picked
 
@@ -85,7 +93,7 @@ async def _get_pool(category_id: str, category_name: str, grade: int) -> tuple[l
             return filtered, "wikipedia"
         except Exception as exc:
             logger.warning("Wikipedia fallback failed for %s (%s) - using offline bank", category_id, exc)
-            return FALLBACK_BANK.get(category_id, []), "fallback"
+            return _offline_pool(category_id), "fallback"
 
 
 async def get_round(category_id: str, grade: int, count: int = 5) -> dict:

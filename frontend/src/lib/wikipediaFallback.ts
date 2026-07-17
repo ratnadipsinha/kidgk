@@ -95,9 +95,13 @@ export async function generateFromWikipedia(categoryId: string, count: number): 
   const facts = results.filter((r): r is { title: string; sentence: string } => r !== null);
   if (facts.length < 4) return [];
 
-  const pictureCount = Math.max(1, Math.round(count * 0.25));
-  const pictureTitles = new Set(sample(facts, Math.min(pictureCount, facts.length)).map((f) => f.title));
-
+  // No picture questions in this tier: the "which fact matches this title"
+  // mechanic means the correct answer's sentence always names the exact
+  // subject the image would show, so displaying that image is always a
+  // giveaway (confirmed live: a Jupiter photo above "which fact is about
+  // Jupiter?" with an option literally starting "Jupiter is..."). Unlike
+  // Groq, there's no LLM here to write a genuinely ambiguous picture
+  // question, so this tier stays text-only.
   const questions: Question[] = [];
   for (const fact of facts) {
     const distractorPool = facts.filter((f) => f.title !== fact.title).map((f) => f.sentence);
@@ -112,7 +116,7 @@ export async function generateFromWikipedia(categoryId: string, count: number): 
       options,
       answer,
       explanation: `${fact.sentence} (from Wikipedia)`,
-      image_keyword: pictureTitles.has(fact.title) ? fact.title : null,
+      image_keyword: null,
     });
     if (questions.length >= count) break;
   }

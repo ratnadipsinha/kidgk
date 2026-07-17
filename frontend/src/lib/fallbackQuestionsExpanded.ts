@@ -1,0 +1,9676 @@
+import type { Question } from "./types";
+
+export const FALLBACK_BANK_EXPANDED: Record<string, Question[]> = {
+  "space": [
+    {
+      "question": "Can you spot the real fact about Stargate (film)?",
+      "options": [
+        "Stargate is a 1994 science fiction action-adventure film directed by Roland Emmerich, written by Emmerich and Dean Devlin.",
+        "An exoplanet or extrasolar planet is a planet outside the Solar System.",
+        "Canopus is the brightest star in the southern constellation of Carina and the second-brightest star in the night...",
+        "A near-Earth object (NEO) is by definition any small Solar System body orbiting the Sun whose closest approach..."
+      ],
+      "answer": 0,
+      "explanation": "Stargate is a 1994 science fiction action-adventure film directed by Roland Emmerich, written by Emmerich and Dean Devlin. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Deimos (moon)?",
+      "options": [
+        "Deimos is the smaller and outer of the two natural satellites of Mars, the other being Phobos.",
+        "The zodiac is a belt-shaped region of the sky that extends approximately 8° north and south celestial latitude...",
+        "Vesta is one of the largest objects in the asteroid belt, with a mean diameter of 525 kilometres...",
+        "Orion is a prominent set of stars visible during winter in the northern celestial hemisphere."
+      ],
+      "answer": 0,
+      "explanation": "Deimos is the smaller and outer of the two natural satellites of Mars, the other being Phobos. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Betelgeuse?",
+      "options": [
+        "Deneb is a blue supergiant star in the constellation of Cygnus.",
+        "Sagittarius is one of the constellations of the zodiac and is located in the Southern celestial hemisphere.",
+        "Betelgeuse is a red supergiant star in the equatorial constellation of Orion.",
+        "A terrestrial planet is a class of planet that is composed primarily of silicate, rocks, or metals."
+      ],
+      "answer": 2,
+      "explanation": "Betelgeuse is a red supergiant star in the equatorial constellation of Orion. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Asteroid?",
+      "options": [
+        "Sagittarius is one of the constellations of the zodiac and is located in the Southern celestial hemisphere.",
+        "An asteroid is a minor planet—an object larger than a meteoroid that is neither a planet nor an...",
+        "The emblem of the Italian Republic was formally adopted by the newly formed Italian Republic on 5 May...",
+        "A supercluster is a large group of smaller galaxy clusters or galaxy groups; they are among the largest..."
+      ],
+      "answer": 1,
+      "explanation": "An asteroid is a minor planet—an object larger than a meteoroid that is neither a planet nor an... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Interstellar (film)?",
+      "options": [
+        "The national emblem of Indonesia is called Garuda Pancasila.",
+        "The troposphere is the lowest layer of the atmosphere of Earth.",
+        "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan, who co-wrote the screenplay with his...",
+        "A lenticular galaxy is a type of galaxy intermediate between an elliptical and a spiral galaxy in galaxy..."
+      ],
+      "answer": 2,
+      "explanation": "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan, who co-wrote the screenplay with his... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about 3 Juno.",
+      "options": [
+        "Corona Borealis is a small constellation in the Northern Celestial Hemisphere.",
+        "Juno is a large asteroid in the asteroid belt.",
+        "Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune.",
+        "The zodiac is a belt-shaped region of the sky that extends approximately 8° north and south celestial latitude..."
+      ],
+      "answer": 1,
+      "explanation": "Juno is a large asteroid in the asteroid belt. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about September equinox?",
+      "options": [
+        "Stargate is a 1994 science fiction action-adventure film directed by Roland Emmerich, written by Emmerich and Dean Devlin.",
+        "Betelgeuse is a red supergiant star in the equatorial constellation of Orion.",
+        "The September equinox is the moment when the Sun appears to cross the celestial equator, heading southward.",
+        "40 Eridani is a triple star system in the constellation of Eridanus, abbreviated 40 Eri."
+      ],
+      "answer": 2,
+      "explanation": "The September equinox is the moment when the Sun appears to cross the celestial equator, heading southward. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Equinox?",
+      "options": [
+        "Rosetta was a space probe built by the European Space Agency that launched on 2 March 2004.",
+        "Cancer is one of the twelve constellations of the zodiac and is located in the northern celestial hemisphere.",
+        "A solar equinox is a moment in time when the Sun appears directly above the equator, rather than...",
+        "Deimos is the smaller and outer of the two natural satellites of Mars, the other being Phobos."
+      ],
+      "answer": 2,
+      "explanation": "A solar equinox is a moment in time when the Sun appears directly above the equator, rather than... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Caroline Herschel?",
+      "options": [
+        "The atmosphere of Titan is the dense layer of gases surrounding Titan, the largest moon of Saturn.",
+        "Caroline Lucretia Herschel was a German astronomer, whose most significant contributions to astronomy were the discoveries of several...",
+        "The national emblem of Indonesia is called Garuda Pancasila.",
+        "Dysnomia, formal designation (136199) Eris I, is the only known moon of the dwarf planet Eris and is..."
+      ],
+      "answer": 1,
+      "explanation": "Caroline Lucretia Herschel was a German astronomer, whose most significant contributions to astronomy were the discoveries of several... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Atmosphere?",
+      "options": [
+        "An atmosphere is a layer of gases that envelop an astronomical object, held in place by the gravity...",
+        "A supercluster is a large group of smaller galaxy clusters or galaxy groups; they are among the largest...",
+        "Cetus is a constellation, sometimes called 'the whale' in English.",
+        "40 Eridani is a triple star system in the constellation of Eridanus, abbreviated 40 Eri."
+      ],
+      "answer": 0,
+      "explanation": "An atmosphere is a layer of gases that envelop an astronomical object, held in place by the gravity... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Troposphere?",
+      "options": [
+        "Vulcan was a proposed planet that some pre-20th century astronomers thought existed in an orbit between Mercury and...",
+        "A lenticular galaxy is a type of galaxy intermediate between an elliptical and a spiral galaxy in galaxy...",
+        "An asteroid is a minor planet—an object larger than a meteoroid that is neither a planet nor an...",
+        "The troposphere is the lowest layer of the atmosphere of Earth."
+      ],
+      "answer": 3,
+      "explanation": "The troposphere is the lowest layer of the atmosphere of Earth. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Canis Major?",
+      "options": [
+        "Betelgeuse is a red supergiant star in the equatorial constellation of Orion.",
+        "Canis Major is a constellation in the southern celestial hemisphere.",
+        "The emblem of the Italian Republic was formally adopted by the newly formed Italian Republic on 5 May...",
+        "Deneb is a blue supergiant star in the constellation of Cygnus."
+      ],
+      "answer": 1,
+      "explanation": "Canis Major is a constellation in the southern celestial hemisphere. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Meteoroid?",
+      "options": [
+        "Apparent retrograde motion is the apparent motion of a planet in a direction opposite to that of other...",
+        "A meteoroid is a small body in outer space.",
+        "Mira is a binary star system in the constellation Cetus.",
+        "A lenticular galaxy is a type of galaxy intermediate between an elliptical and a spiral galaxy in galaxy..."
+      ],
+      "answer": 1,
+      "explanation": "A meteoroid is a small body in outer space. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Deneb.",
+      "options": [
+        "Asteroids is a 1979 multidirectional shooter video game developed and published by Atari, Inc.",
+        "Deneb is a blue supergiant star in the constellation of Cygnus.",
+        "Galileo was an American robotic space probe that studied the planet Jupiter and its moons, as well as...",
+        "Io is the innermost and second smallest of the four Galilean moons of Jupiter."
+      ],
+      "answer": 1,
+      "explanation": "Deneb is a blue supergiant star in the constellation of Cygnus. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Equation of time?",
+      "options": [
+        "Betelgeuse is a red supergiant star in the equatorial constellation of Orion.",
+        "The definition of the term planet has changed several times since the word was coined by the ancient...",
+        "An exoplanet or extrasolar planet is a planet outside the Solar System.",
+        "The equation of time describes the discrepancy between two kinds of solar time."
+      ],
+      "answer": 3,
+      "explanation": "The equation of time describes the discrepancy between two kinds of solar time. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Trans-Neptunian object.",
+      "options": [
+        "Io is the innermost and second smallest of the four Galilean moons of Jupiter.",
+        "A trans-Neptunian object (TNO), also written transneptunian object, is any minor planet in the Solar System that orbits...",
+        "Vulcan was a proposed planet that some pre-20th century astronomers thought existed in an orbit between Mercury and...",
+        "Asteroid impact avoidance encompasses the methods by which near-Earth objects (NEO) on a potential collision course with Earth..."
+      ],
+      "answer": 1,
+      "explanation": "A trans-Neptunian object (TNO), also written transneptunian object, is any minor planet in the Solar System that orbits... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about June solstice?",
+      "options": [
+        "An asteroid is a minor planet—an object larger than a meteoroid that is neither a planet nor an...",
+        "The zodiac is a belt-shaped region of the sky that extends approximately 8° north and south celestial latitude...",
+        "A solar equinox is a moment in time when the Sun appears directly above the equator, rather than...",
+        "The June solstice, also known as the northern solstice, is the solstice on Earth that occurs annually between..."
+      ],
+      "answer": 3,
+      "explanation": "The June solstice, also known as the northern solstice, is the solstice on Earth that occurs annually between... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Taurus (constellation).",
+      "options": [
+        "Deneb is a blue supergiant star in the constellation of Cygnus.",
+        "The coat of arms of the Kingdom of Sweden is the arms of dominion of the Swedish monarch.",
+        "Taurus is one of the constellations of the zodiac and is located in the northern celestial hemisphere.",
+        "A solar equinox is a moment in time when the Sun appears directly above the equator, rather than..."
+      ],
+      "answer": 2,
+      "explanation": "Taurus is one of the constellations of the zodiac and is located in the northern celestial hemisphere. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Rosetta (spacecraft).",
+      "options": [
+        "Deneb is a blue supergiant star in the constellation of Cygnus.",
+        "Deimos is the smaller and outer of the two natural satellites of Mars, the other being Phobos.",
+        "Rosetta was a space probe built by the European Space Agency that launched on 2 March 2004.",
+        "Asteroid Day is an annual global event which is held on June 30, the anniversary of the Tunguska..."
+      ],
+      "answer": 2,
+      "explanation": "Rosetta was a space probe built by the European Space Agency that launched on 2 March 2004. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Auriga.",
+      "options": [
+        "Auriga is a constellation in the northern celestial hemisphere.",
+        "Space exploration is the physical investigation of outer space by uncrewed robotic space probes and through human spaceflight.",
+        "Cepheus is a constellation in the deep northern sky, named after Cepheus, a king of Aethiopia in Greek...",
+        "The Shapley Supercluster or Shapley Concentration is one of the largest concentrations of galaxies in the universe that..."
+      ],
+      "answer": 0,
+      "explanation": "Auriga is a constellation in the northern celestial hemisphere. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Orion (constellation)?",
+      "options": [
+        "A white dwarf is a very dense type of star: in an Earth-sized volume, it packs a mass...",
+        "Corvus is a small constellation in the Southern Celestial Hemisphere.",
+        "The Shapley Supercluster or Shapley Concentration is one of the largest concentrations of galaxies in the universe that...",
+        "Orion is a prominent set of stars visible during winter in the northern celestial hemisphere."
+      ],
+      "answer": 3,
+      "explanation": "Orion is a prominent set of stars visible during winter in the northern celestial hemisphere. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Canopus?",
+      "options": [
+        "Wolf–Rayet stars, often abbreviated as WR stars, are a rare heterogeneous set of stars with unusual spectra showing...",
+        "Canopus is the brightest star in the southern constellation of Carina and the second-brightest star in the night...",
+        "A black hole is an astronomical body so compact that its gravity prevents anything, including light, from escaping.",
+        "A white dwarf is a very dense type of star: in an Earth-sized volume, it packs a mass..."
+      ],
+      "answer": 1,
+      "explanation": "Canopus is the brightest star in the southern constellation of Carina and the second-brightest star in the night... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about The Legend of Zelda: Majora's Mask 3D.",
+      "options": [
+        "A black hole is an astronomical body so compact that its gravity prevents anything, including light, from escaping.",
+        "The Legend of Zelda: Majora's Mask 3D is a 2015 action-adventure game developed by Grezzo and published by...",
+        "Juno is a large asteroid in the asteroid belt.",
+        "In astronomy, stellar classification is the classification of stars based on their spectral characteristics."
+      ],
+      "answer": 1,
+      "explanation": "The Legend of Zelda: Majora's Mask 3D is a 2015 action-adventure game developed by Grezzo and published by... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Vulcan (hypothetical planet)?",
+      "options": [
+        "Space exploration is the physical investigation of outer space by uncrewed robotic space probes and through human spaceflight.",
+        "Capella is the brightest star in the northern constellation of Auriga.",
+        "MESSENGER was a NASA robotic space probe that orbited the planet Mercury between 2011 and 2015, studying Mercury's...",
+        "Vulcan was a proposed planet that some pre-20th century astronomers thought existed in an orbit between Mercury and..."
+      ],
+      "answer": 3,
+      "explanation": "Vulcan was a proposed planet that some pre-20th century astronomers thought existed in an orbit between Mercury and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Corona Borealis?",
+      "options": [
+        "The asteroid belt is a torus-shaped region in the Solar System, centered on the Sun and roughly spanning...",
+        "In celestial mechanics, the Roche limit, also called Roche radius, is the distance from a celestial body within...",
+        "Lyra is a small constellation.",
+        "Corona Borealis is a small constellation in the Northern Celestial Hemisphere."
+      ],
+      "answer": 3,
+      "explanation": "Corona Borealis is a small constellation in the Northern Celestial Hemisphere. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Io (moon)?",
+      "options": [
+        "A black hole is an astronomical body so compact that its gravity prevents anything, including light, from escaping.",
+        "An exoplanet or extrasolar planet is a planet outside the Solar System.",
+        "Phoebe is the most massive irregular satellite of Saturn with a mean diameter of 213 km (132 mi).",
+        "Io is the innermost and second smallest of the four Galilean moons of Jupiter."
+      ],
+      "answer": 3,
+      "explanation": "Io is the innermost and second smallest of the four Galilean moons of Jupiter. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Dysnomia (moon)?",
+      "options": [
+        "Asteroids is a 1979 multidirectional shooter video game developed and published by Atari, Inc.",
+        "Dysnomia, formal designation (136199) Eris I, is the only known moon of the dwarf planet Eris and is...",
+        "Mira is a binary star system in the constellation Cetus.",
+        "Galileo was an American robotic space probe that studied the planet Jupiter and its moons, as well as..."
+      ],
+      "answer": 1,
+      "explanation": "Dysnomia, formal designation (136199) Eris I, is the only known moon of the dwarf planet Eris and is... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Roche limit?",
+      "options": [
+        "The asteroid belt is a torus-shaped region in the Solar System, centered on the Sun and roughly spanning...",
+        "The equation of time describes the discrepancy between two kinds of solar time.",
+        "Caroline Lucretia Herschel was a German astronomer, whose most significant contributions to astronomy were the discoveries of several...",
+        "In celestial mechanics, the Roche limit, also called Roche radius, is the distance from a celestial body within..."
+      ],
+      "answer": 3,
+      "explanation": "In celestial mechanics, the Roche limit, also called Roche radius, is the distance from a celestial body within... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Little red dot (astronomical object)?",
+      "options": [
+        "Little red dots (LRDs) are a class of small, red-tinted astronomical objects discovered by the James Webb Space...",
+        "A lenticular galaxy is a type of galaxy intermediate between an elliptical and a spiral galaxy in galaxy...",
+        "Apparent retrograde motion is the apparent motion of a planet in a direction opposite to that of other...",
+        "Cancer is one of the twelve constellations of the zodiac and is located in the northern celestial hemisphere."
+      ],
+      "answer": 0,
+      "explanation": "Little red dots (LRDs) are a class of small, red-tinted astronomical objects discovered by the James Webb Space... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes MESSENGER?",
+      "options": [
+        "MESSENGER was a NASA robotic space probe that orbited the planet Mercury between 2011 and 2015, studying Mercury's...",
+        "The equation of time describes the discrepancy between two kinds of solar time.",
+        "The definition of the term planet has changed several times since the word was coined by the ancient...",
+        "A solar equinox is a moment in time when the Sun appears directly above the equator, rather than..."
+      ],
+      "answer": 0,
+      "explanation": "MESSENGER was a NASA robotic space probe that orbited the planet Mercury between 2011 and 2015, studying Mercury's... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Space exploration?",
+      "options": [
+        "Space exploration is the physical investigation of outer space by uncrewed robotic space probes and through human spaceflight.",
+        "Cepheus is a constellation in the deep northern sky, named after Cepheus, a king of Aethiopia in Greek...",
+        "Galileo was an American robotic space probe that studied the planet Jupiter and its moons, as well as...",
+        "Cancer is one of the twelve constellations of the zodiac and is located in the northern celestial hemisphere."
+      ],
+      "answer": 0,
+      "explanation": "Space exploration is the physical investigation of outer space by uncrewed robotic space probes and through human spaceflight. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Cepheus (constellation)?",
+      "options": [
+        "Cepheus is a constellation in the deep northern sky, named after Cepheus, a king of Aethiopia in Greek...",
+        "MESSENGER was a NASA robotic space probe that orbited the planet Mercury between 2011 and 2015, studying Mercury's...",
+        "Betelgeuse is a red supergiant star in the equatorial constellation of Orion.",
+        "The troposphere is the lowest layer of the atmosphere of Earth."
+      ],
+      "answer": 0,
+      "explanation": "Cepheus is a constellation in the deep northern sky, named after Cepheus, a king of Aethiopia in Greek... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Zodiac?",
+      "options": [
+        "A meteoroid is a small body in outer space.",
+        "A supercluster is a large group of smaller galaxy clusters or galaxy groups; they are among the largest...",
+        "The zodiac is a belt-shaped region of the sky that extends approximately 8° north and south celestial latitude...",
+        "Caroline Lucretia Herschel was a German astronomer, whose most significant contributions to astronomy were the discoveries of several..."
+      ],
+      "answer": 2,
+      "explanation": "The zodiac is a belt-shaped region of the sky that extends approximately 8° north and south celestial latitude... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes 4 Vesta?",
+      "options": [
+        "The Phoenix Cluster is a massive, Abell-class type I galaxy cluster in the southern constellation Phoenix.",
+        "Vesta is one of the largest objects in the asteroid belt, with a mean diameter of 525 kilometres...",
+        "Saturn's hexagon is a persistent approximately hexagonal cloud pattern around the north pole of the planet Saturn, located...",
+        "The Shapley Supercluster or Shapley Concentration is one of the largest concentrations of galaxies in the universe that..."
+      ],
+      "answer": 1,
+      "explanation": "Vesta is one of the largest objects in the asteroid belt, with a mean diameter of 525 kilometres... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Atmosphere of Titan?",
+      "options": [
+        "Wolf–Rayet stars, often abbreviated as WR stars, are a rare heterogeneous set of stars with unusual spectra showing...",
+        "The atmosphere of Titan is the dense layer of gases surrounding Titan, the largest moon of Saturn.",
+        "Interstellar is a 2014 epic science fiction film directed by Christopher Nolan, who co-wrote the screenplay with his...",
+        "An asteroid is a minor planet—an object larger than a meteoroid that is neither a planet nor an..."
+      ],
+      "answer": 1,
+      "explanation": "The atmosphere of Titan is the dense layer of gases surrounding Titan, the largest moon of Saturn. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Sagittarius (constellation)?",
+      "options": [
+        "Sagittarius is one of the constellations of the zodiac and is located in the Southern celestial hemisphere.",
+        "Orion is a prominent set of stars visible during winter in the northern celestial hemisphere.",
+        "Asteroid impact avoidance encompasses the methods by which near-Earth objects (NEO) on a potential collision course with Earth...",
+        "Cetus is a constellation, sometimes called 'the whale' in English."
+      ],
+      "answer": 0,
+      "explanation": "Sagittarius is one of the constellations of the zodiac and is located in the Southern celestial hemisphere. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Hot Jupiter?",
+      "options": [
+        "Galileo di Vincenzo Bonaiuti de' Galilei, commonly referred to as Galileo Galilei or mononymously as Galileo, was an...",
+        "The asteroid belt is a torus-shaped region in the Solar System, centered on the Sun and roughly spanning...",
+        "Hot Jupiters are a class of gas giant exoplanets that are inferred to be physically similar to Jupiter...",
+        "Taurus is one of the constellations of the zodiac and is located in the northern celestial hemisphere."
+      ],
+      "answer": 2,
+      "explanation": "Hot Jupiters are a class of gas giant exoplanets that are inferred to be physically similar to Jupiter... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Terrestrial planet?",
+      "options": [
+        "A terrestrial planet is a class of planet that is composed primarily of silicate, rocks, or metals.",
+        "The troposphere is the lowest layer of the atmosphere of Earth.",
+        "Canis Major is a constellation in the southern celestial hemisphere.",
+        "A solar equinox is a moment in time when the Sun appears directly above the equator, rather than..."
+      ],
+      "answer": 0,
+      "explanation": "A terrestrial planet is a class of planet that is composed primarily of silicate, rocks, or metals. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Capella?",
+      "options": [
+        "Betelgeuse is a red supergiant star in the equatorial constellation of Orion.",
+        "Capella is the brightest star in the northern constellation of Auriga.",
+        "Auriga is a constellation in the northern celestial hemisphere.",
+        "The atmosphere of Titan is the dense layer of gases surrounding Titan, the largest moon of Saturn."
+      ],
+      "answer": 1,
+      "explanation": "Capella is the brightest star in the northern constellation of Auriga. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Exoplanet?",
+      "options": [
+        "The emblem of the Italian Republic was formally adopted by the newly formed Italian Republic on 5 May...",
+        "A lenticular galaxy is a type of galaxy intermediate between an elliptical and a spiral galaxy in galaxy...",
+        "An exoplanet or extrasolar planet is a planet outside the Solar System.",
+        "An atmosphere is a layer of gases that envelop an astronomical object, held in place by the gravity..."
+      ],
+      "answer": 2,
+      "explanation": "An exoplanet or extrasolar planet is a planet outside the Solar System. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Phoebe (moon)?",
+      "options": [
+        "Lyra is a small constellation.",
+        "Phoebe is the most massive irregular satellite of Saturn with a mean diameter of 213 km (132 mi).",
+        "In astronomy, stellar classification is the classification of stars based on their spectral characteristics.",
+        "Corvus is a small constellation in the Southern Celestial Hemisphere."
+      ],
+      "answer": 1,
+      "explanation": "Phoebe is the most massive irregular satellite of Saturn with a mean diameter of 213 km (132 mi). (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Corvus (constellation)?",
+      "options": [
+        "Corvus is a small constellation in the Southern Celestial Hemisphere.",
+        "MoM-z14 is the most distant known galaxy, with a redshift of z = 14.44.",
+        "Little red dots (LRDs) are a class of small, red-tinted astronomical objects discovered by the James Webb Space...",
+        "Cetus is a constellation, sometimes called 'the whale' in English."
+      ],
+      "answer": 0,
+      "explanation": "Corvus is a small constellation in the Southern Celestial Hemisphere. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Galileo Galilei.",
+      "options": [
+        "A trans-Neptunian object (TNO), also written transneptunian object, is any minor planet in the Solar System that orbits...",
+        "Galileo di Vincenzo Bonaiuti de' Galilei, commonly referred to as Galileo Galilei or mononymously as Galileo, was an...",
+        "Lyra is a small constellation.",
+        "The Phoenix Cluster is a massive, Abell-class type I galaxy cluster in the southern constellation Phoenix."
+      ],
+      "answer": 1,
+      "explanation": "Galileo di Vincenzo Bonaiuti de' Galilei, commonly referred to as Galileo Galilei or mononymously as Galileo, was an... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Local Bubble.",
+      "options": [
+        "Juno is a large asteroid in the asteroid belt.",
+        "Asteroid Day is an annual global event which is held on June 30, the anniversary of the Tunguska...",
+        "The Local Bubble, or Local Cavity, is a relative cavity in the interstellar medium (ISM) of the Orion...",
+        "The June solstice, also known as the northern solstice, is the solstice on Earth that occurs annually between..."
+      ],
+      "answer": 2,
+      "explanation": "The Local Bubble, or Local Cavity, is a relative cavity in the interstellar medium (ISM) of the Orion... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Mira?",
+      "options": [
+        "The atmosphere of Titan is the dense layer of gases surrounding Titan, the largest moon of Saturn.",
+        "Mira is a binary star system in the constellation Cetus.",
+        "Little red dots (LRDs) are a class of small, red-tinted astronomical objects discovered by the James Webb Space...",
+        "Galileo was an American robotic space probe that studied the planet Jupiter and its moons, as well as..."
+      ],
+      "answer": 1,
+      "explanation": "Mira is a binary star system in the constellation Cetus. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Clyde Tombaugh?",
+      "options": [
+        "A black hole is an astronomical body so compact that its gravity prevents anything, including light, from escaping.",
+        "MESSENGER was a NASA robotic space probe that orbited the planet Mercury between 2011 and 2015, studying Mercury's...",
+        "The troposphere is the lowest layer of the atmosphere of Earth.",
+        "Clyde William Tombaugh was an American astronomer and telescope maker, best known for discovering Pluto in 1930, marking..."
+      ],
+      "answer": 3,
+      "explanation": "Clyde William Tombaugh was an American astronomer and telescope maker, best known for discovering Pluto in 1930, marking... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Apparent retrograde motion?",
+      "options": [
+        "The coat of arms of the Kingdom of Sweden is the arms of dominion of the Swedish monarch.",
+        "A near-Earth object (NEO) is by definition any small Solar System body orbiting the Sun whose closest approach...",
+        "Apparent retrograde motion is the apparent motion of a planet in a direction opposite to that of other...",
+        "A black hole is an astronomical body so compact that its gravity prevents anything, including light, from escaping."
+      ],
+      "answer": 2,
+      "explanation": "Apparent retrograde motion is the apparent motion of a planet in a direction opposite to that of other... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Thermosphere?",
+      "options": [
+        "In celestial mechanics, the Roche limit, also called Roche radius, is the distance from a celestial body within...",
+        "The thermosphere is the layer in the Earth's atmosphere directly above the mesosphere and below the exosphere.",
+        "A solar equinox is a moment in time when the Sun appears directly above the equator, rather than...",
+        "Betelgeuse is a red supergiant star in the equatorial constellation of Orion."
+      ],
+      "answer": 1,
+      "explanation": "The thermosphere is the layer in the Earth's atmosphere directly above the mesosphere and below the exosphere. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Stellar classification.",
+      "options": [
+        "A meteoroid is a small body in outer space.",
+        "An exoplanet or extrasolar planet is a planet outside the Solar System.",
+        "In astronomy, stellar classification is the classification of stars based on their spectral characteristics.",
+        "A lenticular galaxy is a type of galaxy intermediate between an elliptical and a spiral galaxy in galaxy..."
+      ],
+      "answer": 2,
+      "explanation": "In astronomy, stellar classification is the classification of stars based on their spectral characteristics. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Clearing the neighbourhood?",
+      "options": [
+        "The zodiac is a belt-shaped region of the sky that extends approximately 8° north and south celestial latitude...",
+        "In celestial mechanics, \"clearing the neighbourhood\" around a celestial body's orbit describes the body becoming gravitationally dominant such...",
+        "Asteroid impact avoidance encompasses the methods by which near-Earth objects (NEO) on a potential collision course with Earth...",
+        "Saturn's hexagon is a persistent approximately hexagonal cloud pattern around the north pole of the planet Saturn, located..."
+      ],
+      "answer": 1,
+      "explanation": "In celestial mechanics, \"clearing the neighbourhood\" around a celestial body's orbit describes the body becoming gravitationally dominant such... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Pluto?",
+      "options": [
+        "A white dwarf is a very dense type of star: in an Earth-sized volume, it packs a mass...",
+        "Canis Major is a constellation in the southern celestial hemisphere.",
+        "Juno is a large asteroid in the asteroid belt.",
+        "Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune."
+      ],
+      "answer": 3,
+      "explanation": "Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about MoM-z14?",
+      "options": [
+        "MoM-z14 is the most distant known galaxy, with a redshift of z = 14.44.",
+        "An exoplanet or extrasolar planet is a planet outside the Solar System.",
+        "In celestial mechanics, the Roche limit, also called Roche radius, is the distance from a celestial body within...",
+        "Sagittarius is one of the constellations of the zodiac and is located in the Southern celestial hemisphere."
+      ],
+      "answer": 0,
+      "explanation": "MoM-z14 is the most distant known galaxy, with a redshift of z = 14.44. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Galileo (spacecraft)?",
+      "options": [
+        "Mira is a binary star system in the constellation Cetus.",
+        "Wolf–Rayet stars, often abbreviated as WR stars, are a rare heterogeneous set of stars with unusual spectra showing...",
+        "Galileo was an American robotic space probe that studied the planet Jupiter and its moons, as well as...",
+        "Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune."
+      ],
+      "answer": 2,
+      "explanation": "Galileo was an American robotic space probe that studied the planet Jupiter and its moons, as well as... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about 40 Eridani?",
+      "options": [
+        "40 Eridani is a triple star system in the constellation of Eridanus, abbreviated 40 Eri.",
+        "Asteroid Day is an annual global event which is held on June 30, the anniversary of the Tunguska...",
+        "Little red dots (LRDs) are a class of small, red-tinted astronomical objects discovered by the James Webb Space...",
+        "Virgo is one of the constellations of the zodiac."
+      ],
+      "answer": 0,
+      "explanation": "40 Eridani is a triple star system in the constellation of Eridanus, abbreviated 40 Eri. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about White dwarf.",
+      "options": [
+        "A supercluster is a large group of smaller galaxy clusters or galaxy groups; they are among the largest...",
+        "A white dwarf is a very dense type of star: in an Earth-sized volume, it packs a mass...",
+        "Deneb is a blue supergiant star in the constellation of Cygnus.",
+        "Vesta is one of the largest objects in the asteroid belt, with a mean diameter of 525 kilometres..."
+      ],
+      "answer": 1,
+      "explanation": "A white dwarf is a very dense type of star: in an Earth-sized volume, it packs a mass... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Supercluster?",
+      "options": [
+        "Cepheus is a constellation in the deep northern sky, named after Cepheus, a king of Aethiopia in Greek...",
+        "Auriga is a constellation in the northern celestial hemisphere.",
+        "A supercluster is a large group of smaller galaxy clusters or galaxy groups; they are among the largest...",
+        "Canis Major is a constellation in the southern celestial hemisphere."
+      ],
+      "answer": 2,
+      "explanation": "A supercluster is a large group of smaller galaxy clusters or galaxy groups; they are among the largest... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Near-Earth object.",
+      "options": [
+        "The coat of arms of the Kingdom of Sweden is the arms of dominion of the Swedish monarch.",
+        "A near-Earth object (NEO) is by definition any small Solar System body orbiting the Sun whose closest approach...",
+        "Betelgeuse is a red supergiant star in the equatorial constellation of Orion.",
+        "Canopus is the brightest star in the southern constellation of Carina and the second-brightest star in the night..."
+      ],
+      "answer": 1,
+      "explanation": "A near-Earth object (NEO) is by definition any small Solar System body orbiting the Sun whose closest approach... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Lenticular galaxy.",
+      "options": [
+        "A supercluster is a large group of smaller galaxy clusters or galaxy groups; they are among the largest...",
+        "Space exploration is the physical investigation of outer space by uncrewed robotic space probes and through human spaceflight.",
+        "A lenticular galaxy is a type of galaxy intermediate between an elliptical and a spiral galaxy in galaxy...",
+        "A solar equinox is a moment in time when the Sun appears directly above the equator, rather than..."
+      ],
+      "answer": 2,
+      "explanation": "A lenticular galaxy is a type of galaxy intermediate between an elliptical and a spiral galaxy in galaxy... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Definition of planet?",
+      "options": [
+        "The definition of the term planet has changed several times since the word was coined by the ancient...",
+        "Galileo di Vincenzo Bonaiuti de' Galilei, commonly referred to as Galileo Galilei or mononymously as Galileo, was an...",
+        "Deneb is a blue supergiant star in the constellation of Cygnus.",
+        "The emblem of the Italian Republic was formally adopted by the newly formed Italian Republic on 5 May..."
+      ],
+      "answer": 0,
+      "explanation": "The definition of the term planet has changed several times since the word was coined by the ancient... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Shapley Supercluster.",
+      "options": [
+        "The Shapley Supercluster or Shapley Concentration is one of the largest concentrations of galaxies in the universe that...",
+        "Rosetta was a space probe built by the European Space Agency that launched on 2 March 2004.",
+        "Galileo was an American robotic space probe that studied the planet Jupiter and its moons, as well as...",
+        "The atmosphere of Titan is the dense layer of gases surrounding Titan, the largest moon of Saturn."
+      ],
+      "answer": 0,
+      "explanation": "The Shapley Supercluster or Shapley Concentration is one of the largest concentrations of galaxies in the universe that... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Saturn's hexagon?",
+      "options": [
+        "MESSENGER was a NASA robotic space probe that orbited the planet Mercury between 2011 and 2015, studying Mercury's...",
+        "40 Eridani is a triple star system in the constellation of Eridanus, abbreviated 40 Eri.",
+        "A lenticular galaxy is a type of galaxy intermediate between an elliptical and a spiral galaxy in galaxy...",
+        "Saturn's hexagon is a persistent approximately hexagonal cloud pattern around the north pole of the planet Saturn, located..."
+      ],
+      "answer": 3,
+      "explanation": "Saturn's hexagon is a persistent approximately hexagonal cloud pattern around the north pole of the planet Saturn, located... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Star chart?",
+      "options": [
+        "Lyra is a small constellation.",
+        "A star chart is a celestial map of the night sky with astronomical objects laid out on a...",
+        "The coat of arms of the Kingdom of Sweden is the arms of dominion of the Swedish monarch.",
+        "The equation of time describes the discrepancy between two kinds of solar time."
+      ],
+      "answer": 1,
+      "explanation": "A star chart is a celestial map of the night sky with astronomical objects laid out on a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Cancer (constellation)?",
+      "options": [
+        "The Phoenix Cluster is a massive, Abell-class type I galaxy cluster in the southern constellation Phoenix.",
+        "A lenticular galaxy is a type of galaxy intermediate between an elliptical and a spiral galaxy in galaxy...",
+        "Mira is a binary star system in the constellation Cetus.",
+        "Cancer is one of the twelve constellations of the zodiac and is located in the northern celestial hemisphere."
+      ],
+      "answer": 3,
+      "explanation": "Cancer is one of the twelve constellations of the zodiac and is located in the northern celestial hemisphere. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Asteroid Day?",
+      "options": [
+        "Asteroid Day is an annual global event which is held on June 30, the anniversary of the Tunguska...",
+        "The Shapley Supercluster or Shapley Concentration is one of the largest concentrations of galaxies in the universe that...",
+        "Cetus is a constellation, sometimes called 'the whale' in English.",
+        "The September equinox is the moment when the Sun appears to cross the celestial equator, heading southward."
+      ],
+      "answer": 0,
+      "explanation": "Asteroid Day is an annual global event which is held on June 30, the anniversary of the Tunguska... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Wolf–Rayet star?",
+      "options": [
+        "Corvus is a small constellation in the Southern Celestial Hemisphere.",
+        "The Shapley Supercluster or Shapley Concentration is one of the largest concentrations of galaxies in the universe that...",
+        "The equation of time describes the discrepancy between two kinds of solar time.",
+        "Wolf–Rayet stars, often abbreviated as WR stars, are a rare heterogeneous set of stars with unusual spectra showing..."
+      ],
+      "answer": 3,
+      "explanation": "Wolf–Rayet stars, often abbreviated as WR stars, are a rare heterogeneous set of stars with unusual spectra showing... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Phoenix Cluster.",
+      "options": [
+        "Vesta is one of the largest objects in the asteroid belt, with a mean diameter of 525 kilometres...",
+        "Little red dots (LRDs) are a class of small, red-tinted astronomical objects discovered by the James Webb Space...",
+        "In celestial mechanics, the Roche limit, also called Roche radius, is the distance from a celestial body within...",
+        "The Phoenix Cluster is a massive, Abell-class type I galaxy cluster in the southern constellation Phoenix."
+      ],
+      "answer": 3,
+      "explanation": "The Phoenix Cluster is a massive, Abell-class type I galaxy cluster in the southern constellation Phoenix. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Asteroid impact avoidance?",
+      "options": [
+        "Stargate is a 1994 science fiction action-adventure film directed by Roland Emmerich, written by Emmerich and Dean Devlin.",
+        "An exoplanet or extrasolar planet is a planet outside the Solar System.",
+        "Asteroids is a 1979 multidirectional shooter video game developed and published by Atari, Inc.",
+        "Asteroid impact avoidance encompasses the methods by which near-Earth objects (NEO) on a potential collision course with Earth..."
+      ],
+      "answer": 3,
+      "explanation": "Asteroid impact avoidance encompasses the methods by which near-Earth objects (NEO) on a potential collision course with Earth... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Virgo (constellation)?",
+      "options": [
+        "Virgo is one of the constellations of the zodiac.",
+        "The emblem of the Italian Republic was formally adopted by the newly formed Italian Republic on 5 May...",
+        "Cetus is a constellation, sometimes called 'the whale' in English.",
+        "A near-Earth object (NEO) is by definition any small Solar System body orbiting the Sun whose closest approach..."
+      ],
+      "answer": 0,
+      "explanation": "Virgo is one of the constellations of the zodiac. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Asteroid belt?",
+      "options": [
+        "Mira is a binary star system in the constellation Cetus.",
+        "Clyde William Tombaugh was an American astronomer and telescope maker, best known for discovering Pluto in 1930, marking...",
+        "The asteroid belt is a torus-shaped region in the Solar System, centered on the Sun and roughly spanning...",
+        "40 Eridani is a triple star system in the constellation of Eridanus, abbreviated 40 Eri."
+      ],
+      "answer": 2,
+      "explanation": "The asteroid belt is a torus-shaped region in the Solar System, centered on the Sun and roughly spanning... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Cetus (constellation).",
+      "options": [
+        "Vesta is one of the largest objects in the asteroid belt, with a mean diameter of 525 kilometres...",
+        "Cancer is one of the twelve constellations of the zodiac and is located in the northern celestial hemisphere.",
+        "MoM-z14 is the most distant known galaxy, with a redshift of z = 14.44.",
+        "Cetus is a constellation, sometimes called 'the whale' in English."
+      ],
+      "answer": 3,
+      "explanation": "Cetus is a constellation, sometimes called 'the whale' in English. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Lyra.",
+      "options": [
+        "Lyra is a small constellation.",
+        "In celestial mechanics, \"clearing the neighbourhood\" around a celestial body's orbit describes the body becoming gravitationally dominant such...",
+        "A star chart is a celestial map of the night sky with astronomical objects laid out on a...",
+        "Io is the innermost and second smallest of the four Galilean moons of Jupiter."
+      ],
+      "answer": 0,
+      "explanation": "Lyra is a small constellation. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Black hole?",
+      "options": [
+        "The Shapley Supercluster or Shapley Concentration is one of the largest concentrations of galaxies in the universe that...",
+        "The asteroid belt is a torus-shaped region in the Solar System, centered on the Sun and roughly spanning...",
+        "Stargate is a 1994 science fiction action-adventure film directed by Roland Emmerich, written by Emmerich and Dean Devlin.",
+        "A black hole is an astronomical body so compact that its gravity prevents anything, including light, from escaping."
+      ],
+      "answer": 3,
+      "explanation": "A black hole is an astronomical body so compact that its gravity prevents anything, including light, from escaping. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Asteroids (video game)?",
+      "options": [
+        "Mira is a binary star system in the constellation Cetus.",
+        "A white dwarf is a very dense type of star: in an Earth-sized volume, it packs a mass...",
+        "Io is the innermost and second smallest of the four Galilean moons of Jupiter.",
+        "Asteroids is a 1979 multidirectional shooter video game developed and published by Atari, Inc."
+      ],
+      "answer": 3,
+      "explanation": "Asteroids is a 1979 multidirectional shooter video game developed and published by Atari, Inc. (from Wikipedia)",
+      "image_keyword": null
+    }
+  ],
+  "wildlife": [
+    {
+      "question": "Pick the true statement about Atlas bear.",
+      "options": [
+        "A tadpole or polliwog is the larval stage in the biological life cycle of an amphibian.",
+        "A fish scale is a small rigid plate that grows out of the skin of a fish.",
+        "Glowworm is any member of various groups of insect larvae and adult larviform females that glow through bioluminescence.",
+        "The Atlas bear or North African bear is an extinct population of brown bears native to North Africa..."
+      ],
+      "answer": 3,
+      "explanation": "The Atlas bear or North African bear is an extinct population of brown bears native to North Africa... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Indian vulture crisis.",
+      "options": [
+        "Bookworm is a general name for any insect that is said to bore through books.",
+        "Nine species of vulture can be found living in India, but most are now endangered after a rapid...",
+        "The cohort Polyneoptera is one of the major groups of winged insects, comprising the Orthoptera and all other...",
+        "Ocean acidification is the ongoing decrease in the pH of the Earth's ocean."
+      ],
+      "answer": 1,
+      "explanation": "Nine species of vulture can be found living in India, but most are now endangered after a rapid... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Asiatic cheetah?",
+      "options": [
+        "Pelagic fish live in the pelagic zone of ocean or lake waters—being neither close to the bottom nor...",
+        "The Asiatic cheetah is a critically endangered cheetah subspecies currently surviving in Iran.",
+        "The difficulty of defining or measuring intelligence in non-human animals makes the question of avian intelligence resistant to...",
+        "Diapsids are a clade of sauropsids, distinguished from other reptiles by the presence of two holes, known as..."
+      ],
+      "answer": 1,
+      "explanation": "The Asiatic cheetah is a critically endangered cheetah subspecies currently surviving in Iran. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Wallaby?",
+      "options": [
+        "An ibex, is any of several species of wild goat, distinguished by the male's large curved horns, which...",
+        "The housefly is a fly of the suborder Cyclorrhapha.",
+        "Polecat is a common name for several cat-like mustelid species in the subfamilies Ictonychinae and Mustelinae.",
+        "A wallaby is a small or middle-sized macropod native to Australia and New Guinea, with introduced populations in..."
+      ],
+      "answer": 3,
+      "explanation": "A wallaby is a small or middle-sized macropod native to Australia and New Guinea, with introduced populations in... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Swarm behaviour?",
+      "options": [
+        "Maple, Zayu, and Clutch are the official mascots of the 2026 FIFA World Cup held in the United...",
+        "Crickets are orthopteran insects which are related to bush crickets and, more distantly, to grasshoppers.",
+        "Swarm behaviour, or swarming, is a collective behaviour exhibited by entities, particularly animals, of similar size which aggregate...",
+        "The Asiatic cheetah is a critically endangered cheetah subspecies currently surviving in Iran."
+      ],
+      "answer": 2,
+      "explanation": "Swarm behaviour, or swarming, is a collective behaviour exhibited by entities, particularly animals, of similar size which aggregate... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Polecat?",
+      "options": [
+        "The Bali tiger was a Panthera tigris sondaica population on the Indonesian island of Bali which has been...",
+        "Polecat is a common name for several cat-like mustelid species in the subfamilies Ictonychinae and Mustelinae.",
+        "The aurochs is an extinct species of bovine, considered to be the wild ancestor of modern domestic cattle.",
+        "The swim bladder, gas bladder, fish maw, air bladder or sound is an internal gas-filled organ in bony..."
+      ],
+      "answer": 1,
+      "explanation": "Polecat is a common name for several cat-like mustelid species in the subfamilies Ictonychinae and Mustelinae. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Largest living flying birds by wingspan?",
+      "options": [
+        "A grizzly–polar-bear hybrid is a rare ursid hybrid that has occurred both in captivity and in the wild.",
+        "The table contains a list of the largest living birds in the world by wingspan, at maximum, assumed...",
+        "The snow leopard is a species of large cat in the genus Panthera of the family Felidae.",
+        "The Zanzibar leopard is an African leopard population on Unguja Island in the Zanzibar archipelago, Tanzania, that is..."
+      ],
+      "answer": 1,
+      "explanation": "The table contains a list of the largest living birds in the world by wingspan, at maximum, assumed... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Thymus?",
+      "options": [
+        "Splooting is lying in a spread-legged, prone posture.",
+        "The thymus is a specialized primary lymphoid organ of the immune system.",
+        "The Zanzibar leopard is an African leopard population on Unguja Island in the Zanzibar archipelago, Tanzania, that is...",
+        "The coat of arms of the Danish Realm has a lesser and a greater version."
+      ],
+      "answer": 1,
+      "explanation": "The thymus is a specialized primary lymphoid organ of the immune system. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Bombardier beetle?",
+      "options": [
+        "Sea lions are pinnipeds characterized by external ear flaps, long foreflippers, the ability to walk on all fours...",
+        "The Tremarctinae or short-faced bears is a subfamily of Ursidae that contains one living representative, the spectacled bear...",
+        "In oceanography, a gyre is a large system of ocean surface currents moving in a circular fashion driven...",
+        "Bombardier beetles are adephagan ground beetles (Carabidae) in the Brachininae or Paussinae subfamilies—more than 500 species altogether—which are..."
+      ],
+      "answer": 3,
+      "explanation": "Bombardier beetles are adephagan ground beetles (Carabidae) in the Brachininae or Paussinae subfamilies—more than 500 species altogether—which are... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Philtrum.",
+      "options": [
+        "Sooty is a British children's television media franchise created by Harry Corbett incorporating primarily television and stage shows.",
+        "The philtrum or medial cleft is a vertical indentation in the middle area of the upper lip, common...",
+        "The Caspian tiger was a Panthera tigris tigris population native to eastern Turkey, northern Iran, Mesopotamia, the Caucasus...",
+        "Glowworm is any member of various groups of insect larvae and adult larviform females that glow through bioluminescence."
+      ],
+      "answer": 1,
+      "explanation": "The philtrum or medial cleft is a vertical indentation in the middle area of the upper lip, common... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Eastern cougar.",
+      "options": [
+        "Sharks are a group of elasmobranch cartilaginous fishes characterized by a ribless endoskeleton, dermal denticles, five to seven...",
+        "An otolith, also called otoconium, statolith, or statoconium, is a calcium carbonate structure in the saccule or utricle...",
+        "Yellowjacket or yellow jacket is the common name in North America for predatory social wasps of the genera...",
+        "The eastern cougar or eastern puma is a subspecies designation proposed in 1946 for cougar populations in eastern..."
+      ],
+      "answer": 3,
+      "explanation": "The eastern cougar or eastern puma is a subspecies designation proposed in 1946 for cougar populations in eastern... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Sun bear?",
+      "options": [
+        "The Fuegian dog, or Yahgan dog, or Patagonian dog is an extinct type of canine.",
+        "The sun bear is a bear species in the family Ursidae found in the tropical forests of Southeast...",
+        "Whitefish or white fish is a fisheries term for several species of demersal fish with fins, particularly Atlantic...",
+        "Minnow is the common name for a number of species of small freshwater fish, belonging to several genera..."
+      ],
+      "answer": 1,
+      "explanation": "The sun bear is a bear species in the family Ursidae found in the tropical forests of Southeast... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Fowl.",
+      "options": [
+        "The spectacled bear, also known as the Andean bear, is a species of bear native to the Andes...",
+        "Fowl are birds belonging to one of two biological orders, namely the gamefowl or landfowl (Galliformes) and the...",
+        "Bioluminescence is the production of light by an organism as the result of a chemiluminescence reaction.",
+        "The thymus is a specialized primary lymphoid organ of the immune system."
+      ],
+      "answer": 1,
+      "explanation": "Fowl are birds belonging to one of two biological orders, namely the gamefowl or landfowl (Galliformes) and the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Marine life?",
+      "options": [
+        "Birds are a group of warm-blooded vertebrate animals constituting the class Aves, characterised by feathers, toothless beaked jaws...",
+        "The swim bladder, gas bladder, fish maw, air bladder or sound is an internal gas-filled organ in bony...",
+        "Marine life, which is also known as sea life or ocean life, refers to all the marine organisms...",
+        "Moles are small, subterranean mammals."
+      ],
+      "answer": 2,
+      "explanation": "Marine life, which is also known as sea life or ocean life, refers to all the marine organisms... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Kangaroo.",
+      "options": [
+        "Kangaroos are marsupials from the subfamily Macropodinae.",
+        "Nuptial flight is a phase in the reproduction of most ant, termite, and some bee species.",
+        "Asian carp is a term that groups together several species of carp native to Eurasia, commonly referring to...",
+        "The swim bladder, gas bladder, fish maw, air bladder or sound is an internal gas-filled organ in bony..."
+      ],
+      "answer": 0,
+      "explanation": "Kangaroos are marsupials from the subfamily Macropodinae. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Sooty.",
+      "options": [
+        "Whitefish or white fish is a fisheries term for several species of demersal fish with fins, particularly Atlantic...",
+        "Sooty is a British children's television media franchise created by Harry Corbett incorporating primarily television and stage shows.",
+        "The spectacled bear, also known as the Andean bear, is a species of bear native to the Andes...",
+        "A killifish is any of various oviparous (egg-laying) cyprinodontiform fish, including families Aplocheilidae, Pantanodontidae, Cyprinodontidae, Fundulidae, Nothobranchiidae, Profundulidae..."
+      ],
+      "answer": 1,
+      "explanation": "Sooty is a British children's television media franchise created by Harry Corbett incorporating primarily television and stage shows. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Dunbar's number?",
+      "options": [
+        "The nipple is a raised region of tissue on the surface of the breast from which, in lactating...",
+        "The Fuegian dog, or Yahgan dog, or Patagonian dog is an extinct type of canine.",
+        "The Amur leopard is a leopard subspecies native to the Primorye region of southeastern Russia and northern China.",
+        "Dunbar's number is a suggested cognitive limit to the number of people with whom one can maintain stable..."
+      ],
+      "answer": 3,
+      "explanation": "Dunbar's number is a suggested cognitive limit to the number of people with whom one can maintain stable... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Cetacean intelligence?",
+      "options": [
+        "The nipple is a raised region of tissue on the surface of the breast from which, in lactating...",
+        "A seamount is a large submarine landform that rises from the ocean floor without reaching the water surface...",
+        "Plaice is a common name for a group of flatfish that comprises four species: the European, American, Alaskan...",
+        "Cetacean intelligence is the overall intelligence and derived cognitive ability of aquatic mammals belonging in the infraorder Cetacea..."
+      ],
+      "answer": 3,
+      "explanation": "Cetacean intelligence is the overall intelligence and derived cognitive ability of aquatic mammals belonging in the infraorder Cetacea... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Carp.",
+      "options": [
+        "The Javan tiger was a Panthera tigris sondaica population native to the Indonesian island of Java.",
+        "The term carp is a generic common name for numerous species of freshwater fish from the family Cyprinidae...",
+        "Fowl are birds belonging to one of two biological orders, namely the gamefowl or landfowl (Galliformes) and the...",
+        "A paw is the soft foot-like part of a mammal, generally a quadruped, that has claws."
+      ],
+      "answer": 1,
+      "explanation": "The term carp is a generic common name for numerous species of freshwater fish from the family Cyprinidae... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Zooplankton?",
+      "options": [
+        "A compound eye is a visual organ found in arthropods such as insects and crustaceans.",
+        "Bookworm is a general name for any insect that is said to bore through books.",
+        "Polecat is a common name for several cat-like mustelid species in the subfamilies Ictonychinae and Mustelinae.",
+        "Zooplankton are the heterotrophic component of the planktonic community, having to consume other organisms to thrive."
+      ],
+      "answer": 3,
+      "explanation": "Zooplankton are the heterotrophic component of the planktonic community, having to consume other organisms to thrive. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Mammalia?",
+      "options": [
+        "The marmosets, also known as zaris or sagoin, are twenty-two New World monkey species of the genera Callithrix...",
+        "A mammal is a vertebrate animal of the class Mammalia.",
+        "The Asiatic cheetah is a critically endangered cheetah subspecies currently surviving in Iran.",
+        "Bookworm is a general name for any insect that is said to bore through books."
+      ],
+      "answer": 1,
+      "explanation": "A mammal is a vertebrate animal of the class Mammalia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Asian carp?",
+      "options": [
+        "Halibut is the common name for three species of flatfish in the family of right-eye flounders.",
+        "Bird flight is the primary mode of locomotion used by most bird species in which birds take off...",
+        "Sooty is a British children's television media franchise created by Harry Corbett incorporating primarily television and stage shows.",
+        "Asian carp is a term that groups together several species of carp native to Eurasia, commonly referring to..."
+      ],
+      "answer": 3,
+      "explanation": "Asian carp is a term that groups together several species of carp native to Eurasia, commonly referring to... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Fungus gnat?",
+      "options": [
+        "Fungus gnats are small, dark, short-lived gnats, of the families Sciaridae, Diadocidiidae, Ditomyiidae, Keroplatidae, Bolitophilidae, and Mycetophilidae ...",
+        "A seamount is a large submarine landform that rises from the ocean floor without reaching the water surface...",
+        "The table contains a list of the largest living birds in the world by wingspan, at maximum, assumed...",
+        "The Caspian tiger was a Panthera tigris tigris population native to eastern Turkey, northern Iran, Mesopotamia, the Caucasus..."
+      ],
+      "answer": 0,
+      "explanation": "Fungus gnats are small, dark, short-lived gnats, of the families Sciaridae, Diadocidiidae, Ditomyiidae, Keroplatidae, Bolitophilidae, and Mycetophilidae ... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Whiting (fish).",
+      "options": [
+        "A number of Actinopterygiian fish have been given the common name whiting.",
+        "Trout is a generic common name for numerous species of carnivorous freshwater fishes belonging to the genera Oncorhynchus...",
+        "A mammal is a vertebrate animal of the class Mammalia.",
+        "A black panther is the melanistic colour variant of the leopard and the jaguar."
+      ],
+      "answer": 0,
+      "explanation": "A number of Actinopterygiian fish have been given the common name whiting. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Bird flight?",
+      "options": [
+        "The nipple is a raised region of tissue on the surface of the breast from which, in lactating...",
+        "A mammal is a vertebrate animal of the class Mammalia.",
+        "Bird flight is the primary mode of locomotion used by most bird species in which birds take off...",
+        "A salmon run is an annual fish migration event where many salmonid species, which are typically hatched in..."
+      ],
+      "answer": 2,
+      "explanation": "Bird flight is the primary mode of locomotion used by most bird species in which birds take off... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Quail?",
+      "options": [
+        "Ampullae of Lorenzini are electroreceptors, sense organs able to detect electric fields.",
+        "Zooplankton are the heterotrophic component of the planktonic community, having to consume other organisms to thrive.",
+        "A grizzly–polar-bear hybrid is a rare ursid hybrid that has occurred both in captivity and in the wild.",
+        "Quail is a collective name for several genera of mid-sized birds generally placed in the order Galliformes."
+      ],
+      "answer": 3,
+      "explanation": "Quail is a collective name for several genera of mid-sized birds generally placed in the order Galliformes. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Primate?",
+      "options": [
+        "The Javan leopard is a leopard subspecies confined to the Indonesian island of Java.",
+        "Fowl are birds belonging to one of two biological orders, namely the gamefowl or landfowl (Galliformes) and the...",
+        "Primates is an order of mammals, which is further divided into the strepsirrhines, which include lemurs, galagos, and...",
+        "The housefly is a fly of the suborder Cyclorrhapha."
+      ],
+      "answer": 2,
+      "explanation": "Primates is an order of mammals, which is further divided into the strepsirrhines, which include lemurs, galagos, and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Panthera leo leo?",
+      "options": [
+        "Bears are carnivoran mammals of the family Ursidae.",
+        "Panthera leo leo is a lion subspecies present in West Africa, northern Central Africa and India.",
+        "Tilapia is the common name for nearly a hundred species of cichlid fish from the coelotilapine, coptodonine, heterotilapine...",
+        "Moles are small, subterranean mammals."
+      ],
+      "answer": 1,
+      "explanation": "Panthera leo leo is a lion subspecies present in West Africa, northern Central Africa and India. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Mole (animal)?",
+      "options": [
+        "An otolith, also called otoconium, statolith, or statoconium, is a calcium carbonate structure in the saccule or utricle...",
+        "The Javan tiger was a Panthera tigris sondaica population native to the Indonesian island of Java.",
+        "Dung beetles are beetles that feed on feces.",
+        "Moles are small, subterranean mammals."
+      ],
+      "answer": 3,
+      "explanation": "Moles are small, subterranean mammals. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Spectacled bear.",
+      "options": [
+        "The spectacled bear, also known as the Andean bear, is a species of bear native to the Andes...",
+        "Demersal fish, also known as groundfish, live and feed on or near the bottom of seas or lakes.",
+        "A salmon run is an annual fish migration event where many salmonid species, which are typically hatched in...",
+        "Reptiles, as commonly defined, are tetrapod vertebrate animals with an ectothermic metabolism and amniotic development."
+      ],
+      "answer": 0,
+      "explanation": "The spectacled bear, also known as the Andean bear, is a species of bear native to the Andes... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Canine tooth?",
+      "options": [
+        "The African leopard is the nominate subspecies of the leopard, native to Africa.",
+        "In mammalian oral anatomy, the canine teeth, also called cuspids, dogteeth, eye teeth, vampire teeth, or fangs, are...",
+        "Jackals are canids native to Africa and Eurasia.",
+        "A wallaby is a small or middle-sized macropod native to Australia and New Guinea, with introduced populations in..."
+      ],
+      "answer": 1,
+      "explanation": "In mammalian oral anatomy, the canine teeth, also called cuspids, dogteeth, eye teeth, vampire teeth, or fangs, are... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Cockchafer?",
+      "options": [
+        "The common cockchafer, also colloquially known as the Maybug, Maybeetle, or doodlebug, is a species of scarab beetle...",
+        "The name army ant (or legionary ant or marabunta) is applied to over 200 ant species in different...",
+        "Polecat is a common name for several cat-like mustelid species in the subfamilies Ictonychinae and Mustelinae.",
+        "A compound eye is a visual organ found in arthropods such as insects and crustaceans."
+      ],
+      "answer": 0,
+      "explanation": "The common cockchafer, also colloquially known as the Maybug, Maybeetle, or doodlebug, is a species of scarab beetle... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Swim bladder?",
+      "options": [
+        "Dung beetles are beetles that feed on feces.",
+        "Masha and the Bear is a Russian preschool comedy animated television series created by Oleg Kuzovkov and produced...",
+        "The swim bladder, gas bladder, fish maw, air bladder or sound is an internal gas-filled organ in bony...",
+        "The philtrum or medial cleft is a vertical indentation in the middle area of the upper lip, common..."
+      ],
+      "answer": 2,
+      "explanation": "The swim bladder, gas bladder, fish maw, air bladder or sound is an internal gas-filled organ in bony... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Batrachia?",
+      "options": [
+        "Moles are small, subterranean mammals.",
+        "Porcupines are large rodents with coats of sharp spines, or quills, that protect them against predators.",
+        "A mezcal worm is an insect larva found in some types of mezcal produced in Oaxaca, Mexico.",
+        "The Batrachia are a clade of amphibians that includes frogs and salamanders, but not caecilians nor the extinct..."
+      ],
+      "answer": 3,
+      "explanation": "The Batrachia are a clade of amphibians that includes frogs and salamanders, but not caecilians nor the extinct... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Javan leopard.",
+      "options": [
+        "The Javan leopard is a leopard subspecies confined to the Indonesian island of Java.",
+        "Freshwater sharks are sharks that live in freshwater environments.",
+        "The coat of arms of the Danish Realm has a lesser and a greater version.",
+        "The common cockchafer, also colloquially known as the Maybug, Maybeetle, or doodlebug, is a species of scarab beetle..."
+      ],
+      "answer": 0,
+      "explanation": "The Javan leopard is a leopard subspecies confined to the Indonesian island of Java. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Mink?",
+      "options": [
+        "Herring are various species of forage fish, belonging to the order Clupeiformes.",
+        "Mink are dark-coloured, semiaquatic, carnivorous mammals in the genera Mustela and Neogale and part of the family Mustelidae...",
+        "Porcupines are large rodents with coats of sharp spines, or quills, that protect them against predators.",
+        "Nuptial flight is a phase in the reproduction of most ant, termite, and some bee species."
+      ],
+      "answer": 1,
+      "explanation": "Mink are dark-coloured, semiaquatic, carnivorous mammals in the genera Mustela and Neogale and part of the family Mustelidae... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Fox?",
+      "options": [
+        "The red mullets or surmullets are two species of goatfish, Mullus barbatus and Mullus surmuletus, found in the...",
+        "A seamount is a large submarine landform that rises from the ocean floor without reaching the water surface...",
+        "The sun bear is a bear species in the family Ursidae found in the tropical forests of Southeast...",
+        "Foxes are small-to-medium-sized omnivorous mammals belonging to several genera of the family Canidae."
+      ],
+      "answer": 3,
+      "explanation": "Foxes are small-to-medium-sized omnivorous mammals belonging to several genera of the family Canidae. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Eastern green mamba?",
+      "options": [
+        "The eastern green mamba is a highly venomous snake species of the mamba genus Dendroaspis native to the...",
+        "The African leopard is the nominate subspecies of the leopard, native to Africa.",
+        "Cockroaches are insects belonging to the order Blattodea (Blattaria).",
+        "Grasshoppers are a group of insects belonging to the suborder Caelifera."
+      ],
+      "answer": 0,
+      "explanation": "The eastern green mamba is a highly venomous snake species of the mamba genus Dendroaspis native to the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Giant panda?",
+      "options": [
+        "Jackals are canids native to Africa and Eurasia.",
+        "Arctodus is an extinct genus of short-faced bears that inhabited North America during the Pleistocene.",
+        "The history of lions in Europe is part of the wider history of the lion species complex.",
+        "The giant panda, also known as the panda bear or simply panda, is a bear species endemic to..."
+      ],
+      "answer": 3,
+      "explanation": "The giant panda, also known as the panda bear or simply panda, is a bear species endemic to... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Seamount?",
+      "options": [
+        "Flounders are a group of flatfish species.",
+        "A seamount is a large submarine landform that rises from the ocean floor without reaching the water surface...",
+        "Halibut is the common name for three species of flatfish in the family of right-eye flounders.",
+        "The Siberian tiger or Amur tiger is a population of the tiger subspecies Panthera tigris tigris native to..."
+      ],
+      "answer": 1,
+      "explanation": "A seamount is a large submarine landform that rises from the ocean floor without reaching the water surface... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Housefly?",
+      "options": [
+        "The housefly is a fly of the suborder Cyclorrhapha.",
+        "Polecat is a common name for several cat-like mustelid species in the subfamilies Ictonychinae and Mustelinae.",
+        "An ibex, is any of several species of wild goat, distinguished by the male's large curved horns, which...",
+        "Plaice is a common name for a group of flatfish that comprises four species: the European, American, Alaskan..."
+      ],
+      "answer": 0,
+      "explanation": "The housefly is a fly of the suborder Cyclorrhapha. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Black panther.",
+      "options": [
+        "The common cockchafer, also colloquially known as the Maybug, Maybeetle, or doodlebug, is a species of scarab beetle...",
+        "The Amur leopard is a leopard subspecies native to the Primorye region of southeastern Russia and northern China.",
+        "Skunks are mammals in the family Mephitidae.",
+        "A black panther is the melanistic colour variant of the leopard and the jaguar."
+      ],
+      "answer": 3,
+      "explanation": "A black panther is the melanistic colour variant of the leopard and the jaguar. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about California grizzly bear?",
+      "options": [
+        "Bookworm is a general name for any insect that is said to bore through books.",
+        "Porcupines are large rodents with coats of sharp spines, or quills, that protect them against predators.",
+        "Sauropsida is a clade of amniotes, broadly equivalent to the class Reptilia, though typically used in a broader...",
+        "The California grizzly bear, also known as the California brown bear, California golden bear, or chaparral bear, is..."
+      ],
+      "answer": 3,
+      "explanation": "The California grizzly bear, also known as the California brown bear, California golden bear, or chaparral bear, is... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Splooting?",
+      "options": [
+        "Splooting is lying in a spread-legged, prone posture.",
+        "The leopard is one of the five extant cat species in the genus Panthera.",
+        "The coat of arms of the Danish Realm has a lesser and a greater version.",
+        "The Humboldt Current, also called the Peru Current, is a cold, low-salinity ocean current that flows north along..."
+      ],
+      "answer": 0,
+      "explanation": "Splooting is lying in a spread-legged, prone posture. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Armadillo?",
+      "options": [
+        "The Tremarctinae or short-faced bears is a subfamily of Ursidae that contains one living representative, the spectacled bear...",
+        "Tent caterpillars are moderately sized caterpillars, or moth larvae, belonging to the genus Malacosoma in the family Lasiocampidae.",
+        "Armadillos are placental mammals in the order Cingulata.",
+        "An otolith, also called otoconium, statolith, or statoconium, is a calcium carbonate structure in the saccule or utricle..."
+      ],
+      "answer": 2,
+      "explanation": "Armadillos are placental mammals in the order Cingulata. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Bear?",
+      "options": [
+        "Bears are carnivoran mammals of the family Ursidae.",
+        "Cockroaches are insects belonging to the order Blattodea (Blattaria).",
+        "A black panther is the melanistic colour variant of the leopard and the jaguar.",
+        "Diapsids are a clade of sauropsids, distinguished from other reptiles by the presence of two holes, known as..."
+      ],
+      "answer": 0,
+      "explanation": "Bears are carnivoran mammals of the family Ursidae. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Porcupine.",
+      "options": [
+        "Pelagic fish live in the pelagic zone of ocean or lake waters—being neither close to the bottom nor...",
+        "A gnat is any of many species of tiny flying insects in the dipterid suborder Nematocera, especially those...",
+        "Grasshoppers are a group of insects belonging to the suborder Caelifera.",
+        "Porcupines are large rodents with coats of sharp spines, or quills, that protect them against predators."
+      ],
+      "answer": 3,
+      "explanation": "Porcupines are large rodents with coats of sharp spines, or quills, that protect them against predators. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Liger?",
+      "options": [
+        "The marmosets, also known as zaris or sagoin, are twenty-two New World monkey species of the genera Callithrix...",
+        "The term carp is a generic common name for numerous species of freshwater fish from the family Cyprinidae...",
+        "The liger is a hybrid offspring of a male lion and a tigress, or female tiger.",
+        "The California grizzly bear, also known as the California brown bear, California golden bear, or chaparral bear, is..."
+      ],
+      "answer": 2,
+      "explanation": "The liger is a hybrid offspring of a male lion and a tigress, or female tiger. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Killifish.",
+      "options": [
+        "Sooty is a British children's television media franchise created by Harry Corbett incorporating primarily television and stage shows.",
+        "A grizzly–polar-bear hybrid is a rare ursid hybrid that has occurred both in captivity and in the wild.",
+        "A killifish is any of various oviparous (egg-laying) cyprinodontiform fish, including families Aplocheilidae, Pantanodontidae, Cyprinodontidae, Fundulidae, Nothobranchiidae, Profundulidae...",
+        "A salmon run is an annual fish migration event where many salmonid species, which are typically hatched in..."
+      ],
+      "answer": 2,
+      "explanation": "A killifish is any of various oviparous (egg-laying) cyprinodontiform fish, including families Aplocheilidae, Pantanodontidae, Cyprinodontidae, Fundulidae, Nothobranchiidae, Profundulidae... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Red seabream?",
+      "options": [
+        "Fungus gnats are small, dark, short-lived gnats, of the families Sciaridae, Diadocidiidae, Ditomyiidae, Keroplatidae, Bolitophilidae, and Mycetophilidae ...",
+        "The California grizzly bear, also known as the California brown bear, California golden bear, or chaparral bear, is...",
+        "Red seabream is a name given to at least two species of fish of the family Sparidae:Pagrus major...",
+        "The Amur leopard is a leopard subspecies native to the Primorye region of southeastern Russia and northern China."
+      ],
+      "answer": 2,
+      "explanation": "Red seabream is a name given to at least two species of fish of the family Sparidae:Pagrus major... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Ampullae of Lorenzini?",
+      "options": [
+        "Ampullae of Lorenzini are electroreceptors, sense organs able to detect electric fields.",
+        "Zooplankton are the heterotrophic component of the planktonic community, having to consume other organisms to thrive.",
+        "Nine species of vulture can be found living in India, but most are now endangered after a rapid...",
+        "Maple, Zayu, and Clutch are the official mascots of the 2026 FIFA World Cup held in the United..."
+      ],
+      "answer": 0,
+      "explanation": "Ampullae of Lorenzini are electroreceptors, sense organs able to detect electric fields. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Nipple.",
+      "options": [
+        "The red mullets or surmullets are two species of goatfish, Mullus barbatus and Mullus surmuletus, found in the...",
+        "The nipple is a raised region of tissue on the surface of the breast from which, in lactating...",
+        "The swim bladder, gas bladder, fish maw, air bladder or sound is an internal gas-filled organ in bony...",
+        "The African leopard is the nominate subspecies of the leopard, native to Africa."
+      ],
+      "answer": 1,
+      "explanation": "The nipple is a raised region of tissue on the surface of the breast from which, in lactating... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Halibut?",
+      "options": [
+        "The South China tiger is a population of the Panthera tigris tigris subspecies that is native to southern...",
+        "Foxes are small-to-medium-sized omnivorous mammals belonging to several genera of the family Canidae.",
+        "Skunks are mammals in the family Mephitidae.",
+        "Halibut is the common name for three species of flatfish in the family of right-eye flounders."
+      ],
+      "answer": 3,
+      "explanation": "Halibut is the common name for three species of flatfish in the family of right-eye flounders. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Zanzibar leopard?",
+      "options": [
+        "Arctotherium is an extinct genus of short-faced bears endemic to Central and South America from the Late Pliocene...",
+        "The Zanzibar leopard is an African leopard population on Unguja Island in the Zanzibar archipelago, Tanzania, that is...",
+        "Toad is a generic common name for certain groups of frogs, especially those of the family Bufonidae, that...",
+        "The Caspian tiger was a Panthera tigris tigris population native to eastern Turkey, northern Iran, Mesopotamia, the Caucasus..."
+      ],
+      "answer": 1,
+      "explanation": "The Zanzibar leopard is an African leopard population on Unguja Island in the Zanzibar archipelago, Tanzania, that is... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Diapsid?",
+      "options": [
+        "A wallaby is a small or middle-sized macropod native to Australia and New Guinea, with introduced populations in...",
+        "Trout is a generic common name for numerous species of carnivorous freshwater fishes belonging to the genera Oncorhynchus...",
+        "Mink are dark-coloured, semiaquatic, carnivorous mammals in the genera Mustela and Neogale and part of the family Mustelidae...",
+        "Diapsids are a clade of sauropsids, distinguished from other reptiles by the presence of two holes, known as..."
+      ],
+      "answer": 3,
+      "explanation": "Diapsids are a clade of sauropsids, distinguished from other reptiles by the presence of two holes, known as... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Leopard?",
+      "options": [
+        "The leopard is one of the five extant cat species in the genus Panthera.",
+        "The Humboldt Current, also called the Peru Current, is a cold, low-salinity ocean current that flows north along...",
+        "Bear spray is a specific aerosol spray bear deterrent, whose active ingredients are the potent irritant capsaicin and...",
+        "The coat of arms of the Danish Realm has a lesser and a greater version."
+      ],
+      "answer": 0,
+      "explanation": "The leopard is one of the five extant cat species in the genus Panthera. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Sardine?",
+      "options": [
+        "Plaice is a common name for a group of flatfish that comprises four species: the European, American, Alaskan...",
+        "Skunks are mammals in the family Mephitidae.",
+        "The marmosets, also known as zaris or sagoin, are twenty-two New World monkey species of the genera Callithrix...",
+        "Sardine and pilchard are common names for various species of small, oily forage fish in the herring suborder..."
+      ],
+      "answer": 3,
+      "explanation": "Sardine and pilchard are common names for various species of small, oily forage fish in the herring suborder... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Siberian tiger?",
+      "options": [
+        "The Siberian tiger or Amur tiger is a population of the tiger subspecies Panthera tigris tigris native to...",
+        "A seamount is a large submarine landform that rises from the ocean floor without reaching the water surface...",
+        "The history of lions in Europe is part of the wider history of the lion species complex.",
+        "The Asiatic cheetah is a critically endangered cheetah subspecies currently surviving in Iran."
+      ],
+      "answer": 0,
+      "explanation": "The Siberian tiger or Amur tiger is a population of the tiger subspecies Panthera tigris tigris native to... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Marmoset?",
+      "options": [
+        "Kangaroos are marsupials from the subfamily Macropodinae.",
+        "Fungus gnats are small, dark, short-lived gnats, of the families Sciaridae, Diadocidiidae, Ditomyiidae, Keroplatidae, Bolitophilidae, and Mycetophilidae ...",
+        "The marmosets, also known as zaris or sagoin, are twenty-two New World monkey species of the genera Callithrix...",
+        "Anchovies are small, common forage fish of the family Engraulidae."
+      ],
+      "answer": 2,
+      "explanation": "The marmosets, also known as zaris or sagoin, are twenty-two New World monkey species of the genera Callithrix... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Teat?",
+      "options": [
+        "A teat is the projection from the mammary glands of mammals from which milk flows or is ejected...",
+        "The sun bear is a bear species in the family Ursidae found in the tropical forests of Southeast...",
+        "Bird flight is the primary mode of locomotion used by most bird species in which birds take off...",
+        "Mink are dark-coloured, semiaquatic, carnivorous mammals in the genera Mustela and Neogale and part of the family Mustelidae..."
+      ],
+      "answer": 0,
+      "explanation": "A teat is the projection from the mammary glands of mammals from which milk flows or is ejected... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Deep-sea fish?",
+      "options": [
+        "The Caspian tiger was a Panthera tigris tigris population native to eastern Turkey, northern Iran, Mesopotamia, the Caucasus...",
+        "Deep-sea fish are fish that live in the darkness below the sunlit surface waters, that is below the...",
+        "Moles are small, subterranean mammals.",
+        "The giant panda, also known as the panda bear or simply panda, is a bear species endemic to..."
+      ],
+      "answer": 1,
+      "explanation": "Deep-sea fish are fish that live in the darkness below the sunlit surface waters, that is below the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Shark.",
+      "options": [
+        "The cohort Polyneoptera is one of the major groups of winged insects, comprising the Orthoptera and all other...",
+        "Crickets are orthopteran insects which are related to bush crickets and, more distantly, to grasshoppers.",
+        "The term carp is a generic common name for numerous species of freshwater fish from the family Cyprinidae...",
+        "Sharks are a group of elasmobranch cartilaginous fishes characterized by a ribless endoskeleton, dermal denticles, five to seven..."
+      ],
+      "answer": 3,
+      "explanation": "Sharks are a group of elasmobranch cartilaginous fishes characterized by a ribless endoskeleton, dermal denticles, five to seven... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Locust?",
+      "options": [
+        "Tiger attacks are a form of human–wildlife conflict which have killed more humans than attacks by any of...",
+        "The spectacled bear, also known as the Andean bear, is a species of bear native to the Andes...",
+        "Locusts are various species of short-horned grasshoppers in the family Acrididae that have a swarming phase.",
+        "The Tremarctinae or short-faced bears is a subfamily of Ursidae that contains one living representative, the spectacled bear..."
+      ],
+      "answer": 2,
+      "explanation": "Locusts are various species of short-horned grasshoppers in the family Acrididae that have a swarming phase. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Cockroach?",
+      "options": [
+        "Cockroaches are insects belonging to the order Blattodea (Blattaria).",
+        "Clothes moth or clothing moth is the common name for several species of moth considered to be pests...",
+        "A black panther is the melanistic colour variant of the leopard and the jaguar.",
+        "The benthic zone, from Ancient Greek βένθος (bénthos) 'the depths of the ocean', is the ecological region at..."
+      ],
+      "answer": 0,
+      "explanation": "Cockroaches are insects belonging to the order Blattodea (Blattaria). (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Nuptial flight?",
+      "options": [
+        "Diapsids are a clade of sauropsids, distinguished from other reptiles by the presence of two holes, known as...",
+        "Halibut is the common name for three species of flatfish in the family of right-eye flounders.",
+        "Nuptial flight is a phase in the reproduction of most ant, termite, and some bee species.",
+        "The Caspian tiger was a Panthera tigris tigris population native to eastern Turkey, northern Iran, Mesopotamia, the Caucasus..."
+      ],
+      "answer": 2,
+      "explanation": "Nuptial flight is a phase in the reproduction of most ant, termite, and some bee species. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Grouper?",
+      "options": [
+        "The snow leopard is a species of large cat in the genus Panthera of the family Felidae.",
+        "Groupers are a diverse group of marine ray-finned fish in the family Epinephelidae, in the order Perciformes.",
+        "The leopard is one of the five extant cat species in the genus Panthera.",
+        "The thymus is a specialized primary lymphoid organ of the immune system."
+      ],
+      "answer": 1,
+      "explanation": "Groupers are a diverse group of marine ray-finned fish in the family Epinephelidae, in the order Perciformes. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Mezcal worm?",
+      "options": [
+        "A mezcal worm is an insect larva found in some types of mezcal produced in Oaxaca, Mexico.",
+        "The benthic zone, from Ancient Greek βένθος (bénthos) 'the depths of the ocean', is the ecological region at...",
+        "Bird flight is the primary mode of locomotion used by most bird species in which birds take off...",
+        "In oceanography, a gyre is a large system of ocean surface currents moving in a circular fashion driven..."
+      ],
+      "answer": 0,
+      "explanation": "A mezcal worm is an insect larva found in some types of mezcal produced in Oaxaca, Mexico. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Tigon?",
+      "options": [
+        "Dung beetles are beetles that feed on feces.",
+        "The tigon is a hybrid offspring of a male tiger and a female lion, or lioness.",
+        "The frilled lizard, also known commonly as the frilled agama, frillneck lizard, frill-necked lizard or frilled dragon, is...",
+        "Dunbar's number is a suggested cognitive limit to the number of people with whom one can maintain stable..."
+      ],
+      "answer": 1,
+      "explanation": "The tigon is a hybrid offspring of a male tiger and a female lion, or lioness. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Snow leopard?",
+      "options": [
+        "A mezcal worm is an insect larva found in some types of mezcal produced in Oaxaca, Mexico.",
+        "A compound eye is a visual organ found in arthropods such as insects and crustaceans.",
+        "Tilapia is the common name for nearly a hundred species of cichlid fish from the coelotilapine, coptodonine, heterotilapine...",
+        "The snow leopard is a species of large cat in the genus Panthera of the family Felidae."
+      ],
+      "answer": 3,
+      "explanation": "The snow leopard is a species of large cat in the genus Panthera of the family Felidae. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Grizzly–polar bear hybrid?",
+      "options": [
+        "The giant panda, also known as the panda bear or simply panda, is a bear species endemic to...",
+        "A grizzly–polar-bear hybrid is a rare ursid hybrid that has occurred both in captivity and in the wild.",
+        "Anchovies are small, common forage fish of the family Engraulidae.",
+        "A paw is the soft foot-like part of a mammal, generally a quadruped, that has claws."
+      ],
+      "answer": 1,
+      "explanation": "A grizzly–polar-bear hybrid is a rare ursid hybrid that has occurred both in captivity and in the wild. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Elephant?",
+      "options": [
+        "The Javan tiger was a Panthera tigris sondaica population native to the Indonesian island of Java.",
+        "Skunks are mammals in the family Mephitidae.",
+        "Elephants are the largest living land animals.",
+        "Polecat is a common name for several cat-like mustelid species in the subfamilies Ictonychinae and Mustelinae."
+      ],
+      "answer": 2,
+      "explanation": "Elephants are the largest living land animals. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Reptile?",
+      "options": [
+        "Panthera leo leo is a lion subspecies present in West Africa, northern Central Africa and India.",
+        "Pelagic fish live in the pelagic zone of ocean or lake waters—being neither close to the bottom nor...",
+        "Reptiles, as commonly defined, are tetrapod vertebrate animals with an ectothermic metabolism and amniotic development.",
+        "The liger is a hybrid offspring of a male lion and a tigress, or female tiger."
+      ],
+      "answer": 2,
+      "explanation": "Reptiles, as commonly defined, are tetrapod vertebrate animals with an ectothermic metabolism and amniotic development. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Skunk?",
+      "options": [
+        "Kangaroos are marsupials from the subfamily Macropodinae.",
+        "A fish scale is a small rigid plate that grows out of the skin of a fish.",
+        "Splooting is lying in a spread-legged, prone posture.",
+        "Skunks are mammals in the family Mephitidae."
+      ],
+      "answer": 3,
+      "explanation": "Skunks are mammals in the family Mephitidae. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Dung beetle?",
+      "options": [
+        "Marine life, which is also known as sea life or ocean life, refers to all the marine organisms...",
+        "A midge is any small fly, including species in several families of non-mosquito nematoceran Diptera.",
+        "The Batrachia are a clade of amphibians that includes frogs and salamanders, but not caecilians nor the extinct...",
+        "Dung beetles are beetles that feed on feces."
+      ],
+      "answer": 3,
+      "explanation": "Dung beetles are beetles that feed on feces. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Bear spray?",
+      "options": [
+        "Deep-sea fish are fish that live in the darkness below the sunlit surface waters, that is below the...",
+        "Bear spray is a specific aerosol spray bear deterrent, whose active ingredients are the potent irritant capsaicin and...",
+        "A mezcal worm is an insect larva found in some types of mezcal produced in Oaxaca, Mexico.",
+        "An otolith, also called otoconium, statolith, or statoconium, is a calcium carbonate structure in the saccule or utricle..."
+      ],
+      "answer": 1,
+      "explanation": "Bear spray is a specific aerosol spray bear deterrent, whose active ingredients are the potent irritant capsaicin and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Herring?",
+      "options": [
+        "Anchovies are small, common forage fish of the family Engraulidae.",
+        "Herring are various species of forage fish, belonging to the order Clupeiformes.",
+        "Ampullae of Lorenzini are electroreceptors, sense organs able to detect electric fields.",
+        "Clothes moth or clothing moth is the common name for several species of moth considered to be pests..."
+      ],
+      "answer": 1,
+      "explanation": "Herring are various species of forage fish, belonging to the order Clupeiformes. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Caspian tiger.",
+      "options": [
+        "A wallaby is a small or middle-sized macropod native to Australia and New Guinea, with introduced populations in...",
+        "The cheetah is a species of large feline and the only living member of the genus Acinonyx.",
+        "Fish migration is mass relocation by fish from one area or body of water to another.",
+        "The Caspian tiger was a Panthera tigris tigris population native to eastern Turkey, northern Iran, Mesopotamia, the Caucasus..."
+      ],
+      "answer": 3,
+      "explanation": "The Caspian tiger was a Panthera tigris tigris population native to eastern Turkey, northern Iran, Mesopotamia, the Caucasus... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Tilapia?",
+      "options": [
+        "Tilapia is the common name for nearly a hundred species of cichlid fish from the coelotilapine, coptodonine, heterotilapine...",
+        "Jackals are canids native to Africa and Eurasia.",
+        "The liger is a hybrid offspring of a male lion and a tigress, or female tiger.",
+        "The cheetah is a species of large feline and the only living member of the genus Acinonyx."
+      ],
+      "answer": 0,
+      "explanation": "Tilapia is the common name for nearly a hundred species of cichlid fish from the coelotilapine, coptodonine, heterotilapine... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Grasshopper?",
+      "options": [
+        "The veiled chameleon is a species of chameleon native to the Arabian Peninsula in Yemen and Saudi Arabia.",
+        "Anchovies are small, common forage fish of the family Engraulidae.",
+        "The tokay gecko is a nocturnal arboreal gecko in the genus Gekko, the true geckos.",
+        "Grasshoppers are a group of insects belonging to the suborder Caelifera."
+      ],
+      "answer": 3,
+      "explanation": "Grasshoppers are a group of insects belonging to the suborder Caelifera. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Cheetah.",
+      "options": [
+        "Arctodus is an extinct genus of short-faced bears that inhabited North America during the Pleistocene.",
+        "A teat is the projection from the mammary glands of mammals from which milk flows or is ejected...",
+        "The cheetah is a species of large feline and the only living member of the genus Acinonyx.",
+        "Halibut is the common name for three species of flatfish in the family of right-eye flounders."
+      ],
+      "answer": 2,
+      "explanation": "The cheetah is a species of large feline and the only living member of the genus Acinonyx. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Tokay gecko?",
+      "options": [
+        "The tokay gecko is a nocturnal arboreal gecko in the genus Gekko, the true geckos.",
+        "Primates is an order of mammals, which is further divided into the strepsirrhines, which include lemurs, galagos, and...",
+        "Grasshoppers are a group of insects belonging to the suborder Caelifera.",
+        "Halibut is the common name for three species of flatfish in the family of right-eye flounders."
+      ],
+      "answer": 0,
+      "explanation": "The tokay gecko is a nocturnal arboreal gecko in the genus Gekko, the true geckos. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Masha and the Bear?",
+      "options": [
+        "Herring are various species of forage fish, belonging to the order Clupeiformes.",
+        "Masha and the Bear is a Russian preschool comedy animated television series created by Oleg Kuzovkov and produced...",
+        "Badgers are medium-sized short-legged omnivores in the superfamily Musteloidea.",
+        "A black panther is the melanistic colour variant of the leopard and the jaguar."
+      ],
+      "answer": 1,
+      "explanation": "Masha and the Bear is a Russian preschool comedy animated television series created by Oleg Kuzovkov and produced... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Yellowjacket?",
+      "options": [
+        "Arctotherium is an extinct genus of short-faced bears endemic to Central and South America from the Late Pliocene...",
+        "Nuptial flight is a phase in the reproduction of most ant, termite, and some bee species.",
+        "The cohort Polyneoptera is one of the major groups of winged insects, comprising the Orthoptera and all other...",
+        "Yellowjacket or yellow jacket is the common name in North America for predatory social wasps of the genera..."
+      ],
+      "answer": 3,
+      "explanation": "Yellowjacket or yellow jacket is the common name in North America for predatory social wasps of the genera... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Plaice?",
+      "options": [
+        "Plaice is a common name for a group of flatfish that comprises four species: the European, American, Alaskan...",
+        "Diapsids are a clade of sauropsids, distinguished from other reptiles by the presence of two holes, known as...",
+        "The term carp is a generic common name for numerous species of freshwater fish from the family Cyprinidae...",
+        "Pelagic fish live in the pelagic zone of ocean or lake waters—being neither close to the bottom nor..."
+      ],
+      "answer": 0,
+      "explanation": "Plaice is a common name for a group of flatfish that comprises four species: the European, American, Alaskan... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Salmon run?",
+      "options": [
+        "The Siberian tiger or Amur tiger is a population of the tiger subspecies Panthera tigris tigris native to...",
+        "A salmon run is an annual fish migration event where many salmonid species, which are typically hatched in...",
+        "Dung beetles are beetles that feed on feces.",
+        "The South China tiger is a population of the Panthera tigris tigris subspecies that is native to southern..."
+      ],
+      "answer": 1,
+      "explanation": "A salmon run is an annual fish migration event where many salmonid species, which are typically hatched in... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Manta ray?",
+      "options": [
+        "Manta rays are large rays belonging to the genus Mobula.",
+        "Fish migration is mass relocation by fish from one area or body of water to another.",
+        "The Asiatic cheetah is a critically endangered cheetah subspecies currently surviving in Iran.",
+        "The hoof is the tip of a toe of an ungulate mammal, which is covered and strengthened with..."
+      ],
+      "answer": 0,
+      "explanation": "Manta rays are large rays belonging to the genus Mobula. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Glowworm?",
+      "options": [
+        "The name army ant (or legionary ant or marabunta) is applied to over 200 ant species in different...",
+        "A fish scale is a small rigid plate that grows out of the skin of a fish.",
+        "Glowworm is any member of various groups of insect larvae and adult larviform females that glow through bioluminescence.",
+        "A mezcal worm is an insect larva found in some types of mezcal produced in Oaxaca, Mexico."
+      ],
+      "answer": 2,
+      "explanation": "Glowworm is any member of various groups of insect larvae and adult larviform females that glow through bioluminescence. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Badger?",
+      "options": [
+        "The Javan tiger was a Panthera tigris sondaica population native to the Indonesian island of Java.",
+        "Badgers are medium-sized short-legged omnivores in the superfamily Musteloidea.",
+        "Thomas was a goose who lived at the Waimanu Lagoons in Waikanae Beach, in the Kāpiti Coast District...",
+        "Fish migration is mass relocation by fish from one area or body of water to another."
+      ],
+      "answer": 1,
+      "explanation": "Badgers are medium-sized short-legged omnivores in the superfamily Musteloidea. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Toad?",
+      "options": [
+        "Thomas was a goose who lived at the Waimanu Lagoons in Waikanae Beach, in the Kāpiti Coast District...",
+        "Toad is a generic common name for certain groups of frogs, especially those of the family Bufonidae, that...",
+        "The California grizzly bear, also known as the California brown bear, California golden bear, or chaparral bear, is...",
+        "The Humboldt Current, also called the Peru Current, is a cold, low-salinity ocean current that flows north along..."
+      ],
+      "answer": 1,
+      "explanation": "Toad is a generic common name for certain groups of frogs, especially those of the family Bufonidae, that... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Arctodus?",
+      "options": [
+        "Dunbar's number is a suggested cognitive limit to the number of people with whom one can maintain stable...",
+        "Elephants are the largest living land animals.",
+        "The hoof is the tip of a toe of an ungulate mammal, which is covered and strengthened with...",
+        "Arctodus is an extinct genus of short-faced bears that inhabited North America during the Pleistocene."
+      ],
+      "answer": 3,
+      "explanation": "Arctodus is an extinct genus of short-faced bears that inhabited North America during the Pleistocene. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Fuegian dog?",
+      "options": [
+        "Fungus gnats are small, dark, short-lived gnats, of the families Sciaridae, Diadocidiidae, Ditomyiidae, Keroplatidae, Bolitophilidae, and Mycetophilidae ...",
+        "The eastern cougar or eastern puma is a subspecies designation proposed in 1946 for cougar populations in eastern...",
+        "The table contains a list of the largest living birds in the world by wingspan, at maximum, assumed...",
+        "The Fuegian dog, or Yahgan dog, or Patagonian dog is an extinct type of canine."
+      ],
+      "answer": 3,
+      "explanation": "The Fuegian dog, or Yahgan dog, or Patagonian dog is an extinct type of canine. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Demersal fish?",
+      "options": [
+        "Bear spray is a specific aerosol spray bear deterrent, whose active ingredients are the potent irritant capsaicin and...",
+        "Demersal fish, also known as groundfish, live and feed on or near the bottom of seas or lakes.",
+        "The term carp is a generic common name for numerous species of freshwater fish from the family Cyprinidae...",
+        "Glowworm is any member of various groups of insect larvae and adult larviform females that glow through bioluminescence."
+      ],
+      "answer": 1,
+      "explanation": "Demersal fish, also known as groundfish, live and feed on or near the bottom of seas or lakes. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Thomas (goose).",
+      "options": [
+        "The eastern cougar or eastern puma is a subspecies designation proposed in 1946 for cougar populations in eastern...",
+        "Yellowjacket or yellow jacket is the common name in North America for predatory social wasps of the genera...",
+        "Thomas was a goose who lived at the Waimanu Lagoons in Waikanae Beach, in the Kāpiti Coast District...",
+        "Freshwater sharks are sharks that live in freshwater environments."
+      ],
+      "answer": 2,
+      "explanation": "Thomas was a goose who lived at the Waimanu Lagoons in Waikanae Beach, in the Kāpiti Coast District... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Tremarctinae?",
+      "options": [
+        "The Tremarctinae or short-faced bears is a subfamily of Ursidae that contains one living representative, the spectacled bear...",
+        "The benthic zone, from Ancient Greek βένθος (bénthos) 'the depths of the ocean', is the ecological region at...",
+        "A seamount is a large submarine landform that rises from the ocean floor without reaching the water surface...",
+        "Skunks are mammals in the family Mephitidae."
+      ],
+      "answer": 0,
+      "explanation": "The Tremarctinae or short-faced bears is a subfamily of Ursidae that contains one living representative, the spectacled bear... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about South China tiger?",
+      "options": [
+        "Tiger attacks are a form of human–wildlife conflict which have killed more humans than attacks by any of...",
+        "Bookworm is a general name for any insect that is said to bore through books.",
+        "An ibex, is any of several species of wild goat, distinguished by the male's large curved horns, which...",
+        "The South China tiger is a population of the Panthera tigris tigris subspecies that is native to southern..."
+      ],
+      "answer": 3,
+      "explanation": "The South China tiger is a population of the Panthera tigris tigris subspecies that is native to southern... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Sauropsida.",
+      "options": [
+        "The cohort Polyneoptera is one of the major groups of winged insects, comprising the Orthoptera and all other...",
+        "Badgers are medium-sized short-legged omnivores in the superfamily Musteloidea.",
+        "Locusts are various species of short-horned grasshoppers in the family Acrididae that have a swarming phase.",
+        "Sauropsida is a clade of amniotes, broadly equivalent to the class Reptilia, though typically used in a broader..."
+      ],
+      "answer": 3,
+      "explanation": "Sauropsida is a clade of amniotes, broadly equivalent to the class Reptilia, though typically used in a broader... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Primates.",
+      "options": [
+        "Deep-sea fish are fish that live in the darkness below the sunlit surface waters, that is below the...",
+        "Primates is an order of mammals, which is further divided into the strepsirrhines, which include lemurs, galagos, and...",
+        "The Humboldt Current, also called the Peru Current, is a cold, low-salinity ocean current that flows north along...",
+        "The leopard is one of the five extant cat species in the genus Panthera."
+      ],
+      "answer": 1,
+      "explanation": "Primates is an order of mammals, which is further divided into the strepsirrhines, which include lemurs, galagos, and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Bioluminescence?",
+      "options": [
+        "Bioluminescence is the production of light by an organism as the result of a chemiluminescence reaction.",
+        "A killifish is any of various oviparous (egg-laying) cyprinodontiform fish, including families Aplocheilidae, Pantanodontidae, Cyprinodontidae, Fundulidae, Nothobranchiidae, Profundulidae...",
+        "Bears are carnivoran mammals of the family Ursidae.",
+        "The spectacled bear, also known as the Andean bear, is a species of bear native to the Andes..."
+      ],
+      "answer": 0,
+      "explanation": "Bioluminescence is the production of light by an organism as the result of a chemiluminescence reaction. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Vole.",
+      "options": [
+        "Voles are small rodents that are relatives of lemmings and hamsters, but with a stouter body; a longer...",
+        "The eastern cougar or eastern puma is a subspecies designation proposed in 1946 for cougar populations in eastern...",
+        "Thomas was a goose who lived at the Waimanu Lagoons in Waikanae Beach, in the Kāpiti Coast District...",
+        "Manta rays are large rays belonging to the genus Mobula."
+      ],
+      "answer": 0,
+      "explanation": "Voles are small rodents that are relatives of lemmings and hamsters, but with a stouter body; a longer... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Ocean acidification?",
+      "options": [
+        "Ocean acidification is the ongoing decrease in the pH of the Earth's ocean.",
+        "Maple, Zayu, and Clutch are the official mascots of the 2026 FIFA World Cup held in the United...",
+        "Demersal fish, also known as groundfish, live and feed on or near the bottom of seas or lakes.",
+        "Dunbar's number is a suggested cognitive limit to the number of people with whom one can maintain stable..."
+      ],
+      "answer": 0,
+      "explanation": "Ocean acidification is the ongoing decrease in the pH of the Earth's ocean. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Bali tiger.",
+      "options": [
+        "The Javan leopard is a leopard subspecies confined to the Indonesian island of Java.",
+        "Anchovies are small, common forage fish of the family Engraulidae.",
+        "Zooplankton are the heterotrophic component of the planktonic community, having to consume other organisms to thrive.",
+        "The Bali tiger was a Panthera tigris sondaica population on the Indonesian island of Bali which has been..."
+      ],
+      "answer": 3,
+      "explanation": "The Bali tiger was a Panthera tigris sondaica population on the Indonesian island of Bali which has been... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Midge?",
+      "options": [
+        "A midge is any small fly, including species in several families of non-mosquito nematoceran Diptera.",
+        "The difficulty of defining or measuring intelligence in non-human animals makes the question of avian intelligence resistant to...",
+        "An otolith, also called otoconium, statolith, or statoconium, is a calcium carbonate structure in the saccule or utricle...",
+        "Sauropsida is a clade of amniotes, broadly equivalent to the class Reptilia, though typically used in a broader..."
+      ],
+      "answer": 0,
+      "explanation": "A midge is any small fly, including species in several families of non-mosquito nematoceran Diptera. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Frilled lizard?",
+      "options": [
+        "Bear spray is a specific aerosol spray bear deterrent, whose active ingredients are the potent irritant capsaicin and...",
+        "The frilled lizard, also known commonly as the frilled agama, frillneck lizard, frill-necked lizard or frilled dragon, is...",
+        "A compound eye is a visual organ found in arthropods such as insects and crustaceans.",
+        "Cetacean intelligence is the overall intelligence and derived cognitive ability of aquatic mammals belonging in the infraorder Cetacea..."
+      ],
+      "answer": 1,
+      "explanation": "The frilled lizard, also known commonly as the frilled agama, frillneck lizard, frill-necked lizard or frilled dragon, is... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Trout?",
+      "options": [
+        "Pelagic fish live in the pelagic zone of ocean or lake waters—being neither close to the bottom nor...",
+        "The snow leopard is a species of large cat in the genus Panthera of the family Felidae.",
+        "Phytoplankton are the autotrophic (self-feeding) components of the plankton community and a key part of ocean and freshwater...",
+        "Trout is a generic common name for numerous species of carnivorous freshwater fishes belonging to the genera Oncorhynchus..."
+      ],
+      "answer": 3,
+      "explanation": "Trout is a generic common name for numerous species of carnivorous freshwater fishes belonging to the genera Oncorhynchus... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Javan tiger?",
+      "options": [
+        "Foxes are small-to-medium-sized omnivorous mammals belonging to several genera of the family Canidae.",
+        "Masha and the Bear is a Russian preschool comedy animated television series created by Oleg Kuzovkov and produced...",
+        "Tilapia is the common name for nearly a hundred species of cichlid fish from the coelotilapine, coptodonine, heterotilapine...",
+        "The Javan tiger was a Panthera tigris sondaica population native to the Indonesian island of Java."
+      ],
+      "answer": 3,
+      "explanation": "The Javan tiger was a Panthera tigris sondaica population native to the Indonesian island of Java. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Sloth bear?",
+      "options": [
+        "Clothes moth or clothing moth is the common name for several species of moth considered to be pests...",
+        "In the deep ocean, marine snow is a continuous shower of mostly organic detritus falling from the upper...",
+        "The sloth bear, also known as the Indian bear, is a myrmecophagous bear species native to the Indian...",
+        "Sharks are a group of elasmobranch cartilaginous fishes characterized by a ribless endoskeleton, dermal denticles, five to seven..."
+      ],
+      "answer": 2,
+      "explanation": "The sloth bear, also known as the Indian bear, is a myrmecophagous bear species native to the Indian... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Marine snow?",
+      "options": [
+        "In the deep ocean, marine snow is a continuous shower of mostly organic detritus falling from the upper...",
+        "The housefly is a fly of the suborder Cyclorrhapha.",
+        "A killifish is any of various oviparous (egg-laying) cyprinodontiform fish, including families Aplocheilidae, Pantanodontidae, Cyprinodontidae, Fundulidae, Nothobranchiidae, Profundulidae...",
+        "A teat is the projection from the mammary glands of mammals from which milk flows or is ejected..."
+      ],
+      "answer": 0,
+      "explanation": "In the deep ocean, marine snow is a continuous shower of mostly organic detritus falling from the upper... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Stingless bee?",
+      "options": [
+        "Cetacean intelligence is the overall intelligence and derived cognitive ability of aquatic mammals belonging in the infraorder Cetacea...",
+        "Stingless bees (SB), sometimes called stingless honey bees or simply meliponines, are a large group of bees, comprising...",
+        "Fish migration is mass relocation by fish from one area or body of water to another.",
+        "A gnat is any of many species of tiny flying insects in the dipterid suborder Nematocera, especially those..."
+      ],
+      "answer": 1,
+      "explanation": "Stingless bees (SB), sometimes called stingless honey bees or simply meliponines, are a large group of bees, comprising... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Cricket (insect)?",
+      "options": [
+        "The tokay gecko is a nocturnal arboreal gecko in the genus Gekko, the true geckos.",
+        "Crickets are orthopteran insects which are related to bush crickets and, more distantly, to grasshoppers.",
+        "The cheetah is a species of large feline and the only living member of the genus Acinonyx.",
+        "The South China tiger is a population of the Panthera tigris tigris subspecies that is native to southern..."
+      ],
+      "answer": 1,
+      "explanation": "Crickets are orthopteran insects which are related to bush crickets and, more distantly, to grasshoppers. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Whitefish (fisheries term)?",
+      "options": [
+        "Herring are various species of forage fish, belonging to the order Clupeiformes.",
+        "Toad is a generic common name for certain groups of frogs, especially those of the family Bufonidae, that...",
+        "Whitefish or white fish is a fisheries term for several species of demersal fish with fins, particularly Atlantic...",
+        "Maple, Zayu, and Clutch are the official mascots of the 2026 FIFA World Cup held in the United..."
+      ],
+      "answer": 2,
+      "explanation": "Whitefish or white fish is a fisheries term for several species of demersal fish with fins, particularly Atlantic... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Ibex?",
+      "options": [
+        "An ibex, is any of several species of wild goat, distinguished by the male's large curved horns, which...",
+        "Porcupines are large rodents with coats of sharp spines, or quills, that protect them against predators.",
+        "Reptiles, as commonly defined, are tetrapod vertebrate animals with an ectothermic metabolism and amniotic development.",
+        "Armadillos are placental mammals in the order Cingulata."
+      ],
+      "answer": 0,
+      "explanation": "An ibex, is any of several species of wild goat, distinguished by the male's large curved horns, which... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Bird migration?",
+      "options": [
+        "Bird migration is a seasonal movement of some birds between breeding and wintering grounds that occurs twice a...",
+        "The coat of arms of the Danish Realm has a lesser and a greater version.",
+        "The nipple is a raised region of tissue on the surface of the breast from which, in lactating...",
+        "Clothes moth or clothing moth is the common name for several species of moth considered to be pests..."
+      ],
+      "answer": 0,
+      "explanation": "Bird migration is a seasonal movement of some birds between breeding and wintering grounds that occurs twice a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Minnow?",
+      "options": [
+        "Sharks are a group of elasmobranch cartilaginous fishes characterized by a ribless endoskeleton, dermal denticles, five to seven...",
+        "Minnow is the common name for a number of species of small freshwater fish, belonging to several genera...",
+        "A seamount is a large submarine landform that rises from the ocean floor without reaching the water surface...",
+        "The tigon is a hybrid offspring of a male tiger and a female lion, or lioness."
+      ],
+      "answer": 1,
+      "explanation": "Minnow is the common name for a number of species of small freshwater fish, belonging to several genera... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Clothes moth?",
+      "options": [
+        "Clothes moth or clothing moth is the common name for several species of moth considered to be pests...",
+        "Bookworm is a general name for any insect that is said to bore through books.",
+        "The veiled chameleon is a species of chameleon native to the Arabian Peninsula in Yemen and Saudi Arabia.",
+        "A paw is the soft foot-like part of a mammal, generally a quadruped, that has claws."
+      ],
+      "answer": 0,
+      "explanation": "Clothes moth or clothing moth is the common name for several species of moth considered to be pests... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Paw?",
+      "options": [
+        "Masha and the Bear is a Russian preschool comedy animated television series created by Oleg Kuzovkov and produced...",
+        "Bioluminescence is the production of light by an organism as the result of a chemiluminescence reaction.",
+        "A salmon run is an annual fish migration event where many salmonid species, which are typically hatched in...",
+        "A paw is the soft foot-like part of a mammal, generally a quadruped, that has claws."
+      ],
+      "answer": 3,
+      "explanation": "A paw is the soft foot-like part of a mammal, generally a quadruped, that has claws. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Phytoplankton?",
+      "options": [
+        "Phytoplankton are the autotrophic (self-feeding) components of the plankton community and a key part of ocean and freshwater...",
+        "An ibex, is any of several species of wild goat, distinguished by the male's large curved horns, which...",
+        "Reptiles, as commonly defined, are tetrapod vertebrate animals with an ectothermic metabolism and amniotic development.",
+        "The housefly is a fly of the suborder Cyclorrhapha."
+      ],
+      "answer": 0,
+      "explanation": "Phytoplankton are the autotrophic (self-feeding) components of the plankton community and a key part of ocean and freshwater... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Bird?",
+      "options": [
+        "Fowl are birds belonging to one of two biological orders, namely the gamefowl or landfowl (Galliformes) and the...",
+        "The benthic zone, from Ancient Greek βένθος (bénthos) 'the depths of the ocean', is the ecological region at...",
+        "Birds are a group of warm-blooded vertebrate animals constituting the class Aves, characterised by feathers, toothless beaked jaws...",
+        "The Javan leopard is a leopard subspecies confined to the Indonesian island of Java."
+      ],
+      "answer": 2,
+      "explanation": "Birds are a group of warm-blooded vertebrate animals constituting the class Aves, characterised by feathers, toothless beaked jaws... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about African leopard.",
+      "options": [
+        "The African leopard is the nominate subspecies of the leopard, native to Africa.",
+        "Locusts are various species of short-horned grasshoppers in the family Acrididae that have a swarming phase.",
+        "Marine life, which is also known as sea life or ocean life, refers to all the marine organisms...",
+        "Yellowjacket or yellow jacket is the common name in North America for predatory social wasps of the genera..."
+      ],
+      "answer": 0,
+      "explanation": "The African leopard is the nominate subspecies of the leopard, native to Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Red mullet.",
+      "options": [
+        "The red mullets or surmullets are two species of goatfish, Mullus barbatus and Mullus surmuletus, found in the...",
+        "A killifish is any of various oviparous (egg-laying) cyprinodontiform fish, including families Aplocheilidae, Pantanodontidae, Cyprinodontidae, Fundulidae, Nothobranchiidae, Profundulidae...",
+        "Sooty is a British children's television media franchise created by Harry Corbett incorporating primarily television and stage shows.",
+        "An otolith, also called otoconium, statolith, or statoconium, is a calcium carbonate structure in the saccule or utricle..."
+      ],
+      "answer": 0,
+      "explanation": "The red mullets or surmullets are two species of goatfish, Mullus barbatus and Mullus surmuletus, found in the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Ocean gyre.",
+      "options": [
+        "Pelagic fish live in the pelagic zone of ocean or lake waters—being neither close to the bottom nor...",
+        "The coat of arms of the Danish Realm has a lesser and a greater version.",
+        "The table contains a list of the largest living birds in the world by wingspan, at maximum, assumed...",
+        "In oceanography, a gyre is a large system of ocean surface currents moving in a circular fashion driven..."
+      ],
+      "answer": 3,
+      "explanation": "In oceanography, a gyre is a large system of ocean surface currents moving in a circular fashion driven... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Maple, Zayu and Clutch?",
+      "options": [
+        "Marine life, which is also known as sea life or ocean life, refers to all the marine organisms...",
+        "Clothes moth or clothing moth is the common name for several species of moth considered to be pests...",
+        "Sharks are a group of elasmobranch cartilaginous fishes characterized by a ribless endoskeleton, dermal denticles, five to seven...",
+        "Maple, Zayu, and Clutch are the official mascots of the 2026 FIFA World Cup held in the United..."
+      ],
+      "answer": 3,
+      "explanation": "Maple, Zayu, and Clutch are the official mascots of the 2026 FIFA World Cup held in the United... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Amur leopard?",
+      "options": [
+        "The philtrum or medial cleft is a vertical indentation in the middle area of the upper lip, common...",
+        "The common cockchafer, also colloquially known as the Maybug, Maybeetle, or doodlebug, is a species of scarab beetle...",
+        "Sardine and pilchard are common names for various species of small, oily forage fish in the herring suborder...",
+        "The Amur leopard is a leopard subspecies native to the Primorye region of southeastern Russia and northern China."
+      ],
+      "answer": 3,
+      "explanation": "The Amur leopard is a leopard subspecies native to the Primorye region of southeastern Russia and northern China. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Fish scale.",
+      "options": [
+        "A dolphin is any one of the 40 extant species of aquatic mammal from the cetacean families Delphinidae...",
+        "Minnow is the common name for a number of species of small freshwater fish, belonging to several genera...",
+        "A fish scale is a small rigid plate that grows out of the skin of a fish.",
+        "The history of lions in Europe is part of the wider history of the lion species complex."
+      ],
+      "answer": 2,
+      "explanation": "A fish scale is a small rigid plate that grows out of the skin of a fish. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Otolith.",
+      "options": [
+        "The frilled lizard, also known commonly as the frilled agama, frillneck lizard, frill-necked lizard or frilled dragon, is...",
+        "Reptiles, as commonly defined, are tetrapod vertebrate animals with an ectothermic metabolism and amniotic development.",
+        "An otolith, also called otoconium, statolith, or statoconium, is a calcium carbonate structure in the saccule or utricle...",
+        "The South China tiger is a population of the Panthera tigris tigris subspecies that is native to southern..."
+      ],
+      "answer": 2,
+      "explanation": "An otolith, also called otoconium, statolith, or statoconium, is a calcium carbonate structure in the saccule or utricle... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Bookworm (insect).",
+      "options": [
+        "Deep-sea fish are fish that live in the darkness below the sunlit surface waters, that is below the...",
+        "The Bali tiger was a Panthera tigris sondaica population on the Indonesian island of Bali which has been...",
+        "Bookworm is a general name for any insect that is said to bore through books.",
+        "Splooting is lying in a spread-legged, prone posture."
+      ],
+      "answer": 2,
+      "explanation": "Bookworm is a general name for any insect that is said to bore through books. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Sea lion?",
+      "options": [
+        "Swarm behaviour, or swarming, is a collective behaviour exhibited by entities, particularly animals, of similar size which aggregate...",
+        "Porcupines are large rodents with coats of sharp spines, or quills, that protect them against predators.",
+        "Sea lions are pinnipeds characterized by external ear flaps, long foreflippers, the ability to walk on all fours...",
+        "The Bali tiger was a Panthera tigris sondaica population on the Indonesian island of Bali which has been..."
+      ],
+      "answer": 2,
+      "explanation": "Sea lions are pinnipeds characterized by external ear flaps, long foreflippers, the ability to walk on all fours... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Fish migration.",
+      "options": [
+        "The common cockchafer, also colloquially known as the Maybug, Maybeetle, or doodlebug, is a species of scarab beetle...",
+        "Fish migration is mass relocation by fish from one area or body of water to another.",
+        "Porcupines are large rodents with coats of sharp spines, or quills, that protect them against predators.",
+        "The sloth bear, also known as the Indian bear, is a myrmecophagous bear species native to the Indian..."
+      ],
+      "answer": 1,
+      "explanation": "Fish migration is mass relocation by fish from one area or body of water to another. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Flounder.",
+      "options": [
+        "Whitefish or white fish is a fisheries term for several species of demersal fish with fins, particularly Atlantic...",
+        "Bookworm is a general name for any insect that is said to bore through books.",
+        "Flounders are a group of flatfish species.",
+        "Porcupines are large rodents with coats of sharp spines, or quills, that protect them against predators."
+      ],
+      "answer": 2,
+      "explanation": "Flounders are a group of flatfish species. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Aurochs?",
+      "options": [
+        "Halibut is the common name for three species of flatfish in the family of right-eye flounders.",
+        "The aurochs is an extinct species of bovine, considered to be the wild ancestor of modern domestic cattle.",
+        "The Bali tiger was a Panthera tigris sondaica population on the Indonesian island of Bali which has been...",
+        "The eastern cougar or eastern puma is a subspecies designation proposed in 1946 for cougar populations in eastern..."
+      ],
+      "answer": 1,
+      "explanation": "The aurochs is an extinct species of bovine, considered to be the wild ancestor of modern domestic cattle. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Arctotherium?",
+      "options": [
+        "Herring are various species of forage fish, belonging to the order Clupeiformes.",
+        "The eastern cougar or eastern puma is a subspecies designation proposed in 1946 for cougar populations in eastern...",
+        "Arctotherium is an extinct genus of short-faced bears endemic to Central and South America from the Late Pliocene...",
+        "Whitefish or white fish is a fisheries term for several species of demersal fish with fins, particularly Atlantic..."
+      ],
+      "answer": 2,
+      "explanation": "Arctotherium is an extinct genus of short-faced bears endemic to Central and South America from the Late Pliocene... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Hoof?",
+      "options": [
+        "The hoof is the tip of a toe of an ungulate mammal, which is covered and strengthened with...",
+        "A compound eye is a visual organ found in arthropods such as insects and crustaceans.",
+        "Skunks are mammals in the family Mephitidae.",
+        "The nipple is a raised region of tissue on the surface of the breast from which, in lactating..."
+      ],
+      "answer": 0,
+      "explanation": "The hoof is the tip of a toe of an ungulate mammal, which is covered and strengthened with... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Benthic zone?",
+      "options": [
+        "The eastern cougar or eastern puma is a subspecies designation proposed in 1946 for cougar populations in eastern...",
+        "Freshwater sharks are sharks that live in freshwater environments.",
+        "The benthic zone, from Ancient Greek βένθος (bénthos) 'the depths of the ocean', is the ecological region at...",
+        "The snow leopard is a species of large cat in the genus Panthera of the family Felidae."
+      ],
+      "answer": 2,
+      "explanation": "The benthic zone, from Ancient Greek βένθος (bénthos) 'the depths of the ocean', is the ecological region at... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Dolphin?",
+      "options": [
+        "In the deep ocean, marine snow is a continuous shower of mostly organic detritus falling from the upper...",
+        "A dolphin is any one of the 40 extant species of aquatic mammal from the cetacean families Delphinidae...",
+        "The cohort Polyneoptera is one of the major groups of winged insects, comprising the Orthoptera and all other...",
+        "The Tremarctinae or short-faced bears is a subfamily of Ursidae that contains one living representative, the spectacled bear..."
+      ],
+      "answer": 1,
+      "explanation": "A dolphin is any one of the 40 extant species of aquatic mammal from the cetacean families Delphinidae... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Anchovy?",
+      "options": [
+        "Toad is a generic common name for certain groups of frogs, especially those of the family Bufonidae, that...",
+        "Anchovies are small, common forage fish of the family Engraulidae.",
+        "A tadpole or polliwog is the larval stage in the biological life cycle of an amphibian.",
+        "The nipple is a raised region of tissue on the surface of the breast from which, in lactating..."
+      ],
+      "answer": 1,
+      "explanation": "Anchovies are small, common forage fish of the family Engraulidae. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Freshwater shark?",
+      "options": [
+        "A mezcal worm is an insect larva found in some types of mezcal produced in Oaxaca, Mexico.",
+        "The sloth bear, also known as the Indian bear, is a myrmecophagous bear species native to the Indian...",
+        "Freshwater sharks are sharks that live in freshwater environments.",
+        "Whitefish or white fish is a fisheries term for several species of demersal fish with fins, particularly Atlantic..."
+      ],
+      "answer": 2,
+      "explanation": "Freshwater sharks are sharks that live in freshwater environments. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Compound eye?",
+      "options": [
+        "The Atlas bear or North African bear is an extinct population of brown bears native to North Africa...",
+        "A compound eye is a visual organ found in arthropods such as insects and crustaceans.",
+        "Armadillos are placental mammals in the order Cingulata.",
+        "The sloth bear, also known as the Indian bear, is a myrmecophagous bear species native to the Indian..."
+      ],
+      "answer": 1,
+      "explanation": "A compound eye is a visual organ found in arthropods such as insects and crustaceans. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Tadpole?",
+      "options": [
+        "The Bali tiger was a Panthera tigris sondaica population on the Indonesian island of Bali which has been...",
+        "A tadpole or polliwog is the larval stage in the biological life cycle of an amphibian.",
+        "Bioluminescence is the production of light by an organism as the result of a chemiluminescence reaction.",
+        "Dung beetles are beetles that feed on feces."
+      ],
+      "answer": 1,
+      "explanation": "A tadpole or polliwog is the larval stage in the biological life cycle of an amphibian. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Jackal?",
+      "options": [
+        "A grizzly–polar-bear hybrid is a rare ursid hybrid that has occurred both in captivity and in the wild.",
+        "A teat is the projection from the mammary glands of mammals from which milk flows or is ejected...",
+        "Jackals are canids native to Africa and Eurasia.",
+        "Minnow is the common name for a number of species of small freshwater fish, belonging to several genera..."
+      ],
+      "answer": 2,
+      "explanation": "Jackals are canids native to Africa and Eurasia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Veiled chameleon?",
+      "options": [
+        "The liger is a hybrid offspring of a male lion and a tigress, or female tiger.",
+        "The veiled chameleon is a species of chameleon native to the Arabian Peninsula in Yemen and Saudi Arabia.",
+        "Red seabream is a name given to at least two species of fish of the family Sparidae:Pagrus major...",
+        "Polecat is a common name for several cat-like mustelid species in the subfamilies Ictonychinae and Mustelinae."
+      ],
+      "answer": 1,
+      "explanation": "The veiled chameleon is a species of chameleon native to the Arabian Peninsula in Yemen and Saudi Arabia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Pelagic fish?",
+      "options": [
+        "The South China tiger is a population of the Panthera tigris tigris subspecies that is native to southern...",
+        "The history of lions in Europe is part of the wider history of the lion species complex.",
+        "Pelagic fish live in the pelagic zone of ocean or lake waters—being neither close to the bottom nor...",
+        "Crickets are orthopteran insects which are related to bush crickets and, more distantly, to grasshoppers."
+      ],
+      "answer": 2,
+      "explanation": "Pelagic fish live in the pelagic zone of ocean or lake waters—being neither close to the bottom nor... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Gnat?",
+      "options": [
+        "Maple, Zayu, and Clutch are the official mascots of the 2026 FIFA World Cup held in the United...",
+        "A gnat is any of many species of tiny flying insects in the dipterid suborder Nematocera, especially those...",
+        "A number of Actinopterygiian fish have been given the common name whiting.",
+        "Bear spray is a specific aerosol spray bear deterrent, whose active ingredients are the potent irritant capsaicin and..."
+      ],
+      "answer": 1,
+      "explanation": "A gnat is any of many species of tiny flying insects in the dipterid suborder Nematocera, especially those... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Bird intelligence?",
+      "options": [
+        "Sardine and pilchard are common names for various species of small, oily forage fish in the herring suborder...",
+        "Deep-sea fish are fish that live in the darkness below the sunlit surface waters, that is below the...",
+        "The difficulty of defining or measuring intelligence in non-human animals makes the question of avian intelligence resistant to...",
+        "A mezcal worm is an insect larva found in some types of mezcal produced in Oaxaca, Mexico."
+      ],
+      "answer": 2,
+      "explanation": "The difficulty of defining or measuring intelligence in non-human animals makes the question of avian intelligence resistant to... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about History of lions in Europe.",
+      "options": [
+        "Fish migration is mass relocation by fish from one area or body of water to another.",
+        "The common cockchafer, also colloquially known as the Maybug, Maybeetle, or doodlebug, is a species of scarab beetle...",
+        "The benthic zone, from Ancient Greek βένθος (bénthos) 'the depths of the ocean', is the ecological region at...",
+        "The history of lions in Europe is part of the wider history of the lion species complex."
+      ],
+      "answer": 3,
+      "explanation": "The history of lions in Europe is part of the wider history of the lion species complex. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Tiger attack?",
+      "options": [
+        "Tiger attacks are a form of human–wildlife conflict which have killed more humans than attacks by any of...",
+        "The spectacled bear, also known as the Andean bear, is a species of bear native to the Andes...",
+        "Jackals are canids native to Africa and Eurasia.",
+        "The Zanzibar leopard is an African leopard population on Unguja Island in the Zanzibar archipelago, Tanzania, that is..."
+      ],
+      "answer": 0,
+      "explanation": "Tiger attacks are a form of human–wildlife conflict which have killed more humans than attacks by any of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Tent caterpillar?",
+      "options": [
+        "Bear spray is a specific aerosol spray bear deterrent, whose active ingredients are the potent irritant capsaicin and...",
+        "Birds are a group of warm-blooded vertebrate animals constituting the class Aves, characterised by feathers, toothless beaked jaws...",
+        "Sooty is a British children's television media franchise created by Harry Corbett incorporating primarily television and stage shows.",
+        "Tent caterpillars are moderately sized caterpillars, or moth larvae, belonging to the genus Malacosoma in the family Lasiocampidae."
+      ],
+      "answer": 3,
+      "explanation": "Tent caterpillars are moderately sized caterpillars, or moth larvae, belonging to the genus Malacosoma in the family Lasiocampidae. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Humboldt Current?",
+      "options": [
+        "Bears are carnivoran mammals of the family Ursidae.",
+        "Quail is a collective name for several genera of mid-sized birds generally placed in the order Galliformes.",
+        "A tadpole or polliwog is the larval stage in the biological life cycle of an amphibian.",
+        "The Humboldt Current, also called the Peru Current, is a cold, low-salinity ocean current that flows north along..."
+      ],
+      "answer": 3,
+      "explanation": "The Humboldt Current, also called the Peru Current, is a cold, low-salinity ocean current that flows north along... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Army ant?",
+      "options": [
+        "The nipple is a raised region of tissue on the surface of the breast from which, in lactating...",
+        "The name army ant (or legionary ant or marabunta) is applied to over 200 ant species in different...",
+        "Quail is a collective name for several genera of mid-sized birds generally placed in the order Galliformes.",
+        "Bombardier beetles are adephagan ground beetles (Carabidae) in the Brachininae or Paussinae subfamilies—more than 500 species altogether—which are..."
+      ],
+      "answer": 1,
+      "explanation": "The name army ant (or legionary ant or marabunta) is applied to over 200 ant species in different... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Polyneoptera?",
+      "options": [
+        "Mink are dark-coloured, semiaquatic, carnivorous mammals in the genera Mustela and Neogale and part of the family Mustelidae...",
+        "The cohort Polyneoptera is one of the major groups of winged insects, comprising the Orthoptera and all other...",
+        "Elephants are the largest living land animals.",
+        "Toad is a generic common name for certain groups of frogs, especially those of the family Bufonidae, that..."
+      ],
+      "answer": 1,
+      "explanation": "The cohort Polyneoptera is one of the major groups of winged insects, comprising the Orthoptera and all other... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Fledge?",
+      "options": [
+        "Fledging is the stage in a flying animal's life between hatching or birth and becoming capable of flight.",
+        "Manta rays are large rays belonging to the genus Mobula.",
+        "Demersal fish, also known as groundfish, live and feed on or near the bottom of seas or lakes.",
+        "Asian carp is a term that groups together several species of carp native to Eurasia, commonly referring to..."
+      ],
+      "answer": 0,
+      "explanation": "Fledging is the stage in a flying animal's life between hatching or birth and becoming capable of flight. (from Wikipedia)",
+      "image_keyword": null
+    }
+  ],
+  "countries": [
+    {
+      "question": "What do we know about Cuba?",
+      "options": [
+        "Japan is an island country in East Asia.",
+        "Poland, officially the Republic of Poland, is a country in Central Europe.",
+        "Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia.",
+        "Cuba, officially the Republic of Cuba, is an island country in the Caribbean."
+      ],
+      "answer": 3,
+      "explanation": "Cuba, officially the Republic of Cuba, is an island country in the Caribbean. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Guinea-Bissau?",
+      "options": [
+        "Montenegro is a country in Southeast Europe, on the Balkan Peninsula.",
+        "Guinea-Bissau, officially the Republic of Guinea-Bissau, is a country in West Africa that covers 36,125 square kilometres (13,948...",
+        "Venezuela, officially the Bolivarian Republic of Venezuela, is a country on the northern coast of South America, consisting...",
+        "Burundi, officially the Republic of Burundi, is a landlocked country in East Africa."
+      ],
+      "answer": 1,
+      "explanation": "Guinea-Bissau, officially the Republic of Guinea-Bissau, is a country in West Africa that covers 36,125 square kilometres (13,948... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Poland?",
+      "options": [
+        "Libya, officially the State of Libya, is a country in the Maghreb region of North Africa.",
+        "The Democratic Republic of the Congo (DRC), also known as the DR Congo, Congo-Kinshasa, or simply the Congo...",
+        "Poland, officially the Republic of Poland, is a country in Central Europe.",
+        "Slovenia, officially the Republic of Slovenia, is a country in Central Europe."
+      ],
+      "answer": 2,
+      "explanation": "Poland, officially the Republic of Poland, is a country in Central Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Cape Verde.",
+      "options": [
+        "Zimbabwe, officially the Republic of Zimbabwe, is a landlocked country in Southeast Africa, between the Zambezi and Limpopo...",
+        "Cape Verde, also referred to in English by its Portuguese name Cabo Verde, and known officially as the...",
+        "The Democratic Republic of the Congo (DRC), also known as the DR Congo, Congo-Kinshasa, or simply the Congo...",
+        "Turkey, officially the Republic of Türkiye, is a country mainly located in Anatolia in West Asia, with a..."
+      ],
+      "answer": 1,
+      "explanation": "Cape Verde, also referred to in English by its Portuguese name Cabo Verde, and known officially as the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Canada?",
+      "options": [
+        "Zambia, officially the Republic of Zambia, is a landlocked country in Southern Africa.",
+        "Singapore, officially the Republic of Singapore, is an island country in Southeast Asia.",
+        "Ethiopia, officially the Federal Democratic Republic of Ethiopia (FDRE), is a landlocked country located in the Horn of...",
+        "Canada is a country in North America."
+      ],
+      "answer": 3,
+      "explanation": "Canada is a country in North America. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Kenya?",
+      "options": [
+        "Slovenia, officially the Republic of Slovenia, is a country in Central Europe.",
+        "Kenya, officially the Republic of Kenya, is a country located in East Africa.",
+        "Tunisia, officially the Republic of Tunisia, is a country in the Maghreb region of North Africa.",
+        "Romania is a country in Central and Southeastern Europe."
+      ],
+      "answer": 1,
+      "explanation": "Kenya, officially the Republic of Kenya, is a country located in East Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Burundi?",
+      "options": [
+        "Mozambique, officially the Republic of Mozambique, is a country in Southeast Africa bordered by the Indian Ocean to...",
+        "Eritrea, officially the State of Eritrea, is a country in the Horn of Africa region of East Africa.",
+        "Burundi, officially the Republic of Burundi, is a landlocked country in East Africa.",
+        "Libya, officially the State of Libya, is a country in the Maghreb region of North Africa."
+      ],
+      "answer": 2,
+      "explanation": "Burundi, officially the Republic of Burundi, is a landlocked country in East Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Bhutan?",
+      "options": [
+        "Croatia, officially the Republic of Croatia, is a country in Central and Southeast Europe, on the coast of...",
+        "Brazil, officially the Federative Republic of Brazil, is the largest country in South America.",
+        "Mexico, officially the United Mexican States, is a country in North America.",
+        "Bhutan, officially the Kingdom of Bhutan, is a landlocked country in South Asia, located in the Eastern Himalayas..."
+      ],
+      "answer": 3,
+      "explanation": "Bhutan, officially the Kingdom of Bhutan, is a landlocked country in South Asia, located in the Eastern Himalayas... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Albania?",
+      "options": [
+        "Mauritius, officially the Republic of Mauritius, is an island country in the Indian Ocean, located about 1,100 nautical...",
+        "Rwanda, officially the Republic of Rwanda, is a landlocked country in East Africa.",
+        "Albania, officially the Republic of Albania, is a country in Southeast Europe.",
+        "Djibouti, officially the Republic of Djibouti, is a country in the Horn of Africa, bordered by Somalia to..."
+      ],
+      "answer": 2,
+      "explanation": "Albania, officially the Republic of Albania, is a country in Southeast Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Maldives?",
+      "options": [
+        "The Maldives, officially the Republic of Maldives, and historically known as the Maldive Islands, is an archipelagic country...",
+        "Venezuela, officially the Bolivarian Republic of Venezuela, is a country on the northern coast of South America, consisting...",
+        "The Marshall Islands, officially the Republic of the Marshall Islands, is an archipelagic country in Oceania.",
+        "The United States of America (USA), also known as the United States (U.S.) or America, is a country..."
+      ],
+      "answer": 0,
+      "explanation": "The Maldives, officially the Republic of Maldives, and historically known as the Maldive Islands, is an archipelagic country... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Rwanda?",
+      "options": [
+        "Mali, officially the Republic of Mali, is a landlocked country in West Africa.",
+        "Rwanda, officially the Republic of Rwanda, is a landlocked country in East Africa.",
+        "Zimbabwe, officially the Republic of Zimbabwe, is a landlocked country in Southeast Africa, between the Zambezi and Limpopo...",
+        "Croatia, officially the Republic of Croatia, is a country in Central and Southeast Europe, on the coast of..."
+      ],
+      "answer": 1,
+      "explanation": "Rwanda, officially the Republic of Rwanda, is a landlocked country in East Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about San Marino?",
+      "options": [
+        "San Marino, officially the Republic of San Marino (RSM), is a landlocked country in Southern Europe, completely surrounded...",
+        "Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia.",
+        "Uruguay, officially the Oriental Republic of Uruguay, is a country in South America.",
+        "New Zealand is an island country in the southwestern Pacific Ocean."
+      ],
+      "answer": 0,
+      "explanation": "San Marino, officially the Republic of San Marino (RSM), is a landlocked country in Southern Europe, completely surrounded... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Belize?",
+      "options": [
+        "Belize is a country on the north-eastern coast of Central America.",
+        "Ivory Coast, also known as Côte d'Ivoire and officially as the Republic of Côte d'Ivoire, is a country...",
+        "North Korea, officially the Democratic People's Republic of Korea (DPRK), is a country in East Asia.",
+        "Armenia, officially the Republic of Armenia, is a landlocked country in the Armenian highlands of West Asia."
+      ],
+      "answer": 0,
+      "explanation": "Belize is a country on the north-eastern coast of Central America. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Montenegro.",
+      "options": [
+        "Barbados is an island nation in the Caribbean located in the Atlantic Ocean.",
+        "Solomon Islands, also known simply as the Solomons, is an archipelagic country consisting of six major islands and...",
+        "The Maldives, officially the Republic of Maldives, and historically known as the Maldive Islands, is an archipelagic country...",
+        "Montenegro is a country in Southeast Europe, on the Balkan Peninsula."
+      ],
+      "answer": 3,
+      "explanation": "Montenegro is a country in Southeast Europe, on the Balkan Peninsula. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Honduras?",
+      "options": [
+        "Honduras, officially the Republic of Honduras, is a country in Central America.",
+        "Denmark is a Nordic country in Northern Europe.",
+        "The Bahamas, officially the Commonwealth of The Bahamas, is an archipelagic country in the Caribbean located within the...",
+        "Russia, or the Russian Federation, is a country in Eastern Europe and North Asia."
+      ],
+      "answer": 0,
+      "explanation": "Honduras, officially the Republic of Honduras, is a country in Central America. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Bosnia and Herzegovina?",
+      "options": [
+        "Oman, officially the Sultanate of Oman, is a country in the southeastern Arabian Peninsula in West Asia.",
+        "Kiribati, officially the Republic of Kiribati, is an archipelagic country spanning the Micronesia and Polynesia sub-regions of Oceania...",
+        "Bosnia and Herzegovina, often referred to as Bosnia-Herzegovina or simply Bosnia, is a country in Southeast Europe.",
+        "Mali, officially the Republic of Mali, is a landlocked country in West Africa."
+      ],
+      "answer": 2,
+      "explanation": "Bosnia and Herzegovina, often referred to as Bosnia-Herzegovina or simply Bosnia, is a country in Southeast Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Kiribati?",
+      "options": [
+        "Kiribati, officially the Republic of Kiribati, is an archipelagic country spanning the Micronesia and Polynesia sub-regions of Oceania...",
+        "Estonia, officially the Republic of Estonia, is a country in the Baltic region of Northern Europe.",
+        "Austria, formally the Republic of Austria, is a landlocked country in Central Europe, lying in the Eastern Alps.",
+        "Tanzania, officially the United Republic of Tanzania, is a country in East Africa within the African Great Lakes..."
+      ],
+      "answer": 0,
+      "explanation": "Kiribati, officially the Republic of Kiribati, is an archipelagic country spanning the Micronesia and Polynesia sub-regions of Oceania... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Georgia (country)?",
+      "options": [
+        "Mali, officially the Republic of Mali, is a landlocked country in West Africa.",
+        "Tunisia, officially the Republic of Tunisia, is a country in the Maghreb region of North Africa.",
+        "Georgia is a country in the Caucasus region on the coast of the Black Sea.",
+        "Uzbekistan, officially the Republic of Uzbekistan, is a doubly landlocked country located in Central Asia."
+      ],
+      "answer": 2,
+      "explanation": "Georgia is a country in the Caucasus region on the coast of the Black Sea. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about North Korea.",
+      "options": [
+        "North Korea, officially the Democratic People's Republic of Korea (DPRK), is a country in East Asia.",
+        "The Marshall Islands, officially the Republic of the Marshall Islands, is an archipelagic country in Oceania.",
+        "Sierra Leone, officially the Republic of Sierra Leone, is a country on the west coast of West Africa.",
+        "Morocco, officially the Kingdom of Morocco, is a country in the Maghreb region of North Africa."
+      ],
+      "answer": 0,
+      "explanation": "North Korea, officially the Democratic People's Republic of Korea (DPRK), is a country in East Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Ghana?",
+      "options": [
+        "Burkina Faso is a landlocked country in West Africa.",
+        "Samoa, officially the Independent State of Samoa, is an island country in Polynesia, part of Oceania, in the...",
+        "Ghana, officially the Republic of Ghana, is a country in West Africa.",
+        "Norway, officially the Kingdom of Norway, is a Nordic country comprising the western and northernmost parts of the..."
+      ],
+      "answer": 2,
+      "explanation": "Ghana, officially the Republic of Ghana, is a country in West Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about El Salvador?",
+      "options": [
+        "The Czech Republic, also known as Czechia and historically known as Bohemia, is a landlocked country in Central...",
+        "El Salvador, officially the Republic of El Salvador, is a country in Central America.",
+        "Liechtenstein, officially the Principality of Liechtenstein, is a doubly landlocked country in the Central European Alps.",
+        "Mauritius, officially the Republic of Mauritius, is an island country in the Indian Ocean, located about 1,100 nautical..."
+      ],
+      "answer": 1,
+      "explanation": "El Salvador, officially the Republic of El Salvador, is a country in Central America. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Dominica?",
+      "options": [
+        "The Republic of the Congo, also known as Congo-Brazzaville, the Congo Republic or simply Congo, is a country...",
+        "Dominica, officially the Commonwealth of Dominica, is an island country in the Caribbean.",
+        "Libya, officially the State of Libya, is a country in the Maghreb region of North Africa.",
+        "Guyana, officially the Co-operative Republic of Guyana, is a country on the northern coast of South America."
+      ],
+      "answer": 1,
+      "explanation": "Dominica, officially the Commonwealth of Dominica, is an island country in the Caribbean. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Federated States of Micronesia?",
+      "options": [
+        "The Federated States of Micronesia, or simply Micronesia, is an island country in Micronesia, a region of Oceania.",
+        "Brunei, officially Brunei Darussalam, is a country in Southeast Asia, situated on the northern coast of the island...",
+        "The Maldives, officially the Republic of Maldives, and historically known as the Maldive Islands, is an archipelagic country...",
+        "Armenia, officially the Republic of Armenia, is a landlocked country in the Armenian highlands of West Asia."
+      ],
+      "answer": 0,
+      "explanation": "The Federated States of Micronesia, or simply Micronesia, is an island country in Micronesia, a region of Oceania. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Haiti.",
+      "options": [
+        "Haiti, officially the Republic of Haiti, is a country in the Caribbean on the island of Hispaniola in...",
+        "South Africa, officially the Republic of South Africa (RSA), is the southernmost country in Africa.",
+        "Turkey, officially the Republic of Türkiye, is a country mainly located in Anatolia in West Asia, with a...",
+        "Romania is a country in Central and Southeastern Europe."
+      ],
+      "answer": 0,
+      "explanation": "Haiti, officially the Republic of Haiti, is a country in the Caribbean on the island of Hispaniola in... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about The Gambia?",
+      "options": [
+        "Djibouti, officially the Republic of Djibouti, is a country in the Horn of Africa, bordered by Somalia to...",
+        "The Gambia, officially the Republic of The Gambia, is a country in West Africa.",
+        "Syria, officially the Syrian Arab Republic, is a country in West Asia located in the Eastern Mediterranean and...",
+        "Morocco, officially the Kingdom of Morocco, is a country in the Maghreb region of North Africa."
+      ],
+      "answer": 1,
+      "explanation": "The Gambia, officially the Republic of The Gambia, is a country in West Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Greece?",
+      "options": [
+        "Afghanistan, officially the Islamic Emirate of Afghanistan, is a landlocked country located at the crossroads of Central and...",
+        "Mauritania, officially the Islamic Republic of Mauritania, is a country in the Maghreb region of West Africa.",
+        "Bosnia and Herzegovina, often referred to as Bosnia-Herzegovina or simply Bosnia, is a country in Southeast Europe.",
+        "Greece, officially the Hellenic Republic, is a country of 10 million people on the southern tip of the..."
+      ],
+      "answer": 3,
+      "explanation": "Greece, officially the Hellenic Republic, is a country of 10 million people on the southern tip of the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Turkey?",
+      "options": [
+        "Greece, officially the Hellenic Republic, is a country of 10 million people on the southern tip of the...",
+        "Turkey, officially the Republic of Türkiye, is a country mainly located in Anatolia in West Asia, with a...",
+        "Yemen, officially the Republic of Yemen, is a country in the southern part of West Asia.",
+        "Syria, officially the Syrian Arab Republic, is a country in West Asia located in the Eastern Mediterranean and..."
+      ],
+      "answer": 1,
+      "explanation": "Turkey, officially the Republic of Türkiye, is a country mainly located in Anatolia in West Asia, with a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Tanzania?",
+      "options": [
+        "Bhutan, officially the Kingdom of Bhutan, is a landlocked country in South Asia, located in the Eastern Himalayas...",
+        "Mexico, officially the United Mexican States, is a country in North America.",
+        "Luxembourg, officially the Grand Duchy of Luxembourg, is a landlocked country in Western Europe.",
+        "Tanzania, officially the United Republic of Tanzania, is a country in East Africa within the African Great Lakes..."
+      ],
+      "answer": 3,
+      "explanation": "Tanzania, officially the United Republic of Tanzania, is a country in East Africa within the African Great Lakes... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Senegal?",
+      "options": [
+        "Mozambique, officially the Republic of Mozambique, is a country in Southeast Africa bordered by the Indian Ocean to...",
+        "Myanmar, officially the Republic of the Union of Myanmar and also referred to as Burma, is a country...",
+        "The Dominican Republic is an island country on the eastern part of the Caribbean island of Hispaniola in...",
+        "Senegal, officially the Republic of Senegal, is the westernmost country of mainland West Africa, situated along the Atlantic..."
+      ],
+      "answer": 3,
+      "explanation": "Senegal, officially the Republic of Senegal, is the westernmost country of mainland West Africa, situated along the Atlantic... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Burkina Faso.",
+      "options": [
+        "Togo, officially the Togolese Republic, is a country located in West Africa.",
+        "Burkina Faso is a landlocked country in West Africa.",
+        "Mexico, officially the United Mexican States, is a country in North America.",
+        "South Korea, officially the Republic of Korea (ROK), is a country in East Asia."
+      ],
+      "answer": 1,
+      "explanation": "Burkina Faso is a landlocked country in West Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Mauritania?",
+      "options": [
+        "San Marino, officially the Republic of San Marino (RSM), is a landlocked country in Southern Europe, completely surrounded...",
+        "Venezuela, officially the Bolivarian Republic of Venezuela, is a country on the northern coast of South America, consisting...",
+        "Saudi Arabia, officially the Kingdom of Saudi Arabia (KSA), is a country in West Asia.",
+        "Mauritania, officially the Islamic Republic of Mauritania, is a country in the Maghreb region of West Africa."
+      ],
+      "answer": 3,
+      "explanation": "Mauritania, officially the Islamic Republic of Mauritania, is a country in the Maghreb region of West Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Bahrain?",
+      "options": [
+        "Barbados is an island nation in the Caribbean located in the Atlantic Ocean.",
+        "Canada is a country in North America.",
+        "Bahrain, officially the Kingdom of Bahrain, is an island country in the eastern part of Arabian Peninsula in...",
+        "Bhutan, officially the Kingdom of Bhutan, is a landlocked country in South Asia, located in the Eastern Himalayas..."
+      ],
+      "answer": 2,
+      "explanation": "Bahrain, officially the Kingdom of Bahrain, is an island country in the eastern part of Arabian Peninsula in... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Uruguay?",
+      "options": [
+        "Tuvalu is an archipelagic country in the Polynesian sub-region of Oceania in the Pacific Ocean, about midway between...",
+        "Nicaragua, officially the Republic of Nicaragua, is the geographically largest country in Central America, comprising 130,370 square kilometers...",
+        "Uruguay, officially the Oriental Republic of Uruguay, is a country in South America.",
+        "Jamaica is an island country in the Caribbean, covering 10,991 square kilometres (4,244 sq mi)."
+      ],
+      "answer": 2,
+      "explanation": "Uruguay, officially the Oriental Republic of Uruguay, is a country in South America. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Togo?",
+      "options": [
+        "Samoa, officially the Independent State of Samoa, is an island country in Polynesia, part of Oceania, in the...",
+        "Madagascar, officially the Republic of Madagascar, is an island country in the Indian Ocean that includes the island...",
+        "Bosnia and Herzegovina, often referred to as Bosnia-Herzegovina or simply Bosnia, is a country in Southeast Europe.",
+        "Togo, officially the Togolese Republic, is a country located in West Africa."
+      ],
+      "answer": 3,
+      "explanation": "Togo, officially the Togolese Republic, is a country located in West Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Japan?",
+      "options": [
+        "Thailand, officially the Kingdom of Thailand, and formerly known as Siam, is a country located in Mainland Southeast...",
+        "Kazakhstan, officially the Republic of Kazakhstan, is a landlocked country situated primarily in Central Asia, with a portion...",
+        "Japan is an island country in East Asia.",
+        "Romania is a country in Central and Southeastern Europe."
+      ],
+      "answer": 2,
+      "explanation": "Japan is an island country in East Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Laos?",
+      "options": [
+        "Bhutan, officially the Kingdom of Bhutan, is a landlocked country in South Asia, located in the Eastern Himalayas...",
+        "The United Arab Emirates (UAE), also known simply as the Emirates, is a country in West Asia, situated...",
+        "Laos, officially the Lao People's Democratic Republic (LPDR), is a country in Mainland Southeast Asia, and the only...",
+        "Afghanistan, officially the Islamic Emirate of Afghanistan, is a landlocked country located at the crossroads of Central and..."
+      ],
+      "answer": 2,
+      "explanation": "Laos, officially the Lao People's Democratic Republic (LPDR), is a country in Mainland Southeast Asia, and the only... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Fiji?",
+      "options": [
+        "Ghana, officially the Republic of Ghana, is a country in West Africa.",
+        "Brunei, officially Brunei Darussalam, is a country in Southeast Asia, situated on the northern coast of the island...",
+        "Fiji, officially the Republic of Fiji, is an archipelagic country in Melanesia, part of Oceania in the South...",
+        "Saint Vincent and the Grenadines, sometimes known simply as Saint Vincent, is an archipelagic country in the eastern..."
+      ],
+      "answer": 2,
+      "explanation": "Fiji, officially the Republic of Fiji, is an archipelagic country in Melanesia, part of Oceania in the South... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Estonia?",
+      "options": [
+        "Finland, officially the Republic of Finland, is a Nordic country in Northern Europe.",
+        "France, officially the French Republic, is a country primarily located in Western Europe.",
+        "Estonia, officially the Republic of Estonia, is a country in the Baltic region of Northern Europe.",
+        "Uruguay, officially the Oriental Republic of Uruguay, is a country in South America."
+      ],
+      "answer": 2,
+      "explanation": "Estonia, officially the Republic of Estonia, is a country in the Baltic region of Northern Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Zambia?",
+      "options": [
+        "Zambia, officially the Republic of Zambia, is a landlocked country in Southern Africa.",
+        "Papua New Guinea (PNG), officially the Independent State of Papua New Guinea, is an island country in Oceania...",
+        "Libya, officially the State of Libya, is a country in the Maghreb region of North Africa.",
+        "The Netherlands, also informally known as Holland, is a country in Northwestern Europe, with overseas territories in the..."
+      ],
+      "answer": 0,
+      "explanation": "Zambia, officially the Republic of Zambia, is a landlocked country in Southern Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Papua New Guinea?",
+      "options": [
+        "Switzerland, officially the Swiss Confederation, is a landlocked country located at the intersection of Central, Western, and Southern...",
+        "Ivory Coast, also known as Côte d'Ivoire and officially as the Republic of Côte d'Ivoire, is a country...",
+        "Papua New Guinea (PNG), officially the Independent State of Papua New Guinea, is an island country in Oceania...",
+        "Greece, officially the Hellenic Republic, is a country of 10 million people on the southern tip of the..."
+      ],
+      "answer": 2,
+      "explanation": "Papua New Guinea (PNG), officially the Independent State of Papua New Guinea, is an island country in Oceania... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Moldova?",
+      "options": [
+        "Moldova, officially the Republic of Moldova, is a landlocked country in Eastern Europe, with an area of 33,843...",
+        "Botswana, officially the Republic of Botswana, is a landlocked country in Southern Africa.",
+        "Bulgaria, officially the Republic of Bulgaria, is a country in Southeast Europe.",
+        "Belize is a country on the north-eastern coast of Central America."
+      ],
+      "answer": 0,
+      "explanation": "Moldova, officially the Republic of Moldova, is a landlocked country in Eastern Europe, with an area of 33,843... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Croatia?",
+      "options": [
+        "Croatia, officially the Republic of Croatia, is a country in Central and Southeast Europe, on the coast of...",
+        "Uganda, officially the Republic of Uganda, is a landlocked country in East Africa.",
+        "Sudan, officially the Republic of the Sudan, is a country in Northeast Africa.",
+        "Switzerland, officially the Swiss Confederation, is a landlocked country located at the intersection of Central, Western, and Southern..."
+      ],
+      "answer": 0,
+      "explanation": "Croatia, officially the Republic of Croatia, is a country in Central and Southeast Europe, on the coast of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Iceland?",
+      "options": [
+        "Iceland is a Nordic island country between the Arctic Ocean and the North Atlantic Ocean, located on the...",
+        "Georgia is a country in the Caucasus region on the coast of the Black Sea.",
+        "Saint Vincent and the Grenadines, sometimes known simply as Saint Vincent, is an archipelagic country in the eastern...",
+        "Tanzania, officially the United Republic of Tanzania, is a country in East Africa within the African Great Lakes..."
+      ],
+      "answer": 0,
+      "explanation": "Iceland is a Nordic island country between the Arctic Ocean and the North Atlantic Ocean, located on the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Mozambique?",
+      "options": [
+        "Papua New Guinea (PNG), officially the Independent State of Papua New Guinea, is an island country in Oceania...",
+        "Mozambique, officially the Republic of Mozambique, is a country in Southeast Africa bordered by the Indian Ocean to...",
+        "Turkey, officially the Republic of Türkiye, is a country mainly located in Anatolia in West Asia, with a...",
+        "Samoa, officially the Independent State of Samoa, is an island country in Polynesia, part of Oceania, in the..."
+      ],
+      "answer": 1,
+      "explanation": "Mozambique, officially the Republic of Mozambique, is a country in Southeast Africa bordered by the Indian Ocean to... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Tunisia?",
+      "options": [
+        "Myanmar, officially the Republic of the Union of Myanmar and also referred to as Burma, is a country...",
+        "The Democratic Republic of the Congo (DRC), also known as the DR Congo, Congo-Kinshasa, or simply the Congo...",
+        "Togo, officially the Togolese Republic, is a country located in West Africa.",
+        "Tunisia, officially the Republic of Tunisia, is a country in the Maghreb region of North Africa."
+      ],
+      "answer": 3,
+      "explanation": "Tunisia, officially the Republic of Tunisia, is a country in the Maghreb region of North Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes South Korea?",
+      "options": [
+        "Brunei, officially Brunei Darussalam, is a country in Southeast Asia, situated on the northern coast of the island...",
+        "San Marino, officially the Republic of San Marino (RSM), is a landlocked country in Southern Europe, completely surrounded...",
+        "South Korea, officially the Republic of Korea (ROK), is a country in East Asia.",
+        "Timor-Leste, also known as East Timor, officially the Democratic Republic of Timor-Leste, is a country in Southeast Asia."
+      ],
+      "answer": 2,
+      "explanation": "South Korea, officially the Republic of Korea (ROK), is a country in East Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about North Macedonia?",
+      "options": [
+        "Slovenia, officially the Republic of Slovenia, is a country in Central Europe.",
+        "North Macedonia, officially the Republic of North Macedonia, is a landlocked country in Southeast Europe.",
+        "Ethiopia, officially the Federal Democratic Republic of Ethiopia (FDRE), is a landlocked country located in the Horn of...",
+        "Italy, officially the Italian Republic, is a country in Southern and Western Europe."
+      ],
+      "answer": 1,
+      "explanation": "North Macedonia, officially the Republic of North Macedonia, is a landlocked country in Southeast Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Antigua and Barbuda.",
+      "options": [
+        "The Republic of the Congo, also known as Congo-Brazzaville, the Congo Republic or simply Congo, is a country...",
+        "Guinea-Bissau, officially the Republic of Guinea-Bissau, is a country in West Africa that covers 36,125 square kilometres (13,948...",
+        "Italy, officially the Italian Republic, is a country in Southern and Western Europe.",
+        "Antigua and Barbuda is an archipelagic country in the Caribbean composed of Antigua, Barbuda, and dozens of other..."
+      ],
+      "answer": 3,
+      "explanation": "Antigua and Barbuda is an archipelagic country in the Caribbean composed of Antigua, Barbuda, and dozens of other... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Oman?",
+      "options": [
+        "San Marino, officially the Republic of San Marino (RSM), is a landlocked country in Southern Europe, completely surrounded...",
+        "Oman, officially the Sultanate of Oman, is a country in the southeastern Arabian Peninsula in West Asia.",
+        "Ivory Coast, also known as Côte d'Ivoire and officially as the Republic of Côte d'Ivoire, is a country...",
+        "Moldova, officially the Republic of Moldova, is a landlocked country in Eastern Europe, with an area of 33,843..."
+      ],
+      "answer": 1,
+      "explanation": "Oman, officially the Sultanate of Oman, is a country in the southeastern Arabian Peninsula in West Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Switzerland?",
+      "options": [
+        "Benin, officially the Republic of Benin, formerly known as Dahomey, is a country in West Africa.",
+        "The Dominican Republic is an island country on the eastern part of the Caribbean island of Hispaniola in...",
+        "Switzerland, officially the Swiss Confederation, is a landlocked country located at the intersection of Central, Western, and Southern...",
+        "Panama, officially the Republic of Panama, is a country located at the southern end of Central America in..."
+      ],
+      "answer": 2,
+      "explanation": "Switzerland, officially the Swiss Confederation, is a landlocked country located at the intersection of Central, Western, and Southern... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Ivory Coast?",
+      "options": [
+        "Ivory Coast, also known as Côte d'Ivoire and officially as the Republic of Côte d'Ivoire, is a country...",
+        "Syria, officially the Syrian Arab Republic, is a country in West Asia located in the Eastern Mediterranean and...",
+        "Timor-Leste, also known as East Timor, officially the Democratic Republic of Timor-Leste, is a country in Southeast Asia.",
+        "Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia."
+      ],
+      "answer": 0,
+      "explanation": "Ivory Coast, also known as Côte d'Ivoire and officially as the Republic of Côte d'Ivoire, is a country... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Hungary?",
+      "options": [
+        "Italy, officially the Italian Republic, is a country in Southern and Western Europe.",
+        "Ivory Coast, also known as Côte d'Ivoire and officially as the Republic of Côte d'Ivoire, is a country...",
+        "Hungary is a landlocked country in Central Europe.",
+        "The United States of America (USA), also known as the United States (U.S.) or America, is a country..."
+      ],
+      "answer": 2,
+      "explanation": "Hungary is a landlocked country in Central Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Mongolia?",
+      "options": [
+        "The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) or Britain...",
+        "Armenia, officially the Republic of Armenia, is a landlocked country in the Armenian highlands of West Asia.",
+        "Mongolia is a landlocked country in East Asia.",
+        "Sierra Leone, officially the Republic of Sierra Leone, is a country on the west coast of West Africa."
+      ],
+      "answer": 2,
+      "explanation": "Mongolia is a landlocked country in East Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Mexico.",
+      "options": [
+        "The Kingdom of the Netherlands, commonly known simply as the Netherlands, is a sovereign state consisting of a...",
+        "Mexico, officially the United Mexican States, is a country in North America.",
+        "Malawi, officially the Republic of Malawi, is a landlocked country in Southeast Africa.",
+        "Burkina Faso is a landlocked country in West Africa."
+      ],
+      "answer": 1,
+      "explanation": "Mexico, officially the United Mexican States, is a country in North America. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes South Africa?",
+      "options": [
+        "South Africa, officially the Republic of South Africa (RSA), is the southernmost country in Africa.",
+        "Panama, officially the Republic of Panama, is a country located at the southern end of Central America in...",
+        "Monaco, officially the Principality of Monaco, is a sovereign city-state and microstate in Western Europe.",
+        "Saint Vincent and the Grenadines, sometimes known simply as Saint Vincent, is an archipelagic country in the eastern..."
+      ],
+      "answer": 0,
+      "explanation": "South Africa, officially the Republic of South Africa (RSA), is the southernmost country in Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Trinidad and Tobago.",
+      "options": [
+        "Trinidad and Tobago, officially the Republic of Trinidad and Tobago, is the southernmost archipelagic country in the Caribbean...",
+        "Bolivia, officially the Plurinational State of Bolivia, is a landlocked country located in central South America.",
+        "Kiribati, officially the Republic of Kiribati, is an archipelagic country spanning the Micronesia and Polynesia sub-regions of Oceania...",
+        "Eritrea, officially the State of Eritrea, is a country in the Horn of Africa region of East Africa."
+      ],
+      "answer": 0,
+      "explanation": "Trinidad and Tobago, officially the Republic of Trinidad and Tobago, is the southernmost archipelagic country in the Caribbean... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Uganda?",
+      "options": [
+        "Guinea, officially the Republic of Guinea, is a coastal country located in West Africa.",
+        "Tunisia, officially the Republic of Tunisia, is a country in the Maghreb region of North Africa.",
+        "Uganda, officially the Republic of Uganda, is a landlocked country in East Africa.",
+        "Estonia, officially the Republic of Estonia, is a country in the Baltic region of Northern Europe."
+      ],
+      "answer": 2,
+      "explanation": "Uganda, officially the Republic of Uganda, is a landlocked country in East Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Sweden?",
+      "options": [
+        "Myanmar, officially the Republic of the Union of Myanmar and also referred to as Burma, is a country...",
+        "Sweden, formally the Kingdom of Sweden, is a Nordic country located on the Scandinavian Peninsula in Northern Europe.",
+        "Zambia, officially the Republic of Zambia, is a landlocked country in Southern Africa.",
+        "Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia."
+      ],
+      "answer": 1,
+      "explanation": "Sweden, formally the Kingdom of Sweden, is a Nordic country located on the Scandinavian Peninsula in Northern Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Pakistan?",
+      "options": [
+        "Libya, officially the State of Libya, is a country in the Maghreb region of North Africa.",
+        "Monaco, officially the Principality of Monaco, is a sovereign city-state and microstate in Western Europe.",
+        "Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia.",
+        "Mongolia is a landlocked country in East Asia."
+      ],
+      "answer": 2,
+      "explanation": "Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about India.",
+      "options": [
+        "India, officially the Republic of India, is a country in South Asia.",
+        "Rwanda, officially the Republic of Rwanda, is a landlocked country in East Africa.",
+        "Guinea, officially the Republic of Guinea, is a coastal country located in West Africa.",
+        "The Dominican Republic is an island country on the eastern part of the Caribbean island of Hispaniola in..."
+      ],
+      "answer": 0,
+      "explanation": "India, officially the Republic of India, is a country in South Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Denmark?",
+      "options": [
+        "Guinea, officially the Republic of Guinea, is a coastal country located in West Africa.",
+        "Chad, officially the Republic of Chad, is a country in Central Africa.",
+        "Lebanon, officially the Lebanese Republic, is a country in the Levant region of West Asia.",
+        "Denmark is a Nordic country in Northern Europe."
+      ],
+      "answer": 3,
+      "explanation": "Denmark is a Nordic country in Northern Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Malaysia?",
+      "options": [
+        "Malaysia is a country in Southeast Asia.",
+        "South Africa, officially the Republic of South Africa (RSA), is the southernmost country in Africa.",
+        "Ukraine is a country in Eastern Europe.",
+        "Bahrain, officially the Kingdom of Bahrain, is an island country in the eastern part of Arabian Peninsula in..."
+      ],
+      "answer": 0,
+      "explanation": "Malaysia is a country in Southeast Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Venezuela?",
+      "options": [
+        "Austria, formally the Republic of Austria, is a landlocked country in Central Europe, lying in the Eastern Alps.",
+        "Venezuela, officially the Bolivarian Republic of Venezuela, is a country on the northern coast of South America, consisting...",
+        "Mali, officially the Republic of Mali, is a landlocked country in West Africa.",
+        "Luxembourg, officially the Grand Duchy of Luxembourg, is a landlocked country in Western Europe."
+      ],
+      "answer": 1,
+      "explanation": "Venezuela, officially the Bolivarian Republic of Venezuela, is a country on the northern coast of South America, consisting... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Malawi?",
+      "options": [
+        "Malawi, officially the Republic of Malawi, is a landlocked country in Southeast Africa.",
+        "Uzbekistan, officially the Republic of Uzbekistan, is a doubly landlocked country located in Central Asia.",
+        "Ukraine is a country in Eastern Europe.",
+        "Uruguay, officially the Oriental Republic of Uruguay, is a country in South America."
+      ],
+      "answer": 0,
+      "explanation": "Malawi, officially the Republic of Malawi, is a landlocked country in Southeast Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Singapore?",
+      "options": [
+        "Burkina Faso is a landlocked country in West Africa.",
+        "Poland, officially the Republic of Poland, is a country in Central Europe.",
+        "Singapore, officially the Republic of Singapore, is an island country in Southeast Asia.",
+        "Canada is a country in North America."
+      ],
+      "answer": 2,
+      "explanation": "Singapore, officially the Republic of Singapore, is an island country in Southeast Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Kazakhstan?",
+      "options": [
+        "Switzerland, officially the Swiss Confederation, is a landlocked country located at the intersection of Central, Western, and Southern...",
+        "El Salvador, officially the Republic of El Salvador, is a country in Central America.",
+        "Seven sovereign states – Argentina, Australia, Chile, France, New Zealand, Norway, and the United Kingdom – have made...",
+        "Kazakhstan, officially the Republic of Kazakhstan, is a landlocked country situated primarily in Central Asia, with a portion..."
+      ],
+      "answer": 3,
+      "explanation": "Kazakhstan, officially the Republic of Kazakhstan, is a landlocked country situated primarily in Central Asia, with a portion... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Mauritius?",
+      "options": [
+        "Mauritius, officially the Republic of Mauritius, is an island country in the Indian Ocean, located about 1,100 nautical...",
+        "The Central African Republic (CAR) is a landlocked country located in Central Africa.",
+        "Monaco, officially the Principality of Monaco, is a sovereign city-state and microstate in Western Europe.",
+        "Djibouti, officially the Republic of Djibouti, is a country in the Horn of Africa, bordered by Somalia to..."
+      ],
+      "answer": 0,
+      "explanation": "Mauritius, officially the Republic of Mauritius, is an island country in the Indian Ocean, located about 1,100 nautical... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Yemen?",
+      "options": [
+        "India, officially the Republic of India, is a country in South Asia.",
+        "New Zealand is an island country in the southwestern Pacific Ocean.",
+        "Uganda, officially the Republic of Uganda, is a landlocked country in East Africa.",
+        "Yemen, officially the Republic of Yemen, is a country in the southern part of West Asia."
+      ],
+      "answer": 3,
+      "explanation": "Yemen, officially the Republic of Yemen, is a country in the southern part of West Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes United Kingdom?",
+      "options": [
+        "Switzerland, officially the Swiss Confederation, is a landlocked country located at the intersection of Central, Western, and Southern...",
+        "The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) or Britain...",
+        "Madagascar, officially the Republic of Madagascar, is an island country in the Indian Ocean that includes the island...",
+        "Cambodia, officially the Kingdom of Cambodia, is a country in Mainland Southeast Asia."
+      ],
+      "answer": 1,
+      "explanation": "The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) or Britain... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Cameroon?",
+      "options": [
+        "Mali, officially the Republic of Mali, is a landlocked country in West Africa.",
+        "Cameroon, officially the Republic of Cameroon, is a country in Central Africa.",
+        "Romania is a country in Central and Southeastern Europe.",
+        "Antigua and Barbuda is an archipelagic country in the Caribbean composed of Antigua, Barbuda, and dozens of other..."
+      ],
+      "answer": 1,
+      "explanation": "Cameroon, officially the Republic of Cameroon, is a country in Central Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Samoa?",
+      "options": [
+        "Samoa, officially the Independent State of Samoa, is an island country in Polynesia, part of Oceania, in the...",
+        "Turkey, officially the Republic of Türkiye, is a country mainly located in Anatolia in West Asia, with a...",
+        "Burundi, officially the Republic of Burundi, is a landlocked country in East Africa.",
+        "Cameroon, officially the Republic of Cameroon, is a country in Central Africa."
+      ],
+      "answer": 0,
+      "explanation": "Samoa, officially the Independent State of Samoa, is an island country in Polynesia, part of Oceania, in the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Myanmar?",
+      "options": [
+        "El Salvador, officially the Republic of El Salvador, is a country in Central America.",
+        "Timor-Leste, also known as East Timor, officially the Democratic Republic of Timor-Leste, is a country in Southeast Asia.",
+        "Venezuela, officially the Bolivarian Republic of Venezuela, is a country on the northern coast of South America, consisting...",
+        "Myanmar, officially the Republic of the Union of Myanmar and also referred to as Burma, is a country..."
+      ],
+      "answer": 3,
+      "explanation": "Myanmar, officially the Republic of the Union of Myanmar and also referred to as Burma, is a country... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Indonesia?",
+      "options": [
+        "Malaysia is a country in Southeast Asia.",
+        "Libya, officially the State of Libya, is a country in the Maghreb region of North Africa.",
+        "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania, between the Indian and...",
+        "Togo, officially the Togolese Republic, is a country located in West Africa."
+      ],
+      "answer": 2,
+      "explanation": "Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania, between the Indian and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Bulgaria?",
+      "options": [
+        "Eritrea, officially the State of Eritrea, is a country in the Horn of Africa region of East Africa.",
+        "Bulgaria, officially the Republic of Bulgaria, is a country in Southeast Europe.",
+        "Thailand, officially the Kingdom of Thailand, and formerly known as Siam, is a country located in Mainland Southeast...",
+        "Mongolia is a landlocked country in East Asia."
+      ],
+      "answer": 1,
+      "explanation": "Bulgaria, officially the Republic of Bulgaria, is a country in Southeast Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Brazil?",
+      "options": [
+        "The Democratic Republic of the Congo (DRC), also known as the DR Congo, Congo-Kinshasa, or simply the Congo...",
+        "Brazil, officially the Federative Republic of Brazil, is the largest country in South America.",
+        "Fiji, officially the Republic of Fiji, is an archipelagic country in Melanesia, part of Oceania in the South...",
+        "Burkina Faso is a landlocked country in West Africa."
+      ],
+      "answer": 1,
+      "explanation": "Brazil, officially the Federative Republic of Brazil, is the largest country in South America. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Benin?",
+      "options": [
+        "New Zealand is an island country in the southwestern Pacific Ocean.",
+        "Burkina Faso is a landlocked country in West Africa.",
+        "Benin, officially the Republic of Benin, formerly known as Dahomey, is a country in West Africa.",
+        "Austria, formally the Republic of Austria, is a landlocked country in Central Europe, lying in the Eastern Alps."
+      ],
+      "answer": 2,
+      "explanation": "Benin, officially the Republic of Benin, formerly known as Dahomey, is a country in West Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Romania?",
+      "options": [
+        "El Salvador, officially the Republic of El Salvador, is a country in Central America.",
+        "Libya, officially the State of Libya, is a country in the Maghreb region of North Africa.",
+        "Iceland is a Nordic island country between the Arctic Ocean and the North Atlantic Ocean, located on the...",
+        "Romania is a country in Central and Southeastern Europe."
+      ],
+      "answer": 3,
+      "explanation": "Romania is a country in Central and Southeastern Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Barbados.",
+      "options": [
+        "Timor-Leste, also known as East Timor, officially the Democratic Republic of Timor-Leste, is a country in Southeast Asia.",
+        "Barbados is an island nation in the Caribbean located in the Atlantic Ocean.",
+        "Guinea-Bissau, officially the Republic of Guinea-Bissau, is a country in West Africa that covers 36,125 square kilometres (13,948...",
+        "Eswatini, formally the Kingdom of Eswatini, also known by its former official names Swaziland and the Kingdom of..."
+      ],
+      "answer": 1,
+      "explanation": "Barbados is an island nation in the Caribbean located in the Atlantic Ocean. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Marshall Islands?",
+      "options": [
+        "The Marshall Islands, officially the Republic of the Marshall Islands, is an archipelagic country in Oceania.",
+        "Kazakhstan, officially the Republic of Kazakhstan, is a landlocked country situated primarily in Central Asia, with a portion...",
+        "The Republic of the Congo, also known as Congo-Brazzaville, the Congo Republic or simply Congo, is a country...",
+        "Ghana, officially the Republic of Ghana, is a country in West Africa."
+      ],
+      "answer": 0,
+      "explanation": "The Marshall Islands, officially the Republic of the Marshall Islands, is an archipelagic country in Oceania. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Zimbabwe?",
+      "options": [
+        "Guatemala, officially the Republic of Guatemala, is a country in northern Central America.",
+        "The Czech Republic, also known as Czechia and historically known as Bohemia, is a landlocked country in Central...",
+        "Zimbabwe, officially the Republic of Zimbabwe, is a landlocked country in Southeast Africa, between the Zambezi and Limpopo...",
+        "Tunisia, officially the Republic of Tunisia, is a country in the Maghreb region of North Africa."
+      ],
+      "answer": 2,
+      "explanation": "Zimbabwe, officially the Republic of Zimbabwe, is a landlocked country in Southeast Africa, between the Zambezi and Limpopo... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Azerbaijan?",
+      "options": [
+        "Laos, officially the Lao People's Democratic Republic (LPDR), is a country in Mainland Southeast Asia, and the only...",
+        "Ghana, officially the Republic of Ghana, is a country in West Africa.",
+        "Tuvalu is an archipelagic country in the Polynesian sub-region of Oceania in the Pacific Ocean, about midway between...",
+        "Azerbaijan, officially the Republic of Azerbaijan, is a transcontinental landlocked country at the boundary of Western Asia and..."
+      ],
+      "answer": 3,
+      "explanation": "Azerbaijan, officially the Republic of Azerbaijan, is a transcontinental landlocked country at the boundary of Western Asia and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Austria?",
+      "options": [
+        "Sudan, officially the Republic of the Sudan, is a country in Northeast Africa.",
+        "El Salvador, officially the Republic of El Salvador, is a country in Central America.",
+        "Kazakhstan, officially the Republic of Kazakhstan, is a landlocked country situated primarily in Central Asia, with a portion...",
+        "Austria, formally the Republic of Austria, is a landlocked country in Central Europe, lying in the Eastern Alps."
+      ],
+      "answer": 3,
+      "explanation": "Austria, formally the Republic of Austria, is a landlocked country in Central Europe, lying in the Eastern Alps. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Andorra?",
+      "options": [
+        "Andorra, officially the Principality of Andorra, is a landlocked country on the Iberian Peninsula, in the eastern Pyrenees...",
+        "The Maldives, officially the Republic of Maldives, and historically known as the Maldive Islands, is an archipelagic country...",
+        "Austria, formally the Republic of Austria, is a landlocked country in Central Europe, lying in the Eastern Alps.",
+        "Uruguay, officially the Oriental Republic of Uruguay, is a country in South America."
+      ],
+      "answer": 0,
+      "explanation": "Andorra, officially the Principality of Andorra, is a landlocked country on the Iberian Peninsula, in the eastern Pyrenees... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Bolivia?",
+      "options": [
+        "Mongolia is a landlocked country in East Asia.",
+        "Bolivia, officially the Plurinational State of Bolivia, is a landlocked country located in central South America.",
+        "Cape Verde, also referred to in English by its Portuguese name Cabo Verde, and known officially as the...",
+        "Kenya, officially the Republic of Kenya, is a country located in East Africa."
+      ],
+      "answer": 1,
+      "explanation": "Bolivia, officially the Plurinational State of Bolivia, is a landlocked country located in central South America. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Sierra Leone.",
+      "options": [
+        "Ethiopia, officially the Federal Democratic Republic of Ethiopia (FDRE), is a landlocked country located in the Horn of...",
+        "Sierra Leone, officially the Republic of Sierra Leone, is a country on the west coast of West Africa.",
+        "Lebanon, officially the Lebanese Republic, is a country in the Levant region of West Asia.",
+        "El Salvador, officially the Republic of El Salvador, is a country in Central America."
+      ],
+      "answer": 1,
+      "explanation": "Sierra Leone, officially the Republic of Sierra Leone, is a country on the west coast of West Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Czech Republic?",
+      "options": [
+        "The Czech Republic, also known as Czechia and historically known as Bohemia, is a landlocked country in Central...",
+        "Ghana, officially the Republic of Ghana, is a country in West Africa.",
+        "The Gambia, officially the Republic of The Gambia, is a country in West Africa.",
+        "Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia."
+      ],
+      "answer": 0,
+      "explanation": "The Czech Republic, also known as Czechia and historically known as Bohemia, is a landlocked country in Central... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Libya?",
+      "options": [
+        "Libya, officially the State of Libya, is a country in the Maghreb region of North Africa.",
+        "Fiji, officially the Republic of Fiji, is an archipelagic country in Melanesia, part of Oceania in the South...",
+        "Romania is a country in Central and Southeastern Europe.",
+        "The United Arab Emirates (UAE), also known simply as the Emirates, is a country in West Asia, situated..."
+      ],
+      "answer": 0,
+      "explanation": "Libya, officially the State of Libya, is a country in the Maghreb region of North Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Norway?",
+      "options": [
+        "Panama, officially the Republic of Panama, is a country located at the southern end of Central America in...",
+        "Cuba, officially the Republic of Cuba, is an island country in the Caribbean.",
+        "Antigua and Barbuda is an archipelagic country in the Caribbean composed of Antigua, Barbuda, and dozens of other...",
+        "Norway, officially the Kingdom of Norway, is a Nordic country comprising the western and northernmost parts of the..."
+      ],
+      "answer": 3,
+      "explanation": "Norway, officially the Kingdom of Norway, is a Nordic country comprising the western and northernmost parts of the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Syria?",
+      "options": [
+        "Syria, officially the Syrian Arab Republic, is a country in West Asia located in the Eastern Mediterranean and...",
+        "Bulgaria, officially the Republic of Bulgaria, is a country in Southeast Europe.",
+        "South Korea, officially the Republic of Korea (ROK), is a country in East Asia.",
+        "The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) or Britain..."
+      ],
+      "answer": 0,
+      "explanation": "Syria, officially the Syrian Arab Republic, is a country in West Asia located in the Eastern Mediterranean and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Kingdom of the Netherlands.",
+      "options": [
+        "The Kingdom of the Netherlands, commonly known simply as the Netherlands, is a sovereign state consisting of a...",
+        "Saint Kitts and Nevis (SKN), officially the Federation of Saint Christopher and Nevis, is an island country located...",
+        "Ethiopia, officially the Federal Democratic Republic of Ethiopia (FDRE), is a landlocked country located in the Horn of...",
+        "Nicaragua, officially the Republic of Nicaragua, is the geographically largest country in Central America, comprising 130,370 square kilometers..."
+      ],
+      "answer": 0,
+      "explanation": "The Kingdom of the Netherlands, commonly known simply as the Netherlands, is a sovereign state consisting of a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Spain?",
+      "options": [
+        "Gabon, officially the Gabonese Republic, is a country on the Atlantic coast of Central Africa, on the equator...",
+        "Nicaragua, officially the Republic of Nicaragua, is the geographically largest country in Central America, comprising 130,370 square kilometers...",
+        "New Zealand is an island country in the southwestern Pacific Ocean.",
+        "Spain, officially the Kingdom of Spain, is a country in Southern and Western Europe with territories in North..."
+      ],
+      "answer": 3,
+      "explanation": "Spain, officially the Kingdom of Spain, is a country in Southern and Western Europe with territories in North... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Saint Vincent and the Grenadines?",
+      "options": [
+        "Uganda, officially the Republic of Uganda, is a landlocked country in East Africa.",
+        "Saint Vincent and the Grenadines, sometimes known simply as Saint Vincent, is an archipelagic country in the eastern...",
+        "Spain, officially the Kingdom of Spain, is a country in Southern and Western Europe with territories in North...",
+        "South Korea, officially the Republic of Korea (ROK), is a country in East Asia."
+      ],
+      "answer": 1,
+      "explanation": "Saint Vincent and the Grenadines, sometimes known simply as Saint Vincent, is an archipelagic country in the eastern... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes United States?",
+      "options": [
+        "Spain, officially the Kingdom of Spain, is a country in Southern and Western Europe with territories in North...",
+        "Mauritania, officially the Islamic Republic of Mauritania, is a country in the Maghreb region of West Africa.",
+        "Uzbekistan, officially the Republic of Uzbekistan, is a doubly landlocked country located in Central Asia.",
+        "The United States of America (USA), also known as the United States (U.S.) or America, is a country..."
+      ],
+      "answer": 3,
+      "explanation": "The United States of America (USA), also known as the United States (U.S.) or America, is a country... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Tajikistan?",
+      "options": [
+        "Russia, or the Russian Federation, is a country in Eastern Europe and North Asia.",
+        "Tajikistan, officially the Republic of Tajikistan, is a landlocked country located in Central Asia.",
+        "Dominica, officially the Commonwealth of Dominica, is an island country in the Caribbean.",
+        "Saudi Arabia, officially the Kingdom of Saudi Arabia (KSA), is a country in West Asia."
+      ],
+      "answer": 1,
+      "explanation": "Tajikistan, officially the Republic of Tajikistan, is a landlocked country located in Central Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about The Bahamas?",
+      "options": [
+        "Haiti, officially the Republic of Haiti, is a country in the Caribbean on the island of Hispaniola in...",
+        "The Bahamas, officially the Commonwealth of The Bahamas, is an archipelagic country in the Caribbean located within the...",
+        "Mauritania, officially the Islamic Republic of Mauritania, is a country in the Maghreb region of West Africa.",
+        "North Macedonia, officially the Republic of North Macedonia, is a landlocked country in Southeast Europe."
+      ],
+      "answer": 1,
+      "explanation": "The Bahamas, officially the Commonwealth of The Bahamas, is an archipelagic country in the Caribbean located within the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Dominican Republic.",
+      "options": [
+        "Haiti, officially the Republic of Haiti, is a country in the Caribbean on the island of Hispaniola in...",
+        "The Dominican Republic is an island country on the eastern part of the Caribbean island of Hispaniola in...",
+        "Russia, or the Russian Federation, is a country in Eastern Europe and North Asia.",
+        "Austria, formally the Republic of Austria, is a landlocked country in Central Europe, lying in the Eastern Alps."
+      ],
+      "answer": 1,
+      "explanation": "The Dominican Republic is an island country on the eastern part of the Caribbean island of Hispaniola in... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Mali?",
+      "options": [
+        "Mali, officially the Republic of Mali, is a landlocked country in West Africa.",
+        "Austria, formally the Republic of Austria, is a landlocked country in Central Europe, lying in the Eastern Alps.",
+        "Kenya, officially the Republic of Kenya, is a country located in East Africa.",
+        "Guinea-Bissau, officially the Republic of Guinea-Bissau, is a country in West Africa that covers 36,125 square kilometres (13,948..."
+      ],
+      "answer": 0,
+      "explanation": "Mali, officially the Republic of Mali, is a landlocked country in West Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Eritrea?",
+      "options": [
+        "Eritrea, officially the State of Eritrea, is a country in the Horn of Africa region of East Africa.",
+        "Myanmar, officially the Republic of the Union of Myanmar and also referred to as Burma, is a country...",
+        "Tuvalu is an archipelagic country in the Polynesian sub-region of Oceania in the Pacific Ocean, about midway between...",
+        "The Republic of the Congo, also known as Congo-Brazzaville, the Congo Republic or simply Congo, is a country..."
+      ],
+      "answer": 0,
+      "explanation": "Eritrea, officially the State of Eritrea, is a country in the Horn of Africa region of East Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Uzbekistan?",
+      "options": [
+        "Tuvalu is an archipelagic country in the Polynesian sub-region of Oceania in the Pacific Ocean, about midway between...",
+        "Cambodia, officially the Kingdom of Cambodia, is a country in Mainland Southeast Asia.",
+        "Uzbekistan, officially the Republic of Uzbekistan, is a doubly landlocked country located in Central Asia.",
+        "Saint Kitts and Nevis (SKN), officially the Federation of Saint Christopher and Nevis, is an island country located..."
+      ],
+      "answer": 2,
+      "explanation": "Uzbekistan, officially the Republic of Uzbekistan, is a doubly landlocked country located in Central Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Timor-Leste?",
+      "options": [
+        "Timor-Leste, also known as East Timor, officially the Democratic Republic of Timor-Leste, is a country in Southeast Asia.",
+        "Mauritania, officially the Islamic Republic of Mauritania, is a country in the Maghreb region of West Africa.",
+        "Mauritius, officially the Republic of Mauritius, is an island country in the Indian Ocean, located about 1,100 nautical...",
+        "The Federated States of Micronesia, or simply Micronesia, is an island country in Micronesia, a region of Oceania."
+      ],
+      "answer": 0,
+      "explanation": "Timor-Leste, also known as East Timor, officially the Democratic Republic of Timor-Leste, is a country in Southeast Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Ecuador?",
+      "options": [
+        "Andorra, officially the Principality of Andorra, is a landlocked country on the Iberian Peninsula, in the eastern Pyrenees...",
+        "Australia, officially the Commonwealth of Australia, is a country comprising the mainland of the Australian continent, the island...",
+        "Ecuador, officially the Republic of Ecuador, is a country in northwestern South America, bordered by Colombia on the...",
+        "Ireland, also known as the Republic of Ireland, is a country in Northwestern Europe."
+      ],
+      "answer": 2,
+      "explanation": "Ecuador, officially the Republic of Ecuador, is a country in northwestern South America, bordered by Colombia on the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Eswatini?",
+      "options": [
+        "Guatemala, officially the Republic of Guatemala, is a country in northern Central America.",
+        "Eswatini, formally the Kingdom of Eswatini, also known by its former official names Swaziland and the Kingdom of...",
+        "Panama, officially the Republic of Panama, is a country located at the southern end of Central America in...",
+        "Albania, officially the Republic of Albania, is a country in Southeast Europe."
+      ],
+      "answer": 1,
+      "explanation": "Eswatini, formally the Kingdom of Eswatini, also known by its former official names Swaziland and the Kingdom of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Central African Republic?",
+      "options": [
+        "The Central African Republic (CAR) is a landlocked country located in Central Africa.",
+        "Uruguay, officially the Oriental Republic of Uruguay, is a country in South America.",
+        "Cambodia, officially the Kingdom of Cambodia, is a country in Mainland Southeast Asia.",
+        "Equatorial Guinea, officially the Republic of Equatorial Guinea, is a country on the west coast of Central Africa..."
+      ],
+      "answer": 0,
+      "explanation": "The Central African Republic (CAR) is a landlocked country located in Central Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Ethiopia?",
+      "options": [
+        "Togo, officially the Togolese Republic, is a country located in West Africa.",
+        "Ethiopia, officially the Federal Democratic Republic of Ethiopia (FDRE), is a landlocked country located in the Horn of...",
+        "The Central African Republic (CAR) is a landlocked country located in Central Africa.",
+        "Austria, formally the Republic of Austria, is a landlocked country in Central Europe, lying in the Eastern Alps."
+      ],
+      "answer": 1,
+      "explanation": "Ethiopia, officially the Federal Democratic Republic of Ethiopia (FDRE), is a landlocked country located in the Horn of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Madagascar?",
+      "options": [
+        "Cameroon, officially the Republic of Cameroon, is a country in Central Africa.",
+        "Dominica, officially the Commonwealth of Dominica, is an island country in the Caribbean.",
+        "Solomon Islands, also known simply as the Solomons, is an archipelagic country consisting of six major islands and...",
+        "Madagascar, officially the Republic of Madagascar, is an island country in the Indian Ocean that includes the island..."
+      ],
+      "answer": 3,
+      "explanation": "Madagascar, officially the Republic of Madagascar, is an island country in the Indian Ocean that includes the island... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Monaco?",
+      "options": [
+        "Australia, officially the Commonwealth of Australia, is a country comprising the mainland of the Australian continent, the island...",
+        "Burkina Faso is a landlocked country in West Africa.",
+        "Monaco, officially the Principality of Monaco, is a sovereign city-state and microstate in Western Europe.",
+        "Guinea-Bissau, officially the Republic of Guinea-Bissau, is a country in West Africa that covers 36,125 square kilometres (13,948..."
+      ],
+      "answer": 2,
+      "explanation": "Monaco, officially the Principality of Monaco, is a sovereign city-state and microstate in Western Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Saint Kitts and Nevis?",
+      "options": [
+        "Saint Kitts and Nevis (SKN), officially the Federation of Saint Christopher and Nevis, is an island country located...",
+        "Bhutan, officially the Kingdom of Bhutan, is a landlocked country in South Asia, located in the Eastern Himalayas...",
+        "Madagascar, officially the Republic of Madagascar, is an island country in the Indian Ocean that includes the island...",
+        "Russia, or the Russian Federation, is a country in Eastern Europe and North Asia."
+      ],
+      "answer": 0,
+      "explanation": "Saint Kitts and Nevis (SKN), officially the Federation of Saint Christopher and Nevis, is an island country located... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Finland?",
+      "options": [
+        "Bosnia and Herzegovina, often referred to as Bosnia-Herzegovina or simply Bosnia, is a country in Southeast Europe.",
+        "The Gambia, officially the Republic of The Gambia, is a country in West Africa.",
+        "Brazil, officially the Federative Republic of Brazil, is the largest country in South America.",
+        "Finland, officially the Republic of Finland, is a Nordic country in Northern Europe."
+      ],
+      "answer": 3,
+      "explanation": "Finland, officially the Republic of Finland, is a Nordic country in Northern Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Liechtenstein?",
+      "options": [
+        "Denmark is a Nordic country in Northern Europe.",
+        "Jamaica is an island country in the Caribbean, covering 10,991 square kilometres (4,244 sq mi).",
+        "Myanmar, officially the Republic of the Union of Myanmar and also referred to as Burma, is a country...",
+        "Liechtenstein, officially the Principality of Liechtenstein, is a doubly landlocked country in the Central European Alps."
+      ],
+      "answer": 3,
+      "explanation": "Liechtenstein, officially the Principality of Liechtenstein, is a doubly landlocked country in the Central European Alps. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Ukraine.",
+      "options": [
+        "Qatar, officially the State of Qatar, is a country in West Asia.",
+        "Liechtenstein, officially the Principality of Liechtenstein, is a doubly landlocked country in the Central European Alps.",
+        "Ukraine is a country in Eastern Europe.",
+        "Andorra, officially the Principality of Andorra, is a landlocked country on the Iberian Peninsula, in the eastern Pyrenees..."
+      ],
+      "answer": 2,
+      "explanation": "Ukraine is a country in Eastern Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Russia?",
+      "options": [
+        "Spain, officially the Kingdom of Spain, is a country in Southern and Western Europe with territories in North...",
+        "Bosnia and Herzegovina, often referred to as Bosnia-Herzegovina or simply Bosnia, is a country in Southeast Europe.",
+        "Burundi, officially the Republic of Burundi, is a landlocked country in East Africa.",
+        "Russia, or the Russian Federation, is a country in Eastern Europe and North Asia."
+      ],
+      "answer": 3,
+      "explanation": "Russia, or the Russian Federation, is a country in Eastern Europe and North Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Panama?",
+      "options": [
+        "Afghanistan, officially the Islamic Emirate of Afghanistan, is a landlocked country located at the crossroads of Central and...",
+        "Iceland is a Nordic island country between the Arctic Ocean and the North Atlantic Ocean, located on the...",
+        "Panama, officially the Republic of Panama, is a country located at the southern end of Central America in...",
+        "Uzbekistan, officially the Republic of Uzbekistan, is a doubly landlocked country located in Central Asia."
+      ],
+      "answer": 2,
+      "explanation": "Panama, officially the Republic of Panama, is a country located at the southern end of Central America in... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Territorial claims in Antarctica?",
+      "options": [
+        "Haiti, officially the Republic of Haiti, is a country in the Caribbean on the island of Hispaniola in...",
+        "Seven sovereign states – Argentina, Australia, Chile, France, New Zealand, Norway, and the United Kingdom – have made...",
+        "Venezuela, officially the Bolivarian Republic of Venezuela, is a country on the northern coast of South America, consisting...",
+        "Sweden, formally the Kingdom of Sweden, is a Nordic country located on the Scandinavian Peninsula in Northern Europe."
+      ],
+      "answer": 1,
+      "explanation": "Seven sovereign states – Argentina, Australia, Chile, France, New Zealand, Norway, and the United Kingdom – have made... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Slovenia?",
+      "options": [
+        "Slovenia, officially the Republic of Slovenia, is a country in Central Europe.",
+        "Burkina Faso is a landlocked country in West Africa.",
+        "Armenia, officially the Republic of Armenia, is a landlocked country in the Armenian highlands of West Asia.",
+        "Cameroon, officially the Republic of Cameroon, is a country in Central Africa."
+      ],
+      "answer": 0,
+      "explanation": "Slovenia, officially the Republic of Slovenia, is a country in Central Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Tuvalu.",
+      "options": [
+        "Uganda, officially the Republic of Uganda, is a landlocked country in East Africa.",
+        "Malaysia is a country in Southeast Asia.",
+        "Mauritania, officially the Islamic Republic of Mauritania, is a country in the Maghreb region of West Africa.",
+        "Tuvalu is an archipelagic country in the Polynesian sub-region of Oceania in the Pacific Ocean, about midway between..."
+      ],
+      "answer": 3,
+      "explanation": "Tuvalu is an archipelagic country in the Polynesian sub-region of Oceania in the Pacific Ocean, about midway between... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Sudan.",
+      "options": [
+        "Sudan, officially the Republic of the Sudan, is a country in Northeast Africa.",
+        "The United Arab Emirates (UAE), also known simply as the Emirates, is a country in West Asia, situated...",
+        "Zambia, officially the Republic of Zambia, is a landlocked country in Southern Africa.",
+        "Honduras, officially the Republic of Honduras, is a country in Central America."
+      ],
+      "answer": 0,
+      "explanation": "Sudan, officially the Republic of the Sudan, is a country in Northeast Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Republic of the Congo?",
+      "options": [
+        "Georgia is a country in the Caucasus region on the coast of the Black Sea.",
+        "The Republic of the Congo, also known as Congo-Brazzaville, the Congo Republic or simply Congo, is a country...",
+        "The Bahamas, officially the Commonwealth of The Bahamas, is an archipelagic country in the Caribbean located within the...",
+        "South Africa, officially the Republic of South Africa (RSA), is the southernmost country in Africa."
+      ],
+      "answer": 1,
+      "explanation": "The Republic of the Congo, also known as Congo-Brazzaville, the Congo Republic or simply Congo, is a country... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Italy?",
+      "options": [
+        "Myanmar, officially the Republic of the Union of Myanmar and also referred to as Burma, is a country...",
+        "The Democratic Republic of the Congo (DRC), also known as the DR Congo, Congo-Kinshasa, or simply the Congo...",
+        "Italy, officially the Italian Republic, is a country in Southern and Western Europe.",
+        "Georgia is a country in the Caucasus region on the coast of the Black Sea."
+      ],
+      "answer": 2,
+      "explanation": "Italy, officially the Italian Republic, is a country in Southern and Western Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes France?",
+      "options": [
+        "Botswana, officially the Republic of Botswana, is a landlocked country in Southern Africa.",
+        "Honduras, officially the Republic of Honduras, is a country in Central America.",
+        "Kenya, officially the Republic of Kenya, is a country located in East Africa.",
+        "France, officially the French Republic, is a country primarily located in Western Europe."
+      ],
+      "answer": 3,
+      "explanation": "France, officially the French Republic, is a country primarily located in Western Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Armenia.",
+      "options": [
+        "Gabon, officially the Gabonese Republic, is a country on the Atlantic coast of Central Africa, on the equator...",
+        "Armenia, officially the Republic of Armenia, is a landlocked country in the Armenian highlands of West Asia.",
+        "Ireland, also known as the Republic of Ireland, is a country in Northwestern Europe.",
+        "The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) or Britain..."
+      ],
+      "answer": 1,
+      "explanation": "Armenia, officially the Republic of Armenia, is a landlocked country in the Armenian highlands of West Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Democratic Republic of the Congo?",
+      "options": [
+        "Brazil, officially the Federative Republic of Brazil, is the largest country in South America.",
+        "South Korea, officially the Republic of Korea (ROK), is a country in East Asia.",
+        "Haiti, officially the Republic of Haiti, is a country in the Caribbean on the island of Hispaniola in...",
+        "The Democratic Republic of the Congo (DRC), also known as the DR Congo, Congo-Kinshasa, or simply the Congo..."
+      ],
+      "answer": 3,
+      "explanation": "The Democratic Republic of the Congo (DRC), also known as the DR Congo, Congo-Kinshasa, or simply the Congo... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Netherlands?",
+      "options": [
+        "Senegal, officially the Republic of Senegal, is the westernmost country of mainland West Africa, situated along the Atlantic...",
+        "The Netherlands, also informally known as Holland, is a country in Northwestern Europe, with overseas territories in the...",
+        "Cape Verde, also referred to in English by its Portuguese name Cabo Verde, and known officially as the...",
+        "Kiribati, officially the Republic of Kiribati, is an archipelagic country spanning the Micronesia and Polynesia sub-regions of Oceania..."
+      ],
+      "answer": 1,
+      "explanation": "The Netherlands, also informally known as Holland, is a country in Northwestern Europe, with overseas territories in the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Botswana?",
+      "options": [
+        "Fiji, officially the Republic of Fiji, is an archipelagic country in Melanesia, part of Oceania in the South...",
+        "Botswana, officially the Republic of Botswana, is a landlocked country in Southern Africa.",
+        "Eswatini, formally the Kingdom of Eswatini, also known by its former official names Swaziland and the Kingdom of...",
+        "Tunisia, officially the Republic of Tunisia, is a country in the Maghreb region of North Africa."
+      ],
+      "answer": 1,
+      "explanation": "Botswana, officially the Republic of Botswana, is a landlocked country in Southern Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Luxembourg.",
+      "options": [
+        "The Netherlands, also informally known as Holland, is a country in Northwestern Europe, with overseas territories in the...",
+        "Luxembourg, officially the Grand Duchy of Luxembourg, is a landlocked country in Western Europe.",
+        "Bahrain, officially the Kingdom of Bahrain, is an island country in the eastern part of Arabian Peninsula in...",
+        "Laos, officially the Lao People's Democratic Republic (LPDR), is a country in Mainland Southeast Asia, and the only..."
+      ],
+      "answer": 1,
+      "explanation": "Luxembourg, officially the Grand Duchy of Luxembourg, is a landlocked country in Western Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Republic of Ireland?",
+      "options": [
+        "Ireland, also known as the Republic of Ireland, is a country in Northwestern Europe.",
+        "Ethiopia, officially the Federal Democratic Republic of Ethiopia (FDRE), is a landlocked country located in the Horn of...",
+        "Estonia, officially the Republic of Estonia, is a country in the Baltic region of Northern Europe.",
+        "Lebanon, officially the Lebanese Republic, is a country in the Levant region of West Asia."
+      ],
+      "answer": 0,
+      "explanation": "Ireland, also known as the Republic of Ireland, is a country in Northwestern Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Cambodia.",
+      "options": [
+        "Cambodia, officially the Kingdom of Cambodia, is a country in Mainland Southeast Asia.",
+        "Haiti, officially the Republic of Haiti, is a country in the Caribbean on the island of Hispaniola in...",
+        "Syria, officially the Syrian Arab Republic, is a country in West Asia located in the Eastern Mediterranean and...",
+        "Laos, officially the Lao People's Democratic Republic (LPDR), is a country in Mainland Southeast Asia, and the only..."
+      ],
+      "answer": 0,
+      "explanation": "Cambodia, officially the Kingdom of Cambodia, is a country in Mainland Southeast Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Lebanon?",
+      "options": [
+        "Switzerland, officially the Swiss Confederation, is a landlocked country located at the intersection of Central, Western, and Southern...",
+        "Finland, officially the Republic of Finland, is a Nordic country in Northern Europe.",
+        "Lebanon, officially the Lebanese Republic, is a country in the Levant region of West Asia.",
+        "Albania, officially the Republic of Albania, is a country in Southeast Europe."
+      ],
+      "answer": 2,
+      "explanation": "Lebanon, officially the Lebanese Republic, is a country in the Levant region of West Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Chad.",
+      "options": [
+        "South Korea, officially the Republic of Korea (ROK), is a country in East Asia.",
+        "Nicaragua, officially the Republic of Nicaragua, is the geographically largest country in Central America, comprising 130,370 square kilometers...",
+        "Chad, officially the Republic of Chad, is a country in Central Africa.",
+        "Jamaica is an island country in the Caribbean, covering 10,991 square kilometres (4,244 sq mi)."
+      ],
+      "answer": 2,
+      "explanation": "Chad, officially the Republic of Chad, is a country in Central Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Slovakia.",
+      "options": [
+        "Solomon Islands, also known simply as the Solomons, is an archipelagic country consisting of six major islands and...",
+        "Mauritius, officially the Republic of Mauritius, is an island country in the Indian Ocean, located about 1,100 nautical...",
+        "Slovakia, officially the Slovak Republic, is a landlocked country in Central Europe.",
+        "Finland, officially the Republic of Finland, is a Nordic country in Northern Europe."
+      ],
+      "answer": 2,
+      "explanation": "Slovakia, officially the Slovak Republic, is a landlocked country in Central Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Qatar?",
+      "options": [
+        "Qatar, officially the State of Qatar, is a country in West Asia.",
+        "Ecuador, officially the Republic of Ecuador, is a country in northwestern South America, bordered by Colombia on the...",
+        "Yemen, officially the Republic of Yemen, is a country in the southern part of West Asia.",
+        "Panama, officially the Republic of Panama, is a country located at the southern end of Central America in..."
+      ],
+      "answer": 0,
+      "explanation": "Qatar, officially the State of Qatar, is a country in West Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Guatemala?",
+      "options": [
+        "Ecuador, officially the Republic of Ecuador, is a country in northwestern South America, bordered by Colombia on the...",
+        "Madagascar, officially the Republic of Madagascar, is an island country in the Indian Ocean that includes the island...",
+        "The Democratic Republic of the Congo (DRC), also known as the DR Congo, Congo-Kinshasa, or simply the Congo...",
+        "Guatemala, officially the Republic of Guatemala, is a country in northern Central America."
+      ],
+      "answer": 3,
+      "explanation": "Guatemala, officially the Republic of Guatemala, is a country in northern Central America. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Argentina?",
+      "options": [
+        "Japan is an island country in East Asia.",
+        "Switzerland, officially the Swiss Confederation, is a landlocked country located at the intersection of Central, Western, and Southern...",
+        "Argentina, officially the Argentine Republic, is a country in the Southern Cone of South America.",
+        "Vietnam, officially the Socialist Republic of Viet Nam (SRV), is a country at the eastern edge of Mainland..."
+      ],
+      "answer": 2,
+      "explanation": "Argentina, officially the Argentine Republic, is a country in the Southern Cone of South America. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Jamaica?",
+      "options": [
+        "Albania, officially the Republic of Albania, is a country in Southeast Europe.",
+        "Jamaica is an island country in the Caribbean, covering 10,991 square kilometres (4,244 sq mi).",
+        "Argentina, officially the Argentine Republic, is a country in the Southern Cone of South America.",
+        "Vietnam, officially the Socialist Republic of Viet Nam (SRV), is a country at the eastern edge of Mainland..."
+      ],
+      "answer": 1,
+      "explanation": "Jamaica is an island country in the Caribbean, covering 10,991 square kilometres (4,244 sq mi). (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Morocco?",
+      "options": [
+        "Solomon Islands, also known simply as the Solomons, is an archipelagic country consisting of six major islands and...",
+        "Saint Kitts and Nevis (SKN), officially the Federation of Saint Christopher and Nevis, is an island country located...",
+        "Morocco, officially the Kingdom of Morocco, is a country in the Maghreb region of North Africa.",
+        "The Maldives, officially the Republic of Maldives, and historically known as the Maldive Islands, is an archipelagic country..."
+      ],
+      "answer": 2,
+      "explanation": "Morocco, officially the Kingdom of Morocco, is a country in the Maghreb region of North Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about New Zealand.",
+      "options": [
+        "Singapore, officially the Republic of Singapore, is an island country in Southeast Asia.",
+        "Cape Verde, also referred to in English by its Portuguese name Cabo Verde, and known officially as the...",
+        "Uruguay, officially the Oriental Republic of Uruguay, is a country in South America.",
+        "New Zealand is an island country in the southwestern Pacific Ocean."
+      ],
+      "answer": 3,
+      "explanation": "New Zealand is an island country in the southwestern Pacific Ocean. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Solomon Islands?",
+      "options": [
+        "Latvia, officially the Republic of Latvia, is a country in the Baltic region of northern Europe.",
+        "Rwanda, officially the Republic of Rwanda, is a landlocked country in East Africa.",
+        "Solomon Islands, also known simply as the Solomons, is an archipelagic country consisting of six major islands and...",
+        "Trinidad and Tobago, officially the Republic of Trinidad and Tobago, is the southernmost archipelagic country in the Caribbean..."
+      ],
+      "answer": 2,
+      "explanation": "Solomon Islands, also known simply as the Solomons, is an archipelagic country consisting of six major islands and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Australia?",
+      "options": [
+        "Azerbaijan, officially the Republic of Azerbaijan, is a transcontinental landlocked country at the boundary of Western Asia and...",
+        "Cuba, officially the Republic of Cuba, is an island country in the Caribbean.",
+        "Australia, officially the Commonwealth of Australia, is a country comprising the mainland of the Australian continent, the island...",
+        "The Central African Republic (CAR) is a landlocked country located in Central Africa."
+      ],
+      "answer": 2,
+      "explanation": "Australia, officially the Commonwealth of Australia, is a country comprising the mainland of the Australian continent, the island... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about United Arab Emirates.",
+      "options": [
+        "Lebanon, officially the Lebanese Republic, is a country in the Levant region of West Asia.",
+        "Kiribati, officially the Republic of Kiribati, is an archipelagic country spanning the Micronesia and Polynesia sub-regions of Oceania...",
+        "The United Arab Emirates (UAE), also known simply as the Emirates, is a country in West Asia, situated...",
+        "The Netherlands, also informally known as Holland, is a country in Northwestern Europe, with overseas territories in the..."
+      ],
+      "answer": 2,
+      "explanation": "The United Arab Emirates (UAE), also known simply as the Emirates, is a country in West Asia, situated... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Djibouti?",
+      "options": [
+        "Equatorial Guinea, officially the Republic of Equatorial Guinea, is a country on the west coast of Central Africa...",
+        "Myanmar, officially the Republic of the Union of Myanmar and also referred to as Burma, is a country...",
+        "Djibouti, officially the Republic of Djibouti, is a country in the Horn of Africa, bordered by Somalia to...",
+        "Iceland is a Nordic island country between the Arctic Ocean and the North Atlantic Ocean, located on the..."
+      ],
+      "answer": 2,
+      "explanation": "Djibouti, officially the Republic of Djibouti, is a country in the Horn of Africa, bordered by Somalia to... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Gabon?",
+      "options": [
+        "Tunisia, officially the Republic of Tunisia, is a country in the Maghreb region of North Africa.",
+        "Bolivia, officially the Plurinational State of Bolivia, is a landlocked country located in central South America.",
+        "Turkey, officially the Republic of Türkiye, is a country mainly located in Anatolia in West Asia, with a...",
+        "Gabon, officially the Gabonese Republic, is a country on the Atlantic coast of Central Africa, on the equator..."
+      ],
+      "answer": 3,
+      "explanation": "Gabon, officially the Gabonese Republic, is a country on the Atlantic coast of Central Africa, on the equator... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Saudi Arabia.",
+      "options": [
+        "The Marshall Islands, officially the Republic of the Marshall Islands, is an archipelagic country in Oceania.",
+        "Kiribati, officially the Republic of Kiribati, is an archipelagic country spanning the Micronesia and Polynesia sub-regions of Oceania...",
+        "Guatemala, officially the Republic of Guatemala, is a country in northern Central America.",
+        "Saudi Arabia, officially the Kingdom of Saudi Arabia (KSA), is a country in West Asia."
+      ],
+      "answer": 3,
+      "explanation": "Saudi Arabia, officially the Kingdom of Saudi Arabia (KSA), is a country in West Asia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Latvia?",
+      "options": [
+        "Rwanda, officially the Republic of Rwanda, is a landlocked country in East Africa.",
+        "Ireland, also known as the Republic of Ireland, is a country in Northwestern Europe.",
+        "Latvia, officially the Republic of Latvia, is a country in the Baltic region of northern Europe.",
+        "Uruguay, officially the Oriental Republic of Uruguay, is a country in South America."
+      ],
+      "answer": 2,
+      "explanation": "Latvia, officially the Republic of Latvia, is a country in the Baltic region of northern Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Afghanistan?",
+      "options": [
+        "Hungary is a landlocked country in Central Europe.",
+        "Denmark is a Nordic country in Northern Europe.",
+        "Saudi Arabia, officially the Kingdom of Saudi Arabia (KSA), is a country in West Asia.",
+        "Afghanistan, officially the Islamic Emirate of Afghanistan, is a landlocked country located at the crossroads of Central and..."
+      ],
+      "answer": 3,
+      "explanation": "Afghanistan, officially the Islamic Emirate of Afghanistan, is a landlocked country located at the crossroads of Central and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Equatorial Guinea?",
+      "options": [
+        "Estonia, officially the Republic of Estonia, is a country in the Baltic region of Northern Europe.",
+        "Equatorial Guinea, officially the Republic of Equatorial Guinea, is a country on the west coast of Central Africa...",
+        "Yemen, officially the Republic of Yemen, is a country in the southern part of West Asia.",
+        "Bolivia, officially the Plurinational State of Bolivia, is a landlocked country located in central South America."
+      ],
+      "answer": 1,
+      "explanation": "Equatorial Guinea, officially the Republic of Equatorial Guinea, is a country on the west coast of Central Africa... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Guyana?",
+      "options": [
+        "Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia.",
+        "The Czech Republic, also known as Czechia and historically known as Bohemia, is a landlocked country in Central...",
+        "Sierra Leone, officially the Republic of Sierra Leone, is a country on the west coast of West Africa.",
+        "Guyana, officially the Co-operative Republic of Guyana, is a country on the northern coast of South America."
+      ],
+      "answer": 3,
+      "explanation": "Guyana, officially the Co-operative Republic of Guyana, is a country on the northern coast of South America. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Brunei?",
+      "options": [
+        "Brunei, officially Brunei Darussalam, is a country in Southeast Asia, situated on the northern coast of the island...",
+        "The Marshall Islands, officially the Republic of the Marshall Islands, is an archipelagic country in Oceania.",
+        "Spain, officially the Kingdom of Spain, is a country in Southern and Western Europe with territories in North...",
+        "Malaysia is a country in Southeast Asia."
+      ],
+      "answer": 0,
+      "explanation": "Brunei, officially Brunei Darussalam, is a country in Southeast Asia, situated on the northern coast of the island... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Nicaragua?",
+      "options": [
+        "The Republic of the Congo, also known as Congo-Brazzaville, the Congo Republic or simply Congo, is a country...",
+        "North Korea, officially the Democratic People's Republic of Korea (DPRK), is a country in East Asia.",
+        "Mauritania, officially the Islamic Republic of Mauritania, is a country in the Maghreb region of West Africa.",
+        "Nicaragua, officially the Republic of Nicaragua, is the geographically largest country in Central America, comprising 130,370 square kilometers..."
+      ],
+      "answer": 3,
+      "explanation": "Nicaragua, officially the Republic of Nicaragua, is the geographically largest country in Central America, comprising 130,370 square kilometers... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Guinea?",
+      "options": [
+        "Sierra Leone, officially the Republic of Sierra Leone, is a country on the west coast of West Africa.",
+        "Cape Verde, also referred to in English by its Portuguese name Cabo Verde, and known officially as the...",
+        "Trinidad and Tobago, officially the Republic of Trinidad and Tobago, is the southernmost archipelagic country in the Caribbean...",
+        "Guinea, officially the Republic of Guinea, is a coastal country located in West Africa."
+      ],
+      "answer": 3,
+      "explanation": "Guinea, officially the Republic of Guinea, is a coastal country located in West Africa. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Thailand?",
+      "options": [
+        "Samoa, officially the Independent State of Samoa, is an island country in Polynesia, part of Oceania, in the...",
+        "Thailand, officially the Kingdom of Thailand, and formerly known as Siam, is a country located in Mainland Southeast...",
+        "Moldova, officially the Republic of Moldova, is a landlocked country in Eastern Europe, with an area of 33,843...",
+        "The Dominican Republic is an island country on the eastern part of the Caribbean island of Hispaniola in..."
+      ],
+      "answer": 1,
+      "explanation": "Thailand, officially the Kingdom of Thailand, and formerly known as Siam, is a country located in Mainland Southeast... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Vietnam?",
+      "options": [
+        "Afghanistan, officially the Islamic Emirate of Afghanistan, is a landlocked country located at the crossroads of Central and...",
+        "Vietnam, officially the Socialist Republic of Viet Nam (SRV), is a country at the eastern edge of Mainland...",
+        "El Salvador, officially the Republic of El Salvador, is a country in Central America.",
+        "Estonia, officially the Republic of Estonia, is a country in the Baltic region of Northern Europe."
+      ],
+      "answer": 1,
+      "explanation": "Vietnam, officially the Socialist Republic of Viet Nam (SRV), is a country at the eastern edge of Mainland... (from Wikipedia)",
+      "image_keyword": null
+    }
+  ],
+  "history": [
+    {
+      "question": "Pick the true statement about Cappadocian Greeks.",
+      "options": [
+        "The Decapolis was a group of ten Greek Hellenistic cities on the eastern frontier of the Greek and...",
+        "The 19th century began on 1 January 1801, and ended on 31 December 1900 (MCM).",
+        "The Cappadocian Greeks, or simply Cappadocians, are an ethnic Greek community native to the geographical region of Cappadocia...",
+        "An isolation tank, sensory deprivation tank, float tank, float pod, float cabin, flotation tank, or sensory attenuation tank..."
+      ],
+      "answer": 2,
+      "explanation": "The Cappadocian Greeks, or simply Cappadocians, are an ethnic Greek community native to the geographical region of Cappadocia... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Compass?",
+      "options": [
+        "Archaic Greece was the period in Greek history lasting from c.",
+        "The Cave of the Patriarchs or Tomb of the Patriarchs, known to Jews by its Biblical name Cave...",
+        "In ancient Egyptian history, dynasties are a series of rulers sharing a common origin.",
+        "A compass is a device that shows the cardinal directions used for navigation and geographic orientation."
+      ],
+      "answer": 3,
+      "explanation": "A compass is a device that shows the cardinal directions used for navigation and geographic orientation. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Viking Age?",
+      "options": [
+        "The Viking Age was the period during the Middle Ages when Norsemen known as Vikings undertook large-scale raiding...",
+        "In Imperial Rome, cura annonae was the logistics system which procured and distributed grain for the cities of...",
+        "The Birth of Tragedy Out of the Spirit of Music is an 1872 work of dramatic theory by...",
+        "SPQR or S.P.Q.R., an initialism for Senatus Populusque Romanus, is an emblematic phrase referring to the government of..."
+      ],
+      "answer": 0,
+      "explanation": "The Viking Age was the period during the Middle Ages when Norsemen known as Vikings undertook large-scale raiding... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes East India Company?",
+      "options": [
+        "The Age of Revolution is a period from the late-18th to the mid-19th centuries during which a number...",
+        "A banknote or bank note – also called a bill or simply a note – is a type...",
+        "The East India Company (EIC) was an English, and later British, joint-stock company that was founded in 1600...",
+        "The Eighteenth Dynasty of Egypt is classified as the first dynasty of the New Kingdom of Egypt, the..."
+      ],
+      "answer": 2,
+      "explanation": "The East India Company (EIC) was an English, and later British, joint-stock company that was founded in 1600... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Age of Discovery?",
+      "options": [
+        "The Temple of Dendur is a Roman Egyptian religious structure originally located in Tuzis, Nubia about 80 kilometres...",
+        "The Dreamachine, invented in 1959 by Brion Gysin and Ian Sommerville, is a stroboscopic flickering light art device...",
+        "The Age of Discovery, also known as the Age of Exploration, was part of the early modern period...",
+        "The Hanging Gardens of Babylon were one of the Seven Wonders of the Ancient World listed by Hellenic..."
+      ],
+      "answer": 2,
+      "explanation": "The Age of Discovery, also known as the Age of Exploration, was part of the early modern period... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Neolithic?",
+      "options": [
+        "Paper money, often referred to as a note or a bill, is a type of negotiable promissory note...",
+        "The Neolithic, or New Stone Age, is an archaeological period, the final division of the Stone Age in...",
+        "Greek love is a term originally used by classicists to describe the primarily homoerotic customs, practices, and attitudes...",
+        "In ancient Egyptian history, the Old Kingdom is the period spanning c."
+      ],
+      "answer": 1,
+      "explanation": "The Neolithic, or New Stone Age, is an archaeological period, the final division of the Stone Age in... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Ngorongoro Conservation Area?",
+      "options": [
+        "The water fuel cell is a non-functional design for a \"perpetual motion machine\" created by Stanley Allen Meyer.",
+        "Ngorongoro Conservation Area is a protected area and a UNESCO World Heritage Site located in Ngorongoro District, 180...",
+        "The Second Intermediate Period marks a period when ancient Egypt was divided into smaller dynasties for a second...",
+        "Distillation, also classical distillation, is the process of separating the component substances of a liquid mixture of two..."
+      ],
+      "answer": 1,
+      "explanation": "Ngorongoro Conservation Area is a protected area and a UNESCO World Heritage Site located in Ngorongoro District, 180... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Ancient Greece?",
+      "options": [
+        "Ancient Greece was a northeastern Mediterranean civilization, existing from the Greek Dark Ages of the 12th–9th centuries BC...",
+        "Caria was a region of western Anatolia extending along the coast from mid-Ionia (Mycale) south to Lycia and...",
+        "The Folies Bergère is a cabaret music hall in Paris, France.",
+        "The 2000s is the decade that began on January 1, 2000, and ended on December 31, 2009."
+      ],
+      "answer": 0,
+      "explanation": "Ancient Greece was a northeastern Mediterranean civilization, existing from the Greek Dark Ages of the 12th–9th centuries BC... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Cloud cuckoo land.",
+      "options": [
+        "Cloud cuckoo land is a state of absurdity, over-optimistic fantasy or an unrealistically idealistic state of mind where...",
+        "An isolation tank, sensory deprivation tank, float tank, float pod, float cabin, flotation tank, or sensory attenuation tank...",
+        "Distillation, also classical distillation, is the process of separating the component substances of a liquid mixture of two...",
+        "Cotton Mather was a Puritan clergyman and author in colonial New England, who wrote extensively on theological, historical..."
+      ],
+      "answer": 0,
+      "explanation": "Cloud cuckoo land is a state of absurdity, over-optimistic fantasy or an unrealistically idealistic state of mind where... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Kilwa Kisiwani.",
+      "options": [
+        "Gardiner's sign list is a list of common Egyptian hieroglyphs compiled by Sir Alan Gardiner and first published...",
+        "The Hanging Gardens of Babylon were one of the Seven Wonders of the Ancient World listed by Hellenic...",
+        "The East India Company (EIC) was an English, and later British, joint-stock company that was founded in 1600...",
+        "Kilwa Kisiwani is an island, national historic site, and hamlet community located in the township of Kilwa Masoko..."
+      ],
+      "answer": 3,
+      "explanation": "Kilwa Kisiwani is an island, national historic site, and hamlet community located in the township of Kilwa Masoko... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Timbuktu.",
+      "options": [
+        "A wind vane, weather vane, or weathercock is a type of anemoscope used for showing the direction of...",
+        "Vienna is the capital, most populous city, and one of the nine states of Austria.",
+        "Rococo, less commonly Roccoco, is a Western style of architecture, art, and decoration that emerged in France in...",
+        "Timbuktu is an ancient city in Mali, situated 20 kilometres north of the Niger River."
+      ],
+      "answer": 3,
+      "explanation": "Timbuktu is an ancient city in Mali, situated 20 kilometres north of the Niger River. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Amarna Period.",
+      "options": [
+        "The Decapolis was a group of ten Greek Hellenistic cities on the eastern frontier of the Greek and...",
+        "The Upper Paleolithic is the third and last subdivision of the Paleolithic or Old Stone Age.",
+        "The Amarna Period was an era of Egyptian history during the later half of the Eighteenth Dynasty when...",
+        "In 1994, nutrition scholar Mary M."
+      ],
+      "answer": 2,
+      "explanation": "The Amarna Period was an era of Egyptian history during the later half of the Eighteenth Dynasty when... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Telephone?",
+      "options": [
+        "The Nineteenth Dynasty of Egypt, also known as the Ramessid dynasty, is classified as the second dynasty of...",
+        "The Bone Wars, also known as the Great Dinosaur Rush, was a period of intense and ruthlessly competitive...",
+        "A telephone, commonly shortened to phone, is a telecommunications device that enables two or more users to conduct...",
+        "In world history, post-classical history refers to the period from about 500 CE to about 1450 or 1500..."
+      ],
+      "answer": 2,
+      "explanation": "A telephone, commonly shortened to phone, is a telecommunications device that enables two or more users to conduct... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Liquor?",
+      "options": [
+        "The Sherden is one of the several ethnic groups the Sea Peoples were said to be composed of...",
+        "The Napoleonic era is a period in the history of France and Europe.",
+        "Liquor, spirit, distilled spirit, or spirituous liquor are alcoholic drinks produced by the distillation of grains, fruits, vegetables...",
+        "The Philae temple complex is an island-based temple complex in the reservoir of the Aswan Low Dam, downstream..."
+      ],
+      "answer": 2,
+      "explanation": "Liquor, spirit, distilled spirit, or spirituous liquor are alcoholic drinks produced by the distillation of grains, fruits, vegetables... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Bucephalus?",
+      "options": [
+        "The Early Middle Ages, sometimes controversially referred to as the Dark Ages, is typically regarded by historians as...",
+        "The Travels of Marco Polo, also known as The Book of the Marvels of the World and by...",
+        "A wind vane, weather vane, or weathercock is a type of anemoscope used for showing the direction of...",
+        "Bucephalus or Bucephalas, was the horse of Alexander the Great, and one of the most famous horses of..."
+      ],
+      "answer": 3,
+      "explanation": "Bucephalus or Bucephalas, was the horse of Alexander the Great, and one of the most famous horses of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Cotton Mather?",
+      "options": [
+        "Cotton Mather was a Puritan clergyman and author in colonial New England, who wrote extensively on theological, historical...",
+        "In ancient Egyptian history, the Old Kingdom is the period spanning c.",
+        "The Philae temple complex is an island-based temple complex in the reservoir of the Aswan Low Dam, downstream...",
+        "A carbon nanotube (CNT) is a tube made of carbon with a diameter in the nanometre range (nanoscale)."
+      ],
+      "answer": 0,
+      "explanation": "Cotton Mather was a Puritan clergyman and author in colonial New England, who wrote extensively on theological, historical... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Hanging Gardens of Babylon?",
+      "options": [
+        "A toilet is a piece of sanitary hardware (sanitaryware) that collects human waste and sometimes toilet paper, usually...",
+        "The Holocene is the current geological epoch, beginning approximately 11,700 years ago.",
+        "The Hanging Gardens of Babylon were one of the Seven Wonders of the Ancient World listed by Hellenic...",
+        "The Viking Age was the period during the Middle Ages when Norsemen known as Vikings undertook large-scale raiding..."
+      ],
+      "answer": 2,
+      "explanation": "The Hanging Gardens of Babylon were one of the Seven Wonders of the Ancient World listed by Hellenic... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Three-age system?",
+      "options": [
+        "The three-age system is the division of human prehistory into three time-periods: the Stone Age, the Bronze Age...",
+        "Cabinets of curiosities, also known as wonder-rooms, were encyclopedic collections of objects whose categorical boundaries were, in Renaissance...",
+        "The Age of Revolution is a period from the late-18th to the mid-19th centuries during which a number...",
+        "The Hanging Gardens of Babylon were one of the Seven Wonders of the Ancient World listed by Hellenic..."
+      ],
+      "answer": 0,
+      "explanation": "The three-age system is the division of human prehistory into three time-periods: the Stone Age, the Bronze Age... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Ancient Roman architecture?",
+      "options": [
+        "Portuguese maritime explorations resulted in numerous territories and maritime routes recorded by the Portuguese on journeys during the...",
+        "An aeolipile, aeolipyle, or eolipile, also known as a Hero's engine, is a simple, bladeless radial steam turbine...",
+        "The 2000s is the decade that began on January 1, 2000, and ended on December 31, 2009.",
+        "Ancient Roman architecture adopted the external language of classical ancient Greek architecture for the purposes of the ancient..."
+      ],
+      "answer": 3,
+      "explanation": "Ancient Roman architecture adopted the external language of classical ancient Greek architecture for the purposes of the ancient... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Napoleonic era?",
+      "options": [
+        "An orrery is a mechanical model of the Solar System that illustrates or predicts the relative positions and...",
+        "During the Spanish colonization of the Americas, the Spanish Main comprised the parts of the Spanish Empire that...",
+        "The Napoleonic era is a period in the history of France and Europe.",
+        "A knight is a person granted an honorary title of a knighthood by a head of state or..."
+      ],
+      "answer": 2,
+      "explanation": "The Napoleonic era is a period in the history of France and Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Isolation tank?",
+      "options": [
+        "The Vistula Veneti, also called Baltic Veneti, Venedi or Venethi, were an Indo-European people that inhabited the lands...",
+        "An isolation tank, sensory deprivation tank, float tank, float pod, float cabin, flotation tank, or sensory attenuation tank...",
+        "The Lighthouse of Alexandria, sometimes called the Pharos of Alexandria, was a lighthouse built by the Ptolemaic Kingdom...",
+        "Ancient Roman architecture adopted the external language of classical ancient Greek architecture for the purposes of the ancient..."
+      ],
+      "answer": 1,
+      "explanation": "An isolation tank, sensory deprivation tank, float tank, float pod, float cabin, flotation tank, or sensory attenuation tank... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about World Heritage Site?",
+      "options": [
+        "World Heritage Sites are landmarks and areas with legal protection under an international treaty administered by UNESCO for...",
+        "Clair Obscur: Expedition 33 is a 2025 role-playing video game developed by Sandfall Interactive and published by Kepler...",
+        "The xylospongium or tersorium, also known as a \"sponge on a stick\", was a hygiene utensil found in...",
+        "The 2000s is the decade that began on January 1, 2000, and ended on December 31, 2009."
+      ],
+      "answer": 0,
+      "explanation": "World Heritage Sites are landmarks and areas with legal protection under an international treaty administered by UNESCO for... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Antonio Meucci?",
+      "options": [
+        "Antonio Santi Giuseppe Meucci was an Italian inventor and an associate of Giuseppe Garibaldi, a major political figure...",
+        "A knight is a person granted an honorary title of a knighthood by a head of state or...",
+        "The Philae temple complex is an island-based temple complex in the reservoir of the Aswan Low Dam, downstream...",
+        "The Hanging Gardens of Babylon were one of the Seven Wonders of the Ancient World listed by Hellenic..."
+      ],
+      "answer": 0,
+      "explanation": "Antonio Santi Giuseppe Meucci was an Italian inventor and an associate of Giuseppe Garibaldi, a major political figure... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Eighteenth Dynasty of Egypt?",
+      "options": [
+        "The Elizabethan era is the epoch in the Tudor period of the history of England during the reign...",
+        "The Eighteenth Dynasty of Egypt is classified as the first dynasty of the New Kingdom of Egypt, the...",
+        "The Early Middle Ages, sometimes controversially referred to as the Dark Ages, is typically regarded by historians as...",
+        "The Challenger expedition of 1872–1876 was a scientific programme that made many discoveries to lay the foundation of..."
+      ],
+      "answer": 1,
+      "explanation": "The Eighteenth Dynasty of Egypt is classified as the first dynasty of the New Kingdom of Egypt, the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Jacobean era?",
+      "options": [
+        "The regions of ancient Greece were sub-divisions of the Hellenic world as conceived by the ancient Greeks, shown...",
+        "The control of fire by early humans was a critical technology enabling the evolution of humans.",
+        "A wind vane, weather vane, or weathercock is a type of anemoscope used for showing the direction of...",
+        "The Jacobean era was the period in English and Scottish history that coincides with the reign of James..."
+      ],
+      "answer": 3,
+      "explanation": "The Jacobean era was the period in English and Scottish history that coincides with the reign of James... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Romanization (cultural)?",
+      "options": [
+        "Romanization or Latinization, in the historical and cultural meanings of both terms, indicate different historical processes, such as...",
+        "Liquor, spirit, distilled spirit, or spirituous liquor are alcoholic drinks produced by the distillation of grains, fruits, vegetables...",
+        "Various lists of the Wonders of the World have been compiled from antiquity to the present day, in...",
+        "The \"Tale of the Shipwrecked Sailor\" is a Middle Kingdom story of an Ancient Egyptian voyage to \"the..."
+      ],
+      "answer": 0,
+      "explanation": "Romanization or Latinization, in the historical and cultural meanings of both terms, indicate different historical processes, such as... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Archimedes' screw?",
+      "options": [
+        "The Cave of the Patriarchs or Tomb of the Patriarchs, known to Jews by its Biblical name Cave...",
+        "The 2000s is the decade that began on January 1, 2000, and ended on December 31, 2009.",
+        "The Jacobean era was the period in English and Scottish history that coincides with the reign of James...",
+        "An Archimedes' screw is a hydraulic machine composing of an outer cylinder and an inner cylinder with helical..."
+      ],
+      "answer": 3,
+      "explanation": "An Archimedes' screw is a hydraulic machine composing of an outer cylinder and an inner cylinder with helical... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Aeolipile?",
+      "options": [
+        "The Jacobean era was the period in English and Scottish history that coincides with the reign of James...",
+        "A compass is a device that shows the cardinal directions used for navigation and geographic orientation.",
+        "An aeolipile, aeolipyle, or eolipile, also known as a Hero's engine, is a simple, bladeless radial steam turbine...",
+        "Cloud cuckoo land is a state of absurdity, over-optimistic fantasy or an unrealistically idealistic state of mind where..."
+      ],
+      "answer": 2,
+      "explanation": "An aeolipile, aeolipyle, or eolipile, also known as a Hero's engine, is a simple, bladeless radial steam turbine... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Labrys?",
+      "options": [
+        "The Gibson Girl was the archetypal personification of the feminine ideal of physical attractiveness as portrayed by the...",
+        "A labrys is a kind of double-bitted axe that traces back to the Minoan civilization of Crete.",
+        "The Lighthouse of Alexandria, sometimes called the Pharos of Alexandria, was a lighthouse built by the Ptolemaic Kingdom...",
+        "A Pythagorean cup is a practical joke device in the form of a drinking cup."
+      ],
+      "answer": 1,
+      "explanation": "A labrys is a kind of double-bitted axe that traces back to the Minoan civilization of Crete. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Composite monarchy?",
+      "options": [
+        "Ngorongoro Conservation Area is a protected area and a UNESCO World Heritage Site located in Ngorongoro District, 180...",
+        "The 17th century lasted from January 1, 1601, to December 31, 1700 (MDCC).",
+        "A composite monarchy is a historical category that describes early modern states consisting of several countries under one...",
+        "An orrery is a mechanical model of the Solar System that illustrates or predicts the relative positions and..."
+      ],
+      "answer": 2,
+      "explanation": "A composite monarchy is a historical category that describes early modern states consisting of several countries under one... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Abu Simbel?",
+      "options": [
+        "Dubrovnik, historically also known as Ragusa, is a city in southern Dalmatia, Croatia, by the Adriatic Sea.",
+        "The Vistula Veneti, also called Baltic Veneti, Venedi or Venethi, were an Indo-European people that inhabited the lands...",
+        "Abu Simbel is a historic site comprising two massive rock-cut temples in the village of Abu Simbel, Aswan...",
+        "The East India Company (EIC) was an English, and later British, joint-stock company that was founded in 1600..."
+      ],
+      "answer": 2,
+      "explanation": "Abu Simbel is a historic site comprising two massive rock-cut temples in the village of Abu Simbel, Aswan... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Paper money?",
+      "options": [
+        "The Jacobean era was the period in English and Scottish history that coincides with the reign of James...",
+        "Clair Obscur: Expedition 33 is a 2025 role-playing video game developed by Sandfall Interactive and published by Kepler...",
+        "Egyptian blue, also known as calcium copper silicate, calcium copper tetrasilicate, or cuprorivaite, is a pigment with the...",
+        "Paper money, often referred to as a note or a bill, is a type of negotiable promissory note..."
+      ],
+      "answer": 3,
+      "explanation": "Paper money, often referred to as a note or a bill, is a type of negotiable promissory note... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Old City of Jerusalem?",
+      "options": [
+        "The Bone Wars, also known as the Great Dinosaur Rush, was a period of intense and ruthlessly competitive...",
+        "The Old City of Jerusalem is a 0.9-square-kilometre (0.35 sq mi) walled area in East Jerusalem.",
+        "Greek love is a term originally used by classicists to describe the primarily homoerotic customs, practices, and attitudes...",
+        "The regions of ancient Greece were sub-divisions of the Hellenic world as conceived by the ancient Greeks, shown..."
+      ],
+      "answer": 1,
+      "explanation": "The Old City of Jerusalem is a 0.9-square-kilometre (0.35 sq mi) walled area in East Jerusalem. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about 19th century.",
+      "options": [
+        "The 19th century began on 1 January 1801, and ended on 31 December 1900 (MCM).",
+        "Bucephalus or Bucephalas, was the horse of Alexander the Great, and one of the most famous horses of...",
+        "Contemporary history, in English-language historiography, is a subset of modern history that describes the historical period from about...",
+        "A wind vane, weather vane, or weathercock is a type of anemoscope used for showing the direction of..."
+      ],
+      "answer": 0,
+      "explanation": "The 19th century began on 1 January 1801, and ended on 31 December 1900 (MCM). (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Chalcolithic.",
+      "options": [
+        "The Chalcolithic was an archaeological period characterized by the increasing use of smelted copper.",
+        "Vienna is the capital, most populous city, and one of the nine states of Austria.",
+        "The African humid period was a climate period in Africa during the late Pleistocene and Holocene geologic epochs...",
+        "Population decline, also known as depopulation, is a reduction in a human population size."
+      ],
+      "answer": 0,
+      "explanation": "The Chalcolithic was an archaeological period characterized by the increasing use of smelted copper. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Roman salute.",
+      "options": [
+        "Hellenization or Hellenification is the adoption of Greek culture, religion, language, and identity by non-Greeks.",
+        "The Roman salute, also known as the fascist salute, is a gesture in which the right hand is...",
+        "The Early Middle Ages, sometimes controversially referred to as the Dark Ages, is typically regarded by historians as...",
+        "The 2010s was the decade that began on 1 January 2010 and ended on 31 December 2019."
+      ],
+      "answer": 1,
+      "explanation": "The Roman salute, also known as the fascist salute, is a gesture in which the right hand is... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about The Birth of Tragedy?",
+      "options": [
+        "The Birth of Tragedy Out of the Spirit of Music is an 1872 work of dramatic theory by...",
+        "A telephone, commonly shortened to phone, is a telecommunications device that enables two or more users to conduct...",
+        "The Holocene is the current geological epoch, beginning approximately 11,700 years ago.",
+        "An orrery is a mechanical model of the Solar System that illustrates or predicts the relative positions and..."
+      ],
+      "answer": 0,
+      "explanation": "The Birth of Tragedy Out of the Spirit of Music is an 1872 work of dramatic theory by... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Lahore Fort?",
+      "options": [
+        "The Lahore Fort is a citadel in the walled interior of Lahore in Punjab, Pakistan.",
+        "The xylospongium or tersorium, also known as a \"sponge on a stick\", was a hygiene utensil found in...",
+        "Distillation, also classical distillation, is the process of separating the component substances of a liquid mixture of two...",
+        "The Neolithic, or New Stone Age, is an archaeological period, the final division of the Stone Age in..."
+      ],
+      "answer": 0,
+      "explanation": "The Lahore Fort is a citadel in the walled interior of Lahore in Punjab, Pakistan. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Nineteenth Dynasty of Egypt.",
+      "options": [
+        "The Nineteenth Dynasty of Egypt, also known as the Ramessid dynasty, is classified as the second dynasty of...",
+        "Leonardo da Vinci (1452–1519) was an Italian polymath, regarded as the epitome of the \"Renaissance Man\", displaying skills...",
+        "The Golden Age of Piracy was the period between the 1650s and the 1730s, when maritime piracy was...",
+        "Distillation, also classical distillation, is the process of separating the component substances of a liquid mixture of two..."
+      ],
+      "answer": 0,
+      "explanation": "The Nineteenth Dynasty of Egypt, also known as the Ramessid dynasty, is classified as the second dynasty of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Early Middle Ages?",
+      "options": [
+        "The Sator Square is a two-dimensional acrostic class of word square containing a five-word Latin palindrome.",
+        "The Early Middle Ages, sometimes controversially referred to as the Dark Ages, is typically regarded by historians as...",
+        "Delos or Dilos, is a small Greek island near Mykonos, close to the centre of the Cyclades archipelago.",
+        "The mile, sometimes the international mile or statute mile to distinguish it from other miles, is a British..."
+      ],
+      "answer": 1,
+      "explanation": "The Early Middle Ages, sometimes controversially referred to as the Dark Ages, is typically regarded by historians as... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Decapolis?",
+      "options": [
+        "A tack piano is a modified ordinary piano, in which objects such as thumbtacks or nails are placed...",
+        "Greek love is a term originally used by classicists to describe the primarily homoerotic customs, practices, and attitudes...",
+        "The Decapolis was a group of ten Greek Hellenistic cities on the eastern frontier of the Greek and...",
+        "Contemporary history, in English-language historiography, is a subset of modern history that describes the historical period from about..."
+      ],
+      "answer": 2,
+      "explanation": "The Decapolis was a group of ten Greek Hellenistic cities on the eastern frontier of the Greek and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Philae temple complex?",
+      "options": [
+        "The Jacobean era was the period in English and Scottish history that coincides with the reign of James...",
+        "A banknote or bank note – also called a bill or simply a note – is a type...",
+        "An orrery is a mechanical model of the Solar System that illustrates or predicts the relative positions and...",
+        "The Philae temple complex is an island-based temple complex in the reservoir of the Aswan Low Dam, downstream..."
+      ],
+      "answer": 3,
+      "explanation": "The Philae temple complex is an island-based temple complex in the reservoir of the Aswan Low Dam, downstream... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Caria?",
+      "options": [
+        "An orrery is a mechanical model of the Solar System that illustrates or predicts the relative positions and...",
+        "Caria was a region of western Anatolia extending along the coast from mid-Ionia (Mycale) south to Lycia and...",
+        "SPQR or S.P.Q.R., an initialism for Senatus Populusque Romanus, is an emblematic phrase referring to the government of...",
+        "A toilet is a piece of sanitary hardware (sanitaryware) that collects human waste and sometimes toilet paper, usually..."
+      ],
+      "answer": 1,
+      "explanation": "Caria was a region of western Anatolia extending along the coast from mid-Ionia (Mycale) south to Lycia and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Distillation.",
+      "options": [
+        "The Roman salute, also known as the fascist salute, is a gesture in which the right hand is...",
+        "Distillation, also classical distillation, is the process of separating the component substances of a liquid mixture of two...",
+        "In historiography, periodization is the process or study of categorizing the past into discrete, quantified, and named blocks...",
+        "In ancient Egyptian history, dynasties are a series of rulers sharing a common origin."
+      ],
+      "answer": 1,
+      "explanation": "Distillation, also classical distillation, is the process of separating the component substances of a liquid mixture of two... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Iron Age?",
+      "options": [
+        "The Iron Age is the final epoch of the three historical Metal Ages, after the Copper Age and...",
+        "The Age of Discovery, also known as the Age of Exploration, was part of the early modern period...",
+        "Various lists of the Wonders of the World have been compiled from antiquity to the present day, in...",
+        "\"Ode on a Grecian Urn\" is a poem written by the English Romantic poet John Keats in May..."
+      ],
+      "answer": 0,
+      "explanation": "The Iron Age is the final epoch of the three historical Metal Ages, after the Copper Age and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Challenger expedition?",
+      "options": [
+        "The Jacobean era was the period in English and Scottish history that coincides with the reign of James...",
+        "The Challenger expedition of 1872–1876 was a scientific programme that made many discoveries to lay the foundation of...",
+        "The Folies Bergère is a cabaret music hall in Paris, France.",
+        "The Iron Age is the final epoch of the three historical Metal Ages, after the Copper Age and..."
+      ],
+      "answer": 1,
+      "explanation": "The Challenger expedition of 1872–1876 was a scientific programme that made many discoveries to lay the foundation of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Invention of radio?",
+      "options": [
+        "Egyptian blue, also known as calcium copper silicate, calcium copper tetrasilicate, or cuprorivaite, is a pigment with the...",
+        "The invention of radio communication was preceded by many decades of establishing theoretical underpinnings, discovery and experimental investigation...",
+        "The water fuel cell is a non-functional design for a \"perpetual motion machine\" created by Stanley Allen Meyer.",
+        "A carbon nanotube (CNT) is a tube made of carbon with a diameter in the nanometre range (nanoscale)."
+      ],
+      "answer": 1,
+      "explanation": "The invention of radio communication was preceded by many decades of establishing theoretical underpinnings, discovery and experimental investigation... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Rococo?",
+      "options": [
+        "The Holocene is the current geological epoch, beginning approximately 11,700 years ago.",
+        "A wind vane, weather vane, or weathercock is a type of anemoscope used for showing the direction of...",
+        "Timbuktu is an ancient city in Mali, situated 20 kilometres north of the Niger River.",
+        "Rococo, less commonly Roccoco, is a Western style of architecture, art, and decoration that emerged in France in..."
+      ],
+      "answer": 3,
+      "explanation": "Rococo, less commonly Roccoco, is a Western style of architecture, art, and decoration that emerged in France in... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about GIF?",
+      "options": [
+        "The Old City of Jerusalem is a 0.9-square-kilometre (0.35 sq mi) walled area in East Jerusalem.",
+        "The Roaring Forties are strong westerly winds that occur in the Southern Hemisphere, generally between the latitudes of...",
+        "The Graphics Interchange Format is a bitmap image format that was developed by a team at the online...",
+        "The Second Intermediate Period marks a period when ancient Egypt was divided into smaller dynasties for a second..."
+      ],
+      "answer": 2,
+      "explanation": "The Graphics Interchange Format is a bitmap image format that was developed by a team at the online... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes African humid period?",
+      "options": [
+        "The African humid period was a climate period in Africa during the late Pleistocene and Holocene geologic epochs...",
+        "The Roman salute, also known as the fascist salute, is a gesture in which the right hand is...",
+        "\"Ode on a Grecian Urn\" is a poem written by the English Romantic poet John Keats in May...",
+        "The Jacobean era was the period in English and Scottish history that coincides with the reign of James..."
+      ],
+      "answer": 0,
+      "explanation": "The African humid period was a climate period in Africa during the late Pleistocene and Holocene geologic epochs... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Dark Ages (historiography).",
+      "options": [
+        "Princeps is a Latin word meaning \"first in time or order; the first, foremost, chief, the most eminent...",
+        "Ancient Roman architecture adopted the external language of classical ancient Greek architecture for the purposes of the ancient...",
+        "The Dark Ages is a term, now deprecated by most historians, for the Early Middle Ages, or occasionally...",
+        "The Decapolis was a group of ten Greek Hellenistic cities on the eastern frontier of the Greek and..."
+      ],
+      "answer": 2,
+      "explanation": "The Dark Ages is a term, now deprecated by most historians, for the Early Middle Ages, or occasionally... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Guilds in medieval Europe?",
+      "options": [
+        "The East India Company (EIC) was an English, and later British, joint-stock company that was founded in 1600...",
+        "Samarra is a city in Iraq.",
+        "Ancient Greece was a northeastern Mediterranean civilization, existing from the Greek Dark Ages of the 12th–9th centuries BC...",
+        "Guilds in medieval Europe were associations of craftsmen, merchants, or other skilled workers that emerged across Europe to..."
+      ],
+      "answer": 3,
+      "explanation": "Guilds in medieval Europe were associations of craftsmen, merchants, or other skilled workers that emerged across Europe to... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Upper Paleolithic?",
+      "options": [
+        "Antonio Santi Giuseppe Meucci was an Italian inventor and an associate of Giuseppe Garibaldi, a major political figure...",
+        "The Upper Paleolithic is the third and last subdivision of the Paleolithic or Old Stone Age.",
+        "Cloud cuckoo land is a state of absurdity, over-optimistic fantasy or an unrealistically idealistic state of mind where...",
+        "Rococo, less commonly Roccoco, is a Western style of architecture, art, and decoration that emerged in France in..."
+      ],
+      "answer": 1,
+      "explanation": "The Upper Paleolithic is the third and last subdivision of the Paleolithic or Old Stone Age. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Contemporary history.",
+      "options": [
+        "In governance, sortition is the selection of public officials or jurors at random, i.e., by lottery, in order...",
+        "Delos or Dilos, is a small Greek island near Mykonos, close to the centre of the Cyclades archipelago.",
+        "Contemporary history, in English-language historiography, is a subset of modern history that describes the historical period from about...",
+        "An Archimedes' screw is a hydraulic machine composing of an outer cylinder and an inner cylinder with helical..."
+      ],
+      "answer": 2,
+      "explanation": "Contemporary history, in English-language historiography, is a subset of modern history that describes the historical period from about... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Portuguese maritime exploration.",
+      "options": [
+        "In historiography, periodization is the process or study of categorizing the past into discrete, quantified, and named blocks...",
+        "The Decapolis was a group of ten Greek Hellenistic cities on the eastern frontier of the Greek and...",
+        "Portuguese maritime explorations resulted in numerous territories and maritime routes recorded by the Portuguese on journeys during the...",
+        "Thrace is a geographical and historical region in Southeast Europe roughly corresponding to the province of Thrace in..."
+      ],
+      "answer": 2,
+      "explanation": "Portuguese maritime explorations resulted in numerous territories and maritime routes recorded by the Portuguese on journeys during the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Neoclassicism.",
+      "options": [
+        "Abu Simbel is a historic site comprising two massive rock-cut temples in the village of Abu Simbel, Aswan...",
+        "Distillation, also classical distillation, is the process of separating the component substances of a liquid mixture of two...",
+        "The Age of Discovery, also known as the Age of Exploration, was part of the early modern period...",
+        "Neoclassicism, also spelled Neo-classicism, emerged as a Western cultural movement in the decorative and visual arts, literature, theatre..."
+      ],
+      "answer": 3,
+      "explanation": "Neoclassicism, also spelled Neo-classicism, emerged as a Western cultural movement in the decorative and visual arts, literature, theatre... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Roaring Forties?",
+      "options": [
+        "The Folies Bergère is a cabaret music hall in Paris, France.",
+        "The Roaring Forties are strong westerly winds that occur in the Southern Hemisphere, generally between the latitudes of...",
+        "The Sherden is one of the several ethnic groups the Sea Peoples were said to be composed of...",
+        "Samarra is a city in Iraq."
+      ],
+      "answer": 1,
+      "explanation": "The Roaring Forties are strong westerly winds that occur in the Southern Hemisphere, generally between the latitudes of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Information Age?",
+      "options": [
+        "The Wieliczka Salt Mine is a salt mine in the town of Wieliczka, near Kraków in southern Poland.",
+        "A crane is a machine used to move materials both vertically and horizontally, utilizing a system of a...",
+        "The Information Age is a historical period that began in the mid-20th century.",
+        "Archaic Greece was the period in Greek history lasting from c."
+      ],
+      "answer": 2,
+      "explanation": "The Information Age is a historical period that began in the mid-20th century. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Cabinet of curiosities?",
+      "options": [
+        "Ngorongoro Conservation Area is a protected area and a UNESCO World Heritage Site located in Ngorongoro District, 180...",
+        "Ancient Greek architecture came from the Greeks, or Hellenes, whose culture flourished on the Greek mainland, the Peloponnese...",
+        "The control of fire by early humans was a critical technology enabling the evolution of humans.",
+        "Cabinets of curiosities, also known as wonder-rooms, were encyclopedic collections of objects whose categorical boundaries were, in Renaissance..."
+      ],
+      "answer": 3,
+      "explanation": "Cabinets of curiosities, also known as wonder-rooms, were encyclopedic collections of objects whose categorical boundaries were, in Renaissance... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Clair Obscur: Expedition 33.",
+      "options": [
+        "An aqueduct is a watercourse constructed to carry water from a source to a distribution point far away.",
+        "Thrace is a geographical and historical region in Southeast Europe roughly corresponding to the province of Thrace in...",
+        "Ngorongoro Conservation Area is a protected area and a UNESCO World Heritage Site located in Ngorongoro District, 180...",
+        "Clair Obscur: Expedition 33 is a 2025 role-playing video game developed by Sandfall Interactive and published by Kepler..."
+      ],
+      "answer": 3,
+      "explanation": "Clair Obscur: Expedition 33 is a 2025 role-playing video game developed by Sandfall Interactive and published by Kepler... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about European colonization of the Americas?",
+      "options": [
+        "During the Age of Discovery, a large scale colonization of the Americas, involving a number of European countries...",
+        "The Roaring Forties are strong westerly winds that occur in the Southern Hemisphere, generally between the latitudes of...",
+        "An Archimedes' screw is a hydraulic machine composing of an outer cylinder and an inner cylinder with helical...",
+        "Gardiner's sign list is a list of common Egyptian hieroglyphs compiled by Sir Alan Gardiner and first published..."
+      ],
+      "answer": 0,
+      "explanation": "During the Age of Discovery, a large scale colonization of the Americas, involving a number of European countries... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Sonic weapon?",
+      "options": [
+        "Guilds in medieval Europe were associations of craftsmen, merchants, or other skilled workers that emerged across Europe to...",
+        "Virunga National Park is a national park in the Albertine Rift Valley in the eastern part of the...",
+        "In historiography, periodization is the process or study of categorizing the past into discrete, quantified, and named blocks...",
+        "Sonic and ultrasonic weapons (USW) are directed-energy weapons of various types that use sound to injure or incapacitate..."
+      ],
+      "answer": 3,
+      "explanation": "Sonic and ultrasonic weapons (USW) are directed-energy weapons of various types that use sound to injure or incapacitate... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Invention of the telephone?",
+      "options": [
+        "Archaic Greece was the period in Greek history lasting from c.",
+        "The invention of the telephone was the culmination of work done by many different people, and led to...",
+        "Liquor, spirit, distilled spirit, or spirituous liquor are alcoholic drinks produced by the distillation of grains, fruits, vegetables...",
+        "The Eighteenth Dynasty of Egypt is classified as the first dynasty of the New Kingdom of Egypt, the..."
+      ],
+      "answer": 1,
+      "explanation": "The invention of the telephone was the culmination of work done by many different people, and led to... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Elizabethan era?",
+      "options": [
+        "A wind vane, weather vane, or weathercock is a type of anemoscope used for showing the direction of...",
+        "Ancient Greek architecture came from the Greeks, or Hellenes, whose culture flourished on the Greek mainland, the Peloponnese...",
+        "The Elizabethan era is the epoch in the Tudor period of the history of England during the reign...",
+        "The xylospongium or tersorium, also known as a \"sponge on a stick\", was a hygiene utensil found in..."
+      ],
+      "answer": 2,
+      "explanation": "The Elizabethan era is the epoch in the Tudor period of the history of England during the reign... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Greek love?",
+      "options": [
+        "The Middle Kingdom of Egypt is the period in the history of ancient Egypt following a period of...",
+        "Greek love is a term originally used by classicists to describe the primarily homoerotic customs, practices, and attitudes...",
+        "Egyptian blue, also known as calcium copper silicate, calcium copper tetrasilicate, or cuprorivaite, is a pigment with the...",
+        "The Roman salute, also known as the fascist salute, is a gesture in which the right hand is..."
+      ],
+      "answer": 1,
+      "explanation": "Greek love is a term originally used by classicists to describe the primarily homoerotic customs, practices, and attitudes... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Early modern period.",
+      "options": [
+        "The Graphics Interchange Format is a bitmap image format that was developed by a team at the online...",
+        "The Holocene is the current geological epoch, beginning approximately 11,700 years ago.",
+        "The early modern period, c.",
+        "A composite monarchy is a historical category that describes early modern states consisting of several countries under one..."
+      ],
+      "answer": 2,
+      "explanation": "The early modern period, c. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Sator Square?",
+      "options": [
+        "Portuguese maritime explorations resulted in numerous territories and maritime routes recorded by the Portuguese on journeys during the...",
+        "The Sator Square is a two-dimensional acrostic class of word square containing a five-word Latin palindrome.",
+        "The Decapolis was a group of ten Greek Hellenistic cities on the eastern frontier of the Greek and...",
+        "In ancient Egyptian history, dynasties are a series of rulers sharing a common origin."
+      ],
+      "answer": 1,
+      "explanation": "The Sator Square is a two-dimensional acrostic class of word square containing a five-word Latin palindrome. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Temple of Dendur?",
+      "options": [
+        "The Temple of Dendur is a Roman Egyptian religious structure originally located in Tuzis, Nubia about 80 kilometres...",
+        "Egyptian blue, also known as calcium copper silicate, calcium copper tetrasilicate, or cuprorivaite, is a pigment with the...",
+        "Caria was a region of western Anatolia extending along the coast from mid-Ionia (Mycale) south to Lycia and...",
+        "The 19th century began on 1 January 1801, and ended on 31 December 1900 (MCM)."
+      ],
+      "answer": 0,
+      "explanation": "The Temple of Dendur is a Roman Egyptian religious structure originally located in Tuzis, Nubia about 80 kilometres... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Contrast (video game)?",
+      "options": [
+        "Phallic architecture consciously or unconsciously creates a symbolic representation of the human penis.",
+        "The Viking Age was the period during the Middle Ages when Norsemen known as Vikings undertook large-scale raiding...",
+        "Contrast is a puzzle-platform game developed by Compulsion Games for Microsoft Windows, PlayStation 3, PlayStation 4, Xbox 360...",
+        "A tack piano is a modified ordinary piano, in which objects such as thumbtacks or nails are placed..."
+      ],
+      "answer": 2,
+      "explanation": "Contrast is a puzzle-platform game developed by Compulsion Games for Microsoft Windows, PlayStation 3, PlayStation 4, Xbox 360... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Vienna.",
+      "options": [
+        "Vienna is the capital, most populous city, and one of the nine states of Austria.",
+        "Neoclassicism, also spelled Neo-classicism, emerged as a Western cultural movement in the decorative and visual arts, literature, theatre...",
+        "The 2010s was the decade that began on 1 January 2010 and ended on 31 December 2019.",
+        "An aeolipile, aeolipyle, or eolipile, also known as a Hero's engine, is a simple, bladeless radial steam turbine..."
+      ],
+      "answer": 0,
+      "explanation": "Vienna is the capital, most populous city, and one of the nine states of Austria. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Archimedes' heat ray?",
+      "options": [
+        "Pecunia non olet is a Latin saying that means \"money does not stink\".",
+        "The Chalcolithic was an archaeological period characterized by the increasing use of smelted copper.",
+        "The Nineteenth Dynasty of Egypt, also known as the Ramessid dynasty, is classified as the second dynasty of...",
+        "Archimedes is purported to have invented a large scale solar furnace, sometimes described as a heat ray, and..."
+      ],
+      "answer": 3,
+      "explanation": "Archimedes is purported to have invented a large scale solar furnace, sometimes described as a heat ray, and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Old Kingdom of Egypt?",
+      "options": [
+        "A composite monarchy is a historical category that describes early modern states consisting of several countries under one...",
+        "In ancient Egyptian history, the Old Kingdom is the period spanning c.",
+        "The control of fire by early humans was a critical technology enabling the evolution of humans.",
+        "The Roman salute, also known as the fascist salute, is a gesture in which the right hand is..."
+      ],
+      "answer": 1,
+      "explanation": "In ancient Egyptian history, the Old Kingdom is the period spanning c. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Dubrovnik?",
+      "options": [
+        "In governance, sortition is the selection of public officials or jurors at random, i.e., by lottery, in order...",
+        "Dubrovnik, historically also known as Ragusa, is a city in southern Dalmatia, Croatia, by the Adriatic Sea.",
+        "East Indiamen were merchant ships that operated under charter or licence for European trading companies which traded with...",
+        "Antonio Santi Giuseppe Meucci was an Italian inventor and an associate of Giuseppe Garibaldi, a major political figure..."
+      ],
+      "answer": 1,
+      "explanation": "Dubrovnik, historically also known as Ragusa, is a city in southern Dalmatia, Croatia, by the Adriatic Sea. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Age of Revolution?",
+      "options": [
+        "The regions of ancient Greece were sub-divisions of the Hellenic world as conceived by the ancient Greeks, shown...",
+        "The Eighteenth Dynasty of Egypt is classified as the first dynasty of the New Kingdom of Egypt, the...",
+        "The Age of Revolution is a period from the late-18th to the mid-19th centuries during which a number...",
+        "The African humid period was a climate period in Africa during the late Pleistocene and Holocene geologic epochs..."
+      ],
+      "answer": 2,
+      "explanation": "The Age of Revolution is a period from the late-18th to the mid-19th centuries during which a number... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Xylospongium?",
+      "options": [
+        "The 19th century began on 1 January 1801, and ended on 31 December 1900 (MCM).",
+        "The xylospongium or tersorium, also known as a \"sponge on a stick\", was a hygiene utensil found in...",
+        "The spice trade involved historical civilizations in Asia, Northeast Africa and Europe.",
+        "East Indiamen were merchant ships that operated under charter or licence for European trading companies which traded with..."
+      ],
+      "answer": 1,
+      "explanation": "The xylospongium or tersorium, also known as a \"sponge on a stick\", was a hygiene utensil found in... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about 17th century?",
+      "options": [
+        "The Bone Wars, also known as the Great Dinosaur Rush, was a period of intense and ruthlessly competitive...",
+        "The 17th century lasted from January 1, 1601, to December 31, 1700 (MDCC).",
+        "The Temple of Dendur is a Roman Egyptian religious structure originally located in Tuzis, Nubia about 80 kilometres...",
+        "Ancient Greek architecture came from the Greeks, or Hellenes, whose culture flourished on the Greek mainland, the Peloponnese..."
+      ],
+      "answer": 1,
+      "explanation": "The 17th century lasted from January 1, 1601, to December 31, 1700 (MDCC). (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Escapement?",
+      "options": [
+        "The Old City of Jerusalem is a 0.9-square-kilometre (0.35 sq mi) walled area in East Jerusalem.",
+        "Egyptian blue, also known as calcium copper silicate, calcium copper tetrasilicate, or cuprorivaite, is a pigment with the...",
+        "An escapement is a mechanical linkage in mechanical watches and clocks that gives impulses to the timekeeping element...",
+        "A labrys is a kind of double-bitted axe that traces back to the Minoan civilization of Crete."
+      ],
+      "answer": 2,
+      "explanation": "An escapement is a mechanical linkage in mechanical watches and clocks that gives impulses to the timekeeping element... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Dynasties of ancient Egypt?",
+      "options": [
+        "A labrys is a kind of double-bitted axe that traces back to the Minoan civilization of Crete.",
+        "In ancient Egyptian history, dynasties are a series of rulers sharing a common origin.",
+        "A crane is a machine used to move materials both vertically and horizontally, utilizing a system of a...",
+        "Cabinets of curiosities, also known as wonder-rooms, were encyclopedic collections of objects whose categorical boundaries were, in Renaissance..."
+      ],
+      "answer": 1,
+      "explanation": "In ancient Egyptian history, dynasties are a series of rulers sharing a common origin. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Toilet?",
+      "options": [
+        "Contrast is a puzzle-platform game developed by Compulsion Games for Microsoft Windows, PlayStation 3, PlayStation 4, Xbox 360...",
+        "A toilet is a piece of sanitary hardware (sanitaryware) that collects human waste and sometimes toilet paper, usually...",
+        "The 2000s is the decade that began on January 1, 2000, and ended on December 31, 2009.",
+        "The Lahore Fort is a citadel in the walled interior of Lahore in Punjab, Pakistan."
+      ],
+      "answer": 1,
+      "explanation": "A toilet is a piece of sanitary hardware (sanitaryware) that collects human waste and sometimes toilet paper, usually... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Tale of the Shipwrecked Sailor?",
+      "options": [
+        "The \"Tale of the Shipwrecked Sailor\" is a Middle Kingdom story of an Ancient Egyptian voyage to \"the...",
+        "The 2010s was the decade that began on 1 January 2010 and ended on 31 December 2019.",
+        "The Travels of Marco Polo, also known as The Book of the Marvels of the World and by...",
+        "A telephone, commonly shortened to phone, is a telecommunications device that enables two or more users to conduct..."
+      ],
+      "answer": 0,
+      "explanation": "The \"Tale of the Shipwrecked Sailor\" is a Middle Kingdom story of an Ancient Egyptian voyage to \"the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Ancient Greek architecture?",
+      "options": [
+        "The Eighteenth Dynasty of Egypt is classified as the first dynasty of the New Kingdom of Egypt, the...",
+        "Ancient Greek architecture came from the Greeks, or Hellenes, whose culture flourished on the Greek mainland, the Peloponnese...",
+        "A carbon nanotube (CNT) is a tube made of carbon with a diameter in the nanometre range (nanoscale).",
+        "The Temple of Debod is an ancient Nubian temple currently located in Madrid, Spain."
+      ],
+      "answer": 1,
+      "explanation": "Ancient Greek architecture came from the Greeks, or Hellenes, whose culture flourished on the Greek mainland, the Peloponnese... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Periodization?",
+      "options": [
+        "Contrast is a puzzle-platform game developed by Compulsion Games for Microsoft Windows, PlayStation 3, PlayStation 4, Xbox 360...",
+        "An escapement is a mechanical linkage in mechanical watches and clocks that gives impulses to the timekeeping element...",
+        "The Challenger expedition of 1872–1876 was a scientific programme that made many discoveries to lay the foundation of...",
+        "In historiography, periodization is the process or study of categorizing the past into discrete, quantified, and named blocks..."
+      ],
+      "answer": 3,
+      "explanation": "In historiography, periodization is the process or study of categorizing the past into discrete, quantified, and named blocks... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Psionics?",
+      "options": [
+        "The East India Company (EIC) was an English, and later British, joint-stock company that was founded in 1600...",
+        "East Indiamen were merchant ships that operated under charter or licence for European trading companies which traded with...",
+        "Abu Simbel is a historic site comprising two massive rock-cut temples in the village of Abu Simbel, Aswan...",
+        "In American science fiction of the 1950s and 1960s, psionics was a proposed discipline that applied principles of..."
+      ],
+      "answer": 3,
+      "explanation": "In American science fiction of the 1950s and 1960s, psionics was a proposed discipline that applied principles of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Wieliczka Salt Mine?",
+      "options": [
+        "A tack piano is a modified ordinary piano, in which objects such as thumbtacks or nails are placed...",
+        "The Wieliczka Salt Mine is a salt mine in the town of Wieliczka, near Kraków in southern Poland.",
+        "The Viking Age was the period during the Middle Ages when Norsemen known as Vikings undertook large-scale raiding...",
+        "The xylospongium or tersorium, also known as a \"sponge on a stick\", was a hygiene utensil found in..."
+      ],
+      "answer": 1,
+      "explanation": "The Wieliczka Salt Mine is a salt mine in the town of Wieliczka, near Kraków in southern Poland. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Weather vane.",
+      "options": [
+        "A toilet is a piece of sanitary hardware (sanitaryware) that collects human waste and sometimes toilet paper, usually...",
+        "The Napoleonic era is a period in the history of France and Europe.",
+        "Aššur, also known as Ashur and Qal'at Sherqat, was the capital of the Middle Assyrian Empire for a...",
+        "A wind vane, weather vane, or weathercock is a type of anemoscope used for showing the direction of..."
+      ],
+      "answer": 3,
+      "explanation": "A wind vane, weather vane, or weathercock is a type of anemoscope used for showing the direction of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about 2000s.",
+      "options": [
+        "The 2000s is the decade that began on January 1, 2000, and ended on December 31, 2009.",
+        "The Neolithic Revolution, also known as the First Agricultural Revolution, was the wide-scale transition of many human cultures...",
+        "The Second Intermediate Period marks a period when ancient Egypt was divided into smaller dynasties for a second...",
+        "The Birth of Tragedy Out of the Spirit of Music is an 1872 work of dramatic theory by..."
+      ],
+      "answer": 0,
+      "explanation": "The 2000s is the decade that began on January 1, 2000, and ended on December 31, 2009. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Wonders of the World?",
+      "options": [
+        "A tack piano is a modified ordinary piano, in which objects such as thumbtacks or nails are placed...",
+        "In modern historiography, ancient Rome is the Roman civilisation from the founding of the Italian city of Rome...",
+        "Phallic architecture consciously or unconsciously creates a symbolic representation of the human penis.",
+        "Various lists of the Wonders of the World have been compiled from antiquity to the present day, in..."
+      ],
+      "answer": 3,
+      "explanation": "Various lists of the Wonders of the World have been compiled from antiquity to the present day, in... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about 2010s?",
+      "options": [
+        "Plitvice Lakes National Park is one of the oldest and largest national parks in Croatia.",
+        "Stoicism is a philosophical movement and practical guide to living, emphasizing daily self-discipline and moral improvement, which originated...",
+        "The 2010s was the decade that began on 1 January 2010 and ended on 31 December 2019.",
+        "Princeps is a Latin word meaning \"first in time or order; the first, foremost, chief, the most eminent..."
+      ],
+      "answer": 2,
+      "explanation": "The 2010s was the decade that began on 1 January 2010 and ended on 31 December 2019. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Banknote.",
+      "options": [
+        "A banknote or bank note – also called a bill or simply a note – is a type...",
+        "Sonic and ultrasonic weapons (USW) are directed-energy weapons of various types that use sound to injure or incapacitate...",
+        "The Folies Bergère is a cabaret music hall in Paris, France.",
+        "The Holocene is the current geological epoch, beginning approximately 11,700 years ago."
+      ],
+      "answer": 0,
+      "explanation": "A banknote or bank note – also called a bill or simply a note – is a type... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Neolithic Revolution?",
+      "options": [
+        "The 2000s is the decade that began on January 1, 2000, and ended on December 31, 2009.",
+        "The Cave of the Patriarchs or Tomb of the Patriarchs, known to Jews by its Biblical name Cave...",
+        "A composite monarchy is a historical category that describes early modern states consisting of several countries under one...",
+        "The Neolithic Revolution, also known as the First Agricultural Revolution, was the wide-scale transition of many human cultures..."
+      ],
+      "answer": 3,
+      "explanation": "The Neolithic Revolution, also known as the First Agricultural Revolution, was the wide-scale transition of many human cultures... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Leptis Magna.",
+      "options": [
+        "Leptis or Lepcis Magna, also known by other names in antiquity, was a prominent city of the Carthaginian...",
+        "In American science fiction of the 1950s and 1960s, psionics was a proposed discipline that applied principles of...",
+        "The Middle Kingdom of Egypt is the period in the history of ancient Egypt following a period of...",
+        "The Bone Wars, also known as the Great Dinosaur Rush, was a period of intense and ruthlessly competitive..."
+      ],
+      "answer": 0,
+      "explanation": "Leptis or Lepcis Magna, also known by other names in antiquity, was a prominent city of the Carthaginian... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Vistula Veneti?",
+      "options": [
+        "The Wright Brothers were the first to achieve sustained, controlled, powered heavier-than-air manned flight in 1903, the longest...",
+        "The Vistula Veneti, also called Baltic Veneti, Venedi or Venethi, were an Indo-European people that inhabited the lands...",
+        "The Napoleonic era is a period in the history of France and Europe.",
+        "In American science fiction of the 1950s and 1960s, psionics was a proposed discipline that applied principles of..."
+      ],
+      "answer": 1,
+      "explanation": "The Vistula Veneti, also called Baltic Veneti, Venedi or Venethi, were an Indo-European people that inhabited the lands... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Aqueduct (water supply)?",
+      "options": [
+        "The Gibson Girl was the archetypal personification of the feminine ideal of physical attractiveness as portrayed by the...",
+        "An aqueduct is a watercourse constructed to carry water from a source to a distribution point far away.",
+        "Greek love is a term originally used by classicists to describe the primarily homoerotic customs, practices, and attitudes...",
+        "The mile, sometimes the international mile or statute mile to distinguish it from other miles, is a British..."
+      ],
+      "answer": 1,
+      "explanation": "An aqueduct is a watercourse constructed to carry water from a source to a distribution point far away. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Folies Bergère?",
+      "options": [
+        "An aeolipile, aeolipyle, or eolipile, also known as a Hero's engine, is a simple, bladeless radial steam turbine...",
+        "The Folies Bergère is a cabaret music hall in Paris, France.",
+        "Antonio Santi Giuseppe Meucci was an Italian inventor and an associate of Giuseppe Garibaldi, a major political figure...",
+        "The Napoleonic era is a period in the history of France and Europe."
+      ],
+      "answer": 1,
+      "explanation": "The Folies Bergère is a cabaret music hall in Paris, France. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Temple of Debod?",
+      "options": [
+        "\"Old World\" is a term for Afro-Eurasia coined by Europeans after 1493, when they became aware of the...",
+        "Antonio Santi Giuseppe Meucci was an Italian inventor and an associate of Giuseppe Garibaldi, a major political figure...",
+        "The Graphics Interchange Format is a bitmap image format that was developed by a team at the online...",
+        "The Temple of Debod is an ancient Nubian temple currently located in Madrid, Spain."
+      ],
+      "answer": 3,
+      "explanation": "The Temple of Debod is an ancient Nubian temple currently located in Madrid, Spain. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Mile?",
+      "options": [
+        "Psychic driving was a psychiatric procedure that patients felt was torturous, developed in the 1950s and 1960s in...",
+        "The Napoleonic era is a period in the history of France and Europe.",
+        "The Lighthouse of Alexandria, sometimes called the Pharos of Alexandria, was a lighthouse built by the Ptolemaic Kingdom...",
+        "The mile, sometimes the international mile or statute mile to distinguish it from other miles, is a British..."
+      ],
+      "answer": 3,
+      "explanation": "The mile, sometimes the international mile or statute mile to distinguish it from other miles, is a British... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Sortition.",
+      "options": [
+        "Leonardo da Vinci (1452–1519) was an Italian polymath, regarded as the epitome of the \"Renaissance Man\", displaying skills...",
+        "In governance, sortition is the selection of public officials or jurors at random, i.e., by lottery, in order...",
+        "A Pythagorean cup is a practical joke device in the form of a drinking cup.",
+        "The Neolithic Revolution, also known as the First Agricultural Revolution, was the wide-scale transition of many human cultures..."
+      ],
+      "answer": 1,
+      "explanation": "In governance, sortition is the selection of public officials or jurors at random, i.e., by lottery, in order... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Sherden?",
+      "options": [
+        "A composite monarchy is a historical category that describes early modern states consisting of several countries under one...",
+        "The Sherden is one of the several ethnic groups the Sea Peoples were said to be composed of...",
+        "The Sator Square is a two-dimensional acrostic class of word square containing a five-word Latin palindrome.",
+        "The three-age system is the division of human prehistory into three time-periods: the Stone Age, the Bronze Age..."
+      ],
+      "answer": 1,
+      "explanation": "The Sherden is one of the several ethnic groups the Sea Peoples were said to be composed of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Regions of ancient Greece?",
+      "options": [
+        "Ancient Greece was a northeastern Mediterranean civilization, existing from the Greek Dark Ages of the 12th–9th centuries BC...",
+        "Ngorongoro Conservation Area is a protected area and a UNESCO World Heritage Site located in Ngorongoro District, 180...",
+        "The mile, sometimes the international mile or statute mile to distinguish it from other miles, is a British...",
+        "The regions of ancient Greece were sub-divisions of the Hellenic world as conceived by the ancient Greeks, shown..."
+      ],
+      "answer": 3,
+      "explanation": "The regions of ancient Greece were sub-divisions of the Hellenic world as conceived by the ancient Greeks, shown... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Archaic Greece?",
+      "options": [
+        "During the Age of Discovery, a large scale colonization of the Americas, involving a number of European countries...",
+        "Archaic Greece was the period in Greek history lasting from c.",
+        "Ancient Greek architecture came from the Greeks, or Hellenes, whose culture flourished on the Greek mainland, the Peloponnese...",
+        "The Roaring Forties are strong westerly winds that occur in the Southern Hemisphere, generally between the latitudes of..."
+      ],
+      "answer": 1,
+      "explanation": "Archaic Greece was the period in Greek history lasting from c. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Tack piano?",
+      "options": [
+        "A tack piano is a modified ordinary piano, in which objects such as thumbtacks or nails are placed...",
+        "Cloud cuckoo land is a state of absurdity, over-optimistic fantasy or an unrealistically idealistic state of mind where...",
+        "During the Age of Discovery, a large scale colonization of the Americas, involving a number of European countries...",
+        "Romanization or Latinization, in the historical and cultural meanings of both terms, indicate different historical processes, such as..."
+      ],
+      "answer": 0,
+      "explanation": "A tack piano is a modified ordinary piano, in which objects such as thumbtacks or nails are placed... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Pythagorean cup?",
+      "options": [
+        "Delos or Dilos, is a small Greek island near Mykonos, close to the centre of the Cyclades archipelago.",
+        "A Pythagorean cup is a practical joke device in the form of a drinking cup.",
+        "The Gibson Girl was the archetypal personification of the feminine ideal of physical attractiveness as portrayed by the...",
+        "The Folies Bergère is a cabaret music hall in Paris, France."
+      ],
+      "answer": 1,
+      "explanation": "A Pythagorean cup is a practical joke device in the form of a drinking cup. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Ode on a Grecian Urn?",
+      "options": [
+        "The Vistula Veneti, also called Baltic Veneti, Venedi or Venethi, were an Indo-European people that inhabited the lands...",
+        "Egyptian blue, also known as calcium copper silicate, calcium copper tetrasilicate, or cuprorivaite, is a pigment with the...",
+        "\"Ode on a Grecian Urn\" is a poem written by the English Romantic poet John Keats in May...",
+        "The Cave of the Patriarchs or Tomb of the Patriarchs, known to Jews by its Biblical name Cave..."
+      ],
+      "answer": 2,
+      "explanation": "\"Ode on a Grecian Urn\" is a poem written by the English Romantic poet John Keats in May... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Control of fire by early humans.",
+      "options": [
+        "The control of fire by early humans was a critical technology enabling the evolution of humans.",
+        "Phallic architecture consciously or unconsciously creates a symbolic representation of the human penis.",
+        "In modern historiography, ancient Rome is the Roman civilisation from the founding of the Italian city of Rome...",
+        "Archaic Greece was the period in Greek history lasting from c."
+      ],
+      "answer": 0,
+      "explanation": "The control of fire by early humans was a critical technology enabling the evolution of humans. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Gardiner's sign list.",
+      "options": [
+        "Thrace is a geographical and historical region in Southeast Europe roughly corresponding to the province of Thrace in...",
+        "Leonardo da Vinci (1452–1519) was an Italian polymath, regarded as the epitome of the \"Renaissance Man\", displaying skills...",
+        "Gardiner's sign list is a list of common Egyptian hieroglyphs compiled by Sir Alan Gardiner and first published...",
+        "The 19th century began on 1 January 1801, and ended on 31 December 1900 (MCM)."
+      ],
+      "answer": 2,
+      "explanation": "Gardiner's sign list is a list of common Egyptian hieroglyphs compiled by Sir Alan Gardiner and first published... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Delos.",
+      "options": [
+        "Archimedes is purported to have invented a large scale solar furnace, sometimes described as a heat ray, and...",
+        "The Jacobean era was the period in English and Scottish history that coincides with the reign of James...",
+        "Delos or Dilos, is a small Greek island near Mykonos, close to the centre of the Cyclades archipelago.",
+        "An aqueduct is a watercourse constructed to carry water from a source to a distribution point far away."
+      ],
+      "answer": 2,
+      "explanation": "Delos or Dilos, is a small Greek island near Mykonos, close to the centre of the Cyclades archipelago. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Stoicism?",
+      "options": [
+        "Stoicism is a philosophical movement and practical guide to living, emphasizing daily self-discipline and moral improvement, which originated...",
+        "Phallic architecture consciously or unconsciously creates a symbolic representation of the human penis.",
+        "An orrery is a mechanical model of the Solar System that illustrates or predicts the relative positions and...",
+        "A knight is a person granted an honorary title of a knighthood by a head of state or..."
+      ],
+      "answer": 0,
+      "explanation": "Stoicism is a philosophical movement and practical guide to living, emphasizing daily self-discipline and moral improvement, which originated... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Population decline?",
+      "options": [
+        "In historiography, periodization is the process or study of categorizing the past into discrete, quantified, and named blocks...",
+        "Population decline, also known as depopulation, is a reduction in a human population size.",
+        "A tack piano is a modified ordinary piano, in which objects such as thumbtacks or nails are placed...",
+        "Plitvice Lakes National Park is one of the oldest and largest national parks in Croatia."
+      ],
+      "answer": 1,
+      "explanation": "Population decline, also known as depopulation, is a reduction in a human population size. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Phallic architecture.",
+      "options": [
+        "Psychic driving was a psychiatric procedure that patients felt was torturous, developed in the 1950s and 1960s in...",
+        "The Old City of Jerusalem is a 0.9-square-kilometre (0.35 sq mi) walled area in East Jerusalem.",
+        "The Napoleonic era is a period in the history of France and Europe.",
+        "Phallic architecture consciously or unconsciously creates a symbolic representation of the human penis."
+      ],
+      "answer": 3,
+      "explanation": "Phallic architecture consciously or unconsciously creates a symbolic representation of the human penis. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Old World?",
+      "options": [
+        "Stoicism is a philosophical movement and practical guide to living, emphasizing daily self-discipline and moral improvement, which originated...",
+        "A knight is a person granted an honorary title of a knighthood by a head of state or...",
+        "\"Old World\" is a term for Afro-Eurasia coined by Europeans after 1493, when they became aware of the...",
+        "The Philae temple complex is an island-based temple complex in the reservoir of the Aswan Low Dam, downstream..."
+      ],
+      "answer": 2,
+      "explanation": "\"Old World\" is a term for Afro-Eurasia coined by Europeans after 1493, when they became aware of the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Orrery?",
+      "options": [
+        "The East India Company (EIC) was an English, and later British, joint-stock company that was founded in 1600...",
+        "Clair Obscur: Expedition 33 is a 2025 role-playing video game developed by Sandfall Interactive and published by Kepler...",
+        "The 2010s was the decade that began on 1 January 2010 and ended on 31 December 2019.",
+        "An orrery is a mechanical model of the Solar System that illustrates or predicts the relative positions and..."
+      ],
+      "answer": 3,
+      "explanation": "An orrery is a mechanical model of the Solar System that illustrates or predicts the relative positions and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Hellenization?",
+      "options": [
+        "Hellenization or Hellenification is the adoption of Greek culture, religion, language, and identity by non-Greeks.",
+        "Clair Obscur: Expedition 33 is a 2025 role-playing video game developed by Sandfall Interactive and published by Kepler...",
+        "Delos or Dilos, is a small Greek island near Mykonos, close to the centre of the Cyclades archipelago.",
+        "Ancient Greek architecture came from the Greeks, or Hellenes, whose culture flourished on the Greek mainland, the Peloponnese..."
+      ],
+      "answer": 0,
+      "explanation": "Hellenization or Hellenification is the adoption of Greek culture, religion, language, and identity by non-Greeks. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Demimonde?",
+      "options": [
+        "Demimonde, French for \"half-world\", is a 19th-century term to describe women on the fringes of respectable society, particularly...",
+        "The Middle Kingdom of Egypt is the period in the history of ancient Egypt following a period of...",
+        "In ancient Egyptian history, the Old Kingdom is the period spanning c.",
+        "Ngorongoro Conservation Area is a protected area and a UNESCO World Heritage Site located in Ngorongoro District, 180..."
+      ],
+      "answer": 0,
+      "explanation": "Demimonde, French for \"half-world\", is a 19th-century term to describe women on the fringes of respectable society, particularly... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Plitvice Lakes National Park?",
+      "options": [
+        "The invention of the telephone was the culmination of work done by many different people, and led to...",
+        "Princeps is a Latin word meaning \"first in time or order; the first, foremost, chief, the most eminent...",
+        "Plitvice Lakes National Park is one of the oldest and largest national parks in Croatia.",
+        "In governance, sortition is the selection of public officials or jurors at random, i.e., by lottery, in order..."
+      ],
+      "answer": 2,
+      "explanation": "Plitvice Lakes National Park is one of the oldest and largest national parks in Croatia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Golden Age of Piracy.",
+      "options": [
+        "Distillation, also classical distillation, is the process of separating the component substances of a liquid mixture of two...",
+        "The Golden Age of Piracy was the period between the 1650s and the 1730s, when maritime piracy was...",
+        "The 19th century began on 1 January 1801, and ended on 31 December 1900 (MCM).",
+        "The African humid period was a climate period in Africa during the late Pleistocene and Holocene geologic epochs..."
+      ],
+      "answer": 1,
+      "explanation": "The Golden Age of Piracy was the period between the 1650s and the 1730s, when maritime piracy was... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Crane (machine).",
+      "options": [
+        "The Birth of Tragedy Out of the Spirit of Music is an 1872 work of dramatic theory by...",
+        "Population decline, also known as depopulation, is a reduction in a human population size.",
+        "A crane is a machine used to move materials both vertically and horizontally, utilizing a system of a...",
+        "Dubrovnik, historically also known as Ragusa, is a city in southern Dalmatia, Croatia, by the Adriatic Sea."
+      ],
+      "answer": 2,
+      "explanation": "A crane is a machine used to move materials both vertically and horizontally, utilizing a system of a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Second Intermediate Period of Egypt.",
+      "options": [
+        "Various lists of the Wonders of the World have been compiled from antiquity to the present day, in...",
+        "Demimonde, French for \"half-world\", is a 19th-century term to describe women on the fringes of respectable society, particularly...",
+        "Paper money, often referred to as a note or a bill, is a type of negotiable promissory note...",
+        "The Second Intermediate Period marks a period when ancient Egypt was divided into smaller dynasties for a second..."
+      ],
+      "answer": 3,
+      "explanation": "The Second Intermediate Period marks a period when ancient Egypt was divided into smaller dynasties for a second... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Macedonia (ancient kingdom)?",
+      "options": [
+        "Macedonia, also called Macedon, was an ancient kingdom on the periphery of Archaic and Classical Greece, which later...",
+        "The Age of Discovery, also known as the Age of Exploration, was part of the early modern period...",
+        "The Chalcolithic was an archaeological period characterized by the increasing use of smelted copper.",
+        "Hellenization or Hellenification is the adoption of Greek culture, religion, language, and identity by non-Greeks."
+      ],
+      "answer": 0,
+      "explanation": "Macedonia, also called Macedon, was an ancient kingdom on the periphery of Archaic and Classical Greece, which later... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Little Ice Age?",
+      "options": [
+        "A wind vane, weather vane, or weathercock is a type of anemoscope used for showing the direction of...",
+        "The Little Ice Age (LIA) was a period of regional cooling, particularly pronounced in the North Atlantic region.",
+        "The three-age system is the division of human prehistory into three time-periods: the Stone Age, the Bronze Age...",
+        "Psychic driving was a psychiatric procedure that patients felt was torturous, developed in the 1950s and 1960s in..."
+      ],
+      "answer": 1,
+      "explanation": "The Little Ice Age (LIA) was a period of regional cooling, particularly pronounced in the North Atlantic region. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Ancient Rome?",
+      "options": [
+        "In modern historiography, ancient Rome is the Roman civilisation from the founding of the Italian city of Rome...",
+        "A knight is a person granted an honorary title of a knighthood by a head of state or...",
+        "The Dark Ages is a term, now deprecated by most historians, for the Early Middle Ages, or occasionally...",
+        "An isolation tank, sensory deprivation tank, float tank, float pod, float cabin, flotation tank, or sensory attenuation tank..."
+      ],
+      "answer": 0,
+      "explanation": "In modern historiography, ancient Rome is the Roman civilisation from the founding of the Italian city of Rome... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Cura annonae?",
+      "options": [
+        "In Imperial Rome, cura annonae was the logistics system which procured and distributed grain for the cities of...",
+        "Macedonia, also called Macedon, was an ancient kingdom on the periphery of Archaic and Classical Greece, which later...",
+        "The Information Age is a historical period that began in the mid-20th century.",
+        "In ancient Egyptian history, the Old Kingdom is the period spanning c."
+      ],
+      "answer": 0,
+      "explanation": "In Imperial Rome, cura annonae was the logistics system which procured and distributed grain for the cities of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Virunga National Park?",
+      "options": [
+        "The Dark Ages is a term, now deprecated by most historians, for the Early Middle Ages, or occasionally...",
+        "Vienna is the capital, most populous city, and one of the nine states of Austria.",
+        "Virunga National Park is a national park in the Albertine Rift Valley in the eastern part of the...",
+        "The 17th century lasted from January 1, 1601, to December 31, 1700 (MDCC)."
+      ],
+      "answer": 2,
+      "explanation": "Virunga National Park is a national park in the Albertine Rift Valley in the eastern part of the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Psychic driving?",
+      "options": [
+        "The Birth of Tragedy Out of the Spirit of Music is an 1872 work of dramatic theory by...",
+        "Psychic driving was a psychiatric procedure that patients felt was torturous, developed in the 1950s and 1960s in...",
+        "The Second Intermediate Period marks a period when ancient Egypt was divided into smaller dynasties for a second...",
+        "The regions of ancient Greece were sub-divisions of the Hellenic world as conceived by the ancient Greeks, shown..."
+      ],
+      "answer": 1,
+      "explanation": "Psychic driving was a psychiatric procedure that patients felt was torturous, developed in the 1950s and 1960s in... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Spice trade?",
+      "options": [
+        "The Little Ice Age (LIA) was a period of regional cooling, particularly pronounced in the North Atlantic region.",
+        "In world history, post-classical history refers to the period from about 500 CE to about 1450 or 1500...",
+        "The Information Age is a historical period that began in the mid-20th century.",
+        "The spice trade involved historical civilizations in Asia, Northeast Africa and Europe."
+      ],
+      "answer": 3,
+      "explanation": "The spice trade involved historical civilizations in Asia, Northeast Africa and Europe. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Post-classical history.",
+      "options": [
+        "A Pythagorean cup is a practical joke device in the form of a drinking cup.",
+        "Liquor, spirit, distilled spirit, or spirituous liquor are alcoholic drinks produced by the distillation of grains, fruits, vegetables...",
+        "In world history, post-classical history refers to the period from about 500 CE to about 1450 or 1500...",
+        "Dubrovnik, historically also known as Ragusa, is a city in southern Dalmatia, Croatia, by the Adriatic Sea."
+      ],
+      "answer": 2,
+      "explanation": "In world history, post-classical history refers to the period from about 500 CE to about 1450 or 1500... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Thrace?",
+      "options": [
+        "Thrace is a geographical and historical region in Southeast Europe roughly corresponding to the province of Thrace in...",
+        "Portuguese maritime explorations resulted in numerous territories and maritime routes recorded by the Portuguese on journeys during the...",
+        "The Age of Discovery, also known as the Age of Exploration, was part of the early modern period...",
+        "A banknote or bank note – also called a bill or simply a note – is a type..."
+      ],
+      "answer": 0,
+      "explanation": "Thrace is a geographical and historical region in Southeast Europe roughly corresponding to the province of Thrace in... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Pecunia non olet?",
+      "options": [
+        "Contemporary history, in English-language historiography, is a subset of modern history that describes the historical period from about...",
+        "Pecunia non olet is a Latin saying that means \"money does not stink\".",
+        "The Folies Bergère is a cabaret music hall in Paris, France.",
+        "The spice trade involved historical civilizations in Asia, Northeast Africa and Europe."
+      ],
+      "answer": 1,
+      "explanation": "Pecunia non olet is a Latin saying that means \"money does not stink\". (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Science and inventions of Leonardo da Vinci?",
+      "options": [
+        "The Wright Brothers were the first to achieve sustained, controlled, powered heavier-than-air manned flight in 1903, the longest...",
+        "A banknote or bank note – also called a bill or simply a note – is a type...",
+        "Leonardo da Vinci (1452–1519) was an Italian polymath, regarded as the epitome of the \"Renaissance Man\", displaying skills...",
+        "Sonic and ultrasonic weapons (USW) are directed-energy weapons of various types that use sound to injure or incapacitate..."
+      ],
+      "answer": 2,
+      "explanation": "Leonardo da Vinci (1452–1519) was an Italian polymath, regarded as the epitome of the \"Renaissance Man\", displaying skills... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Claims to the first airplane flight?",
+      "options": [
+        "The Wright Brothers were the first to achieve sustained, controlled, powered heavier-than-air manned flight in 1903, the longest...",
+        "Population decline, also known as depopulation, is a reduction in a human population size.",
+        "The Information Age is a historical period that began in the mid-20th century.",
+        "The xylospongium or tersorium, also known as a \"sponge on a stick\", was a hygiene utensil found in..."
+      ],
+      "answer": 0,
+      "explanation": "The Wright Brothers were the first to achieve sustained, controlled, powered heavier-than-air manned flight in 1903, the longest... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about The Travels of Marco Polo?",
+      "options": [
+        "In ancient Egyptian history, the Old Kingdom is the period spanning c.",
+        "The Travels of Marco Polo, also known as The Book of the Marvels of the World and by...",
+        "The \"Tale of the Shipwrecked Sailor\" is a Middle Kingdom story of an Ancient Egyptian voyage to \"the...",
+        "The Amarna Period was an era of Egyptian history during the later half of the Eighteenth Dynasty when..."
+      ],
+      "answer": 1,
+      "explanation": "The Travels of Marco Polo, also known as The Book of the Marvels of the World and by... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Dreamachine?",
+      "options": [
+        "Antonio Santi Giuseppe Meucci was an Italian inventor and an associate of Giuseppe Garibaldi, a major political figure...",
+        "Neoclassicism, also spelled Neo-classicism, emerged as a Western cultural movement in the decorative and visual arts, literature, theatre...",
+        "The Dreamachine, invented in 1959 by Brion Gysin and Ian Sommerville, is a stroboscopic flickering light art device...",
+        "Renée Vivien was a British poet who wrote in the French language."
+      ],
+      "answer": 2,
+      "explanation": "The Dreamachine, invented in 1959 by Brion Gysin and Ian Sommerville, is a stroboscopic flickering light art device... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Bone Wars?",
+      "options": [
+        "The regions of ancient Greece were sub-divisions of the Hellenic world as conceived by the ancient Greeks, shown...",
+        "Ngorongoro Conservation Area is a protected area and a UNESCO World Heritage Site located in Ngorongoro District, 180...",
+        "The Bone Wars, also known as the Great Dinosaur Rush, was a period of intense and ruthlessly competitive...",
+        "The invention of radio communication was preceded by many decades of establishing theoretical underpinnings, discovery and experimental investigation..."
+      ],
+      "answer": 2,
+      "explanation": "The Bone Wars, also known as the Great Dinosaur Rush, was a period of intense and ruthlessly competitive... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Tai's model?",
+      "options": [
+        "During the Spanish colonization of the Americas, the Spanish Main comprised the parts of the Spanish Empire that...",
+        "Romanization or Latinization, in the historical and cultural meanings of both terms, indicate different historical processes, such as...",
+        "In 1994, nutrition scholar Mary M.",
+        "The Birth of Tragedy Out of the Spirit of Music is an 1872 work of dramatic theory by..."
+      ],
+      "answer": 2,
+      "explanation": "In 1994, nutrition scholar Mary M. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Gibson Girl.",
+      "options": [
+        "The Gibson Girl was the archetypal personification of the feminine ideal of physical attractiveness as portrayed by the...",
+        "Stoicism is a philosophical movement and practical guide to living, emphasizing daily self-discipline and moral improvement, which originated...",
+        "Guilds in medieval Europe were associations of craftsmen, merchants, or other skilled workers that emerged across Europe to...",
+        "The Elizabethan era is the epoch in the Tudor period of the history of England during the reign..."
+      ],
+      "answer": 0,
+      "explanation": "The Gibson Girl was the archetypal personification of the feminine ideal of physical attractiveness as portrayed by the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Holocene?",
+      "options": [
+        "The Holocene is the current geological epoch, beginning approximately 11,700 years ago.",
+        "A telephone, commonly shortened to phone, is a telecommunications device that enables two or more users to conduct...",
+        "The Chalcolithic was an archaeological period characterized by the increasing use of smelted copper.",
+        "A wind vane, weather vane, or weathercock is a type of anemoscope used for showing the direction of..."
+      ],
+      "answer": 0,
+      "explanation": "The Holocene is the current geological epoch, beginning approximately 11,700 years ago. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes SPQR?",
+      "options": [
+        "The Vistula Veneti, also called Baltic Veneti, Venedi or Venethi, were an Indo-European people that inhabited the lands...",
+        "SPQR or S.P.Q.R., an initialism for Senatus Populusque Romanus, is an emblematic phrase referring to the government of...",
+        "Samarra is a city in Iraq.",
+        "Pecunia non olet is a Latin saying that means \"money does not stink\"."
+      ],
+      "answer": 1,
+      "explanation": "SPQR or S.P.Q.R., an initialism for Senatus Populusque Romanus, is an emblematic phrase referring to the government of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Middle Kingdom of Egypt?",
+      "options": [
+        "The Middle Kingdom of Egypt is the period in the history of ancient Egypt following a period of...",
+        "The Second Intermediate Period marks a period when ancient Egypt was divided into smaller dynasties for a second...",
+        "The spice trade involved historical civilizations in Asia, Northeast Africa and Europe.",
+        "The Golden Age of Piracy was the period between the 1650s and the 1730s, when maritime piracy was..."
+      ],
+      "answer": 0,
+      "explanation": "The Middle Kingdom of Egypt is the period in the history of ancient Egypt following a period of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Princeps.",
+      "options": [
+        "Princeps is a Latin word meaning \"first in time or order; the first, foremost, chief, the most eminent...",
+        "The Nineteenth Dynasty of Egypt, also known as the Ramessid dynasty, is classified as the second dynasty of...",
+        "The Roman salute, also known as the fascist salute, is a gesture in which the right hand is...",
+        "The East India Company (EIC) was an English, and later British, joint-stock company that was founded in 1600..."
+      ],
+      "answer": 0,
+      "explanation": "Princeps is a Latin word meaning \"first in time or order; the first, foremost, chief, the most eminent... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Knight?",
+      "options": [
+        "The Golden Age of Piracy was the period between the 1650s and the 1730s, when maritime piracy was...",
+        "A knight is a person granted an honorary title of a knighthood by a head of state or...",
+        "An Archimedes' screw is a hydraulic machine composing of an outer cylinder and an inner cylinder with helical...",
+        "In Imperial Rome, cura annonae was the logistics system which procured and distributed grain for the cities of..."
+      ],
+      "answer": 1,
+      "explanation": "A knight is a person granted an honorary title of a knighthood by a head of state or... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about East Indiaman?",
+      "options": [
+        "Leonardo da Vinci (1452–1519) was an Italian polymath, regarded as the epitome of the \"Renaissance Man\", displaying skills...",
+        "Delos or Dilos, is a small Greek island near Mykonos, close to the centre of the Cyclades archipelago.",
+        "East Indiamen were merchant ships that operated under charter or licence for European trading companies which traded with...",
+        "The Bone Wars, also known as the Great Dinosaur Rush, was a period of intense and ruthlessly competitive..."
+      ],
+      "answer": 2,
+      "explanation": "East Indiamen were merchant ships that operated under charter or licence for European trading companies which traded with... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Egyptian blue?",
+      "options": [
+        "The xylospongium or tersorium, also known as a \"sponge on a stick\", was a hygiene utensil found in...",
+        "Ancient Greek architecture came from the Greeks, or Hellenes, whose culture flourished on the Greek mainland, the Peloponnese...",
+        "Egyptian blue, also known as calcium copper silicate, calcium copper tetrasilicate, or cuprorivaite, is a pigment with the...",
+        "Contrast is a puzzle-platform game developed by Compulsion Games for Microsoft Windows, PlayStation 3, PlayStation 4, Xbox 360..."
+      ],
+      "answer": 2,
+      "explanation": "Egyptian blue, also known as calcium copper silicate, calcium copper tetrasilicate, or cuprorivaite, is a pigment with the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Spanish Main?",
+      "options": [
+        "Contrast is a puzzle-platform game developed by Compulsion Games for Microsoft Windows, PlayStation 3, PlayStation 4, Xbox 360...",
+        "The Wieliczka Salt Mine is a salt mine in the town of Wieliczka, near Kraków in southern Poland.",
+        "The Gibson Girl was the archetypal personification of the feminine ideal of physical attractiveness as portrayed by the...",
+        "During the Spanish colonization of the Americas, the Spanish Main comprised the parts of the Spanish Empire that..."
+      ],
+      "answer": 3,
+      "explanation": "During the Spanish colonization of the Americas, the Spanish Main comprised the parts of the Spanish Empire that... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Late antiquity?",
+      "options": [
+        "The \"Tale of the Shipwrecked Sailor\" is a Middle Kingdom story of an Ancient Egyptian voyage to \"the...",
+        "The Information Age is a historical period that began in the mid-20th century.",
+        "Late antiquity is a period of Eurasian, Mediterranean, and Near Eastern history conventionally placed between the third and...",
+        "The early modern period, c."
+      ],
+      "answer": 2,
+      "explanation": "Late antiquity is a period of Eurasian, Mediterranean, and Near Eastern history conventionally placed between the third and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Water fuel cell.",
+      "options": [
+        "Thrace is a geographical and historical region in Southeast Europe roughly corresponding to the province of Thrace in...",
+        "The 19th century began on 1 January 1801, and ended on 31 December 1900 (MCM).",
+        "The water fuel cell is a non-functional design for a \"perpetual motion machine\" created by Stanley Allen Meyer.",
+        "A wind vane, weather vane, or weathercock is a type of anemoscope used for showing the direction of..."
+      ],
+      "answer": 2,
+      "explanation": "The water fuel cell is a non-functional design for a \"perpetual motion machine\" created by Stanley Allen Meyer. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Renée Vivien?",
+      "options": [
+        "Vienna is the capital, most populous city, and one of the nine states of Austria.",
+        "In world history, post-classical history refers to the period from about 500 CE to about 1450 or 1500...",
+        "The \"Tale of the Shipwrecked Sailor\" is a Middle Kingdom story of an Ancient Egyptian voyage to \"the...",
+        "Renée Vivien was a British poet who wrote in the French language."
+      ],
+      "answer": 3,
+      "explanation": "Renée Vivien was a British poet who wrote in the French language. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Assur.",
+      "options": [
+        "The Cave of the Patriarchs or Tomb of the Patriarchs, known to Jews by its Biblical name Cave...",
+        "The Birth of Tragedy Out of the Spirit of Music is an 1872 work of dramatic theory by...",
+        "Aššur, also known as Ashur and Qal'at Sherqat, was the capital of the Middle Assyrian Empire for a...",
+        "Thrace is a geographical and historical region in Southeast Europe roughly corresponding to the province of Thrace in..."
+      ],
+      "answer": 2,
+      "explanation": "Aššur, also known as Ashur and Qal'at Sherqat, was the capital of the Middle Assyrian Empire for a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Cave of the Patriarchs?",
+      "options": [
+        "The Cave of the Patriarchs or Tomb of the Patriarchs, known to Jews by its Biblical name Cave...",
+        "Aššur, also known as Ashur and Qal'at Sherqat, was the capital of the Middle Assyrian Empire for a...",
+        "East Indiamen were merchant ships that operated under charter or licence for European trading companies which traded with...",
+        "Archaic Greece was the period in Greek history lasting from c."
+      ],
+      "answer": 0,
+      "explanation": "The Cave of the Patriarchs or Tomb of the Patriarchs, known to Jews by its Biblical name Cave... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Samarra?",
+      "options": [
+        "Delos or Dilos, is a small Greek island near Mykonos, close to the centre of the Cyclades archipelago.",
+        "The African humid period was a climate period in Africa during the late Pleistocene and Holocene geologic epochs...",
+        "Samarra is a city in Iraq.",
+        "\"Ode on a Grecian Urn\" is a poem written by the English Romantic poet John Keats in May..."
+      ],
+      "answer": 2,
+      "explanation": "Samarra is a city in Iraq. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Carbon nanotube?",
+      "options": [
+        "During the Spanish colonization of the Americas, the Spanish Main comprised the parts of the Spanish Empire that...",
+        "The Information Age is a historical period that began in the mid-20th century.",
+        "Neoclassicism, also spelled Neo-classicism, emerged as a Western cultural movement in the decorative and visual arts, literature, theatre...",
+        "A carbon nanotube (CNT) is a tube made of carbon with a diameter in the nanometre range (nanoscale)."
+      ],
+      "answer": 3,
+      "explanation": "A carbon nanotube (CNT) is a tube made of carbon with a diameter in the nanometre range (nanoscale). (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Lighthouse of Alexandria?",
+      "options": [
+        "The Lighthouse of Alexandria, sometimes called the Pharos of Alexandria, was a lighthouse built by the Ptolemaic Kingdom...",
+        "The invention of the telephone was the culmination of work done by many different people, and led to...",
+        "A knight is a person granted an honorary title of a knighthood by a head of state or...",
+        "Hellenization or Hellenification is the adoption of Greek culture, religion, language, and identity by non-Greeks."
+      ],
+      "answer": 0,
+      "explanation": "The Lighthouse of Alexandria, sometimes called the Pharos of Alexandria, was a lighthouse built by the Ptolemaic Kingdom... (from Wikipedia)",
+      "image_keyword": null
+    }
+  ],
+  "famous_people": [
+    {
+      "question": "Can you spot the real fact about Montgolfier brothers?",
+      "options": [
+        "Antoine Henri Becquerel was a French experimental physicist who shared the 1903 Nobel Prize in Physics with Marie...",
+        "An Einstein ring, also known as an Einstein–Chwolson ring or Chwolson ring, is created when light from a...",
+        "The Montgolfier brothers – Joseph-Michel Montgolfier and Jacques-Étienne Montgolfier – were aviation pioneers, balloonists and paper manufacturers from...",
+        "Donna Theo Strickland is a Canadian optical physicist and pioneer in the field of pulsed lasers."
+      ],
+      "answer": 2,
+      "explanation": "The Montgolfier brothers – Joseph-Michel Montgolfier and Jacques-Étienne Montgolfier – were aviation pioneers, balloonists and paper manufacturers from... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Emmanuelle Charpentier?",
+      "options": [
+        "Donna Theo Strickland is a Canadian optical physicist and pioneer in the field of pulsed lasers.",
+        "Emmanuelle Marie Charpentier is a French professor and researcher in microbiology, genetics, and biochemistry.",
+        "Louis Victor Pierre Raymond, 7th Duc de Broglie was a French theoretical physicist and aristocrat known for his...",
+        "In physical cosmology, the cosmological constant, alternatively called Einstein's cosmological constant, is a coefficient that Albert Einstein initially..."
+      ],
+      "answer": 1,
+      "explanation": "Emmanuelle Marie Charpentier is a French professor and researcher in microbiology, genetics, and biochemistry. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Flash Gordon?",
+      "options": [
+        "Flash Gordon is the protagonist of a space adventure comic strip created and originally drawn by Alex Raymond.",
+        "The Einstein–Szilard or Einstein refrigerator is an absorption refrigerator which has no moving parts, operates at constant pressure...",
+        "Frank Anthony Wilczek is an American theoretical physicist.",
+        "Steven Weinberg was an American theoretical physicist."
+      ],
+      "answer": 0,
+      "explanation": "Flash Gordon is the protagonist of a space adventure comic strip created and originally drawn by Alex Raymond. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about John Clarke (physicist).",
+      "options": [
+        "John Clarke is a British experimental physicist and Professor Emeritus at the University of California, Berkeley.",
+        "Lev Davidovich Landau was a Soviet physicist who made fundamental contributions to many areas of theoretical physics.",
+        "The European Space Agency is a 23-member international organisation devoted to space exploration.",
+        "Anne Geneviève L'Huillier is a French physicist."
+      ],
+      "answer": 0,
+      "explanation": "John Clarke is a British experimental physicist and Professor Emeritus at the University of California, Berkeley. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Hans Bethe?",
+      "options": [
+        "Helen Patricia Sharman is a British chemist and cosmonaut who became the first British person, first Western European...",
+        "The Invisible Woman is a superhero appearing in American comic books published by Marvel Comics.",
+        "Fritz Jakob Haber was a German chemist who received the Nobel Prize in Chemistry in 1918 for his...",
+        "Hans Albrecht Eduard Bethe was a German-American physicist who made major contributions to nuclear physics, astrophysics, quantum electrodynamics..."
+      ],
+      "answer": 3,
+      "explanation": "Hans Albrecht Eduard Bethe was a German-American physicist who made major contributions to nuclear physics, astrophysics, quantum electrodynamics... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about NASA Astronaut Group 23?",
+      "options": [
+        "Tintin is the titular protagonist of The Adventures of Tintin, the comic series by Belgian cartoonist Hergé.",
+        "Irène Joliot-Curie was a French chemist and physicist who received the 1935 Nobel Prize in Chemistry with her...",
+        "NASA Astronaut Group 23 was announced on December 6, 2021, with the class reporting for duty in January...",
+        "Roald Hoffmann is a Polish-American theoretical chemist who shared the 1981 Nobel Prize in Chemistry with Kenichi Fukui..."
+      ],
+      "answer": 2,
+      "explanation": "NASA Astronaut Group 23 was announced on December 6, 2021, with the class reporting for duty in January... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Equivalence principle?",
+      "options": [
+        "The equivalence principle is the hypothesis that the observed equivalence of gravitational and inertial mass is a consequence...",
+        "Irène Joliot-Curie was a French chemist and physicist who received the 1935 Nobel Prize in Chemistry with her...",
+        "An auteur is an artist with a distinctive approach, usually a film director who is considered the most...",
+        "In mathematics, especially the usage of linear algebra in mathematical physics and differential geometry, Einstein notation is a..."
+      ],
+      "answer": 0,
+      "explanation": "The equivalence principle is the hypothesis that the observed equivalence of gravitational and inertial mass is a consequence... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Richard Feynman?",
+      "options": [
+        "An invention is a unique or novel device, method, composition, idea, or process.",
+        "Women have flown and worked in outer space from the beginning of human spaceflight.",
+        "Richard Phillips Feynman was an American theoretical physicist.",
+        "Pytheas of Massalia was a Greek geographer, explorer and astronomer from the Greek colony of Massalia."
+      ],
+      "answer": 2,
+      "explanation": "Richard Phillips Feynman was an American theoretical physicist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Cosmo the Spacedog?",
+      "options": [
+        "In quantum statistics, Bose–Einstein statistics describes one of two possible ways in which a collection of non-interacting identical...",
+        "Elbert Leander \"Burt\" Rutan is an American retired aerospace engineer and entrepreneur noted for his originality in designing...",
+        "Max Born was a German–British theoretical physicist who was instrumental in the development of quantum mechanics.",
+        "Cosmo the Space-dog is a character appearing in American comic books published by Marvel Comics."
+      ],
+      "answer": 3,
+      "explanation": "Cosmo the Space-dog is a character appearing in American comic books published by Marvel Comics. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Zebra Puzzle?",
+      "options": [
+        "Hans Albrecht Eduard Bethe was a German-American physicist who made major contributions to nuclear physics, astrophysics, quantum electrodynamics...",
+        "Ahmed Hassan Zewail was an Egyptian-American chemist, known as the \"father of femtochemistry\".",
+        "The Zebra Puzzle is a well-known logic puzzle.",
+        "Maria Goeppert Mayer was a German–American theoretical physicist who shared the 1963 Nobel Prize in Physics with J."
+      ],
+      "answer": 2,
+      "explanation": "The Zebra Puzzle is a well-known logic puzzle. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Carolyn Bertozzi?",
+      "options": [
+        "Carolyn Ruth Bertozzi is an American chemist and Nobel laureate, known for her wide-ranging work spanning both chemistry...",
+        "The Albert Einstein College of Medicine is a private medical school in New York City.",
+        "Roald Hoffmann is a Polish-American theoretical chemist who shared the 1981 Nobel Prize in Chemistry with Kenichi Fukui...",
+        "Juno Teo Minh is a character who first appeared in the 2023 video game Overwatch, a Blizzard Entertainment–developed..."
+      ],
+      "answer": 0,
+      "explanation": "Carolyn Ruth Bertozzi is an American chemist and Nobel laureate, known for her wide-ranging work spanning both chemistry... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Frederick Sanger.",
+      "options": [
+        "Wolfgang Ernst Pauli was an Austrian theoretical physicist and a pioneer of quantum mechanics.",
+        "John Bennett Fenn was an American analytical chemist who was awarded a share of the Nobel Prize in...",
+        "In physics, the twin paradox is a thought experiment in special relativity involving twins, one of whom takes...",
+        "Frederick Sanger was a British biochemist who received the Nobel Prize in Chemistry twice."
+      ],
+      "answer": 3,
+      "explanation": "Frederick Sanger was a British biochemist who received the Nobel Prize in Chemistry twice. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Special relativity?",
+      "options": [
+        "In physics, the special theory of relativity, or simply special relativity, is a scientific theory of the relationship...",
+        "Samantha Cristoforetti is an Italian European Space Agency (ESA) astronaut, former Italian Air Force pilot and engineer.",
+        "The Einstein–Szilard or Einstein refrigerator is an absorption refrigerator which has no moving parts, operates at constant pressure...",
+        "Murray Gell-Mann was an American theoretical physicist who played a preeminent role in the development of the theory..."
+      ],
+      "answer": 0,
+      "explanation": "In physics, the special theory of relativity, or simply special relativity, is a scientific theory of the relationship... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Auteur?",
+      "options": [
+        "Tom Swift is the main character of six series of American juvenile science fiction and adventure novels that...",
+        "NASA Astronaut Group 22 is a group of twelve NASA astronauts selected in June 2017.",
+        "An auteur is an artist with a distinctive approach, usually a film director who is considered the most...",
+        "Paul Adrien Maurice Dirac was an English theoretical physicist who is considered to be one of the founders..."
+      ],
+      "answer": 2,
+      "explanation": "An auteur is an artist with a distinctive approach, usually a film director who is considered the most... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Bohr–Einstein debates?",
+      "options": [
+        "In physics, mass–energy equivalence is the relationship between mass and energy in a system's rest frame.",
+        "The Bohr–Einstein debates were a series of public disputes about quantum mechanics between Albert Einstein and Niels Bohr.",
+        "General relativity, also known as the general theory of relativity, and as Einstein's theory of gravity, is the...",
+        "In mathematics, especially the usage of linear algebra in mathematical physics and differential geometry, Einstein notation is a..."
+      ],
+      "answer": 1,
+      "explanation": "The Bohr–Einstein debates were a series of public disputes about quantum mechanics between Albert Einstein and Niels Bohr. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Tom Swift?",
+      "options": [
+        "Lev Davidovich Landau was a Soviet physicist who made fundamental contributions to many areas of theoretical physics.",
+        "Howard Robard Hughes Jr.",
+        "Tom Swift is the main character of six series of American juvenile science fiction and adventure novels that...",
+        "In theoretical physics, a Feynman diagram is a pictorial representation of the mathematical expressions describing the behavior and..."
+      ],
+      "answer": 2,
+      "explanation": "Tom Swift is the main character of six series of American juvenile science fiction and adventure novels that... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Julie Payette?",
+      "options": [
+        "Xu Fu (Hsu Fu; Chinese: 徐福 or 徐巿; pinyin: Xú Fú; Wade–Giles: Hsu2 Fu2; Japanese: 徐福 Jofuku or...",
+        "Sergei Pavlovich Korolev was a Soviet rocket engineer and spacecraft designer who led the development of the Soviet...",
+        "François, Baron Englert was a Belgian theoretical physicist and 2013 Nobel Prize laureate.",
+        "Julie Payette is a Canadian engineer, scientist and former astronaut who served as the 29th governor general of..."
+      ],
+      "answer": 3,
+      "explanation": "Julie Payette is a Canadian engineer, scientist and former astronaut who served as the 29th governor general of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes John B. Goodenough?",
+      "options": [
+        "John Bannister Goodenough was an American materials scientist, a solid-state physicist, and a Nobel laureate in chemistry.",
+        "François, Baron Englert was a Belgian theoretical physicist and 2013 Nobel Prize laureate.",
+        "Louis Alexander Slotin was a Canadian physicist and chemist who took part in the Manhattan Project.",
+        "Linus Carl Pauling was an American chemist and peace activist."
+      ],
+      "answer": 0,
+      "explanation": "John Bannister Goodenough was an American materials scientist, a solid-state physicist, and a Nobel laureate in chemistry. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Annus mirabilis?",
+      "options": [
+        "John Bannister Goodenough was an American materials scientist, a solid-state physicist, and a Nobel laureate in chemistry.",
+        "NASA Astronaut Group 23 was announced on December 6, 2021, with the class reporting for duty in January...",
+        "Annus mirabilis is a Latin phrase that means \"year of miracles\", \"marvelous year\", \"wonderful year\", or \"miraculous year\".",
+        "Anne Charlotte McClain is a colonel in the United States Army, engineer, and a NASA astronaut."
+      ],
+      "answer": 2,
+      "explanation": "Annus mirabilis is a Latin phrase that means \"year of miracles\", \"marvelous year\", \"wonderful year\", or \"miraculous year\". (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Twin paradox?",
+      "options": [
+        "In physics, the twin paradox is a thought experiment in special relativity involving twins, one of whom takes...",
+        "Della Duck is a character from the Donald Duck universe, created in 1937 by Al Taliaferro and Ted...",
+        "John McFall is a British Paralympic sprinter, a surgeon, and the first disabled astronaut.",
+        "Carl Bosch was a German chemist and engineer and Nobel Laureate in Chemistry."
+      ],
+      "answer": 0,
+      "explanation": "In physics, the twin paradox is a thought experiment in special relativity involving twins, one of whom takes... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes NASA Astronaut Group 24?",
+      "options": [
+        "Murray Gell-Mann was an American theoretical physicist who played a preeminent role in the development of the theory...",
+        "The selection of NASA Astronaut Group 24 was announced on March 5, 2024, alongside the graduation of the...",
+        "John McFall is a British Paralympic sprinter, a surgeon, and the first disabled astronaut.",
+        "Helen Patricia Sharman is a British chemist and cosmonaut who became the first British person, first Western European..."
+      ],
+      "answer": 1,
+      "explanation": "The selection of NASA Astronaut Group 24 was announced on March 5, 2024, alongside the graduation of the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Roald Hoffmann?",
+      "options": [
+        "John Clarke is a British experimental physicist and Professor Emeritus at the University of California, Berkeley.",
+        "The photoelectric effect is the emission of electrons from a material caused by electromagnetic radiation such as ultraviolet...",
+        "Wallace & Gromit is a British claymation comedy franchise created by Nick Park and produced by Aardman Animations.",
+        "Roald Hoffmann is a Polish-American theoretical chemist who shared the 1981 Nobel Prize in Chemistry with Kenichi Fukui..."
+      ],
+      "answer": 3,
+      "explanation": "Roald Hoffmann is a Polish-American theoretical chemist who shared the 1981 Nobel Prize in Chemistry with Kenichi Fukui... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Roger Penrose?",
+      "options": [
+        "An auteur is an artist with a distinctive approach, usually a film director who is considered the most...",
+        "In physics, the twin paradox is a thought experiment in special relativity involving twins, one of whom takes...",
+        "Chandrasekhara Venkata Raman was an Indian physicist known for his work in the field of light scattering.",
+        "Sir Roger Penrose is an English mathematician, mathematical physicist, and philosopher of science."
+      ],
+      "answer": 3,
+      "explanation": "Sir Roger Penrose is an English mathematician, mathematical physicist, and philosopher of science. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Women in space?",
+      "options": [
+        "Frederick Sanger was a British biochemist who received the Nobel Prize in Chemistry twice.",
+        "Linus Carl Pauling was an American chemist and peace activist.",
+        "Jennifer Anne Doudna is an American biochemist who has pioneered work in CRISPR gene editing, and made other...",
+        "Women have flown and worked in outer space from the beginning of human spaceflight."
+      ],
+      "answer": 3,
+      "explanation": "Women have flown and worked in outer space from the beginning of human spaceflight. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Einstein field equations?",
+      "options": [
+        "Thomas Midgley Jr.",
+        "The Albert Einstein College of Medicine is a private medical school in New York City.",
+        "Valentina Vladimirovna Tereshkova is a Russian engineer, politician, and former Soviet cosmonaut.",
+        "In the general theory of relativity, the Einstein field equations relate the geometry of spacetime to the distribution..."
+      ],
+      "answer": 3,
+      "explanation": "In the general theory of relativity, the Einstein field equations relate the geometry of spacetime to the distribution... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Ernest Rutherford?",
+      "options": [
+        "Luz Noceda is the protagonist of the Disney Channel animated series The Owl House, created by Dana Terrace.",
+        "Ernest Rutherford, 1st Baron Rutherford of Nelson, was a New Zealand physicist and chemist who was a pioneering...",
+        "The Santa Fe Institute (SFI) is an independent, nonprofit theoretical research institute located in Santa Fe, New Mexico...",
+        "Louis Victor Pierre Raymond, 7th Duc de Broglie was a French theoretical physicist and aristocrat known for his..."
+      ],
+      "answer": 1,
+      "explanation": "Ernest Rutherford, 1st Baron Rutherford of Nelson, was a New Zealand physicist and chemist who was a pioneering... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about The Doctor?",
+      "options": [
+        "An astronaut is a person trained, equipped, and deployed by a human spaceflight program to serve as a...",
+        "The equivalence principle is the hypothesis that the observed equivalence of gravitational and inertial mass is a consequence...",
+        "Rick Sánchez is the titular co-protagonist of Adult Swim's Rick and Morty franchise.",
+        "The Doctor, sometimes known as Doctor Who, is the protagonist of the long-running BBC science fiction television series..."
+      ],
+      "answer": 3,
+      "explanation": "The Doctor, sometimes known as Doctor Who, is the protagonist of the long-running BBC science fiction television series... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Einstein relation (kinetic theory)?",
+      "options": [
+        "The Montgolfier brothers – Joseph-Michel Montgolfier and Jacques-Étienne Montgolfier – were aviation pioneers, balloonists and paper manufacturers from...",
+        "In physics, the Einstein relation is a previously unexpected connection revealed independently by William Sutherland in 1904, Albert...",
+        "The one-electron universe is the hypothesis that all electrons and positrons are actually manifestations of a single entity...",
+        "Asami Sato is a major character in the Nickelodeon animated television series The Legend of Korra (2012–2014) and..."
+      ],
+      "answer": 1,
+      "explanation": "In physics, the Einstein relation is a previously unexpected connection revealed independently by William Sutherland in 1904, Albert... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Niels Bohr?",
+      "options": [
+        "Antoine Henri Becquerel was a French experimental physicist who shared the 1903 Nobel Prize in Physics with Marie...",
+        "Donna Theo Strickland is a Canadian optical physicist and pioneer in the field of pulsed lasers.",
+        "Niels Henrik David Bohr was a Danish theoretical physicist who made foundational contributions to understanding atomic structure and...",
+        "Albert Einstein was a German-born theoretical physicist best known for developing the theory of relativity."
+      ],
+      "answer": 2,
+      "explanation": "Niels Henrik David Bohr was a Danish theoretical physicist who made foundational contributions to understanding atomic structure and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Jimmy Neutron?",
+      "options": [
+        "In physics, the Einstein relation is a previously unexpected connection revealed independently by William Sutherland in 1904, Albert...",
+        "The Thing is a superhero appearing in American comic books published by Marvel Comics.",
+        "James Isaac \"Jimmy\" Neutron, commonly known as Jimmy Neutron, Boy Genius, is the protagonist and title character from...",
+        "John Bardeen was an American physicist."
+      ],
+      "answer": 2,
+      "explanation": "James Isaac \"Jimmy\" Neutron, commonly known as Jimmy Neutron, Boy Genius, is the protagonist and title character from... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Murray Gell-Mann?",
+      "options": [
+        "In theoretical physics, a Feynman diagram is a pictorial representation of the mathematical expressions describing the behavior and...",
+        "Murray Gell-Mann was an American theoretical physicist who played a preeminent role in the development of the theory...",
+        "John Bannister Goodenough was an American materials scientist, a solid-state physicist, and a Nobel laureate in chemistry.",
+        "Senku Ishigami is the protagonist from Riichiro Inagaki and Boichi's manga series Dr."
+      ],
+      "answer": 1,
+      "explanation": "Murray Gell-Mann was an American theoretical physicist who played a preeminent role in the development of the theory... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes John Hopfield?",
+      "options": [
+        "Jennifer Anne Doudna is an American biochemist who has pioneered work in CRISPR gene editing, and made other...",
+        "John Joseph Hopfield is an American physicist and emeritus professor of Princeton University, most widely known for his...",
+        "Antoine Henri Becquerel was a French experimental physicist who shared the 1903 Nobel Prize in Physics with Marie...",
+        "The Doctor, sometimes known as Doctor Who, is the protagonist of the long-running BBC science fiction television series..."
+      ],
+      "answer": 1,
+      "explanation": "John Joseph Hopfield is an American physicist and emeritus professor of Princeton University, most widely known for his... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Hanno the Navigator?",
+      "options": [
+        "In the general theory of relativity, the Einstein field equations relate the geometry of spacetime to the distribution...",
+        "Linus Carl Pauling was an American chemist and peace activist.",
+        "Hanno the Navigator was a Carthaginian explorer who lived during the fifth century BC, known for his naval...",
+        "Brownian motion is the random motion of particles suspended in a medium."
+      ],
+      "answer": 2,
+      "explanation": "Hanno the Navigator was a Carthaginian explorer who lived during the fifth century BC, known for his naval... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Pugsley Addams?",
+      "options": [
+        "Pugsley Pubert Addams is a member of the fictional Addams Family, created by American cartoonist Charles Addams.",
+        "Max Karl Ernst Ludwig Planck was a German theoretical physicist.",
+        "Elbert Leander \"Burt\" Rutan is an American retired aerospace engineer and entrepreneur noted for his originality in designing...",
+        "In quantum statistics, Bose–Einstein statistics describes one of two possible ways in which a collection of non-interacting identical..."
+      ],
+      "answer": 0,
+      "explanation": "Pugsley Pubert Addams is a member of the fictional Addams Family, created by American cartoonist Charles Addams. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Max Born?",
+      "options": [
+        "The theory of relativity comprises two physics theories by Albert Einstein: special relativity and general relativity, proposed and...",
+        "Max Born was a German–British theoretical physicist who was instrumental in the development of quantum mechanics.",
+        "Mohammad Abdus Salam was a Pakistani theoretical physicist and Nobel laureate.",
+        "The Thing is a superhero appearing in American comic books published by Marvel Comics."
+      ],
+      "answer": 1,
+      "explanation": "Max Born was a German–British theoretical physicist who was instrumental in the development of quantum mechanics. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Mass–energy equivalence?",
+      "options": [
+        "In physics, mass–energy equivalence is the relationship between mass and energy in a system's rest frame.",
+        "Max Born was a German–British theoretical physicist who was instrumental in the development of quantum mechanics.",
+        "Sergei Pavlovich Korolev was a Soviet rocket engineer and spacecraft designer who led the development of the Soviet...",
+        "In quantum statistics, Bose–Einstein statistics describes one of two possible ways in which a collection of non-interacting identical..."
+      ],
+      "answer": 0,
+      "explanation": "In physics, mass–energy equivalence is the relationship between mass and energy in a system's rest frame. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Dr. Bunsen Honeydew?",
+      "options": [
+        "John Bennett Fenn was an American analytical chemist who was awarded a share of the Nobel Prize in...",
+        "An astronaut is a person trained, equipped, and deployed by a human spaceflight program to serve as a...",
+        "Louis Alexander Slotin was a Canadian physicist and chemist who took part in the Manhattan Project.",
+        "Dr."
+      ],
+      "answer": 3,
+      "explanation": "Dr. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Carl Bosch?",
+      "options": [
+        "The photoelectric effect is the emission of electrons from a material caused by electromagnetic radiation such as ultraviolet...",
+        "The Einstein–Podolsky–Rosen (EPR) paradox is a thought experiment proposed by physicists Albert Einstein, Boris Podolsky and Nathan Rosen...",
+        "The one-electron universe is the hypothesis that all electrons and positrons are actually manifestations of a single entity...",
+        "Carl Bosch was a German chemist and engineer and Nobel Laureate in Chemistry."
+      ],
+      "answer": 3,
+      "explanation": "Carl Bosch was a German chemist and engineer and Nobel Laureate in Chemistry. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Max Planck?",
+      "options": [
+        "Sergei Pavlovich Korolev was a Soviet rocket engineer and spacecraft designer who led the development of the Soviet...",
+        "Max Karl Ernst Ludwig Planck was a German theoretical physicist.",
+        "Eugene Paul Wigner was a Hungarian-American theoretical physicist who also contributed to mathematical physics.",
+        "The theory of relativity comprises two physics theories by Albert Einstein: special relativity and general relativity, proposed and..."
+      ],
+      "answer": 1,
+      "explanation": "Max Karl Ernst Ludwig Planck was a German theoretical physicist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Frank Wilczek?",
+      "options": [
+        "Louis Alexander Slotin was a Canadian physicist and chemist who took part in the Manhattan Project.",
+        "Frank Anthony Wilczek is an American theoretical physicist.",
+        "NASA Astronaut Group 23 was announced on December 6, 2021, with the class reporting for duty in January...",
+        "David Jonathan Gross is an American theoretical physicist and string theorist."
+      ],
+      "answer": 1,
+      "explanation": "Frank Anthony Wilczek is an American theoretical physicist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Mr. Peabody?",
+      "options": [
+        "Howard Robard Hughes Jr.",
+        "General relativity, also known as the general theory of relativity, and as Einstein's theory of gravity, is the...",
+        "Mr.",
+        "An artist is a person who creates art or, broadly speaking, practices the arts."
+      ],
+      "answer": 2,
+      "explanation": "Mr. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Cosmological constant.",
+      "options": [
+        "John Bardeen was an American physicist.",
+        "Emmanuelle Marie Charpentier is a French professor and researcher in microbiology, genetics, and biochemistry.",
+        "The Hafele–Keating experiment was a test of the theory of relativity.",
+        "In physical cosmology, the cosmological constant, alternatively called Einstein's cosmological constant, is a coefficient that Albert Einstein initially..."
+      ],
+      "answer": 3,
+      "explanation": "In physical cosmology, the cosmological constant, alternatively called Einstein's cosmological constant, is a coefficient that Albert Einstein initially... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Aage Bohr.",
+      "options": [
+        "Aage Niels Bohr was a Danish nuclear physicist who shared the Nobel Prize in Physics in 1975 with...",
+        "Antoine Henri Becquerel was a French experimental physicist who shared the 1903 Nobel Prize in Physics with Marie...",
+        "Sergei Pavlovich Korolev was a Soviet rocket engineer and spacecraft designer who led the development of the Soviet...",
+        "In physical cosmology, the cosmological constant, alternatively called Einstein's cosmological constant, is a coefficient that Albert Einstein initially..."
+      ],
+      "answer": 0,
+      "explanation": "Aage Niels Bohr was a Danish nuclear physicist who shared the Nobel Prize in Physics in 1975 with... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Invention?",
+      "options": [
+        "Irène Joliot-Curie was a French chemist and physicist who received the 1935 Nobel Prize in Chemistry with her...",
+        "Hendrik Antoon Lorentz was a Dutch theoretical physicist who shared the 1902 Nobel Prize in Physics with Pieter...",
+        "An invention is a unique or novel device, method, composition, idea, or process.",
+        "Glenn Theodore Seaborg was an American chemist whose involvement in the synthesis, discovery and investigation of ten transuranium..."
+      ],
+      "answer": 2,
+      "explanation": "An invention is a unique or novel device, method, composition, idea, or process. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Eugene Wigner?",
+      "options": [
+        "Helen Patricia Sharman is a British chemist and cosmonaut who became the first British person, first Western European...",
+        "Eugene Paul Wigner was a Hungarian-American theoretical physicist who also contributed to mathematical physics.",
+        "Kary Banks Mullis was an American biochemist.",
+        "John Bannister Goodenough was an American materials scientist, a solid-state physicist, and a Nobel laureate in chemistry."
+      ],
+      "answer": 1,
+      "explanation": "Eugene Paul Wigner was a Hungarian-American theoretical physicist who also contributed to mathematical physics. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Hypatia?",
+      "options": [
+        "Angus \"Mac\" MacGyver is the title character and the protagonist in the TV series MacGyver.",
+        "Hypatia was a Neoplatonist philosopher, astronomer, and mathematician who lived in Alexandria, at that time in the province...",
+        "Glenn Theodore Seaborg was an American chemist whose involvement in the synthesis, discovery and investigation of ten transuranium...",
+        "Juno Teo Minh is a character who first appeared in the 2023 video game Overwatch, a Blizzard Entertainment–developed..."
+      ],
+      "answer": 1,
+      "explanation": "Hypatia was a Neoplatonist philosopher, astronomer, and mathematician who lived in Alexandria, at that time in the province... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Mary the Jewess?",
+      "options": [
+        "Luz Noceda is the protagonist of the Disney Channel animated series The Owl House, created by Dana Terrace.",
+        "Mary or Maria the Jewess, also known as Mary the Prophetess or Maria the Copt, was an early...",
+        "Pugsley Pubert Addams is a member of the fictional Addams Family, created by American cartoonist Charles Addams.",
+        "The selection of NASA Astronaut Group 24 was announced on March 5, 2024, alongside the graduation of the..."
+      ],
+      "answer": 1,
+      "explanation": "Mary or Maria the Jewess, also known as Mary the Prophetess or Maria the Copt, was an early... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Louis Slotin?",
+      "options": [
+        "The Albert Einstein College of Medicine is a private medical school in New York City.",
+        "Louis Alexander Slotin was a Canadian physicist and chemist who took part in the Manhattan Project.",
+        "Steven Chu is an American physicist and former government official.",
+        "In the general theory of relativity, the Einstein field equations relate the geometry of spacetime to the distribution..."
+      ],
+      "answer": 1,
+      "explanation": "Louis Alexander Slotin was a Canadian physicist and chemist who took part in the Manhattan Project. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Ahmed Zewail?",
+      "options": [
+        "The Rogers Commission Report was written by a presidential commission charged with investigating the Space Shuttle Challenger disaster...",
+        "Albert Einstein was a German-born theoretical physicist best known for developing the theory of relativity.",
+        "The Thing is a superhero appearing in American comic books published by Marvel Comics.",
+        "Ahmed Hassan Zewail was an Egyptian-American chemist, known as the \"father of femtochemistry\"."
+      ],
+      "answer": 3,
+      "explanation": "Ahmed Hassan Zewail was an Egyptian-American chemist, known as the \"father of femtochemistry\". (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Abdus Salam?",
+      "options": [
+        "Mohammad Abdus Salam was a Pakistani theoretical physicist and Nobel laureate.",
+        "The Bohr–Einstein debates were a series of public disputes about quantum mechanics between Albert Einstein and Niels Bohr.",
+        "Paul Adrien Maurice Dirac was an English theoretical physicist who is considered to be one of the founders...",
+        "Luz Noceda is the protagonist of the Disney Channel animated series The Owl House, created by Dana Terrace."
+      ],
+      "answer": 0,
+      "explanation": "Mohammad Abdus Salam was a Pakistani theoretical physicist and Nobel laureate. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Albert Einstein College of Medicine?",
+      "options": [
+        "In physics, the Einstein relation is a previously unexpected connection revealed independently by William Sutherland in 1904, Albert...",
+        "The Rogers Commission Report was written by a presidential commission charged with investigating the Space Shuttle Challenger disaster...",
+        "The Albert Einstein College of Medicine is a private medical school in New York City.",
+        "Louis Victor Pierre Raymond, 7th Duc de Broglie was a French theoretical physicist and aristocrat known for his..."
+      ],
+      "answer": 2,
+      "explanation": "The Albert Einstein College of Medicine is a private medical school in New York City. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Theory of relativity?",
+      "options": [
+        "John McFall is a British Paralympic sprinter, a surgeon, and the first disabled astronaut.",
+        "The theory of relativity comprises two physics theories by Albert Einstein: special relativity and general relativity, proposed and...",
+        "The Santa Fe Institute (SFI) is an independent, nonprofit theoretical research institute located in Santa Fe, New Mexico...",
+        "A wormhole is a hypothetical structure that connects disparate points in spacetime."
+      ],
+      "answer": 1,
+      "explanation": "The theory of relativity comprises two physics theories by Albert Einstein: special relativity and general relativity, proposed and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Lev Landau?",
+      "options": [
+        "Emmanuelle Marie Charpentier is a French professor and researcher in microbiology, genetics, and biochemistry.",
+        "The equivalence principle is the hypothesis that the observed equivalence of gravitational and inertial mass is a consequence...",
+        "Lev Davidovich Landau was a Soviet physicist who made fundamental contributions to many areas of theoretical physics.",
+        "Samantha Cristoforetti is an Italian European Space Agency (ESA) astronaut, former Italian Air Force pilot and engineer."
+      ],
+      "answer": 2,
+      "explanation": "Lev Davidovich Landau was a Soviet physicist who made fundamental contributions to many areas of theoretical physics. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Ilya Prigogine?",
+      "options": [
+        "Howard Robard Hughes Jr.",
+        "Viscount Ilya Romanovich Prigogine was a Russian-Belgian physical chemist, noted for his work on dissipative structures, complex systems...",
+        "Niels Henrik David Bohr was a Danish theoretical physicist who made foundational contributions to understanding atomic structure and...",
+        "Sergei Pavlovich Korolev was a Soviet rocket engineer and spacecraft designer who led the development of the Soviet..."
+      ],
+      "answer": 1,
+      "explanation": "Viscount Ilya Romanovich Prigogine was a Russian-Belgian physical chemist, noted for his work on dissipative structures, complex systems... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Irène Joliot-Curie?",
+      "options": [
+        "Luz Noceda is the protagonist of the Disney Channel animated series The Owl House, created by Dana Terrace.",
+        "Pugsley Pubert Addams is a member of the fictional Addams Family, created by American cartoonist Charles Addams.",
+        "John Matthew Martinis is an American physicist and Professor of Physics at the University of California, Santa Barbara.",
+        "Irène Joliot-Curie was a French chemist and physicist who received the 1935 Nobel Prize in Chemistry with her..."
+      ],
+      "answer": 3,
+      "explanation": "Irène Joliot-Curie was a French chemist and physicist who received the 1935 Nobel Prize in Chemistry with her... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Emmett Brown?",
+      "options": [
+        "Dr.",
+        "Hypatia was a Neoplatonist philosopher, astronomer, and mathematician who lived in Alexandria, at that time in the province...",
+        "Flash Gordon is the protagonist of a space adventure comic strip created and originally drawn by Alex Raymond.",
+        "Kazuto Kirigaya , born as Kazuto Narusaka , the Japanese protagonist of the Sword Art Online series of..."
+      ],
+      "answer": 0,
+      "explanation": "Dr. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Human Torch?",
+      "options": [
+        "Max Born was a German–British theoretical physicist who was instrumental in the development of quantum mechanics.",
+        "A wormhole is a hypothetical structure that connects disparate points in spacetime.",
+        "Antoine Henri Becquerel was a French experimental physicist who shared the 1903 Nobel Prize in Physics with Marie...",
+        "The Human Torch is a superhero appearing in American comic books published by Marvel Comics."
+      ],
+      "answer": 3,
+      "explanation": "The Human Torch is a superhero appearing in American comic books published by Marvel Comics. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Einstein–Podolsky–Rosen paradox?",
+      "options": [
+        "The Einstein–Podolsky–Rosen (EPR) paradox is a thought experiment proposed by physicists Albert Einstein, Boris Podolsky and Nathan Rosen...",
+        "Annus mirabilis is a Latin phrase that means \"year of miracles\", \"marvelous year\", \"wonderful year\", or \"miraculous year\".",
+        "Xu Fu (Hsu Fu; Chinese: 徐福 or 徐巿; pinyin: Xú Fú; Wade–Giles: Hsu2 Fu2; Japanese: 徐福 Jofuku or...",
+        "Howard Robard Hughes Jr."
+      ],
+      "answer": 0,
+      "explanation": "The Einstein–Podolsky–Rosen (EPR) paradox is a thought experiment proposed by physicists Albert Einstein, Boris Podolsky and Nathan Rosen... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Einsteinium.",
+      "options": [
+        "Einsteinium is a synthetic chemical element; it has symbol Es and atomic number 99 and is a member...",
+        "William Bradford Shockley was an American physicist.",
+        "Luis Walter Alvarez was an American experimental physicist, inventor, and professor who was awarded the Nobel Prize in...",
+        "Gerardus \"Gerard\" 't Hooft is a Dutch theoretical physicist and professor emeritus at Utrecht University, the Netherlands."
+      ],
+      "answer": 0,
+      "explanation": "Einsteinium is a synthetic chemical element; it has symbol Es and atomic number 99 and is a member... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about John M. Jumper.",
+      "options": [
+        "John Michael Jumper is an American chemist and computer scientist.",
+        "Maria Salomea Skłodowska Curie, better known as Marie Curie was a Polish and naturalised-French physicist and chemist.",
+        "The Invisible Woman is a superhero appearing in American comic books published by Marvel Comics.",
+        "John Clarke is a British experimental physicist and Professor Emeritus at the University of California, Berkeley."
+      ],
+      "answer": 0,
+      "explanation": "John Michael Jumper is an American chemist and computer scientist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Juno (Overwatch)?",
+      "options": [
+        "Aage Niels Bohr was a Danish nuclear physicist who shared the Nobel Prize in Physics in 1975 with...",
+        "Juno Teo Minh is a character who first appeared in the 2023 video game Overwatch, a Blizzard Entertainment–developed...",
+        "Lev Davidovich Landau was a Soviet physicist who made fundamental contributions to many areas of theoretical physics.",
+        "Carolyn Ruth Bertozzi is an American chemist and Nobel laureate, known for her wide-ranging work spanning both chemistry..."
+      ],
+      "answer": 1,
+      "explanation": "Juno Teo Minh is a character who first appeared in the 2023 video game Overwatch, a Blizzard Entertainment–developed... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Svetlana Savitskaya?",
+      "options": [
+        "Pierre Curie was a French physicist and chemist, and a pioneer in crystallography and magnetism.",
+        "An Einstein ring, also known as an Einstein–Chwolson ring or Chwolson ring, is created when light from a...",
+        "Svetlana Yevgenyevna Savitskaya is a Russian former aviator and Soviet cosmonaut who flew aboard Soyuz T-7 in 1982...",
+        "An artist is a person who creates art or, broadly speaking, practices the arts."
+      ],
+      "answer": 2,
+      "explanation": "Svetlana Yevgenyevna Savitskaya is a Russian former aviator and Soviet cosmonaut who flew aboard Soyuz T-7 in 1982... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Burt Rutan?",
+      "options": [
+        "Elbert Leander \"Burt\" Rutan is an American retired aerospace engineer and entrepreneur noted for his originality in designing...",
+        "The selection of NASA Astronaut Group 24 was announced on March 5, 2024, alongside the graduation of the...",
+        "Linus Carl Pauling was an American chemist and peace activist.",
+        "Richard Stockton Rush III was an American businessman who was the co-founder and chief executive officer of OceanGate..."
+      ],
+      "answer": 0,
+      "explanation": "Elbert Leander \"Burt\" Rutan is an American retired aerospace engineer and entrepreneur noted for his originality in designing... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Steven Chu.",
+      "options": [
+        "Viscount Ilya Romanovich Prigogine was a Russian-Belgian physical chemist, noted for his work on dissipative structures, complex systems...",
+        "Sergei Pavlovich Korolev was a Soviet rocket engineer and spacecraft designer who led the development of the Soviet...",
+        "In physics, the twin paradox is a thought experiment in special relativity involving twins, one of whom takes...",
+        "Steven Chu is an American physicist and former government official."
+      ],
+      "answer": 3,
+      "explanation": "Steven Chu is an American physicist and former government official. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Hendrik Lorentz?",
+      "options": [
+        "Hendrik Antoon Lorentz was a Dutch theoretical physicist who shared the 1902 Nobel Prize in Physics with Pieter...",
+        "NASA Astronaut Group 23 was announced on December 6, 2021, with the class reporting for duty in January...",
+        "An artist is a person who creates art or, broadly speaking, practices the arts.",
+        "Linus Carl Pauling was an American chemist and peace activist."
+      ],
+      "answer": 0,
+      "explanation": "Hendrik Antoon Lorentz was a Dutch theoretical physicist who shared the 1902 Nobel Prize in Physics with Pieter... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Gerard 't Hooft?",
+      "options": [
+        "Sir Roger Penrose is an English mathematician, mathematical physicist, and philosopher of science.",
+        "Gerardus \"Gerard\" 't Hooft is a Dutch theoretical physicist and professor emeritus at Utrecht University, the Netherlands.",
+        "Kazuto Kirigaya , born as Kazuto Narusaka , the Japanese protagonist of the Sword Art Online series of...",
+        "Frederick Sanger was a British biochemist who received the Nobel Prize in Chemistry twice."
+      ],
+      "answer": 1,
+      "explanation": "Gerardus \"Gerard\" 't Hooft is a Dutch theoretical physicist and professor emeritus at Utrecht University, the Netherlands. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Phalaris?",
+      "options": [
+        "John Michael Jumper is an American chemist and computer scientist.",
+        "Phalaris was the tyrant of Akragas in Sicily in Magna Graecia, from approximately 570 to 554 BC.",
+        "Frank Anthony Wilczek is an American theoretical physicist.",
+        "Kary Banks Mullis was an American biochemist."
+      ],
+      "answer": 1,
+      "explanation": "Phalaris was the tyrant of Akragas in Sicily in Magna Graecia, from approximately 570 to 554 BC. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Scientist.",
+      "options": [
+        "The Montgolfier brothers – Joseph-Michel Montgolfier and Jacques-Étienne Montgolfier – were aviation pioneers, balloonists and paper manufacturers from...",
+        "Valentina Vladimirovna Tereshkova is a Russian engineer, politician, and former Soviet cosmonaut.",
+        "A scientist is an expert who conducts scientific research to advance knowledge in science.",
+        "John McFall is a British Paralympic sprinter, a surgeon, and the first disabled astronaut."
+      ],
+      "answer": 2,
+      "explanation": "A scientist is an expert who conducts scientific research to advance knowledge in science. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Pytheas?",
+      "options": [
+        "Steven Chu is an American physicist and former government official.",
+        "Pytheas of Massalia was a Greek geographer, explorer and astronomer from the Greek colony of Massalia.",
+        "Richard Stockton Rush III was an American businessman who was the co-founder and chief executive officer of OceanGate...",
+        "Dr."
+      ],
+      "answer": 1,
+      "explanation": "Pytheas of Massalia was a Greek geographer, explorer and astronomer from the Greek colony of Massalia. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Invisible Woman?",
+      "options": [
+        "In physics, mass–energy equivalence is the relationship between mass and energy in a system's rest frame.",
+        "An Einstein ring, also known as an Einstein–Chwolson ring or Chwolson ring, is created when light from a...",
+        "An auteur is an artist with a distinctive approach, usually a film director who is considered the most...",
+        "The Invisible Woman is a superhero appearing in American comic books published by Marvel Comics."
+      ],
+      "answer": 3,
+      "explanation": "The Invisible Woman is a superhero appearing in American comic books published by Marvel Comics. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Louis de Broglie.",
+      "options": [
+        "The Rogers Commission Report was written by a presidential commission charged with investigating the Space Shuttle Challenger disaster...",
+        "Hans Albrecht Eduard Bethe was a German-American physicist who made major contributions to nuclear physics, astrophysics, quantum electrodynamics...",
+        "Kary Banks Mullis was an American biochemist.",
+        "Louis Victor Pierre Raymond, 7th Duc de Broglie was a French theoretical physicist and aristocrat known for his..."
+      ],
+      "answer": 3,
+      "explanation": "Louis Victor Pierre Raymond, 7th Duc de Broglie was a French theoretical physicist and aristocrat known for his... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about European Space Agency?",
+      "options": [
+        "The European Space Agency is a 23-member international organisation devoted to space exploration.",
+        "The Montgolfier brothers – Joseph-Michel Montgolfier and Jacques-Étienne Montgolfier – were aviation pioneers, balloonists and paper manufacturers from...",
+        "Frank Anthony Wilczek is an American theoretical physicist.",
+        "Sir Roger Penrose is an English mathematician, mathematical physicist, and philosopher of science."
+      ],
+      "answer": 0,
+      "explanation": "The European Space Agency is a 23-member international organisation devoted to space exploration. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Maria Goeppert Mayer?",
+      "options": [
+        "Maria Goeppert Mayer was a German–American theoretical physicist who shared the 1963 Nobel Prize in Physics with J.",
+        "In physics, the Einstein relation is a previously unexpected connection revealed independently by William Sutherland in 1904, Albert...",
+        "Otto Hahn was a German chemist who was a pioneer in the field of radiochemistry.",
+        "In condensed matter physics, a Bose–Einstein condensate (BEC) is a state of matter that is typically formed when..."
+      ],
+      "answer": 0,
+      "explanation": "Maria Goeppert Mayer was a German–American theoretical physicist who shared the 1963 Nobel Prize in Physics with J. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Frances Arnold?",
+      "options": [
+        "An artist is a person who creates art or, broadly speaking, practices the arts.",
+        "Brownian motion is the random motion of particles suspended in a medium.",
+        "Frances Hamilton Arnold is an American chemical engineer and Nobel Laureate.",
+        "Pytheas of Massalia was a Greek geographer, explorer and astronomer from the Greek colony of Massalia."
+      ],
+      "answer": 2,
+      "explanation": "Frances Hamilton Arnold is an American chemical engineer and Nobel Laureate. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Sally Ride?",
+      "options": [
+        "The Santa Fe Institute (SFI) is an independent, nonprofit theoretical research institute located in Santa Fe, New Mexico...",
+        "Sally Kristen Ride was an American astronaut and physicist.",
+        "Sergei Pavlovich Korolev was a Soviet rocket engineer and spacecraft designer who led the development of the Soviet...",
+        "Wilhelm Conrad Röntgen was a German experimental physicist who produced and detected electromagnetic radiation in a wavelength range..."
+      ],
+      "answer": 1,
+      "explanation": "Sally Kristen Ride was an American astronaut and physicist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Einstein refrigerator?",
+      "options": [
+        "Elbert Leander \"Burt\" Rutan is an American retired aerospace engineer and entrepreneur noted for his originality in designing...",
+        "In mathematics, especially the usage of linear algebra in mathematical physics and differential geometry, Einstein notation is a...",
+        "Omar Mwannes Yaghi is a chemist best known for developing metal–organic frameworks (MOFs) and pioneering reticular chemistry.",
+        "The Einstein–Szilard or Einstein refrigerator is an absorption refrigerator which has no moving parts, operates at constant pressure..."
+      ],
+      "answer": 3,
+      "explanation": "The Einstein–Szilard or Einstein refrigerator is an absorption refrigerator which has no moving parts, operates at constant pressure... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Samantha Cristoforetti.",
+      "options": [
+        "Samantha Cristoforetti is an Italian European Space Agency (ESA) astronaut, former Italian Air Force pilot and engineer.",
+        "Fritz Jakob Haber was a German chemist who received the Nobel Prize in Chemistry in 1918 for his...",
+        "Senku Ishigami is the protagonist from Riichiro Inagaki and Boichi's manga series Dr.",
+        "Oswald the Lucky Rabbit, also known as Oswald the Rabbit, Oswald Rabbit, and Ozzie, is an animated cartoon..."
+      ],
+      "answer": 0,
+      "explanation": "Samantha Cristoforetti is an Italian European Space Agency (ESA) astronaut, former Italian Air Force pilot and engineer. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Fritz Haber.",
+      "options": [
+        "Hans Albrecht Eduard Bethe was a German-American physicist who made major contributions to nuclear physics, astrophysics, quantum electrodynamics...",
+        "Samantha Cristoforetti is an Italian European Space Agency (ESA) astronaut, former Italian Air Force pilot and engineer.",
+        "Fritz Jakob Haber was a German chemist who received the Nobel Prize in Chemistry in 1918 for his...",
+        "Carolyn Ruth Bertozzi is an American chemist and Nobel laureate, known for her wide-ranging work spanning both chemistry..."
+      ],
+      "answer": 2,
+      "explanation": "Fritz Jakob Haber was a German chemist who received the Nobel Prize in Chemistry in 1918 for his... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Pierre Curie?",
+      "options": [
+        "David Jonathan Gross is an American theoretical physicist and string theorist.",
+        "Pierre Curie was a French physicist and chemist, and a pioneer in crystallography and magnetism.",
+        "Julian Seymour Schwinger was an American theoretical physicist.",
+        "The Albert Einstein College of Medicine is a private medical school in New York City."
+      ],
+      "answer": 1,
+      "explanation": "Pierre Curie was a French physicist and chemist, and a pioneer in crystallography and magnetism. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Oswald the Lucky Rabbit?",
+      "options": [
+        "Oswald the Lucky Rabbit, also known as Oswald the Rabbit, Oswald Rabbit, and Ozzie, is an animated cartoon...",
+        "Steven Weinberg was an American theoretical physicist.",
+        "Hanno the Navigator was a Carthaginian explorer who lived during the fifth century BC, known for his naval...",
+        "Elbert Leander \"Burt\" Rutan is an American retired aerospace engineer and entrepreneur noted for his originality in designing..."
+      ],
+      "answer": 0,
+      "explanation": "Oswald the Lucky Rabbit, also known as Oswald the Rabbit, Oswald Rabbit, and Ozzie, is an animated cartoon... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Omar M. Yaghi.",
+      "options": [
+        "Rick Sánchez is the titular co-protagonist of Adult Swim's Rick and Morty franchise.",
+        "Omar Mwannes Yaghi is a chemist best known for developing metal–organic frameworks (MOFs) and pioneering reticular chemistry.",
+        "In mathematics, especially the usage of linear algebra in mathematical physics and differential geometry, Einstein notation is a...",
+        "General relativity, also known as the general theory of relativity, and as Einstein's theory of gravity, is the..."
+      ],
+      "answer": 1,
+      "explanation": "Omar Mwannes Yaghi is a chemist best known for developing metal–organic frameworks (MOFs) and pioneering reticular chemistry. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Einstein's thought experiments?",
+      "options": [
+        "Asami Sato is a major character in the Nickelodeon animated television series The Legend of Korra (2012–2014) and...",
+        "A hallmark of Albert Einstein's career was his use of visualized thought experiments as a fundamental tool for...",
+        "Emmanuelle Marie Charpentier is a French professor and researcher in microbiology, genetics, and biochemistry.",
+        "The one-electron universe is the hypothesis that all electrons and positrons are actually manifestations of a single entity..."
+      ],
+      "answer": 1,
+      "explanation": "A hallmark of Albert Einstein's career was his use of visualized thought experiments as a fundamental tool for... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about General relativity?",
+      "options": [
+        "The Albert Einstein College of Medicine is a private medical school in New York City.",
+        "Pugsley Pubert Addams is a member of the fictional Addams Family, created by American cartoonist Charles Addams.",
+        "General relativity, also known as the general theory of relativity, and as Einstein's theory of gravity, is the...",
+        "The Hafele–Keating experiment was a test of the theory of relativity."
+      ],
+      "answer": 2,
+      "explanation": "General relativity, also known as the general theory of relativity, and as Einstein's theory of gravity, is the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Rogers Commission Report?",
+      "options": [
+        "Ahmed Hassan Zewail was an Egyptian-American chemist, known as the \"father of femtochemistry\".",
+        "The Rogers Commission Report was written by a presidential commission charged with investigating the Space Shuttle Challenger disaster...",
+        "Luis Walter Alvarez was an American experimental physicist, inventor, and professor who was awarded the Nobel Prize in...",
+        "Pee-wee Herman is a comedy character created and portrayed by the American comedian Paul Reubens."
+      ],
+      "answer": 1,
+      "explanation": "The Rogers Commission Report was written by a presidential commission charged with investigating the Space Shuttle Challenger disaster... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Einstein ring?",
+      "options": [
+        "Pytheas of Massalia was a Greek geographer, explorer and astronomer from the Greek colony of Massalia.",
+        "The Bohr–Einstein debates were a series of public disputes about quantum mechanics between Albert Einstein and Niels Bohr.",
+        "Howard Robard Hughes Jr.",
+        "An Einstein ring, also known as an Einstein–Chwolson ring or Chwolson ring, is created when light from a..."
+      ],
+      "answer": 3,
+      "explanation": "An Einstein ring, also known as an Einstein–Chwolson ring or Chwolson ring, is created when light from a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Senku Ishigami.",
+      "options": [
+        "Sir Roger Penrose is an English mathematician, mathematical physicist, and philosopher of science.",
+        "Senku Ishigami is the protagonist from Riichiro Inagaki and Boichi's manga series Dr.",
+        "An Einstein ring, also known as an Einstein–Chwolson ring or Chwolson ring, is created when light from a...",
+        "The one-electron universe is the hypothesis that all electrons and positrons are actually manifestations of a single entity..."
+      ],
+      "answer": 1,
+      "explanation": "Senku Ishigami is the protagonist from Riichiro Inagaki and Boichi's manga series Dr. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Andre Geim.",
+      "options": [
+        "Helen Patricia Sharman is a British chemist and cosmonaut who became the first British person, first Western European...",
+        "Sir Andre Konstantin Geim is a Russian-born British physicist working in England in the School of Physics and...",
+        "General relativity, also known as the general theory of relativity, and as Einstein's theory of gravity, is the...",
+        "Juno Teo Minh is a character who first appeared in the 2023 video game Overwatch, a Blizzard Entertainment–developed..."
+      ],
+      "answer": 1,
+      "explanation": "Sir Andre Konstantin Geim is a Russian-born British physicist working in England in the School of Physics and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Glenn T. Seaborg?",
+      "options": [
+        "Louis Victor Pierre Raymond, 7th Duc de Broglie was a French theoretical physicist and aristocrat known for his...",
+        "Glenn Theodore Seaborg was an American chemist whose involvement in the synthesis, discovery and investigation of ten transuranium...",
+        "NASA Astronaut Group 23 was announced on December 6, 2021, with the class reporting for duty in January...",
+        "Kary Banks Mullis was an American biochemist."
+      ],
+      "answer": 1,
+      "explanation": "Glenn Theodore Seaborg was an American chemist whose involvement in the synthesis, discovery and investigation of ten transuranium... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Steven Weinberg.",
+      "options": [
+        "Senku Ishigami is the protagonist from Riichiro Inagaki and Boichi's manga series Dr.",
+        "Howard Robard Hughes Jr.",
+        "Steven Weinberg was an American theoretical physicist.",
+        "Luis Walter Alvarez was an American experimental physicist, inventor, and professor who was awarded the Nobel Prize in..."
+      ],
+      "answer": 2,
+      "explanation": "Steven Weinberg was an American theoretical physicist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Bose–Einstein condensate?",
+      "options": [
+        "Irène Joliot-Curie was a French chemist and physicist who received the 1935 Nobel Prize in Chemistry with her...",
+        "In condensed matter physics, a Bose–Einstein condensate (BEC) is a state of matter that is typically formed when...",
+        "Cosmo the Space-dog is a character appearing in American comic books published by Marvel Comics.",
+        "Gerardus \"Gerard\" 't Hooft is a Dutch theoretical physicist and professor emeritus at Utrecht University, the Netherlands."
+      ],
+      "answer": 1,
+      "explanation": "In condensed matter physics, a Bose–Einstein condensate (BEC) is a state of matter that is typically formed when... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Yang Chen-Ning?",
+      "options": [
+        "Yang Chen-Ning also known as C.N.",
+        "The Einstein–Podolsky–Rosen (EPR) paradox is a thought experiment proposed by physicists Albert Einstein, Boris Podolsky and Nathan Rosen...",
+        "Irène Joliot-Curie was a French chemist and physicist who received the 1935 Nobel Prize in Chemistry with her...",
+        "In physics, the Einstein relation is a previously unexpected connection revealed independently by William Sutherland in 1904, Albert..."
+      ],
+      "answer": 0,
+      "explanation": "Yang Chen-Ning also known as C.N. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about John McFall (athlete)?",
+      "options": [
+        "John McFall is a British Paralympic sprinter, a surgeon, and the first disabled astronaut.",
+        "An Einstein ring, also known as an Einstein–Chwolson ring or Chwolson ring, is created when light from a...",
+        "Richard Phillips Feynman was an American theoretical physicist.",
+        "The equivalence principle is the hypothesis that the observed equivalence of gravitational and inertial mass is a consequence..."
+      ],
+      "answer": 0,
+      "explanation": "John McFall is a British Paralympic sprinter, a surgeon, and the first disabled astronaut. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Kirito (Sword Art Online)?",
+      "options": [
+        "NASA Astronaut Group 23 was announced on December 6, 2021, with the class reporting for duty in January...",
+        "Kary Banks Mullis was an American biochemist.",
+        "Kazuto Kirigaya , born as Kazuto Narusaka , the Japanese protagonist of the Sword Art Online series of...",
+        "Alberto Santos-Dumont was a Brazilian aeronaut, sportsman, inventor, and one of the few people to have contributed significantly..."
+      ],
+      "answer": 2,
+      "explanation": "Kazuto Kirigaya , born as Kazuto Narusaka , the Japanese protagonist of the Sword Art Online series of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Brownian motion.",
+      "options": [
+        "Brownian motion is the random motion of particles suspended in a medium.",
+        "Lev Davidovich Landau was a Soviet physicist who made fundamental contributions to many areas of theoretical physics.",
+        "Luz Noceda is the protagonist of the Disney Channel animated series The Owl House, created by Dana Terrace.",
+        "An invention is a unique or novel device, method, composition, idea, or process."
+      ],
+      "answer": 0,
+      "explanation": "Brownian motion is the random motion of particles suspended in a medium. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Xu Fu?",
+      "options": [
+        "James Isaac \"Jimmy\" Neutron, commonly known as Jimmy Neutron, Boy Genius, is the protagonist and title character from...",
+        "Paul Adrien Maurice Dirac was an English theoretical physicist who is considered to be one of the founders...",
+        "Xu Fu (Hsu Fu; Chinese: 徐福 or 徐巿; pinyin: Xú Fú; Wade–Giles: Hsu2 Fu2; Japanese: 徐福 Jofuku or...",
+        "In theoretical physics, a Feynman diagram is a pictorial representation of the mathematical expressions describing the behavior and..."
+      ],
+      "answer": 2,
+      "explanation": "Xu Fu (Hsu Fu; Chinese: 徐福 or 徐巿; pinyin: Xú Fú; Wade–Giles: Hsu2 Fu2; Japanese: 徐福 Jofuku or... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Helen Sharman?",
+      "options": [
+        "Glenn Theodore Seaborg was an American chemist whose involvement in the synthesis, discovery and investigation of ten transuranium...",
+        "Luis Walter Alvarez was an American experimental physicist, inventor, and professor who was awarded the Nobel Prize in...",
+        "The Human Torch is a superhero appearing in American comic books published by Marvel Comics.",
+        "Helen Patricia Sharman is a British chemist and cosmonaut who became the first British person, first Western European..."
+      ],
+      "answer": 3,
+      "explanation": "Helen Patricia Sharman is a British chemist and cosmonaut who became the first British person, first Western European... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Albert Einstein.",
+      "options": [
+        "Pugsley Pubert Addams is a member of the fictional Addams Family, created by American cartoonist Charles Addams.",
+        "The Santa Fe Institute (SFI) is an independent, nonprofit theoretical research institute located in Santa Fe, New Mexico...",
+        "François, Baron Englert was a Belgian theoretical physicist and 2013 Nobel Prize laureate.",
+        "Albert Einstein was a German-born theoretical physicist best known for developing the theory of relativity."
+      ],
+      "answer": 3,
+      "explanation": "Albert Einstein was a German-born theoretical physicist best known for developing the theory of relativity. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes John M. Martinis?",
+      "options": [
+        "Emmanuelle Marie Charpentier is a French professor and researcher in microbiology, genetics, and biochemistry.",
+        "Irène Joliot-Curie was a French chemist and physicist who received the 1935 Nobel Prize in Chemistry with her...",
+        "The selection of NASA Astronaut Group 24 was announced on March 5, 2024, alongside the graduation of the...",
+        "John Matthew Martinis is an American physicist and Professor of Physics at the University of California, Santa Barbara."
+      ],
+      "answer": 3,
+      "explanation": "John Matthew Martinis is an American physicist and Professor of Physics at the University of California, Santa Barbara. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Feynman diagram?",
+      "options": [
+        "An invention is a unique or novel device, method, composition, idea, or process.",
+        "Howard Robard Hughes Jr.",
+        "In theoretical physics, a Feynman diagram is a pictorial representation of the mathematical expressions describing the behavior and...",
+        "John McFall is a British Paralympic sprinter, a surgeon, and the first disabled astronaut."
+      ],
+      "answer": 2,
+      "explanation": "In theoretical physics, a Feynman diagram is a pictorial representation of the mathematical expressions describing the behavior and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Wormhole?",
+      "options": [
+        "Wallace & Gromit is a British claymation comedy franchise created by Nick Park and produced by Aardman Animations.",
+        "The Feynman–Kac formula, named after Richard Feynman and Mark Kac, establishes a link between parabolic partial differential equations...",
+        "A wormhole is a hypothetical structure that connects disparate points in spacetime.",
+        "Women have flown and worked in outer space from the beginning of human spaceflight."
+      ],
+      "answer": 2,
+      "explanation": "A wormhole is a hypothetical structure that connects disparate points in spacetime. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Kary Mullis.",
+      "options": [
+        "Sergei Pavlovich Korolev was a Soviet rocket engineer and spacecraft designer who led the development of the Soviet...",
+        "Sally Kristen Ride was an American astronaut and physicist.",
+        "Hypatia was a Neoplatonist philosopher, astronomer, and mathematician who lived in Alexandria, at that time in the province...",
+        "Kary Banks Mullis was an American biochemist."
+      ],
+      "answer": 3,
+      "explanation": "Kary Banks Mullis was an American biochemist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Donna Strickland?",
+      "options": [
+        "In quantum statistics, Bose–Einstein statistics describes one of two possible ways in which a collection of non-interacting identical...",
+        "Jennifer Anne Doudna is an American biochemist who has pioneered work in CRISPR gene editing, and made other...",
+        "Frederick Sanger was a British biochemist who received the Nobel Prize in Chemistry twice.",
+        "Donna Theo Strickland is a Canadian optical physicist and pioneer in the field of pulsed lasers."
+      ],
+      "answer": 3,
+      "explanation": "Donna Theo Strickland is a Canadian optical physicist and pioneer in the field of pulsed lasers. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Hafele–Keating experiment?",
+      "options": [
+        "In mathematics, especially the usage of linear algebra in mathematical physics and differential geometry, Einstein notation is a...",
+        "Wilhelm Conrad Röntgen was a German experimental physicist who produced and detected electromagnetic radiation in a wavelength range...",
+        "The Hafele–Keating experiment was a test of the theory of relativity.",
+        "Luz Noceda is the protagonist of the Disney Channel animated series The Owl House, created by Dana Terrace."
+      ],
+      "answer": 2,
+      "explanation": "The Hafele–Keating experiment was a test of the theory of relativity. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Astronaut?",
+      "options": [
+        "The Einstein–Podolsky–Rosen (EPR) paradox is a thought experiment proposed by physicists Albert Einstein, Boris Podolsky and Nathan Rosen...",
+        "Juno Teo Minh is a character who first appeared in the 2023 video game Overwatch, a Blizzard Entertainment–developed...",
+        "NASA Astronaut Group 23 was announced on December 6, 2021, with the class reporting for duty in January...",
+        "An astronaut is a person trained, equipped, and deployed by a human spaceflight program to serve as a..."
+      ],
+      "answer": 3,
+      "explanation": "An astronaut is a person trained, equipped, and deployed by a human spaceflight program to serve as a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Bose–Einstein statistics?",
+      "options": [
+        "Kary Banks Mullis was an American biochemist.",
+        "Hypatia was a Neoplatonist philosopher, astronomer, and mathematician who lived in Alexandria, at that time in the province...",
+        "Elbert Leander \"Burt\" Rutan is an American retired aerospace engineer and entrepreneur noted for his originality in designing...",
+        "In quantum statistics, Bose–Einstein statistics describes one of two possible ways in which a collection of non-interacting identical..."
+      ],
+      "answer": 3,
+      "explanation": "In quantum statistics, Bose–Einstein statistics describes one of two possible ways in which a collection of non-interacting identical... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Valentina Tereshkova?",
+      "options": [
+        "Tintin is the titular protagonist of The Adventures of Tintin, the comic series by Belgian cartoonist Hergé.",
+        "Valentina Vladimirovna Tereshkova is a Russian engineer, politician, and former Soviet cosmonaut.",
+        "Elbert Leander \"Burt\" Rutan is an American retired aerospace engineer and entrepreneur noted for his originality in designing...",
+        "Wilhelm Conrad Röntgen was a German experimental physicist who produced and detected electromagnetic radiation in a wavelength range..."
+      ],
+      "answer": 1,
+      "explanation": "Valentina Vladimirovna Tereshkova is a Russian engineer, politician, and former Soviet cosmonaut. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Henri Becquerel?",
+      "options": [
+        "Antoine Henri Becquerel was a French experimental physicist who shared the 1903 Nobel Prize in Physics with Marie...",
+        "An auteur is an artist with a distinctive approach, usually a film director who is considered the most...",
+        "Jennifer Anne Doudna is an American biochemist who has pioneered work in CRISPR gene editing, and made other...",
+        "Gerardus \"Gerard\" 't Hooft is a Dutch theoretical physicist and professor emeritus at Utrecht University, the Netherlands."
+      ],
+      "answer": 0,
+      "explanation": "Antoine Henri Becquerel was a French experimental physicist who shared the 1903 Nobel Prize in Physics with Marie... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Anne McClain?",
+      "options": [
+        "Thomas Midgley Jr.",
+        "Anne Charlotte McClain is a colonel in the United States Army, engineer, and a NASA astronaut.",
+        "Hendrik Antoon Lorentz was a Dutch theoretical physicist who shared the 1902 Nobel Prize in Physics with Pieter...",
+        "Irène Joliot-Curie was a French chemist and physicist who received the 1935 Nobel Prize in Chemistry with her..."
+      ],
+      "answer": 1,
+      "explanation": "Anne Charlotte McClain is a colonel in the United States Army, engineer, and a NASA astronaut. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about François Englert?",
+      "options": [
+        "Della Duck is a character from the Donald Duck universe, created in 1937 by Al Taliaferro and Ted...",
+        "François, Baron Englert was a Belgian theoretical physicist and 2013 Nobel Prize laureate.",
+        "Tom Swift is the main character of six series of American juvenile science fiction and adventure novels that...",
+        "John Joseph Hopfield is an American physicist and emeritus professor of Princeton University, most widely known for his..."
+      ],
+      "answer": 1,
+      "explanation": "François, Baron Englert was a Belgian theoretical physicist and 2013 Nobel Prize laureate. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Alberto Santos-Dumont.",
+      "options": [
+        "Paul Adrien Maurice Dirac was an English theoretical physicist who is considered to be one of the founders...",
+        "Antoine Henri Becquerel was a French experimental physicist who shared the 1903 Nobel Prize in Physics with Marie...",
+        "Alberto Santos-Dumont was a Brazilian aeronaut, sportsman, inventor, and one of the few people to have contributed significantly...",
+        "John Bardeen was an American physicist."
+      ],
+      "answer": 2,
+      "explanation": "Alberto Santos-Dumont was a Brazilian aeronaut, sportsman, inventor, and one of the few people to have contributed significantly... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Einstein notation?",
+      "options": [
+        "Wilhelm Conrad Röntgen was a German experimental physicist who produced and detected electromagnetic radiation in a wavelength range...",
+        "NASA Astronaut Group 22 is a group of twelve NASA astronauts selected in June 2017.",
+        "Thomas Midgley Jr.",
+        "In mathematics, especially the usage of linear algebra in mathematical physics and differential geometry, Einstein notation is a..."
+      ],
+      "answer": 3,
+      "explanation": "In mathematics, especially the usage of linear algebra in mathematical physics and differential geometry, Einstein notation is a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Feynman–Kac formula?",
+      "options": [
+        "Glenn Theodore Seaborg was an American chemist whose involvement in the synthesis, discovery and investigation of ten transuranium...",
+        "The Einstein–Podolsky–Rosen (EPR) paradox is a thought experiment proposed by physicists Albert Einstein, Boris Podolsky and Nathan Rosen...",
+        "Wilhelm Conrad Röntgen was a German experimental physicist who produced and detected electromagnetic radiation in a wavelength range...",
+        "The Feynman–Kac formula, named after Richard Feynman and Mark Kac, establishes a link between parabolic partial differential equations..."
+      ],
+      "answer": 3,
+      "explanation": "The Feynman–Kac formula, named after Richard Feynman and Mark Kac, establishes a link between parabolic partial differential equations... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Joan Feynman?",
+      "options": [
+        "James Isaac \"Jimmy\" Neutron, commonly known as Jimmy Neutron, Boy Genius, is the protagonist and title character from...",
+        "Joan Feynman was an American astrophysicist and space physicist.",
+        "In condensed matter physics, a Bose–Einstein condensate (BEC) is a state of matter that is typically formed when...",
+        "Otto Hahn was a German chemist who was a pioneer in the field of radiochemistry."
+      ],
+      "answer": 1,
+      "explanation": "Joan Feynman was an American astrophysicist and space physicist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Jennifer Doudna?",
+      "options": [
+        "Brownian motion is the random motion of particles suspended in a medium.",
+        "The Bohr–Einstein debates were a series of public disputes about quantum mechanics between Albert Einstein and Niels Bohr.",
+        "Jennifer Anne Doudna is an American biochemist who has pioneered work in CRISPR gene editing, and made other...",
+        "The Montgolfier brothers – Joseph-Michel Montgolfier and Jacques-Étienne Montgolfier – were aviation pioneers, balloonists and paper manufacturers from..."
+      ],
+      "answer": 2,
+      "explanation": "Jennifer Anne Doudna is an American biochemist who has pioneered work in CRISPR gene editing, and made other... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Stockton Rush?",
+      "options": [
+        "Senku Ishigami is the protagonist from Riichiro Inagaki and Boichi's manga series Dr.",
+        "The Montgolfier brothers – Joseph-Michel Montgolfier and Jacques-Étienne Montgolfier – were aviation pioneers, balloonists and paper manufacturers from...",
+        "Richard Stockton Rush III was an American businessman who was the co-founder and chief executive officer of OceanGate...",
+        "In condensed matter physics, a Bose–Einstein condensate (BEC) is a state of matter that is typically formed when..."
+      ],
+      "answer": 2,
+      "explanation": "Richard Stockton Rush III was an American businessman who was the co-founder and chief executive officer of OceanGate... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Artist?",
+      "options": [
+        "Samantha Cristoforetti is an Italian European Space Agency (ESA) astronaut, former Italian Air Force pilot and engineer.",
+        "The Bohr–Einstein debates were a series of public disputes about quantum mechanics between Albert Einstein and Niels Bohr.",
+        "David Baker is an American biochemist and computational biologist who has pioneered methods to design proteins and predict...",
+        "An artist is a person who creates art or, broadly speaking, practices the arts."
+      ],
+      "answer": 3,
+      "explanation": "An artist is a person who creates art or, broadly speaking, practices the arts. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Howard Hughes?",
+      "options": [
+        "Howard Robard Hughes Jr.",
+        "Hypatia was a Neoplatonist philosopher, astronomer, and mathematician who lived in Alexandria, at that time in the province...",
+        "The European Space Agency is a 23-member international organisation devoted to space exploration.",
+        "The photoelectric effect is the emission of electrons from a material caused by electromagnetic radiation such as ultraviolet..."
+      ],
+      "answer": 0,
+      "explanation": "Howard Robard Hughes Jr. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Luis Walter Alvarez?",
+      "options": [
+        "Max Born was a German–British theoretical physicist who was instrumental in the development of quantum mechanics.",
+        "Asami Sato is a major character in the Nickelodeon animated television series The Legend of Korra (2012–2014) and...",
+        "Luis Walter Alvarez was an American experimental physicist, inventor, and professor who was awarded the Nobel Prize in...",
+        "A hallmark of Albert Einstein's career was his use of visualized thought experiments as a fundamental tool for..."
+      ],
+      "answer": 2,
+      "explanation": "Luis Walter Alvarez was an American experimental physicist, inventor, and professor who was awarded the Nobel Prize in... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about William Shockley.",
+      "options": [
+        "The Einstein–Szilard or Einstein refrigerator is an absorption refrigerator which has no moving parts, operates at constant pressure...",
+        "John Bardeen was an American physicist.",
+        "The Feynman–Kac formula, named after Richard Feynman and Mark Kac, establishes a link between parabolic partial differential equations...",
+        "William Bradford Shockley was an American physicist."
+      ],
+      "answer": 3,
+      "explanation": "William Bradford Shockley was an American physicist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Asami Sato?",
+      "options": [
+        "Asami Sato is a major character in the Nickelodeon animated television series The Legend of Korra (2012–2014) and...",
+        "Frank Anthony Wilczek is an American theoretical physicist.",
+        "Hypatia was a Neoplatonist philosopher, astronomer, and mathematician who lived in Alexandria, at that time in the province...",
+        "In condensed matter physics, a Bose–Einstein condensate (BEC) is a state of matter that is typically formed when..."
+      ],
+      "answer": 0,
+      "explanation": "Asami Sato is a major character in the Nickelodeon animated television series The Legend of Korra (2012–2014) and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Wolfgang Pauli?",
+      "options": [
+        "An astronaut is a person trained, equipped, and deployed by a human spaceflight program to serve as a...",
+        "Wolfgang Ernst Pauli was an Austrian theoretical physicist and a pioneer of quantum mechanics.",
+        "Emmanuelle Marie Charpentier is a French professor and researcher in microbiology, genetics, and biochemistry.",
+        "Anne Geneviève L'Huillier is a French physicist."
+      ],
+      "answer": 1,
+      "explanation": "Wolfgang Ernst Pauli was an Austrian theoretical physicist and a pioneer of quantum mechanics. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Otto Hahn?",
+      "options": [
+        "Sir Roger Penrose is an English mathematician, mathematical physicist, and philosopher of science.",
+        "Otto Hahn was a German chemist who was a pioneer in the field of radiochemistry.",
+        "Pytheas of Massalia was a Greek geographer, explorer and astronomer from the Greek colony of Massalia.",
+        "Hans Albrecht Eduard Bethe was a German-American physicist who made major contributions to nuclear physics, astrophysics, quantum electrodynamics..."
+      ],
+      "answer": 1,
+      "explanation": "Otto Hahn was a German chemist who was a pioneer in the field of radiochemistry. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Pee-wee Herman?",
+      "options": [
+        "Pee-wee Herman is a comedy character created and portrayed by the American comedian Paul Reubens.",
+        "Hendrik Antoon Lorentz was a Dutch theoretical physicist who shared the 1902 Nobel Prize in Physics with Pieter...",
+        "Richard Phillips Feynman was an American theoretical physicist.",
+        "Asami Sato is a major character in the Nickelodeon animated television series The Legend of Korra (2012–2014) and..."
+      ],
+      "answer": 0,
+      "explanation": "Pee-wee Herman is a comedy character created and portrayed by the American comedian Paul Reubens. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Sergei Korolev.",
+      "options": [
+        "Murray Gell-Mann was an American theoretical physicist who played a preeminent role in the development of the theory...",
+        "Wilhelm Conrad Röntgen was a German experimental physicist who produced and detected electromagnetic radiation in a wavelength range...",
+        "Sergei Pavlovich Korolev was a Soviet rocket engineer and spacecraft designer who led the development of the Soviet...",
+        "Svetlana Yevgenyevna Savitskaya is a Russian former aviator and Soviet cosmonaut who flew aboard Soyuz T-7 in 1982..."
+      ],
+      "answer": 2,
+      "explanation": "Sergei Pavlovich Korolev was a Soviet rocket engineer and spacecraft designer who led the development of the Soviet... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Santa Fe Institute?",
+      "options": [
+        "Venkatraman Ramakrishnan is a British-American structural biologist.",
+        "Louis Alexander Slotin was a Canadian physicist and chemist who took part in the Manhattan Project.",
+        "The Invisible Woman is a superhero appearing in American comic books published by Marvel Comics.",
+        "The Santa Fe Institute (SFI) is an independent, nonprofit theoretical research institute located in Santa Fe, New Mexico..."
+      ],
+      "answer": 3,
+      "explanation": "The Santa Fe Institute (SFI) is an independent, nonprofit theoretical research institute located in Santa Fe, New Mexico... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about NASA Astronaut Group 22?",
+      "options": [
+        "NASA Astronaut Group 22 is a group of twelve NASA astronauts selected in June 2017.",
+        "The Rogers Commission Report was written by a presidential commission charged with investigating the Space Shuttle Challenger disaster...",
+        "Albert Einstein was a German-born theoretical physicist best known for developing the theory of relativity.",
+        "Roald Hoffmann is a Polish-American theoretical chemist who shared the 1981 Nobel Prize in Chemistry with Kenichi Fukui..."
+      ],
+      "answer": 0,
+      "explanation": "NASA Astronaut Group 22 is a group of twelve NASA astronauts selected in June 2017. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Della Duck?",
+      "options": [
+        "Anne Charlotte McClain is a colonel in the United States Army, engineer, and a NASA astronaut.",
+        "Otto Hahn was a German chemist who was a pioneer in the field of radiochemistry.",
+        "In the general theory of relativity, the Einstein field equations relate the geometry of spacetime to the distribution...",
+        "Della Duck is a character from the Donald Duck universe, created in 1937 by Al Taliaferro and Ted..."
+      ],
+      "answer": 3,
+      "explanation": "Della Duck is a character from the Donald Duck universe, created in 1937 by Al Taliaferro and Ted... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Otto Lilienthal?",
+      "options": [
+        "Ernest Rutherford, 1st Baron Rutherford of Nelson, was a New Zealand physicist and chemist who was a pioneering...",
+        "The Thing is a superhero appearing in American comic books published by Marvel Comics.",
+        "Sir Roger Penrose is an English mathematician, mathematical physicist, and philosopher of science.",
+        "Karl Wilhelm Otto Lilienthal was a German pioneer of aviation who became known as the \"flying man\"."
+      ],
+      "answer": 3,
+      "explanation": "Karl Wilhelm Otto Lilienthal was a German pioneer of aviation who became known as the \"flying man\". (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about John Bardeen.",
+      "options": [
+        "The Doctor, sometimes known as Doctor Who, is the protagonist of the long-running BBC science fiction television series...",
+        "Flash Gordon is the protagonist of a space adventure comic strip created and originally drawn by Alex Raymond.",
+        "John Bardeen was an American physicist.",
+        "Karl Wilhelm Otto Lilienthal was a German pioneer of aviation who became known as the \"flying man\"."
+      ],
+      "answer": 2,
+      "explanation": "John Bardeen was an American physicist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Thomas Midgley Jr.?",
+      "options": [
+        "Mary or Maria the Jewess, also known as Mary the Prophetess or Maria the Copt, was an early...",
+        "Tintin is the titular protagonist of The Adventures of Tintin, the comic series by Belgian cartoonist Hergé.",
+        "Thomas Midgley Jr.",
+        "Anne Geneviève L'Huillier is a French physicist."
+      ],
+      "answer": 2,
+      "explanation": "Thomas Midgley Jr. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Venki Ramakrishnan?",
+      "options": [
+        "The selection of NASA Astronaut Group 24 was announced on March 5, 2024, alongside the graduation of the...",
+        "Venkatraman Ramakrishnan is a British-American structural biologist.",
+        "Louis Alexander Slotin was a Canadian physicist and chemist who took part in the Manhattan Project.",
+        "Kary Banks Mullis was an American biochemist."
+      ],
+      "answer": 1,
+      "explanation": "Venkatraman Ramakrishnan is a British-American structural biologist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Wilhelm Röntgen?",
+      "options": [
+        "Wilhelm Conrad Röntgen was a German experimental physicist who produced and detected electromagnetic radiation in a wavelength range...",
+        "Frederick Sanger was a British biochemist who received the Nobel Prize in Chemistry twice.",
+        "Sally Kristen Ride was an American astronaut and physicist.",
+        "Antoine Henri Becquerel was a French experimental physicist who shared the 1903 Nobel Prize in Physics with Marie..."
+      ],
+      "answer": 0,
+      "explanation": "Wilhelm Conrad Röntgen was a German experimental physicist who produced and detected electromagnetic radiation in a wavelength range... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Julian Schwinger?",
+      "options": [
+        "Pierre Curie was a French physicist and chemist, and a pioneer in crystallography and magnetism.",
+        "Julian Seymour Schwinger was an American theoretical physicist.",
+        "Max Born was a German–British theoretical physicist who was instrumental in the development of quantum mechanics.",
+        "In theoretical physics, a Feynman diagram is a pictorial representation of the mathematical expressions describing the behavior and..."
+      ],
+      "answer": 1,
+      "explanation": "Julian Seymour Schwinger was an American theoretical physicist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Marie Curie?",
+      "options": [
+        "Mohammad Abdus Salam was a Pakistani theoretical physicist and Nobel laureate.",
+        "Glenn Theodore Seaborg was an American chemist whose involvement in the synthesis, discovery and investigation of ten transuranium...",
+        "The Invisible Woman is a superhero appearing in American comic books published by Marvel Comics.",
+        "Maria Salomea Skłodowska Curie, better known as Marie Curie was a Polish and naturalised-French physicist and chemist."
+      ],
+      "answer": 3,
+      "explanation": "Maria Salomea Skłodowska Curie, better known as Marie Curie was a Polish and naturalised-French physicist and chemist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Rick Sanchez?",
+      "options": [
+        "In theoretical physics, a Feynman diagram is a pictorial representation of the mathematical expressions describing the behavior and...",
+        "Yang Chen-Ning also known as C.N.",
+        "Gerardus \"Gerard\" 't Hooft is a Dutch theoretical physicist and professor emeritus at Utrecht University, the Netherlands.",
+        "Rick Sánchez is the titular co-protagonist of Adult Swim's Rick and Morty franchise."
+      ],
+      "answer": 3,
+      "explanation": "Rick Sánchez is the titular co-protagonist of Adult Swim's Rick and Morty franchise. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Jenni Gibbons?",
+      "options": [
+        "Max Born was a German–British theoretical physicist who was instrumental in the development of quantum mechanics.",
+        "In quantum statistics, Bose–Einstein statistics describes one of two possible ways in which a collection of non-interacting identical...",
+        "Jennifer Anne MacKinnon Sidey-Gibbons is a Canadian astronaut, engineer, and academic.",
+        "Einsteinium is a synthetic chemical element; it has symbol Es and atomic number 99 and is a member..."
+      ],
+      "answer": 2,
+      "explanation": "Jennifer Anne MacKinnon Sidey-Gibbons is a Canadian astronaut, engineer, and academic. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about David Baker (biochemist).",
+      "options": [
+        "Richard Stockton Rush III was an American businessman who was the co-founder and chief executive officer of OceanGate...",
+        "David Baker is an American biochemist and computational biologist who has pioneered methods to design proteins and predict...",
+        "Anne Geneviève L'Huillier is a French physicist.",
+        "Max Karl Ernst Ludwig Planck was a German theoretical physicist."
+      ],
+      "answer": 1,
+      "explanation": "David Baker is an American biochemist and computational biologist who has pioneered methods to design proteins and predict... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Anne L'Huillier?",
+      "options": [
+        "Dr.",
+        "Anne Geneviève L'Huillier is a French physicist.",
+        "Hanno the Navigator was a Carthaginian explorer who lived during the fifth century BC, known for his naval...",
+        "A wormhole is a hypothetical structure that connects disparate points in spacetime."
+      ],
+      "answer": 1,
+      "explanation": "Anne Geneviève L'Huillier is a French physicist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Paul Dirac.",
+      "options": [
+        "Paul Adrien Maurice Dirac was an English theoretical physicist who is considered to be one of the founders...",
+        "John Bannister Goodenough was an American materials scientist, a solid-state physicist, and a Nobel laureate in chemistry.",
+        "Pytheas of Massalia was a Greek geographer, explorer and astronomer from the Greek colony of Massalia.",
+        "Alberto Santos-Dumont was a Brazilian aeronaut, sportsman, inventor, and one of the few people to have contributed significantly..."
+      ],
+      "answer": 0,
+      "explanation": "Paul Adrien Maurice Dirac was an English theoretical physicist who is considered to be one of the founders... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Luz Noceda?",
+      "options": [
+        "In physics, the twin paradox is a thought experiment in special relativity involving twins, one of whom takes...",
+        "Luz Noceda is the protagonist of the Disney Channel animated series The Owl House, created by Dana Terrace.",
+        "Ahmed Hassan Zewail was an Egyptian-American chemist, known as the \"father of femtochemistry\".",
+        "Mary or Maria the Jewess, also known as Mary the Prophetess or Maria the Copt, was an early..."
+      ],
+      "answer": 1,
+      "explanation": "Luz Noceda is the protagonist of the Disney Channel animated series The Owl House, created by Dana Terrace. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Wallace & Gromit?",
+      "options": [
+        "Wallace & Gromit is a British claymation comedy franchise created by Nick Park and produced by Aardman Animations.",
+        "Samantha Cristoforetti is an Italian European Space Agency (ESA) astronaut, former Italian Air Force pilot and engineer.",
+        "Pee-wee Herman is a comedy character created and portrayed by the American comedian Paul Reubens.",
+        "Max Karl Ernst Ludwig Planck was a German theoretical physicist."
+      ],
+      "answer": 0,
+      "explanation": "Wallace & Gromit is a British claymation comedy franchise created by Nick Park and produced by Aardman Animations. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Photoelectric effect?",
+      "options": [
+        "Joan Feynman was an American astrophysicist and space physicist.",
+        "John McFall is a British Paralympic sprinter, a surgeon, and the first disabled astronaut.",
+        "Flash Gordon is the protagonist of a space adventure comic strip created and originally drawn by Alex Raymond.",
+        "The photoelectric effect is the emission of electrons from a material caused by electromagnetic radiation such as ultraviolet..."
+      ],
+      "answer": 3,
+      "explanation": "The photoelectric effect is the emission of electrons from a material caused by electromagnetic radiation such as ultraviolet... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes John B. Fenn?",
+      "options": [
+        "In mathematics, especially the usage of linear algebra in mathematical physics and differential geometry, Einstein notation is a...",
+        "John Bennett Fenn was an American analytical chemist who was awarded a share of the Nobel Prize in...",
+        "Anne Charlotte McClain is a colonel in the United States Army, engineer, and a NASA astronaut.",
+        "Tintin is the titular protagonist of The Adventures of Tintin, the comic series by Belgian cartoonist Hergé."
+      ],
+      "answer": 1,
+      "explanation": "John Bennett Fenn was an American analytical chemist who was awarded a share of the Nobel Prize in... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about One-electron universe?",
+      "options": [
+        "Luis Walter Alvarez was an American experimental physicist, inventor, and professor who was awarded the Nobel Prize in...",
+        "The one-electron universe is the hypothesis that all electrons and positrons are actually manifestations of a single entity...",
+        "Fritz Jakob Haber was a German chemist who received the Nobel Prize in Chemistry in 1918 for his...",
+        "Mary or Maria the Jewess, also known as Mary the Prophetess or Maria the Copt, was an early..."
+      ],
+      "answer": 1,
+      "explanation": "The one-electron universe is the hypothesis that all electrons and positrons are actually manifestations of a single entity... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Thing (Marvel Comics).",
+      "options": [
+        "The Thing is a superhero appearing in American comic books published by Marvel Comics.",
+        "Karl Wilhelm Otto Lilienthal was a German pioneer of aviation who became known as the \"flying man\".",
+        "Frank Anthony Wilczek is an American theoretical physicist.",
+        "John Bardeen was an American physicist."
+      ],
+      "answer": 0,
+      "explanation": "The Thing is a superhero appearing in American comic books published by Marvel Comics. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes C. V. Raman?",
+      "options": [
+        "Alberto Santos-Dumont was a Brazilian aeronaut, sportsman, inventor, and one of the few people to have contributed significantly...",
+        "Chandrasekhara Venkata Raman was an Indian physicist known for his work in the field of light scattering.",
+        "The Human Torch is a superhero appearing in American comic books published by Marvel Comics.",
+        "Sir Andre Konstantin Geim is a Russian-born British physicist working in England in the School of Physics and..."
+      ],
+      "answer": 1,
+      "explanation": "Chandrasekhara Venkata Raman was an Indian physicist known for his work in the field of light scattering. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Linus Pauling.",
+      "options": [
+        "Linus Carl Pauling was an American chemist and peace activist.",
+        "Dr.",
+        "Cosmo the Space-dog is a character appearing in American comic books published by Marvel Comics.",
+        "Sir Andre Konstantin Geim is a Russian-born British physicist working in England in the School of Physics and..."
+      ],
+      "answer": 0,
+      "explanation": "Linus Carl Pauling was an American chemist and peace activist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about David Gross?",
+      "options": [
+        "Oswald the Lucky Rabbit, also known as Oswald the Rabbit, Oswald Rabbit, and Ozzie, is an animated cartoon...",
+        "François, Baron Englert was a Belgian theoretical physicist and 2013 Nobel Prize laureate.",
+        "In physics, the twin paradox is a thought experiment in special relativity involving twins, one of whom takes...",
+        "David Jonathan Gross is an American theoretical physicist and string theorist."
+      ],
+      "answer": 3,
+      "explanation": "David Jonathan Gross is an American theoretical physicist and string theorist. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about MacGyver?",
+      "options": [
+        "Linus Carl Pauling was an American chemist and peace activist.",
+        "Julie Payette is a Canadian engineer, scientist and former astronaut who served as the 29th governor general of...",
+        "Viscount Ilya Romanovich Prigogine was a Russian-Belgian physical chemist, noted for his work on dissipative structures, complex systems...",
+        "Angus \"Mac\" MacGyver is the title character and the protagonist in the TV series MacGyver."
+      ],
+      "answer": 3,
+      "explanation": "Angus \"Mac\" MacGyver is the title character and the protagonist in the TV series MacGyver. (from Wikipedia)",
+      "image_keyword": null
+    }
+  ],
+  "science": [
+    {
+      "question": "Which of these facts is about Berserker hypothesis?",
+      "options": [
+        "Atoms are the basic particles of the chemical elements and the fundamental building blocks of matter.",
+        "In mathematics and classical mechanics, the Poisson bracket is an important binary operation in Hamiltonian mechanics, playing a...",
+        "Biology is the scientific study of life and living organisms.",
+        "The Berserker hypothesis, also known as the deadly probes scenario, is the idea that humans have not yet..."
+      ],
+      "answer": 3,
+      "explanation": "The Berserker hypothesis, also known as the deadly probes scenario, is the idea that humans have not yet... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Ultra-high-molecular-weight polyethylene?",
+      "options": [
+        "A chiller is a machine that removes heat from a liquid coolant via a vapor-compression, adsorption refrigeration, or...",
+        "Theia is a hypothetical ancient planet in the early Solar System which, according to the giant-impact hypothesis, collided...",
+        "Ultra-high-molecular-weight polyethylene is a subset of the thermoplastic polyethylene.",
+        "Kinesiology is the scientific study of human body movement."
+      ],
+      "answer": 2,
+      "explanation": "Ultra-high-molecular-weight polyethylene is a subset of the thermoplastic polyethylene. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Woozle effect?",
+      "options": [
+        "A supercapacitor (SC), also called an ultracapacitor, is a high-capacity capacitor, with a capacitance value much higher than...",
+        "The Woozle effect, also known as evidence by citation, occurs when a source is widely cited for a...",
+        "Statistical inference is the process of using data analysis to infer properties of an underlying probability distribution.",
+        "Body armor, personal armor, armored suit (armoured) or coat of armor, among others, is armor for a person's..."
+      ],
+      "answer": 1,
+      "explanation": "The Woozle effect, also known as evidence by citation, occurs when a source is widely cited for a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Alternator?",
+      "options": [
+        "Female body shape or female figure is the cumulative product of a woman's bone structure along with the...",
+        "The Apollo's belt, also known as Adonis belt, or iliac furrows, is a part of the human anatomy...",
+        "Root Cause is a documentary film produced by Frazer Bailey.",
+        "An alternator is an electrical generator that converts mechanical energy to electrical energy in the form of alternating..."
+      ],
+      "answer": 3,
+      "explanation": "An alternator is an electrical generator that converts mechanical energy to electrical energy in the form of alternating... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Observation?",
+      "options": [
+        "An alternator is an electrical generator that converts mechanical energy to electrical energy in the form of alternating...",
+        "The Silurian hypothesis is a thought experiment which assesses the ability of modern science to detect evidence of...",
+        "Wireless power transfer is the transmission of electrical energy without wires as a physical link.",
+        "Observation in the natural sciences refers to the active acquisition of information from a primary source."
+      ],
+      "answer": 3,
+      "explanation": "Observation in the natural sciences refers to the active acquisition of information from a primary source. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Solar power?",
+      "options": [
+        "A model is a person with a role either to display commercial products or to serve as an...",
+        "Geology is a branch of natural science concerned with the Earth and other astronomical bodies, the rocks of...",
+        "Solar power, also known as solar electricity, is the conversion of energy from sunlight into electricity, either directly...",
+        "Allotropy or allotropism is the property of some chemical elements to exist in two or more different forms..."
+      ],
+      "answer": 2,
+      "explanation": "Solar power, also known as solar electricity, is the conversion of energy from sunlight into electricity, either directly... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about My Humps?",
+      "options": [
+        "The old quantum theory is a collection of results from the years 1900–1925, which predate modern quantum mechanics.",
+        "The Bohr–Einstein debates were a series of public disputes about quantum mechanics between Albert Einstein and Niels Bohr.",
+        "\"My Humps\" is a song by American hip hop group the Black Eyed Peas, released on September 20...",
+        "Criminology is the interdisciplinary study of crime and deviant behaviour."
+      ],
+      "answer": 2,
+      "explanation": "\"My Humps\" is a song by American hip hop group the Black Eyed Peas, released on September 20... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Geology?",
+      "options": [
+        "The Berserker hypothesis, also known as the deadly probes scenario, is the idea that humans have not yet...",
+        "The replication crisis, also known as the reproducibility or replicability crisis, refers to widespread failures to reproduce published...",
+        "Dendrochronology is the scientific method of dating tree rings to the exact year they were formed in a...",
+        "Geology is a branch of natural science concerned with the Earth and other astronomical bodies, the rocks of..."
+      ],
+      "answer": 3,
+      "explanation": "Geology is a branch of natural science concerned with the Earth and other astronomical bodies, the rocks of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Tipping points in the climate system?",
+      "options": [
+        "Lookism is the prejudice or discrimination toward people who are considered to be physically unattractive, and can include...",
+        "Androgyny is the possession of both masculine and feminine characteristics.",
+        "Earth science or geoscience includes all fields of natural science related to planet Earth.",
+        "In climate science, a tipping point is a critical threshold that, when crossed, leads to large, accelerating and..."
+      ],
+      "answer": 3,
+      "explanation": "In climate science, a tipping point is a critical threshold that, when crossed, leads to large, accelerating and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Bohr–Einstein debates.",
+      "options": [
+        "The data below tabulates standard electrode potentials (E°), in volts relative to the standard hydrogen electrode (SHE), at:Temperature...",
+        "An Earth analog, also called an Earth twin or second Earth, is a planet or moon with environmental...",
+        "Meta-analysis is a method of synthesis of quantitative data from multiple independent studies addressing a common research question.",
+        "The Bohr–Einstein debates were a series of public disputes about quantum mechanics between Albert Einstein and Niels Bohr."
+      ],
+      "answer": 3,
+      "explanation": "The Bohr–Einstein debates were a series of public disputes about quantum mechanics between Albert Einstein and Niels Bohr. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Body snatching?",
+      "options": [
+        "A heuristic or heuristic technique is any approach to problem solving that employs a pragmatic method that is...",
+        "Allotropy or allotropism is the property of some chemical elements to exist in two or more different forms...",
+        "Body snatching is the illicit removal of corpses from graves, morgues, and other burial sites.",
+        "A steam engine is a heat engine that performs mechanical work using steam as its working fluid."
+      ],
+      "answer": 2,
+      "explanation": "Body snatching is the illicit removal of corpses from graves, morgues, and other burial sites. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Mehndi?",
+      "options": [
+        "A heuristic or heuristic technique is any approach to problem solving that employs a pragmatic method that is...",
+        "Energy is sustainable if it \"meets the needs of the present without compromising the ability of future generations...",
+        "Earth orbits the Sun at an average distance of 149.60 million km (92.96 million mi), or 8.317 light-minutes...",
+        "Mehndi or mehendi is a form of temporary skin decoration using a paste created with henna."
+      ],
+      "answer": 3,
+      "explanation": "Mehndi or mehendi is a form of temporary skin decoration using a paste created with henna. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Fuel economy in automobiles?",
+      "options": [
+        "The dark forest hypothesis is the idea that extraterrestrial civilizations may exist in abundance across the universe, but...",
+        "The fuel economy or fuel efficiency of an automobile relates to the distance traveled by a vehicle and...",
+        "The availability heuristic, also known as availability bias, is a mental shortcut that relies on immediate examples that...",
+        "Ultra-high-molecular-weight polyethylene is a subset of the thermoplastic polyethylene."
+      ],
+      "answer": 1,
+      "explanation": "The fuel economy or fuel efficiency of an automobile relates to the distance traveled by a vehicle and... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Statistical inference?",
+      "options": [
+        "Fluorescence is one of two kinds of photoluminescence, the emission of light by a substance that has absorbed...",
+        "A steam engine is a heat engine that performs mechanical work using steam as its working fluid.",
+        "Most water in Earth's atmosphere and crust comes from saline seawater, while fresh water accounts for nearly 1%...",
+        "Statistical inference is the process of using data analysis to infer properties of an underlying probability distribution."
+      ],
+      "answer": 3,
+      "explanation": "Statistical inference is the process of using data analysis to infer properties of an underlying probability distribution. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Female body shape?",
+      "options": [
+        "The Shore durometer is a device for measuring the hardness of a material, typically of polymers.",
+        "Most water in Earth's atmosphere and crust comes from saline seawater, while fresh water accounts for nearly 1%...",
+        "A Dyson sphere is a hypothetical megastructure that encompasses a star and captures a large percentage of its...",
+        "Female body shape or female figure is the cumulative product of a woman's bone structure along with the..."
+      ],
+      "answer": 3,
+      "explanation": "Female body shape or female figure is the cumulative product of a woman's bone structure along with the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Actuarial science?",
+      "options": [
+        "Rosy retrospection is a proposed psychological phenomenon of recalling the past more positively than it was actually experienced.",
+        "Anatomical terminology is a specialized system of terms used by anatomists, zoologists, and health professionals, such as doctors...",
+        "Actuarial science is the discipline that applies mathematical and statistical methods to assess risk in insurance, pension, finance...",
+        "Energy is sustainable if it \"meets the needs of the present without compromising the ability of future generations..."
+      ],
+      "answer": 2,
+      "explanation": "Actuarial science is the discipline that applies mathematical and statistical methods to assess risk in insurance, pension, finance... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Spacetime?",
+      "options": [
+        "In physics, spacetime, also called the space-time continuum, is a mathematical model that fuses the three dimensions of...",
+        "Physiology is the scientific study of functions and mechanisms in a living system.",
+        "In user interface design and software design, the principle of least astonishment (POLA), also known as principle of...",
+        "The Woozle effect, also known as evidence by citation, occurs when a source is widely cited for a..."
+      ],
+      "answer": 0,
+      "explanation": "In physics, spacetime, also called the space-time continuum, is a mathematical model that fuses the three dimensions of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Replication crisis?",
+      "options": [
+        "In mathematics and classical mechanics, the Poisson bracket is an important binary operation in Hamiltonian mechanics, playing a...",
+        "Wireless power transfer is the transmission of electrical energy without wires as a physical link.",
+        "An Earth analog, also called an Earth twin or second Earth, is a planet or moon with environmental...",
+        "The replication crisis, also known as the reproducibility or replicability crisis, refers to widespread failures to reproduce published..."
+      ],
+      "answer": 3,
+      "explanation": "The replication crisis, also known as the reproducibility or replicability crisis, refers to widespread failures to reproduce published... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Pivot table?",
+      "options": [
+        "A pivot table is a table of values which are aggregations of groups of individual values from a...",
+        "Facial symmetry is one specific measure of bodily symmetry.",
+        "Mehndi or mehendi is a form of temporary skin decoration using a paste created with henna.",
+        "Body snatching is the illicit removal of corpses from graves, morgues, and other burial sites."
+      ],
+      "answer": 0,
+      "explanation": "A pivot table is a table of values which are aggregations of groups of individual values from a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Pattern recognition.",
+      "options": [
+        "Androgyny is the possession of both masculine and feminine characteristics.",
+        "Pattern recognition is the task of assigning a class to an observation based on patterns extracted from data.",
+        "The world is the totality of entities, the whole of reality, or everything that exists.",
+        "An alternator is an electrical generator that converts mechanical energy to electrical energy in the form of alternating..."
+      ],
+      "answer": 1,
+      "explanation": "Pattern recognition is the task of assigning a class to an observation based on patterns extracted from data. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Toupée?",
+      "options": [
+        "A toupée is a hairpiece or partial wig of natural or synthetic hair worn to cover partial baldness...",
+        "The thermoelectric effect is the direct conversion of temperature differences to electric voltage and vice versa via a...",
+        "Female body shape or female figure is the cumulative product of a woman's bone structure along with the...",
+        "Geology is a branch of natural science concerned with the Earth and other astronomical bodies, the rocks of..."
+      ],
+      "answer": 0,
+      "explanation": "A toupée is a hairpiece or partial wig of natural or synthetic hair worn to cover partial baldness... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Reproducibility?",
+      "options": [
+        "Reproducibility, closely related to replicability and repeatability, is a major principle underpinning the scientific method.",
+        "In philosophy, praxeology is the theory of human action, based on the notion that humans engage in purposeful...",
+        "The burden of proof is the obligation on a party in a dispute to provide sufficient warrant for...",
+        "The biophilia hypothesis suggests that humans possess an innate tendency to seek connections with nature and other forms..."
+      ],
+      "answer": 0,
+      "explanation": "Reproducibility, closely related to replicability and repeatability, is a major principle underpinning the scientific method. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Research.",
+      "options": [
+        "\"My Humps\" is a song by American hip hop group the Black Eyed Peas, released on September 20...",
+        "In physics, spacetime, also called the space-time continuum, is a mathematical model that fuses the three dimensions of...",
+        "In geology, a fault is a planar fracture or discontinuity in a volume of rock across which there...",
+        "Research is creative and systematic work undertaken to increase the stock of knowledge."
+      ],
+      "answer": 3,
+      "explanation": "Research is creative and systematic work undertaken to increase the stock of knowledge. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Human height?",
+      "options": [
+        "The High-frequency Active Auroral Research Program (HAARP) is a University of Alaska Fairbanks program which researches the ionosphere...",
+        "Human height or stature is the distance from the bottom of the feet to the top of the...",
+        "In biology, morphology is the study of the form and structure of organisms and their specific structural features.",
+        "Gynoid fat is the body fat that forms around the lower body, specifically the hips, thighs and buttocks."
+      ],
+      "answer": 1,
+      "explanation": "Human height or stature is the distance from the bottom of the feet to the top of the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Steam engine?",
+      "options": [
+        "Human height or stature is the distance from the bottom of the feet to the top of the...",
+        "A steam engine is a heat engine that performs mechanical work using steam as its working fluid.",
+        "Body armor, personal armor, armored suit (armoured) or coat of armor, among others, is armor for a person's...",
+        "Ultra-high-molecular-weight polyethylene is a subset of the thermoplastic polyethylene."
+      ],
+      "answer": 1,
+      "explanation": "A steam engine is a heat engine that performs mechanical work using steam as its working fluid. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Greenhouse and icehouse Earth?",
+      "options": [
+        "Throughout Earth's climate history (Paleoclimate) its climate has fluctuated between two primary states: greenhouse and icehouse Earth.",
+        "Energy is sustainable if it \"meets the needs of the present without compromising the ability of future generations...",
+        "The Berserker hypothesis, also known as the deadly probes scenario, is the idea that humans have not yet...",
+        "In biology, morphology is the study of the form and structure of organisms and their specific structural features."
+      ],
+      "answer": 0,
+      "explanation": "Throughout Earth's climate history (Paleoclimate) its climate has fluctuated between two primary states: greenhouse and icehouse Earth. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Eardrum?",
+      "options": [
+        "In the anatomy of humans and various other tetrapods, the eardrum, also called the tympanic membrane or myringa...",
+        "Evidence-based medicine (EBM), sometimes known within healthcare as evidence-based practice (EBP), is \"the conscientious, explicit and judicious use...",
+        "The availability heuristic, also known as availability bias, is a mental shortcut that relies on immediate examples that...",
+        "\"My Humps\" is a song by American hip hop group the Black Eyed Peas, released on September 20..."
+      ],
+      "answer": 0,
+      "explanation": "In the anatomy of humans and various other tetrapods, the eardrum, also called the tympanic membrane or myringa... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Biology?",
+      "options": [
+        "Actuarial science is the discipline that applies mathematical and statistical methods to assess risk in insurance, pension, finance...",
+        "In human anatomy, the groin, also known as the inguinal region or iliac region, is the junctional area...",
+        "Geology is a branch of natural science concerned with the Earth and other astronomical bodies, the rocks of...",
+        "Biology is the scientific study of life and living organisms."
+      ],
+      "answer": 3,
+      "explanation": "Biology is the scientific study of life and living organisms. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Wireless power transfer?",
+      "options": [
+        "In chemistry, a mixture is a material made up of two or more different chemical substances which can...",
+        "Wireless power transfer is the transmission of electrical energy without wires as a physical link.",
+        "Breast binding, also known as chest binding, is the flattening and hiding of breasts with constrictive materials such...",
+        "The data below tabulates standard electrode potentials (E°), in volts relative to the standard hydrogen electrode (SHE), at:Temperature..."
+      ],
+      "answer": 1,
+      "explanation": "Wireless power transfer is the transmission of electrical energy without wires as a physical link. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Spectrum?",
+      "options": [
+        "Theia is a hypothetical ancient planet in the early Solar System which, according to the giant-impact hypothesis, collided...",
+        "A spectrum is a set of related ideas, objects, or properties whose features overlap such that they blend...",
+        "Aestheticism was an art movement in the late 19th century that valued the appearance of literature, music, fonts...",
+        "Earth is unique among known planets in having oceans of liquid water on its surface."
+      ],
+      "answer": 1,
+      "explanation": "A spectrum is a set of related ideas, objects, or properties whose features overlap such that they blend... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Theoretical computer science?",
+      "options": [
+        "Theoretical computer science is a subfield of computer science and mathematics that focuses on the abstract and mathematical...",
+        "Physiology is the scientific study of functions and mechanisms in a living system.",
+        "In physics, classical mechanics is a theory that describes the effect of forces on the motion of macroscopic...",
+        "Allotropy or allotropism is the property of some chemical elements to exist in two or more different forms..."
+      ],
+      "answer": 0,
+      "explanation": "Theoretical computer science is a subfield of computer science and mathematics that focuses on the abstract and mathematical... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Allotropy?",
+      "options": [
+        "Earth orbits the Sun at an average distance of 149.60 million km (92.96 million mi), or 8.317 light-minutes...",
+        "The Standard Model of particle physics is the theory describing three of the four known fundamental forces in...",
+        "Lookism is the prejudice or discrimination toward people who are considered to be physically unattractive, and can include...",
+        "Allotropy or allotropism is the property of some chemical elements to exist in two or more different forms..."
+      ],
+      "answer": 3,
+      "explanation": "Allotropy or allotropism is the property of some chemical elements to exist in two or more different forms... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Classical mechanics?",
+      "options": [
+        "The Berserker hypothesis, also known as the deadly probes scenario, is the idea that humans have not yet...",
+        "The Standard Model of particle physics is the theory describing three of the four known fundamental forces in...",
+        "The human body is the entire structure of a human being.",
+        "In physics, classical mechanics is a theory that describes the effect of forces on the motion of macroscopic..."
+      ],
+      "answer": 3,
+      "explanation": "In physics, classical mechanics is a theory that describes the effect of forces on the motion of macroscopic... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Nucleation?",
+      "options": [
+        "In thermodynamics, nucleation is the first step in the formation of either a new thermodynamic phase or structure...",
+        "A chemical compound is a chemical substance composed of many identical molecules containing atoms from more than one...",
+        "The thermoelectric effect is the direct conversion of temperature differences to electric voltage and vice versa via a...",
+        "The Shore durometer is a device for measuring the hardness of a material, typically of polymers."
+      ],
+      "answer": 0,
+      "explanation": "In thermodynamics, nucleation is the first step in the formation of either a new thermodynamic phase or structure... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Water distribution on Earth.",
+      "options": [
+        "A supercapacitor (SC), also called an ultracapacitor, is a high-capacity capacitor, with a capacitance value much higher than...",
+        "Human height or stature is the distance from the bottom of the feet to the top of the...",
+        "Most water in Earth's atmosphere and crust comes from saline seawater, while fresh water accounts for nearly 1%...",
+        "The Navier–Stokes equations describe the motion of viscous fluids."
+      ],
+      "answer": 2,
+      "explanation": "Most water in Earth's atmosphere and crust comes from saline seawater, while fresh water accounts for nearly 1%... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Date of the birth of Jesus?",
+      "options": [
+        "The date of the birth of Jesus is not stated in the gospels or in any historical sources...",
+        "In physics, energy density is the quotient between the amount of energy stored in a given system or...",
+        "Most water in Earth's atmosphere and crust comes from saline seawater, while fresh water accounts for nearly 1%...",
+        "Ultra-high-molecular-weight polyethylene is a subset of the thermoplastic polyethylene."
+      ],
+      "answer": 0,
+      "explanation": "The date of the birth of Jesus is not stated in the gospels or in any historical sources... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Dyson sphere.",
+      "options": [
+        "Atoms are the basic particles of the chemical elements and the fundamental building blocks of matter.",
+        "Evidence-based medicine (EBM), sometimes known within healthcare as evidence-based practice (EBP), is \"the conscientious, explicit and judicious use...",
+        "A Dyson sphere is a hypothetical megastructure that encompasses a star and captures a large percentage of its...",
+        "Rosy retrospection is a proposed psychological phenomenon of recalling the past more positively than it was actually experienced."
+      ],
+      "answer": 2,
+      "explanation": "A Dyson sphere is a hypothetical megastructure that encompasses a star and captures a large percentage of its... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Navier–Stokes equations.",
+      "options": [
+        "A fingerprint is an impression left by the friction ridges of a human finger.",
+        "The Navier–Stokes equations describe the motion of viscous fluids.",
+        "Solar energy is the radiant energy from the Sun's light and heat, which can be harnessed using a...",
+        "The giant-impact hypothesis, sometimes called the Theia Impact, is an astrogeology hypothesis for the formation of the Moon..."
+      ],
+      "answer": 1,
+      "explanation": "The Navier–Stokes equations describe the motion of viscous fluids. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Somatotype and constitutional psychology?",
+      "options": [
+        "Allotropy or allotropism is the property of some chemical elements to exist in two or more different forms...",
+        "Somatotype is a theory proposed in the 1940s by the American psychologist William Herbert Sheldon to categorize the...",
+        "Pectoral muscles are the muscles that connect the front of the human chest with the bones of the...",
+        "In physics, spacetime, also called the space-time continuum, is a mathematical model that fuses the three dimensions of..."
+      ],
+      "answer": 1,
+      "explanation": "Somatotype is a theory proposed in the 1940s by the American psychologist William Herbert Sheldon to categorize the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Theia (hypothetical planet)?",
+      "options": [
+        "The Silurian hypothesis is a thought experiment which assesses the ability of modern science to detect evidence of...",
+        "Earth science or geoscience includes all fields of natural science related to planet Earth.",
+        "In climate science, a tipping point is a critical threshold that, when crossed, leads to large, accelerating and...",
+        "Theia is a hypothetical ancient planet in the early Solar System which, according to the giant-impact hypothesis, collided..."
+      ],
+      "answer": 3,
+      "explanation": "Theia is a hypothetical ancient planet in the early Solar System which, according to the giant-impact hypothesis, collided... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Sustainable energy?",
+      "options": [
+        "In chemistry, a mixture is a material made up of two or more different chemical substances which can...",
+        "Pattern recognition is the task of assigning a class to an observation based on patterns extracted from data.",
+        "In biology, morphology is the study of the form and structure of organisms and their specific structural features.",
+        "Energy is sustainable if it \"meets the needs of the present without compromising the ability of future generations..."
+      ],
+      "answer": 3,
+      "explanation": "Energy is sustainable if it \"meets the needs of the present without compromising the ability of future generations... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Physical geography?",
+      "options": [
+        "The data below tabulates standard electrode potentials (E°), in volts relative to the standard hydrogen electrode (SHE), at:Temperature...",
+        "Physical geography is one of the three main branches of geography.",
+        "The Julian day is a continuous count of days from the beginning of the Julian period; it is...",
+        "Rosy retrospection is a proposed psychological phenomenon of recalling the past more positively than it was actually experienced."
+      ],
+      "answer": 1,
+      "explanation": "Physical geography is one of the three main branches of geography. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Dendrochronology?",
+      "options": [
+        "Dendrochronology is the scientific method of dating tree rings to the exact year they were formed in a...",
+        "In user interface design and software design, the principle of least astonishment (POLA), also known as principle of...",
+        "Body snatching is the illicit removal of corpses from graves, morgues, and other burial sites.",
+        "The data below tabulates standard electrode potentials (E°), in volts relative to the standard hydrogen electrode (SHE), at:Temperature..."
+      ],
+      "answer": 0,
+      "explanation": "Dendrochronology is the scientific method of dating tree rings to the exact year they were formed in a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Root Cause (film).",
+      "options": [
+        "A boiler is a closed vessel in which fluid is heated.",
+        "The burden of proof is the obligation on a party in a dispute to provide sufficient warrant for...",
+        "Root Cause is a documentary film produced by Frazer Bailey.",
+        "In user interface design and software design, the principle of least astonishment (POLA), also known as principle of..."
+      ],
+      "answer": 2,
+      "explanation": "Root Cause is a documentary film produced by Frazer Bailey. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Biophilia hypothesis?",
+      "options": [
+        "Home economics, also called home ec, domestic science, household arts, homemaking or family and consumer sciences, is a...",
+        "The biophilia hypothesis suggests that humans possess an innate tendency to seek connections with nature and other forms...",
+        "Mehndi or mehendi is a form of temporary skin decoration using a paste created with henna.",
+        "The High-frequency Active Auroral Research Program (HAARP) is a University of Alaska Fairbanks program which researches the ionosphere..."
+      ],
+      "answer": 1,
+      "explanation": "The biophilia hypothesis suggests that humans possess an innate tendency to seek connections with nature and other forms... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Logic?",
+      "options": [
+        "Evidence-based medicine (EBM), sometimes known within healthcare as evidence-based practice (EBP), is \"the conscientious, explicit and judicious use...",
+        "Nuclear fusion is a reaction in which two or more atomic nuclei combine to form a larger nucleus.",
+        "Logic is the study of correct reasoning.",
+        "The Bohr–Einstein debates were a series of public disputes about quantum mechanics between Albert Einstein and Niels Bohr."
+      ],
+      "answer": 2,
+      "explanation": "Logic is the study of correct reasoning. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about History of life?",
+      "options": [
+        "Body armor, personal armor, armored suit (armoured) or coat of armor, among others, is armor for a person's...",
+        "The human back, also called the dorsum, is the large posterior area of the human body, rising from...",
+        "The history of life on Earth traces the processes by which living and extinct organisms evolved, from the...",
+        "The world is the totality of entities, the whole of reality, or everything that exists."
+      ],
+      "answer": 2,
+      "explanation": "The history of life on Earth traces the processes by which living and extinct organisms evolved, from the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Physiology?",
+      "options": [
+        "The data below tabulates standard electrode potentials (E°), in volts relative to the standard hydrogen electrode (SHE), at:Temperature...",
+        "A chiller is a machine that removes heat from a liquid coolant via a vapor-compression, adsorption refrigeration, or...",
+        "Physiology is the scientific study of functions and mechanisms in a living system.",
+        "Aestheticism was an art movement in the late 19th century that valued the appearance of literature, music, fonts..."
+      ],
+      "answer": 2,
+      "explanation": "Physiology is the scientific study of functions and mechanisms in a living system. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Origin of water on Earth?",
+      "options": [
+        "A spectrum is a set of related ideas, objects, or properties whose features overlap such that they blend...",
+        "Atoms are the basic particles of the chemical elements and the fundamental building blocks of matter.",
+        "Earth is unique among known planets in having oceans of liquid water on its surface.",
+        "In physics, energy density is the quotient between the amount of energy stored in a given system or..."
+      ],
+      "answer": 2,
+      "explanation": "Earth is unique among known planets in having oceans of liquid water on its surface. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Environmental science?",
+      "options": [
+        "Body snatching is the illicit removal of corpses from graves, morgues, and other burial sites.",
+        "Environmental science is an academic field that integrates the physical, biological, and mathematical sciences to study the environment...",
+        "Atoms are the basic particles of the chemical elements and the fundamental building blocks of matter.",
+        "In physics, causality requires the cause of an event to be in the past light cone of the..."
+      ],
+      "answer": 1,
+      "explanation": "Environmental science is an academic field that integrates the physical, biological, and mathematical sciences to study the environment... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Taxon?",
+      "options": [
+        "Rayleigh scattering is the scattering or deflection of light, or other electromagnetic radiation, by particles with a size...",
+        "Most water in Earth's atmosphere and crust comes from saline seawater, while fresh water accounts for nearly 1%...",
+        "Human height or stature is the distance from the bottom of the feet to the top of the...",
+        "In biology, a taxon is a group of one or more populations of an organism, or organisms, as..."
+      ],
+      "answer": 3,
+      "explanation": "In biology, a taxon is a group of one or more populations of an organism, or organisms, as... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Apollo's belt?",
+      "options": [
+        "A heat pump is a device that uses mechanical or thermal energy to transfer heat from one space...",
+        "A randomized controlled trial (RCT) is a type of statistical experiment designed to evaluate the efficacy or safety...",
+        "The Apollo's belt, also known as Adonis belt, or iliac furrows, is a part of the human anatomy...",
+        "Aestheticism was an art movement in the late 19th century that valued the appearance of literature, music, fonts..."
+      ],
+      "answer": 2,
+      "explanation": "The Apollo's belt, also known as Adonis belt, or iliac furrows, is a part of the human anatomy... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Earth?",
+      "options": [
+        "A steam engine is a heat engine that performs mechanical work using steam as its working fluid.",
+        "Solar power, also known as solar electricity, is the conversion of energy from sunlight into electricity, either directly...",
+        "Earth is the third planet from the Sun and the only astronomical object known to harbor life.",
+        "In philosophy, praxeology is the theory of human action, based on the notion that humans engage in purposeful..."
+      ],
+      "answer": 2,
+      "explanation": "Earth is the third planet from the Sun and the only astronomical object known to harbor life. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Mixture?",
+      "options": [
+        "In chemistry, a mixture is a material made up of two or more different chemical substances which can...",
+        "The Woozle effect, also known as evidence by citation, occurs when a source is widely cited for a...",
+        "In physics, energy density is the quotient between the amount of energy stored in a given system or...",
+        "Actuarial science is the discipline that applies mathematical and statistical methods to assess risk in insurance, pension, finance..."
+      ],
+      "answer": 0,
+      "explanation": "In chemistry, a mixture is a material made up of two or more different chemical substances which can... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Earth science?",
+      "options": [
+        "The world is the totality of entities, the whole of reality, or everything that exists.",
+        "A fingerprint is an impression left by the friction ridges of a human finger.",
+        "Earth science or geoscience includes all fields of natural science related to planet Earth.",
+        "Allotropy or allotropism is the property of some chemical elements to exist in two or more different forms..."
+      ],
+      "answer": 2,
+      "explanation": "Earth science or geoscience includes all fields of natural science related to planet Earth. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Burden of proof (philosophy)?",
+      "options": [
+        "Theia is a hypothetical ancient planet in the early Solar System which, according to the giant-impact hypothesis, collided...",
+        "The burden of proof is the obligation on a party in a dispute to provide sufficient warrant for...",
+        "The Shore durometer is a device for measuring the hardness of a material, typically of polymers.",
+        "A supercapacitor (SC), also called an ultracapacitor, is a high-capacity capacitor, with a capacitance value much higher than..."
+      ],
+      "answer": 1,
+      "explanation": "The burden of proof is the obligation on a party in a dispute to provide sufficient warrant for... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Photoelectric effect.",
+      "options": [
+        "Allotropy or allotropism is the property of some chemical elements to exist in two or more different forms...",
+        "The photoelectric effect is the emission of electrons from a material caused by electromagnetic radiation such as ultraviolet...",
+        "Androgyny is the possession of both masculine and feminine characteristics.",
+        "Lookism is the prejudice or discrimination toward people who are considered to be physically unattractive, and can include..."
+      ],
+      "answer": 1,
+      "explanation": "The photoelectric effect is the emission of electrons from a material caused by electromagnetic radiation such as ultraviolet... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Rayleigh scattering?",
+      "options": [
+        "Rayleigh scattering is the scattering or deflection of light, or other electromagnetic radiation, by particles with a size...",
+        "A pivot table is a table of values which are aggregations of groups of individual values from a...",
+        "Earth is the third planet from the Sun and the only astronomical object known to harbor life.",
+        "Flora is all the plant life present in a particular region or time, generally the naturally occurring (indigenous)..."
+      ],
+      "answer": 0,
+      "explanation": "Rayleigh scattering is the scattering or deflection of light, or other electromagnetic radiation, by particles with a size... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Nuclear fusion.",
+      "options": [
+        "Physiology is the scientific study of functions and mechanisms in a living system.",
+        "Nuclear fusion is a reaction in which two or more atomic nuclei combine to form a larger nucleus.",
+        "Cogeneration or combined heat and power (CHP) is the use of a heat engine or power station to...",
+        "Cherry picking is the selective choosing of the most beneficial, profitable or attractive items from what is available."
+      ],
+      "answer": 1,
+      "explanation": "Nuclear fusion is a reaction in which two or more atomic nuclei combine to form a larger nucleus. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Fingerprint?",
+      "options": [
+        "A heat pump is a device that uses mechanical or thermal energy to transfer heat from one space...",
+        "A fingerprint is an impression left by the friction ridges of a human finger.",
+        "Gynoid fat is the body fat that forms around the lower body, specifically the hips, thighs and buttocks.",
+        "Throughout Earth's climate history (Paleoclimate) its climate has fluctuated between two primary states: greenhouse and icehouse Earth."
+      ],
+      "answer": 1,
+      "explanation": "A fingerprint is an impression left by the friction ridges of a human finger. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Human back?",
+      "options": [
+        "Somatotype is a theory proposed in the 1940s by the American psychologist William Herbert Sheldon to categorize the...",
+        "Meta-analysis is a method of synthesis of quantitative data from multiple independent studies addressing a common research question.",
+        "Breast binding, also known as chest binding, is the flattening and hiding of breasts with constrictive materials such...",
+        "The human back, also called the dorsum, is the large posterior area of the human body, rising from..."
+      ],
+      "answer": 3,
+      "explanation": "The human back, also called the dorsum, is the large posterior area of the human body, rising from... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Phase space?",
+      "options": [
+        "Geophysics is a physical science concerned with the processes and properties of Earth and its surrounding space environment...",
+        "Breast binding, also known as chest binding, is the flattening and hiding of breasts with constrictive materials such...",
+        "Body armor, personal armor, armored suit (armoured) or coat of armor, among others, is armor for a person's...",
+        "The phase space of a physical system is the set of all possible physical states of the system..."
+      ],
+      "answer": 3,
+      "explanation": "The phase space of a physical system is the set of all possible physical states of the system... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Heuristic?",
+      "options": [
+        "The giant-impact hypothesis, sometimes called the Theia Impact, is an astrogeology hypothesis for the formation of the Moon...",
+        "A heuristic or heuristic technique is any approach to problem solving that employs a pragmatic method that is...",
+        "The human back, also called the dorsum, is the large posterior area of the human body, rising from...",
+        "Fluorescence is one of two kinds of photoluminescence, the emission of light by a substance that has absorbed..."
+      ],
+      "answer": 1,
+      "explanation": "A heuristic or heuristic technique is any approach to problem solving that employs a pragmatic method that is... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Asteroid impact avoidance?",
+      "options": [
+        "In mathematics and classical mechanics, the Poisson bracket is an important binary operation in Hamiltonian mechanics, playing a...",
+        "Asteroid impact avoidance encompasses the methods by which near-Earth objects (NEO) on a potential collision course with Earth...",
+        "Kinesiology is the scientific study of human body movement.",
+        "The human body is the entire structure of a human being."
+      ],
+      "answer": 1,
+      "explanation": "Asteroid impact avoidance encompasses the methods by which near-Earth objects (NEO) on a potential collision course with Earth... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Anthropometry.",
+      "options": [
+        "Fluorescence is one of two kinds of photoluminescence, the emission of light by a substance that has absorbed...",
+        "A toupée is a hairpiece or partial wig of natural or synthetic hair worn to cover partial baldness...",
+        "Earth is unique among known planets in having oceans of liquid water on its surface.",
+        "Anthropometry refers to the measurement of the human individual."
+      ],
+      "answer": 3,
+      "explanation": "Anthropometry refers to the measurement of the human individual. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Principle of least astonishment?",
+      "options": [
+        "The human body is the entire structure of a human being.",
+        "The human back, also called the dorsum, is the large posterior area of the human body, rising from...",
+        "In user interface design and software design, the principle of least astonishment (POLA), also known as principle of...",
+        "Human physical appearance is the outward phenotype or look of human beings."
+      ],
+      "answer": 2,
+      "explanation": "In user interface design and software design, the principle of least astonishment (POLA), also known as principle of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Zero-point energy?",
+      "options": [
+        "Kinesiology is the scientific study of human body movement.",
+        "Innerspace, stylized as InnerSPACE, is a 1987 American science fiction comedy film directed by Joe Dante and produced...",
+        "Zero-point energy (ZPE) is the lowest possible energy that a quantum mechanical system may have.",
+        "The Standard Model of particle physics is the theory describing three of the four known fundamental forces in..."
+      ],
+      "answer": 2,
+      "explanation": "Zero-point energy (ZPE) is the lowest possible energy that a quantum mechanical system may have. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Earth analog?",
+      "options": [
+        "An Earth analog, also called an Earth twin or second Earth, is a planet or moon with environmental...",
+        "The replication crisis, also known as the reproducibility or replicability crisis, refers to widespread failures to reproduce published...",
+        "Cherry picking is the selective choosing of the most beneficial, profitable or attractive items from what is available.",
+        "Atoms are the basic particles of the chemical elements and the fundamental building blocks of matter."
+      ],
+      "answer": 0,
+      "explanation": "An Earth analog, also called an Earth twin or second Earth, is a planet or moon with environmental... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Earth's orbit?",
+      "options": [
+        "Pattern recognition is the task of assigning a class to an observation based on patterns extracted from data.",
+        "Earth orbits the Sun at an average distance of 149.60 million km (92.96 million mi), or 8.317 light-minutes...",
+        "\"My Humps\" is a song by American hip hop group the Black Eyed Peas, released on September 20...",
+        "The photoelectric effect is the emission of electrons from a material caused by electromagnetic radiation such as ultraviolet..."
+      ],
+      "answer": 1,
+      "explanation": "Earth orbits the Sun at an average distance of 149.60 million km (92.96 million mi), or 8.317 light-minutes... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Causality (physics)?",
+      "options": [
+        "Ultra-high-molecular-weight polyethylene is a subset of the thermoplastic polyethylene.",
+        "A chemical compound is a chemical substance composed of many identical molecules containing atoms from more than one...",
+        "The table of specific heat capacities gives the volumetric heat capacity as well as the specific heat capacity...",
+        "In physics, causality requires the cause of an event to be in the past light cone of the..."
+      ],
+      "answer": 3,
+      "explanation": "In physics, causality requires the cause of an event to be in the past light cone of the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Body armor?",
+      "options": [
+        "Body armor, personal armor, armored suit (armoured) or coat of armor, among others, is armor for a person's...",
+        "A spectrum is a set of related ideas, objects, or properties whose features overlap such that they blend...",
+        "In energy economics and ecological energetics, energy return on investment (EROI), also sometimes called energy returned on energy...",
+        "Most water in Earth's atmosphere and crust comes from saline seawater, while fresh water accounts for nearly 1%..."
+      ],
+      "answer": 0,
+      "explanation": "Body armor, personal armor, armored suit (armoured) or coat of armor, among others, is armor for a person's... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Shore durometer.",
+      "options": [
+        "A spectrum is a set of related ideas, objects, or properties whose features overlap such that they blend...",
+        "The Shore durometer is a device for measuring the hardness of a material, typically of polymers.",
+        "The biophilia hypothesis suggests that humans possess an innate tendency to seek connections with nature and other forms...",
+        "Criminology is the interdisciplinary study of crime and deviant behaviour."
+      ],
+      "answer": 1,
+      "explanation": "The Shore durometer is a device for measuring the hardness of a material, typically of polymers. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about World?",
+      "options": [
+        "In biology, a taxon is a group of one or more populations of an organism, or organisms, as...",
+        "Anthropometry refers to the measurement of the human individual.",
+        "Facial symmetry is one specific measure of bodily symmetry.",
+        "The world is the totality of entities, the whole of reality, or everything that exists."
+      ],
+      "answer": 3,
+      "explanation": "The world is the totality of entities, the whole of reality, or everything that exists. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Strike-slip fault?",
+      "options": [
+        "Anatomical terminology is a specialized system of terms used by anatomists, zoologists, and health professionals, such as doctors...",
+        "In geology, a fault is a planar fracture or discontinuity in a volume of rock across which there...",
+        "Throughout Earth's climate history (Paleoclimate) its climate has fluctuated between two primary states: greenhouse and icehouse Earth.",
+        "The fuel economy or fuel efficiency of an automobile relates to the distance traveled by a vehicle and..."
+      ],
+      "answer": 1,
+      "explanation": "In geology, a fault is a planar fracture or discontinuity in a volume of rock across which there... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Rosy retrospection.",
+      "options": [
+        "Earth orbits the Sun at an average distance of 149.60 million km (92.96 million mi), or 8.317 light-minutes...",
+        "Rosy retrospection is a proposed psychological phenomenon of recalling the past more positively than it was actually experienced.",
+        "Solar energy is the radiant energy from the Sun's light and heat, which can be harnessed using a...",
+        "A boiler is a closed vessel in which fluid is heated."
+      ],
+      "answer": 1,
+      "explanation": "Rosy retrospection is a proposed psychological phenomenon of recalling the past more positively than it was actually experienced. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Pectoral muscles?",
+      "options": [
+        "Allotropy or allotropism is the property of some chemical elements to exist in two or more different forms...",
+        "Evidence-based medicine (EBM), sometimes known within healthcare as evidence-based practice (EBP), is \"the conscientious, explicit and judicious use...",
+        "Pectoral muscles are the muscles that connect the front of the human chest with the bones of the...",
+        "Research is creative and systematic work undertaken to increase the stock of knowledge."
+      ],
+      "answer": 2,
+      "explanation": "Pectoral muscles are the muscles that connect the front of the human chest with the bones of the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Table of specific heat capacities?",
+      "options": [
+        "Allotropy or allotropism is the property of some chemical elements to exist in two or more different forms...",
+        "Asteroid impact avoidance encompasses the methods by which near-Earth objects (NEO) on a potential collision course with Earth...",
+        "The table of specific heat capacities gives the volumetric heat capacity as well as the specific heat capacity...",
+        "Anatomical terminology is a specialized system of terms used by anatomists, zoologists, and health professionals, such as doctors..."
+      ],
+      "answer": 2,
+      "explanation": "The table of specific heat capacities gives the volumetric heat capacity as well as the specific heat capacity... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Solar energy?",
+      "options": [
+        "Solar energy is the radiant energy from the Sun's light and heat, which can be harnessed using a...",
+        "A pivot table is a table of values which are aggregations of groups of individual values from a...",
+        "A chemical compound is a chemical substance composed of many identical molecules containing atoms from more than one...",
+        "The Julian day is a continuous count of days from the beginning of the Julian period; it is..."
+      ],
+      "answer": 0,
+      "explanation": "Solar energy is the radiant energy from the Sun's light and heat, which can be harnessed using a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Body Worlds.",
+      "options": [
+        "Cryptography, or cryptology, is the practice and study of techniques for secure communication in the presence of adversarial...",
+        "Energy is sustainable if it \"meets the needs of the present without compromising the ability of future generations...",
+        "The history of life on Earth traces the processes by which living and extinct organisms evolved, from the...",
+        "Body Worlds is a traveling exposition of dissected human bodies, animals, and other anatomical structures of the body..."
+      ],
+      "answer": 3,
+      "explanation": "Body Worlds is a traveling exposition of dissected human bodies, animals, and other anatomical structures of the body... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes WolframAlpha?",
+      "options": [
+        "Rayleigh scattering is the scattering or deflection of light, or other electromagnetic radiation, by particles with a size...",
+        "Androgyny is the possession of both masculine and feminine characteristics.",
+        "WolframAlpha is an online knowledge engine developed by Wolfram Research, released in 2009.",
+        "A fingerprint is an impression left by the friction ridges of a human finger."
+      ],
+      "answer": 2,
+      "explanation": "WolframAlpha is an online knowledge engine developed by Wolfram Research, released in 2009. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Criminology.",
+      "options": [
+        "The giant-impact hypothesis, sometimes called the Theia Impact, is an astrogeology hypothesis for the formation of the Moon...",
+        "The availability heuristic, also known as availability bias, is a mental shortcut that relies on immediate examples that...",
+        "In mathematics and classical mechanics, the Poisson bracket is an important binary operation in Hamiltonian mechanics, playing a...",
+        "Criminology is the interdisciplinary study of crime and deviant behaviour."
+      ],
+      "answer": 3,
+      "explanation": "Criminology is the interdisciplinary study of crime and deviant behaviour. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Vocal range.",
+      "options": [
+        "Solar power, also known as solar electricity, is the conversion of energy from sunlight into electricity, either directly...",
+        "Statistical inference is the process of using data analysis to infer properties of an underlying probability distribution.",
+        "Vocal range is the range of pitches that a human voice can phonate.",
+        "A pivot table is a table of values which are aggregations of groups of individual values from a..."
+      ],
+      "answer": 2,
+      "explanation": "Vocal range is the range of pitches that a human voice can phonate. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Thermoelectric effect?",
+      "options": [
+        "The thermoelectric effect is the direct conversion of temperature differences to electric voltage and vice versa via a...",
+        "Cogeneration or combined heat and power (CHP) is the use of a heat engine or power station to...",
+        "In thermodynamics, nucleation is the first step in the formation of either a new thermodynamic phase or structure...",
+        "Breast binding, also known as chest binding, is the flattening and hiding of breasts with constrictive materials such..."
+      ],
+      "answer": 0,
+      "explanation": "The thermoelectric effect is the direct conversion of temperature differences to electric voltage and vice versa via a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Anatomical terminology?",
+      "options": [
+        "A boiler is a closed vessel in which fluid is heated.",
+        "Atoms are the basic particles of the chemical elements and the fundamental building blocks of matter.",
+        "In mathematics and classical mechanics, the Poisson bracket is an important binary operation in Hamiltonian mechanics, playing a...",
+        "Anatomical terminology is a specialized system of terms used by anatomists, zoologists, and health professionals, such as doctors..."
+      ],
+      "answer": 3,
+      "explanation": "Anatomical terminology is a specialized system of terms used by anatomists, zoologists, and health professionals, such as doctors... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Branches of science?",
+      "options": [
+        "Energy is sustainable if it \"meets the needs of the present without compromising the ability of future generations...",
+        "In philosophy and science, a first principle is a basic proposition or assumption that cannot be deduced from...",
+        "The branches of science, also referred to as sciences, scientific fields or scientific disciplines, are commonly divided into...",
+        "In the anatomy of humans and various other tetrapods, the eardrum, also called the tympanic membrane or myringa..."
+      ],
+      "answer": 2,
+      "explanation": "The branches of science, also referred to as sciences, scientific fields or scientific disciplines, are commonly divided into... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Poisson bracket?",
+      "options": [
+        "Ape index, ape factor, or gorilla index is slang or jargon used to describe a measure of the...",
+        "Breast binding, also known as chest binding, is the flattening and hiding of breasts with constrictive materials such...",
+        "In mathematics and classical mechanics, the Poisson bracket is an important binary operation in Hamiltonian mechanics, playing a...",
+        "An alternator is an electrical generator that converts mechanical energy to electrical energy in the form of alternating..."
+      ],
+      "answer": 2,
+      "explanation": "In mathematics and classical mechanics, the Poisson bracket is an important binary operation in Hamiltonian mechanics, playing a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Praxeology?",
+      "options": [
+        "In philosophy, praxeology is the theory of human action, based on the notion that humans engage in purposeful...",
+        "Fluorescence is one of two kinds of photoluminescence, the emission of light by a substance that has absorbed...",
+        "The replication crisis, also known as the reproducibility or replicability crisis, refers to widespread failures to reproduce published...",
+        "The human back, also called the dorsum, is the large posterior area of the human body, rising from..."
+      ],
+      "answer": 0,
+      "explanation": "In philosophy, praxeology is the theory of human action, based on the notion that humans engage in purposeful... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Evidence-based medicine?",
+      "options": [
+        "Asteroid impact avoidance encompasses the methods by which near-Earth objects (NEO) on a potential collision course with Earth...",
+        "Evidence-based medicine (EBM), sometimes known within healthcare as evidence-based practice (EBP), is \"the conscientious, explicit and judicious use...",
+        "The Standard Model of particle physics is the theory describing three of the four known fundamental forces in...",
+        "The Apollo's belt, also known as Adonis belt, or iliac furrows, is a part of the human anatomy..."
+      ],
+      "answer": 1,
+      "explanation": "Evidence-based medicine (EBM), sometimes known within healthcare as evidence-based practice (EBP), is \"the conscientious, explicit and judicious use... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Home economics?",
+      "options": [
+        "Home economics, also called home ec, domestic science, household arts, homemaking or family and consumer sciences, is a...",
+        "Observation in the natural sciences refers to the active acquisition of information from a primary source.",
+        "Most water in Earth's atmosphere and crust comes from saline seawater, while fresh water accounts for nearly 1%...",
+        "Theoretical computer science is a subfield of computer science and mathematics that focuses on the abstract and mathematical..."
+      ],
+      "answer": 0,
+      "explanation": "Home economics, also called home ec, domestic science, household arts, homemaking or family and consumer sciences, is a... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Cherry picking?",
+      "options": [
+        "An Earth analog, also called an Earth twin or second Earth, is a planet or moon with environmental...",
+        "The Julian day is a continuous count of days from the beginning of the Julian period; it is...",
+        "Cherry picking is the selective choosing of the most beneficial, profitable or attractive items from what is available.",
+        "Reproducibility, closely related to replicability and repeatability, is a major principle underpinning the scientific method."
+      ],
+      "answer": 2,
+      "explanation": "Cherry picking is the selective choosing of the most beneficial, profitable or attractive items from what is available. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Groin?",
+      "options": [
+        "Theia is a hypothetical ancient planet in the early Solar System which, according to the giant-impact hypothesis, collided...",
+        "The Berserker hypothesis, also known as the deadly probes scenario, is the idea that humans have not yet...",
+        "Somatotype is a theory proposed in the 1940s by the American psychologist William Herbert Sheldon to categorize the...",
+        "In human anatomy, the groin, also known as the inguinal region or iliac region, is the junctional area..."
+      ],
+      "answer": 3,
+      "explanation": "In human anatomy, the groin, also known as the inguinal region or iliac region, is the junctional area... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Chiller?",
+      "options": [
+        "The Berserker hypothesis, also known as the deadly probes scenario, is the idea that humans have not yet...",
+        "The Apollo's belt, also known as Adonis belt, or iliac furrows, is a part of the human anatomy...",
+        "A chiller is a machine that removes heat from a liquid coolant via a vapor-compression, adsorption refrigeration, or...",
+        "Pattern recognition is the task of assigning a class to an observation based on patterns extracted from data."
+      ],
+      "answer": 2,
+      "explanation": "A chiller is a machine that removes heat from a liquid coolant via a vapor-compression, adsorption refrigeration, or... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Geography?",
+      "options": [
+        "The Standard Model of particle physics is the theory describing three of the four known fundamental forces in...",
+        "A supercapacitor (SC), also called an ultracapacitor, is a high-capacity capacitor, with a capacitance value much higher than...",
+        "A randomized controlled trial (RCT) is a type of statistical experiment designed to evaluate the efficacy or safety...",
+        "Geography is the study of the lands, features, inhabitants, and phenomena of planet Earth."
+      ],
+      "answer": 3,
+      "explanation": "Geography is the study of the lands, features, inhabitants, and phenomena of planet Earth. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Energy return on investment?",
+      "options": [
+        "The High-frequency Active Auroral Research Program (HAARP) is a University of Alaska Fairbanks program which researches the ionosphere...",
+        "In energy economics and ecological energetics, energy return on investment (EROI), also sometimes called energy returned on energy...",
+        "In biology, a taxon is a group of one or more populations of an organism, or organisms, as...",
+        "Earth orbits the Sun at an average distance of 149.60 million km (92.96 million mi), or 8.317 light-minutes..."
+      ],
+      "answer": 1,
+      "explanation": "In energy economics and ecological energetics, energy return on investment (EROI), also sometimes called energy returned on energy... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Human physical appearance?",
+      "options": [
+        "Rayleigh scattering is the scattering or deflection of light, or other electromagnetic radiation, by particles with a size...",
+        "An Earth analog, also called an Earth twin or second Earth, is a planet or moon with environmental...",
+        "In user interface design and software design, the principle of least astonishment (POLA), also known as principle of...",
+        "Human physical appearance is the outward phenotype or look of human beings."
+      ],
+      "answer": 3,
+      "explanation": "Human physical appearance is the outward phenotype or look of human beings. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Cogeneration?",
+      "options": [
+        "Cogeneration or combined heat and power (CHP) is the use of a heat engine or power station to...",
+        "The Apollo's belt, also known as Adonis belt, or iliac furrows, is a part of the human anatomy...",
+        "The history of life on Earth traces the processes by which living and extinct organisms evolved, from the...",
+        "Throughout Earth's climate history (Paleoclimate) its climate has fluctuated between two primary states: greenhouse and icehouse Earth."
+      ],
+      "answer": 0,
+      "explanation": "Cogeneration or combined heat and power (CHP) is the use of a heat engine or power station to... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Supercapacitor?",
+      "options": [
+        "The High-frequency Active Auroral Research Program (HAARP) is a University of Alaska Fairbanks program which researches the ionosphere...",
+        "Theoretical computer science is a subfield of computer science and mathematics that focuses on the abstract and mathematical...",
+        "The Bohr–Einstein debates were a series of public disputes about quantum mechanics between Albert Einstein and Niels Bohr.",
+        "A supercapacitor (SC), also called an ultracapacitor, is a high-capacity capacitor, with a capacitance value much higher than..."
+      ],
+      "answer": 3,
+      "explanation": "A supercapacitor (SC), also called an ultracapacitor, is a high-capacity capacitor, with a capacitance value much higher than... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Geophysics?",
+      "options": [
+        "Reproducibility, closely related to replicability and repeatability, is a major principle underpinning the scientific method.",
+        "Female body shape or female figure is the cumulative product of a woman's bone structure along with the...",
+        "Cherry picking is the selective choosing of the most beneficial, profitable or attractive items from what is available.",
+        "Geophysics is a physical science concerned with the processes and properties of Earth and its surrounding space environment..."
+      ],
+      "answer": 3,
+      "explanation": "Geophysics is a physical science concerned with the processes and properties of Earth and its surrounding space environment... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Breast binding?",
+      "options": [
+        "In biology, a taxon is a group of one or more populations of an organism, or organisms, as...",
+        "In philosophy and science, a first principle is a basic proposition or assumption that cannot be deduced from...",
+        "In human anatomy, the groin, also known as the inguinal region or iliac region, is the junctional area...",
+        "Breast binding, also known as chest binding, is the flattening and hiding of breasts with constrictive materials such..."
+      ],
+      "answer": 3,
+      "explanation": "Breast binding, also known as chest binding, is the flattening and hiding of breasts with constrictive materials such... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Availability heuristic?",
+      "options": [
+        "Human height or stature is the distance from the bottom of the feet to the top of the...",
+        "The availability heuristic, also known as availability bias, is a mental shortcut that relies on immediate examples that...",
+        "Body Worlds is a traveling exposition of dissected human bodies, animals, and other anatomical structures of the body...",
+        "The Apollo's belt, also known as Adonis belt, or iliac furrows, is a part of the human anatomy..."
+      ],
+      "answer": 1,
+      "explanation": "The availability heuristic, also known as availability bias, is a mental shortcut that relies on immediate examples that... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about High-frequency Active Auroral Research Program?",
+      "options": [
+        "The replication crisis, also known as the reproducibility or replicability crisis, refers to widespread failures to reproduce published...",
+        "Asteroid impact avoidance encompasses the methods by which near-Earth objects (NEO) on a potential collision course with Earth...",
+        "The High-frequency Active Auroral Research Program (HAARP) is a University of Alaska Fairbanks program which researches the ionosphere...",
+        "Geography is the study of the lands, features, inhabitants, and phenomena of planet Earth."
+      ],
+      "answer": 2,
+      "explanation": "The High-frequency Active Auroral Research Program (HAARP) is a University of Alaska Fairbanks program which researches the ionosphere... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Meta-analysis?",
+      "options": [
+        "Wireless power transfer is the transmission of electrical energy without wires as a physical link.",
+        "Meta-analysis is a method of synthesis of quantitative data from multiple independent studies addressing a common research question.",
+        "Body armor, personal armor, armored suit (armoured) or coat of armor, among others, is armor for a person's...",
+        "In biology, morphology is the study of the form and structure of organisms and their specific structural features."
+      ],
+      "answer": 1,
+      "explanation": "Meta-analysis is a method of synthesis of quantitative data from multiple independent studies addressing a common research question. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Human body?",
+      "options": [
+        "In philosophy, praxeology is the theory of human action, based on the notion that humans engage in purposeful...",
+        "The human body is the entire structure of a human being.",
+        "In the anatomy of humans and various other tetrapods, the eardrum, also called the tympanic membrane or myringa...",
+        "In biology, a taxon is a group of one or more populations of an organism, or organisms, as..."
+      ],
+      "answer": 1,
+      "explanation": "The human body is the entire structure of a human being. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Randomized controlled trial.",
+      "options": [
+        "Observation in the natural sciences refers to the active acquisition of information from a primary source.",
+        "Female body shape or female figure is the cumulative product of a woman's bone structure along with the...",
+        "A randomized controlled trial (RCT) is a type of statistical experiment designed to evaluate the efficacy or safety...",
+        "Anthropometry refers to the measurement of the human individual."
+      ],
+      "answer": 2,
+      "explanation": "A randomized controlled trial (RCT) is a type of statistical experiment designed to evaluate the efficacy or safety... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Julian day?",
+      "options": [
+        "The old quantum theory is a collection of results from the years 1900–1925, which predate modern quantum mechanics.",
+        "Solar power, also known as solar electricity, is the conversion of energy from sunlight into electricity, either directly...",
+        "A steam engine is a heat engine that performs mechanical work using steam as its working fluid.",
+        "The Julian day is a continuous count of days from the beginning of the Julian period; it is..."
+      ],
+      "answer": 3,
+      "explanation": "The Julian day is a continuous count of days from the beginning of the Julian period; it is... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Androgyny?",
+      "options": [
+        "The Julian day is a continuous count of days from the beginning of the Julian period; it is...",
+        "In biology, morphology is the study of the form and structure of organisms and their specific structural features.",
+        "Throughout Earth's climate history (Paleoclimate) its climate has fluctuated between two primary states: greenhouse and icehouse Earth.",
+        "Androgyny is the possession of both masculine and feminine characteristics."
+      ],
+      "answer": 3,
+      "explanation": "Androgyny is the possession of both masculine and feminine characteristics. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Atom?",
+      "options": [
+        "Female body shape or female figure is the cumulative product of a woman's bone structure along with the...",
+        "Mehndi or mehendi is a form of temporary skin decoration using a paste created with henna.",
+        "In philosophy, praxeology is the theory of human action, based on the notion that humans engage in purposeful...",
+        "Atoms are the basic particles of the chemical elements and the fundamental building blocks of matter."
+      ],
+      "answer": 3,
+      "explanation": "Atoms are the basic particles of the chemical elements and the fundamental building blocks of matter. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Cryptography?",
+      "options": [
+        "Cryptography, or cryptology, is the practice and study of techniques for secure communication in the presence of adversarial...",
+        "Empirical evidence is evidence obtained through sense experience or experimental procedure.",
+        "Lookism is the prejudice or discrimination toward people who are considered to be physically unattractive, and can include...",
+        "The thermoelectric effect is the direct conversion of temperature differences to electric voltage and vice versa via a..."
+      ],
+      "answer": 0,
+      "explanation": "Cryptography, or cryptology, is the practice and study of techniques for secure communication in the presence of adversarial... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about First principle.",
+      "options": [
+        "Evidence-based medicine (EBM), sometimes known within healthcare as evidence-based practice (EBP), is \"the conscientious, explicit and judicious use...",
+        "In philosophy and science, a first principle is a basic proposition or assumption that cannot be deduced from...",
+        "Theoretical computer science is a subfield of computer science and mathematics that focuses on the abstract and mathematical...",
+        "Lookism is the prejudice or discrimination toward people who are considered to be physically unattractive, and can include..."
+      ],
+      "answer": 1,
+      "explanation": "In philosophy and science, a first principle is a basic proposition or assumption that cannot be deduced from... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Boiler?",
+      "options": [
+        "A boiler is a closed vessel in which fluid is heated.",
+        "A Dyson sphere is a hypothetical megastructure that encompasses a star and captures a large percentage of its...",
+        "A supercapacitor (SC), also called an ultracapacitor, is a high-capacity capacitor, with a capacitance value much higher than...",
+        "Human height or stature is the distance from the bottom of the feet to the top of the..."
+      ],
+      "answer": 0,
+      "explanation": "A boiler is a closed vessel in which fluid is heated. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Flora?",
+      "options": [
+        "Cryptography, or cryptology, is the practice and study of techniques for secure communication in the presence of adversarial...",
+        "Flora is all the plant life present in a particular region or time, generally the naturally occurring (indigenous)...",
+        "Energy is sustainable if it \"meets the needs of the present without compromising the ability of future generations...",
+        "Observation in the natural sciences refers to the active acquisition of information from a primary source."
+      ],
+      "answer": 1,
+      "explanation": "Flora is all the plant life present in a particular region or time, generally the naturally occurring (indigenous)... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Standard Model?",
+      "options": [
+        "The world is the totality of entities, the whole of reality, or everything that exists.",
+        "Allotropy or allotropism is the property of some chemical elements to exist in two or more different forms...",
+        "The Standard Model of particle physics is the theory describing three of the four known fundamental forces in...",
+        "Logic is the study of correct reasoning."
+      ],
+      "answer": 2,
+      "explanation": "The Standard Model of particle physics is the theory describing three of the four known fundamental forces in... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Giant-impact hypothesis?",
+      "options": [
+        "The date of the birth of Jesus is not stated in the gospels or in any historical sources...",
+        "Criminology is the interdisciplinary study of crime and deviant behaviour.",
+        "A steam engine is a heat engine that performs mechanical work using steam as its working fluid.",
+        "The giant-impact hypothesis, sometimes called the Theia Impact, is an astrogeology hypothesis for the formation of the Moon..."
+      ],
+      "answer": 3,
+      "explanation": "The giant-impact hypothesis, sometimes called the Theia Impact, is an astrogeology hypothesis for the formation of the Moon... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Kite experiment?",
+      "options": [
+        "Human height or stature is the distance from the bottom of the feet to the top of the...",
+        "An Earth analog, also called an Earth twin or second Earth, is a planet or moon with environmental...",
+        "In the anatomy of humans and various other tetrapods, the eardrum, also called the tympanic membrane or myringa...",
+        "The kite experiment is a scientific experiment in which a kite with a pointed conductive wire attached to..."
+      ],
+      "answer": 3,
+      "explanation": "The kite experiment is a scientific experiment in which a kite with a pointed conductive wire attached to... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Morphology (biology)?",
+      "options": [
+        "In biology, morphology is the study of the form and structure of organisms and their specific structural features.",
+        "Empirical evidence is evidence obtained through sense experience or experimental procedure.",
+        "In philosophy and science, a first principle is a basic proposition or assumption that cannot be deduced from...",
+        "Statistical inference is the process of using data analysis to infer properties of an underlying probability distribution."
+      ],
+      "answer": 0,
+      "explanation": "In biology, morphology is the study of the form and structure of organisms and their specific structural features. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Lookism?",
+      "options": [
+        "Female body shape or female figure is the cumulative product of a woman's bone structure along with the...",
+        "Lookism is the prejudice or discrimination toward people who are considered to be physically unattractive, and can include...",
+        "The glabella, in humans, is the area of skin between the eyebrows and above the nose.",
+        "Energy is sustainable if it \"meets the needs of the present without compromising the ability of future generations..."
+      ],
+      "answer": 1,
+      "explanation": "Lookism is the prejudice or discrimination toward people who are considered to be physically unattractive, and can include... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Chemical compound?",
+      "options": [
+        "Asteroid impact avoidance encompasses the methods by which near-Earth objects (NEO) on a potential collision course with Earth...",
+        "Human physical appearance is the outward phenotype or look of human beings.",
+        "The Woozle effect, also known as evidence by citation, occurs when a source is widely cited for a...",
+        "A chemical compound is a chemical substance composed of many identical molecules containing atoms from more than one..."
+      ],
+      "answer": 3,
+      "explanation": "A chemical compound is a chemical substance composed of many identical molecules containing atoms from more than one... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Ape index?",
+      "options": [
+        "In biology, a taxon is a group of one or more populations of an organism, or organisms, as...",
+        "Ape index, ape factor, or gorilla index is slang or jargon used to describe a measure of the...",
+        "Rayleigh scattering is the scattering or deflection of light, or other electromagnetic radiation, by particles with a size...",
+        "Human physical appearance is the outward phenotype or look of human beings."
+      ],
+      "answer": 1,
+      "explanation": "Ape index, ape factor, or gorilla index is slang or jargon used to describe a measure of the... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Empirical evidence?",
+      "options": [
+        "A toupée is a hairpiece or partial wig of natural or synthetic hair worn to cover partial baldness...",
+        "The giant-impact hypothesis, sometimes called the Theia Impact, is an astrogeology hypothesis for the formation of the Moon...",
+        "In physics, causality requires the cause of an event to be in the past light cone of the...",
+        "Empirical evidence is evidence obtained through sense experience or experimental procedure."
+      ],
+      "answer": 3,
+      "explanation": "Empirical evidence is evidence obtained through sense experience or experimental procedure. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Aestheticism?",
+      "options": [
+        "In philosophy, praxeology is the theory of human action, based on the notion that humans engage in purposeful...",
+        "Aestheticism was an art movement in the late 19th century that valued the appearance of literature, music, fonts...",
+        "Solar energy is the radiant energy from the Sun's light and heat, which can be harnessed using a...",
+        "Empirical evidence is evidence obtained through sense experience or experimental procedure."
+      ],
+      "answer": 1,
+      "explanation": "Aestheticism was an art movement in the late 19th century that valued the appearance of literature, music, fonts... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Heat pump.",
+      "options": [
+        "The Apollo's belt, also known as Adonis belt, or iliac furrows, is a part of the human anatomy...",
+        "The dark forest hypothesis is the idea that extraterrestrial civilizations may exist in abundance across the universe, but...",
+        "A heat pump is a device that uses mechanical or thermal energy to transfer heat from one space...",
+        "The thermoelectric effect is the direct conversion of temperature differences to electric voltage and vice versa via a..."
+      ],
+      "answer": 2,
+      "explanation": "A heat pump is a device that uses mechanical or thermal energy to transfer heat from one space... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Fluorescence.",
+      "options": [
+        "The glabella, in humans, is the area of skin between the eyebrows and above the nose.",
+        "The Julian day is a continuous count of days from the beginning of the Julian period; it is...",
+        "Lookism is the prejudice or discrimination toward people who are considered to be physically unattractive, and can include...",
+        "Fluorescence is one of two kinds of photoluminescence, the emission of light by a substance that has absorbed..."
+      ],
+      "answer": 3,
+      "explanation": "Fluorescence is one of two kinds of photoluminescence, the emission of light by a substance that has absorbed... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes History of physics?",
+      "options": [
+        "Physics is a branch of science in which the primary objects of study are matter and energy.",
+        "A pivot table is a table of values which are aggregations of groups of individual values from a...",
+        "Gynoid fat is the body fat that forms around the lower body, specifically the hips, thighs and buttocks.",
+        "In climate science, a tipping point is a critical threshold that, when crossed, leads to large, accelerating and..."
+      ],
+      "answer": 0,
+      "explanation": "Physics is a branch of science in which the primary objects of study are matter and energy. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Innerspace?",
+      "options": [
+        "A supercapacitor (SC), also called an ultracapacitor, is a high-capacity capacitor, with a capacitance value much higher than...",
+        "A randomized controlled trial (RCT) is a type of statistical experiment designed to evaluate the efficacy or safety...",
+        "Innerspace, stylized as InnerSPACE, is a 1987 American science fiction comedy film directed by Joe Dante and produced...",
+        "The data below tabulates standard electrode potentials (E°), in volts relative to the standard hydrogen electrode (SHE), at:Temperature..."
+      ],
+      "answer": 2,
+      "explanation": "Innerspace, stylized as InnerSPACE, is a 1987 American science fiction comedy film directed by Joe Dante and produced... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Silurian hypothesis?",
+      "options": [
+        "The burden of proof is the obligation on a party in a dispute to provide sufficient warrant for...",
+        "Lookism is the prejudice or discrimination toward people who are considered to be physically unattractive, and can include...",
+        "The Silurian hypothesis is a thought experiment which assesses the ability of modern science to detect evidence of...",
+        "Earth is the third planet from the Sun and the only astronomical object known to harbor life."
+      ],
+      "answer": 2,
+      "explanation": "The Silurian hypothesis is a thought experiment which assesses the ability of modern science to detect evidence of... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Energy density?",
+      "options": [
+        "An Earth analog, also called an Earth twin or second Earth, is a planet or moon with environmental...",
+        "Gynoid fat is the body fat that forms around the lower body, specifically the hips, thighs and buttocks.",
+        "In physics, energy density is the quotient between the amount of energy stored in a given system or...",
+        "A fingerprint is an impression left by the friction ridges of a human finger."
+      ],
+      "answer": 2,
+      "explanation": "In physics, energy density is the quotient between the amount of energy stored in a given system or... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Anatomy?",
+      "options": [
+        "Gynoid fat is the body fat that forms around the lower body, specifically the hips, thighs and buttocks.",
+        "Anatomical terminology is a specialized system of terms used by anatomists, zoologists, and health professionals, such as doctors...",
+        "Fluorescence is one of two kinds of photoluminescence, the emission of light by a substance that has absorbed...",
+        "Anatomy is the branch of morphology concerned with the study of the internal and external structure of organisms..."
+      ],
+      "answer": 3,
+      "explanation": "Anatomy is the branch of morphology concerned with the study of the internal and external structure of organisms... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Old quantum theory?",
+      "options": [
+        "The old quantum theory is a collection of results from the years 1900–1925, which predate modern quantum mechanics.",
+        "The glabella, in humans, is the area of skin between the eyebrows and above the nose.",
+        "Physical geography is one of the three main branches of geography.",
+        "The biophilia hypothesis suggests that humans possess an innate tendency to seek connections with nature and other forms..."
+      ],
+      "answer": 0,
+      "explanation": "The old quantum theory is a collection of results from the years 1900–1925, which predate modern quantum mechanics. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Pick the true statement about Gynoid fat distribution.",
+      "options": [
+        "Physics is a branch of science in which the primary objects of study are matter and energy.",
+        "Gynoid fat is the body fat that forms around the lower body, specifically the hips, thighs and buttocks.",
+        "Breast binding, also known as chest binding, is the flattening and hiding of breasts with constrictive materials such...",
+        "Earth orbits the Sun at an average distance of 149.60 million km (92.96 million mi), or 8.317 light-minutes..."
+      ],
+      "answer": 1,
+      "explanation": "Gynoid fat is the body fat that forms around the lower body, specifically the hips, thighs and buttocks. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Dark forest hypothesis?",
+      "options": [
+        "Physiology is the scientific study of functions and mechanisms in a living system.",
+        "In physics, spacetime, also called the space-time continuum, is a mathematical model that fuses the three dimensions of...",
+        "The dark forest hypothesis is the idea that extraterrestrial civilizations may exist in abundance across the universe, but...",
+        "A Dyson sphere is a hypothetical megastructure that encompasses a star and captures a large percentage of its..."
+      ],
+      "answer": 2,
+      "explanation": "The dark forest hypothesis is the idea that extraterrestrial civilizations may exist in abundance across the universe, but... (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which of these facts is about Facial symmetry?",
+      "options": [
+        "In geology, a fault is a planar fracture or discontinuity in a volume of rock across which there...",
+        "Earth orbits the Sun at an average distance of 149.60 million km (92.96 million mi), or 8.317 light-minutes...",
+        "WolframAlpha is an online knowledge engine developed by Wolfram Research, released in 2009.",
+        "Facial symmetry is one specific measure of bodily symmetry."
+      ],
+      "answer": 3,
+      "explanation": "Facial symmetry is one specific measure of bodily symmetry. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Which one correctly describes Glabella?",
+      "options": [
+        "The Shore durometer is a device for measuring the hardness of a material, typically of polymers.",
+        "In energy economics and ecological energetics, energy return on investment (EROI), also sometimes called energy returned on energy...",
+        "Rosy retrospection is a proposed psychological phenomenon of recalling the past more positively than it was actually experienced.",
+        "The glabella, in humans, is the area of skin between the eyebrows and above the nose."
+      ],
+      "answer": 3,
+      "explanation": "The glabella, in humans, is the area of skin between the eyebrows and above the nose. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "What do we know about Kinesiology?",
+      "options": [
+        "A Dyson sphere is a hypothetical megastructure that encompasses a star and captures a large percentage of its...",
+        "Anthropometry refers to the measurement of the human individual.",
+        "In chemistry, a mixture is a material made up of two or more different chemical substances which can...",
+        "Kinesiology is the scientific study of human body movement."
+      ],
+      "answer": 3,
+      "explanation": "Kinesiology is the scientific study of human body movement. (from Wikipedia)",
+      "image_keyword": null
+    },
+    {
+      "question": "Can you spot the real fact about Standard electrode potential (data page)?",
+      "options": [
+        "Physiology is the scientific study of functions and mechanisms in a living system.",
+        "The replication crisis, also known as the reproducibility or replicability crisis, refers to widespread failures to reproduce published...",
+        "The data below tabulates standard electrode potentials (E°), in volts relative to the standard hydrogen electrode (SHE), at:Temperature...",
+        "Androgyny is the possession of both masculine and feminine characteristics."
+      ],
+      "answer": 2,
+      "explanation": "The data below tabulates standard electrode potentials (E°), in volts relative to the standard hydrogen electrode (SHE), at:Temperature... (from Wikipedia)",
+      "image_keyword": null
+    }
+  ]
+};

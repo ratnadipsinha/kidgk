@@ -22,8 +22,23 @@ function sample<T>(arr: T[], n: number): T[] {
   return a.slice(0, n);
 }
 
-function fallbackRound(categoryId: string, count: number): Question[] {
-  const pool = FALLBACK_BANK[categoryId] ?? [];
+// The expanded bank (~800 questions, ~600KB) is only needed on the rare
+// path where both Groq and Wikipedia have failed, so it's dynamically
+// imported as its own chunk instead of bloating the main bundle every
+// visitor downloads regardless of whether they ever hit this tier.
+async function offlinePool(categoryId: string): Promise<Question[]> {
+  try {
+    const { FALLBACK_BANK_EXPANDED } = await import("./fallbackQuestionsExpanded");
+    const expanded = FALLBACK_BANK_EXPANDED[categoryId];
+    if (expanded && expanded.length > 0) return expanded;
+  } catch {
+    // fall through to the small bundled bank if the chunk fails to load
+  }
+  return FALLBACK_BANK[categoryId] ?? [];
+}
+
+async function fallbackRound(categoryId: string, count: number): Promise<Question[]> {
+  const pool = await offlinePool(categoryId);
   return sample(pool, Math.min(count, pool.length));
 }
 
@@ -70,7 +85,7 @@ async function getPool(
       poolCache.set(key, filtered);
       return { pool: filtered, source: "wikipedia" as RoundSource };
     } catch {
-      return { pool: FALLBACK_BANK[categoryId] ?? [], source: "fallback" as RoundSource };
+      return { pool: await offlinePool(categoryId), source: "fallback" as RoundSource };
     }
   })();
 

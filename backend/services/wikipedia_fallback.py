@@ -102,13 +102,13 @@ async def generate_from_wikipedia(category_id: str, count: int) -> list[dict]:
     if len(facts) < 4:
         return []
 
-    # Only a minority of questions get an image, matching the mostly-text
-    # mix the Groq prompt targets - pick which ones up front.
-    picture_count = max(1, round(count * 0.25))
-    picture_titles = set(
-        f["title"] for f in random.sample(facts, min(picture_count, len(facts)))
-    )
-
+    # No picture questions in this tier: the "which fact matches this title"
+    # mechanic means the correct answer's sentence always names the exact
+    # subject the image would show, so displaying that image is always a
+    # giveaway (confirmed live: a Jupiter photo above "which fact is about
+    # Jupiter?" with an option literally starting "Jupiter is..."). Unlike
+    # Groq, there's no LLM here to write a genuinely ambiguous picture
+    # question, so this tier stays text-only.
     questions = []
     for fact in facts:
         distractor_pool = [f["sentence"] for f in facts if f["title"] != fact["title"]]
@@ -126,7 +126,7 @@ async def generate_from_wikipedia(category_id: str, count: int) -> list[dict]:
                 "options": options,
                 "answer": answer,
                 "explanation": f"{fact['sentence']} (from Wikipedia)",
-                "image_keyword": fact["title"] if fact["title"] in picture_titles else None,
+                "image_keyword": None,
             }
         )
         if len(questions) >= count:
