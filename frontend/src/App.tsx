@@ -21,8 +21,9 @@ const CUSTOM_CATEGORY: Category = {
 };
 
 function nextGrade(currentGrade: number, score: number, total: number): number {
-  if (score >= total - 1) return Math.min(MAX_GRADE, currentGrade + 1);
-  if (score <= 2) return Math.max(MIN_GRADE, currentGrade - 1);
+  const pct = total > 0 ? score / total : 0;
+  if (pct >= 0.9) return Math.min(MAX_GRADE, currentGrade + 1);
+  if (pct <= 0.4) return Math.max(MIN_GRADE, currentGrade - 1);
   return currentGrade;
 }
 
@@ -40,7 +41,7 @@ export default function App() {
     setCategory(cat);
     setScreen("loading");
     try {
-      const round = await getRound(cat.id, grade, 5);
+      const round = await getRound(cat.id, grade, 20);
       setQuestions(round.questions);
       setSource(round.source);
       setScreen("quiz");
