@@ -3,8 +3,11 @@ __pycache__/
 *.pyc
 .venv/
 node_modules/
-dist/
 *.tsbuildinfo
+# frontend/dist IS committed on purpose - the backend serves it directly
+# and `git pull` (the update mechanism) is how a target PC picks up
+# frontend changes without needing Node.js installed. Rebuild + commit it
+# whenever frontend/src changes: cd frontend && npm run build
 .DS_Store
 .run/
 installer/vendor/

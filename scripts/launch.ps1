@@ -54,7 +54,7 @@ if ($browser) {
     # it doesn't merge into whatever Edge/Chrome windows are already open.
     $profileDir = Join-Path $root ".run\browser-profile"
     $proc = Start-Process -FilePath $browser -ArgumentList @(
-        "--app=http://localhost:5173",
+        "--app=http://localhost:8000",
         "--user-data-dir=`"$profileDir`"",
         "--no-first-run"
     ) -PassThru
@@ -62,9 +62,9 @@ if ($browser) {
     Write-Host "KidGK window open (PID $($proc.Id)). Close it to stop the app."
     Wait-Process -Id $proc.Id -ErrorAction SilentlyContinue
 
-    Write-Host "App window closed - stopping backend/frontend..."
+    Write-Host "App window closed - stopping the backend..."
     & "$PSScriptRoot\stop-app.ps1"
 } else {
     Write-Warning "Could not find Edge or Chrome for app-mode. Opening in your default browser instead - closing that tab will NOT stop the app; run scripts\stop-app.ps1 manually when done."
-    Start-Process "http://localhost:5173"
+    Start-Process "http://localhost:8000"
 }

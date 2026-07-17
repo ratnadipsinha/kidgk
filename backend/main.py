@@ -1,8 +1,10 @@
 import logging
+from pathlib import Path
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from services.questions import CATEGORIES, get_round
@@ -54,3 +56,13 @@ def update_check():
 def update_apply():
     trigger_update()
     return {"status": "started"}
+
+
+# Serves the pre-built frontend (frontend/dist, built via `npm run build`
+# and committed to git - see DEPLOYMENT.md) so the app runs as a single
+# process on one port with no Node.js needed at runtime. Mounted last so
+# it never shadows the /api/* routes above: Starlette checks routes in
+# registration order, and a "/" mount would otherwise match everything.
+FRONTEND_DIST = Path(__file__).resolve().parent.parent / "frontend" / "dist"
+if FRONTEND_DIST.exists():
+    app.mount("/", StaticFiles(directory=FRONTEND_DIST, html=True), name="frontend")

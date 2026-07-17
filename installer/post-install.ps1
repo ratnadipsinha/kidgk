@@ -15,16 +15,16 @@ function Resolve-Tool($Name, $FallbackPath) {
     throw "$Name not found on PATH or at $FallbackPath"
 }
 
-# Freshly-installed git/python/node may not be on PATH yet within this
-# process (silent installers update the registry, not our env block), so
-# fall back to their default AllUsers install locations.
+# Freshly-installed git/python may not be on PATH yet within this process
+# (silent installers update the registry, not our env block), so fall back
+# to their default AllUsers install locations. Node.js is not needed here -
+# the frontend is a pre-built static bundle (frontend\dist, committed to
+# git) served directly by the backend.
 $git = Resolve-Tool "git" "C:\Program Files\Git\cmd\git.exe"
 $python = Resolve-Tool "python" "C:\Program Files\Python312\python.exe"
-$npm = Resolve-Tool "npm" "C:\Program Files\nodejs\npm.cmd"
 
 Write-Host "Using git: $git"
 Write-Host "Using python: $python"
-Write-Host "Using npm: $npm"
 
 Set-Location $InstallDir
 
@@ -36,7 +36,7 @@ if (-not (Test-Path (Join-Path $InstallDir ".git"))) {
 try {
     & $git fetch origin --quiet
     & $git checkout -B main origin/main --force --quiet
-    Write-Host "Repo aligned with origin/main."
+    Write-Host "Repo aligned with origin/main (this also refreshes frontend\dist)."
 } catch {
     Write-Warning "No internet (or fetch failed) during install - keeping bundled files. Use the in-app 'Check for updates' button once online."
 }
@@ -58,14 +58,14 @@ $envContent = "GROQ_API_KEY=$GroqApiKey`nGROQ_MODEL=llama-3.3-70b-versatile`n"
 # round falls back to the offline bank). Write plain UTF-8 without a BOM.
 [System.IO.File]::WriteAllText($envFile, $envContent, (New-Object System.Text.UTF8Encoding($false)))
 
-Write-Host "== Frontend: dependencies =="
-Push-Location (Join-Path $InstallDir "frontend")
-& $npm install --silent
-Pop-Location
+if (-not (Test-Path (Join-Path $InstallDir "frontend\dist\index.html"))) {
+    Write-Warning "frontend\dist\index.html not found after aligning with origin/main - the UI won't load. This shouldn't happen if frontend\dist is committed to the repo; check the build."
+}
 
 # Launch-on-demand, not auto-start-at-logon: the installer's Desktop/Start
 # Menu shortcuts (see [Icons] in kidgk-setup.iss) run scripts\launch.ps1,
-# which opens the app in its own window and stops backend/frontend the
-# moment that window closes - nothing runs silently between sessions.
+# which starts the backend, opens the app in its own window, and stops the
+# backend the moment that window closes - nothing runs silently between
+# sessions.
 Write-Host "Done. Use the KidGK shortcut (Desktop or Start Menu) to play - closing its window stops the app."
 Stop-Transcript | Out-Null

@@ -47,12 +47,9 @@ if (Test-Path "$root\backend\requirements.txt") {
     }
 }
 
-if (Test-Path "$root\frontend\package.json") {
-    Write-Host "Updating frontend dependencies..."
-    Push-Location "$root\frontend"
-    npm install --silent
-    Pop-Location
-}
+# No npm install step: frontend/dist is a pre-built static bundle committed
+# to git, so `git pull` above already refreshed it. The target PC doesn't
+# need Node.js installed at all.
 
 if ($wasRunning) {
     Write-Host "Restarting app with updated code..."

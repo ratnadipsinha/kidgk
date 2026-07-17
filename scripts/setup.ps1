@@ -7,6 +7,9 @@
 # After this finishes, the app is running locally. Updates are NOT pulled
 # automatically - use the "Check for updates" button in the app (or run
 # scripts\update.ps1 directly) whenever you want to sync with origin/main.
+#
+# Node.js is NOT required: the frontend is a pre-built static bundle
+# (frontend\dist) committed to git, served directly by the backend.
 
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
@@ -17,13 +20,12 @@ function Require-Command($Name, $HelpUrl) {
     }
 }
 
-Write-Host "== 1/5: Checking prerequisites ==" -ForegroundColor Cyan
+Write-Host "== 1/4: Checking prerequisites ==" -ForegroundColor Cyan
 Require-Command "git" "https://git-scm.com/downloads"
 Require-Command "python" "https://www.python.org/downloads/"
-Require-Command "npm" "https://nodejs.org/"
-Write-Host "git, python, npm all found."
+Write-Host "git and python found."
 
-Write-Host "== 2/5: Backend - virtual environment + dependencies ==" -ForegroundColor Cyan
+Write-Host "== 2/4: Backend - virtual environment + dependencies ==" -ForegroundColor Cyan
 $venvPath = Join-Path $root "backend\.venv"
 if (-not (Test-Path $venvPath)) {
     python -m venv $venvPath
@@ -32,7 +34,7 @@ $venvPython = Join-Path $venvPath "Scripts\python.exe"
 & $venvPython -m pip install -r "$root\backend\requirements.txt" --quiet
 Write-Host "Backend dependencies installed."
 
-Write-Host "== 3/5: Backend - API key ==" -ForegroundColor Cyan
+Write-Host "== 3/4: Backend - API key ==" -ForegroundColor Cyan
 $envFile = Join-Path $root "backend\.env"
 if (-not (Test-Path $envFile)) {
     Copy-Item "$root\backend\.env.example" $envFile
@@ -47,11 +49,12 @@ if (-not (Test-Path $envFile)) {
     Write-Host "backend\.env already exists - leaving it as is."
 }
 
-Write-Host "== 4/5: Frontend - dependencies ==" -ForegroundColor Cyan
-Push-Location "$root\frontend"
-npm install --silent
-Pop-Location
-Write-Host "Frontend dependencies installed."
+Write-Host "== 4/4: Checking frontend build =="  -ForegroundColor Cyan
+if (Test-Path "$root\frontend\dist\index.html") {
+    Write-Host "frontend\dist found (pre-built, committed to git)."
+} else {
+    Write-Warning "frontend\dist\index.html not found - the UI won't load. If you're developing the frontend, run: cd frontend; npm install; npm run build"
+}
 
 Write-Host ""
 Write-Host "Setup complete." -ForegroundColor Green
