@@ -21,10 +21,18 @@ function buildPrompt(category: string, grade: number, count: number): string {
     '"answer" (integer index 0-3 of the correct option), ' +
     '"explanation" (string, max 15 words), ' +
     '"image_keyword" (string or null, a short search term for a matching image). ' +
+    "Keep every question and option short and crisp - plain, direct wording, " +
+    "no long or wordy phrasing, options a few words each wherever possible. " +
     `Most questions should be text-only - set image_keyword to null for those. ` +
-    `Only about ${pictureCount} of the ${count} questions should be picture-based ` +
-    `(where the image itself is the subject, e.g. "Which animal is this?") - ` +
-    `only those should have a non-null image_keyword. ` +
+    `Only about ${pictureCount} of the ${count} questions should be picture-based - ` +
+    "only those should have a non-null image_keyword. " +
+    "CRITICAL rule for picture-based questions: the image is shown to the student " +
+    "BEFORE they see the answer, so it must never simply depict the correct answer " +
+    "itself (e.g. do NOT show a picture of China's flag and ask 'which of these is " +
+    "China's flag?' - that gives the answer away). Only use the picture format when " +
+    "the image itself IS the unknown the student must identify, e.g. 'What animal is " +
+    "this?' with a photo of a lion and options naming different animals. image_keyword " +
+    "must describe the picture's actual subject, not the answer text. " +
     "Distractors should be plausible and similar in length to the correct answer. " +
     "No repeated questions. Kid-safe, factually accurate content only."
   );
