@@ -62,6 +62,29 @@ def _first_sentence(text: str, max_words: int = 18) -> str:
     return sentence
 
 
+def _anonymize(sentence: str, title: str) -> str:
+    """Wikipedia first sentences open by naming their own subject ("Mars is
+    the fourth planet..."). Left as-is, a distractor for a Moon question
+    literally names Mars - reads as out-of-context - and the correct option
+    names the asked subject, giving itself away. Rewrite to start with "It"
+    so every option reads as an anonymous fact on equal footing."""
+    plain = re.sub(r"\s*\(.*\)$", "", title)
+    esc = re.escape(plain)
+    patterns = [
+        rf"^(The\s+)?(planet\s+|star\s+)?{esc}[^,]*?\s+(is|was|are|were)\s+",
+        rf"^(The\s+)?{esc},[^,]+,\s+(is|was|are|were)\s+",
+    ]
+    for pat in patterns:
+        m = re.match(pat, sentence, re.IGNORECASE)
+        if m:
+            verb = m.groups()[-1]
+            return f"It {verb} {sentence[m.end():]}"
+    m = re.search(r"\s(is|was|are|were)\s", sentence)
+    if m:
+        return f"It {m.group(1)} {sentence[m.end():]}"
+    return re.sub(esc, "this subject", sentence, flags=re.IGNORECASE)
+
+
 async def _fetch_summary(client: httpx.AsyncClient, title: str) -> dict | None:
     try:
         resp = await client.get(
@@ -76,7 +99,8 @@ async def _fetch_summary(client: httpx.AsyncClient, title: str) -> dict | None:
         extract = data.get("extract", "")
         if not extract:
             return None
-        return {"title": title, "sentence": _first_sentence(extract)}
+        sentence = _first_sentence(extract)
+        return {"title": title, "sentence": sentence, "anonymous": _anonymize(sentence, title)}
     except Exception as exc:
         logger.warning("Wikipedia summary fetch failed for %r: %s", title, exc)
         return None
@@ -111,13 +135,15 @@ async def generate_from_wikipedia(category_id: str, count: int) -> list[dict]:
     # question, so this tier stays text-only.
     questions = []
     for fact in facts:
-        distractor_pool = [f["sentence"] for f in facts if f["title"] != fact["title"]]
+        # Anonymized options so distractors don't name unrelated subjects
+        # and the correct option doesn't name the asked subject.
+        distractor_pool = [f["anonymous"] for f in facts if f["title"] != fact["title"]]
         if len(distractor_pool) < 3:
             continue
         distractors = random.sample(distractor_pool, 3)
-        options = distractors + [fact["sentence"]]
+        options = distractors + [fact["anonymous"]]
         random.shuffle(options)
-        answer = options.index(fact["sentence"])
+        answer = options.index(fact["anonymous"])
 
         template = random.choice(QUESTION_TEMPLATES)
         questions.append(

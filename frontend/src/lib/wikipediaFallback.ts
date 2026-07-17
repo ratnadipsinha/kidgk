@@ -48,6 +48,46 @@ function firstSentence(text: string, maxWords = 18): string {
   return sentence;
 }
 
+// Wikipedia first sentences almost always open by naming their own subject
+// ("Mars is the fourth planet...", "The Moon is Earth's only..."). Left
+// as-is, a distractor for a Moon question literally names Mars - reads as
+// out-of-context/broken, and the correct option names the asked subject,
+// giving itself away. Rewrite each sentence to start with "It" so every
+// option reads as an anonymous fact on equal footing.
+function anonymize(sentence: string, title: string): string {
+  // strip a parenthetical disambiguator: "Mercury (planet)" -> "Mercury"
+  const plain = title.replace(/\s*\(.*\)$/, "");
+  const patterns = [
+    // "The Moon is ..." / "Mars is ..." / "The planet Mars is ..."
+    new RegExp(`^(The\\s+)?(planet\\s+|star\\s+)?${escapeRe(plain)}[^,]*?\\s+(is|was|are|were)\\s+`, "i"),
+    // "Mars, the fourth planet, is ..." (title then an appositive)
+    new RegExp(`^(The\\s+)?${escapeRe(plain)},[^,]+,\\s+(is|was|are|were)\\s+`, "i"),
+  ];
+  for (const re of patterns) {
+    const m = sentence.match(re);
+    if (m) {
+      const verb = m[m.length - 1];
+      const rest = sentence.slice(m[0].length);
+      return `It ${verb} ${rest}`;
+    }
+  }
+  // Fallback for openings the patterns don't cover ("The Milky Way or Milky
+  // Way Galaxy, or simply the Galaxy, is..."; "Maria Salomea Skłodowska
+  // Curie, better known as Marie Curie was..."): cut everything before the
+  // first main verb, which is where the subject naming lives.
+  const verbSplit = sentence.match(/\s(is|was|are|were)\s/);
+  if (verbSplit && verbSplit.index !== undefined) {
+    return `It ${verbSplit[1]} ${sentence.slice(verbSplit.index + verbSplit[0].length)}`;
+  }
+  // last resort: blank out any mention of the subject name
+  const mentionRe = new RegExp(escapeRe(plain), "gi");
+  return sentence.replace(mentionRe, "this subject");
+}
+
+function escapeRe(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 // Rotated for variety instead of one fixed phrasing repeated for every
 // question in a round, which reads as flat/robotic.
 const QUESTION_TEMPLATES = [
@@ -71,14 +111,17 @@ function sample<T>(arr: T[], n: number): T[] {
   return shuffle(arr).slice(0, n);
 }
 
-async function fetchSummary(title: string): Promise<{ title: string; sentence: string } | null> {
+async function fetchSummary(
+  title: string
+): Promise<{ title: string; sentence: string; anonymous: string } | null> {
   try {
     const res = await fetch(SUMMARY_URL(title));
     if (!res.ok) return null;
     const data = await res.json();
     const extract = data.extract as string | undefined;
     if (!extract) return null;
-    return { title, sentence: firstSentence(extract) };
+    const sentence = firstSentence(extract);
+    return { title, sentence, anonymous: anonymize(sentence, title) };
   } catch {
     return null;
   }
@@ -92,7 +135,9 @@ export async function generateFromWikipedia(categoryId: string, count: number): 
   const chosenTitles = sample(topics, poolSize);
 
   const results = await Promise.all(chosenTitles.map(fetchSummary));
-  const facts = results.filter((r): r is { title: string; sentence: string } => r !== null);
+  const facts = results.filter(
+    (r): r is { title: string; sentence: string; anonymous: string } => r !== null
+  );
   if (facts.length < 4) return [];
 
   // No picture questions in this tier: the "which fact matches this title"
@@ -104,11 +149,15 @@ export async function generateFromWikipedia(categoryId: string, count: number): 
   // question, so this tier stays text-only.
   const questions: Question[] = [];
   for (const fact of facts) {
-    const distractorPool = facts.filter((f) => f.title !== fact.title).map((f) => f.sentence);
+    // Anonymized options ("It is the fourth planet from the Sun") so
+    // distractors don't name unrelated subjects and the correct option
+    // doesn't name the asked subject - both directions were giveaways/
+    // confusing with the raw sentences.
+    const distractorPool = facts.filter((f) => f.title !== fact.title).map((f) => f.anonymous);
     if (distractorPool.length < 3) continue;
     const distractors = sample(distractorPool, 3);
-    const options = shuffle([...distractors, fact.sentence]);
-    const answer = options.indexOf(fact.sentence);
+    const options = shuffle([...distractors, fact.anonymous]);
+    const answer = options.indexOf(fact.anonymous);
 
     const template = QUESTION_TEMPLATES[Math.floor(Math.random() * QUESTION_TEMPLATES.length)];
     questions.push({
