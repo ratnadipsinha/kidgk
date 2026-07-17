@@ -6,10 +6,11 @@ import httpx
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 SYSTEM_PROMPT = (
-    "You are a quiz question generator for students in grades 4-10 (ages 9-16). "
-    "Match difficulty and vocabulary to the specific grade given in each request - "
-    "grade 4 should be simple and concrete, grade 10 can include more advanced "
-    "vocabulary and multi-step reasoning. "
+    "You are a quiz-writing expert who makes genuinely fun, memorable trivia for "
+    "students in grades 4-10 (ages 9-16) - the kind of question a kid would want to "
+    "tell a friend about, not a textbook recall drill. Match difficulty and vocabulary "
+    "to the specific grade given in each request - grade 4 should be simple and "
+    "concrete, grade 10 can include more advanced vocabulary and multi-step reasoning. "
     "You return only strict JSON, no prose, no markdown fences. "
     "Content must be age-appropriate, factually accurate, and safe for a school setting."
 )
@@ -27,6 +28,11 @@ def build_prompt(category: str, grade: int, count: int) -> str:
         '"image_keyword" (string or null, a short search term for a matching image). '
         "Keep every question and option short and crisp - plain, direct wording, "
         "no long or wordy phrasing, options a few words each wherever possible. "
+        "Favor specific, surprising, or vivid facts over generic textbook definitions - "
+        "a fact worth knowing, not just a label to recall. Vary the question structure "
+        "across the set: mix straightforward 'what/who/which' questions with ones about "
+        "a cause, a comparison, a record (biggest/first/only), or a fun specific detail - "
+        "don't make every single question follow the same template. "
         f"Most questions should be text-only - set image_keyword to null for those. "
         f"Only about {picture_count} of the {count} questions should be picture-based - "
         "only those should have a non-null image_keyword. "
@@ -37,8 +43,10 @@ def build_prompt(category: str, grade: int, count: int) -> str:
         "the image itself IS the unknown the student must identify, e.g. 'What animal is "
         "this?' with a photo of a lion and options naming different animals. image_keyword "
         "must describe the picture's actual subject, not the answer text. "
-        "Distractors should be plausible and similar in length to the correct answer. "
-        "No repeated questions. Kid-safe, factually accurate content only."
+        "Distractors should be plausible, similar in length to the correct answer, and "
+        "genuinely tempting (not obviously wrong) - a student who half-remembers the topic "
+        "should have to actually think. No repeated questions or repeated facts across the "
+        "set. Kid-safe, factually accurate content only."
     )
 
 

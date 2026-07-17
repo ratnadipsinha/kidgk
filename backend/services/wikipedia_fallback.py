@@ -9,6 +9,16 @@ logger = logging.getLogger("kidgk.wikipedia_fallback")
 
 SUMMARY_URL = "https://en.wikipedia.org/api/rest_v1/page/summary/{title}"
 
+# Rotated for variety instead of one fixed phrasing repeated for every
+# question in a round, which reads as flat/robotic.
+QUESTION_TEMPLATES = [
+    lambda title: f"Which of these facts is about {title}?",
+    lambda title: f"What do we know about {title}?",
+    lambda title: f"Pick the true statement about {title}.",
+    lambda title: f"Which one correctly describes {title}?",
+    lambda title: f"Can you spot the real fact about {title}?",
+]
+
 # Curated per-category article pools. Kept to well-known, kid-safe topics
 # rather than pulling random/search results, since anything auto-discovered
 # from Wikipedia search could surface off-topic or inappropriate pages.
@@ -109,9 +119,10 @@ async def generate_from_wikipedia(category_id: str, count: int) -> list[dict]:
         random.shuffle(options)
         answer = options.index(fact["sentence"])
 
+        template = random.choice(QUESTION_TEMPLATES)
         questions.append(
             {
-                "question": f"Which of these facts is about {fact['title']}?",
+                "question": template(fact["title"]),
                 "options": options,
                 "answer": answer,
                 "explanation": f"{fact['sentence']} (from Wikipedia)",

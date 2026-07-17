@@ -48,6 +48,16 @@ function firstSentence(text: string, maxWords = 18): string {
   return sentence;
 }
 
+// Rotated for variety instead of one fixed phrasing repeated for every
+// question in a round, which reads as flat/robotic.
+const QUESTION_TEMPLATES = [
+  (title: string) => `Which of these facts is about ${title}?`,
+  (title: string) => `What do we know about ${title}?`,
+  (title: string) => `Pick the true statement about ${title}.`,
+  (title: string) => `Which one correctly describes ${title}?`,
+  (title: string) => `Can you spot the real fact about ${title}?`,
+];
+
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -96,8 +106,9 @@ export async function generateFromWikipedia(categoryId: string, count: number): 
     const options = shuffle([...distractors, fact.sentence]);
     const answer = options.indexOf(fact.sentence);
 
+    const template = QUESTION_TEMPLATES[Math.floor(Math.random() * QUESTION_TEMPLATES.length)];
     questions.push({
-      question: `Which of these facts is about ${fact.title}?`,
+      question: template(fact.title),
       options,
       answer,
       explanation: `${fact.sentence} (from Wikipedia)`,

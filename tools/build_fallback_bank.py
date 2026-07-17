@@ -56,6 +56,16 @@ EXCLUDE_EXTRACT_RE = re.compile(
 # trivia) that no blocklist would ever catch. Pageviews is a decent proxy
 # for "a general audience has actually heard of this."
 MIN_MONTHLY_VIEWS = 3000
+
+# Rotated for variety instead of one fixed phrasing repeated for every
+# question, which reads as flat/robotic across a 150-question bank.
+QUESTION_TEMPLATES = [
+    lambda title: f"Which of these facts is about {title}?",
+    lambda title: f"What do we know about {title}?",
+    lambda title: f"Pick the true statement about {title}.",
+    lambda title: f"Which one correctly describes {title}?",
+    lambda title: f"Can you spot the real fact about {title}?",
+]
 PAGEVIEWS_URL = (
     "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/"
     "en.wikipedia/all-access/user/{title}/monthly/{start}/{end}"
@@ -273,9 +283,10 @@ def build_questions(facts: list[dict]) -> list[dict]:
         options = distractors + [fact["sentence"]]
         random.shuffle(options)
         answer = options.index(fact["sentence"])
+        template = random.choice(QUESTION_TEMPLATES)
         questions.append(
             {
-                "question": f"Which of these facts is about {fact['title']}?",
+                "question": template(fact["title"]),
                 "options": options,
                 "answer": answer,
                 "explanation": f"{fact['sentence']} (from Wikipedia)",
