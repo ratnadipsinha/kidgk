@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { Category, Question } from "../lib/types";
+import { fetchHintText } from "../lib/hint";
 
 type Props = {
   category: Category;
@@ -7,10 +8,17 @@ type Props = {
   onFinish: (score: number) => void;
 };
 
+type HintState =
+  | { status: "idle" }
+  | { status: "loading" }
+  | { status: "ready"; text: string }
+  | { status: "empty" };
+
 export default function Quiz({ category, questions, onFinish }: Props) {
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [choice, setChoice] = useState<number | null>(null);
+  const [hint, setHint] = useState<HintState>({ status: "idle" });
 
   const item = questions[index];
   const isLast = index === questions.length - 1;
@@ -23,12 +31,25 @@ export default function Quiz({ category, questions, onFinish }: Props) {
   };
 
   const next = () => {
+    setHint({ status: "idle" });
     if (!isLast) {
       setIndex((i) => i + 1);
       setChoice(null);
     } else {
       onFinish(score);
     }
+  };
+
+  const toggleHint = async () => {
+    if (hint.status === "loading") return;
+    if (hint.status === "ready" || hint.status === "empty") {
+      setHint({ status: "idle" });
+      return;
+    }
+    setHint({ status: "loading" });
+    const term = item.image_keyword ?? item.options[item.answer];
+    const text = await fetchHintText(term);
+    setHint(text ? { status: "ready", text } : { status: "empty" });
   };
 
   return (
@@ -38,8 +59,18 @@ export default function Quiz({ category, questions, onFinish }: Props) {
           <span className="swatch" style={{ background: category.color }} />
           {category.emoji} {category.name}
         </div>
-        <div className="quiz-score">
-          Question {index + 1} of {questions.length} · Score {score}
+        <div className="quiz-top-right">
+          <div className="quiz-score">
+            Question {index + 1} of {questions.length} · Score {score}
+          </div>
+          <button
+            type="button"
+            className="hint-btn"
+            aria-expanded={hint.status === "ready" || hint.status === "empty"}
+            onClick={toggleHint}
+          >
+            {hint.status === "loading" ? "Loading…" : "💡 Hint"}
+          </button>
         </div>
       </div>
 
@@ -60,6 +91,12 @@ export default function Quiz({ category, questions, onFinish }: Props) {
       )}
 
       <p className="question-text">{item.question}</p>
+
+      {(hint.status === "ready" || hint.status === "empty") && (
+        <div className="hint-panel">
+          {hint.status === "ready" ? hint.text : "No extra description found for this one."}
+        </div>
+      )}
 
       <div className="options">
         {item.options.map((opt, i) => {
