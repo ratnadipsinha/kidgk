@@ -1,36 +1,27 @@
-import { useEffect, useState } from "react";
-import { fetchCategories, fetchRound } from "./api";
-import type { Category, Question } from "./api";
+import { useState } from "react";
+import { CATEGORIES } from "./lib/categories";
+import { getRound } from "./lib/questions";
+import type { Category, Question, RoundSource } from "./lib/types";
 import SpinWheel from "./components/SpinWheel";
 import Quiz from "./components/Quiz";
 import Results from "./components/Results";
-import UpdateBar from "./components/UpdateBar";
 
 type Screen = "wheel" | "loading" | "quiz" | "results" | "error";
 
 export default function App() {
-  const [categories, setCategories] = useState<Category[]>([]);
   const [grade, setGrade] = useState(5);
   const [screen, setScreen] = useState<Screen>("wheel");
   const [category, setCategory] = useState<Category | null>(null);
   const [questions, setQuestions] = useState<Question[]>([]);
-  const [source, setSource] = useState<
-    "groq" | "cache" | "wikipedia" | "fallback" | null
-  >(null);
+  const [source, setSource] = useState<RoundSource | null>(null);
   const [score, setScore] = useState(0);
   const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    fetchCategories()
-      .then(setCategories)
-      .catch(() => setError("Could not reach the KidGK backend. Is it running?"));
-  }, []);
 
   const startRound = async (cat: Category) => {
     setCategory(cat);
     setScreen("loading");
     try {
-      const round = await fetchRound(cat.id, grade, 5);
+      const round = await getRound(cat.id, grade, 5);
       setQuestions(round.questions);
       setSource(round.source);
       setScreen("quiz");
@@ -78,8 +69,8 @@ export default function App() {
         )}
       </header>
 
-      {screen === "wheel" && categories.length > 0 && (
-        <SpinWheel categories={categories} onSelect={startRound} />
+      {screen === "wheel" && (
+        <SpinWheel categories={CATEGORIES} onSelect={startRound} />
       )}
 
       {screen === "loading" && <div className="loading">Fetching questions…</div>}
@@ -118,8 +109,6 @@ export default function App() {
           </button>
         </div>
       )}
-
-      <UpdateBar />
     </div>
   );
 }

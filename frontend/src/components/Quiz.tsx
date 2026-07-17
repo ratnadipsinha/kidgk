@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { Category, Question } from "../api";
+import type { Category, Question } from "../lib/types";
 
 type Props = {
   category: Category;

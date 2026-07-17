@@ -1,4 +1,4 @@
-import type { Category } from "../api";
+import type { Category } from "../lib/types";
 
 type Props = {
   category: Category;

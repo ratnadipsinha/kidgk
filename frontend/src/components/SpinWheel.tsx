@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import type { Category } from "../api";
+import type { Category } from "../lib/types";
 
 type Props = {
   categories: Category[];
