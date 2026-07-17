@@ -117,6 +117,7 @@ export async function generateFromWikipedia(categoryId: string, count: number): 
       answer,
       explanation: `${fact.sentence} (from Wikipedia)`,
       image_keyword: null,
+      topic: fact.title,
     });
     if (questions.length >= count) break;
   }

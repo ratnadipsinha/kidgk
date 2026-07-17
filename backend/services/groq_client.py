@@ -25,6 +25,10 @@ def build_prompt(category: str, grade: int, count: int) -> str:
         '"question" (string), "options" (array of exactly 4 strings), '
         '"answer" (integer index 0-3 of the correct option), '
         '"explanation" (string, max 15 words), '
+        '"topic" (string, REQUIRED for every question: the single key word or short '
+        'phrase the question is fundamentally about, e.g. "cosmonaut", "Saturn", '
+        '"photosynthesis" - and it must appear verbatim, or as close to verbatim as '
+        'grammar allows, inside the question text itself), '
         '"image_keyword" (string or null, a short search term for a matching image). '
         "Keep every question and option short and crisp - plain, direct wording, "
         "no long or wordy phrasing, options a few words each wherever possible. "
@@ -100,6 +104,7 @@ def validate_questions(questions: list[dict]) -> list[dict]:
             and isinstance(answer, int)
             and 0 <= answer <= 3
         ):
+            topic = q.get("topic")
             valid.append(
                 {
                     "question": q["question"],
@@ -107,6 +112,7 @@ def validate_questions(questions: list[dict]) -> list[dict]:
                     "answer": answer,
                     "explanation": q.get("explanation", ""),
                     "image_keyword": q.get("image_keyword"),
+                    "topic": topic.strip() if isinstance(topic, str) and topic.strip() else None,
                 }
             )
     return valid

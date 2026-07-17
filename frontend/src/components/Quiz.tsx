@@ -14,6 +14,22 @@ type HintState =
   | { status: "loading" }
   | { status: "open"; details: HintDetails };
 
+function hintTerm(item: Question): string {
+  return item.topic ?? item.image_keyword ?? item.options[item.answer];
+}
+
+// Splits the question text around the topic word/phrase (case-insensitive,
+// preserving the original casing from the question) so it can be rendered
+// as a distinct clickable span, e.g. "What is a **cosmonaut**?" - null if
+// the topic doesn't appear verbatim (paraphrased by the model), in which
+// case the question renders as plain text and the hint button still works.
+function splitOnTopic(question: string, topic: string | null): [string, string, string] | null {
+  if (!topic) return null;
+  const idx = question.toLowerCase().indexOf(topic.toLowerCase());
+  if (idx === -1) return null;
+  return [question.slice(0, idx), question.slice(idx, idx + topic.length), question.slice(idx + topic.length)];
+}
+
 export default function Quiz({ category, questions, onFinish }: Props) {
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -24,6 +40,7 @@ export default function Quiz({ category, questions, onFinish }: Props) {
   const isLast = index === questions.length - 1;
   const letters = ["A", "B", "C", "D"];
   const hintOpen = hint.status !== "closed";
+  const split = splitOnTopic(item.question, item.topic);
 
   const select = (i: number) => {
     if (choice !== null) return;
@@ -41,15 +58,14 @@ export default function Quiz({ category, questions, onFinish }: Props) {
     }
   };
 
-  const toggleHint = async () => {
+  const openHint = async () => {
     if (hint.status === "loading") return;
     if (hint.status === "open") {
       setHint({ status: "closed" });
       return;
     }
     setHint({ status: "loading" });
-    const term = item.image_keyword ?? item.options[item.answer];
-    const details = await fetchHintDetails(term);
+    const details = await fetchHintDetails(hintTerm(item));
     setHint({ status: "open", details });
   };
 
@@ -69,7 +85,7 @@ export default function Quiz({ category, questions, onFinish }: Props) {
               type="button"
               className="hint-btn"
               aria-expanded={hintOpen}
-              onClick={toggleHint}
+              onClick={openHint}
             >
               {hint.status === "loading" ? "Loading…" : hintOpen ? "💡 Hide hint" : "💡 Hint"}
             </button>
@@ -92,7 +108,25 @@ export default function Quiz({ category, questions, onFinish }: Props) {
           />
         )}
 
-        <p className="question-text">{item.question}</p>
+        <p className="question-text">
+          {split ? (
+            <>
+              {split[0]}
+              <button
+                type="button"
+                className="topic-highlight"
+                aria-expanded={hintOpen}
+                onClick={openHint}
+                title="Get a hint about this"
+              >
+                {split[1]}
+              </button>
+              {split[2]}
+            </>
+          ) : (
+            item.question
+          )}
+        </p>
 
         <div className="options">
           {item.options.map((opt, i) => {

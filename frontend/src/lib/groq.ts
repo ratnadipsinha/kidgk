@@ -21,6 +21,10 @@ function buildPrompt(category: string, grade: number, count: number): string {
     '"question" (string), "options" (array of exactly 4 strings), ' +
     '"answer" (integer index 0-3 of the correct option), ' +
     '"explanation" (string, max 15 words), ' +
+    '"topic" (string, REQUIRED for every question: the single key word or short ' +
+    'phrase the question is fundamentally about, e.g. "cosmonaut", "Saturn", ' +
+    '"photosynthesis" - and it must appear verbatim, or as close to verbatim as ' +
+    'grammar allows, inside the question text itself), ' +
     '"image_keyword" (string or null, a short search term for a matching image). ' +
     "Keep every question and option short and crisp - plain, direct wording, " +
     "no long or wordy phrasing, options a few words each wherever possible. " +
@@ -69,6 +73,7 @@ function validateQuestions(raw: unknown[]): Question[] {
         answer,
         explanation: typeof q.explanation === "string" ? q.explanation : "",
         image_keyword: typeof q.image_keyword === "string" ? q.image_keyword : null,
+        topic: typeof q.topic === "string" && q.topic.trim() ? q.topic.trim() : null,
       });
     }
   }

@@ -22,6 +22,8 @@ function buildPrompt(sourceText: string, grade: number, count: number): string {
     '"question" (string), "options" (array of exactly 4 strings), ' +
     '"answer" (integer index 0-3 of the correct option), ' +
     '"explanation" (string, max 15 words, referencing the source text), ' +
+    '"topic" (string, REQUIRED: the single key word or short phrase the question ' +
+    'is about, appearing verbatim or near-verbatim in the question text), ' +
     '"image_keyword" (always null for this - set every one to null). ' +
     "Distractors should be plausible and similar in length to the correct answer. " +
     "No repeated questions. If the text is too short or unclear to make good questions, " +
@@ -52,6 +54,7 @@ function validateQuestions(raw: unknown[]): Question[] {
         answer,
         explanation: typeof q.explanation === "string" ? q.explanation : "",
         image_keyword: null,
+        topic: typeof q.topic === "string" && q.topic.trim() ? q.topic.trim() : null,
       });
     }
   }

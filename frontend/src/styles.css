@@ -442,6 +442,25 @@ button.ghost:disabled {
   line-height: 1.35;
   margin: 0;
 }
+.topic-highlight {
+  appearance: none;
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+  border: none;
+  border-bottom: 2px dotted var(--accent);
+  color: inherit;
+  font: inherit;
+  font-weight: 800;
+  padding: 0 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.topic-highlight:hover {
+  background: color-mix(in srgb, var(--accent) 28%, transparent);
+}
+.topic-highlight[aria-expanded="true"] {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
 .options {
   display: grid;
   grid-template-columns: 1fr 1fr;

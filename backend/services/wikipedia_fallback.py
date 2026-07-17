@@ -127,6 +127,7 @@ async def generate_from_wikipedia(category_id: str, count: int) -> list[dict]:
                 "answer": answer,
                 "explanation": f"{fact['sentence']} (from Wikipedia)",
                 "image_keyword": None,
+                "topic": fact["title"],
             }
         )
         if len(questions) >= count:
