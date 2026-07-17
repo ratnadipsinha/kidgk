@@ -1,10 +1,12 @@
 # KidGK one-click installer
 
 Builds `KidGK-Setup.exe` — a self-contained Windows installer that bundles
-Git, Python, and Node.js (so the target PC needs nothing pre-installed),
-copies the app, writes `backend\.env` with a baked-in Groq key, installs
-all dependencies, and adds a Desktop/Start Menu shortcut that launches the
-app on demand and stops it when its window is closed.
+Git and Python (so the target PC needs nothing pre-installed — Node.js is
+NOT required, the frontend is a pre-built static bundle served by the
+Python backend), copies the app, writes `backend\.env` with a baked-in
+Groq key, installs Python dependencies, and adds a Desktop/Start Menu
+shortcut that launches the app on demand and stops it when its window is
+closed.
 
 **Security note:** the Groq API key is embedded in `kidgk-setup.iss` as
 plain text and ends up extractable from the compiled `.exe` (strings/hex
@@ -16,40 +18,45 @@ rotate the key immediately at console.groq.com.
 
 1. Install [Inno Setup 6](https://jrsoftware.org/isinfo.php) (or via
    `winget install --id JRSoftware.InnoSetup -e`).
-2. Download the three prerequisite installers into `installer/vendor/`
+2. **Build the frontend first** (the installer bundles `frontend/dist`,
+   not `frontend/src`):
+   ```
+   cd frontend && npm install && npm run build
+   ```
+3. Download the two prerequisite installers into `installer/vendor/`
    (gitignored — not committed, and too large for GitHub anyway):
    - `git-installer.exe` — latest 64-bit Git for Windows
      (`https://github.com/git-for-windows/git/releases/latest`)
    - `python-installer.exe` — Python 3.12 64-bit
      (`https://www.python.org/ftp/python/3.12.7/python-3.12.7-amd64.exe`)
-   - `node-installer.msi` — Node.js LTS 64-bit MSI
-     (`https://nodejs.org/dist/v22.11.0/node-v22.11.0-x64.msi`)
-3. Compile:
+4. Compile:
    ```
    & "$env:LOCALAPPDATA\Programs\Inno Setup 6\ISCC.exe" installer\kidgk-setup.iss
    ```
-4. Output: `installer\output\KidGK-Setup.exe` (~120MB).
+5. Output: `installer\output\KidGK-Setup.exe` (~93MB).
 
 ## What it does on the target PC
 
 Requires admin (UAC prompt on launch — needed to install to Program Files
 and register scheduled tasks):
 
-1. Skips any of git/Python/Node that are already present; silently installs
-   the missing ones.
-2. Copies the app to `%ProgramFiles%\KidGK`.
+1. Skips git/Python if already present; silently installs the missing
+   ones. (No Node.js check or install — never needed on the target PC.)
+2. Copies the app to `%ProgramFiles%\KidGK`, including the pre-built
+   `frontend\dist`.
 3. Runs `post-install.ps1`, which:
    - `git init` + points the copy at `origin/main` so the in-app "Check for
-     updates" button works
+     updates" button works (this also refreshes `frontend\dist` if it's
+     changed since the installer was built)
    - creates the backend virtualenv, installs Python deps
    - writes `backend\.env` with the baked-in `GROQ_API_KEY`
-   - installs frontend deps
 4. Adds a Desktop and Start Menu shortcut ("KidGK") that runs
-   `scripts\launch.ps1` — starts the backend/frontend, opens the app in its
-   own window (no tabs/address bar), and **stops both processes the moment
-   that window is closed**. Nothing runs in the background between sessions;
-   there's no auto-start-at-logon or auto-update-on-a-timer by design —
-   updates are pulled on demand via the in-app button.
+   `scripts\launch.ps1` — starts the backend (which serves both the API
+   and the static frontend on one port), opens the app in its own window
+   (no tabs/address bar), and **stops the backend the moment that window
+   is closed**. Nothing runs in the background between sessions; there's
+   no auto-start-at-logon or auto-update-on-a-timer by design — updates
+   are pulled on demand via the in-app button.
 
 ## Bugs found and fixed while testing this
 
@@ -92,3 +99,22 @@ copy of the app (confirming `backend\.env` was byte-correct and a live
 `scripts\launch.ps1`, confirming a real Edge app-window process appears,
 then killing that process and confirming the backend and frontend both
 stop and their ports free up.
+
+## Architecture change: single process, no Node.js on the target PC
+
+The frontend used to run as a second process (`node vite.js`, a Vite dev
+server on its own port) on the target PC, which needed Node.js bundled and
+installed there. It's now built once (`npm run build`) into plain
+HTML/JS/CSS in `frontend/dist`, **committed to git**, and served directly
+by the Python backend (`backend/main.py` mounts it with `StaticFiles`
+after all `/api/*` routes, so it never shadows the API). One process, one
+port, no Node.js anywhere on the target PC — and `git pull` (the existing
+update mechanism) refreshes the frontend the same way it already refreshed
+the backend, no extra step needed.
+
+Verified live with the same marker-commit technique used for the backend
+update flow: changed `frontend/index.html`'s `<title>`, rebuilt, pushed,
+rolled a local checkout back one commit, started the app, confirmed the
+old title via `curl`, hit the real `POST /api/update/apply` endpoint, and
+confirmed the new title appeared with no `npm install` anywhere in the
+process.

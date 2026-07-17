@@ -21,15 +21,30 @@ Nothing pushes *to* a target PC. It's one-way: **source → GitHub → target pu
 
 `installer/kidgk-setup.iss` is an [Inno Setup](https://jrsoftware.org/isinfo.php)
 script. Compiling it (`ISCC.exe installer\kidgk-setup.iss`) produces
-`installer/output/KidGK-Setup.exe` — a single ~120MB file that bundles:
+`installer/output/KidGK-Setup.exe` — a single ~93MB file that bundles:
 
 - The full app source (`backend/`, `frontend/`, `scripts/`) — a snapshot of
-  whatever was committed at build time
-- Three prerequisite installers: Git for Windows, Python 3.12, Node.js LTS
-  (downloaded once into `installer/vendor/`, gitignored — too large for
-  GitHub and not needed in version control)
+  whatever was committed at build time, **including `frontend/dist`** (the
+  pre-built static frontend — see below)
+- Two prerequisite installers: Git for Windows, Python 3.12 (downloaded once
+  into `installer/vendor/`, gitignored — too large for GitHub and not
+  needed in version control). **Node.js is not bundled or required at all**
+  — the frontend doesn't run through Node on the target PC
 - `post-install.ps1` — the script that wires everything up after files are
   copied
+
+**The frontend is a build artifact, not a running process.** `frontend/dist`
+(plain HTML/JS/CSS, produced by `npm run build`) is committed to git —
+unusual for a build output, but deliberate here: the Python backend serves
+it directly (`backend/main.py` mounts it with `StaticFiles`), so a target PC
+never needs Node.js installed, and `git pull` (the existing update
+mechanism) is all that's needed to refresh the frontend too. Whenever
+`frontend/src` changes, rebuild and commit the result:
+
+```
+cd frontend && npm run build
+git add frontend/dist && git commit -m "..." && git push
+```
 
 The Groq API key is baked into the `.iss` file as a plain-text constant and
 ends up embedded in the compiled `.exe` (extractable via a hex dump/strings
@@ -51,21 +66,23 @@ unattended:
 ```
 1. Check prerequisites, skip what's already there
    ├─ NeedsGit()    → git on PATH or at C:\Program Files\Git\cmd\git.exe?
-   ├─ NeedsPython() → python on PATH or at C:\Program Files\Python312\?
-   └─ NeedsNode()   → node on PATH or at C:\Program Files\nodejs\?
-   Only the missing ones get silently installed.
+   └─ NeedsPython() → python on PATH or at C:\Program Files\Python312\?
+   Only the missing ones get silently installed. (No Node.js check —
+   it's never needed on the target PC.)
 
 2. Copy the bundled app snapshot to %ProgramFiles%\KidGK
+   (this includes the pre-built frontend\dist)
 
 3. Run post-install.ps1, which:
    a. git init (if needed) + git remote add origin <repo URL>
    b. git fetch + git checkout -B main origin/main
       → aligns the installed copy with the CURRENT state of GitHub,
-        not just the snapshot baked into the .exe at build time
-        (falls back to the bundled snapshot if there's no internet yet)
+        not just the snapshot baked into the .exe at build time —
+        this also refreshes frontend\dist if it's changed since the
+        installer was built (falls back to the bundled snapshot if
+        there's no internet yet)
    c. Creates backend\.venv, installs Python dependencies
    d. Writes backend\.env with the baked-in GROQ_API_KEY
-   e. Installs frontend dependencies (npm install)
 
 4. Inno Setup's [Icons] section creates a Desktop + Start Menu shortcut
    named "KidGK", pointing at scripts\launch.ps1
@@ -83,28 +100,34 @@ The "KidGK" shortcut runs `scripts\launch.ps1`:
 ```
 launch.ps1
   ├─ start-app.ps1
-  │    ├─ starts backend:  .venv\Scripts\python.exe -m uvicorn main:app --port 8000
-  │    ├─ starts frontend: node frontend\node_modules\vite\bin\vite.js --port 5173
-  │    └─ writes each PID to .run\backend.pid / .run\frontend.pid
+  │    ├─ starts backend: .venv\Scripts\python.exe -m uvicorn main:app --port 8000
+  │    │    (serves both the API and frontend\dist — one process, one port)
+  │    └─ writes its PID to .run\backend.pid
   ├─ waits for the backend to answer on :8000 (raw TCP check)
   ├─ opens the app in a dedicated Edge/Chrome window
   │    (--app mode: no tabs, no address bar, isolated browser profile)
   ├─ blocks until that window's process exits
-  └─ on exit: stop-app.ps1 (kills both PIDs from the .run\ files)
+  └─ on exit: stop-app.ps1 (kills the PID from .run\backend.pid)
 ```
 
 **Closing the app window is the entire "stop" mechanism.** There's no
 tray icon, no auto-start-at-login task, nothing running silently between
 sessions. If the PC is shut down or restarted instead, Windows kills the
-processes anyway — same end state either way.
+process anyway — same end state either way.
 
-Two things had to be fixed to make this actually work (see
-`installer/README.md` for the full list of bugs found while testing):
-`npm run dev`/`vite.cmd` are batch wrappers that don't forward kill
-signals on Windows (fixed by launching `node vite.js` directly), and
+An earlier version ran a second process (`node vite.js`, a Vite dev
+server) for the frontend on its own port (:5173), which meant two
+processes to track and two things that could leak on stop. Serving the
+pre-built `frontend/dist` from the backend collapsed that down to one
+process entirely — see section 2 above.
+
+Two bugs had to be fixed to make even the single-process version work
+(see `installer/README.md` for the full list found while testing):
+`npm run dev`/`vite.cmd` were batch wrappers that didn't forward kill
+signals on Windows back when there was a separate frontend process, and
 `Invoke-WebRequest` can hang against a perfectly reachable `localhost`
 endpoint under Windows PowerShell 5.1 (fixed with a raw socket check
-instead).
+instead — still relevant today).
 
 ---
 
@@ -133,7 +156,9 @@ Frontend                    Backend                         Behind the scenes
                              │                        already responded,
                              │                        so that's fine)
                              ├─ git pull origin main
-                             ├─ reinstall changed deps (pip / npm)
+                             │    (this alone refreshes frontend\dist too —
+                             │     no npm/Node involved anywhere)
+                             ├─ reinstall changed Python deps (pip)
                              └─ start-app.ps1        (restarts with the
                                                        new code)
 
@@ -173,6 +198,7 @@ resort, always available with zero network dependency).
 
 | Task | Command |
 |---|---|
+| Rebuild the frontend after changing `frontend/src` | `cd frontend && npm run build` (then commit `frontend/dist`) |
 | Build the installer | `ISCC.exe installer\kidgk-setup.iss` |
 | Manual setup (no installer, e.g. for dev) | `scripts\setup.ps1` |
 | Start without the browser window | `scripts\start-app.ps1` |
