@@ -4,6 +4,8 @@ type Props = {
   category: Category;
   score: number;
   total: number;
+  grade: number;
+  gradeChange: "up" | "down" | null;
   onPlayAgain: () => void;
   onNewSpin: () => void;
 };
@@ -12,6 +14,8 @@ export default function Results({
   category,
   score,
   total,
+  grade,
+  gradeChange,
   onPlayAgain,
   onNewSpin,
 }: Props) {
@@ -33,6 +37,13 @@ export default function Results({
         <span className="score-of">/{total}</span>
       </div>
       <p className="score-msg">{msg}</p>
+      {gradeChange && (
+        <p className={`grade-change grade-change-${gradeChange}`}>
+          {gradeChange === "up"
+            ? `Nice! Moving up to Grade ${grade} next round.`
+            : `Stepping back to Grade ${grade} next round.`}
+        </p>
+      )}
       <div className="actions">
         <button className="primary" onClick={onPlayAgain}>
           Play again — same category

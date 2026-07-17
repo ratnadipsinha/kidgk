@@ -1,32 +1,31 @@
 import type { Question } from "./types";
 import { GROQ_API_KEY, GROQ_MODEL } from "./config";
+import { filterSafe } from "./safety";
 
 const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
 
 const SYSTEM_PROMPT =
   "You are a quiz question generator for students in grades 4-10 (ages 9-16). " +
-  "Match difficulty and vocabulary to the specific grade given in each request - " +
-  "grade 4 should be simple and concrete, grade 10 can include more advanced " +
-  "vocabulary and multi-step reasoning. " +
   "You return only strict JSON, no prose, no markdown fences. " +
   "Content must be age-appropriate, factually accurate, and safe for a school setting.";
 
-function buildPrompt(category: string, grade: number, count: number): string {
-  const pictureCount = Math.max(1, Math.round(count * 0.25));
+function buildPrompt(sourceText: string, grade: number, count: number): string {
+  // Truncate to keep the request a reasonable size - OCR output from a
+  // photo of a page/notes rarely needs more than this to build 5 questions.
+  const trimmed = sourceText.slice(0, 6000);
   return (
-    `Generate ${count} multiple-choice general knowledge questions about ` +
-    `${category.toUpperCase()} for a Grade ${grade} student. ` +
+    `Here is text extracted from a photo (via OCR, so it may contain minor ` +
+    `recognition errors - use your judgement to read through those): \n\n"""\n${trimmed}\n"""\n\n` +
+    `Generate ${count} multiple-choice questions for a Grade ${grade} student, based ONLY on ` +
+    `the content of this text (not general outside knowledge). ` +
     'Return only a JSON array. Each object must have exactly these keys: ' +
     '"question" (string), "options" (array of exactly 4 strings), ' +
     '"answer" (integer index 0-3 of the correct option), ' +
-    '"explanation" (string, max 15 words), ' +
-    '"image_keyword" (string or null, a short search term for a matching image). ' +
-    `Most questions should be text-only - set image_keyword to null for those. ` +
-    `Only about ${pictureCount} of the ${count} questions should be picture-based ` +
-    `(where the image itself is the subject, e.g. "Which animal is this?") - ` +
-    `only those should have a non-null image_keyword. ` +
+    '"explanation" (string, max 15 words, referencing the source text), ' +
+    '"image_keyword" (always null for this - set every one to null). ' +
     "Distractors should be plausible and similar in length to the correct answer. " +
-    "No repeated questions. Kid-safe, factually accurate content only."
+    "No repeated questions. If the text is too short or unclear to make good questions, " +
+    "generate as many good ones as you reasonably can, even fewer than requested."
   );
 }
 
@@ -52,19 +51,22 @@ function validateQuestions(raw: unknown[]): Question[] {
         options: options as string[],
         answer,
         explanation: typeof q.explanation === "string" ? q.explanation : "",
-        image_keyword: typeof q.image_keyword === "string" ? q.image_keyword : null,
+        image_keyword: null,
       });
     }
   }
   return valid;
 }
 
-export async function generateQuestions(
-  category: string,
+export async function generateQuestionsFromText(
+  sourceText: string,
   grade: number,
-  count: number
+  count = 5
 ): Promise<Question[]> {
   if (!GROQ_API_KEY) throw new Error("GROQ_API_KEY not configured");
+  if (!sourceText || sourceText.trim().length < 40) {
+    throw new Error("Not enough readable text was found in that image.");
+  }
 
   const res = await fetch(GROQ_URL, {
     method: "POST",
@@ -76,16 +78,14 @@ export async function generateQuestions(
       model: GROQ_MODEL,
       messages: [
         { role: "system", content: SYSTEM_PROMPT },
-        { role: "user", content: buildPrompt(category, grade, count) },
+        { role: "user", content: buildPrompt(sourceText, grade, count) },
       ],
-      temperature: 0.8,
+      temperature: 0.5,
       response_format: { type: "json_object" },
     }),
   });
 
-  if (!res.ok) {
-    throw new Error(`Groq request failed: ${res.status}`);
-  }
+  if (!res.ok) throw new Error(`Groq request failed: ${res.status}`);
 
   const data = await res.json();
   const content = data.choices?.[0]?.message?.content;
@@ -96,5 +96,10 @@ export async function generateQuestions(
     ? parsed
     : Object.values(parsed).find((v) => Array.isArray(v)) ?? [];
 
-  return validateQuestions(questions);
+  const valid = validateQuestions(questions);
+  const safe = filterSafe(valid);
+  if (safe.length === 0) {
+    throw new Error("Could not build any questions from that image.");
+  }
+  return safe;
 }

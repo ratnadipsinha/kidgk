@@ -3,17 +3,36 @@ import { CATEGORIES } from "./lib/categories";
 import { getRound } from "./lib/questions";
 import type { Category, Question, RoundSource } from "./lib/types";
 import SpinWheel from "./components/SpinWheel";
+import CategoryCards from "./components/CategoryCards";
+import CustomUpload from "./components/CustomUpload";
 import Quiz from "./components/Quiz";
 import Results from "./components/Results";
 
-type Screen = "wheel" | "loading" | "quiz" | "results" | "error";
+type Screen = "wheel" | "custom-upload" | "loading" | "quiz" | "results" | "error";
+
+const MIN_GRADE = 4;
+const MAX_GRADE = 10;
+
+const CUSTOM_CATEGORY: Category = {
+  id: "custom",
+  name: "Custom",
+  emoji: "📷",
+  color: "#ff5da2",
+};
+
+function nextGrade(currentGrade: number, score: number, total: number): number {
+  if (score >= total - 1) return Math.min(MAX_GRADE, currentGrade + 1);
+  if (score <= 2) return Math.max(MIN_GRADE, currentGrade - 1);
+  return currentGrade;
+}
 
 export default function App() {
-  const [grade, setGrade] = useState(5);
+  const [grade, setGrade] = useState(MIN_GRADE);
+  const [gradeChange, setGradeChange] = useState<"up" | "down" | null>(null);
   const [screen, setScreen] = useState<Screen>("wheel");
   const [category, setCategory] = useState<Category | null>(null);
   const [questions, setQuestions] = useState<Question[]>([]);
-  const [source, setSource] = useState<RoundSource | null>(null);
+  const [source, setSource] = useState<RoundSource | "custom" | null>(null);
   const [score, setScore] = useState(0);
   const [error, setError] = useState<string | null>(null);
 
@@ -31,8 +50,22 @@ export default function App() {
     }
   };
 
+  const startCustom = () => {
+    setCategory(CUSTOM_CATEGORY);
+    setScreen("custom-upload");
+  };
+
+  const onCustomReady = (qs: Question[]) => {
+    setQuestions(qs);
+    setSource("custom");
+    setScreen("quiz");
+  };
+
   const finishQuiz = (finalScore: number) => {
     setScore(finalScore);
+    const updated = nextGrade(grade, finalScore, questions.length);
+    setGradeChange(updated > grade ? "up" : updated < grade ? "down" : null);
+    setGrade(updated);
     setScreen("results");
   };
 
@@ -40,6 +73,16 @@ export default function App() {
     setScreen("wheel");
     setCategory(null);
     setQuestions([]);
+    setGradeChange(null);
+  };
+
+  const playAgain = () => {
+    if (!category) return;
+    if (category.id === "custom") {
+      setScreen("custom-upload");
+    } else {
+      startRound(category);
+    }
   };
 
   return (
@@ -48,12 +91,13 @@ export default function App() {
         <div className="eyebrow">KidGK</div>
         <h1>
           {screen === "wheel" && "Spin the wheel, get your category"}
+          {screen === "custom-upload" && "Make a quiz from your own photo"}
           {screen === "loading" && `Loading your ${category?.name} round…`}
           {screen === "quiz" && `${category?.emoji} ${category?.name} round`}
           {screen === "results" && "Round complete"}
           {screen === "error" && "Something went wrong"}
         </h1>
-        {screen === "wheel" && (
+        {(screen === "wheel" || screen === "custom-upload") && (
           <div className="grade-select">
             <label htmlFor="grade">Grade:</label>
             <select
@@ -61,16 +105,32 @@ export default function App() {
               value={grade}
               onChange={(e) => setGrade(Number(e.target.value))}
             >
-              <option value={4}>4</option>
-              <option value={5}>5</option>
-              <option value={6}>6</option>
+              {Array.from({ length: MAX_GRADE - MIN_GRADE + 1 }, (_, i) => MIN_GRADE + i).map(
+                (g) => (
+                  <option key={g} value={g}>
+                    {g}
+                  </option>
+                )
+              )}
             </select>
+            <span className="grade-hint">Adjusts automatically as you play</span>
           </div>
         )}
       </header>
 
       {screen === "wheel" && (
-        <SpinWheel categories={CATEGORIES} onSelect={startRound} />
+        <div className="picker-row">
+          <SpinWheel categories={CATEGORIES} onSelect={startRound} />
+          <CategoryCards
+            categories={CATEGORIES}
+            onSelect={startRound}
+            onCustomSelect={startCustom}
+          />
+        </div>
+      )}
+
+      {screen === "custom-upload" && (
+        <CustomUpload grade={grade} onReady={onCustomReady} onCancel={backToWheel} />
       )}
 
       {screen === "loading" && <div className="loading">Fetching questions…</div>}
@@ -96,7 +156,9 @@ export default function App() {
           category={category}
           score={score}
           total={questions.length}
-          onPlayAgain={() => startRound(category)}
+          grade={grade}
+          gradeChange={gradeChange}
+          onPlayAgain={playAgain}
           onNewSpin={backToWheel}
         />
       )}

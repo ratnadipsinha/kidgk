@@ -6,9 +6,12 @@ import httpx
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 SYSTEM_PROMPT = (
-    "You are a quiz question generator for children in grades 4-6 (ages 9-12). "
+    "You are a quiz question generator for students in grades 4-10 (ages 9-16). "
+    "Match difficulty and vocabulary to the specific grade given in each request - "
+    "grade 4 should be simple and concrete, grade 10 can include more advanced "
+    "vocabulary and multi-step reasoning. "
     "You return only strict JSON, no prose, no markdown fences. "
-    "Content must be kid-safe, factually accurate, and age-appropriate."
+    "Content must be age-appropriate, factually accurate, and safe for a school setting."
 )
 
 
