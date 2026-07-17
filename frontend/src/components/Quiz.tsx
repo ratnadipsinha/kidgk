@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { Category, Question } from "../lib/types";
-import { fetchHintText } from "../lib/hint";
+import { fetchHintDetails } from "../lib/hint";
+import type { HintDetails } from "../lib/hint";
 
 type Props = {
   category: Category;
@@ -9,20 +10,20 @@ type Props = {
 };
 
 type HintState =
-  | { status: "idle" }
+  | { status: "closed" }
   | { status: "loading" }
-  | { status: "ready"; text: string }
-  | { status: "empty" };
+  | { status: "open"; details: HintDetails };
 
 export default function Quiz({ category, questions, onFinish }: Props) {
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [choice, setChoice] = useState<number | null>(null);
-  const [hint, setHint] = useState<HintState>({ status: "idle" });
+  const [hint, setHint] = useState<HintState>({ status: "closed" });
 
   const item = questions[index];
   const isLast = index === questions.length - 1;
   const letters = ["A", "B", "C", "D"];
+  const hintOpen = hint.status !== "closed";
 
   const select = (i: number) => {
     if (choice !== null) return;
@@ -31,7 +32,7 @@ export default function Quiz({ category, questions, onFinish }: Props) {
   };
 
   const next = () => {
-    setHint({ status: "idle" });
+    setHint({ status: "closed" });
     if (!isLast) {
       setIndex((i) => i + 1);
       setChoice(null);
@@ -42,97 +43,125 @@ export default function Quiz({ category, questions, onFinish }: Props) {
 
   const toggleHint = async () => {
     if (hint.status === "loading") return;
-    if (hint.status === "ready" || hint.status === "empty") {
-      setHint({ status: "idle" });
+    if (hint.status === "open") {
+      setHint({ status: "closed" });
       return;
     }
     setHint({ status: "loading" });
     const term = item.image_keyword ?? item.options[item.answer];
-    const text = await fetchHintText(term);
-    setHint(text ? { status: "ready", text } : { status: "empty" });
+    const details = await fetchHintDetails(term);
+    setHint({ status: "open", details });
   };
 
   return (
-    <div className="quiz">
-      <div className="quiz-top">
-        <div className="quiz-cat">
-          <span className="swatch" style={{ background: category.color }} />
-          {category.emoji} {category.name}
-        </div>
-        <div className="quiz-top-right">
-          <div className="quiz-score">
-            Question {index + 1} of {questions.length} · Score {score}
+    <div className={`quiz-layout ${hintOpen ? "hint-open" : ""}`}>
+      <div className="quiz">
+        <div className="quiz-top">
+          <div className="quiz-cat">
+            <span className="swatch" style={{ background: category.color }} />
+            {category.emoji} {category.name}
           </div>
-          <button
-            type="button"
-            className="hint-btn"
-            aria-expanded={hint.status === "ready" || hint.status === "empty"}
-            onClick={toggleHint}
-          >
-            {hint.status === "loading" ? "Loading…" : "💡 Hint"}
+          <div className="quiz-top-right">
+            <div className="quiz-score">
+              Question {index + 1} of {questions.length} · Score {score}
+            </div>
+            <button
+              type="button"
+              className="hint-btn"
+              aria-expanded={hintOpen}
+              onClick={toggleHint}
+            >
+              {hint.status === "loading" ? "Loading…" : hintOpen ? "💡 Hide hint" : "💡 Hint"}
+            </button>
+          </div>
+        </div>
+
+        <div className="progress-track">
+          <div
+            className="progress-fill"
+            style={{ width: `${(index / questions.length) * 100}%` }}
+          />
+        </div>
+
+        {item.image_url && (
+          <img
+            className="question-image"
+            src={item.image_url}
+            alt=""
+            loading="lazy"
+          />
+        )}
+
+        <p className="question-text">{item.question}</p>
+
+        <div className="options">
+          {item.options.map((opt, i) => {
+            let cls = "option";
+            if (choice !== null) {
+              if (i === item.answer) cls += " correct";
+              else if (i === choice) cls += " wrong";
+            }
+            return (
+              <button
+                key={i}
+                type="button"
+                className={cls}
+                disabled={choice !== null}
+                onClick={() => select(i)}
+              >
+                <span className="key">{letters[i]}</span>
+                <span>{opt}</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {choice !== null && (
+          <div className="explain show">
+            {choice === item.answer ? "✅ " : "❌ "}
+            <b>{choice === item.answer ? "Correct!" : "Not quite."}</b>{" "}
+            {item.explanation}
+          </div>
+        )}
+
+        <div className="quiz-nav">
+          <button className="primary" disabled={choice === null} onClick={next}>
+            {isLast ? "See results" : "Next question"}
           </button>
         </div>
       </div>
 
-      <div className="progress-track">
-        <div
-          className="progress-fill"
-          style={{ width: `${(index / questions.length) * 100}%` }}
-        />
-      </div>
-
-      {item.image_url && (
-        <img
-          className="question-image"
-          src={item.image_url}
-          alt=""
-          loading="lazy"
-        />
-      )}
-
-      <p className="question-text">{item.question}</p>
-
-      {(hint.status === "ready" || hint.status === "empty") && (
-        <div className="hint-panel">
-          {hint.status === "ready" ? hint.text : "No extra description found for this one."}
-        </div>
-      )}
-
-      <div className="options">
-        {item.options.map((opt, i) => {
-          let cls = "option";
-          if (choice !== null) {
-            if (i === item.answer) cls += " correct";
-            else if (i === choice) cls += " wrong";
-          }
-          return (
+      {hintOpen && (
+        <aside className="hint-drawer">
+          <div className="hint-drawer-header">
+            <span>About this</span>
             <button
-              key={i}
               type="button"
-              className={cls}
-              disabled={choice !== null}
-              onClick={() => select(i)}
+              className="hint-drawer-close"
+              aria-label="Close hint"
+              onClick={() => setHint({ status: "closed" })}
             >
-              <span className="key">{letters[i]}</span>
-              <span>{opt}</span>
+              ×
             </button>
-          );
-        })}
-      </div>
-
-      {choice !== null && (
-        <div className="explain show">
-          {choice === item.answer ? "✅ " : "❌ "}
-          <b>{choice === item.answer ? "Correct!" : "Not quite."}</b>{" "}
-          {item.explanation}
-        </div>
+          </div>
+          {hint.status === "loading" && (
+            <div className="hint-drawer-loading">Looking it up…</div>
+          )}
+          {hint.status === "open" && (
+            <div className="hint-drawer-body">
+              {hint.details.imageUrl && (
+                <img
+                  className="hint-drawer-image"
+                  src={hint.details.imageUrl}
+                  alt=""
+                  loading="lazy"
+                />
+              )}
+              <p>{hint.details.text ?? "No extra description found for this one."}</p>
+            </div>
+          )}
+        </aside>
       )}
-
-      <div className="quiz-nav">
-        <button className="primary" disabled={choice === null} onClick={next}>
-          {isLast ? "See results" : "Next question"}
-        </button>
-      </div>
     </div>
   );
 }

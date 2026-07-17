@@ -1,25 +1,38 @@
-// Session cache: term -> full Wikipedia summary text (or null if none found).
-const cache = new Map<string, string | null>();
+import { fetchImageUrl } from "./images";
 
-export async function fetchHintText(term: string): Promise<string | null> {
-  const key = term.trim().toLowerCase();
-  if (cache.has(key)) return cache.get(key) ?? null;
+export type HintDetails = {
+  text: string | null;
+  imageUrl: string | null;
+};
 
+// Session cache: term -> full hint details (or null fields if not found).
+const cache = new Map<string, HintDetails>();
+
+async function fetchWikipediaExtract(term: string): Promise<string | null> {
   try {
     const res = await fetch(
       `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(term.replace(/ /g, "_"))}`
     );
-    if (!res.ok) {
-      cache.set(key, null);
-      return null;
-    }
+    if (!res.ok) return null;
     const data = await res.json();
     const extract: string | undefined = data.extract;
-    const text = extract && extract.trim().length > 0 ? extract.trim() : null;
-    cache.set(key, text);
-    return text;
+    return extract && extract.trim().length > 0 ? extract.trim() : null;
   } catch {
-    cache.set(key, null);
     return null;
   }
+}
+
+export async function fetchHintDetails(term: string): Promise<HintDetails> {
+  const key = term.trim().toLowerCase();
+  const cached = cache.get(key);
+  if (cached) return cached;
+
+  const [text, imageUrl] = await Promise.all([
+    fetchWikipediaExtract(term),
+    fetchImageUrl(term),
+  ]);
+
+  const details = { text, imageUrl };
+  cache.set(key, details);
+  return details;
 }
