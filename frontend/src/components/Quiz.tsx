@@ -48,12 +48,19 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
   const [hint, setHint] = useState<HintState>({ status: "closed" });
   const [adjusting, setAdjusting] = useState(false);
   const [difficultyNote, setDifficultyNote] = useState<"up" | "down" | null>(null);
+  // Count of consecutive questions on which the hint was used. Using it on 3
+  // questions in a row locks the hint for the next question, to nudge the
+  // student to try on their own. Answering a question without the hint resets
+  // the streak.
+  const [hintStreak, setHintStreak] = useState(0);
+  const [usedHintThisQuestion, setUsedHintThisQuestion] = useState(false);
 
   const item = items[index];
   const isLast = index === items.length - 1;
   const letters = ["A", "B", "C", "D"];
   const hintOpen = hint.status !== "closed";
   const split = splitOnTopic(item.question, item.topic);
+  const hintLocked = hintStreak >= 3;
 
   const select = (i: number) => {
     if (choice !== null) return;
@@ -63,6 +70,9 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
 
   const next = async () => {
     setHint({ status: "closed" });
+    // Update the consecutive-hint streak based on this question.
+    setHintStreak((s) => (usedHintThisQuestion ? s + 1 : 0));
+    setUsedHintThisQuestion(false);
     if (isLast) {
       onFinish(score);
       return;
@@ -93,6 +103,8 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
       setHint({ status: "closed" });
       return;
     }
+    if (hintLocked) return;
+    setUsedHintThisQuestion(true);
     setHint({ status: "loading" });
     const details = await fetchHintDetails(hintTerm(item));
     setHint({ status: "open", details });
@@ -115,8 +127,16 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
               className="hint-btn"
               aria-expanded={hintOpen}
               onClick={openHint}
+              disabled={hintLocked && !hintOpen}
+              title={hintLocked ? "Try this one on your own!" : undefined}
             >
-              {hint.status === "loading" ? "Loading…" : hintOpen ? "💡 Hide hint" : "💡 Hint"}
+              {hintLocked && !hintOpen
+                ? "💡 Try on your own"
+                : hint.status === "loading"
+                ? "Loading…"
+                : hintOpen
+                ? "💡 Hide hint"
+                : "💡 Hint"}
             </button>
           </div>
         </div>
@@ -154,7 +174,8 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
                 className="topic-highlight"
                 aria-expanded={hintOpen}
                 onClick={openHint}
-                title="Get a hint about this"
+                disabled={hintLocked && !hintOpen}
+                title={hintLocked ? "Try this one on your own!" : "Get a hint about this"}
               >
                 {split[1]}
               </button>

@@ -330,6 +330,11 @@ button.ghost:disabled {
   color: var(--accent-ink);
   border-color: var(--accent);
 }
+.hint-btn:disabled,
+.topic-highlight:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 .hint-drawer {
   background: var(--card);
   border: 1px solid var(--card-border);
