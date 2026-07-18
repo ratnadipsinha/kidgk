@@ -2,7 +2,6 @@ import { useState } from "react";
 import type { Category, Question } from "../lib/types";
 import { fetchHintDetails } from "../lib/hint";
 import type { HintDetails } from "../lib/hint";
-import Confetti from "./Confetti";
 
 type Props = {
   category: Category;
@@ -55,7 +54,6 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
   // the streak.
   const [hintStreak, setHintStreak] = useState(0);
   const [usedHintThisQuestion, setUsedHintThisQuestion] = useState(false);
-  const [confettiBurst, setConfettiBurst] = useState(0);
   const [shake, setShake] = useState(false);
 
   const item = items[index];
@@ -70,7 +68,6 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
     setChoice(i);
     if (i === item.answer) {
       setScore((s) => s + 1);
-      setConfettiBurst((b) => b + 1);
     } else {
       setShake(true);
       setTimeout(() => setShake(false), 420);
@@ -121,7 +118,6 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
 
   return (
     <div className={`quiz-layout ${hintOpen ? "hint-open" : ""}`}>
-      <Confetti burst={confettiBurst} />
       <div className="quiz">
         <div className="quiz-top">
           <div className="quiz-cat">

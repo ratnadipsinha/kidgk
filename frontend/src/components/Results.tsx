@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import type { Category } from "../lib/types";
-import Confetti from "./Confetti";
 import Fireworks from "./Fireworks";
 
 type Props = {
@@ -35,17 +34,13 @@ export default function Results({
       ? `Nice work — solid grasp of ${category.name.toLowerCase()}.`
       : "Good try — spin again and give it another go!";
 
-  const [confettiBurst, setConfettiBurst] = useState(0);
   const [fireworksBurst, setFireworksBurst] = useState(0);
   const [displayScore, setDisplayScore] = useState(0);
 
   useEffect(() => {
-    // Scores above 80% get a rocket-launch fireworks show; a solid but lower
-    // score still gets a lighter confetti pop instead.
+    // Only a score above 80% gets the rocket-launch fireworks celebration.
     if (isBlast) {
       setFireworksBurst(1);
-    } else if (pct >= 0.6) {
-      setConfettiBurst(1);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -68,7 +63,6 @@ export default function Results({
 
   return (
     <div className={`results ${isBlast ? "results-perfect" : ""}`}>
-      {confettiBurst > 0 && <Confetti burst={confettiBurst} originY={0.3} />}
       {fireworksBurst > 0 && <Fireworks burst={fireworksBurst} />}
       <div className="result-label">
         {category.emoji} {category.name.toUpperCase()} ROUND COMPLETE
