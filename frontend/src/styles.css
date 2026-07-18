@@ -442,6 +442,21 @@ button.ghost:disabled {
   line-height: 1.35;
   margin: 0;
 }
+.difficulty-note {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 12px;
+}
+.difficulty-note-up {
+  color: #1a7f3c;
+  background: color-mix(in srgb, #3fb85f 12%, transparent);
+}
+.difficulty-note-down {
+  color: #a4460a;
+  background: color-mix(in srgb, #ff8a3d 12%, transparent);
+}
+
 .topic-highlight {
   appearance: none;
   background: color-mix(in srgb, var(--accent) 18%, transparent);

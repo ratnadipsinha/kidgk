@@ -51,6 +51,31 @@ export default function App() {
     }
   };
 
+  // After the 5th question, adjust the rest of the round based on how the
+  // student is doing: 4-5/5 correct -> remaining questions step up a grade,
+  // 0-2/5 -> step down. Returns replacement questions for the rest of the
+  // round, or null to keep going unchanged. Custom (photo) rounds are
+  // excluded - their content comes from the uploaded text, not a grade pool.
+  const midRoundAdjust = async (
+    scoreSoFar: number
+  ): Promise<{ questions: Question[]; direction: "up" | "down" } | null> => {
+    if (!category || category.id === "custom") return null;
+    let delta = 0;
+    if (scoreSoFar >= 4) delta = 1;
+    else if (scoreSoFar <= 2) delta = -1;
+    if (delta === 0) return null;
+    const newGrade = Math.min(MAX_GRADE, Math.max(MIN_GRADE, grade + delta));
+    if (newGrade === grade) return null;
+    try {
+      const round = await getRound(category.id, newGrade, 15);
+      if (round.questions.length === 0) return null;
+      setGrade(newGrade);
+      return { questions: round.questions, direction: delta > 0 ? "up" : "down" };
+    } catch {
+      return null;
+    }
+  };
+
   const startCustom = () => {
     setCategory(CUSTOM_CATEGORY);
     setScreen("custom-upload");
@@ -138,7 +163,12 @@ export default function App() {
 
       {screen === "quiz" && category && questions.length > 0 && (
         <>
-          <Quiz category={category} questions={questions} onFinish={finishQuiz} />
+          <Quiz
+            category={category}
+            questions={questions}
+            onFinish={finishQuiz}
+            onCheckpoint={source === "custom" ? undefined : midRoundAdjust}
+          />
           {source === "wikipedia" && (
             <p className="source-note">
               Groq is unavailable right now — these questions were built from Wikipedia instead.

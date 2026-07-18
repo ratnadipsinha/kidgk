@@ -7,7 +7,15 @@ type Props = {
   category: Category;
   questions: Question[];
   onFinish: (score: number) => void;
+  // Called once, right after the 5th question is answered, with the score so
+  // far (0-5). May return replacement questions for the REST of the round
+  // (harder or easier), or null to continue unchanged.
+  onCheckpoint?: (
+    scoreSoFar: number
+  ) => Promise<{ questions: Question[]; direction: "up" | "down" } | null>;
 };
+
+const CHECKPOINT_AFTER = 5;
 
 type HintState =
   | { status: "closed" }
@@ -30,14 +38,19 @@ function splitOnTopic(question: string, topic: string | null): [string, string, 
   return [question.slice(0, idx), question.slice(idx, idx + topic.length), question.slice(idx + topic.length)];
 }
 
-export default function Quiz({ category, questions, onFinish }: Props) {
+export default function Quiz({ category, questions, onFinish, onCheckpoint }: Props) {
+  // Local copy so the checkpoint can swap the not-yet-seen remainder of the
+  // round for harder/easier questions without the parent re-mounting us.
+  const [items, setItems] = useState<Question[]>(questions);
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [choice, setChoice] = useState<number | null>(null);
   const [hint, setHint] = useState<HintState>({ status: "closed" });
+  const [adjusting, setAdjusting] = useState(false);
+  const [difficultyNote, setDifficultyNote] = useState<"up" | "down" | null>(null);
 
-  const item = questions[index];
-  const isLast = index === questions.length - 1;
+  const item = items[index];
+  const isLast = index === items.length - 1;
   const letters = ["A", "B", "C", "D"];
   const hintOpen = hint.status !== "closed";
   const split = splitOnTopic(item.question, item.topic);
@@ -48,14 +61,30 @@ export default function Quiz({ category, questions, onFinish }: Props) {
     if (i === item.answer) setScore((s) => s + 1);
   };
 
-  const next = () => {
+  const next = async () => {
     setHint({ status: "closed" });
-    if (!isLast) {
-      setIndex((i) => i + 1);
-      setChoice(null);
-    } else {
+    if (isLast) {
       onFinish(score);
+      return;
     }
+
+    // Checkpoint: just answered the 5th question of a longer round.
+    if (index === CHECKPOINT_AFTER - 1 && onCheckpoint && items.length > CHECKPOINT_AFTER) {
+      setAdjusting(true);
+      const result = await onCheckpoint(score);
+      setAdjusting(false);
+      if (result) {
+        const remaining = items.length - CHECKPOINT_AFTER;
+        setItems([
+          ...items.slice(0, CHECKPOINT_AFTER),
+          ...result.questions.slice(0, remaining),
+        ]);
+        setDifficultyNote(result.direction);
+      }
+    }
+
+    setIndex((i) => i + 1);
+    setChoice(null);
   };
 
   const openHint = async () => {
@@ -79,7 +108,7 @@ export default function Quiz({ category, questions, onFinish }: Props) {
           </div>
           <div className="quiz-top-right">
             <div className="quiz-score">
-              Question {index + 1} of {questions.length} · Score {score}
+              Question {index + 1} of {items.length} · Score {score}
             </div>
             <button
               type="button"
@@ -95,9 +124,17 @@ export default function Quiz({ category, questions, onFinish }: Props) {
         <div className="progress-track">
           <div
             className="progress-fill"
-            style={{ width: `${(index / questions.length) * 100}%` }}
+            style={{ width: `${(index / items.length) * 100}%` }}
           />
         </div>
+
+        {difficultyNote && index >= CHECKPOINT_AFTER && (
+          <div className={`difficulty-note difficulty-note-${difficultyNote}`}>
+            {difficultyNote === "up"
+              ? "🔥 Great start — the questions just got a bit harder!"
+              : "💪 Adjusted — the questions are a bit easier from here."}
+          </div>
+        )}
 
         {item.image_url && (
           <img
@@ -159,8 +196,8 @@ export default function Quiz({ category, questions, onFinish }: Props) {
         )}
 
         <div className="quiz-nav">
-          <button className="primary" disabled={choice === null} onClick={next}>
-            {isLast ? "See results" : "Next question"}
+          <button className="primary" disabled={choice === null || adjusting} onClick={next}>
+            {adjusting ? "Adjusting difficulty…" : isLast ? "See results" : "Next question"}
           </button>
         </div>
       </div>
