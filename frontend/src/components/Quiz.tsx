@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { Category, Question } from "../lib/types";
 import { fetchHintDetails } from "../lib/hint";
 import type { HintDetails } from "../lib/hint";
+import Confetti from "./Confetti";
 
 type Props = {
   category: Category;
@@ -54,6 +55,8 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
   // the streak.
   const [hintStreak, setHintStreak] = useState(0);
   const [usedHintThisQuestion, setUsedHintThisQuestion] = useState(false);
+  const [confettiBurst, setConfettiBurst] = useState(0);
+  const [shake, setShake] = useState(false);
 
   const item = items[index];
   const isLast = index === items.length - 1;
@@ -65,7 +68,13 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
   const select = (i: number) => {
     if (choice !== null) return;
     setChoice(i);
-    if (i === item.answer) setScore((s) => s + 1);
+    if (i === item.answer) {
+      setScore((s) => s + 1);
+      setConfettiBurst((b) => b + 1);
+    } else {
+      setShake(true);
+      setTimeout(() => setShake(false), 420);
+    }
   };
 
   const next = async () => {
@@ -112,6 +121,7 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
 
   return (
     <div className={`quiz-layout ${hintOpen ? "hint-open" : ""}`}>
+      <Confetti burst={confettiBurst} />
       <div className="quiz">
         <div className="quiz-top">
           <div className="quiz-cat">
@@ -186,11 +196,11 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
           )}
         </p>
 
-        <div className="options">
+        <div className={`options ${shake ? "options-shake" : ""}`}>
           {item.options.map((opt, i) => {
             let cls = "option";
             if (choice !== null) {
-              if (i === item.answer) cls += " correct";
+              if (i === item.answer) cls += " correct correct-blast";
               else if (i === choice) cls += " wrong";
             }
             return (
