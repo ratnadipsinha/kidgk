@@ -23,6 +23,14 @@ with open(DATA_DIR / "fallback_questions.json", encoding="utf-8") as f:
 with open(DATA_DIR / "fallback_questions_expanded.json", encoding="utf-8") as f:
     FALLBACK_BANK_EXPANDED = json.load(f)
 
+# Pre-authored static bank keyed by "category:grade" - the primary source.
+with open(DATA_DIR / "groq_bank.json", encoding="utf-8") as f:
+    STATIC_BANK = json.load(f)
+
+
+def _static_pool(category_id: str, grade: int) -> list[dict]:
+    return STATIC_BANK.get(f"{category_id}:{grade}") or []
+
 
 def _offline_pool(category_id: str) -> list[dict]:
     expanded = FALLBACK_BANK_EXPANDED.get(category_id) or []
@@ -55,11 +63,13 @@ async def _attach_images(questions: list[dict]) -> list[dict]:
 
 
 async def _get_pool(category_id: str, category_name: str, grade: int) -> tuple[list[dict], str]:
-    """Returns a cached (or freshly generated) pool of questions plus its source.
-    Three tiers, in order: Groq (fresh, cached) -> Wikipedia-derived facts
-    (cached, so a Groq outage/rate-limit doesn't re-hit Wikipedia every
-    request) -> static offline bank (never cached, always retries the live
-    tiers next time)."""
+    """Returns a pool of questions plus its source. Primary is the pre-authored
+    static bank (instant, no API). Only if that cell is missing does it fall
+    back to Groq -> Wikipedia -> older offline banks."""
+    static = _static_pool(category_id, grade)
+    if len(static) >= POOL_SIZE:
+        return static, "bank"
+
     key = f"{category_id}:{grade}"
     cached = _pool_cache.get(key)
     if cached is not None:

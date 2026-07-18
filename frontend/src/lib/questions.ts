@@ -47,11 +47,32 @@ async function attachImages(questions: Question[]): Promise<Question[]> {
   return questions.map((q, i) => ({ ...q, image_url: urls[i] }));
 }
 
+// Primary tier: the pre-generated static bank (tools/build_groq_bank.py),
+// keyed by category:grade and committed to the repo. Instant, high quality,
+// and immune to Groq's shared daily rate limit - each round is a fresh
+// random sample from the ~30 questions per cell. Lazily imported as its
+// own chunk to keep the main bundle small.
+async function staticBankPool(categoryId: string, grade: number): Promise<Question[] | null> {
+  try {
+    const { GROQ_BANK } = await import("./groqBank");
+    const pool = GROQ_BANK[`${categoryId}:${grade}`];
+    return pool && pool.length >= POOL_SIZE ? pool : null;
+  } catch {
+    return null;
+  }
+}
+
 async function getPool(
   categoryId: string,
   categoryName: string,
   grade: number
 ): Promise<{ pool: Question[]; source: RoundSource }> {
+  // The static bank is not cached in poolCache on purpose: sampling the
+  // full 30-question cell fresh each round is what gives round-to-round
+  // variety ("put things randomly").
+  const bankPool = await staticBankPool(categoryId, grade);
+  if (bankPool) return { pool: bankPool, source: "bank" };
+
   const key = `${categoryId}:${grade}`;
   const cached = poolCache.get(key);
   if (cached) return { pool: cached, source: "cache" };

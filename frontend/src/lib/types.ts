@@ -20,7 +20,7 @@ export type Question = {
   topic: string | null;
 };
 
-export type RoundSource = "groq" | "cache" | "wikipedia" | "fallback";
+export type RoundSource = "bank" | "groq" | "cache" | "wikipedia" | "fallback";
 
 export type Round = {
   category: string;
