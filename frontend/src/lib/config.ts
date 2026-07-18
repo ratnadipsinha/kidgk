@@ -9,19 +9,23 @@ export const GROQ_API_KEY = "gsk_wvlnUzXrZlfd9REm03gWWGdyb3FYdkIXEm9r6OGxYKcraJU
 export const GROQ_MODEL = "llama-3.3-70b-versatile";
 
 // Gemini (free tier, aistudio.google.com/apikey) powers the "Custom" photo
-// feature via its vision model. Unlike Groq, Google's secret scanner
-// actively revokes any Gemini key committed to a public repo (within
-// minutes), so it CANNOT be embedded here. Instead the user enters their
-// own key once and it's stored in the browser's localStorage - see
-// geminiKey.ts. Never hard-code a Gemini key in this file.
+// feature via its vision model. The key is injected at BUILD time from a
+// GitHub Actions secret (VITE_GEMINI_API_KEY) - so the deployed app has it
+// baked in (no manual entry needed) but it is NEVER committed to the repo,
+// which is what got the previous key auto-revoked by Google's scanner.
+// A user-entered key in localStorage overrides the build-time one (and is
+// the only path when building locally without the secret).
 const GEMINI_KEY_STORAGE = "kidgk_gemini_key";
+const BUILD_GEMINI_KEY = (import.meta.env.VITE_GEMINI_API_KEY as string | undefined) ?? "";
 
 export function getGeminiKey(): string {
   try {
-    return localStorage.getItem(GEMINI_KEY_STORAGE) ?? "";
+    const stored = localStorage.getItem(GEMINI_KEY_STORAGE);
+    if (stored) return stored;
   } catch {
-    return "";
+    // localStorage unavailable - fall through to the build-time key
   }
+  return BUILD_GEMINI_KEY;
 }
 
 export function setGeminiKey(key: string): void {

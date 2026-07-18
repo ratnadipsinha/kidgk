@@ -4,7 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - "frontend/dist/**"
+      - "frontend/**"
+      - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -24,9 +25,22 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      # frontend/dist is committed to the repo (see DEPLOYMENT.md - it's a
-      # pre-built static bundle, not generated here) so this workflow just
-      # publishes it as-is, no build step needed.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      # Build fresh in CI so the Gemini key can be injected from a GitHub
+      # Actions secret (VITE_GEMINI_API_KEY) at build time. It ends up only in
+      # the deployed bundle, never in the committed source - which is what got
+      # the previously committed key auto-revoked by Google's scanner.
+      - name: Build
+        working-directory: frontend
+        env:
+          VITE_GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          npm ci
+          npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
           path: frontend/dist
