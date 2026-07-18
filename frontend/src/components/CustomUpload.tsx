@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import type { Question } from "../lib/types";
 import { extractTextFromImage } from "../lib/ocr";
 import { generateQuestionsFromText } from "../lib/customQuestions";
+import { generateQuestionsFromImage, geminiConfigured } from "../lib/geminiVision";
 
 type Props = {
   grade: number;
@@ -11,9 +12,19 @@ type Props = {
 
 type Stage =
   | { step: "idle" }
+  | { step: "reading" }
   | { step: "ocr"; progress: number }
   | { step: "generating" }
   | { step: "error"; message: string };
+
+function readAsDataUrl(file: File): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result as string);
+    reader.onerror = () => reject(new Error("Could not read that file."));
+    reader.readAsDataURL(file);
+  });
+}
 
 export default function CustomUpload({ grade, onReady, onCancel }: Props) {
   const [stage, setStage] = useState<Stage>({ step: "idle" });
@@ -22,14 +33,24 @@ export default function CustomUpload({ grade, onReady, onCancel }: Props) {
 
   const handleFile = async (file: File) => {
     setPreview(URL.createObjectURL(file));
-    setStage({ step: "ocr", progress: 0 });
     try {
+      // Preferred path: send the image straight to Gemini's vision model,
+      // which reads the page's real layout and content far better than OCR.
+      if (geminiConfigured()) {
+        setStage({ step: "reading" });
+        const dataUrl = await readAsDataUrl(file);
+        const questions = await generateQuestionsFromImage(dataUrl, grade, 5);
+        onReady(questions);
+        return;
+      }
+
+      // Fallback (no Gemini key configured): OCR the text, then use Groq.
+      setStage({ step: "ocr", progress: 0 });
       const text = await extractTextFromImage(file, (p) => {
         if (p.status === "recognizing text") {
           setStage({ step: "ocr", progress: p.progress });
         }
       });
-
       setStage({ step: "generating" });
       const questions = await generateQuestionsFromText(text, grade, 5);
       onReady(questions);
@@ -69,6 +90,10 @@ export default function CustomUpload({ grade, onReady, onCancel }: Props) {
             onChange={onFileChange}
           />
         </>
+      )}
+
+      {stage.step === "reading" && (
+        <div className="custom-upload-status">Reading the page…</div>
       )}
 
       {stage.step === "ocr" && (

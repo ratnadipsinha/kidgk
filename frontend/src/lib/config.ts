@@ -7,3 +7,8 @@
 // console.groq.com if abuse/rate-limiting shows up.
 export const GROQ_API_KEY = "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";
 export const GROQ_MODEL = "llama-3.3-70b-versatile";
+
+// Gemini (free tier, aistudio.google.com/apikey) - used for the "Custom"
+// photo feature, where its vision model reads the actual page far better
+// than OCR could. Same public-page tradeoff as the Groq key above.
+export const GEMINI_API_KEY: string = "AIzaSyDtwfaCpjEPtrTyk9zSqwu-R9r4Fbu_6jo";
