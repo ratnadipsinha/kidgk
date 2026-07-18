@@ -196,7 +196,7 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
           {item.options.map((opt, i) => {
             let cls = `option option--${letters[i].toLowerCase()}`;
             if (choice !== null) {
-              if (i === item.answer) cls += " correct correct-blast";
+              if (i === item.answer) cls += " correct";
               else if (i === choice) cls += " wrong";
             }
             return (
