@@ -198,7 +198,7 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
 
         <div className={`options ${shake ? "options-shake" : ""}`}>
           {item.options.map((opt, i) => {
-            let cls = "option";
+            let cls = `option option--${letters[i].toLowerCase()}`;
             if (choice !== null) {
               if (i === item.answer) cls += " correct correct-blast";
               else if (i === choice) cls += " wrong";
@@ -211,8 +211,10 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
                 disabled={choice !== null}
                 onClick={() => select(i)}
               >
-                <span className="key">{letters[i]}</span>
-                <span>{opt}</span>
+                <span className="opt-check" aria-hidden="true" />
+                <span>
+                  {letters[i]}. {opt}
+                </span>
               </button>
             );
           })}

@@ -114,7 +114,15 @@ export default function App() {
   return (
     <div className="page">
       <header>
-        <div className="eyebrow">KidGK</div>
+        <div className="title-wrap">
+          <span className="title-side" aria-hidden="true">🪐</span>
+          <div className="title-banner">
+            <p className="title-text">
+              Kid<span className="accent">GK</span>
+            </p>
+          </div>
+          <span className="title-side" aria-hidden="true">🚀</span>
+        </div>
         <h1>
           {screen === "wheel" && "Spin the wheel, get your category"}
           {screen === "custom-upload" && "Make a quiz from your own photo"}

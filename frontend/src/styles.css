@@ -1,24 +1,38 @@
-:root {
-  --bg: #fef8ec;
-  --ink: #2b2440;
-  --ink-soft: #5b5270;
-  --card: #ffffff;
-  --card-border: #eee0c8;
-  --accent: #ff5da2;
-  --accent-ink: #ffffff;
-  --shadow: rgba(43, 36, 64, 0.14);
+/* KidGK — space/game skin. A single committed visual world (deep-space
+   night, glowing "hologram" cards, chunky pill buttons) rather than a
+   light/dark toggle - matches the approved game-style mockup. */
+@font-face {
+  font-family: "Fredoka";
+  src: url("../fonts/Fredoka.ttf") format("truetype");
+  font-weight: 400 700;
+  font-display: swap;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #181228;
-    --ink: #f4eefc;
-    --ink-soft: #b6acc9;
-    --card: #241a38;
-    --card-border: #3a2c54;
-    --accent: #ff77b3;
-    --accent-ink: #1a1027;
-    --shadow: rgba(0, 0, 0, 0.45);
-  }
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito.ttf") format("truetype");
+  font-weight: 400 800;
+  font-display: swap;
+}
+
+:root {
+  --bg-top: #0a0d24;
+  --bg-mid: #171339;
+  --bg-bottom: #241a4a;
+  --ink: #ffffff;
+  --ink-soft: #c9c3e8;
+  --card: rgba(30, 40, 90, 0.5);
+  --card-strong: rgba(20, 25, 60, 0.7);
+  --card-border: rgba(120, 200, 255, 0.35);
+  --glow: rgba(90, 170, 255, 0.35);
+  --accent: #5fd0ff;
+  --accent-ink: #0d2a3d;
+  --gold: #ffc94a;
+  --gold-dark: #d68f0e;
+  --success: #2fa350;
+  --success-dark: #1c7a38;
+  --danger: #e0473f;
+  --danger-dark: #b62f28;
+  --shadow: rgba(0, 0, 0, 0.55);
 }
 
 * {
@@ -27,12 +41,28 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: var(--bg);
   color: var(--ink);
-  font-family: "Trebuchet MS", "Segoe UI Rounded", "Segoe UI", ui-rounded, system-ui, sans-serif;
+  font-family: "Nunito", "Segoe UI", sans-serif;
   display: flex;
   justify-content: center;
   padding: 48px 20px 64px;
+  background:
+    radial-gradient(1.5px 1.5px at 8% 10%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 22% 6%, #fff, transparent),
+    radial-gradient(2px 2px at 35% 14%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 50% 5%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 68% 9%, #fff, transparent),
+    radial-gradient(2px 2px at 82% 13%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 92% 7%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 12% 30%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 88% 34%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 6% 55%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 94% 60%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 15% 75%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 85% 80%, #fff, transparent),
+    radial-gradient(ellipse 900px 600px at 50% 8%, #2a2166 0%, transparent 60%),
+    linear-gradient(180deg, var(--bg-top) 0%, var(--bg-mid) 35%, var(--bg-bottom) 70%, #2a1740 100%);
+  background-attachment: fixed;
 }
 
 .page {
@@ -47,19 +77,52 @@ header {
   text-align: center;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+.title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 8px;
 }
-.eyebrow {
-  font-size: 13px;
+.title-side {
+  font-size: 30px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
+}
+.title-banner {
+  position: relative;
+  padding: 10px 24px;
+  background: linear-gradient(180deg, #5a3fa8, #3d2a7a 55%, #2a1c5c);
+  border: 2px solid rgba(180, 150, 255, 0.4);
+  border-radius: 14px;
+  box-shadow: 0 6px 0 #1c1240, 0 10px 18px -6px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  clip-path: polygon(6% 0%, 94% 0%, 100% 50%, 94% 100%, 6% 100%, 0% 50%);
+}
+.title-text {
+  font-family: "Fredoka", sans-serif;
   font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  font-size: 26px;
+  margin: 0;
+  text-align: center;
+  line-height: 1.05;
+  background: linear-gradient(180deg, #fff6da, var(--gold) 55%, var(--gold-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 0 #7a3d1f);
+}
+.title-text .accent {
   color: var(--accent);
+  -webkit-text-fill-color: var(--accent);
+  filter: drop-shadow(0 2px 0 #0d4a63);
 }
 h1 {
-  font-size: clamp(24px, 4vw, 36px);
+  font-family: "Fredoka", sans-serif;
+  font-size: clamp(18px, 3vw, 24px);
   margin: 0;
-  font-weight: 800;
+  font-weight: 600;
+  color: var(--ink);
+  text-wrap: balance;
 }
 .grade-select {
   display: flex;
@@ -69,12 +132,13 @@ h1 {
   font-weight: 700;
   font-size: 14px;
   margin-top: 4px;
+  color: var(--ink-soft);
 }
 .grade-select select {
   padding: 6px 10px;
   border-radius: 10px;
   border: 1px solid var(--card-border);
-  background: var(--card);
+  background: var(--card-strong);
   color: var(--ink);
   font-weight: 700;
 }
@@ -92,12 +156,23 @@ h1 {
   flex-wrap: wrap;
 }
 
+/* ---- "hologram screen" card treatment, shared by every panel ---- */
+.wheel-block,
+.category-cards,
+.quiz,
+.hint-drawer,
+.results,
+.custom-upload {
+  background: linear-gradient(160deg, rgba(40, 55, 110, 0.55), rgba(15, 20, 55, 0.75));
+  border: 2px solid var(--card-border);
+  border-radius: 26px;
+  box-shadow: 0 0 0 1px rgba(120, 200, 255, 0.2), 0 0 30px 2px var(--glow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 18px 30px -10px var(--shadow);
+  backdrop-filter: blur(3px);
+}
+
 .wheel-block {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius: 28px;
   padding: 36px;
-  box-shadow: 0 20px 50px -20px var(--shadow);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,17 +182,14 @@ h1 {
 }
 
 .category-cards {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius: 28px;
   padding: 28px;
-  box-shadow: 0 20px 50px -20px var(--shadow);
   flex: 1 1 320px;
   max-width: 420px;
 }
 .category-cards-label {
+  font-family: "Fredoka", sans-serif;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-soft);
@@ -131,7 +203,7 @@ h1 {
 }
 .category-card {
   appearance: none;
-  background: var(--card);
+  background: rgba(255, 255, 255, 0.06);
   border: 2px solid var(--card-border);
   border-radius: 16px;
   padding: 14px 10px;
@@ -140,11 +212,12 @@ h1 {
   align-items: center;
   gap: 8px;
   cursor: pointer;
-  font-family: inherit;
+  font-family: "Fredoka", sans-serif;
   transition: transform 0.12s ease, border-color 0.12s ease;
 }
 .category-card:hover:not(:disabled) {
   transform: translateY(-2px);
+  border-color: var(--accent);
 }
 .category-card:disabled {
   opacity: 0.5;
@@ -153,25 +226,26 @@ h1 {
 .category-card-swatch {
   width: 44px;
   height: 44px;
-  border-radius: 12px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 22px;
+  box-shadow: inset -4px -4px 6px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(255, 255, 255, 0.3);
 }
 .category-card-name {
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--ink);
   text-align: center;
 }
 .category-card-custom {
   border-style: dashed;
-  border-color: var(--accent);
+  border-color: var(--gold);
 }
 .category-card-swatch-custom {
-  background: color-mix(in srgb, var(--accent) 16%, transparent);
-  color: var(--accent);
+  background: color-mix(in srgb, var(--gold) 25%, transparent);
+  color: var(--gold);
 }
 
 .wheel-wrap {
@@ -192,29 +266,32 @@ h1 {
   height: 0;
   border-left: 16px solid transparent;
   border-right: 16px solid transparent;
-  border-top: 26px solid var(--ink);
+  border-top: 26px solid var(--gold);
   z-index: 5;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.5));
 }
 canvas {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  box-shadow: 0 0 0 8px var(--card), 0 0 0 11px var(--card-border), 0 18px 40px -14px var(--shadow);
+  box-shadow: 0 0 0 6px rgba(15, 20, 55, 0.8), 0 0 0 9px var(--card-border), 0 0 30px 4px var(--glow),
+    0 18px 40px -14px var(--shadow);
 }
 .hub {
   position: absolute;
   width: 76px;
   height: 76px;
   border-radius: 50%;
-  background: var(--ink);
-  color: var(--card);
+  background: linear-gradient(180deg, #5a3fa8, #2a1c5c);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 800;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 700;
   font-size: 15px;
   cursor: pointer;
-  border: 4px solid var(--card);
+  border: 4px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 6px 18px var(--shadow), 0 0 0 0 color-mix(in srgb, var(--accent) 55%, transparent);
   user-select: none;
   z-index: 4;
@@ -251,14 +328,21 @@ canvas {
 }
 button.primary {
   appearance: none;
-  border: none;
-  background: var(--accent);
-  color: var(--accent-ink);
-  font-weight: 800;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(180deg, #ff8fc4, var(--accent-ink-accent, #ff5da2) 55%, #d43f80);
+  background: linear-gradient(180deg, #ff8fc4, #ff5da2 55%, #d43f80);
+  color: #fff;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 700;
   font-size: 15px;
   padding: 13px 22px;
   border-radius: 999px;
   cursor: pointer;
+  box-shadow: 0 4px 0 #9c2c5c;
+}
+button.primary:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #9c2c5c;
 }
 button.primary:disabled {
   opacity: 0.5;
@@ -266,14 +350,18 @@ button.primary:disabled {
 }
 button.ghost {
   appearance: none;
-  background: transparent;
-  border: 1px solid var(--card-border);
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid var(--card-border);
   color: var(--ink);
-  font-weight: 700;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
   font-size: 14px;
   padding: 12px 18px;
   border-radius: 999px;
   cursor: pointer;
+}
+button.ghost:hover:not(:disabled) {
+  border-color: var(--accent);
 }
 button.ghost:disabled {
   opacity: 0.5;
@@ -287,16 +375,17 @@ button.ghost:disabled {
 }
 
 .quiz {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius: 28px;
-  padding: 36px;
-  box-shadow: 0 20px 50px -20px var(--shadow);
+  padding: 26px 22px 22px;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 18px;
   flex: 1 1 0%;
   min-width: 0;
+}
+.quiz::before,
+.quiz::after {
+  /* not used - reserved for future corner clips */
+  content: none;
 }
 .quiz-top {
   display: flex;
@@ -308,33 +397,47 @@ button.ghost:disabled {
 .quiz-cat {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 800;
-  font-size: 15px;
+  gap: 8px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--card-border);
+  padding: 6px 12px;
+  border-radius: 999px;
 }
 .swatch {
-  width: 14px;
-  height: 14px;
-  border-radius: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
   display: inline-block;
 }
 .quiz-top-right {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 .quiz-score {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Fredoka", sans-serif;
   font-size: 13px;
-  font-weight: 700;
-  color: var(--ink-soft);
+  font-weight: 600;
+  color: var(--ink);
   font-variant-numeric: tabular-nums;
+  background: linear-gradient(180deg, rgba(70, 55, 120, 0.85), rgba(40, 30, 80, 0.85));
+  border: 1.5px solid rgba(180, 160, 255, 0.35);
+  padding: 6px 12px;
+  border-radius: 999px;
 }
 .hint-btn {
   appearance: none;
-  border: 1px solid var(--card-border);
-  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  border: 2px solid var(--card-border);
+  background: linear-gradient(180deg, rgba(255, 201, 74, 0.25), rgba(214, 143, 14, 0.2));
   color: var(--ink);
-  font-weight: 700;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
   font-size: 12px;
   padding: 7px 12px;
   border-radius: 999px;
@@ -342,12 +445,12 @@ button.ghost:disabled {
   white-space: nowrap;
 }
 .hint-btn:hover {
-  border-color: var(--accent);
+  border-color: var(--gold);
 }
 .hint-btn[aria-expanded="true"] {
-  background: var(--accent);
-  color: var(--accent-ink);
-  border-color: var(--accent);
+  background: linear-gradient(180deg, var(--gold), var(--gold-dark));
+  color: #4a3410;
+  border-color: var(--gold);
 }
 .hint-btn:disabled,
 .topic-highlight:disabled {
@@ -355,11 +458,7 @@ button.ghost:disabled {
   cursor: not-allowed;
 }
 .hint-drawer {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius: 24px;
   padding: 22px;
-  box-shadow: 0 20px 50px -20px var(--shadow);
   flex: 0 0 300px;
   display: flex;
   flex-direction: column;
@@ -394,8 +493,9 @@ button.ghost:disabled {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "Fredoka", sans-serif;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-soft);
@@ -439,13 +539,13 @@ button.ghost:disabled {
 .progress-track {
   height: 8px;
   border-radius: 999px;
-  background: color-mix(in srgb, var(--ink) 8%, transparent);
+  background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
 }
 .progress-fill {
   height: 100%;
   border-radius: 999px;
-  background: var(--accent);
+  background: linear-gradient(90deg, var(--accent), var(--gold));
   transition: width 0.35s ease;
 }
 .question-image {
@@ -457,14 +557,17 @@ button.ghost:disabled {
   object-position: center;
   margin: 0 auto;
   border-radius: 18px;
-  border: 1px solid var(--card-border);
-  background: color-mix(in srgb, var(--ink) 6%, transparent);
+  border: 2px solid var(--card-border);
+  background: rgba(255, 255, 255, 0.05);
 }
 .question-text {
-  font-size: clamp(19px, 2.6vw, 24px);
-  font-weight: 800;
+  font-family: "Fredoka", sans-serif;
+  font-size: clamp(18px, 2.4vw, 22px);
+  font-weight: 600;
   line-height: 1.35;
   margin: 0;
+  color: var(--ink);
+  text-wrap: balance;
 }
 .difficulty-note {
   font-size: 13px;
@@ -473,88 +576,90 @@ button.ghost:disabled {
   border-radius: 12px;
 }
 .difficulty-note-up {
-  color: #1a7f3c;
-  background: color-mix(in srgb, #3fb85f 12%, transparent);
+  color: #bdf5cd;
+  background: color-mix(in srgb, var(--success) 25%, transparent);
 }
 .difficulty-note-down {
-  color: #a4460a;
-  background: color-mix(in srgb, #ff8a3d 12%, transparent);
+  color: #ffd8b0;
+  background: color-mix(in srgb, var(--gold-dark) 25%, transparent);
 }
 
 .topic-highlight {
   appearance: none;
-  background: color-mix(in srgb, var(--accent) 18%, transparent);
+  background: color-mix(in srgb, var(--accent) 25%, transparent);
   border: none;
   border-bottom: 2px dotted var(--accent);
   color: inherit;
   font: inherit;
-  font-weight: 800;
+  font-weight: 700;
   padding: 0 2px;
   border-radius: 4px;
   cursor: pointer;
 }
 .topic-highlight:hover {
-  background: color-mix(in srgb, var(--accent) 28%, transparent);
+  background: color-mix(in srgb, var(--accent) 40%, transparent);
 }
 .topic-highlight[aria-expanded="true"] {
   background: var(--accent);
   color: var(--accent-ink);
 }
 .options {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
-}
-@media (max-width: 560px) {
-  .options {
-    grid-template-columns: 1fr;
-  }
 }
 .option {
   text-align: left;
   appearance: none;
-  border: 2px solid var(--card-border);
-  background: transparent;
-  color: var(--ink);
-  border-radius: 16px;
-  padding: 14px 16px;
-  font-size: 15px;
-  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.25);
   cursor: pointer;
+  padding: 12px 18px 12px 10px;
+  border-radius: 999px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 .option:hover:not(:disabled) {
-  border-color: var(--accent);
+  filter: brightness(1.08);
 }
-.option .key {
+.opt-check {
   flex: none;
-  width: 26px;
-  height: 26px;
-  border-radius: 8px;
-  background: color-mix(in srgb, var(--ink) 8%, transparent);
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+.opt-check::after {
+  content: "";
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
-  font-weight: 800;
 }
+
+/* four fixed option palettes, matching the approved mockup - independent
+   of the round's category color, so every round reads consistently */
+.option--a { background: linear-gradient(180deg, #6fd888, var(--success) 55%, var(--success-dark)); box-shadow: 0 4px 0 #14582a; }
+.option--b { background: linear-gradient(180deg, #66c2ea, var(--accent) 55%, #1f8fb0); box-shadow: 0 4px 0 #146178; }
+.option--c { background: linear-gradient(180deg, #f5836b, var(--danger) 55%, var(--danger-dark)); box-shadow: 0 4px 0 #8f2c31; }
+.option--d { background: linear-gradient(180deg, #ffd873, var(--gold) 55%, var(--gold-dark)); box-shadow: 0 4px 0 #a06d0a; color: #4a3410; }
+.option--d .opt-check { border-color: rgba(74, 52, 16, 0.6); background: rgba(74, 52, 16, 0.12); }
+
+.option.correct .opt-check::after { content: "✓"; color: #fff; font-weight: 700; }
+.option.wrong .opt-check::after { content: "✕"; color: #fff; font-weight: 700; }
 .option.correct {
-  border-color: #3fb85f;
-  background: color-mix(in srgb, #3fb85f 14%, transparent);
-}
-.option.correct .key {
-  background: #3fb85f;
-  color: #fff;
+  outline: 3px solid #fff;
+  outline-offset: -3px;
 }
 .option.wrong {
-  border-color: #ff5d6c;
-  background: color-mix(in srgb, #ff5d6c 12%, transparent);
-}
-.option.wrong .key {
-  background: #ff5d6c;
-  color: #fff;
+  filter: grayscale(0.4) brightness(0.85);
 }
 .correct-blast {
   animation: blast-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -594,7 +699,8 @@ button.ghost:disabled {
 .explain {
   border-radius: 16px;
   padding: 14px 16px;
-  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--card-border);
   font-size: 14px;
   color: var(--ink-soft);
 }
@@ -607,11 +713,7 @@ button.ghost:disabled {
 }
 
 .results {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius: 28px;
   padding: 44px 36px;
-  box-shadow: 0 20px 50px -20px var(--shadow);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -619,26 +721,34 @@ button.ghost:disabled {
   gap: 14px;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
+  max-width: 460px;
 }
 .results-perfect {
   animation: perfect-glow 1.8s ease-in-out 2;
 }
 @keyframes perfect-glow {
-  0%, 100% { box-shadow: 0 20px 50px -20px var(--shadow); }
-  50% { box-shadow: 0 20px 60px -10px color-mix(in srgb, var(--accent) 45%, transparent); }
+  0%, 100% { box-shadow: 0 0 30px 2px var(--glow); }
+  50% { box-shadow: 0 0 60px 10px color-mix(in srgb, var(--gold) 55%, transparent); }
 }
 .result-label {
+  font-family: "Fredoka", sans-serif;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-soft);
 }
 .score-big {
+  font-family: "Fredoka", sans-serif;
   font-size: 56px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1;
   font-variant-numeric: tabular-nums;
+  background: linear-gradient(180deg, #fff6da, var(--gold) 60%, var(--gold-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .score-pop {
   animation: score-pop-in 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -658,6 +768,7 @@ button.ghost:disabled {
   font-size: 16px;
   color: var(--ink-soft);
   font-weight: 700;
+  -webkit-text-fill-color: var(--ink-soft);
 }
 .score-msg {
   font-size: 16px;
@@ -672,12 +783,12 @@ button.ghost:disabled {
   margin: 0;
 }
 .grade-change-up {
-  color: #1a7f3c;
-  background: color-mix(in srgb, #3fb85f 14%, transparent);
+  color: #bdf5cd;
+  background: color-mix(in srgb, var(--success) 25%, transparent);
 }
 .grade-change-down {
-  color: #a4460a;
-  background: color-mix(in srgb, #ff8a3d 14%, transparent);
+  color: #ffd8b0;
+  background: color-mix(in srgb, var(--gold-dark) 25%, transparent);
 }
 
 .loading,
@@ -694,11 +805,7 @@ button.ghost:disabled {
 }
 
 .custom-upload {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius: 28px;
   padding: 44px 36px;
-  box-shadow: 0 20px 50px -20px var(--shadow);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -715,7 +822,7 @@ button.ghost:disabled {
   max-width: 100%;
   max-height: 260px;
   border-radius: 16px;
-  border: 1px solid var(--card-border);
+  border: 2px solid var(--card-border);
   object-fit: contain;
 }
 .custom-upload-status {
@@ -724,7 +831,7 @@ button.ghost:disabled {
   color: var(--ink-soft);
 }
 .custom-upload-error {
-  color: #c53030;
+  color: #ff9b9b;
 }
 .key-steps {
   text-align: left;
@@ -744,8 +851,8 @@ button.ghost:disabled {
   max-width: 380px;
   padding: 12px 14px;
   border-radius: 12px;
-  border: 1px solid var(--card-border);
-  background: var(--card);
+  border: 2px solid var(--card-border);
+  background: rgba(255, 255, 255, 0.08);
   color: var(--ink);
   font-size: 14px;
 }
