@@ -7,6 +7,7 @@ import CategoryCards from "./components/CategoryCards";
 import CustomUpload from "./components/CustomUpload";
 import Quiz from "./components/Quiz";
 import Results from "./components/Results";
+import ShootingStars from "./components/ShootingStars";
 
 type Screen = "wheel" | "custom-upload" | "loading" | "quiz" | "results" | "error";
 
@@ -113,6 +114,7 @@ export default function App() {
 
   return (
     <div className="page">
+      <ShootingStars />
       <header>
         <div className="title-wrap">
           <span className="title-side" aria-hidden="true">🪐</span>
