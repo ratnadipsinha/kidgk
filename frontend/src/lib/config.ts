@@ -8,7 +8,34 @@
 export const GROQ_API_KEY = "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";
 export const GROQ_MODEL = "llama-3.3-70b-versatile";
 
-// Gemini (free tier, aistudio.google.com/apikey) - used for the "Custom"
-// photo feature, where its vision model reads the actual page far better
-// than OCR could. Same public-page tradeoff as the Groq key above.
-export const GEMINI_API_KEY: string = "AIzaSyDtwfaCpjEPtrTyk9zSqwu-R9r4Fbu_6jo";
+// Gemini (free tier, aistudio.google.com/apikey) powers the "Custom" photo
+// feature via its vision model. Unlike Groq, Google's secret scanner
+// actively revokes any Gemini key committed to a public repo (within
+// minutes), so it CANNOT be embedded here. Instead the user enters their
+// own key once and it's stored in the browser's localStorage - see
+// geminiKey.ts. Never hard-code a Gemini key in this file.
+const GEMINI_KEY_STORAGE = "kidgk_gemini_key";
+
+export function getGeminiKey(): string {
+  try {
+    return localStorage.getItem(GEMINI_KEY_STORAGE) ?? "";
+  } catch {
+    return "";
+  }
+}
+
+export function setGeminiKey(key: string): void {
+  try {
+    localStorage.setItem(GEMINI_KEY_STORAGE, key.trim());
+  } catch {
+    // localStorage unavailable (private mode) - key just won't persist
+  }
+}
+
+export function clearGeminiKey(): void {
+  try {
+    localStorage.removeItem(GEMINI_KEY_STORAGE);
+  } catch {
+    // ignore
+  }
+}

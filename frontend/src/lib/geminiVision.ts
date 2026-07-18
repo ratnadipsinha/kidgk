@@ -1,5 +1,5 @@
 import type { Question } from "./types";
-import { GEMINI_API_KEY } from "./config";
+import { getGeminiKey } from "./config";
 import { filterSafe } from "./safety";
 
 const MODEL = "gemini-flash-lite-latest";
@@ -63,7 +63,7 @@ function parseQuestions(text: string): Question[] {
 }
 
 export function geminiConfigured(): boolean {
-  return !!GEMINI_API_KEY && GEMINI_API_KEY !== "your_gemini_api_key_here";
+  return getGeminiKey().length > 10;
 }
 
 /** Sends the raw image to Gemini's vision model and returns quiz questions
@@ -74,13 +74,14 @@ export async function generateQuestionsFromImage(
   grade: number,
   count = 5
 ): Promise<Question[]> {
-  if (!geminiConfigured()) throw new Error("Gemini not configured");
+  const key = getGeminiKey();
+  if (!key) throw new Error("Gemini not configured");
 
   const commaIdx = dataUrl.indexOf(",");
   const meta = dataUrl.slice(5, dataUrl.indexOf(";")); // e.g. image/jpeg
   const base64 = dataUrl.slice(commaIdx + 1);
 
-  const res = await fetch(`${URL}?key=${encodeURIComponent(GEMINI_API_KEY)}`, {
+  const res = await fetch(`${URL}?key=${encodeURIComponent(key)}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({

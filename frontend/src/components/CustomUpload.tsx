@@ -3,6 +3,7 @@ import type { Question } from "../lib/types";
 import { extractTextFromImage } from "../lib/ocr";
 import { generateQuestionsFromText } from "../lib/customQuestions";
 import { generateQuestionsFromImage, geminiConfigured } from "../lib/geminiVision";
+import { setGeminiKey } from "../lib/config";
 
 type Props = {
   grade: number;
@@ -29,7 +30,16 @@ function readAsDataUrl(file: File): Promise<string> {
 export default function CustomUpload({ grade, onReady, onCancel }: Props) {
   const [stage, setStage] = useState<Stage>({ step: "idle" });
   const [preview, setPreview] = useState<string | null>(null);
+  const [hasKey, setHasKey] = useState(geminiConfigured());
+  const [keyInput, setKeyInput] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const saveKey = () => {
+    const k = keyInput.trim();
+    if (k.length < 10) return;
+    setGeminiKey(k);
+    setHasKey(true);
+  };
 
   const handleFile = async (file: File) => {
     setPreview(URL.createObjectURL(file));
@@ -55,10 +65,16 @@ export default function CustomUpload({ grade, onReady, onCancel }: Props) {
       const questions = await generateQuestionsFromText(text, grade, 5);
       onReady(questions);
     } catch (e) {
-      setStage({
-        step: "error",
-        message: e instanceof Error ? e.message : "Something went wrong reading that image.",
-      });
+      const msg = e instanceof Error ? e.message : "Something went wrong reading that image.";
+      // A 403 (leaked/invalid/permission) means the saved key is bad - send
+      // the user back to the key screen to enter a fresh one.
+      if (/403|API key|PERMISSION_DENIED|not configured/i.test(msg)) {
+        setHasKey(false);
+        setStage({ step: "idle" });
+        setPreview(null);
+        return;
+      }
+      setStage({ step: "error", message: msg });
     }
   };
 
@@ -66,6 +82,46 @@ export default function CustomUpload({ grade, onReady, onCancel }: Props) {
     const file = e.target.files?.[0];
     if (file) handleFile(file);
   };
+
+  // One-time setup: a Gemini key can't be shipped in this public app (Google
+  // auto-revokes committed keys), so each user provides their own once. It's
+  // saved in this browser only.
+  if (!hasKey) {
+    return (
+      <div className="custom-upload">
+        <div className="custom-upload-label">
+          The Custom quiz reads your photo with Google Gemini. Paste a free Gemini
+          API key once to turn it on — it's saved only in this browser.
+        </div>
+        <ol className="key-steps">
+          <li>
+            Open{" "}
+            <a href="https://aistudio.google.com/apikey" target="_blank" rel="noreferrer">
+              aistudio.google.com/apikey
+            </a>{" "}
+            and sign in with Google.
+          </li>
+          <li>Click “Create API key”, then copy it.</li>
+          <li>Paste it below.</li>
+        </ol>
+        <input
+          type="password"
+          className="key-input"
+          placeholder="Paste your Gemini API key (AIza…)"
+          value={keyInput}
+          onChange={(e) => setKeyInput(e.target.value)}
+        />
+        <div className="actions">
+          <button className="primary" disabled={keyInput.trim().length < 10} onClick={saveKey}>
+            Save &amp; continue
+          </button>
+          <button className="ghost" onClick={onCancel}>
+            Back
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="custom-upload">

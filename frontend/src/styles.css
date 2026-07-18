@@ -652,6 +652,29 @@ button.ghost:disabled {
 .custom-upload-error {
   color: #c53030;
 }
+.key-steps {
+  text-align: left;
+  max-width: 46ch;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+.key-steps a {
+  color: var(--accent);
+  font-weight: 700;
+}
+.key-input {
+  width: 100%;
+  max-width: 380px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  color: var(--ink);
+  font-size: 14px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
