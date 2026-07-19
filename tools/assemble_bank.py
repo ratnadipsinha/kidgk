@@ -17,7 +17,7 @@ PARTS = ROOT / "tools" / "bank_parts"
 OUT_JSON = ROOT / "backend" / "data" / "groq_bank.json"
 OUT_TS = ROOT / "frontend" / "src" / "lib" / "groqBank.ts"
 
-CATEGORIES = ["space", "wildlife", "countries", "history", "famous_people", "science"]
+CATEGORIES = ["space", "wildlife", "countries", "history", "famous_people", "science", "sports"]
 # grade -> tier
 GRADE_TIER = {4: "a", 5: "a", 6: "b", 7: "b", 8: "c", 9: "c", 10: "c"}
 

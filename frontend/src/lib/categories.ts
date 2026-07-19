@@ -7,4 +7,5 @@ export const CATEGORIES: Category[] = [
   { id: "history", name: "History", emoji: "🏛️", color: "#ff8a3d" },
   { id: "famous_people", name: "Famous People", emoji: "👤", color: "#ff5d7a" },
   { id: "science", name: "Science", emoji: "🔬", color: "#8b5cf6" },
+  { id: "sports", name: "Sports", emoji: "⚽", color: "#2fa350" },
 ];
