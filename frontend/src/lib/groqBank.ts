@@ -22357,6 +22357,58 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "A cricket ball has a cork core wrapped in leather.",
       "image_keyword": null,
       "topic": "cricket ball"
+    },
+    {
+      "question": "Who is this footballer, an Argentine star who has won multiple Ballon d'Or awards?",
+      "options": [
+        "Lionel Messi",
+        "Cristiano Ronaldo",
+        "Neymar",
+        "Kylian Mbappe"
+      ],
+      "answer": 0,
+      "explanation": "Messi has won a record number of Ballon d'Or awards.",
+      "image_keyword": "Lionel Messi footballer",
+      "topic": "Lionel Messi"
+    },
+    {
+      "question": "Who is this footballer, a Portuguese star famous for his powerful jump and goal-scoring record?",
+      "options": [
+        "Cristiano Ronaldo",
+        "Lionel Messi",
+        "Neymar",
+        "Luka Modric"
+      ],
+      "answer": 0,
+      "explanation": "Ronaldo is one of football's all-time top scorers.",
+      "image_keyword": "Cristiano Ronaldo footballer",
+      "topic": "Cristiano Ronaldo"
+    },
+    {
+      "question": "Who is this cricketer, a former Indian captain known for his calm 'Captain Cool' nickname?",
+      "options": [
+        "MS Dhoni",
+        "Virat Kohli",
+        "Sachin Tendulkar",
+        "Rohit Sharma"
+      ],
+      "answer": 0,
+      "explanation": "Dhoni led India to World Cup and Champions Trophy wins.",
+      "image_keyword": "MS Dhoni cricketer",
+      "topic": "MS Dhoni"
+    },
+    {
+      "question": "Who is this cricketer, a modern Indian batting star known for his intensity on the field?",
+      "options": [
+        "Virat Kohli",
+        "MS Dhoni",
+        "Rahul Dravid",
+        "Sourav Ganguly"
+      ],
+      "answer": 0,
+      "explanation": "Kohli is one of the most prolific run-scorers of his generation.",
+      "image_keyword": "Virat Kohli cricketer",
+      "topic": "Virat Kohli"
     }
   ],
   "sports:5": [
@@ -22879,6 +22931,58 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "A cricket ball has a cork core wrapped in leather.",
       "image_keyword": null,
       "topic": "cricket ball"
+    },
+    {
+      "question": "Who is this footballer, an Argentine star who has won multiple Ballon d'Or awards?",
+      "options": [
+        "Lionel Messi",
+        "Cristiano Ronaldo",
+        "Neymar",
+        "Kylian Mbappe"
+      ],
+      "answer": 0,
+      "explanation": "Messi has won a record number of Ballon d'Or awards.",
+      "image_keyword": "Lionel Messi footballer",
+      "topic": "Lionel Messi"
+    },
+    {
+      "question": "Who is this footballer, a Portuguese star famous for his powerful jump and goal-scoring record?",
+      "options": [
+        "Cristiano Ronaldo",
+        "Lionel Messi",
+        "Neymar",
+        "Luka Modric"
+      ],
+      "answer": 0,
+      "explanation": "Ronaldo is one of football's all-time top scorers.",
+      "image_keyword": "Cristiano Ronaldo footballer",
+      "topic": "Cristiano Ronaldo"
+    },
+    {
+      "question": "Who is this cricketer, a former Indian captain known for his calm 'Captain Cool' nickname?",
+      "options": [
+        "MS Dhoni",
+        "Virat Kohli",
+        "Sachin Tendulkar",
+        "Rohit Sharma"
+      ],
+      "answer": 0,
+      "explanation": "Dhoni led India to World Cup and Champions Trophy wins.",
+      "image_keyword": "MS Dhoni cricketer",
+      "topic": "MS Dhoni"
+    },
+    {
+      "question": "Who is this cricketer, a modern Indian batting star known for his intensity on the field?",
+      "options": [
+        "Virat Kohli",
+        "MS Dhoni",
+        "Rahul Dravid",
+        "Sourav Ganguly"
+      ],
+      "answer": 0,
+      "explanation": "Kohli is one of the most prolific run-scorers of his generation.",
+      "image_keyword": "Virat Kohli cricketer",
+      "topic": "Virat Kohli"
     }
   ],
   "sports:6": [
@@ -22974,7 +23078,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "IPL"
     },
     {
-      "question": "Who holds the record for the most international centuries in cricket history?",
+      "question": "Who is this cricket legend, holder of the record for most international centuries?",
       "options": [
         "Sachin Tendulkar",
         "Don Bradman",
@@ -22983,7 +23087,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       ],
       "answer": 0,
       "explanation": "Tendulkar scored 100 international centuries.",
-      "image_keyword": null,
+      "image_keyword": "Sachin Tendulkar cricketer",
       "topic": "Sachin Tendulkar"
     },
     {
@@ -23143,7 +23247,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "2026 FIFA World Cup"
     },
     {
-      "question": "Which player is nicknamed 'The King of Football' and won three World Cups with Brazil?",
+      "question": "Who is this football legend, nicknamed 'The King' after winning three World Cups with Brazil?",
       "options": [
         "Pele",
         "Maradona",
@@ -23152,7 +23256,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       ],
       "answer": 0,
       "explanation": "Pele won in 1958, 1962, and 1970.",
-      "image_keyword": null,
+      "image_keyword": "Pele footballer",
       "topic": "Pele"
     },
     {
@@ -23323,6 +23427,58 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Ferrari has the most Constructors' titles in F1 history.",
       "image_keyword": null,
       "topic": "Ferrari"
+    },
+    {
+      "question": "Who is this driver, a seven-time F1 World Champion from Germany who dominated the 2000s?",
+      "options": [
+        "Michael Schumacher",
+        "Lewis Hamilton",
+        "Sebastian Vettel",
+        "Kimi Raikkonen"
+      ],
+      "answer": 0,
+      "explanation": "Schumacher won five straight titles with Ferrari.",
+      "image_keyword": "Michael Schumacher F1 driver",
+      "topic": "Michael Schumacher"
+    },
+    {
+      "question": "Who is this driver, a British seven-time F1 World Champion known for his time at Mercedes?",
+      "options": [
+        "Lewis Hamilton",
+        "Michael Schumacher",
+        "Max Verstappen",
+        "Nico Rosberg"
+      ],
+      "answer": 0,
+      "explanation": "Hamilton is tied for the most drivers' titles in F1 history.",
+      "image_keyword": "Lewis Hamilton F1 driver",
+      "topic": "Lewis Hamilton"
+    },
+    {
+      "question": "Who is this cricketer, an Australian spin bowling legend regarded as one of the greatest bowlers ever?",
+      "options": [
+        "Shane Warne",
+        "Glenn McGrath",
+        "Ricky Ponting",
+        "Steve Waugh"
+      ],
+      "answer": 0,
+      "explanation": "Warne took over 700 Test wickets with his leg-spin.",
+      "image_keyword": "Shane Warne cricketer",
+      "topic": "Shane Warne"
+    },
+    {
+      "question": "Who is this footballer, a Brazilian forward known for his flair and famous for playing at Barcelona and PSG?",
+      "options": [
+        "Neymar",
+        "Ronaldinho",
+        "Kaka",
+        "Robinho"
+      ],
+      "answer": 0,
+      "explanation": "Neymar became one of the most expensive transfers ever.",
+      "image_keyword": "Neymar footballer",
+      "topic": "Neymar"
     }
   ],
   "sports:7": [
@@ -23418,7 +23574,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "IPL"
     },
     {
-      "question": "Who holds the record for the most international centuries in cricket history?",
+      "question": "Who is this cricket legend, holder of the record for most international centuries?",
       "options": [
         "Sachin Tendulkar",
         "Don Bradman",
@@ -23427,7 +23583,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       ],
       "answer": 0,
       "explanation": "Tendulkar scored 100 international centuries.",
-      "image_keyword": null,
+      "image_keyword": "Sachin Tendulkar cricketer",
       "topic": "Sachin Tendulkar"
     },
     {
@@ -23587,7 +23743,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "2026 FIFA World Cup"
     },
     {
-      "question": "Which player is nicknamed 'The King of Football' and won three World Cups with Brazil?",
+      "question": "Who is this football legend, nicknamed 'The King' after winning three World Cups with Brazil?",
       "options": [
         "Pele",
         "Maradona",
@@ -23596,7 +23752,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       ],
       "answer": 0,
       "explanation": "Pele won in 1958, 1962, and 1970.",
-      "image_keyword": null,
+      "image_keyword": "Pele footballer",
       "topic": "Pele"
     },
     {
@@ -23767,6 +23923,58 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Ferrari has the most Constructors' titles in F1 history.",
       "image_keyword": null,
       "topic": "Ferrari"
+    },
+    {
+      "question": "Who is this driver, a seven-time F1 World Champion from Germany who dominated the 2000s?",
+      "options": [
+        "Michael Schumacher",
+        "Lewis Hamilton",
+        "Sebastian Vettel",
+        "Kimi Raikkonen"
+      ],
+      "answer": 0,
+      "explanation": "Schumacher won five straight titles with Ferrari.",
+      "image_keyword": "Michael Schumacher F1 driver",
+      "topic": "Michael Schumacher"
+    },
+    {
+      "question": "Who is this driver, a British seven-time F1 World Champion known for his time at Mercedes?",
+      "options": [
+        "Lewis Hamilton",
+        "Michael Schumacher",
+        "Max Verstappen",
+        "Nico Rosberg"
+      ],
+      "answer": 0,
+      "explanation": "Hamilton is tied for the most drivers' titles in F1 history.",
+      "image_keyword": "Lewis Hamilton F1 driver",
+      "topic": "Lewis Hamilton"
+    },
+    {
+      "question": "Who is this cricketer, an Australian spin bowling legend regarded as one of the greatest bowlers ever?",
+      "options": [
+        "Shane Warne",
+        "Glenn McGrath",
+        "Ricky Ponting",
+        "Steve Waugh"
+      ],
+      "answer": 0,
+      "explanation": "Warne took over 700 Test wickets with his leg-spin.",
+      "image_keyword": "Shane Warne cricketer",
+      "topic": "Shane Warne"
+    },
+    {
+      "question": "Who is this footballer, a Brazilian forward known for his flair and famous for playing at Barcelona and PSG?",
+      "options": [
+        "Neymar",
+        "Ronaldinho",
+        "Kaka",
+        "Robinho"
+      ],
+      "answer": 0,
+      "explanation": "Neymar became one of the most expensive transfers ever.",
+      "image_keyword": "Neymar footballer",
+      "topic": "Neymar"
     }
   ],
   "sports:8": [
@@ -23862,7 +24070,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "follow-on"
     },
     {
-      "question": "Which batter holds the highest Test batting average in history, at 99.94?",
+      "question": "Who is this batter, holder of the highest Test batting average in history at 99.94?",
       "options": [
         "Don Bradman",
         "Sachin Tendulkar",
@@ -23871,7 +24079,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       ],
       "answer": 0,
       "explanation": "Bradman's average remains cricket's most famous statistic.",
-      "image_keyword": null,
+      "image_keyword": "Don Bradman cricketer",
       "topic": "Don Bradman"
     },
     {
@@ -24018,7 +24226,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "Total Football"
     },
     {
-      "question": "Who scored the controversial 'Hand of God' goal in the 1986 World Cup?",
+      "question": "Who is this player, scorer of the controversial 'Hand of God' goal in the 1986 World Cup?",
       "options": [
         "Diego Maradona",
         "Pele",
@@ -24027,7 +24235,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       ],
       "answer": 0,
       "explanation": "Maradona punched the ball into the net against England.",
-      "image_keyword": null,
+      "image_keyword": "Diego Maradona footballer",
       "topic": "Hand of God"
     },
     {
@@ -24109,7 +24317,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "parc ferme"
     },
     {
-      "question": "Who became F1's youngest World Champion in 2010, at just 23 years old?",
+      "question": "Who is this driver, F1's youngest World Champion in 2010 at just 23 years old?",
       "options": [
         "Sebastian Vettel",
         "Max Verstappen",
@@ -24118,7 +24326,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       ],
       "answer": 0,
       "explanation": "Vettel held the youngest-champion record from 2010 for over a decade.",
-      "image_keyword": null,
+      "image_keyword": "Sebastian Vettel F1 driver",
       "topic": "Sebastian Vettel"
     },
     {
@@ -24213,17 +24421,17 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "graining"
     },
     {
-      "question": "Which historic 1980s F1 rivalry featured Alain Prost and Ayrton Senna as McLaren teammates?",
+      "question": "Who is this driver, a Brazilian F1 legend whose fierce 1980s rivalry with Alain Prost at McLaren is legendary?",
       "options": [
-        "Prost vs Senna",
-        "Hamilton vs Rosberg",
-        "Schumacher vs Hill",
-        "Vettel vs Webber"
+        "Ayrton Senna",
+        "Nelson Piquet",
+        "Emerson Fittipaldi",
+        "Rubens Barrichello"
       ],
       "answer": 0,
-      "explanation": "Their fierce rivalry is one of F1's most famous.",
-      "image_keyword": null,
-      "topic": "Prost and Senna"
+      "explanation": "Senna won three World Championships before his death in 1994.",
+      "image_keyword": "Ayrton Senna F1 driver",
+      "topic": "Ayrton Senna"
     },
     {
       "question": "What is 'slipstreaming' (or drafting) in motor racing?",
@@ -24250,6 +24458,45 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Both titles are awarded each season, based on different scoring.",
       "image_keyword": null,
       "topic": "Constructors' Championship"
+    },
+    {
+      "question": "Who is this cricketer, a West Indian all-rounder often ranked among the greatest cricketers ever?",
+      "options": [
+        "Garfield Sobers",
+        "Viv Richards",
+        "Brian Lara",
+        "Clive Lloyd"
+      ],
+      "answer": 0,
+      "explanation": "Sobers was famed for his batting, bowling, and fielding all-round skill.",
+      "image_keyword": "Garfield Sobers cricketer",
+      "topic": "Garfield Sobers"
+    },
+    {
+      "question": "Who is this driver, a four-time F1 World Champion for Red Bull who dominated the early 2020s?",
+      "options": [
+        "Max Verstappen",
+        "Sebastian Vettel",
+        "Daniel Ricciardo",
+        "Sergio Perez"
+      ],
+      "answer": 0,
+      "explanation": "Verstappen won consecutive titles from 2021 onward.",
+      "image_keyword": "Max Verstappen F1 driver",
+      "topic": "Max Verstappen"
+    },
+    {
+      "question": "Who is this footballer, a French forward who won the World Cup as a teenager in 2018?",
+      "options": [
+        "Kylian Mbappe",
+        "Antoine Griezmann",
+        "Paul Pogba",
+        "Karim Benzema"
+      ],
+      "answer": 0,
+      "explanation": "Mbappe became a World Cup winner at just 19 years old.",
+      "image_keyword": "Kylian Mbappe footballer",
+      "topic": "Kylian Mbappe"
     }
   ],
   "sports:9": [
@@ -24345,7 +24592,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "follow-on"
     },
     {
-      "question": "Which batter holds the highest Test batting average in history, at 99.94?",
+      "question": "Who is this batter, holder of the highest Test batting average in history at 99.94?",
       "options": [
         "Don Bradman",
         "Sachin Tendulkar",
@@ -24354,7 +24601,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       ],
       "answer": 0,
       "explanation": "Bradman's average remains cricket's most famous statistic.",
-      "image_keyword": null,
+      "image_keyword": "Don Bradman cricketer",
       "topic": "Don Bradman"
     },
     {
@@ -24501,7 +24748,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "Total Football"
     },
     {
-      "question": "Who scored the controversial 'Hand of God' goal in the 1986 World Cup?",
+      "question": "Who is this player, scorer of the controversial 'Hand of God' goal in the 1986 World Cup?",
       "options": [
         "Diego Maradona",
         "Pele",
@@ -24510,7 +24757,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       ],
       "answer": 0,
       "explanation": "Maradona punched the ball into the net against England.",
-      "image_keyword": null,
+      "image_keyword": "Diego Maradona footballer",
       "topic": "Hand of God"
     },
     {
@@ -24592,7 +24839,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "parc ferme"
     },
     {
-      "question": "Who became F1's youngest World Champion in 2010, at just 23 years old?",
+      "question": "Who is this driver, F1's youngest World Champion in 2010 at just 23 years old?",
       "options": [
         "Sebastian Vettel",
         "Max Verstappen",
@@ -24601,7 +24848,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       ],
       "answer": 0,
       "explanation": "Vettel held the youngest-champion record from 2010 for over a decade.",
-      "image_keyword": null,
+      "image_keyword": "Sebastian Vettel F1 driver",
       "topic": "Sebastian Vettel"
     },
     {
@@ -24696,17 +24943,17 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "graining"
     },
     {
-      "question": "Which historic 1980s F1 rivalry featured Alain Prost and Ayrton Senna as McLaren teammates?",
+      "question": "Who is this driver, a Brazilian F1 legend whose fierce 1980s rivalry with Alain Prost at McLaren is legendary?",
       "options": [
-        "Prost vs Senna",
-        "Hamilton vs Rosberg",
-        "Schumacher vs Hill",
-        "Vettel vs Webber"
+        "Ayrton Senna",
+        "Nelson Piquet",
+        "Emerson Fittipaldi",
+        "Rubens Barrichello"
       ],
       "answer": 0,
-      "explanation": "Their fierce rivalry is one of F1's most famous.",
-      "image_keyword": null,
-      "topic": "Prost and Senna"
+      "explanation": "Senna won three World Championships before his death in 1994.",
+      "image_keyword": "Ayrton Senna F1 driver",
+      "topic": "Ayrton Senna"
     },
     {
       "question": "What is 'slipstreaming' (or drafting) in motor racing?",
@@ -24733,6 +24980,45 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Both titles are awarded each season, based on different scoring.",
       "image_keyword": null,
       "topic": "Constructors' Championship"
+    },
+    {
+      "question": "Who is this cricketer, a West Indian all-rounder often ranked among the greatest cricketers ever?",
+      "options": [
+        "Garfield Sobers",
+        "Viv Richards",
+        "Brian Lara",
+        "Clive Lloyd"
+      ],
+      "answer": 0,
+      "explanation": "Sobers was famed for his batting, bowling, and fielding all-round skill.",
+      "image_keyword": "Garfield Sobers cricketer",
+      "topic": "Garfield Sobers"
+    },
+    {
+      "question": "Who is this driver, a four-time F1 World Champion for Red Bull who dominated the early 2020s?",
+      "options": [
+        "Max Verstappen",
+        "Sebastian Vettel",
+        "Daniel Ricciardo",
+        "Sergio Perez"
+      ],
+      "answer": 0,
+      "explanation": "Verstappen won consecutive titles from 2021 onward.",
+      "image_keyword": "Max Verstappen F1 driver",
+      "topic": "Max Verstappen"
+    },
+    {
+      "question": "Who is this footballer, a French forward who won the World Cup as a teenager in 2018?",
+      "options": [
+        "Kylian Mbappe",
+        "Antoine Griezmann",
+        "Paul Pogba",
+        "Karim Benzema"
+      ],
+      "answer": 0,
+      "explanation": "Mbappe became a World Cup winner at just 19 years old.",
+      "image_keyword": "Kylian Mbappe footballer",
+      "topic": "Kylian Mbappe"
     }
   ],
   "sports:10": [
@@ -24828,7 +25114,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "follow-on"
     },
     {
-      "question": "Which batter holds the highest Test batting average in history, at 99.94?",
+      "question": "Who is this batter, holder of the highest Test batting average in history at 99.94?",
       "options": [
         "Don Bradman",
         "Sachin Tendulkar",
@@ -24837,7 +25123,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       ],
       "answer": 0,
       "explanation": "Bradman's average remains cricket's most famous statistic.",
-      "image_keyword": null,
+      "image_keyword": "Don Bradman cricketer",
       "topic": "Don Bradman"
     },
     {
@@ -24984,7 +25270,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "Total Football"
     },
     {
-      "question": "Who scored the controversial 'Hand of God' goal in the 1986 World Cup?",
+      "question": "Who is this player, scorer of the controversial 'Hand of God' goal in the 1986 World Cup?",
       "options": [
         "Diego Maradona",
         "Pele",
@@ -24993,7 +25279,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       ],
       "answer": 0,
       "explanation": "Maradona punched the ball into the net against England.",
-      "image_keyword": null,
+      "image_keyword": "Diego Maradona footballer",
       "topic": "Hand of God"
     },
     {
@@ -25075,7 +25361,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "parc ferme"
     },
     {
-      "question": "Who became F1's youngest World Champion in 2010, at just 23 years old?",
+      "question": "Who is this driver, F1's youngest World Champion in 2010 at just 23 years old?",
       "options": [
         "Sebastian Vettel",
         "Max Verstappen",
@@ -25084,7 +25370,7 @@ export const GROQ_BANK: Record<string, Question[]> = {
       ],
       "answer": 0,
       "explanation": "Vettel held the youngest-champion record from 2010 for over a decade.",
-      "image_keyword": null,
+      "image_keyword": "Sebastian Vettel F1 driver",
       "topic": "Sebastian Vettel"
     },
     {
@@ -25179,17 +25465,17 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "topic": "graining"
     },
     {
-      "question": "Which historic 1980s F1 rivalry featured Alain Prost and Ayrton Senna as McLaren teammates?",
+      "question": "Who is this driver, a Brazilian F1 legend whose fierce 1980s rivalry with Alain Prost at McLaren is legendary?",
       "options": [
-        "Prost vs Senna",
-        "Hamilton vs Rosberg",
-        "Schumacher vs Hill",
-        "Vettel vs Webber"
+        "Ayrton Senna",
+        "Nelson Piquet",
+        "Emerson Fittipaldi",
+        "Rubens Barrichello"
       ],
       "answer": 0,
-      "explanation": "Their fierce rivalry is one of F1's most famous.",
-      "image_keyword": null,
-      "topic": "Prost and Senna"
+      "explanation": "Senna won three World Championships before his death in 1994.",
+      "image_keyword": "Ayrton Senna F1 driver",
+      "topic": "Ayrton Senna"
     },
     {
       "question": "What is 'slipstreaming' (or drafting) in motor racing?",
@@ -25216,6 +25502,45 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Both titles are awarded each season, based on different scoring.",
       "image_keyword": null,
       "topic": "Constructors' Championship"
+    },
+    {
+      "question": "Who is this cricketer, a West Indian all-rounder often ranked among the greatest cricketers ever?",
+      "options": [
+        "Garfield Sobers",
+        "Viv Richards",
+        "Brian Lara",
+        "Clive Lloyd"
+      ],
+      "answer": 0,
+      "explanation": "Sobers was famed for his batting, bowling, and fielding all-round skill.",
+      "image_keyword": "Garfield Sobers cricketer",
+      "topic": "Garfield Sobers"
+    },
+    {
+      "question": "Who is this driver, a four-time F1 World Champion for Red Bull who dominated the early 2020s?",
+      "options": [
+        "Max Verstappen",
+        "Sebastian Vettel",
+        "Daniel Ricciardo",
+        "Sergio Perez"
+      ],
+      "answer": 0,
+      "explanation": "Verstappen won consecutive titles from 2021 onward.",
+      "image_keyword": "Max Verstappen F1 driver",
+      "topic": "Max Verstappen"
+    },
+    {
+      "question": "Who is this footballer, a French forward who won the World Cup as a teenager in 2018?",
+      "options": [
+        "Kylian Mbappe",
+        "Antoine Griezmann",
+        "Paul Pogba",
+        "Karim Benzema"
+      ],
+      "answer": 0,
+      "explanation": "Mbappe became a World Cup winner at just 19 years old.",
+      "image_keyword": "Kylian Mbappe footballer",
+      "topic": "Kylian Mbappe"
     }
   ]
 };
