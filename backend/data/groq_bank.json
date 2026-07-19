@@ -22003,17 +22003,251 @@
       "topic": "Kylian Mbappe"
     },
     {
-      "question": "Which country won the 2022 FIFA World Cup?",
+      "question": "Who is this cricketer, an Australian batting legend with the highest Test average in history?",
       "options": [
-        "France",
-        "Argentina",
-        "Brazil",
-        "Germany"
+        "Don Bradman",
+        "Sachin Tendulkar",
+        "Brian Lara",
+        "Ricky Ponting"
       ],
-      "answer": 1,
-      "explanation": "Argentina won on penalties in Qatar.",
-      "image_keyword": null,
-      "topic": "2022 FIFA World Cup"
+      "answer": 0,
+      "explanation": "Bradman's average of 99.94 remains cricket's most famous statistic.",
+      "image_keyword": "Don Bradman cricketer",
+      "topic": "Don Bradman"
+    },
+    {
+      "question": "Who is this Brazilian right-back, captain of the team that won the 2002 FIFA World Cup?",
+      "options": [
+        "Cafu",
+        "Roberto Carlos",
+        "Ronaldinho",
+        "Kaka"
+      ],
+      "answer": 0,
+      "explanation": "Cafu is the only man to play three straight World Cup finals.",
+      "image_keyword": "Cafu footballer",
+      "topic": "Cafu"
+    },
+    {
+      "question": "Who is this Italian defender, captain of the team that won the 2006 FIFA World Cup?",
+      "options": [
+        "Fabio Cannavaro",
+        "Gianluigi Buffon",
+        "Andrea Pirlo",
+        "Alessandro Del Piero"
+      ],
+      "answer": 0,
+      "explanation": "Cannavaro was a defensive rock for Italy's title run.",
+      "image_keyword": "Fabio Cannavaro footballer",
+      "topic": "Fabio Cannavaro"
+    },
+    {
+      "question": "Who is this Spanish goalkeeper, captain of the team that won the 2010 FIFA World Cup?",
+      "options": [
+        "Iker Casillas",
+        "Xavi Hernandez",
+        "Andres Iniesta",
+        "Sergio Ramos"
+      ],
+      "answer": 0,
+      "explanation": "Casillas lifted Spain's first World Cup trophy.",
+      "image_keyword": "Iker Casillas goalkeeper",
+      "topic": "Iker Casillas"
+    },
+    {
+      "question": "Who is this German defender, captain of the team that won the 2014 FIFA World Cup?",
+      "options": [
+        "Philipp Lahm",
+        "Manuel Neuer",
+        "Thomas Muller",
+        "Bastian Schweinsteiger"
+      ],
+      "answer": 0,
+      "explanation": "Lahm lifted the trophy in Brazil.",
+      "image_keyword": "Philipp Lahm footballer",
+      "topic": "Philipp Lahm"
+    },
+    {
+      "question": "Who is this French goalkeeper, captain of the team that won the 2018 FIFA World Cup?",
+      "options": [
+        "Hugo Lloris",
+        "Kylian Mbappe",
+        "Antoine Griezmann",
+        "Paul Pogba"
+      ],
+      "answer": 0,
+      "explanation": "Lloris lifted the trophy in Russia.",
+      "image_keyword": "Hugo Lloris goalkeeper",
+      "topic": "Hugo Lloris"
+    },
+    {
+      "question": "Who is this French playmaker who inspired France to win the 1998 FIFA World Cup at home?",
+      "options": [
+        "Zinedine Zidane",
+        "Thierry Henry",
+        "David Trezeguet",
+        "Didier Deschamps"
+      ],
+      "answer": 0,
+      "explanation": "Zidane scored twice in the final.",
+      "image_keyword": "Zinedine Zidane footballer",
+      "topic": "Zinedine Zidane"
+    },
+    {
+      "question": "Who is this Brazilian striker who won the World Cup in both 1994 and 2002?",
+      "options": [
+        "Ronaldo Nazario",
+        "Ronaldinho",
+        "Romario",
+        "Rivaldo"
+      ],
+      "answer": 0,
+      "explanation": "Ronaldo Nazario is one of only a few two-time World Cup winners as a player.",
+      "image_keyword": "Ronaldo Nazario footballer",
+      "topic": "Ronaldo Nazario"
+    },
+    {
+      "question": "Who is this West Indian captain who led his team to Cricket World Cup wins in 1975 and 1979?",
+      "options": [
+        "Clive Lloyd",
+        "Viv Richards",
+        "Garfield Sobers",
+        "Gordon Greenidge"
+      ],
+      "answer": 0,
+      "explanation": "Lloyd's West Indies dominated the earliest World Cups.",
+      "image_keyword": "Clive Lloyd cricketer",
+      "topic": "Clive Lloyd"
+    },
+    {
+      "question": "Who is this Indian captain who led a shock Cricket World Cup win in 1983?",
+      "options": [
+        "Kapil Dev",
+        "Sunil Gavaskar",
+        "MS Dhoni",
+        "Sourav Ganguly"
+      ],
+      "answer": 0,
+      "explanation": "Kapil Dev's win changed cricket's popularity in India forever.",
+      "image_keyword": "Kapil Dev cricketer",
+      "topic": "Kapil Dev"
+    },
+    {
+      "question": "Who is this England captain who lifted the Cricket World Cup trophy in 2019?",
+      "options": [
+        "Eoin Morgan",
+        "Joe Root",
+        "Ben Stokes",
+        "Jos Buttler"
+      ],
+      "answer": 0,
+      "explanation": "Morgan captained England's first ODI World Cup win.",
+      "image_keyword": "Eoin Morgan cricketer",
+      "topic": "Eoin Morgan"
+    },
+    {
+      "question": "Who is this Australian captain who led his team to the 2023 Cricket World Cup title?",
+      "options": [
+        "Pat Cummins",
+        "Steve Smith",
+        "David Warner",
+        "Mitchell Starc"
+      ],
+      "answer": 0,
+      "explanation": "Cummins led Australia to a record sixth World Cup title.",
+      "image_keyword": "Pat Cummins cricketer",
+      "topic": "Pat Cummins"
+    },
+    {
+      "question": "Who is this Indian captain who lifted the T20 World Cup trophy in 2024?",
+      "options": [
+        "Rohit Sharma",
+        "Virat Kohli",
+        "MS Dhoni",
+        "Hardik Pandya"
+      ],
+      "answer": 0,
+      "explanation": "Rohit Sharma led India to its second T20 World Cup title.",
+      "image_keyword": "Rohit Sharma cricketer",
+      "topic": "Rohit Sharma"
+    },
+    {
+      "question": "Who is this West Indian batter famous for explosive T20 hitting, nicknamed 'Universe Boss'?",
+      "options": [
+        "Chris Gayle",
+        "Kieron Pollard",
+        "Andre Russell",
+        "Dwayne Bravo"
+      ],
+      "answer": 0,
+      "explanation": "Gayle was one of T20 cricket's most feared hitters.",
+      "image_keyword": "Chris Gayle cricketer",
+      "topic": "Chris Gayle"
+    },
+    {
+      "question": "Who is this Spanish striker, top scorer as Spain won UEFA Euro 2008?",
+      "options": [
+        "Fernando Torres",
+        "David Villa",
+        "Xavi Hernandez",
+        "Iker Casillas"
+      ],
+      "answer": 0,
+      "explanation": "Torres scored the winning goal in the Euro 2008 final.",
+      "image_keyword": "Fernando Torres footballer",
+      "topic": "Fernando Torres"
+    },
+    {
+      "question": "Who is this Spanish defender and captain who lifted the Euro 2012 trophy?",
+      "options": [
+        "Sergio Ramos",
+        "Gerard Pique",
+        "Carles Puyol",
+        "Xabi Alonso"
+      ],
+      "answer": 0,
+      "explanation": "Ramos was central to Spain's era of dominance.",
+      "image_keyword": "Sergio Ramos footballer",
+      "topic": "Sergio Ramos"
+    },
+    {
+      "question": "Who is this England captain and star striker known for leading his country at major tournaments?",
+      "options": [
+        "Harry Kane",
+        "Wayne Rooney",
+        "Raheem Sterling",
+        "Marcus Rashford"
+      ],
+      "answer": 0,
+      "explanation": "Kane has captained England at multiple World Cups.",
+      "image_keyword": "Harry Kane footballer",
+      "topic": "Harry Kane"
+    },
+    {
+      "question": "Who is this Spanish midfielder, named Player of the Tournament as Spain won Euro 2024?",
+      "options": [
+        "Rodri",
+        "Pedri",
+        "Dani Olmo",
+        "Fabian Ruiz"
+      ],
+      "answer": 0,
+      "explanation": "Rodri anchored Spain's midfield throughout the tournament.",
+      "image_keyword": "Rodri footballer",
+      "topic": "Rodri"
+    },
+    {
+      "question": "Who is this French F1 driver, a four-time World Champion in the early 1990s?",
+      "options": [
+        "Alain Prost",
+        "Ayrton Senna",
+        "Nigel Mansell",
+        "Damon Hill"
+      ],
+      "answer": 0,
+      "explanation": "Prost's rivalry with Senna defined an era of F1.",
+      "image_keyword": "Alain Prost F1 driver",
+      "topic": "Alain Prost"
     },
     {
       "question": "Which country won the very first FIFA World Cup in 1930?",
@@ -22042,32 +22276,6 @@
       "topic": "FIFA World Cup"
     },
     {
-      "question": "Which country won the 2018 FIFA World Cup?",
-      "options": [
-        "France",
-        "Croatia",
-        "Belgium",
-        "England"
-      ],
-      "answer": 0,
-      "explanation": "France beat Croatia in the final in Russia.",
-      "image_keyword": null,
-      "topic": "2018 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 2014 FIFA World Cup, held in Brazil?",
-      "options": [
-        "Argentina",
-        "Germany",
-        "Brazil",
-        "Netherlands"
-      ],
-      "answer": 1,
-      "explanation": "Germany beat Argentina in the final.",
-      "image_keyword": null,
-      "topic": "2014 FIFA World Cup"
-    },
-    {
       "question": "Which country hosted the 2022 FIFA World Cup?",
       "options": [
         "Qatar",
@@ -22079,162 +22287,6 @@
       "explanation": "It was the first World Cup held in the Middle East.",
       "image_keyword": null,
       "topic": "2022 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the very first Cricket World Cup in 1975?",
-      "options": [
-        "India",
-        "West Indies",
-        "Australia",
-        "England"
-      ],
-      "answer": 1,
-      "explanation": "The West Indies won the inaugural tournament.",
-      "image_keyword": null,
-      "topic": "1975 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the 2011 Cricket World Cup, held on home soil?",
-      "options": [
-        "India",
-        "Sri Lanka",
-        "Australia",
-        "Pakistan"
-      ],
-      "answer": 0,
-      "explanation": "India lifted the trophy led by MS Dhoni.",
-      "image_keyword": null,
-      "topic": "2011 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the 2019 Cricket World Cup?",
-      "options": [
-        "India",
-        "England",
-        "New Zealand",
-        "Australia"
-      ],
-      "answer": 1,
-      "explanation": "England won a dramatic final on boundary count.",
-      "image_keyword": null,
-      "topic": "2019 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the 2023 Cricket World Cup?",
-      "options": [
-        "Australia",
-        "India",
-        "South Africa",
-        "New Zealand"
-      ],
-      "answer": 0,
-      "explanation": "Australia beat host India in the final.",
-      "image_keyword": null,
-      "topic": "2023 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the very first Cricket T20 World Cup in 2007?",
-      "options": [
-        "India",
-        "Pakistan",
-        "Australia",
-        "South Africa"
-      ],
-      "answer": 0,
-      "explanation": "India beat Pakistan in a thrilling final.",
-      "image_keyword": null,
-      "topic": "2007 T20 World Cup"
-    },
-    {
-      "question": "Which country won UEFA Euro 2020 (played in 2021)?",
-      "options": [
-        "England",
-        "Italy",
-        "France",
-        "Spain"
-      ],
-      "answer": 1,
-      "explanation": "Italy beat England on penalties in the final.",
-      "image_keyword": null,
-      "topic": "Euro 2020"
-    },
-    {
-      "question": "Which country won UEFA Euro 2024?",
-      "options": [
-        "Spain",
-        "England",
-        "Germany",
-        "France"
-      ],
-      "answer": 0,
-      "explanation": "Spain beat England in the final in Berlin.",
-      "image_keyword": null,
-      "topic": "Euro 2024"
-    },
-    {
-      "question": "Which country won the Copa America in 2024?",
-      "options": [
-        "Argentina",
-        "Colombia",
-        "Brazil",
-        "Uruguay"
-      ],
-      "answer": 0,
-      "explanation": "Argentina beat Colombia in the final.",
-      "image_keyword": null,
-      "topic": "Copa America 2024"
-    },
-    {
-      "question": "Which country has won the most Copa America titles overall?",
-      "options": [
-        "Argentina",
-        "Uruguay",
-        "Brazil",
-        "Chile"
-      ],
-      "answer": 0,
-      "explanation": "Argentina moved ahead after winning Copa America 2024.",
-      "image_keyword": null,
-      "topic": "Copa America"
-    },
-    {
-      "question": "Which country does Lionel Messi play international football for?",
-      "options": [
-        "Argentina",
-        "Brazil",
-        "Spain",
-        "Portugal"
-      ],
-      "answer": 0,
-      "explanation": "Messi captains the Argentina national team.",
-      "image_keyword": null,
-      "topic": "Lionel Messi"
-    },
-    {
-      "question": "Which country does Cristiano Ronaldo play international football for?",
-      "options": [
-        "Portugal",
-        "Spain",
-        "Brazil",
-        "Italy"
-      ],
-      "answer": 0,
-      "explanation": "Ronaldo is Portugal's all-time top scorer.",
-      "image_keyword": null,
-      "topic": "Cristiano Ronaldo"
-    },
-    {
-      "question": "Which country did Pele play for?",
-      "options": [
-        "Brazil",
-        "Argentina",
-        "Portugal",
-        "Uruguay"
-      ],
-      "answer": 0,
-      "explanation": "Pele won three World Cups with Brazil.",
-      "image_keyword": null,
-      "topic": "Pele"
     },
     {
       "question": "Which trophy is famously contested between England and Australia in cricket?",
@@ -22289,69 +22341,17 @@
       "topic": "2026 FIFA World Cup"
     },
     {
-      "question": "Which country won the 2010 FIFA World Cup in South Africa?",
+      "question": "Which country has won the most Copa America titles overall?",
       "options": [
-        "Spain",
-        "Netherlands",
-        "Germany",
-        "Uruguay"
-      ],
-      "answer": 0,
-      "explanation": "Spain won its first World Cup, beating the Netherlands.",
-      "image_keyword": null,
-      "topic": "2010 FIFA World Cup"
-    },
-    {
-      "question": "Which player is nicknamed the King of Football and won three World Cups with Brazil?",
-      "options": [
-        "Pele",
-        "Maradona",
-        "Ronaldo",
-        "Zico"
-      ],
-      "answer": 0,
-      "explanation": "Pele's three titles remain a record.",
-      "image_keyword": null,
-      "topic": "Pele"
-    },
-    {
-      "question": "Which country won the most recent T20 Cricket World Cup in 2024?",
-      "options": [
-        "India",
-        "South Africa",
-        "Australia",
-        "England"
-      ],
-      "answer": 0,
-      "explanation": "India beat South Africa in a tense final.",
-      "image_keyword": null,
-      "topic": "2024 T20 World Cup"
-    },
-    {
-      "question": "Who is this cricketer, an Australian batting legend with the highest Test average in history?",
-      "options": [
-        "Don Bradman",
-        "Sachin Tendulkar",
-        "Brian Lara",
-        "Ricky Ponting"
-      ],
-      "answer": 0,
-      "explanation": "Bradman's average of 99.94 remains cricket's most famous statistic.",
-      "image_keyword": "Don Bradman cricketer",
-      "topic": "Don Bradman"
-    },
-    {
-      "question": "Which country won the 2006 FIFA World Cup?",
-      "options": [
-        "Italy",
-        "France",
+        "Argentina",
+        "Uruguay",
         "Brazil",
-        "Germany"
+        "Chile"
       ],
       "answer": 0,
-      "explanation": "Italy won on penalties against France.",
+      "explanation": "Argentina moved ahead after winning Copa America 2024.",
       "image_keyword": null,
-      "topic": "2006 FIFA World Cup"
+      "topic": "Copa America"
     }
   ],
   "sports:5": [
@@ -22525,17 +22525,251 @@
       "topic": "Kylian Mbappe"
     },
     {
-      "question": "Which country won the 2022 FIFA World Cup?",
+      "question": "Who is this cricketer, an Australian batting legend with the highest Test average in history?",
       "options": [
-        "France",
-        "Argentina",
-        "Brazil",
-        "Germany"
+        "Don Bradman",
+        "Sachin Tendulkar",
+        "Brian Lara",
+        "Ricky Ponting"
       ],
-      "answer": 1,
-      "explanation": "Argentina won on penalties in Qatar.",
-      "image_keyword": null,
-      "topic": "2022 FIFA World Cup"
+      "answer": 0,
+      "explanation": "Bradman's average of 99.94 remains cricket's most famous statistic.",
+      "image_keyword": "Don Bradman cricketer",
+      "topic": "Don Bradman"
+    },
+    {
+      "question": "Who is this Brazilian right-back, captain of the team that won the 2002 FIFA World Cup?",
+      "options": [
+        "Cafu",
+        "Roberto Carlos",
+        "Ronaldinho",
+        "Kaka"
+      ],
+      "answer": 0,
+      "explanation": "Cafu is the only man to play three straight World Cup finals.",
+      "image_keyword": "Cafu footballer",
+      "topic": "Cafu"
+    },
+    {
+      "question": "Who is this Italian defender, captain of the team that won the 2006 FIFA World Cup?",
+      "options": [
+        "Fabio Cannavaro",
+        "Gianluigi Buffon",
+        "Andrea Pirlo",
+        "Alessandro Del Piero"
+      ],
+      "answer": 0,
+      "explanation": "Cannavaro was a defensive rock for Italy's title run.",
+      "image_keyword": "Fabio Cannavaro footballer",
+      "topic": "Fabio Cannavaro"
+    },
+    {
+      "question": "Who is this Spanish goalkeeper, captain of the team that won the 2010 FIFA World Cup?",
+      "options": [
+        "Iker Casillas",
+        "Xavi Hernandez",
+        "Andres Iniesta",
+        "Sergio Ramos"
+      ],
+      "answer": 0,
+      "explanation": "Casillas lifted Spain's first World Cup trophy.",
+      "image_keyword": "Iker Casillas goalkeeper",
+      "topic": "Iker Casillas"
+    },
+    {
+      "question": "Who is this German defender, captain of the team that won the 2014 FIFA World Cup?",
+      "options": [
+        "Philipp Lahm",
+        "Manuel Neuer",
+        "Thomas Muller",
+        "Bastian Schweinsteiger"
+      ],
+      "answer": 0,
+      "explanation": "Lahm lifted the trophy in Brazil.",
+      "image_keyword": "Philipp Lahm footballer",
+      "topic": "Philipp Lahm"
+    },
+    {
+      "question": "Who is this French goalkeeper, captain of the team that won the 2018 FIFA World Cup?",
+      "options": [
+        "Hugo Lloris",
+        "Kylian Mbappe",
+        "Antoine Griezmann",
+        "Paul Pogba"
+      ],
+      "answer": 0,
+      "explanation": "Lloris lifted the trophy in Russia.",
+      "image_keyword": "Hugo Lloris goalkeeper",
+      "topic": "Hugo Lloris"
+    },
+    {
+      "question": "Who is this French playmaker who inspired France to win the 1998 FIFA World Cup at home?",
+      "options": [
+        "Zinedine Zidane",
+        "Thierry Henry",
+        "David Trezeguet",
+        "Didier Deschamps"
+      ],
+      "answer": 0,
+      "explanation": "Zidane scored twice in the final.",
+      "image_keyword": "Zinedine Zidane footballer",
+      "topic": "Zinedine Zidane"
+    },
+    {
+      "question": "Who is this Brazilian striker who won the World Cup in both 1994 and 2002?",
+      "options": [
+        "Ronaldo Nazario",
+        "Ronaldinho",
+        "Romario",
+        "Rivaldo"
+      ],
+      "answer": 0,
+      "explanation": "Ronaldo Nazario is one of only a few two-time World Cup winners as a player.",
+      "image_keyword": "Ronaldo Nazario footballer",
+      "topic": "Ronaldo Nazario"
+    },
+    {
+      "question": "Who is this West Indian captain who led his team to Cricket World Cup wins in 1975 and 1979?",
+      "options": [
+        "Clive Lloyd",
+        "Viv Richards",
+        "Garfield Sobers",
+        "Gordon Greenidge"
+      ],
+      "answer": 0,
+      "explanation": "Lloyd's West Indies dominated the earliest World Cups.",
+      "image_keyword": "Clive Lloyd cricketer",
+      "topic": "Clive Lloyd"
+    },
+    {
+      "question": "Who is this Indian captain who led a shock Cricket World Cup win in 1983?",
+      "options": [
+        "Kapil Dev",
+        "Sunil Gavaskar",
+        "MS Dhoni",
+        "Sourav Ganguly"
+      ],
+      "answer": 0,
+      "explanation": "Kapil Dev's win changed cricket's popularity in India forever.",
+      "image_keyword": "Kapil Dev cricketer",
+      "topic": "Kapil Dev"
+    },
+    {
+      "question": "Who is this England captain who lifted the Cricket World Cup trophy in 2019?",
+      "options": [
+        "Eoin Morgan",
+        "Joe Root",
+        "Ben Stokes",
+        "Jos Buttler"
+      ],
+      "answer": 0,
+      "explanation": "Morgan captained England's first ODI World Cup win.",
+      "image_keyword": "Eoin Morgan cricketer",
+      "topic": "Eoin Morgan"
+    },
+    {
+      "question": "Who is this Australian captain who led his team to the 2023 Cricket World Cup title?",
+      "options": [
+        "Pat Cummins",
+        "Steve Smith",
+        "David Warner",
+        "Mitchell Starc"
+      ],
+      "answer": 0,
+      "explanation": "Cummins led Australia to a record sixth World Cup title.",
+      "image_keyword": "Pat Cummins cricketer",
+      "topic": "Pat Cummins"
+    },
+    {
+      "question": "Who is this Indian captain who lifted the T20 World Cup trophy in 2024?",
+      "options": [
+        "Rohit Sharma",
+        "Virat Kohli",
+        "MS Dhoni",
+        "Hardik Pandya"
+      ],
+      "answer": 0,
+      "explanation": "Rohit Sharma led India to its second T20 World Cup title.",
+      "image_keyword": "Rohit Sharma cricketer",
+      "topic": "Rohit Sharma"
+    },
+    {
+      "question": "Who is this West Indian batter famous for explosive T20 hitting, nicknamed 'Universe Boss'?",
+      "options": [
+        "Chris Gayle",
+        "Kieron Pollard",
+        "Andre Russell",
+        "Dwayne Bravo"
+      ],
+      "answer": 0,
+      "explanation": "Gayle was one of T20 cricket's most feared hitters.",
+      "image_keyword": "Chris Gayle cricketer",
+      "topic": "Chris Gayle"
+    },
+    {
+      "question": "Who is this Spanish striker, top scorer as Spain won UEFA Euro 2008?",
+      "options": [
+        "Fernando Torres",
+        "David Villa",
+        "Xavi Hernandez",
+        "Iker Casillas"
+      ],
+      "answer": 0,
+      "explanation": "Torres scored the winning goal in the Euro 2008 final.",
+      "image_keyword": "Fernando Torres footballer",
+      "topic": "Fernando Torres"
+    },
+    {
+      "question": "Who is this Spanish defender and captain who lifted the Euro 2012 trophy?",
+      "options": [
+        "Sergio Ramos",
+        "Gerard Pique",
+        "Carles Puyol",
+        "Xabi Alonso"
+      ],
+      "answer": 0,
+      "explanation": "Ramos was central to Spain's era of dominance.",
+      "image_keyword": "Sergio Ramos footballer",
+      "topic": "Sergio Ramos"
+    },
+    {
+      "question": "Who is this England captain and star striker known for leading his country at major tournaments?",
+      "options": [
+        "Harry Kane",
+        "Wayne Rooney",
+        "Raheem Sterling",
+        "Marcus Rashford"
+      ],
+      "answer": 0,
+      "explanation": "Kane has captained England at multiple World Cups.",
+      "image_keyword": "Harry Kane footballer",
+      "topic": "Harry Kane"
+    },
+    {
+      "question": "Who is this Spanish midfielder, named Player of the Tournament as Spain won Euro 2024?",
+      "options": [
+        "Rodri",
+        "Pedri",
+        "Dani Olmo",
+        "Fabian Ruiz"
+      ],
+      "answer": 0,
+      "explanation": "Rodri anchored Spain's midfield throughout the tournament.",
+      "image_keyword": "Rodri footballer",
+      "topic": "Rodri"
+    },
+    {
+      "question": "Who is this French F1 driver, a four-time World Champion in the early 1990s?",
+      "options": [
+        "Alain Prost",
+        "Ayrton Senna",
+        "Nigel Mansell",
+        "Damon Hill"
+      ],
+      "answer": 0,
+      "explanation": "Prost's rivalry with Senna defined an era of F1.",
+      "image_keyword": "Alain Prost F1 driver",
+      "topic": "Alain Prost"
     },
     {
       "question": "Which country won the very first FIFA World Cup in 1930?",
@@ -22564,32 +22798,6 @@
       "topic": "FIFA World Cup"
     },
     {
-      "question": "Which country won the 2018 FIFA World Cup?",
-      "options": [
-        "France",
-        "Croatia",
-        "Belgium",
-        "England"
-      ],
-      "answer": 0,
-      "explanation": "France beat Croatia in the final in Russia.",
-      "image_keyword": null,
-      "topic": "2018 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 2014 FIFA World Cup, held in Brazil?",
-      "options": [
-        "Argentina",
-        "Germany",
-        "Brazil",
-        "Netherlands"
-      ],
-      "answer": 1,
-      "explanation": "Germany beat Argentina in the final.",
-      "image_keyword": null,
-      "topic": "2014 FIFA World Cup"
-    },
-    {
       "question": "Which country hosted the 2022 FIFA World Cup?",
       "options": [
         "Qatar",
@@ -22601,162 +22809,6 @@
       "explanation": "It was the first World Cup held in the Middle East.",
       "image_keyword": null,
       "topic": "2022 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the very first Cricket World Cup in 1975?",
-      "options": [
-        "India",
-        "West Indies",
-        "Australia",
-        "England"
-      ],
-      "answer": 1,
-      "explanation": "The West Indies won the inaugural tournament.",
-      "image_keyword": null,
-      "topic": "1975 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the 2011 Cricket World Cup, held on home soil?",
-      "options": [
-        "India",
-        "Sri Lanka",
-        "Australia",
-        "Pakistan"
-      ],
-      "answer": 0,
-      "explanation": "India lifted the trophy led by MS Dhoni.",
-      "image_keyword": null,
-      "topic": "2011 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the 2019 Cricket World Cup?",
-      "options": [
-        "India",
-        "England",
-        "New Zealand",
-        "Australia"
-      ],
-      "answer": 1,
-      "explanation": "England won a dramatic final on boundary count.",
-      "image_keyword": null,
-      "topic": "2019 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the 2023 Cricket World Cup?",
-      "options": [
-        "Australia",
-        "India",
-        "South Africa",
-        "New Zealand"
-      ],
-      "answer": 0,
-      "explanation": "Australia beat host India in the final.",
-      "image_keyword": null,
-      "topic": "2023 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the very first Cricket T20 World Cup in 2007?",
-      "options": [
-        "India",
-        "Pakistan",
-        "Australia",
-        "South Africa"
-      ],
-      "answer": 0,
-      "explanation": "India beat Pakistan in a thrilling final.",
-      "image_keyword": null,
-      "topic": "2007 T20 World Cup"
-    },
-    {
-      "question": "Which country won UEFA Euro 2020 (played in 2021)?",
-      "options": [
-        "England",
-        "Italy",
-        "France",
-        "Spain"
-      ],
-      "answer": 1,
-      "explanation": "Italy beat England on penalties in the final.",
-      "image_keyword": null,
-      "topic": "Euro 2020"
-    },
-    {
-      "question": "Which country won UEFA Euro 2024?",
-      "options": [
-        "Spain",
-        "England",
-        "Germany",
-        "France"
-      ],
-      "answer": 0,
-      "explanation": "Spain beat England in the final in Berlin.",
-      "image_keyword": null,
-      "topic": "Euro 2024"
-    },
-    {
-      "question": "Which country won the Copa America in 2024?",
-      "options": [
-        "Argentina",
-        "Colombia",
-        "Brazil",
-        "Uruguay"
-      ],
-      "answer": 0,
-      "explanation": "Argentina beat Colombia in the final.",
-      "image_keyword": null,
-      "topic": "Copa America 2024"
-    },
-    {
-      "question": "Which country has won the most Copa America titles overall?",
-      "options": [
-        "Argentina",
-        "Uruguay",
-        "Brazil",
-        "Chile"
-      ],
-      "answer": 0,
-      "explanation": "Argentina moved ahead after winning Copa America 2024.",
-      "image_keyword": null,
-      "topic": "Copa America"
-    },
-    {
-      "question": "Which country does Lionel Messi play international football for?",
-      "options": [
-        "Argentina",
-        "Brazil",
-        "Spain",
-        "Portugal"
-      ],
-      "answer": 0,
-      "explanation": "Messi captains the Argentina national team.",
-      "image_keyword": null,
-      "topic": "Lionel Messi"
-    },
-    {
-      "question": "Which country does Cristiano Ronaldo play international football for?",
-      "options": [
-        "Portugal",
-        "Spain",
-        "Brazil",
-        "Italy"
-      ],
-      "answer": 0,
-      "explanation": "Ronaldo is Portugal's all-time top scorer.",
-      "image_keyword": null,
-      "topic": "Cristiano Ronaldo"
-    },
-    {
-      "question": "Which country did Pele play for?",
-      "options": [
-        "Brazil",
-        "Argentina",
-        "Portugal",
-        "Uruguay"
-      ],
-      "answer": 0,
-      "explanation": "Pele won three World Cups with Brazil.",
-      "image_keyword": null,
-      "topic": "Pele"
     },
     {
       "question": "Which trophy is famously contested between England and Australia in cricket?",
@@ -22811,229 +22863,21 @@
       "topic": "2026 FIFA World Cup"
     },
     {
-      "question": "Which country won the 2010 FIFA World Cup in South Africa?",
+      "question": "Which country has won the most Copa America titles overall?",
       "options": [
-        "Spain",
-        "Netherlands",
-        "Germany",
-        "Uruguay"
-      ],
-      "answer": 0,
-      "explanation": "Spain won its first World Cup, beating the Netherlands.",
-      "image_keyword": null,
-      "topic": "2010 FIFA World Cup"
-    },
-    {
-      "question": "Which player is nicknamed the King of Football and won three World Cups with Brazil?",
-      "options": [
-        "Pele",
-        "Maradona",
-        "Ronaldo",
-        "Zico"
-      ],
-      "answer": 0,
-      "explanation": "Pele's three titles remain a record.",
-      "image_keyword": null,
-      "topic": "Pele"
-    },
-    {
-      "question": "Which country won the most recent T20 Cricket World Cup in 2024?",
-      "options": [
-        "India",
-        "South Africa",
-        "Australia",
-        "England"
-      ],
-      "answer": 0,
-      "explanation": "India beat South Africa in a tense final.",
-      "image_keyword": null,
-      "topic": "2024 T20 World Cup"
-    },
-    {
-      "question": "Who is this cricketer, an Australian batting legend with the highest Test average in history?",
-      "options": [
-        "Don Bradman",
-        "Sachin Tendulkar",
-        "Brian Lara",
-        "Ricky Ponting"
-      ],
-      "answer": 0,
-      "explanation": "Bradman's average of 99.94 remains cricket's most famous statistic.",
-      "image_keyword": "Don Bradman cricketer",
-      "topic": "Don Bradman"
-    },
-    {
-      "question": "Which country won the 2006 FIFA World Cup?",
-      "options": [
-        "Italy",
-        "France",
+        "Argentina",
+        "Uruguay",
         "Brazil",
-        "Germany"
+        "Chile"
       ],
       "answer": 0,
-      "explanation": "Italy won on penalties against France.",
+      "explanation": "Argentina moved ahead after winning Copa America 2024.",
       "image_keyword": null,
-      "topic": "2006 FIFA World Cup"
+      "topic": "Copa America"
     }
   ],
   "sports:6": [
     {
-      "question": "Which country won the 2002 FIFA World Cup, co-hosted by Japan and South Korea?",
-      "options": [
-        "Brazil",
-        "Germany",
-        "Italy",
-        "France"
-      ],
-      "answer": 0,
-      "explanation": "Brazil won a record fifth title that year.",
-      "image_keyword": null,
-      "topic": "2002 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1998 FIFA World Cup on home soil?",
-      "options": [
-        "France",
-        "Brazil",
-        "Italy",
-        "Argentina"
-      ],
-      "answer": 0,
-      "explanation": "France beat Brazil 3-0 in the final.",
-      "image_keyword": null,
-      "topic": "1998 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1990 FIFA World Cup in Italy?",
-      "options": [
-        "West Germany",
-        "Argentina",
-        "Italy",
-        "Brazil"
-      ],
-      "answer": 0,
-      "explanation": "West Germany beat Argentina in the final.",
-      "image_keyword": null,
-      "topic": "1990 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1986 FIFA World Cup, led by Diego Maradona?",
-      "options": [
-        "Argentina",
-        "West Germany",
-        "Brazil",
-        "Italy"
-      ],
-      "answer": 0,
-      "explanation": "Maradona inspired Argentina to victory in Mexico.",
-      "image_keyword": null,
-      "topic": "1986 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1966 FIFA World Cup on home soil?",
-      "options": [
-        "England",
-        "West Germany",
-        "Portugal",
-        "Brazil"
-      ],
-      "answer": 0,
-      "explanation": "It remains England's only World Cup title.",
-      "image_keyword": null,
-      "topic": "1966 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 2007 Cricket T20 World Cup, and again in 2024?",
-      "options": [
-        "India",
-        "Pakistan",
-        "Australia",
-        "England"
-      ],
-      "answer": 0,
-      "explanation": "India won the very first and the 2024 T20 World Cups.",
-      "image_keyword": null,
-      "topic": "T20 World Cup"
-    },
-    {
-      "question": "Which country won the 2007 ODI Cricket World Cup?",
-      "options": [
-        "Australia",
-        "Sri Lanka",
-        "India",
-        "South Africa"
-      ],
-      "answer": 0,
-      "explanation": "Australia completed a hat-trick of World Cup titles.",
-      "image_keyword": null,
-      "topic": "2007 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the 1996 Cricket World Cup?",
-      "options": [
-        "Sri Lanka",
-        "Australia",
-        "India",
-        "Pakistan"
-      ],
-      "answer": 0,
-      "explanation": "Sri Lanka won its first and only World Cup that year.",
-      "image_keyword": null,
-      "topic": "1996 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the 1983 Cricket World Cup, a famous upset?",
-      "options": [
-        "India",
-        "West Indies",
-        "England",
-        "Australia"
-      ],
-      "answer": 0,
-      "explanation": "India's shock win under Kapil Dev changed cricket in India.",
-      "image_keyword": null,
-      "topic": "1983 Cricket World Cup"
-    },
-    {
-      "question": "Which country won UEFA Euro 2016?",
-      "options": [
-        "Portugal",
-        "France",
-        "Germany",
-        "Spain"
-      ],
-      "answer": 0,
-      "explanation": "Portugal won its first European title, led by Ronaldo.",
-      "image_keyword": null,
-      "topic": "Euro 2016"
-    },
-    {
-      "question": "Which country won UEFA Euro 2012?",
-      "options": [
-        "Spain",
-        "Italy",
-        "Germany",
-        "Portugal"
-      ],
-      "answer": 0,
-      "explanation": "Spain completed a rare double of consecutive Euro titles.",
-      "image_keyword": null,
-      "topic": "Euro 2012"
-    },
-    {
-      "question": "Which country won the Copa America in 2021, ending a long trophy drought?",
-      "options": [
-        "Argentina",
-        "Brazil",
-        "Uruguay",
-        "Chile"
-      ],
-      "answer": 0,
-      "explanation": "Messi won his first major title with Argentina that year.",
-      "image_keyword": null,
-      "topic": "Copa America 2021"
-    },
-    {
       "question": "Who is this footballer, a Portuguese-born star known for his 'Siu' goal celebration?",
       "options": [
         "Cristiano Ronaldo",
@@ -23084,19 +22928,6 @@
       "explanation": "Clarke captained Australia to the 2015 title on home soil.",
       "image_keyword": "Michael Clarke cricketer",
       "topic": "Michael Clarke"
-    },
-    {
-      "question": "Which country won the 2015 Cricket World Cup, held in Australia and New Zealand?",
-      "options": [
-        "Australia",
-        "New Zealand",
-        "India",
-        "South Africa"
-      ],
-      "answer": 0,
-      "explanation": "Australia beat New Zealand in the final.",
-      "image_keyword": null,
-      "topic": "2015 Cricket World Cup"
     },
     {
       "question": "Who won the F1 Drivers' Championship in 2016, beating his own Mercedes teammate?",
@@ -23164,45 +22995,6 @@
       "topic": "Ronaldinho"
     },
     {
-      "question": "Which country won the 2003 Cricket World Cup?",
-      "options": [
-        "Australia",
-        "India",
-        "Sri Lanka",
-        "Kenya"
-      ],
-      "answer": 0,
-      "explanation": "Australia went unbeaten through the tournament.",
-      "image_keyword": null,
-      "topic": "2003 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the 1999 Cricket World Cup?",
-      "options": [
-        "Australia",
-        "Pakistan",
-        "South Africa",
-        "New Zealand"
-      ],
-      "answer": 0,
-      "explanation": "Australia began a run of consecutive titles.",
-      "image_keyword": null,
-      "topic": "1999 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the very first UEFA European Championship in 1960?",
-      "options": [
-        "Soviet Union",
-        "Spain",
-        "Italy",
-        "France"
-      ],
-      "answer": 0,
-      "explanation": "The Soviet Union won the inaugural tournament.",
-      "image_keyword": null,
-      "topic": "UEFA European Championship"
-    },
-    {
       "question": "Who is this Brazilian forward, a two-time World Cup winner nicknamed 'O Fenomeno'?",
       "options": [
         "Ronaldo Nazario",
@@ -23214,32 +23006,6 @@
       "explanation": "Ronaldo Nazario won World Cups in 1994 and 2002.",
       "image_keyword": "Ronaldo Nazario footballer",
       "topic": "Ronaldo Nazario"
-    },
-    {
-      "question": "Which country did Diego Maradona play international football for?",
-      "options": [
-        "Argentina",
-        "Uruguay",
-        "Brazil",
-        "Chile"
-      ],
-      "answer": 0,
-      "explanation": "Maradona captained Argentina to the 1986 title.",
-      "image_keyword": null,
-      "topic": "Diego Maradona"
-    },
-    {
-      "question": "Which F1 driver won the World Championship every year from 2000 to 2004?",
-      "options": [
-        "Michael Schumacher",
-        "Fernando Alonso",
-        "Kimi Raikkonen",
-        "Rubens Barrichello"
-      ],
-      "answer": 0,
-      "explanation": "Schumacher's Ferrari dominance was unmatched at the time.",
-      "image_keyword": null,
-      "topic": "Michael Schumacher"
     },
     {
       "question": "Who won back-to-back F1 World Championships in 2005 and 2006, ending Schumacher's run?",
@@ -23268,203 +23034,281 @@
       "topic": "Jenson Button"
     },
     {
-      "question": "Which cricketer captained India to victory in the inaugural 2007 T20 World Cup?",
+      "question": "Who is this Spanish midfielder, the heartbeat of Spain's Euro 2008, World Cup 2010, and Euro 2012 treble?",
       "options": [
-        "MS Dhoni",
-        "Sourav Ganguly",
-        "Virat Kohli",
-        "Rahul Dravid"
+        "Xavi Hernandez",
+        "Andres Iniesta",
+        "Sergio Busquets",
+        "Cesc Fabregas"
       ],
       "answer": 0,
-      "explanation": "Dhoni led a young Indian side to a surprise win.",
-      "image_keyword": null,
-      "topic": "MS Dhoni"
+      "explanation": "Xavi's passing controlled Spain's golden generation.",
+      "image_keyword": "Xavi Hernandez footballer",
+      "topic": "Xavi Hernandez"
     },
     {
-      "question": "Which country won the 1994 FIFA World Cup, beating Italy on penalties?",
+      "question": "Who is this Spanish midfielder who scored the winning goal in the 2010 FIFA World Cup final?",
+      "options": [
+        "Andres Iniesta",
+        "Xavi Hernandez",
+        "David Villa",
+        "Fernando Torres"
+      ],
+      "answer": 0,
+      "explanation": "Iniesta's extra-time goal won Spain's first World Cup.",
+      "image_keyword": "Andres Iniesta footballer",
+      "topic": "Andres Iniesta"
+    },
+    {
+      "question": "Who is this English striker, his country's record all-time goal scorer for many years?",
+      "options": [
+        "Wayne Rooney",
+        "Harry Kane",
+        "Michael Owen",
+        "Alan Shearer"
+      ],
+      "answer": 0,
+      "explanation": "Rooney held England's scoring record before Kane overtook it.",
+      "image_keyword": "Wayne Rooney footballer",
+      "topic": "Wayne Rooney"
+    },
+    {
+      "question": "Who is this French striker, an Arsenal and France legend known for his pace and finishing?",
+      "options": [
+        "Thierry Henry",
+        "Nicolas Anelka",
+        "David Trezeguet",
+        "Robert Pires"
+      ],
+      "answer": 0,
+      "explanation": "Henry is Arsenal's all-time record scorer.",
+      "image_keyword": "Thierry Henry footballer",
+      "topic": "Thierry Henry"
+    },
+    {
+      "question": "Who is this Australian captain who led his team to Cricket World Cup titles in 2003 and 2007?",
+      "options": [
+        "Ricky Ponting",
+        "Steve Waugh",
+        "Michael Clarke",
+        "Adam Gilchrist"
+      ],
+      "answer": 0,
+      "explanation": "Ponting captained Australia through a golden era.",
+      "image_keyword": "Ricky Ponting cricketer",
+      "topic": "Ricky Ponting"
+    },
+    {
+      "question": "Who is this Australian wicketkeeper-batter known for explosive hitting in multiple World Cup wins?",
+      "options": [
+        "Adam Gilchrist",
+        "Ricky Ponting",
+        "Michael Hussey",
+        "Matthew Hayden"
+      ],
+      "answer": 0,
+      "explanation": "Gilchrist redefined attacking wicketkeeper-batting.",
+      "image_keyword": "Adam Gilchrist cricketer",
+      "topic": "Adam Gilchrist"
+    },
+    {
+      "question": "Who is this New Zealand captain known for aggressive T20 batting and leading the 2015 World Cup final run?",
+      "options": [
+        "Brendon McCullum",
+        "Kane Williamson",
+        "Ross Taylor",
+        "Martin Guptill"
+      ],
+      "answer": 0,
+      "explanation": "McCullum's fearless captaincy reshaped New Zealand cricket.",
+      "image_keyword": "Brendon McCullum cricketer",
+      "topic": "Brendon McCullum"
+    },
+    {
+      "question": "Who is this South African batter nicknamed 'Mr 360' for his all-around shot-making?",
+      "options": [
+        "AB de Villiers",
+        "Faf du Plessis",
+        "Hashim Amla",
+        "Jacques Kallis"
+      ],
+      "answer": 0,
+      "explanation": "De Villiers could hit the ball to any part of the ground.",
+      "image_keyword": "AB de Villiers cricketer",
+      "topic": "AB de Villiers"
+    },
+    {
+      "question": "Who is this Pakistani fast bowler, regarded as one of the greatest swing bowlers ever?",
+      "options": [
+        "Wasim Akram",
+        "Waqar Younis",
+        "Shoaib Akhtar",
+        "Imran Khan"
+      ],
+      "answer": 0,
+      "explanation": "Akram's mastery of swing bowling earned him legendary status.",
+      "image_keyword": "Wasim Akram cricketer",
+      "topic": "Wasim Akram"
+    },
+    {
+      "question": "Who is this Australian F1 driver, a race-winning teammate of Sebastian Vettel at Red Bull?",
+      "options": [
+        "Mark Webber",
+        "Daniel Ricciardo",
+        "Jack Brabham",
+        "Alan Jones"
+      ],
+      "answer": 0,
+      "explanation": "Webber won multiple races alongside Vettel.",
+      "image_keyword": "Mark Webber F1 driver",
+      "topic": "Mark Webber"
+    },
+    {
+      "question": "Who is this Brazilian F1 driver who narrowly missed the 2008 World Championship by one point?",
+      "options": [
+        "Felipe Massa",
+        "Rubens Barrichello",
+        "Nelson Piquet",
+        "Ayrton Senna"
+      ],
+      "answer": 0,
+      "explanation": "Massa lost the title to Hamilton in the final corner of the final race.",
+      "image_keyword": "Felipe Massa F1 driver",
+      "topic": "Felipe Massa"
+    },
+    {
+      "question": "Who is this Brazilian F1 driver known for a long career as Michael Schumacher's Ferrari teammate?",
+      "options": [
+        "Rubens Barrichello",
+        "Felipe Massa",
+        "Nelson Piquet",
+        "Emerson Fittipaldi"
+      ],
+      "answer": 0,
+      "explanation": "Barrichello supported Schumacher's title-winning Ferrari years.",
+      "image_keyword": "Rubens Barrichello F1 driver",
+      "topic": "Rubens Barrichello"
+    },
+    {
+      "question": "Who is this Monegasque F1 driver, a race winner for Ferrari in the 2020s?",
+      "options": [
+        "Charles Leclerc",
+        "Carlos Sainz",
+        "Lando Norris",
+        "George Russell"
+      ],
+      "answer": 0,
+      "explanation": "Leclerc has driven for Ferrari since 2019.",
+      "image_keyword": "Charles Leclerc F1 driver",
+      "topic": "Charles Leclerc"
+    },
+    {
+      "question": "Who is this British F1 driver, a race winner for McLaren in the 2020s?",
+      "options": [
+        "Lando Norris",
+        "George Russell",
+        "Charles Leclerc",
+        "Oscar Piastri"
+      ],
+      "answer": 0,
+      "explanation": "Norris became a championship contender with McLaren.",
+      "image_keyword": "Lando Norris F1 driver",
+      "topic": "Lando Norris"
+    },
+    {
+      "question": "Which country won the 2002 FIFA World Cup, co-hosted by Japan and South Korea?",
       "options": [
         "Brazil",
-        "Argentina",
         "Germany",
-        "Netherlands"
-      ],
-      "answer": 0,
-      "explanation": "Brazil ended a 24-year wait for the title.",
-      "image_keyword": null,
-      "topic": "1994 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1982 FIFA World Cup in Spain?",
-      "options": [
         "Italy",
-        "West Germany",
-        "Brazil",
         "France"
       ],
       "answer": 0,
-      "explanation": "Italy claimed its third World Cup title.",
+      "explanation": "Brazil won a record fifth title that year.",
       "image_keyword": null,
-      "topic": "1982 FIFA World Cup"
+      "topic": "2002 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 1998 FIFA World Cup on home soil?",
+      "options": [
+        "France",
+        "Brazil",
+        "Italy",
+        "Argentina"
+      ],
+      "answer": 0,
+      "explanation": "France beat Brazil 3-0 in the final.",
+      "image_keyword": null,
+      "topic": "1998 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 1990 FIFA World Cup in Italy?",
+      "options": [
+        "West Germany",
+        "Argentina",
+        "Italy",
+        "Brazil"
+      ],
+      "answer": 0,
+      "explanation": "West Germany beat Argentina in the final.",
+      "image_keyword": null,
+      "topic": "1990 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 1986 FIFA World Cup, led by Diego Maradona?",
+      "options": [
+        "Argentina",
+        "West Germany",
+        "Brazil",
+        "Italy"
+      ],
+      "answer": 0,
+      "explanation": "Maradona inspired Argentina to victory in Mexico.",
+      "image_keyword": null,
+      "topic": "1986 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 2015 Cricket World Cup, held in Australia and New Zealand?",
+      "options": [
+        "Australia",
+        "New Zealand",
+        "India",
+        "South Africa"
+      ],
+      "answer": 0,
+      "explanation": "Australia beat New Zealand in the final.",
+      "image_keyword": null,
+      "topic": "2015 Cricket World Cup"
+    },
+    {
+      "question": "Which country won the 1999 Cricket World Cup?",
+      "options": [
+        "Australia",
+        "Pakistan",
+        "South Africa",
+        "New Zealand"
+      ],
+      "answer": 0,
+      "explanation": "Australia began a run of consecutive titles.",
+      "image_keyword": null,
+      "topic": "1999 Cricket World Cup"
+    },
+    {
+      "question": "Which country won the Copa America in 2021, ending a long trophy drought?",
+      "options": [
+        "Argentina",
+        "Brazil",
+        "Uruguay",
+        "Chile"
+      ],
+      "answer": 0,
+      "explanation": "Messi won his first major title with Argentina that year.",
+      "image_keyword": null,
+      "topic": "Copa America 2021"
     }
   ],
   "sports:7": [
     {
-      "question": "Which country won the 2002 FIFA World Cup, co-hosted by Japan and South Korea?",
-      "options": [
-        "Brazil",
-        "Germany",
-        "Italy",
-        "France"
-      ],
-      "answer": 0,
-      "explanation": "Brazil won a record fifth title that year.",
-      "image_keyword": null,
-      "topic": "2002 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1998 FIFA World Cup on home soil?",
-      "options": [
-        "France",
-        "Brazil",
-        "Italy",
-        "Argentina"
-      ],
-      "answer": 0,
-      "explanation": "France beat Brazil 3-0 in the final.",
-      "image_keyword": null,
-      "topic": "1998 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1990 FIFA World Cup in Italy?",
-      "options": [
-        "West Germany",
-        "Argentina",
-        "Italy",
-        "Brazil"
-      ],
-      "answer": 0,
-      "explanation": "West Germany beat Argentina in the final.",
-      "image_keyword": null,
-      "topic": "1990 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1986 FIFA World Cup, led by Diego Maradona?",
-      "options": [
-        "Argentina",
-        "West Germany",
-        "Brazil",
-        "Italy"
-      ],
-      "answer": 0,
-      "explanation": "Maradona inspired Argentina to victory in Mexico.",
-      "image_keyword": null,
-      "topic": "1986 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1966 FIFA World Cup on home soil?",
-      "options": [
-        "England",
-        "West Germany",
-        "Portugal",
-        "Brazil"
-      ],
-      "answer": 0,
-      "explanation": "It remains England's only World Cup title.",
-      "image_keyword": null,
-      "topic": "1966 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 2007 Cricket T20 World Cup, and again in 2024?",
-      "options": [
-        "India",
-        "Pakistan",
-        "Australia",
-        "England"
-      ],
-      "answer": 0,
-      "explanation": "India won the very first and the 2024 T20 World Cups.",
-      "image_keyword": null,
-      "topic": "T20 World Cup"
-    },
-    {
-      "question": "Which country won the 2007 ODI Cricket World Cup?",
-      "options": [
-        "Australia",
-        "Sri Lanka",
-        "India",
-        "South Africa"
-      ],
-      "answer": 0,
-      "explanation": "Australia completed a hat-trick of World Cup titles.",
-      "image_keyword": null,
-      "topic": "2007 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the 1996 Cricket World Cup?",
-      "options": [
-        "Sri Lanka",
-        "Australia",
-        "India",
-        "Pakistan"
-      ],
-      "answer": 0,
-      "explanation": "Sri Lanka won its first and only World Cup that year.",
-      "image_keyword": null,
-      "topic": "1996 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the 1983 Cricket World Cup, a famous upset?",
-      "options": [
-        "India",
-        "West Indies",
-        "England",
-        "Australia"
-      ],
-      "answer": 0,
-      "explanation": "India's shock win under Kapil Dev changed cricket in India.",
-      "image_keyword": null,
-      "topic": "1983 Cricket World Cup"
-    },
-    {
-      "question": "Which country won UEFA Euro 2016?",
-      "options": [
-        "Portugal",
-        "France",
-        "Germany",
-        "Spain"
-      ],
-      "answer": 0,
-      "explanation": "Portugal won its first European title, led by Ronaldo.",
-      "image_keyword": null,
-      "topic": "Euro 2016"
-    },
-    {
-      "question": "Which country won UEFA Euro 2012?",
-      "options": [
-        "Spain",
-        "Italy",
-        "Germany",
-        "Portugal"
-      ],
-      "answer": 0,
-      "explanation": "Spain completed a rare double of consecutive Euro titles.",
-      "image_keyword": null,
-      "topic": "Euro 2012"
-    },
-    {
-      "question": "Which country won the Copa America in 2021, ending a long trophy drought?",
-      "options": [
-        "Argentina",
-        "Brazil",
-        "Uruguay",
-        "Chile"
-      ],
-      "answer": 0,
-      "explanation": "Messi won his first major title with Argentina that year.",
-      "image_keyword": null,
-      "topic": "Copa America 2021"
-    },
-    {
       "question": "Who is this footballer, a Portuguese-born star known for his 'Siu' goal celebration?",
       "options": [
         "Cristiano Ronaldo",
@@ -23515,19 +23359,6 @@
       "explanation": "Clarke captained Australia to the 2015 title on home soil.",
       "image_keyword": "Michael Clarke cricketer",
       "topic": "Michael Clarke"
-    },
-    {
-      "question": "Which country won the 2015 Cricket World Cup, held in Australia and New Zealand?",
-      "options": [
-        "Australia",
-        "New Zealand",
-        "India",
-        "South Africa"
-      ],
-      "answer": 0,
-      "explanation": "Australia beat New Zealand in the final.",
-      "image_keyword": null,
-      "topic": "2015 Cricket World Cup"
     },
     {
       "question": "Who won the F1 Drivers' Championship in 2016, beating his own Mercedes teammate?",
@@ -23595,45 +23426,6 @@
       "topic": "Ronaldinho"
     },
     {
-      "question": "Which country won the 2003 Cricket World Cup?",
-      "options": [
-        "Australia",
-        "India",
-        "Sri Lanka",
-        "Kenya"
-      ],
-      "answer": 0,
-      "explanation": "Australia went unbeaten through the tournament.",
-      "image_keyword": null,
-      "topic": "2003 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the 1999 Cricket World Cup?",
-      "options": [
-        "Australia",
-        "Pakistan",
-        "South Africa",
-        "New Zealand"
-      ],
-      "answer": 0,
-      "explanation": "Australia began a run of consecutive titles.",
-      "image_keyword": null,
-      "topic": "1999 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the very first UEFA European Championship in 1960?",
-      "options": [
-        "Soviet Union",
-        "Spain",
-        "Italy",
-        "France"
-      ],
-      "answer": 0,
-      "explanation": "The Soviet Union won the inaugural tournament.",
-      "image_keyword": null,
-      "topic": "UEFA European Championship"
-    },
-    {
       "question": "Who is this Brazilian forward, a two-time World Cup winner nicknamed 'O Fenomeno'?",
       "options": [
         "Ronaldo Nazario",
@@ -23645,32 +23437,6 @@
       "explanation": "Ronaldo Nazario won World Cups in 1994 and 2002.",
       "image_keyword": "Ronaldo Nazario footballer",
       "topic": "Ronaldo Nazario"
-    },
-    {
-      "question": "Which country did Diego Maradona play international football for?",
-      "options": [
-        "Argentina",
-        "Uruguay",
-        "Brazil",
-        "Chile"
-      ],
-      "answer": 0,
-      "explanation": "Maradona captained Argentina to the 1986 title.",
-      "image_keyword": null,
-      "topic": "Diego Maradona"
-    },
-    {
-      "question": "Which F1 driver won the World Championship every year from 2000 to 2004?",
-      "options": [
-        "Michael Schumacher",
-        "Fernando Alonso",
-        "Kimi Raikkonen",
-        "Rubens Barrichello"
-      ],
-      "answer": 0,
-      "explanation": "Schumacher's Ferrari dominance was unmatched at the time.",
-      "image_keyword": null,
-      "topic": "Michael Schumacher"
     },
     {
       "question": "Who won back-to-back F1 World Championships in 2005 and 2006, ending Schumacher's run?",
@@ -23699,43 +23465,277 @@
       "topic": "Jenson Button"
     },
     {
-      "question": "Which cricketer captained India to victory in the inaugural 2007 T20 World Cup?",
+      "question": "Who is this Spanish midfielder, the heartbeat of Spain's Euro 2008, World Cup 2010, and Euro 2012 treble?",
       "options": [
-        "MS Dhoni",
-        "Sourav Ganguly",
-        "Virat Kohli",
-        "Rahul Dravid"
+        "Xavi Hernandez",
+        "Andres Iniesta",
+        "Sergio Busquets",
+        "Cesc Fabregas"
       ],
       "answer": 0,
-      "explanation": "Dhoni led a young Indian side to a surprise win.",
-      "image_keyword": null,
-      "topic": "MS Dhoni"
+      "explanation": "Xavi's passing controlled Spain's golden generation.",
+      "image_keyword": "Xavi Hernandez footballer",
+      "topic": "Xavi Hernandez"
     },
     {
-      "question": "Which country won the 1994 FIFA World Cup, beating Italy on penalties?",
+      "question": "Who is this Spanish midfielder who scored the winning goal in the 2010 FIFA World Cup final?",
+      "options": [
+        "Andres Iniesta",
+        "Xavi Hernandez",
+        "David Villa",
+        "Fernando Torres"
+      ],
+      "answer": 0,
+      "explanation": "Iniesta's extra-time goal won Spain's first World Cup.",
+      "image_keyword": "Andres Iniesta footballer",
+      "topic": "Andres Iniesta"
+    },
+    {
+      "question": "Who is this English striker, his country's record all-time goal scorer for many years?",
+      "options": [
+        "Wayne Rooney",
+        "Harry Kane",
+        "Michael Owen",
+        "Alan Shearer"
+      ],
+      "answer": 0,
+      "explanation": "Rooney held England's scoring record before Kane overtook it.",
+      "image_keyword": "Wayne Rooney footballer",
+      "topic": "Wayne Rooney"
+    },
+    {
+      "question": "Who is this French striker, an Arsenal and France legend known for his pace and finishing?",
+      "options": [
+        "Thierry Henry",
+        "Nicolas Anelka",
+        "David Trezeguet",
+        "Robert Pires"
+      ],
+      "answer": 0,
+      "explanation": "Henry is Arsenal's all-time record scorer.",
+      "image_keyword": "Thierry Henry footballer",
+      "topic": "Thierry Henry"
+    },
+    {
+      "question": "Who is this Australian captain who led his team to Cricket World Cup titles in 2003 and 2007?",
+      "options": [
+        "Ricky Ponting",
+        "Steve Waugh",
+        "Michael Clarke",
+        "Adam Gilchrist"
+      ],
+      "answer": 0,
+      "explanation": "Ponting captained Australia through a golden era.",
+      "image_keyword": "Ricky Ponting cricketer",
+      "topic": "Ricky Ponting"
+    },
+    {
+      "question": "Who is this Australian wicketkeeper-batter known for explosive hitting in multiple World Cup wins?",
+      "options": [
+        "Adam Gilchrist",
+        "Ricky Ponting",
+        "Michael Hussey",
+        "Matthew Hayden"
+      ],
+      "answer": 0,
+      "explanation": "Gilchrist redefined attacking wicketkeeper-batting.",
+      "image_keyword": "Adam Gilchrist cricketer",
+      "topic": "Adam Gilchrist"
+    },
+    {
+      "question": "Who is this New Zealand captain known for aggressive T20 batting and leading the 2015 World Cup final run?",
+      "options": [
+        "Brendon McCullum",
+        "Kane Williamson",
+        "Ross Taylor",
+        "Martin Guptill"
+      ],
+      "answer": 0,
+      "explanation": "McCullum's fearless captaincy reshaped New Zealand cricket.",
+      "image_keyword": "Brendon McCullum cricketer",
+      "topic": "Brendon McCullum"
+    },
+    {
+      "question": "Who is this South African batter nicknamed 'Mr 360' for his all-around shot-making?",
+      "options": [
+        "AB de Villiers",
+        "Faf du Plessis",
+        "Hashim Amla",
+        "Jacques Kallis"
+      ],
+      "answer": 0,
+      "explanation": "De Villiers could hit the ball to any part of the ground.",
+      "image_keyword": "AB de Villiers cricketer",
+      "topic": "AB de Villiers"
+    },
+    {
+      "question": "Who is this Pakistani fast bowler, regarded as one of the greatest swing bowlers ever?",
+      "options": [
+        "Wasim Akram",
+        "Waqar Younis",
+        "Shoaib Akhtar",
+        "Imran Khan"
+      ],
+      "answer": 0,
+      "explanation": "Akram's mastery of swing bowling earned him legendary status.",
+      "image_keyword": "Wasim Akram cricketer",
+      "topic": "Wasim Akram"
+    },
+    {
+      "question": "Who is this Australian F1 driver, a race-winning teammate of Sebastian Vettel at Red Bull?",
+      "options": [
+        "Mark Webber",
+        "Daniel Ricciardo",
+        "Jack Brabham",
+        "Alan Jones"
+      ],
+      "answer": 0,
+      "explanation": "Webber won multiple races alongside Vettel.",
+      "image_keyword": "Mark Webber F1 driver",
+      "topic": "Mark Webber"
+    },
+    {
+      "question": "Who is this Brazilian F1 driver who narrowly missed the 2008 World Championship by one point?",
+      "options": [
+        "Felipe Massa",
+        "Rubens Barrichello",
+        "Nelson Piquet",
+        "Ayrton Senna"
+      ],
+      "answer": 0,
+      "explanation": "Massa lost the title to Hamilton in the final corner of the final race.",
+      "image_keyword": "Felipe Massa F1 driver",
+      "topic": "Felipe Massa"
+    },
+    {
+      "question": "Who is this Brazilian F1 driver known for a long career as Michael Schumacher's Ferrari teammate?",
+      "options": [
+        "Rubens Barrichello",
+        "Felipe Massa",
+        "Nelson Piquet",
+        "Emerson Fittipaldi"
+      ],
+      "answer": 0,
+      "explanation": "Barrichello supported Schumacher's title-winning Ferrari years.",
+      "image_keyword": "Rubens Barrichello F1 driver",
+      "topic": "Rubens Barrichello"
+    },
+    {
+      "question": "Who is this Monegasque F1 driver, a race winner for Ferrari in the 2020s?",
+      "options": [
+        "Charles Leclerc",
+        "Carlos Sainz",
+        "Lando Norris",
+        "George Russell"
+      ],
+      "answer": 0,
+      "explanation": "Leclerc has driven for Ferrari since 2019.",
+      "image_keyword": "Charles Leclerc F1 driver",
+      "topic": "Charles Leclerc"
+    },
+    {
+      "question": "Who is this British F1 driver, a race winner for McLaren in the 2020s?",
+      "options": [
+        "Lando Norris",
+        "George Russell",
+        "Charles Leclerc",
+        "Oscar Piastri"
+      ],
+      "answer": 0,
+      "explanation": "Norris became a championship contender with McLaren.",
+      "image_keyword": "Lando Norris F1 driver",
+      "topic": "Lando Norris"
+    },
+    {
+      "question": "Which country won the 2002 FIFA World Cup, co-hosted by Japan and South Korea?",
       "options": [
         "Brazil",
-        "Argentina",
         "Germany",
-        "Netherlands"
-      ],
-      "answer": 0,
-      "explanation": "Brazil ended a 24-year wait for the title.",
-      "image_keyword": null,
-      "topic": "1994 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1982 FIFA World Cup in Spain?",
-      "options": [
         "Italy",
-        "West Germany",
-        "Brazil",
         "France"
       ],
       "answer": 0,
-      "explanation": "Italy claimed its third World Cup title.",
+      "explanation": "Brazil won a record fifth title that year.",
       "image_keyword": null,
-      "topic": "1982 FIFA World Cup"
+      "topic": "2002 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 1998 FIFA World Cup on home soil?",
+      "options": [
+        "France",
+        "Brazil",
+        "Italy",
+        "Argentina"
+      ],
+      "answer": 0,
+      "explanation": "France beat Brazil 3-0 in the final.",
+      "image_keyword": null,
+      "topic": "1998 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 1990 FIFA World Cup in Italy?",
+      "options": [
+        "West Germany",
+        "Argentina",
+        "Italy",
+        "Brazil"
+      ],
+      "answer": 0,
+      "explanation": "West Germany beat Argentina in the final.",
+      "image_keyword": null,
+      "topic": "1990 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 1986 FIFA World Cup, led by Diego Maradona?",
+      "options": [
+        "Argentina",
+        "West Germany",
+        "Brazil",
+        "Italy"
+      ],
+      "answer": 0,
+      "explanation": "Maradona inspired Argentina to victory in Mexico.",
+      "image_keyword": null,
+      "topic": "1986 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 2015 Cricket World Cup, held in Australia and New Zealand?",
+      "options": [
+        "Australia",
+        "New Zealand",
+        "India",
+        "South Africa"
+      ],
+      "answer": 0,
+      "explanation": "Australia beat New Zealand in the final.",
+      "image_keyword": null,
+      "topic": "2015 Cricket World Cup"
+    },
+    {
+      "question": "Which country won the 1999 Cricket World Cup?",
+      "options": [
+        "Australia",
+        "Pakistan",
+        "South Africa",
+        "New Zealand"
+      ],
+      "answer": 0,
+      "explanation": "Australia began a run of consecutive titles.",
+      "image_keyword": null,
+      "topic": "1999 Cricket World Cup"
+    },
+    {
+      "question": "Which country won the Copa America in 2021, ending a long trophy drought?",
+      "options": [
+        "Argentina",
+        "Brazil",
+        "Uruguay",
+        "Chile"
+      ],
+      "answer": 0,
+      "explanation": "Messi won his first major title with Argentina that year.",
+      "image_keyword": null,
+      "topic": "Copa America 2021"
     }
   ],
   "sports:8": [
@@ -23766,19 +23766,6 @@
       "topic": "Ayrton Senna"
     },
     {
-      "question": "Which historic 1980s F1 rivalry featured Alain Prost and Ayrton Senna as McLaren teammates?",
-      "options": [
-        "Prost vs Senna",
-        "Hamilton vs Rosberg",
-        "Schumacher vs Hill",
-        "Vettel vs Webber"
-      ],
-      "answer": 0,
-      "explanation": "Their fierce rivalry is one of F1's most famous.",
-      "image_keyword": null,
-      "topic": "Prost and Senna"
-    },
-    {
       "question": "Who is this Argentine World Cup winner who captained his country to the 1978 title on home soil?",
       "options": [
         "Mario Kempes",
@@ -23790,45 +23777,6 @@
       "explanation": "Passarella captained Argentina's first World Cup win.",
       "image_keyword": "Daniel Passarella footballer",
       "topic": "Daniel Passarella"
-    },
-    {
-      "question": "Which country won the 1978 FIFA World Cup as hosts?",
-      "options": [
-        "Argentina",
-        "Netherlands",
-        "Brazil",
-        "Italy"
-      ],
-      "answer": 0,
-      "explanation": "Argentina lifted its first World Cup that year.",
-      "image_keyword": null,
-      "topic": "1978 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1974 FIFA World Cup, hosted in West Germany?",
-      "options": [
-        "West Germany",
-        "Netherlands",
-        "Poland",
-        "Brazil"
-      ],
-      "answer": 0,
-      "explanation": "West Germany beat the Netherlands' 'Total Football' side.",
-      "image_keyword": null,
-      "topic": "1974 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1970 FIFA World Cup, with Pele's third title?",
-      "options": [
-        "Brazil",
-        "Italy",
-        "West Germany",
-        "England"
-      ],
-      "answer": 0,
-      "explanation": "This Brazil side is often called the greatest ever.",
-      "image_keyword": null,
-      "topic": "1970 FIFA World Cup"
     },
     {
       "question": "Who is this Argentine forward often ranked alongside Pele and Maradona among football's greatest ever?",
@@ -23870,7 +23818,7 @@
       "topic": "Franz Beckenbauer"
     },
     {
-      "question": "Which F1 driver won five World Championships in the 1950s, largely with Mercedes and Maserati?",
+      "question": "Who is this F1 driver, five-time World Champion in the 1950s, largely with Mercedes and Maserati?",
       "options": [
         "Juan Manuel Fangio",
         "Stirling Moss",
@@ -23909,32 +23857,6 @@
       "topic": "Niki Lauda"
     },
     {
-      "question": "Which country won the 1962 FIFA World Cup, Pele's second title with Brazil?",
-      "options": [
-        "Brazil",
-        "Czechoslovakia",
-        "Chile",
-        "Argentina"
-      ],
-      "answer": 0,
-      "explanation": "Brazil retained the trophy in Chile.",
-      "image_keyword": null,
-      "topic": "1962 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the very first Cricket World Cup for women, in 1973?",
-      "options": [
-        "England",
-        "Australia",
-        "India",
-        "West Indies"
-      ],
-      "answer": 0,
-      "explanation": "The women's World Cup predates the men's by two years.",
-      "image_keyword": null,
-      "topic": "1973 Women's Cricket World Cup"
-    },
-    {
       "question": "Who is this West Indian batter, holder of the record for the highest individual Test score?",
       "options": [
         "Brian Lara",
@@ -23961,19 +23883,6 @@
       "topic": "Viv Richards"
     },
     {
-      "question": "Which team, captained by Clive Lloyd, dominated world cricket through the late 1970s and 1980s?",
-      "options": [
-        "West Indies",
-        "Australia",
-        "England",
-        "Pakistan"
-      ],
-      "answer": 0,
-      "explanation": "The West Indies won the first two World Cups in that era.",
-      "image_keyword": null,
-      "topic": "West Indies cricket"
-    },
-    {
       "question": "Who is this Pakistani all-rounder and captain who led his country to the 1992 World Cup win?",
       "options": [
         "Imran Khan",
@@ -23985,32 +23894,6 @@
       "explanation": "Imran Khan famously used the 'cornered tigers' rallying cry.",
       "image_keyword": "Imran Khan cricketer",
       "topic": "Imran Khan"
-    },
-    {
-      "question": "Which country won the 1992 Cricket World Cup?",
-      "options": [
-        "Pakistan",
-        "England",
-        "New Zealand",
-        "South Africa"
-      ],
-      "answer": 0,
-      "explanation": "Pakistan won under Imran Khan's captaincy.",
-      "image_keyword": null,
-      "topic": "1992 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the 1987 Cricket World Cup, the first held outside England?",
-      "options": [
-        "Australia",
-        "England",
-        "India",
-        "Pakistan"
-      ],
-      "answer": 0,
-      "explanation": "Australia won the tournament hosted in India and Pakistan.",
-      "image_keyword": null,
-      "topic": "1987 Cricket World Cup"
     },
     {
       "question": "Who is this Hungarian footballer, star of the legendary 1950s 'Mighty Magyars' team?",
@@ -24026,33 +23909,7 @@
       "topic": "Ferenc Puskas"
     },
     {
-      "question": "Which country won the 1958 FIFA World Cup, a 17-year-old Pele's first title?",
-      "options": [
-        "Brazil",
-        "Sweden",
-        "France",
-        "West Germany"
-      ],
-      "answer": 0,
-      "explanation": "Pele became the youngest World Cup winner at the time.",
-      "image_keyword": null,
-      "topic": "1958 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1954 FIFA World Cup, an upset known as the 'Miracle of Bern'?",
-      "options": [
-        "West Germany",
-        "Hungary",
-        "Austria",
-        "Uruguay"
-      ],
-      "answer": 0,
-      "explanation": "West Germany beat the heavily favoured Hungary team.",
-      "image_keyword": null,
-      "topic": "1954 FIFA World Cup"
-    },
-    {
-      "question": "Who is this driver, a four-time F1 champion for Red Bull and Williams famous for his aggressive style in the 1990s?",
+      "question": "Who is this driver, a four-time F1 champion for Williams famous for his aggressive style in the 1990s?",
       "options": [
         "Nigel Mansell",
         "Damon Hill",
@@ -24091,19 +23948,6 @@
       "topic": "Mika Hakkinen"
     },
     {
-      "question": "Which country won the 2006 Football World Cup, and which player was sent off in the final for a headbutt?",
-      "options": [
-        "Italy won; Zinedine Zidane was sent off",
-        "France won; Marco Materazzi was sent off",
-        "Italy won; Fabio Cannavaro was sent off",
-        "France won; Thierry Henry was sent off"
-      ],
-      "answer": 0,
-      "explanation": "Italy won on penalties after Zidane's dismissal.",
-      "image_keyword": null,
-      "topic": "2006 FIFA World Cup"
-    },
-    {
       "question": "Who is this cricketer, an Australian fast bowler regarded as one of the greatest of all time, famed for his accuracy?",
       "options": [
         "Glenn McGrath",
@@ -24117,6 +23961,175 @@
       "topic": "Glenn McGrath"
     },
     {
+      "question": "Who is this Indian batter, the first man in history to score 10,000 Test runs?",
+      "options": [
+        "Sunil Gavaskar",
+        "Sachin Tendulkar",
+        "Rahul Dravid",
+        "Virender Sehwag"
+      ],
+      "answer": 0,
+      "explanation": "Gavaskar reached the milestone in 1987.",
+      "image_keyword": "Sunil Gavaskar cricketer",
+      "topic": "Sunil Gavaskar"
+    },
+    {
+      "question": "Who is this Sri Lankan spinner, holder of the record for the most Test wickets ever?",
+      "options": [
+        "Muttiah Muralitharan",
+        "Shane Warne",
+        "Anil Kumble",
+        "James Anderson"
+      ],
+      "answer": 0,
+      "explanation": "Muralitharan took over 800 Test wickets.",
+      "image_keyword": "Muttiah Muralitharan cricketer",
+      "topic": "Muttiah Muralitharan"
+    },
+    {
+      "question": "Who is this West Indian fast bowler from the 1970s-80s, nicknamed 'Whispering Death'?",
+      "options": [
+        "Michael Holding",
+        "Malcolm Marshall",
+        "Curtly Ambrose",
+        "Courtney Walsh"
+      ],
+      "answer": 0,
+      "explanation": "Holding's smooth, silent run-up made his pace deadly.",
+      "image_keyword": "Michael Holding cricketer",
+      "topic": "Michael Holding"
+    },
+    {
+      "question": "Who is this West German striker, still his country's all-time top international goal scorer?",
+      "options": [
+        "Gerd Muller",
+        "Franz Beckenbauer",
+        "Karl-Heinz Rummenigge",
+        "Jurgen Klinsmann"
+      ],
+      "answer": 0,
+      "explanation": "Muller's scoring record stood for decades.",
+      "image_keyword": "Gerd Muller footballer",
+      "topic": "Gerd Muller"
+    },
+    {
+      "question": "Who is this Dutch striker who inspired the Netherlands to win UEFA Euro 1988?",
+      "options": [
+        "Marco van Basten",
+        "Johan Cruyff",
+        "Dennis Bergkamp",
+        "Ruud Gullit"
+      ],
+      "answer": 0,
+      "explanation": "Van Basten scored a famous volley in that final.",
+      "image_keyword": "Marco van Basten footballer",
+      "topic": "Marco van Basten"
+    },
+    {
+      "question": "Who is this Scottish F1 driver, a double World Champion in the 1960s who died young in a racing crash?",
+      "options": [
+        "Jim Clark",
+        "Jackie Stewart",
+        "Graham Hill",
+        "Stirling Moss"
+      ],
+      "answer": 0,
+      "explanation": "Clark was considered one of the greatest drivers of his era.",
+      "image_keyword": "Jim Clark F1 driver",
+      "topic": "Jim Clark"
+    },
+    {
+      "question": "Who is this Australian F1 driver, a three-time champion remembered for winning a title in a car he helped build himself?",
+      "options": [
+        "Jack Brabham",
+        "Alan Jones",
+        "Nigel Mansell",
+        "Denny Hulme"
+      ],
+      "answer": 0,
+      "explanation": "Brabham remains the only driver to win a title in his own car.",
+      "image_keyword": "Jack Brabham F1 driver",
+      "topic": "Jack Brabham"
+    },
+    {
+      "question": "Who is this Brazilian F1 driver, a three-time World Champion in the 1980s known for his calm approach?",
+      "options": [
+        "Nelson Piquet",
+        "Ayrton Senna",
+        "Emerson Fittipaldi",
+        "Rubens Barrichello"
+      ],
+      "answer": 0,
+      "explanation": "Piquet won titles in 1981, 1983, and 1987.",
+      "image_keyword": "Nelson Piquet F1 driver",
+      "topic": "Nelson Piquet"
+    },
+    {
+      "question": "Which country won the 1978 FIFA World Cup as hosts?",
+      "options": [
+        "Argentina",
+        "Netherlands",
+        "Brazil",
+        "Italy"
+      ],
+      "answer": 0,
+      "explanation": "Argentina lifted its first World Cup that year.",
+      "image_keyword": null,
+      "topic": "1978 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 1974 FIFA World Cup, hosted in West Germany?",
+      "options": [
+        "West Germany",
+        "Netherlands",
+        "Poland",
+        "Brazil"
+      ],
+      "answer": 0,
+      "explanation": "West Germany beat the Netherlands' 'Total Football' side.",
+      "image_keyword": null,
+      "topic": "1974 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 1970 FIFA World Cup, with Pele's third title?",
+      "options": [
+        "Brazil",
+        "Italy",
+        "West Germany",
+        "England"
+      ],
+      "answer": 0,
+      "explanation": "This Brazil side is often called the greatest ever.",
+      "image_keyword": null,
+      "topic": "1970 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 1962 FIFA World Cup, Pele's second title with Brazil?",
+      "options": [
+        "Brazil",
+        "Czechoslovakia",
+        "Chile",
+        "Argentina"
+      ],
+      "answer": 0,
+      "explanation": "Brazil retained the trophy in Chile.",
+      "image_keyword": null,
+      "topic": "1962 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the very first Cricket World Cup for women, in 1973?",
+      "options": [
+        "England",
+        "Australia",
+        "India",
+        "West Indies"
+      ],
+      "answer": 0,
+      "explanation": "The women's World Cup predates the men's by two years.",
+      "image_keyword": null,
+      "topic": "1973 Women's Cricket World Cup"
+    },
+    {
       "question": "Which nation won the very first Women's FIFA World Cup in 1991?",
       "options": [
         "United States",
@@ -24128,19 +24141,6 @@
       "explanation": "The USA won the inaugural Women's World Cup, hosted in China.",
       "image_keyword": null,
       "topic": "1991 Women's World Cup"
-    },
-    {
-      "question": "Which country has won the most Women's FIFA World Cup titles?",
-      "options": [
-        "United States",
-        "Germany",
-        "Norway",
-        "Japan"
-      ],
-      "answer": 0,
-      "explanation": "The USA has won it four times.",
-      "image_keyword": null,
-      "topic": "Women's FIFA World Cup"
     }
   ],
   "sports:9": [
@@ -24171,19 +24171,6 @@
       "topic": "Ayrton Senna"
     },
     {
-      "question": "Which historic 1980s F1 rivalry featured Alain Prost and Ayrton Senna as McLaren teammates?",
-      "options": [
-        "Prost vs Senna",
-        "Hamilton vs Rosberg",
-        "Schumacher vs Hill",
-        "Vettel vs Webber"
-      ],
-      "answer": 0,
-      "explanation": "Their fierce rivalry is one of F1's most famous.",
-      "image_keyword": null,
-      "topic": "Prost and Senna"
-    },
-    {
       "question": "Who is this Argentine World Cup winner who captained his country to the 1978 title on home soil?",
       "options": [
         "Mario Kempes",
@@ -24195,45 +24182,6 @@
       "explanation": "Passarella captained Argentina's first World Cup win.",
       "image_keyword": "Daniel Passarella footballer",
       "topic": "Daniel Passarella"
-    },
-    {
-      "question": "Which country won the 1978 FIFA World Cup as hosts?",
-      "options": [
-        "Argentina",
-        "Netherlands",
-        "Brazil",
-        "Italy"
-      ],
-      "answer": 0,
-      "explanation": "Argentina lifted its first World Cup that year.",
-      "image_keyword": null,
-      "topic": "1978 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1974 FIFA World Cup, hosted in West Germany?",
-      "options": [
-        "West Germany",
-        "Netherlands",
-        "Poland",
-        "Brazil"
-      ],
-      "answer": 0,
-      "explanation": "West Germany beat the Netherlands' 'Total Football' side.",
-      "image_keyword": null,
-      "topic": "1974 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1970 FIFA World Cup, with Pele's third title?",
-      "options": [
-        "Brazil",
-        "Italy",
-        "West Germany",
-        "England"
-      ],
-      "answer": 0,
-      "explanation": "This Brazil side is often called the greatest ever.",
-      "image_keyword": null,
-      "topic": "1970 FIFA World Cup"
     },
     {
       "question": "Who is this Argentine forward often ranked alongside Pele and Maradona among football's greatest ever?",
@@ -24275,7 +24223,7 @@
       "topic": "Franz Beckenbauer"
     },
     {
-      "question": "Which F1 driver won five World Championships in the 1950s, largely with Mercedes and Maserati?",
+      "question": "Who is this F1 driver, five-time World Champion in the 1950s, largely with Mercedes and Maserati?",
       "options": [
         "Juan Manuel Fangio",
         "Stirling Moss",
@@ -24314,32 +24262,6 @@
       "topic": "Niki Lauda"
     },
     {
-      "question": "Which country won the 1962 FIFA World Cup, Pele's second title with Brazil?",
-      "options": [
-        "Brazil",
-        "Czechoslovakia",
-        "Chile",
-        "Argentina"
-      ],
-      "answer": 0,
-      "explanation": "Brazil retained the trophy in Chile.",
-      "image_keyword": null,
-      "topic": "1962 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the very first Cricket World Cup for women, in 1973?",
-      "options": [
-        "England",
-        "Australia",
-        "India",
-        "West Indies"
-      ],
-      "answer": 0,
-      "explanation": "The women's World Cup predates the men's by two years.",
-      "image_keyword": null,
-      "topic": "1973 Women's Cricket World Cup"
-    },
-    {
       "question": "Who is this West Indian batter, holder of the record for the highest individual Test score?",
       "options": [
         "Brian Lara",
@@ -24366,19 +24288,6 @@
       "topic": "Viv Richards"
     },
     {
-      "question": "Which team, captained by Clive Lloyd, dominated world cricket through the late 1970s and 1980s?",
-      "options": [
-        "West Indies",
-        "Australia",
-        "England",
-        "Pakistan"
-      ],
-      "answer": 0,
-      "explanation": "The West Indies won the first two World Cups in that era.",
-      "image_keyword": null,
-      "topic": "West Indies cricket"
-    },
-    {
       "question": "Who is this Pakistani all-rounder and captain who led his country to the 1992 World Cup win?",
       "options": [
         "Imran Khan",
@@ -24390,32 +24299,6 @@
       "explanation": "Imran Khan famously used the 'cornered tigers' rallying cry.",
       "image_keyword": "Imran Khan cricketer",
       "topic": "Imran Khan"
-    },
-    {
-      "question": "Which country won the 1992 Cricket World Cup?",
-      "options": [
-        "Pakistan",
-        "England",
-        "New Zealand",
-        "South Africa"
-      ],
-      "answer": 0,
-      "explanation": "Pakistan won under Imran Khan's captaincy.",
-      "image_keyword": null,
-      "topic": "1992 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the 1987 Cricket World Cup, the first held outside England?",
-      "options": [
-        "Australia",
-        "England",
-        "India",
-        "Pakistan"
-      ],
-      "answer": 0,
-      "explanation": "Australia won the tournament hosted in India and Pakistan.",
-      "image_keyword": null,
-      "topic": "1987 Cricket World Cup"
     },
     {
       "question": "Who is this Hungarian footballer, star of the legendary 1950s 'Mighty Magyars' team?",
@@ -24431,33 +24314,7 @@
       "topic": "Ferenc Puskas"
     },
     {
-      "question": "Which country won the 1958 FIFA World Cup, a 17-year-old Pele's first title?",
-      "options": [
-        "Brazil",
-        "Sweden",
-        "France",
-        "West Germany"
-      ],
-      "answer": 0,
-      "explanation": "Pele became the youngest World Cup winner at the time.",
-      "image_keyword": null,
-      "topic": "1958 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1954 FIFA World Cup, an upset known as the 'Miracle of Bern'?",
-      "options": [
-        "West Germany",
-        "Hungary",
-        "Austria",
-        "Uruguay"
-      ],
-      "answer": 0,
-      "explanation": "West Germany beat the heavily favoured Hungary team.",
-      "image_keyword": null,
-      "topic": "1954 FIFA World Cup"
-    },
-    {
-      "question": "Who is this driver, a four-time F1 champion for Red Bull and Williams famous for his aggressive style in the 1990s?",
+      "question": "Who is this driver, a four-time F1 champion for Williams famous for his aggressive style in the 1990s?",
       "options": [
         "Nigel Mansell",
         "Damon Hill",
@@ -24496,19 +24353,6 @@
       "topic": "Mika Hakkinen"
     },
     {
-      "question": "Which country won the 2006 Football World Cup, and which player was sent off in the final for a headbutt?",
-      "options": [
-        "Italy won; Zinedine Zidane was sent off",
-        "France won; Marco Materazzi was sent off",
-        "Italy won; Fabio Cannavaro was sent off",
-        "France won; Thierry Henry was sent off"
-      ],
-      "answer": 0,
-      "explanation": "Italy won on penalties after Zidane's dismissal.",
-      "image_keyword": null,
-      "topic": "2006 FIFA World Cup"
-    },
-    {
       "question": "Who is this cricketer, an Australian fast bowler regarded as one of the greatest of all time, famed for his accuracy?",
       "options": [
         "Glenn McGrath",
@@ -24522,6 +24366,175 @@
       "topic": "Glenn McGrath"
     },
     {
+      "question": "Who is this Indian batter, the first man in history to score 10,000 Test runs?",
+      "options": [
+        "Sunil Gavaskar",
+        "Sachin Tendulkar",
+        "Rahul Dravid",
+        "Virender Sehwag"
+      ],
+      "answer": 0,
+      "explanation": "Gavaskar reached the milestone in 1987.",
+      "image_keyword": "Sunil Gavaskar cricketer",
+      "topic": "Sunil Gavaskar"
+    },
+    {
+      "question": "Who is this Sri Lankan spinner, holder of the record for the most Test wickets ever?",
+      "options": [
+        "Muttiah Muralitharan",
+        "Shane Warne",
+        "Anil Kumble",
+        "James Anderson"
+      ],
+      "answer": 0,
+      "explanation": "Muralitharan took over 800 Test wickets.",
+      "image_keyword": "Muttiah Muralitharan cricketer",
+      "topic": "Muttiah Muralitharan"
+    },
+    {
+      "question": "Who is this West Indian fast bowler from the 1970s-80s, nicknamed 'Whispering Death'?",
+      "options": [
+        "Michael Holding",
+        "Malcolm Marshall",
+        "Curtly Ambrose",
+        "Courtney Walsh"
+      ],
+      "answer": 0,
+      "explanation": "Holding's smooth, silent run-up made his pace deadly.",
+      "image_keyword": "Michael Holding cricketer",
+      "topic": "Michael Holding"
+    },
+    {
+      "question": "Who is this West German striker, still his country's all-time top international goal scorer?",
+      "options": [
+        "Gerd Muller",
+        "Franz Beckenbauer",
+        "Karl-Heinz Rummenigge",
+        "Jurgen Klinsmann"
+      ],
+      "answer": 0,
+      "explanation": "Muller's scoring record stood for decades.",
+      "image_keyword": "Gerd Muller footballer",
+      "topic": "Gerd Muller"
+    },
+    {
+      "question": "Who is this Dutch striker who inspired the Netherlands to win UEFA Euro 1988?",
+      "options": [
+        "Marco van Basten",
+        "Johan Cruyff",
+        "Dennis Bergkamp",
+        "Ruud Gullit"
+      ],
+      "answer": 0,
+      "explanation": "Van Basten scored a famous volley in that final.",
+      "image_keyword": "Marco van Basten footballer",
+      "topic": "Marco van Basten"
+    },
+    {
+      "question": "Who is this Scottish F1 driver, a double World Champion in the 1960s who died young in a racing crash?",
+      "options": [
+        "Jim Clark",
+        "Jackie Stewart",
+        "Graham Hill",
+        "Stirling Moss"
+      ],
+      "answer": 0,
+      "explanation": "Clark was considered one of the greatest drivers of his era.",
+      "image_keyword": "Jim Clark F1 driver",
+      "topic": "Jim Clark"
+    },
+    {
+      "question": "Who is this Australian F1 driver, a three-time champion remembered for winning a title in a car he helped build himself?",
+      "options": [
+        "Jack Brabham",
+        "Alan Jones",
+        "Nigel Mansell",
+        "Denny Hulme"
+      ],
+      "answer": 0,
+      "explanation": "Brabham remains the only driver to win a title in his own car.",
+      "image_keyword": "Jack Brabham F1 driver",
+      "topic": "Jack Brabham"
+    },
+    {
+      "question": "Who is this Brazilian F1 driver, a three-time World Champion in the 1980s known for his calm approach?",
+      "options": [
+        "Nelson Piquet",
+        "Ayrton Senna",
+        "Emerson Fittipaldi",
+        "Rubens Barrichello"
+      ],
+      "answer": 0,
+      "explanation": "Piquet won titles in 1981, 1983, and 1987.",
+      "image_keyword": "Nelson Piquet F1 driver",
+      "topic": "Nelson Piquet"
+    },
+    {
+      "question": "Which country won the 1978 FIFA World Cup as hosts?",
+      "options": [
+        "Argentina",
+        "Netherlands",
+        "Brazil",
+        "Italy"
+      ],
+      "answer": 0,
+      "explanation": "Argentina lifted its first World Cup that year.",
+      "image_keyword": null,
+      "topic": "1978 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 1974 FIFA World Cup, hosted in West Germany?",
+      "options": [
+        "West Germany",
+        "Netherlands",
+        "Poland",
+        "Brazil"
+      ],
+      "answer": 0,
+      "explanation": "West Germany beat the Netherlands' 'Total Football' side.",
+      "image_keyword": null,
+      "topic": "1974 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 1970 FIFA World Cup, with Pele's third title?",
+      "options": [
+        "Brazil",
+        "Italy",
+        "West Germany",
+        "England"
+      ],
+      "answer": 0,
+      "explanation": "This Brazil side is often called the greatest ever.",
+      "image_keyword": null,
+      "topic": "1970 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 1962 FIFA World Cup, Pele's second title with Brazil?",
+      "options": [
+        "Brazil",
+        "Czechoslovakia",
+        "Chile",
+        "Argentina"
+      ],
+      "answer": 0,
+      "explanation": "Brazil retained the trophy in Chile.",
+      "image_keyword": null,
+      "topic": "1962 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the very first Cricket World Cup for women, in 1973?",
+      "options": [
+        "England",
+        "Australia",
+        "India",
+        "West Indies"
+      ],
+      "answer": 0,
+      "explanation": "The women's World Cup predates the men's by two years.",
+      "image_keyword": null,
+      "topic": "1973 Women's Cricket World Cup"
+    },
+    {
       "question": "Which nation won the very first Women's FIFA World Cup in 1991?",
       "options": [
         "United States",
@@ -24533,19 +24546,6 @@
       "explanation": "The USA won the inaugural Women's World Cup, hosted in China.",
       "image_keyword": null,
       "topic": "1991 Women's World Cup"
-    },
-    {
-      "question": "Which country has won the most Women's FIFA World Cup titles?",
-      "options": [
-        "United States",
-        "Germany",
-        "Norway",
-        "Japan"
-      ],
-      "answer": 0,
-      "explanation": "The USA has won it four times.",
-      "image_keyword": null,
-      "topic": "Women's FIFA World Cup"
     }
   ],
   "sports:10": [
@@ -24576,19 +24576,6 @@
       "topic": "Ayrton Senna"
     },
     {
-      "question": "Which historic 1980s F1 rivalry featured Alain Prost and Ayrton Senna as McLaren teammates?",
-      "options": [
-        "Prost vs Senna",
-        "Hamilton vs Rosberg",
-        "Schumacher vs Hill",
-        "Vettel vs Webber"
-      ],
-      "answer": 0,
-      "explanation": "Their fierce rivalry is one of F1's most famous.",
-      "image_keyword": null,
-      "topic": "Prost and Senna"
-    },
-    {
       "question": "Who is this Argentine World Cup winner who captained his country to the 1978 title on home soil?",
       "options": [
         "Mario Kempes",
@@ -24600,45 +24587,6 @@
       "explanation": "Passarella captained Argentina's first World Cup win.",
       "image_keyword": "Daniel Passarella footballer",
       "topic": "Daniel Passarella"
-    },
-    {
-      "question": "Which country won the 1978 FIFA World Cup as hosts?",
-      "options": [
-        "Argentina",
-        "Netherlands",
-        "Brazil",
-        "Italy"
-      ],
-      "answer": 0,
-      "explanation": "Argentina lifted its first World Cup that year.",
-      "image_keyword": null,
-      "topic": "1978 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1974 FIFA World Cup, hosted in West Germany?",
-      "options": [
-        "West Germany",
-        "Netherlands",
-        "Poland",
-        "Brazil"
-      ],
-      "answer": 0,
-      "explanation": "West Germany beat the Netherlands' 'Total Football' side.",
-      "image_keyword": null,
-      "topic": "1974 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1970 FIFA World Cup, with Pele's third title?",
-      "options": [
-        "Brazil",
-        "Italy",
-        "West Germany",
-        "England"
-      ],
-      "answer": 0,
-      "explanation": "This Brazil side is often called the greatest ever.",
-      "image_keyword": null,
-      "topic": "1970 FIFA World Cup"
     },
     {
       "question": "Who is this Argentine forward often ranked alongside Pele and Maradona among football's greatest ever?",
@@ -24680,7 +24628,7 @@
       "topic": "Franz Beckenbauer"
     },
     {
-      "question": "Which F1 driver won five World Championships in the 1950s, largely with Mercedes and Maserati?",
+      "question": "Who is this F1 driver, five-time World Champion in the 1950s, largely with Mercedes and Maserati?",
       "options": [
         "Juan Manuel Fangio",
         "Stirling Moss",
@@ -24719,32 +24667,6 @@
       "topic": "Niki Lauda"
     },
     {
-      "question": "Which country won the 1962 FIFA World Cup, Pele's second title with Brazil?",
-      "options": [
-        "Brazil",
-        "Czechoslovakia",
-        "Chile",
-        "Argentina"
-      ],
-      "answer": 0,
-      "explanation": "Brazil retained the trophy in Chile.",
-      "image_keyword": null,
-      "topic": "1962 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the very first Cricket World Cup for women, in 1973?",
-      "options": [
-        "England",
-        "Australia",
-        "India",
-        "West Indies"
-      ],
-      "answer": 0,
-      "explanation": "The women's World Cup predates the men's by two years.",
-      "image_keyword": null,
-      "topic": "1973 Women's Cricket World Cup"
-    },
-    {
       "question": "Who is this West Indian batter, holder of the record for the highest individual Test score?",
       "options": [
         "Brian Lara",
@@ -24771,19 +24693,6 @@
       "topic": "Viv Richards"
     },
     {
-      "question": "Which team, captained by Clive Lloyd, dominated world cricket through the late 1970s and 1980s?",
-      "options": [
-        "West Indies",
-        "Australia",
-        "England",
-        "Pakistan"
-      ],
-      "answer": 0,
-      "explanation": "The West Indies won the first two World Cups in that era.",
-      "image_keyword": null,
-      "topic": "West Indies cricket"
-    },
-    {
       "question": "Who is this Pakistani all-rounder and captain who led his country to the 1992 World Cup win?",
       "options": [
         "Imran Khan",
@@ -24795,32 +24704,6 @@
       "explanation": "Imran Khan famously used the 'cornered tigers' rallying cry.",
       "image_keyword": "Imran Khan cricketer",
       "topic": "Imran Khan"
-    },
-    {
-      "question": "Which country won the 1992 Cricket World Cup?",
-      "options": [
-        "Pakistan",
-        "England",
-        "New Zealand",
-        "South Africa"
-      ],
-      "answer": 0,
-      "explanation": "Pakistan won under Imran Khan's captaincy.",
-      "image_keyword": null,
-      "topic": "1992 Cricket World Cup"
-    },
-    {
-      "question": "Which country won the 1987 Cricket World Cup, the first held outside England?",
-      "options": [
-        "Australia",
-        "England",
-        "India",
-        "Pakistan"
-      ],
-      "answer": 0,
-      "explanation": "Australia won the tournament hosted in India and Pakistan.",
-      "image_keyword": null,
-      "topic": "1987 Cricket World Cup"
     },
     {
       "question": "Who is this Hungarian footballer, star of the legendary 1950s 'Mighty Magyars' team?",
@@ -24836,33 +24719,7 @@
       "topic": "Ferenc Puskas"
     },
     {
-      "question": "Which country won the 1958 FIFA World Cup, a 17-year-old Pele's first title?",
-      "options": [
-        "Brazil",
-        "Sweden",
-        "France",
-        "West Germany"
-      ],
-      "answer": 0,
-      "explanation": "Pele became the youngest World Cup winner at the time.",
-      "image_keyword": null,
-      "topic": "1958 FIFA World Cup"
-    },
-    {
-      "question": "Which country won the 1954 FIFA World Cup, an upset known as the 'Miracle of Bern'?",
-      "options": [
-        "West Germany",
-        "Hungary",
-        "Austria",
-        "Uruguay"
-      ],
-      "answer": 0,
-      "explanation": "West Germany beat the heavily favoured Hungary team.",
-      "image_keyword": null,
-      "topic": "1954 FIFA World Cup"
-    },
-    {
-      "question": "Who is this driver, a four-time F1 champion for Red Bull and Williams famous for his aggressive style in the 1990s?",
+      "question": "Who is this driver, a four-time F1 champion for Williams famous for his aggressive style in the 1990s?",
       "options": [
         "Nigel Mansell",
         "Damon Hill",
@@ -24901,19 +24758,6 @@
       "topic": "Mika Hakkinen"
     },
     {
-      "question": "Which country won the 2006 Football World Cup, and which player was sent off in the final for a headbutt?",
-      "options": [
-        "Italy won; Zinedine Zidane was sent off",
-        "France won; Marco Materazzi was sent off",
-        "Italy won; Fabio Cannavaro was sent off",
-        "France won; Thierry Henry was sent off"
-      ],
-      "answer": 0,
-      "explanation": "Italy won on penalties after Zidane's dismissal.",
-      "image_keyword": null,
-      "topic": "2006 FIFA World Cup"
-    },
-    {
       "question": "Who is this cricketer, an Australian fast bowler regarded as one of the greatest of all time, famed for his accuracy?",
       "options": [
         "Glenn McGrath",
@@ -24927,6 +24771,175 @@
       "topic": "Glenn McGrath"
     },
     {
+      "question": "Who is this Indian batter, the first man in history to score 10,000 Test runs?",
+      "options": [
+        "Sunil Gavaskar",
+        "Sachin Tendulkar",
+        "Rahul Dravid",
+        "Virender Sehwag"
+      ],
+      "answer": 0,
+      "explanation": "Gavaskar reached the milestone in 1987.",
+      "image_keyword": "Sunil Gavaskar cricketer",
+      "topic": "Sunil Gavaskar"
+    },
+    {
+      "question": "Who is this Sri Lankan spinner, holder of the record for the most Test wickets ever?",
+      "options": [
+        "Muttiah Muralitharan",
+        "Shane Warne",
+        "Anil Kumble",
+        "James Anderson"
+      ],
+      "answer": 0,
+      "explanation": "Muralitharan took over 800 Test wickets.",
+      "image_keyword": "Muttiah Muralitharan cricketer",
+      "topic": "Muttiah Muralitharan"
+    },
+    {
+      "question": "Who is this West Indian fast bowler from the 1970s-80s, nicknamed 'Whispering Death'?",
+      "options": [
+        "Michael Holding",
+        "Malcolm Marshall",
+        "Curtly Ambrose",
+        "Courtney Walsh"
+      ],
+      "answer": 0,
+      "explanation": "Holding's smooth, silent run-up made his pace deadly.",
+      "image_keyword": "Michael Holding cricketer",
+      "topic": "Michael Holding"
+    },
+    {
+      "question": "Who is this West German striker, still his country's all-time top international goal scorer?",
+      "options": [
+        "Gerd Muller",
+        "Franz Beckenbauer",
+        "Karl-Heinz Rummenigge",
+        "Jurgen Klinsmann"
+      ],
+      "answer": 0,
+      "explanation": "Muller's scoring record stood for decades.",
+      "image_keyword": "Gerd Muller footballer",
+      "topic": "Gerd Muller"
+    },
+    {
+      "question": "Who is this Dutch striker who inspired the Netherlands to win UEFA Euro 1988?",
+      "options": [
+        "Marco van Basten",
+        "Johan Cruyff",
+        "Dennis Bergkamp",
+        "Ruud Gullit"
+      ],
+      "answer": 0,
+      "explanation": "Van Basten scored a famous volley in that final.",
+      "image_keyword": "Marco van Basten footballer",
+      "topic": "Marco van Basten"
+    },
+    {
+      "question": "Who is this Scottish F1 driver, a double World Champion in the 1960s who died young in a racing crash?",
+      "options": [
+        "Jim Clark",
+        "Jackie Stewart",
+        "Graham Hill",
+        "Stirling Moss"
+      ],
+      "answer": 0,
+      "explanation": "Clark was considered one of the greatest drivers of his era.",
+      "image_keyword": "Jim Clark F1 driver",
+      "topic": "Jim Clark"
+    },
+    {
+      "question": "Who is this Australian F1 driver, a three-time champion remembered for winning a title in a car he helped build himself?",
+      "options": [
+        "Jack Brabham",
+        "Alan Jones",
+        "Nigel Mansell",
+        "Denny Hulme"
+      ],
+      "answer": 0,
+      "explanation": "Brabham remains the only driver to win a title in his own car.",
+      "image_keyword": "Jack Brabham F1 driver",
+      "topic": "Jack Brabham"
+    },
+    {
+      "question": "Who is this Brazilian F1 driver, a three-time World Champion in the 1980s known for his calm approach?",
+      "options": [
+        "Nelson Piquet",
+        "Ayrton Senna",
+        "Emerson Fittipaldi",
+        "Rubens Barrichello"
+      ],
+      "answer": 0,
+      "explanation": "Piquet won titles in 1981, 1983, and 1987.",
+      "image_keyword": "Nelson Piquet F1 driver",
+      "topic": "Nelson Piquet"
+    },
+    {
+      "question": "Which country won the 1978 FIFA World Cup as hosts?",
+      "options": [
+        "Argentina",
+        "Netherlands",
+        "Brazil",
+        "Italy"
+      ],
+      "answer": 0,
+      "explanation": "Argentina lifted its first World Cup that year.",
+      "image_keyword": null,
+      "topic": "1978 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 1974 FIFA World Cup, hosted in West Germany?",
+      "options": [
+        "West Germany",
+        "Netherlands",
+        "Poland",
+        "Brazil"
+      ],
+      "answer": 0,
+      "explanation": "West Germany beat the Netherlands' 'Total Football' side.",
+      "image_keyword": null,
+      "topic": "1974 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 1970 FIFA World Cup, with Pele's third title?",
+      "options": [
+        "Brazil",
+        "Italy",
+        "West Germany",
+        "England"
+      ],
+      "answer": 0,
+      "explanation": "This Brazil side is often called the greatest ever.",
+      "image_keyword": null,
+      "topic": "1970 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the 1962 FIFA World Cup, Pele's second title with Brazil?",
+      "options": [
+        "Brazil",
+        "Czechoslovakia",
+        "Chile",
+        "Argentina"
+      ],
+      "answer": 0,
+      "explanation": "Brazil retained the trophy in Chile.",
+      "image_keyword": null,
+      "topic": "1962 FIFA World Cup"
+    },
+    {
+      "question": "Which country won the very first Cricket World Cup for women, in 1973?",
+      "options": [
+        "England",
+        "Australia",
+        "India",
+        "West Indies"
+      ],
+      "answer": 0,
+      "explanation": "The women's World Cup predates the men's by two years.",
+      "image_keyword": null,
+      "topic": "1973 Women's Cricket World Cup"
+    },
+    {
       "question": "Which nation won the very first Women's FIFA World Cup in 1991?",
       "options": [
         "United States",
@@ -24938,19 +24951,6 @@
       "explanation": "The USA won the inaugural Women's World Cup, hosted in China.",
       "image_keyword": null,
       "topic": "1991 Women's World Cup"
-    },
-    {
-      "question": "Which country has won the most Women's FIFA World Cup titles?",
-      "options": [
-        "United States",
-        "Germany",
-        "Norway",
-        "Japan"
-      ],
-      "answer": 0,
-      "explanation": "The USA has won it four times.",
-      "image_keyword": null,
-      "topic": "Women's FIFA World Cup"
     }
   ]
 }
