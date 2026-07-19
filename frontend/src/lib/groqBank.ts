@@ -394,6 +394,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Earth's gravity holds the Moon in orbit.",
       "image_keyword": null,
       "topic": "gravity"
+    },
+    {
+      "question": "What do we call the path a planet follows around the Sun?",
+      "options": [
+        "Orbit",
+        "Axis",
+        "Ring",
+        "Belt"
+      ],
+      "answer": 0,
+      "explanation": "Planets travel in an orbit around the Sun.",
+      "image_keyword": null,
+      "topic": "orbit"
+    },
+    {
+      "question": "Which planet is the smallest in our solar system?",
+      "options": [
+        "Mercury",
+        "Mars",
+        "Venus",
+        "Pluto"
+      ],
+      "answer": 0,
+      "explanation": "Mercury is the smallest planet.",
+      "image_keyword": null,
+      "topic": "Mercury"
+    },
+    {
+      "question": "What is Earth's only natural satellite?",
+      "options": [
+        "The Sun",
+        "The Moon",
+        "Mars",
+        "A star"
+      ],
+      "answer": 1,
+      "explanation": "The Moon orbits Earth naturally.",
+      "image_keyword": null,
+      "topic": "Moon"
+    },
+    {
+      "question": "What do astronauts eat in space, since food floats around?",
+      "options": [
+        "Special packaged food",
+        "Only pills",
+        "Nothing at all",
+        "Only fresh fruit"
+      ],
+      "answer": 0,
+      "explanation": "Food is packaged so it won't float away.",
+      "image_keyword": null,
+      "topic": "space food"
+    },
+    {
+      "question": "Which planet is called Earth's twin because it's a similar size?",
+      "options": [
+        "Mars",
+        "Venus",
+        "Mercury",
+        "Neptune"
+      ],
+      "answer": 1,
+      "explanation": "Venus is close to Earth in size.",
+      "image_keyword": null,
+      "topic": "Venus"
+    },
+    {
+      "question": "What do we call a spacecraft that carries astronauts to space and back?",
+      "options": [
+        "Rocket",
+        "Rover",
+        "Satellite",
+        "Space shuttle"
+      ],
+      "answer": 3,
+      "explanation": "Space shuttles ferried crews to orbit.",
+      "image_keyword": null,
+      "topic": "space shuttle"
+    },
+    {
+      "question": "Which planet takes the longest to orbit the Sun?",
+      "options": [
+        "Mercury",
+        "Earth",
+        "Neptune",
+        "Mars"
+      ],
+      "answer": 2,
+      "explanation": "Neptune takes about 165 Earth years.",
+      "image_keyword": null,
+      "topic": "Neptune"
+    },
+    {
+      "question": "What is a satellite?",
+      "options": [
+        "An object that orbits a planet",
+        "A type of rocket",
+        "A star",
+        "A moon rock"
+      ],
+      "answer": 0,
+      "explanation": "Moons and space stations are satellites.",
+      "image_keyword": null,
+      "topic": "satellite"
+    },
+    {
+      "question": "Which space agency landed the first astronauts on the Moon?",
+      "options": [
+        "NASA",
+        "ESA",
+        "ISRO",
+        "Roscosmos"
+      ],
+      "answer": 0,
+      "explanation": "NASA's Apollo program landed them there.",
+      "image_keyword": null,
+      "topic": "NASA"
+    },
+    {
+      "question": "What do we call the imaginary line a planet spins around?",
+      "options": [
+        "Equator",
+        "Axis",
+        "Orbit",
+        "Meridian"
+      ],
+      "answer": 1,
+      "explanation": "Earth spins on its axis once a day.",
+      "image_keyword": null,
+      "topic": "axis"
     }
   ],
   "space:5": [
@@ -786,6 +916,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Earth's gravity holds the Moon in orbit.",
       "image_keyword": null,
       "topic": "gravity"
+    },
+    {
+      "question": "What do we call the path a planet follows around the Sun?",
+      "options": [
+        "Orbit",
+        "Axis",
+        "Ring",
+        "Belt"
+      ],
+      "answer": 0,
+      "explanation": "Planets travel in an orbit around the Sun.",
+      "image_keyword": null,
+      "topic": "orbit"
+    },
+    {
+      "question": "Which planet is the smallest in our solar system?",
+      "options": [
+        "Mercury",
+        "Mars",
+        "Venus",
+        "Pluto"
+      ],
+      "answer": 0,
+      "explanation": "Mercury is the smallest planet.",
+      "image_keyword": null,
+      "topic": "Mercury"
+    },
+    {
+      "question": "What is Earth's only natural satellite?",
+      "options": [
+        "The Sun",
+        "The Moon",
+        "Mars",
+        "A star"
+      ],
+      "answer": 1,
+      "explanation": "The Moon orbits Earth naturally.",
+      "image_keyword": null,
+      "topic": "Moon"
+    },
+    {
+      "question": "What do astronauts eat in space, since food floats around?",
+      "options": [
+        "Special packaged food",
+        "Only pills",
+        "Nothing at all",
+        "Only fresh fruit"
+      ],
+      "answer": 0,
+      "explanation": "Food is packaged so it won't float away.",
+      "image_keyword": null,
+      "topic": "space food"
+    },
+    {
+      "question": "Which planet is called Earth's twin because it's a similar size?",
+      "options": [
+        "Mars",
+        "Venus",
+        "Mercury",
+        "Neptune"
+      ],
+      "answer": 1,
+      "explanation": "Venus is close to Earth in size.",
+      "image_keyword": null,
+      "topic": "Venus"
+    },
+    {
+      "question": "What do we call a spacecraft that carries astronauts to space and back?",
+      "options": [
+        "Rocket",
+        "Rover",
+        "Satellite",
+        "Space shuttle"
+      ],
+      "answer": 3,
+      "explanation": "Space shuttles ferried crews to orbit.",
+      "image_keyword": null,
+      "topic": "space shuttle"
+    },
+    {
+      "question": "Which planet takes the longest to orbit the Sun?",
+      "options": [
+        "Mercury",
+        "Earth",
+        "Neptune",
+        "Mars"
+      ],
+      "answer": 2,
+      "explanation": "Neptune takes about 165 Earth years.",
+      "image_keyword": null,
+      "topic": "Neptune"
+    },
+    {
+      "question": "What is a satellite?",
+      "options": [
+        "An object that orbits a planet",
+        "A type of rocket",
+        "A star",
+        "A moon rock"
+      ],
+      "answer": 0,
+      "explanation": "Moons and space stations are satellites.",
+      "image_keyword": null,
+      "topic": "satellite"
+    },
+    {
+      "question": "Which space agency landed the first astronauts on the Moon?",
+      "options": [
+        "NASA",
+        "ESA",
+        "ISRO",
+        "Roscosmos"
+      ],
+      "answer": 0,
+      "explanation": "NASA's Apollo program landed them there.",
+      "image_keyword": null,
+      "topic": "NASA"
+    },
+    {
+      "question": "What do we call the imaginary line a planet spins around?",
+      "options": [
+        "Equator",
+        "Axis",
+        "Orbit",
+        "Meridian"
+      ],
+      "answer": 1,
+      "explanation": "Earth spins on its axis once a day.",
+      "image_keyword": null,
+      "topic": "axis"
     }
   ],
   "space:6": [
@@ -1178,6 +1438,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Sojourner rolled onto Mars in 1997.",
       "image_keyword": null,
       "topic": "Mars rover"
+    },
+    {
+      "question": "What is a solar eclipse?",
+      "options": [
+        "The Moon blocking the Sun as seen from Earth",
+        "Earth blocking the Sun",
+        "The Sun exploding",
+        "Clouds covering the Sun"
+      ],
+      "answer": 0,
+      "explanation": "The Moon passes directly between Earth and the Sun.",
+      "image_keyword": null,
+      "topic": "solar eclipse"
+    },
+    {
+      "question": "What is the point in a planet's orbit closest to the Sun called?",
+      "options": [
+        "Perihelion",
+        "Aphelion",
+        "Zenith",
+        "Equinox"
+      ],
+      "answer": 0,
+      "explanation": "Aphelion is the farthest point instead.",
+      "image_keyword": null,
+      "topic": "perihelion"
+    },
+    {
+      "question": "Which planet's atmosphere is theorized to rain diamonds?",
+      "options": [
+        "Neptune",
+        "Mars",
+        "Mercury",
+        "Earth"
+      ],
+      "answer": 0,
+      "explanation": "Extreme pressure may crush carbon into diamonds.",
+      "image_keyword": null,
+      "topic": "Neptune"
+    },
+    {
+      "question": "What do we call a region of space where gravity is so strong not even light escapes?",
+      "options": [
+        "Nebula",
+        "Black hole",
+        "Supernova",
+        "Neutron star"
+      ],
+      "answer": 1,
+      "explanation": "Nothing, not even light, can escape a black hole.",
+      "image_keyword": null,
+      "topic": "black hole"
+    },
+    {
+      "question": "Which company was first to land and reuse an orbital rocket booster?",
+      "options": [
+        "SpaceX",
+        "NASA",
+        "Blue Origin",
+        "Roscosmos"
+      ],
+      "answer": 0,
+      "explanation": "SpaceX landed a Falcon 9 booster in 2015.",
+      "image_keyword": null,
+      "topic": "SpaceX"
+    },
+    {
+      "question": "Which of Saturn's moons has lakes of liquid methane?",
+      "options": [
+        "Titan",
+        "Io",
+        "Enceladus",
+        "Mimas"
+      ],
+      "answer": 0,
+      "explanation": "Titan is the only moon with stable surface liquid.",
+      "image_keyword": null,
+      "topic": "Titan"
+    },
+    {
+      "question": "What is a nebula?",
+      "options": [
+        "A giant cloud of gas and dust in space",
+        "A dead star",
+        "A type of comet",
+        "A black hole"
+      ],
+      "answer": 0,
+      "explanation": "Nebulae are often stellar nurseries.",
+      "image_keyword": null,
+      "topic": "nebula"
+    },
+    {
+      "question": "Which Apollo mission first carried humans to orbit the Moon without landing?",
+      "options": [
+        "Apollo 8",
+        "Apollo 11",
+        "Apollo 13",
+        "Gemini 4"
+      ],
+      "answer": 0,
+      "explanation": "Apollo 8 orbited the Moon in December 1968.",
+      "image_keyword": null,
+      "topic": "Apollo 8"
+    },
+    {
+      "question": "Why do rockets need multiple stages?",
+      "options": [
+        "To shed weight as fuel burns, for efficiency",
+        "To look impressive",
+        "For decoration",
+        "To slow the rocket down"
+      ],
+      "answer": 0,
+      "explanation": "Dropping empty stages saves fuel and weight.",
+      "image_keyword": null,
+      "topic": "rocket stages"
+    },
+    {
+      "question": "Which icy moon of Jupiter is a top target in the search for life due to a possible subsurface ocean?",
+      "options": [
+        "Europa",
+        "Io",
+        "Ganymede",
+        "Callisto"
+      ],
+      "answer": 0,
+      "explanation": "Europa's ice shell may hide a liquid ocean.",
+      "image_keyword": null,
+      "topic": "Europa"
     }
   ],
   "space:7": [
@@ -1570,6 +1960,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Sojourner rolled onto Mars in 1997.",
       "image_keyword": null,
       "topic": "Mars rover"
+    },
+    {
+      "question": "What is a solar eclipse?",
+      "options": [
+        "The Moon blocking the Sun as seen from Earth",
+        "Earth blocking the Sun",
+        "The Sun exploding",
+        "Clouds covering the Sun"
+      ],
+      "answer": 0,
+      "explanation": "The Moon passes directly between Earth and the Sun.",
+      "image_keyword": null,
+      "topic": "solar eclipse"
+    },
+    {
+      "question": "What is the point in a planet's orbit closest to the Sun called?",
+      "options": [
+        "Perihelion",
+        "Aphelion",
+        "Zenith",
+        "Equinox"
+      ],
+      "answer": 0,
+      "explanation": "Aphelion is the farthest point instead.",
+      "image_keyword": null,
+      "topic": "perihelion"
+    },
+    {
+      "question": "Which planet's atmosphere is theorized to rain diamonds?",
+      "options": [
+        "Neptune",
+        "Mars",
+        "Mercury",
+        "Earth"
+      ],
+      "answer": 0,
+      "explanation": "Extreme pressure may crush carbon into diamonds.",
+      "image_keyword": null,
+      "topic": "Neptune"
+    },
+    {
+      "question": "What do we call a region of space where gravity is so strong not even light escapes?",
+      "options": [
+        "Nebula",
+        "Black hole",
+        "Supernova",
+        "Neutron star"
+      ],
+      "answer": 1,
+      "explanation": "Nothing, not even light, can escape a black hole.",
+      "image_keyword": null,
+      "topic": "black hole"
+    },
+    {
+      "question": "Which company was first to land and reuse an orbital rocket booster?",
+      "options": [
+        "SpaceX",
+        "NASA",
+        "Blue Origin",
+        "Roscosmos"
+      ],
+      "answer": 0,
+      "explanation": "SpaceX landed a Falcon 9 booster in 2015.",
+      "image_keyword": null,
+      "topic": "SpaceX"
+    },
+    {
+      "question": "Which of Saturn's moons has lakes of liquid methane?",
+      "options": [
+        "Titan",
+        "Io",
+        "Enceladus",
+        "Mimas"
+      ],
+      "answer": 0,
+      "explanation": "Titan is the only moon with stable surface liquid.",
+      "image_keyword": null,
+      "topic": "Titan"
+    },
+    {
+      "question": "What is a nebula?",
+      "options": [
+        "A giant cloud of gas and dust in space",
+        "A dead star",
+        "A type of comet",
+        "A black hole"
+      ],
+      "answer": 0,
+      "explanation": "Nebulae are often stellar nurseries.",
+      "image_keyword": null,
+      "topic": "nebula"
+    },
+    {
+      "question": "Which Apollo mission first carried humans to orbit the Moon without landing?",
+      "options": [
+        "Apollo 8",
+        "Apollo 11",
+        "Apollo 13",
+        "Gemini 4"
+      ],
+      "answer": 0,
+      "explanation": "Apollo 8 orbited the Moon in December 1968.",
+      "image_keyword": null,
+      "topic": "Apollo 8"
+    },
+    {
+      "question": "Why do rockets need multiple stages?",
+      "options": [
+        "To shed weight as fuel burns, for efficiency",
+        "To look impressive",
+        "For decoration",
+        "To slow the rocket down"
+      ],
+      "answer": 0,
+      "explanation": "Dropping empty stages saves fuel and weight.",
+      "image_keyword": null,
+      "topic": "rocket stages"
+    },
+    {
+      "question": "Which icy moon of Jupiter is a top target in the search for life due to a possible subsurface ocean?",
+      "options": [
+        "Europa",
+        "Io",
+        "Ganymede",
+        "Callisto"
+      ],
+      "answer": 0,
+      "explanation": "Europa's ice shell may hide a liquid ocean.",
+      "image_keyword": null,
+      "topic": "Europa"
     }
   ],
   "space:8": [
@@ -1962,6 +2482,123 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Gravity wins - total collapse.",
       "image_keyword": null,
       "topic": "black hole"
+    },
+    {
+      "question": "What is a magnetar?",
+      "options": [
+        "A neutron star with an extremely powerful magnetic field",
+        "A giant magnet satellite",
+        "A magnetic planet",
+        "A type of comet"
+      ],
+      "answer": 0,
+      "explanation": "Its field can be trillions of times Earth's.",
+      "image_keyword": null,
+      "topic": "magnetar"
+    },
+    {
+      "question": "What does the cosmological principle assume about the universe?",
+      "options": [
+        "It is uniform and looks the same in all directions at large scales",
+        "Only Earth is unique",
+        "Stars are randomly scattered with no pattern",
+        "Galaxies never move"
+      ],
+      "answer": 0,
+      "explanation": "It underlies most models of the universe's structure.",
+      "image_keyword": null,
+      "topic": "cosmological principle"
+    },
+    {
+      "question": "What is the Fermi Paradox about?",
+      "options": [
+        "The contradiction between high odds of alien life and the lack of evidence for it",
+        "A mathematical error by Fermi",
+        "A flaw in rocket design",
+        "A star's changing temperature"
+      ],
+      "answer": 0,
+      "explanation": "Named after physicist Enrico Fermi's famous question.",
+      "image_keyword": null,
+      "topic": "Fermi Paradox"
+    },
+    {
+      "question": "What is a Lagrange point?",
+      "options": [
+        "A location where gravitational forces balance, letting objects stay in place",
+        "A type of star",
+        "The edge of a black hole",
+        "A comet's orbit path"
+      ],
+      "answer": 0,
+      "explanation": "The James Webb telescope orbits one.",
+      "image_keyword": null,
+      "topic": "Lagrange point"
+    },
+    {
+      "question": "What does spectroscopy let astronomers determine about distant stars?",
+      "options": [
+        "Their composition and motion from their light",
+        "Their exact age in years",
+        "Their weight in kilograms",
+        "Their names"
+      ],
+      "answer": 0,
+      "explanation": "Splitting light into a spectrum reveals chemical fingerprints.",
+      "image_keyword": null,
+      "topic": "spectroscopy"
+    },
+    {
+      "question": "What is the correct order of terms as a space rock approaches and lands on Earth?",
+      "options": [
+        "Meteoroid, then meteor, then meteorite",
+        "Meteorite, then meteor, then meteoroid",
+        "Meteor, then meteoroid, then meteorite",
+        "They are all the same thing"
+      ],
+      "answer": 0,
+      "explanation": "It's a meteoroid in space, a meteor burning up, a meteorite once landed.",
+      "image_keyword": null,
+      "topic": "meteoroid"
+    },
+    {
+      "question": "What powers a pulsar's regular pulses of radiation?",
+      "options": [
+        "Its rapid rotation sweeping a beam around like a lighthouse",
+        "Chemical reactions on its surface",
+        "Ongoing nuclear fusion at its core",
+        "Reflected starlight"
+      ],
+      "answer": 0,
+      "explanation": "The beam sweeps past Earth with each spin.",
+      "image_keyword": null,
+      "topic": "pulsar"
+    },
+    {
+      "question": "The Chicxulub impactor is linked to which event?",
+      "options": [
+        "The extinction of the dinosaurs",
+        "The birth of the Moon",
+        "The formation of Saturn's rings",
+        "The Big Bang"
+      ],
+      "answer": 0,
+      "explanation": "A massive asteroid struck Earth about 66 million years ago.",
+      "image_keyword": null,
+      "topic": "Chicxulub impactor"
+    },
+    {
+      "question": "What did India's Chandrayaan-3 mission achieve in 2023?",
+      "options": [
+        "The first landing near the Moon's south pole",
+        "The first Mars flyby",
+        "The first human Moon landing",
+        "The first satellite launch"
+      ],
+      "answer": 0,
+      "explanation": "India became the first nation to land there.",
+      "image_keyword": null,
+      "topic": "Chandrayaan-3"
     }
   ],
   "space:9": [
@@ -2354,6 +2991,123 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Gravity wins - total collapse.",
       "image_keyword": null,
       "topic": "black hole"
+    },
+    {
+      "question": "What is a magnetar?",
+      "options": [
+        "A neutron star with an extremely powerful magnetic field",
+        "A giant magnet satellite",
+        "A magnetic planet",
+        "A type of comet"
+      ],
+      "answer": 0,
+      "explanation": "Its field can be trillions of times Earth's.",
+      "image_keyword": null,
+      "topic": "magnetar"
+    },
+    {
+      "question": "What does the cosmological principle assume about the universe?",
+      "options": [
+        "It is uniform and looks the same in all directions at large scales",
+        "Only Earth is unique",
+        "Stars are randomly scattered with no pattern",
+        "Galaxies never move"
+      ],
+      "answer": 0,
+      "explanation": "It underlies most models of the universe's structure.",
+      "image_keyword": null,
+      "topic": "cosmological principle"
+    },
+    {
+      "question": "What is the Fermi Paradox about?",
+      "options": [
+        "The contradiction between high odds of alien life and the lack of evidence for it",
+        "A mathematical error by Fermi",
+        "A flaw in rocket design",
+        "A star's changing temperature"
+      ],
+      "answer": 0,
+      "explanation": "Named after physicist Enrico Fermi's famous question.",
+      "image_keyword": null,
+      "topic": "Fermi Paradox"
+    },
+    {
+      "question": "What is a Lagrange point?",
+      "options": [
+        "A location where gravitational forces balance, letting objects stay in place",
+        "A type of star",
+        "The edge of a black hole",
+        "A comet's orbit path"
+      ],
+      "answer": 0,
+      "explanation": "The James Webb telescope orbits one.",
+      "image_keyword": null,
+      "topic": "Lagrange point"
+    },
+    {
+      "question": "What does spectroscopy let astronomers determine about distant stars?",
+      "options": [
+        "Their composition and motion from their light",
+        "Their exact age in years",
+        "Their weight in kilograms",
+        "Their names"
+      ],
+      "answer": 0,
+      "explanation": "Splitting light into a spectrum reveals chemical fingerprints.",
+      "image_keyword": null,
+      "topic": "spectroscopy"
+    },
+    {
+      "question": "What is the correct order of terms as a space rock approaches and lands on Earth?",
+      "options": [
+        "Meteoroid, then meteor, then meteorite",
+        "Meteorite, then meteor, then meteoroid",
+        "Meteor, then meteoroid, then meteorite",
+        "They are all the same thing"
+      ],
+      "answer": 0,
+      "explanation": "It's a meteoroid in space, a meteor burning up, a meteorite once landed.",
+      "image_keyword": null,
+      "topic": "meteoroid"
+    },
+    {
+      "question": "What powers a pulsar's regular pulses of radiation?",
+      "options": [
+        "Its rapid rotation sweeping a beam around like a lighthouse",
+        "Chemical reactions on its surface",
+        "Ongoing nuclear fusion at its core",
+        "Reflected starlight"
+      ],
+      "answer": 0,
+      "explanation": "The beam sweeps past Earth with each spin.",
+      "image_keyword": null,
+      "topic": "pulsar"
+    },
+    {
+      "question": "The Chicxulub impactor is linked to which event?",
+      "options": [
+        "The extinction of the dinosaurs",
+        "The birth of the Moon",
+        "The formation of Saturn's rings",
+        "The Big Bang"
+      ],
+      "answer": 0,
+      "explanation": "A massive asteroid struck Earth about 66 million years ago.",
+      "image_keyword": null,
+      "topic": "Chicxulub impactor"
+    },
+    {
+      "question": "What did India's Chandrayaan-3 mission achieve in 2023?",
+      "options": [
+        "The first landing near the Moon's south pole",
+        "The first Mars flyby",
+        "The first human Moon landing",
+        "The first satellite launch"
+      ],
+      "answer": 0,
+      "explanation": "India became the first nation to land there.",
+      "image_keyword": null,
+      "topic": "Chandrayaan-3"
     }
   ],
   "space:10": [
@@ -2746,6 +3500,123 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Gravity wins - total collapse.",
       "image_keyword": null,
       "topic": "black hole"
+    },
+    {
+      "question": "What is a magnetar?",
+      "options": [
+        "A neutron star with an extremely powerful magnetic field",
+        "A giant magnet satellite",
+        "A magnetic planet",
+        "A type of comet"
+      ],
+      "answer": 0,
+      "explanation": "Its field can be trillions of times Earth's.",
+      "image_keyword": null,
+      "topic": "magnetar"
+    },
+    {
+      "question": "What does the cosmological principle assume about the universe?",
+      "options": [
+        "It is uniform and looks the same in all directions at large scales",
+        "Only Earth is unique",
+        "Stars are randomly scattered with no pattern",
+        "Galaxies never move"
+      ],
+      "answer": 0,
+      "explanation": "It underlies most models of the universe's structure.",
+      "image_keyword": null,
+      "topic": "cosmological principle"
+    },
+    {
+      "question": "What is the Fermi Paradox about?",
+      "options": [
+        "The contradiction between high odds of alien life and the lack of evidence for it",
+        "A mathematical error by Fermi",
+        "A flaw in rocket design",
+        "A star's changing temperature"
+      ],
+      "answer": 0,
+      "explanation": "Named after physicist Enrico Fermi's famous question.",
+      "image_keyword": null,
+      "topic": "Fermi Paradox"
+    },
+    {
+      "question": "What is a Lagrange point?",
+      "options": [
+        "A location where gravitational forces balance, letting objects stay in place",
+        "A type of star",
+        "The edge of a black hole",
+        "A comet's orbit path"
+      ],
+      "answer": 0,
+      "explanation": "The James Webb telescope orbits one.",
+      "image_keyword": null,
+      "topic": "Lagrange point"
+    },
+    {
+      "question": "What does spectroscopy let astronomers determine about distant stars?",
+      "options": [
+        "Their composition and motion from their light",
+        "Their exact age in years",
+        "Their weight in kilograms",
+        "Their names"
+      ],
+      "answer": 0,
+      "explanation": "Splitting light into a spectrum reveals chemical fingerprints.",
+      "image_keyword": null,
+      "topic": "spectroscopy"
+    },
+    {
+      "question": "What is the correct order of terms as a space rock approaches and lands on Earth?",
+      "options": [
+        "Meteoroid, then meteor, then meteorite",
+        "Meteorite, then meteor, then meteoroid",
+        "Meteor, then meteoroid, then meteorite",
+        "They are all the same thing"
+      ],
+      "answer": 0,
+      "explanation": "It's a meteoroid in space, a meteor burning up, a meteorite once landed.",
+      "image_keyword": null,
+      "topic": "meteoroid"
+    },
+    {
+      "question": "What powers a pulsar's regular pulses of radiation?",
+      "options": [
+        "Its rapid rotation sweeping a beam around like a lighthouse",
+        "Chemical reactions on its surface",
+        "Ongoing nuclear fusion at its core",
+        "Reflected starlight"
+      ],
+      "answer": 0,
+      "explanation": "The beam sweeps past Earth with each spin.",
+      "image_keyword": null,
+      "topic": "pulsar"
+    },
+    {
+      "question": "The Chicxulub impactor is linked to which event?",
+      "options": [
+        "The extinction of the dinosaurs",
+        "The birth of the Moon",
+        "The formation of Saturn's rings",
+        "The Big Bang"
+      ],
+      "answer": 0,
+      "explanation": "A massive asteroid struck Earth about 66 million years ago.",
+      "image_keyword": null,
+      "topic": "Chicxulub impactor"
+    },
+    {
+      "question": "What did India's Chandrayaan-3 mission achieve in 2023?",
+      "options": [
+        "The first landing near the Moon's south pole",
+        "The first Mars flyby",
+        "The first human Moon landing",
+        "The first satellite launch"
+      ],
+      "answer": 0,
+      "explanation": "India became the first nation to land there.",
+      "image_keyword": null,
+      "topic": "Chandrayaan-3"
     }
   ],
   "wildlife:4": [
@@ -3138,6 +4009,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Giant pandas love bamboo.",
       "image_keyword": null,
       "topic": "Panda"
+    },
+    {
+      "question": "Which animal is known for its long ears and hopping?",
+      "options": [
+        "Rabbit",
+        "Squirrel",
+        "Mouse",
+        "Fox"
+      ],
+      "answer": 0,
+      "explanation": "Rabbits hop on their strong back legs.",
+      "image_keyword": null,
+      "topic": "Rabbit"
+    },
+    {
+      "question": "What do we call a baby cat?",
+      "options": [
+        "Cub",
+        "Kitten",
+        "Pup",
+        "Foal"
+      ],
+      "answer": 1,
+      "explanation": "Baby cats are kittens.",
+      "image_keyword": null,
+      "topic": "kitten"
+    },
+    {
+      "question": "Which animal is the largest land animal alive today?",
+      "options": [
+        "Rhino",
+        "Elephant",
+        "Hippo",
+        "Giraffe"
+      ],
+      "answer": 1,
+      "explanation": "The African elephant is the biggest land animal.",
+      "image_keyword": null,
+      "topic": "Elephant"
+    },
+    {
+      "question": "Which animal barks and is known as man's best friend?",
+      "options": [
+        "Cat",
+        "Dog",
+        "Wolf",
+        "Fox"
+      ],
+      "answer": 1,
+      "explanation": "Dogs have been human companions for thousands of years.",
+      "image_keyword": null,
+      "topic": "Dog"
+    },
+    {
+      "question": "What do we call animals that eat both meat and plants?",
+      "options": [
+        "Herbivores",
+        "Carnivores",
+        "Omnivores",
+        "Predators"
+      ],
+      "answer": 2,
+      "explanation": "Bears and humans are omnivores.",
+      "image_keyword": null,
+      "topic": "omnivore"
+    },
+    {
+      "question": "Which sea creature has eight arms?",
+      "options": [
+        "Squid",
+        "Octopus",
+        "Crab",
+        "Starfish"
+      ],
+      "answer": 1,
+      "explanation": "An octopus has exactly eight arms.",
+      "image_keyword": null,
+      "topic": "Octopus"
+    },
+    {
+      "question": "Which bird lays the largest eggs of any bird?",
+      "options": [
+        "Eagle",
+        "Ostrich",
+        "Penguin",
+        "Swan"
+      ],
+      "answer": 1,
+      "explanation": "Ostrich eggs are the biggest bird eggs.",
+      "image_keyword": null,
+      "topic": "Ostrich"
+    },
+    {
+      "question": "Which animal is known for its black and white stripes and lives in Africa?",
+      "options": [
+        "Horse",
+        "Zebra",
+        "Donkey",
+        "Antelope"
+      ],
+      "answer": 1,
+      "explanation": "Zebras roam African grasslands.",
+      "image_keyword": null,
+      "topic": "Zebra"
+    },
+    {
+      "question": "What do spiders spin to catch insects?",
+      "options": [
+        "Nests",
+        "Webs",
+        "Hives",
+        "Burrows"
+      ],
+      "answer": 1,
+      "explanation": "Spiders spin sticky webs to trap prey.",
+      "image_keyword": null,
+      "topic": "spider web"
+    },
+    {
+      "question": "Which animal is famous for sleeping most of the day, up to 20 hours?",
+      "options": [
+        "Lion",
+        "Koala",
+        "Deer",
+        "Fox"
+      ],
+      "answer": 1,
+      "explanation": "Koalas sleep to save energy from their low-nutrient diet.",
+      "image_keyword": null,
+      "topic": "Koala"
     }
   ],
   "wildlife:5": [
@@ -3530,6 +4531,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Giant pandas love bamboo.",
       "image_keyword": null,
       "topic": "Panda"
+    },
+    {
+      "question": "Which animal is known for its long ears and hopping?",
+      "options": [
+        "Rabbit",
+        "Squirrel",
+        "Mouse",
+        "Fox"
+      ],
+      "answer": 0,
+      "explanation": "Rabbits hop on their strong back legs.",
+      "image_keyword": null,
+      "topic": "Rabbit"
+    },
+    {
+      "question": "What do we call a baby cat?",
+      "options": [
+        "Cub",
+        "Kitten",
+        "Pup",
+        "Foal"
+      ],
+      "answer": 1,
+      "explanation": "Baby cats are kittens.",
+      "image_keyword": null,
+      "topic": "kitten"
+    },
+    {
+      "question": "Which animal is the largest land animal alive today?",
+      "options": [
+        "Rhino",
+        "Elephant",
+        "Hippo",
+        "Giraffe"
+      ],
+      "answer": 1,
+      "explanation": "The African elephant is the biggest land animal.",
+      "image_keyword": null,
+      "topic": "Elephant"
+    },
+    {
+      "question": "Which animal barks and is known as man's best friend?",
+      "options": [
+        "Cat",
+        "Dog",
+        "Wolf",
+        "Fox"
+      ],
+      "answer": 1,
+      "explanation": "Dogs have been human companions for thousands of years.",
+      "image_keyword": null,
+      "topic": "Dog"
+    },
+    {
+      "question": "What do we call animals that eat both meat and plants?",
+      "options": [
+        "Herbivores",
+        "Carnivores",
+        "Omnivores",
+        "Predators"
+      ],
+      "answer": 2,
+      "explanation": "Bears and humans are omnivores.",
+      "image_keyword": null,
+      "topic": "omnivore"
+    },
+    {
+      "question": "Which sea creature has eight arms?",
+      "options": [
+        "Squid",
+        "Octopus",
+        "Crab",
+        "Starfish"
+      ],
+      "answer": 1,
+      "explanation": "An octopus has exactly eight arms.",
+      "image_keyword": null,
+      "topic": "Octopus"
+    },
+    {
+      "question": "Which bird lays the largest eggs of any bird?",
+      "options": [
+        "Eagle",
+        "Ostrich",
+        "Penguin",
+        "Swan"
+      ],
+      "answer": 1,
+      "explanation": "Ostrich eggs are the biggest bird eggs.",
+      "image_keyword": null,
+      "topic": "Ostrich"
+    },
+    {
+      "question": "Which animal is known for its black and white stripes and lives in Africa?",
+      "options": [
+        "Horse",
+        "Zebra",
+        "Donkey",
+        "Antelope"
+      ],
+      "answer": 1,
+      "explanation": "Zebras roam African grasslands.",
+      "image_keyword": null,
+      "topic": "Zebra"
+    },
+    {
+      "question": "What do spiders spin to catch insects?",
+      "options": [
+        "Nests",
+        "Webs",
+        "Hives",
+        "Burrows"
+      ],
+      "answer": 1,
+      "explanation": "Spiders spin sticky webs to trap prey.",
+      "image_keyword": null,
+      "topic": "spider web"
+    },
+    {
+      "question": "Which animal is famous for sleeping most of the day, up to 20 hours?",
+      "options": [
+        "Lion",
+        "Koala",
+        "Deer",
+        "Fox"
+      ],
+      "answer": 1,
+      "explanation": "Koalas sleep to save energy from their low-nutrient diet.",
+      "image_keyword": null,
+      "topic": "Koala"
     }
   ],
   "wildlife:6": [
@@ -3922,6 +5053,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Owls and bats are nocturnal.",
       "image_keyword": null,
       "topic": "nocturnal"
+    },
+    {
+      "question": "Which animal can rotate its head almost all the way around?",
+      "options": [
+        "Owl",
+        "Eagle",
+        "Parrot",
+        "Crow"
+      ],
+      "answer": 0,
+      "explanation": "Owls can turn their heads about 270 degrees.",
+      "image_keyword": null,
+      "topic": "Owl"
+    },
+    {
+      "question": "What is unique about a giraffe's tongue?",
+      "options": [
+        "It's over 45 cm long and dark bluish-black",
+        "It's pink and short",
+        "It has no taste buds",
+        "It can't stick out"
+      ],
+      "answer": 0,
+      "explanation": "The dark colour may protect it from sunburn.",
+      "image_keyword": null,
+      "topic": "Giraffe"
+    },
+    {
+      "question": "Which animal is known to use tools, like cracking nuts with stones?",
+      "options": [
+        "Chimpanzee",
+        "Rabbit",
+        "Deer",
+        "Horse"
+      ],
+      "answer": 0,
+      "explanation": "Chimpanzees are among the smartest tool-users.",
+      "image_keyword": null,
+      "topic": "Chimpanzee"
+    },
+    {
+      "question": "What is a group of fish called?",
+      "options": [
+        "A herd",
+        "A school",
+        "A pack",
+        "A flock"
+      ],
+      "answer": 1,
+      "explanation": "Fish swim together in schools.",
+      "image_keyword": null,
+      "topic": "fish"
+    },
+    {
+      "question": "Which reptile can regrow its tail if it loses one?",
+      "options": [
+        "Snake",
+        "Lizard",
+        "Crocodile",
+        "Turtle"
+      ],
+      "answer": 1,
+      "explanation": "Many lizards can regenerate a lost tail.",
+      "image_keyword": null,
+      "topic": "Lizard"
+    },
+    {
+      "question": "Why do some animals migrate long distances every year?",
+      "options": [
+        "For fun",
+        "To find food, warmer weather, or breeding grounds",
+        "To escape predators only",
+        "To grow bigger"
+      ],
+      "answer": 1,
+      "explanation": "Migration follows seasonal resources.",
+      "image_keyword": null,
+      "topic": "migration"
+    },
+    {
+      "question": "Which animal has the longest lifespan of any land mammal?",
+      "options": [
+        "Elephant",
+        "Horse",
+        "Camel",
+        "Bear"
+      ],
+      "answer": 0,
+      "explanation": "Elephants can live 60-70 years in the wild.",
+      "image_keyword": null,
+      "topic": "Elephant"
+    },
+    {
+      "question": "What is camouflage used for?",
+      "options": [
+        "Blending in to hide from predators or prey",
+        "Keeping warm",
+        "Attracting mates only",
+        "Breathing underwater"
+      ],
+      "answer": 0,
+      "explanation": "Colour and pattern help animals go unseen.",
+      "image_keyword": null,
+      "topic": "camouflage"
+    },
+    {
+      "question": "Which shark species is known for being the largest fish in the sea yet eats only plankton?",
+      "options": [
+        "Great white shark",
+        "Whale shark",
+        "Hammerhead shark",
+        "Tiger shark"
+      ],
+      "answer": 1,
+      "explanation": "Whale sharks filter-feed on tiny plankton.",
+      "image_keyword": null,
+      "topic": "Whale shark"
+    },
+    {
+      "question": "What do we call animals, like bears, that sleep through winter?",
+      "options": [
+        "Migrating",
+        "Hibernating",
+        "Molting",
+        "Estivating"
+      ],
+      "answer": 1,
+      "explanation": "Hibernation slows the body to survive winter.",
+      "image_keyword": null,
+      "topic": "hibernation"
     }
   ],
   "wildlife:7": [
@@ -4314,6 +5575,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Owls and bats are nocturnal.",
       "image_keyword": null,
       "topic": "nocturnal"
+    },
+    {
+      "question": "Which animal can rotate its head almost all the way around?",
+      "options": [
+        "Owl",
+        "Eagle",
+        "Parrot",
+        "Crow"
+      ],
+      "answer": 0,
+      "explanation": "Owls can turn their heads about 270 degrees.",
+      "image_keyword": null,
+      "topic": "Owl"
+    },
+    {
+      "question": "What is unique about a giraffe's tongue?",
+      "options": [
+        "It's over 45 cm long and dark bluish-black",
+        "It's pink and short",
+        "It has no taste buds",
+        "It can't stick out"
+      ],
+      "answer": 0,
+      "explanation": "The dark colour may protect it from sunburn.",
+      "image_keyword": null,
+      "topic": "Giraffe"
+    },
+    {
+      "question": "Which animal is known to use tools, like cracking nuts with stones?",
+      "options": [
+        "Chimpanzee",
+        "Rabbit",
+        "Deer",
+        "Horse"
+      ],
+      "answer": 0,
+      "explanation": "Chimpanzees are among the smartest tool-users.",
+      "image_keyword": null,
+      "topic": "Chimpanzee"
+    },
+    {
+      "question": "What is a group of fish called?",
+      "options": [
+        "A herd",
+        "A school",
+        "A pack",
+        "A flock"
+      ],
+      "answer": 1,
+      "explanation": "Fish swim together in schools.",
+      "image_keyword": null,
+      "topic": "fish"
+    },
+    {
+      "question": "Which reptile can regrow its tail if it loses one?",
+      "options": [
+        "Snake",
+        "Lizard",
+        "Crocodile",
+        "Turtle"
+      ],
+      "answer": 1,
+      "explanation": "Many lizards can regenerate a lost tail.",
+      "image_keyword": null,
+      "topic": "Lizard"
+    },
+    {
+      "question": "Why do some animals migrate long distances every year?",
+      "options": [
+        "For fun",
+        "To find food, warmer weather, or breeding grounds",
+        "To escape predators only",
+        "To grow bigger"
+      ],
+      "answer": 1,
+      "explanation": "Migration follows seasonal resources.",
+      "image_keyword": null,
+      "topic": "migration"
+    },
+    {
+      "question": "Which animal has the longest lifespan of any land mammal?",
+      "options": [
+        "Elephant",
+        "Horse",
+        "Camel",
+        "Bear"
+      ],
+      "answer": 0,
+      "explanation": "Elephants can live 60-70 years in the wild.",
+      "image_keyword": null,
+      "topic": "Elephant"
+    },
+    {
+      "question": "What is camouflage used for?",
+      "options": [
+        "Blending in to hide from predators or prey",
+        "Keeping warm",
+        "Attracting mates only",
+        "Breathing underwater"
+      ],
+      "answer": 0,
+      "explanation": "Colour and pattern help animals go unseen.",
+      "image_keyword": null,
+      "topic": "camouflage"
+    },
+    {
+      "question": "Which shark species is known for being the largest fish in the sea yet eats only plankton?",
+      "options": [
+        "Great white shark",
+        "Whale shark",
+        "Hammerhead shark",
+        "Tiger shark"
+      ],
+      "answer": 1,
+      "explanation": "Whale sharks filter-feed on tiny plankton.",
+      "image_keyword": null,
+      "topic": "Whale shark"
+    },
+    {
+      "question": "What do we call animals, like bears, that sleep through winter?",
+      "options": [
+        "Migrating",
+        "Hibernating",
+        "Molting",
+        "Estivating"
+      ],
+      "answer": 1,
+      "explanation": "Hibernation slows the body to survive winter.",
+      "image_keyword": null,
+      "topic": "hibernation"
     }
   ],
   "wildlife:8": [
@@ -4706,6 +6097,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Komodo dragons reach 3 metres.",
       "image_keyword": null,
       "topic": "Komodo dragon"
+    },
+    {
+      "question": "What is a symbiotic relationship where both species benefit?",
+      "options": [
+        "Parasitism",
+        "Mutualism",
+        "Commensalism",
+        "Predation"
+      ],
+      "answer": 1,
+      "explanation": "Both partners gain something, like clownfish and anemones.",
+      "image_keyword": null,
+      "topic": "mutualism"
+    },
+    {
+      "question": "How do sea turtles navigate thousands of kilometres back to their birth beach?",
+      "options": [
+        "Following ocean currents only",
+        "Sensing Earth's magnetic field",
+        "Following other turtles",
+        "Using sound"
+      ],
+      "answer": 1,
+      "explanation": "They imprint on the magnetic signature of their birth beach.",
+      "image_keyword": null,
+      "topic": "sea turtle"
+    },
+    {
+      "question": "What is an animal's ecological niche?",
+      "options": [
+        "Its exact location on a map",
+        "Its role and resource use within its ecosystem",
+        "Its family tree",
+        "Its migration route"
+      ],
+      "answer": 1,
+      "explanation": "It covers diet, habitat, and behaviour together.",
+      "image_keyword": null,
+      "topic": "ecological niche"
+    },
+    {
+      "question": "Why are invasive species considered a threat to ecosystems?",
+      "options": [
+        "They are always larger",
+        "They can outcompete native species with no natural predators",
+        "They only eat plants",
+        "They can't reproduce"
+      ],
+      "answer": 1,
+      "explanation": "Without natural checks, they can spread rapidly and disrupt balance.",
+      "image_keyword": null,
+      "topic": "invasive species"
+    },
+    {
+      "question": "What is unique about the axolotl's ability to heal?",
+      "options": [
+        "It can regrow limbs, its spinal cord, and even parts of its brain",
+        "It never gets injured",
+        "It heals only underwater",
+        "It can't be injured by predators"
+      ],
+      "answer": 0,
+      "explanation": "Axolotls are studied for regenerative medicine research.",
+      "image_keyword": null,
+      "topic": "axolotl"
+    },
+    {
+      "question": "What is a food web, as opposed to a simple food chain?",
+      "options": [
+        "A single line of who eats whom",
+        "A complex network of interconnected food chains",
+        "A list of an animal's prey only",
+        "A migration pattern"
+      ],
+      "answer": 1,
+      "explanation": "Most species have multiple food relationships, not just one chain.",
+      "image_keyword": null,
+      "topic": "food web"
+    },
+    {
+      "question": "Why do some deep-sea creatures produce their own light?",
+      "options": [
+        "To keep warm",
+        "To lure prey, communicate, or startle predators in the dark",
+        "To breathe",
+        "To swim faster"
+      ],
+      "answer": 1,
+      "explanation": "Bioluminescence serves many survival purposes in darkness.",
+      "image_keyword": null,
+      "topic": "bioluminescence"
+    },
+    {
+      "question": "What is unique about a chameleon's eyes?",
+      "options": [
+        "They can move independently of each other",
+        "They are blind at birth",
+        "They only see in black and white",
+        "They have no eyelids"
+      ],
+      "answer": 0,
+      "explanation": "Each eye can look in a different direction at once.",
+      "image_keyword": null,
+      "topic": "Chameleon"
+    },
+    {
+      "question": "What is the primary reason coral reefs are called the 'rainforests of the sea'?",
+      "options": [
+        "They are covered in trees",
+        "They support incredibly high biodiversity in a small area",
+        "They are always green",
+        "They grow on land"
+      ],
+      "answer": 1,
+      "explanation": "Reefs host roughly a quarter of all marine species.",
+      "image_keyword": null,
+      "topic": "coral reef"
+    },
+    {
+      "question": "How do wolves' howls benefit the pack?",
+      "options": [
+        "They mean nothing",
+        "They communicate location and reinforce social bonds",
+        "They only scare prey",
+        "They are used for singing"
+      ],
+      "answer": 1,
+      "explanation": "Howling helps coordinate the pack across long distances.",
+      "image_keyword": null,
+      "topic": "wolf pack"
     }
   ],
   "wildlife:9": [
@@ -5098,6 +6619,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Komodo dragons reach 3 metres.",
       "image_keyword": null,
       "topic": "Komodo dragon"
+    },
+    {
+      "question": "What is a symbiotic relationship where both species benefit?",
+      "options": [
+        "Parasitism",
+        "Mutualism",
+        "Commensalism",
+        "Predation"
+      ],
+      "answer": 1,
+      "explanation": "Both partners gain something, like clownfish and anemones.",
+      "image_keyword": null,
+      "topic": "mutualism"
+    },
+    {
+      "question": "How do sea turtles navigate thousands of kilometres back to their birth beach?",
+      "options": [
+        "Following ocean currents only",
+        "Sensing Earth's magnetic field",
+        "Following other turtles",
+        "Using sound"
+      ],
+      "answer": 1,
+      "explanation": "They imprint on the magnetic signature of their birth beach.",
+      "image_keyword": null,
+      "topic": "sea turtle"
+    },
+    {
+      "question": "What is an animal's ecological niche?",
+      "options": [
+        "Its exact location on a map",
+        "Its role and resource use within its ecosystem",
+        "Its family tree",
+        "Its migration route"
+      ],
+      "answer": 1,
+      "explanation": "It covers diet, habitat, and behaviour together.",
+      "image_keyword": null,
+      "topic": "ecological niche"
+    },
+    {
+      "question": "Why are invasive species considered a threat to ecosystems?",
+      "options": [
+        "They are always larger",
+        "They can outcompete native species with no natural predators",
+        "They only eat plants",
+        "They can't reproduce"
+      ],
+      "answer": 1,
+      "explanation": "Without natural checks, they can spread rapidly and disrupt balance.",
+      "image_keyword": null,
+      "topic": "invasive species"
+    },
+    {
+      "question": "What is unique about the axolotl's ability to heal?",
+      "options": [
+        "It can regrow limbs, its spinal cord, and even parts of its brain",
+        "It never gets injured",
+        "It heals only underwater",
+        "It can't be injured by predators"
+      ],
+      "answer": 0,
+      "explanation": "Axolotls are studied for regenerative medicine research.",
+      "image_keyword": null,
+      "topic": "axolotl"
+    },
+    {
+      "question": "What is a food web, as opposed to a simple food chain?",
+      "options": [
+        "A single line of who eats whom",
+        "A complex network of interconnected food chains",
+        "A list of an animal's prey only",
+        "A migration pattern"
+      ],
+      "answer": 1,
+      "explanation": "Most species have multiple food relationships, not just one chain.",
+      "image_keyword": null,
+      "topic": "food web"
+    },
+    {
+      "question": "Why do some deep-sea creatures produce their own light?",
+      "options": [
+        "To keep warm",
+        "To lure prey, communicate, or startle predators in the dark",
+        "To breathe",
+        "To swim faster"
+      ],
+      "answer": 1,
+      "explanation": "Bioluminescence serves many survival purposes in darkness.",
+      "image_keyword": null,
+      "topic": "bioluminescence"
+    },
+    {
+      "question": "What is unique about a chameleon's eyes?",
+      "options": [
+        "They can move independently of each other",
+        "They are blind at birth",
+        "They only see in black and white",
+        "They have no eyelids"
+      ],
+      "answer": 0,
+      "explanation": "Each eye can look in a different direction at once.",
+      "image_keyword": null,
+      "topic": "Chameleon"
+    },
+    {
+      "question": "What is the primary reason coral reefs are called the 'rainforests of the sea'?",
+      "options": [
+        "They are covered in trees",
+        "They support incredibly high biodiversity in a small area",
+        "They are always green",
+        "They grow on land"
+      ],
+      "answer": 1,
+      "explanation": "Reefs host roughly a quarter of all marine species.",
+      "image_keyword": null,
+      "topic": "coral reef"
+    },
+    {
+      "question": "How do wolves' howls benefit the pack?",
+      "options": [
+        "They mean nothing",
+        "They communicate location and reinforce social bonds",
+        "They only scare prey",
+        "They are used for singing"
+      ],
+      "answer": 1,
+      "explanation": "Howling helps coordinate the pack across long distances.",
+      "image_keyword": null,
+      "topic": "wolf pack"
     }
   ],
   "wildlife:10": [
@@ -5490,6 +7141,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Komodo dragons reach 3 metres.",
       "image_keyword": null,
       "topic": "Komodo dragon"
+    },
+    {
+      "question": "What is a symbiotic relationship where both species benefit?",
+      "options": [
+        "Parasitism",
+        "Mutualism",
+        "Commensalism",
+        "Predation"
+      ],
+      "answer": 1,
+      "explanation": "Both partners gain something, like clownfish and anemones.",
+      "image_keyword": null,
+      "topic": "mutualism"
+    },
+    {
+      "question": "How do sea turtles navigate thousands of kilometres back to their birth beach?",
+      "options": [
+        "Following ocean currents only",
+        "Sensing Earth's magnetic field",
+        "Following other turtles",
+        "Using sound"
+      ],
+      "answer": 1,
+      "explanation": "They imprint on the magnetic signature of their birth beach.",
+      "image_keyword": null,
+      "topic": "sea turtle"
+    },
+    {
+      "question": "What is an animal's ecological niche?",
+      "options": [
+        "Its exact location on a map",
+        "Its role and resource use within its ecosystem",
+        "Its family tree",
+        "Its migration route"
+      ],
+      "answer": 1,
+      "explanation": "It covers diet, habitat, and behaviour together.",
+      "image_keyword": null,
+      "topic": "ecological niche"
+    },
+    {
+      "question": "Why are invasive species considered a threat to ecosystems?",
+      "options": [
+        "They are always larger",
+        "They can outcompete native species with no natural predators",
+        "They only eat plants",
+        "They can't reproduce"
+      ],
+      "answer": 1,
+      "explanation": "Without natural checks, they can spread rapidly and disrupt balance.",
+      "image_keyword": null,
+      "topic": "invasive species"
+    },
+    {
+      "question": "What is unique about the axolotl's ability to heal?",
+      "options": [
+        "It can regrow limbs, its spinal cord, and even parts of its brain",
+        "It never gets injured",
+        "It heals only underwater",
+        "It can't be injured by predators"
+      ],
+      "answer": 0,
+      "explanation": "Axolotls are studied for regenerative medicine research.",
+      "image_keyword": null,
+      "topic": "axolotl"
+    },
+    {
+      "question": "What is a food web, as opposed to a simple food chain?",
+      "options": [
+        "A single line of who eats whom",
+        "A complex network of interconnected food chains",
+        "A list of an animal's prey only",
+        "A migration pattern"
+      ],
+      "answer": 1,
+      "explanation": "Most species have multiple food relationships, not just one chain.",
+      "image_keyword": null,
+      "topic": "food web"
+    },
+    {
+      "question": "Why do some deep-sea creatures produce their own light?",
+      "options": [
+        "To keep warm",
+        "To lure prey, communicate, or startle predators in the dark",
+        "To breathe",
+        "To swim faster"
+      ],
+      "answer": 1,
+      "explanation": "Bioluminescence serves many survival purposes in darkness.",
+      "image_keyword": null,
+      "topic": "bioluminescence"
+    },
+    {
+      "question": "What is unique about a chameleon's eyes?",
+      "options": [
+        "They can move independently of each other",
+        "They are blind at birth",
+        "They only see in black and white",
+        "They have no eyelids"
+      ],
+      "answer": 0,
+      "explanation": "Each eye can look in a different direction at once.",
+      "image_keyword": null,
+      "topic": "Chameleon"
+    },
+    {
+      "question": "What is the primary reason coral reefs are called the 'rainforests of the sea'?",
+      "options": [
+        "They are covered in trees",
+        "They support incredibly high biodiversity in a small area",
+        "They are always green",
+        "They grow on land"
+      ],
+      "answer": 1,
+      "explanation": "Reefs host roughly a quarter of all marine species.",
+      "image_keyword": null,
+      "topic": "coral reef"
+    },
+    {
+      "question": "How do wolves' howls benefit the pack?",
+      "options": [
+        "They mean nothing",
+        "They communicate location and reinforce social bonds",
+        "They only scare prey",
+        "They are used for singing"
+      ],
+      "answer": 1,
+      "explanation": "Howling helps coordinate the pack across long distances.",
+      "image_keyword": null,
+      "topic": "wolf pack"
     }
   ],
   "countries:4": [
@@ -5882,6 +7663,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "There are seven continents.",
       "image_keyword": null,
       "topic": "continents"
+    },
+    {
+      "question": "What is the capital of Germany?",
+      "options": [
+        "Munich",
+        "Berlin",
+        "Frankfurt",
+        "Hamburg"
+      ],
+      "answer": 1,
+      "explanation": "Berlin is Germany's capital.",
+      "image_keyword": null,
+      "topic": "Berlin"
+    },
+    {
+      "question": "Which country is famous for maple syrup and ice hockey?",
+      "options": [
+        "Canada",
+        "Sweden",
+        "Finland",
+        "Norway"
+      ],
+      "answer": 0,
+      "explanation": "Canada is known for both.",
+      "image_keyword": null,
+      "topic": "Canada"
+    },
+    {
+      "question": "Which continent has the most countries?",
+      "options": [
+        "Asia",
+        "Africa",
+        "Europe",
+        "South America"
+      ],
+      "answer": 1,
+      "explanation": "Africa has 54 recognized countries.",
+      "image_keyword": null,
+      "topic": "Africa"
+    },
+    {
+      "question": "What is the capital of China?",
+      "options": [
+        "Shanghai",
+        "Beijing",
+        "Hong Kong",
+        "Guangzhou"
+      ],
+      "answer": 1,
+      "explanation": "Beijing is China's capital.",
+      "image_keyword": null,
+      "topic": "Beijing"
+    },
+    {
+      "question": "Which country is known for the kangaroo and koala?",
+      "options": [
+        "New Zealand",
+        "Australia",
+        "South Africa",
+        "India"
+      ],
+      "answer": 1,
+      "explanation": "Both animals are native to Australia.",
+      "image_keyword": null,
+      "topic": "Australia"
+    },
+    {
+      "question": "Which river runs through Egypt and is the longest in Africa?",
+      "options": [
+        "Amazon",
+        "Nile",
+        "Congo",
+        "Niger"
+      ],
+      "answer": 1,
+      "explanation": "The Nile flows through northeastern Africa.",
+      "image_keyword": null,
+      "topic": "Nile"
+    },
+    {
+      "question": "Which country is shaped like a bell and located in South Asia, famous for tea?",
+      "options": [
+        "Sri Lanka",
+        "Nepal",
+        "Bhutan",
+        "Bangladesh"
+      ],
+      "answer": 0,
+      "explanation": "Sri Lanka is a major tea producer.",
+      "image_keyword": null,
+      "topic": "Sri Lanka"
+    },
+    {
+      "question": "What is the capital of South Korea?",
+      "options": [
+        "Busan",
+        "Seoul",
+        "Incheon",
+        "Daegu"
+      ],
+      "answer": 1,
+      "explanation": "Seoul is South Korea's capital.",
+      "image_keyword": null,
+      "topic": "Seoul"
+    },
+    {
+      "question": "Which country is home to the Sahara Desert's largest share?",
+      "options": [
+        "Algeria",
+        "Egypt",
+        "Morocco",
+        "Libya"
+      ],
+      "answer": 0,
+      "explanation": "Algeria contains the largest portion of the Sahara.",
+      "image_keyword": null,
+      "topic": "Algeria"
+    },
+    {
+      "question": "Which country is famous for tulips and windmills?",
+      "options": [
+        "Belgium",
+        "The Netherlands",
+        "Denmark",
+        "Germany"
+      ],
+      "answer": 1,
+      "explanation": "The Netherlands is known for both.",
+      "image_keyword": null,
+      "topic": "Netherlands"
     }
   ],
   "countries:5": [
@@ -6274,6 +8185,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "There are seven continents.",
       "image_keyword": null,
       "topic": "continents"
+    },
+    {
+      "question": "What is the capital of Germany?",
+      "options": [
+        "Munich",
+        "Berlin",
+        "Frankfurt",
+        "Hamburg"
+      ],
+      "answer": 1,
+      "explanation": "Berlin is Germany's capital.",
+      "image_keyword": null,
+      "topic": "Berlin"
+    },
+    {
+      "question": "Which country is famous for maple syrup and ice hockey?",
+      "options": [
+        "Canada",
+        "Sweden",
+        "Finland",
+        "Norway"
+      ],
+      "answer": 0,
+      "explanation": "Canada is known for both.",
+      "image_keyword": null,
+      "topic": "Canada"
+    },
+    {
+      "question": "Which continent has the most countries?",
+      "options": [
+        "Asia",
+        "Africa",
+        "Europe",
+        "South America"
+      ],
+      "answer": 1,
+      "explanation": "Africa has 54 recognized countries.",
+      "image_keyword": null,
+      "topic": "Africa"
+    },
+    {
+      "question": "What is the capital of China?",
+      "options": [
+        "Shanghai",
+        "Beijing",
+        "Hong Kong",
+        "Guangzhou"
+      ],
+      "answer": 1,
+      "explanation": "Beijing is China's capital.",
+      "image_keyword": null,
+      "topic": "Beijing"
+    },
+    {
+      "question": "Which country is known for the kangaroo and koala?",
+      "options": [
+        "New Zealand",
+        "Australia",
+        "South Africa",
+        "India"
+      ],
+      "answer": 1,
+      "explanation": "Both animals are native to Australia.",
+      "image_keyword": null,
+      "topic": "Australia"
+    },
+    {
+      "question": "Which river runs through Egypt and is the longest in Africa?",
+      "options": [
+        "Amazon",
+        "Nile",
+        "Congo",
+        "Niger"
+      ],
+      "answer": 1,
+      "explanation": "The Nile flows through northeastern Africa.",
+      "image_keyword": null,
+      "topic": "Nile"
+    },
+    {
+      "question": "Which country is shaped like a bell and located in South Asia, famous for tea?",
+      "options": [
+        "Sri Lanka",
+        "Nepal",
+        "Bhutan",
+        "Bangladesh"
+      ],
+      "answer": 0,
+      "explanation": "Sri Lanka is a major tea producer.",
+      "image_keyword": null,
+      "topic": "Sri Lanka"
+    },
+    {
+      "question": "What is the capital of South Korea?",
+      "options": [
+        "Busan",
+        "Seoul",
+        "Incheon",
+        "Daegu"
+      ],
+      "answer": 1,
+      "explanation": "Seoul is South Korea's capital.",
+      "image_keyword": null,
+      "topic": "Seoul"
+    },
+    {
+      "question": "Which country is home to the Sahara Desert's largest share?",
+      "options": [
+        "Algeria",
+        "Egypt",
+        "Morocco",
+        "Libya"
+      ],
+      "answer": 0,
+      "explanation": "Algeria contains the largest portion of the Sahara.",
+      "image_keyword": null,
+      "topic": "Algeria"
+    },
+    {
+      "question": "Which country is famous for tulips and windmills?",
+      "options": [
+        "Belgium",
+        "The Netherlands",
+        "Denmark",
+        "Germany"
+      ],
+      "answer": 1,
+      "explanation": "The Netherlands is known for both.",
+      "image_keyword": null,
+      "topic": "Netherlands"
     }
   ],
   "countries:6": [
@@ -6666,6 +8707,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Kilimanjaro is in Tanzania.",
       "image_keyword": null,
       "topic": "Tanzania"
+    },
+    {
+      "question": "Which country is home to the ancient mountaintop city of Machu Picchu?",
+      "options": [
+        "Peru",
+        "Brazil",
+        "Bolivia",
+        "Ecuador"
+      ],
+      "answer": 0,
+      "explanation": "Machu Picchu is high in the Peruvian Andes.",
+      "image_keyword": null,
+      "topic": "Peru"
+    },
+    {
+      "question": "Which strait separates Europe from Africa at its narrowest point?",
+      "options": [
+        "Strait of Hormuz",
+        "Strait of Gibraltar",
+        "Bering Strait",
+        "Bosphorus"
+      ],
+      "answer": 1,
+      "explanation": "Only about 14 km separates Spain and Morocco there.",
+      "image_keyword": null,
+      "topic": "Strait of Gibraltar"
+    },
+    {
+      "question": "What is the official language of Brazil?",
+      "options": [
+        "Spanish",
+        "Portuguese",
+        "French",
+        "Italian"
+      ],
+      "answer": 1,
+      "explanation": "Brazil was colonized by Portugal.",
+      "image_keyword": null,
+      "topic": "Brazil"
+    },
+    {
+      "question": "Which country has the most active volcanoes on Earth?",
+      "options": [
+        "Japan",
+        "Indonesia",
+        "Iceland",
+        "Chile"
+      ],
+      "answer": 1,
+      "explanation": "Indonesia has over 100 active volcanoes.",
+      "image_keyword": null,
+      "topic": "Indonesia"
+    },
+    {
+      "question": "What is the capital of Egypt?",
+      "options": [
+        "Alexandria",
+        "Cairo",
+        "Giza",
+        "Luxor"
+      ],
+      "answer": 1,
+      "explanation": "Cairo is Egypt's capital.",
+      "image_keyword": null,
+      "topic": "Cairo"
+    },
+    {
+      "question": "Which country's economy relies heavily on oil exports from the Middle East's largest reserves?",
+      "options": [
+        "Saudi Arabia",
+        "Jordan",
+        "Lebanon",
+        "Israel"
+      ],
+      "answer": 0,
+      "explanation": "Saudi Arabia holds some of the world's largest oil reserves.",
+      "image_keyword": null,
+      "topic": "Saudi Arabia"
+    },
+    {
+      "question": "Which country is divided almost exactly by the Tropic of Capricorn and known for the Iguazu Falls?",
+      "options": [
+        "Argentina",
+        "Chile",
+        "Uruguay",
+        "Paraguay"
+      ],
+      "answer": 0,
+      "explanation": "Iguazu Falls sits on the Argentina-Brazil border.",
+      "image_keyword": null,
+      "topic": "Argentina"
+    },
+    {
+      "question": "What is the highest capital city in the world?",
+      "options": [
+        "Quito",
+        "La Paz",
+        "Kathmandu",
+        "Bogota"
+      ],
+      "answer": 1,
+      "explanation": "La Paz, Bolivia sits over 3,600 m above sea level.",
+      "image_keyword": null,
+      "topic": "La Paz"
+    },
+    {
+      "question": "Which country is an island nation off the southeast coast of Africa, famous for lemurs?",
+      "options": [
+        "Seychelles",
+        "Madagascar",
+        "Mauritius",
+        "Comoros"
+      ],
+      "answer": 1,
+      "explanation": "Madagascar's isolation created unique wildlife.",
+      "image_keyword": null,
+      "topic": "Madagascar"
+    },
+    {
+      "question": "Which country has coastlines on both the Atlantic and Pacific Oceans?",
+      "options": [
+        "Peru",
+        "Colombia",
+        "Bolivia",
+        "Uruguay"
+      ],
+      "answer": 1,
+      "explanation": "Colombia borders both oceans.",
+      "image_keyword": null,
+      "topic": "Colombia"
     }
   ],
   "countries:7": [
@@ -7058,6 +9229,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Kilimanjaro is in Tanzania.",
       "image_keyword": null,
       "topic": "Tanzania"
+    },
+    {
+      "question": "Which country is home to the ancient mountaintop city of Machu Picchu?",
+      "options": [
+        "Peru",
+        "Brazil",
+        "Bolivia",
+        "Ecuador"
+      ],
+      "answer": 0,
+      "explanation": "Machu Picchu is high in the Peruvian Andes.",
+      "image_keyword": null,
+      "topic": "Peru"
+    },
+    {
+      "question": "Which strait separates Europe from Africa at its narrowest point?",
+      "options": [
+        "Strait of Hormuz",
+        "Strait of Gibraltar",
+        "Bering Strait",
+        "Bosphorus"
+      ],
+      "answer": 1,
+      "explanation": "Only about 14 km separates Spain and Morocco there.",
+      "image_keyword": null,
+      "topic": "Strait of Gibraltar"
+    },
+    {
+      "question": "What is the official language of Brazil?",
+      "options": [
+        "Spanish",
+        "Portuguese",
+        "French",
+        "Italian"
+      ],
+      "answer": 1,
+      "explanation": "Brazil was colonized by Portugal.",
+      "image_keyword": null,
+      "topic": "Brazil"
+    },
+    {
+      "question": "Which country has the most active volcanoes on Earth?",
+      "options": [
+        "Japan",
+        "Indonesia",
+        "Iceland",
+        "Chile"
+      ],
+      "answer": 1,
+      "explanation": "Indonesia has over 100 active volcanoes.",
+      "image_keyword": null,
+      "topic": "Indonesia"
+    },
+    {
+      "question": "What is the capital of Egypt?",
+      "options": [
+        "Alexandria",
+        "Cairo",
+        "Giza",
+        "Luxor"
+      ],
+      "answer": 1,
+      "explanation": "Cairo is Egypt's capital.",
+      "image_keyword": null,
+      "topic": "Cairo"
+    },
+    {
+      "question": "Which country's economy relies heavily on oil exports from the Middle East's largest reserves?",
+      "options": [
+        "Saudi Arabia",
+        "Jordan",
+        "Lebanon",
+        "Israel"
+      ],
+      "answer": 0,
+      "explanation": "Saudi Arabia holds some of the world's largest oil reserves.",
+      "image_keyword": null,
+      "topic": "Saudi Arabia"
+    },
+    {
+      "question": "Which country is divided almost exactly by the Tropic of Capricorn and known for the Iguazu Falls?",
+      "options": [
+        "Argentina",
+        "Chile",
+        "Uruguay",
+        "Paraguay"
+      ],
+      "answer": 0,
+      "explanation": "Iguazu Falls sits on the Argentina-Brazil border.",
+      "image_keyword": null,
+      "topic": "Argentina"
+    },
+    {
+      "question": "What is the highest capital city in the world?",
+      "options": [
+        "Quito",
+        "La Paz",
+        "Kathmandu",
+        "Bogota"
+      ],
+      "answer": 1,
+      "explanation": "La Paz, Bolivia sits over 3,600 m above sea level.",
+      "image_keyword": null,
+      "topic": "La Paz"
+    },
+    {
+      "question": "Which country is an island nation off the southeast coast of Africa, famous for lemurs?",
+      "options": [
+        "Seychelles",
+        "Madagascar",
+        "Mauritius",
+        "Comoros"
+      ],
+      "answer": 1,
+      "explanation": "Madagascar's isolation created unique wildlife.",
+      "image_keyword": null,
+      "topic": "Madagascar"
+    },
+    {
+      "question": "Which country has coastlines on both the Atlantic and Pacific Oceans?",
+      "options": [
+        "Peru",
+        "Colombia",
+        "Bolivia",
+        "Uruguay"
+      ],
+      "answer": 1,
+      "explanation": "Colombia borders both oceans.",
+      "image_keyword": null,
+      "topic": "Colombia"
     }
   ],
   "countries:8": [
@@ -7450,6 +9751,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Russia crosses 11 time zones.",
       "image_keyword": null,
       "topic": "Russia"
+    },
+    {
+      "question": "What is the significance of the Treaty of Tordesillas (1494)?",
+      "options": [
+        "It divided newly claimed lands between Spain and Portugal",
+        "It ended World War I",
+        "It created the European Union",
+        "It freed enslaved people"
+      ],
+      "answer": 0,
+      "explanation": "A line split the Americas between the two empires.",
+      "image_keyword": null,
+      "topic": "Treaty of Tordesillas"
+    },
+    {
+      "question": "Which country has the world's lowest point on land, the Dead Sea shore, on its border?",
+      "options": [
+        "Jordan",
+        "Egypt",
+        "Syria",
+        "Lebanon"
+      ],
+      "answer": 0,
+      "explanation": "Jordan and Israel/Palestine share the Dead Sea shoreline.",
+      "image_keyword": null,
+      "topic": "Jordan"
+    },
+    {
+      "question": "What geopolitical term describes a country entirely surrounded by another, like San Marino?",
+      "options": [
+        "Enclave",
+        "Peninsula",
+        "Archipelago",
+        "Isthmus"
+      ],
+      "answer": 0,
+      "explanation": "An enclave sits wholly within another territory.",
+      "image_keyword": null,
+      "topic": "enclave"
+    },
+    {
+      "question": "Which country's currency is the yen?",
+      "options": [
+        "China",
+        "Japan",
+        "South Korea",
+        "Thailand"
+      ],
+      "answer": 1,
+      "explanation": "Japan's currency is the yen.",
+      "image_keyword": null,
+      "topic": "Japan"
+    },
+    {
+      "question": "What is the Tropic of Cancer?",
+      "options": [
+        "The northernmost latitude where the Sun can appear directly overhead",
+        "The equator's other name",
+        "A mountain range",
+        "An ocean current"
+      ],
+      "answer": 0,
+      "explanation": "It sits at about 23.5° north latitude.",
+      "image_keyword": null,
+      "topic": "Tropic of Cancer"
+    },
+    {
+      "question": "Which African country was formerly known as Rhodesia?",
+      "options": [
+        "Zambia",
+        "Zimbabwe",
+        "Botswana",
+        "Malawi"
+      ],
+      "answer": 1,
+      "explanation": "It was renamed Zimbabwe after independence in 1980.",
+      "image_keyword": null,
+      "topic": "Zimbabwe"
+    },
+    {
+      "question": "What is an isthmus?",
+      "options": [
+        "A narrow strip of land connecting two larger landmasses",
+        "An island chain",
+        "A deep ocean trench",
+        "A type of desert"
+      ],
+      "answer": 0,
+      "explanation": "Panama sits on a famous isthmus.",
+      "image_keyword": null,
+      "topic": "isthmus"
+    },
+    {
+      "question": "Which country's flag has no rectangular shape, unlike almost every other nation?",
+      "options": [
+        "Nepal",
+        "Bhutan",
+        "Switzerland",
+        "Qatar"
+      ],
+      "answer": 0,
+      "explanation": "Nepal's flag is made of two stacked triangles.",
+      "image_keyword": null,
+      "topic": "Nepal"
+    },
+    {
+      "question": "What is the significance of the 38th parallel in Asia?",
+      "options": [
+        "It roughly divides North and South Korea",
+        "It marks the equator",
+        "It divides China and India",
+        "It marks the Tropic of Cancer"
+      ],
+      "answer": 0,
+      "explanation": "It became the Korean border after 1945.",
+      "image_keyword": null,
+      "topic": "38th parallel"
+    },
+    {
+      "question": "Which country has the most UNESCO World Heritage Sites?",
+      "options": [
+        "Italy",
+        "France",
+        "China",
+        "Spain"
+      ],
+      "answer": 0,
+      "explanation": "Italy tops the list with sites like Rome and Pompeii.",
+      "image_keyword": null,
+      "topic": "Italy"
     }
   ],
   "countries:9": [
@@ -7842,6 +10273,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Russia crosses 11 time zones.",
       "image_keyword": null,
       "topic": "Russia"
+    },
+    {
+      "question": "What is the significance of the Treaty of Tordesillas (1494)?",
+      "options": [
+        "It divided newly claimed lands between Spain and Portugal",
+        "It ended World War I",
+        "It created the European Union",
+        "It freed enslaved people"
+      ],
+      "answer": 0,
+      "explanation": "A line split the Americas between the two empires.",
+      "image_keyword": null,
+      "topic": "Treaty of Tordesillas"
+    },
+    {
+      "question": "Which country has the world's lowest point on land, the Dead Sea shore, on its border?",
+      "options": [
+        "Jordan",
+        "Egypt",
+        "Syria",
+        "Lebanon"
+      ],
+      "answer": 0,
+      "explanation": "Jordan and Israel/Palestine share the Dead Sea shoreline.",
+      "image_keyword": null,
+      "topic": "Jordan"
+    },
+    {
+      "question": "What geopolitical term describes a country entirely surrounded by another, like San Marino?",
+      "options": [
+        "Enclave",
+        "Peninsula",
+        "Archipelago",
+        "Isthmus"
+      ],
+      "answer": 0,
+      "explanation": "An enclave sits wholly within another territory.",
+      "image_keyword": null,
+      "topic": "enclave"
+    },
+    {
+      "question": "Which country's currency is the yen?",
+      "options": [
+        "China",
+        "Japan",
+        "South Korea",
+        "Thailand"
+      ],
+      "answer": 1,
+      "explanation": "Japan's currency is the yen.",
+      "image_keyword": null,
+      "topic": "Japan"
+    },
+    {
+      "question": "What is the Tropic of Cancer?",
+      "options": [
+        "The northernmost latitude where the Sun can appear directly overhead",
+        "The equator's other name",
+        "A mountain range",
+        "An ocean current"
+      ],
+      "answer": 0,
+      "explanation": "It sits at about 23.5° north latitude.",
+      "image_keyword": null,
+      "topic": "Tropic of Cancer"
+    },
+    {
+      "question": "Which African country was formerly known as Rhodesia?",
+      "options": [
+        "Zambia",
+        "Zimbabwe",
+        "Botswana",
+        "Malawi"
+      ],
+      "answer": 1,
+      "explanation": "It was renamed Zimbabwe after independence in 1980.",
+      "image_keyword": null,
+      "topic": "Zimbabwe"
+    },
+    {
+      "question": "What is an isthmus?",
+      "options": [
+        "A narrow strip of land connecting two larger landmasses",
+        "An island chain",
+        "A deep ocean trench",
+        "A type of desert"
+      ],
+      "answer": 0,
+      "explanation": "Panama sits on a famous isthmus.",
+      "image_keyword": null,
+      "topic": "isthmus"
+    },
+    {
+      "question": "Which country's flag has no rectangular shape, unlike almost every other nation?",
+      "options": [
+        "Nepal",
+        "Bhutan",
+        "Switzerland",
+        "Qatar"
+      ],
+      "answer": 0,
+      "explanation": "Nepal's flag is made of two stacked triangles.",
+      "image_keyword": null,
+      "topic": "Nepal"
+    },
+    {
+      "question": "What is the significance of the 38th parallel in Asia?",
+      "options": [
+        "It roughly divides North and South Korea",
+        "It marks the equator",
+        "It divides China and India",
+        "It marks the Tropic of Cancer"
+      ],
+      "answer": 0,
+      "explanation": "It became the Korean border after 1945.",
+      "image_keyword": null,
+      "topic": "38th parallel"
+    },
+    {
+      "question": "Which country has the most UNESCO World Heritage Sites?",
+      "options": [
+        "Italy",
+        "France",
+        "China",
+        "Spain"
+      ],
+      "answer": 0,
+      "explanation": "Italy tops the list with sites like Rome and Pompeii.",
+      "image_keyword": null,
+      "topic": "Italy"
     }
   ],
   "countries:10": [
@@ -8234,6 +10795,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Russia crosses 11 time zones.",
       "image_keyword": null,
       "topic": "Russia"
+    },
+    {
+      "question": "What is the significance of the Treaty of Tordesillas (1494)?",
+      "options": [
+        "It divided newly claimed lands between Spain and Portugal",
+        "It ended World War I",
+        "It created the European Union",
+        "It freed enslaved people"
+      ],
+      "answer": 0,
+      "explanation": "A line split the Americas between the two empires.",
+      "image_keyword": null,
+      "topic": "Treaty of Tordesillas"
+    },
+    {
+      "question": "Which country has the world's lowest point on land, the Dead Sea shore, on its border?",
+      "options": [
+        "Jordan",
+        "Egypt",
+        "Syria",
+        "Lebanon"
+      ],
+      "answer": 0,
+      "explanation": "Jordan and Israel/Palestine share the Dead Sea shoreline.",
+      "image_keyword": null,
+      "topic": "Jordan"
+    },
+    {
+      "question": "What geopolitical term describes a country entirely surrounded by another, like San Marino?",
+      "options": [
+        "Enclave",
+        "Peninsula",
+        "Archipelago",
+        "Isthmus"
+      ],
+      "answer": 0,
+      "explanation": "An enclave sits wholly within another territory.",
+      "image_keyword": null,
+      "topic": "enclave"
+    },
+    {
+      "question": "Which country's currency is the yen?",
+      "options": [
+        "China",
+        "Japan",
+        "South Korea",
+        "Thailand"
+      ],
+      "answer": 1,
+      "explanation": "Japan's currency is the yen.",
+      "image_keyword": null,
+      "topic": "Japan"
+    },
+    {
+      "question": "What is the Tropic of Cancer?",
+      "options": [
+        "The northernmost latitude where the Sun can appear directly overhead",
+        "The equator's other name",
+        "A mountain range",
+        "An ocean current"
+      ],
+      "answer": 0,
+      "explanation": "It sits at about 23.5° north latitude.",
+      "image_keyword": null,
+      "topic": "Tropic of Cancer"
+    },
+    {
+      "question": "Which African country was formerly known as Rhodesia?",
+      "options": [
+        "Zambia",
+        "Zimbabwe",
+        "Botswana",
+        "Malawi"
+      ],
+      "answer": 1,
+      "explanation": "It was renamed Zimbabwe after independence in 1980.",
+      "image_keyword": null,
+      "topic": "Zimbabwe"
+    },
+    {
+      "question": "What is an isthmus?",
+      "options": [
+        "A narrow strip of land connecting two larger landmasses",
+        "An island chain",
+        "A deep ocean trench",
+        "A type of desert"
+      ],
+      "answer": 0,
+      "explanation": "Panama sits on a famous isthmus.",
+      "image_keyword": null,
+      "topic": "isthmus"
+    },
+    {
+      "question": "Which country's flag has no rectangular shape, unlike almost every other nation?",
+      "options": [
+        "Nepal",
+        "Bhutan",
+        "Switzerland",
+        "Qatar"
+      ],
+      "answer": 0,
+      "explanation": "Nepal's flag is made of two stacked triangles.",
+      "image_keyword": null,
+      "topic": "Nepal"
+    },
+    {
+      "question": "What is the significance of the 38th parallel in Asia?",
+      "options": [
+        "It roughly divides North and South Korea",
+        "It marks the equator",
+        "It divides China and India",
+        "It marks the Tropic of Cancer"
+      ],
+      "answer": 0,
+      "explanation": "It became the Korean border after 1945.",
+      "image_keyword": null,
+      "topic": "38th parallel"
+    },
+    {
+      "question": "Which country has the most UNESCO World Heritage Sites?",
+      "options": [
+        "Italy",
+        "France",
+        "China",
+        "Spain"
+      ],
+      "answer": 0,
+      "explanation": "Italy tops the list with sites like Rome and Pompeii.",
+      "image_keyword": null,
+      "topic": "Italy"
     }
   ],
   "history:4": [
@@ -8626,6 +11317,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "World War II ended in 1945.",
       "image_keyword": null,
       "topic": "World War II"
+    },
+    {
+      "question": "Who was the queen famous for a long reign over the British Empire in the 1800s?",
+      "options": [
+        "Queen Elizabeth I",
+        "Queen Victoria",
+        "Queen Anne",
+        "Queen Mary"
+      ],
+      "answer": 1,
+      "explanation": "Victoria reigned for over 63 years.",
+      "image_keyword": null,
+      "topic": "Queen Victoria"
+    },
+    {
+      "question": "What ancient Greek building sits atop the Acropolis in Athens?",
+      "options": [
+        "The Colosseum",
+        "The Parthenon",
+        "The Pyramid",
+        "The Pantheon"
+      ],
+      "answer": 1,
+      "explanation": "The Parthenon honoured the goddess Athena.",
+      "image_keyword": null,
+      "topic": "Parthenon"
+    },
+    {
+      "question": "Which country did the Wright brothers come from?",
+      "options": [
+        "United Kingdom",
+        "United States",
+        "France",
+        "Germany"
+      ],
+      "answer": 1,
+      "explanation": "They were American inventors from Ohio.",
+      "image_keyword": null,
+      "topic": "Wright brothers"
+    },
+    {
+      "question": "What did ancient Egyptians use pyramids for?",
+      "options": [
+        "Homes for pharaohs",
+        "Tombs for pharaohs",
+        "Marketplaces",
+        "Temples for feasts"
+      ],
+      "answer": 1,
+      "explanation": "Pyramids were built as royal tombs.",
+      "image_keyword": null,
+      "topic": "pyramids"
+    },
+    {
+      "question": "Who was the first emperor of a unified China?",
+      "options": [
+        "Qin Shi Huang",
+        "Confucius",
+        "Genghis Khan",
+        "Kublai Khan"
+      ],
+      "answer": 0,
+      "explanation": "He unified China around 221 BCE.",
+      "image_keyword": null,
+      "topic": "Qin Shi Huang"
+    },
+    {
+      "question": "What was the purpose of the Terracotta Army found in China?",
+      "options": [
+        "To guard an emperor's tomb in the afterlife",
+        "To fight real battles",
+        "To decorate a palace",
+        "To scare invaders"
+      ],
+      "answer": 0,
+      "explanation": "Thousands of clay soldiers guard Qin Shi Huang's tomb.",
+      "image_keyword": null,
+      "topic": "Terracotta Army"
+    },
+    {
+      "question": "Which explorer's diary described his journeys along the Silk Road to China?",
+      "options": [
+        "Marco Polo",
+        "Columbus",
+        "Magellan",
+        "Vasco da Gama"
+      ],
+      "answer": 0,
+      "explanation": "Marco Polo travelled to China in the 13th century.",
+      "image_keyword": null,
+      "topic": "Marco Polo"
+    },
+    {
+      "question": "What was a major cause of World War I alliances forming across Europe?",
+      "options": [
+        "Trade disputes only",
+        "Competing empires and military build-up",
+        "A single argument",
+        "A famine"
+      ],
+      "answer": 1,
+      "explanation": "Rivalries and alliances set the stage for war.",
+      "image_keyword": null,
+      "topic": "World War I"
+    },
+    {
+      "question": "Who was the famous queen of ancient Egypt who ruled with Mark Antony?",
+      "options": [
+        "Nefertiti",
+        "Cleopatra",
+        "Hatshepsut",
+        "Isis"
+      ],
+      "answer": 1,
+      "explanation": "Cleopatra allied with Rome's Mark Antony.",
+      "image_keyword": null,
+      "topic": "Cleopatra"
+    },
+    {
+      "question": "What was the main goal of the Underground Railroad in the United States?",
+      "options": [
+        "Building trains",
+        "Helping enslaved people escape to freedom",
+        "Mining coal",
+        "Building roads"
+      ],
+      "answer": 1,
+      "explanation": "It was a network of secret routes and safe houses.",
+      "image_keyword": null,
+      "topic": "Underground Railroad"
     }
   ],
   "history:5": [
@@ -9018,6 +11839,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "World War II ended in 1945.",
       "image_keyword": null,
       "topic": "World War II"
+    },
+    {
+      "question": "Who was the queen famous for a long reign over the British Empire in the 1800s?",
+      "options": [
+        "Queen Elizabeth I",
+        "Queen Victoria",
+        "Queen Anne",
+        "Queen Mary"
+      ],
+      "answer": 1,
+      "explanation": "Victoria reigned for over 63 years.",
+      "image_keyword": null,
+      "topic": "Queen Victoria"
+    },
+    {
+      "question": "What ancient Greek building sits atop the Acropolis in Athens?",
+      "options": [
+        "The Colosseum",
+        "The Parthenon",
+        "The Pyramid",
+        "The Pantheon"
+      ],
+      "answer": 1,
+      "explanation": "The Parthenon honoured the goddess Athena.",
+      "image_keyword": null,
+      "topic": "Parthenon"
+    },
+    {
+      "question": "Which country did the Wright brothers come from?",
+      "options": [
+        "United Kingdom",
+        "United States",
+        "France",
+        "Germany"
+      ],
+      "answer": 1,
+      "explanation": "They were American inventors from Ohio.",
+      "image_keyword": null,
+      "topic": "Wright brothers"
+    },
+    {
+      "question": "What did ancient Egyptians use pyramids for?",
+      "options": [
+        "Homes for pharaohs",
+        "Tombs for pharaohs",
+        "Marketplaces",
+        "Temples for feasts"
+      ],
+      "answer": 1,
+      "explanation": "Pyramids were built as royal tombs.",
+      "image_keyword": null,
+      "topic": "pyramids"
+    },
+    {
+      "question": "Who was the first emperor of a unified China?",
+      "options": [
+        "Qin Shi Huang",
+        "Confucius",
+        "Genghis Khan",
+        "Kublai Khan"
+      ],
+      "answer": 0,
+      "explanation": "He unified China around 221 BCE.",
+      "image_keyword": null,
+      "topic": "Qin Shi Huang"
+    },
+    {
+      "question": "What was the purpose of the Terracotta Army found in China?",
+      "options": [
+        "To guard an emperor's tomb in the afterlife",
+        "To fight real battles",
+        "To decorate a palace",
+        "To scare invaders"
+      ],
+      "answer": 0,
+      "explanation": "Thousands of clay soldiers guard Qin Shi Huang's tomb.",
+      "image_keyword": null,
+      "topic": "Terracotta Army"
+    },
+    {
+      "question": "Which explorer's diary described his journeys along the Silk Road to China?",
+      "options": [
+        "Marco Polo",
+        "Columbus",
+        "Magellan",
+        "Vasco da Gama"
+      ],
+      "answer": 0,
+      "explanation": "Marco Polo travelled to China in the 13th century.",
+      "image_keyword": null,
+      "topic": "Marco Polo"
+    },
+    {
+      "question": "What was a major cause of World War I alliances forming across Europe?",
+      "options": [
+        "Trade disputes only",
+        "Competing empires and military build-up",
+        "A single argument",
+        "A famine"
+      ],
+      "answer": 1,
+      "explanation": "Rivalries and alliances set the stage for war.",
+      "image_keyword": null,
+      "topic": "World War I"
+    },
+    {
+      "question": "Who was the famous queen of ancient Egypt who ruled with Mark Antony?",
+      "options": [
+        "Nefertiti",
+        "Cleopatra",
+        "Hatshepsut",
+        "Isis"
+      ],
+      "answer": 1,
+      "explanation": "Cleopatra allied with Rome's Mark Antony.",
+      "image_keyword": null,
+      "topic": "Cleopatra"
+    },
+    {
+      "question": "What was the main goal of the Underground Railroad in the United States?",
+      "options": [
+        "Building trains",
+        "Helping enslaved people escape to freedom",
+        "Mining coal",
+        "Building roads"
+      ],
+      "answer": 1,
+      "explanation": "It was a network of secret routes and safe houses.",
+      "image_keyword": null,
+      "topic": "Underground Railroad"
     }
   ],
   "history:6": [
@@ -9410,6 +12361,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "The bombings ended WWII in the Pacific.",
       "image_keyword": null,
       "topic": "atomic bomb"
+    },
+    {
+      "question": "What was the purpose of the Great Wall of China?",
+      "options": [
+        "To defend against northern invaders",
+        "To mark trade routes only",
+        "To store grain",
+        "To worship gods"
+      ],
+      "answer": 0,
+      "explanation": "Different dynasties built and extended it over centuries.",
+      "image_keyword": null,
+      "topic": "Great Wall of China"
+    },
+    {
+      "question": "Who was Julius Caesar?",
+      "options": [
+        "A Greek philosopher",
+        "A Roman general and statesman who became dictator",
+        "An Egyptian pharaoh",
+        "A Persian king"
+      ],
+      "answer": 1,
+      "explanation": "He was assassinated in 44 BCE.",
+      "image_keyword": null,
+      "topic": "Julius Caesar"
+    },
+    {
+      "question": "What was the Boston Tea Party a protest against?",
+      "options": [
+        "Low taxes",
+        "British taxes on tea without colonial representation",
+        "Bad-tasting tea",
+        "French trade rules"
+      ],
+      "answer": 1,
+      "explanation": "Colonists dumped tea into Boston Harbor in 1773.",
+      "image_keyword": null,
+      "topic": "Boston Tea Party"
+    },
+    {
+      "question": "Which ancient civilization built step pyramids in Central America?",
+      "options": [
+        "Maya",
+        "Egyptians",
+        "Romans",
+        "Persians"
+      ],
+      "answer": 0,
+      "explanation": "The Maya built pyramids like those at Tikal.",
+      "image_keyword": null,
+      "topic": "Maya civilization"
+    },
+    {
+      "question": "What was the main cause of the Opium Wars between Britain and China?",
+      "options": [
+        "A border dispute",
+        "Britain's opium trade and China's attempts to stop it",
+        "A religious conflict",
+        "A succession crisis"
+      ],
+      "answer": 1,
+      "explanation": "China tried to ban opium imports, sparking conflict.",
+      "image_keyword": null,
+      "topic": "Opium Wars"
+    },
+    {
+      "question": "Who was Hammurabi?",
+      "options": [
+        "An Egyptian pharaoh",
+        "A Babylonian king known for an early law code",
+        "A Roman senator",
+        "A Greek philosopher"
+      ],
+      "answer": 1,
+      "explanation": "His code is one of the earliest written legal systems.",
+      "image_keyword": null,
+      "topic": "Hammurabi"
+    },
+    {
+      "question": "What triggered the start of the American Revolutionary War?",
+      "options": [
+        "The Battles of Lexington and Concord",
+        "The signing of the Constitution",
+        "The Boston Massacre alone",
+        "The Louisiana Purchase"
+      ],
+      "answer": 0,
+      "explanation": "Fighting broke out there in April 1775.",
+      "image_keyword": null,
+      "topic": "American Revolutionary War"
+    },
+    {
+      "question": "What was the significance of the Domesday Book (1086)?",
+      "options": [
+        "It was England's first detailed land and property survey",
+        "It was a religious text",
+        "It ended a war",
+        "It was a trade agreement"
+      ],
+      "answer": 0,
+      "explanation": "William the Conqueror ordered it to assess his new kingdom.",
+      "image_keyword": null,
+      "topic": "Domesday Book"
+    },
+    {
+      "question": "Which revolution is associated with the phrase 'Let them eat cake'?",
+      "options": [
+        "Russian Revolution",
+        "French Revolution",
+        "American Revolution",
+        "Industrial Revolution"
+      ],
+      "answer": 1,
+      "explanation": "It's often (likely wrongly) attributed to Marie Antoinette.",
+      "image_keyword": null,
+      "topic": "French Revolution"
+    },
+    {
+      "question": "What was the main goal of the Marshall Plan's Cold War-era diplomacy?",
+      "options": [
+        "To rebuild Europe and limit the spread of communism",
+        "To invade the USSR",
+        "To colonize Africa",
+        "To end World War I"
+      ],
+      "answer": 0,
+      "explanation": "Economic aid aimed to stabilize war-torn Europe.",
+      "image_keyword": null,
+      "topic": "Marshall Plan"
     }
   ],
   "history:7": [
@@ -9802,6 +12883,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "The bombings ended WWII in the Pacific.",
       "image_keyword": null,
       "topic": "atomic bomb"
+    },
+    {
+      "question": "What was the purpose of the Great Wall of China?",
+      "options": [
+        "To defend against northern invaders",
+        "To mark trade routes only",
+        "To store grain",
+        "To worship gods"
+      ],
+      "answer": 0,
+      "explanation": "Different dynasties built and extended it over centuries.",
+      "image_keyword": null,
+      "topic": "Great Wall of China"
+    },
+    {
+      "question": "Who was Julius Caesar?",
+      "options": [
+        "A Greek philosopher",
+        "A Roman general and statesman who became dictator",
+        "An Egyptian pharaoh",
+        "A Persian king"
+      ],
+      "answer": 1,
+      "explanation": "He was assassinated in 44 BCE.",
+      "image_keyword": null,
+      "topic": "Julius Caesar"
+    },
+    {
+      "question": "What was the Boston Tea Party a protest against?",
+      "options": [
+        "Low taxes",
+        "British taxes on tea without colonial representation",
+        "Bad-tasting tea",
+        "French trade rules"
+      ],
+      "answer": 1,
+      "explanation": "Colonists dumped tea into Boston Harbor in 1773.",
+      "image_keyword": null,
+      "topic": "Boston Tea Party"
+    },
+    {
+      "question": "Which ancient civilization built step pyramids in Central America?",
+      "options": [
+        "Maya",
+        "Egyptians",
+        "Romans",
+        "Persians"
+      ],
+      "answer": 0,
+      "explanation": "The Maya built pyramids like those at Tikal.",
+      "image_keyword": null,
+      "topic": "Maya civilization"
+    },
+    {
+      "question": "What was the main cause of the Opium Wars between Britain and China?",
+      "options": [
+        "A border dispute",
+        "Britain's opium trade and China's attempts to stop it",
+        "A religious conflict",
+        "A succession crisis"
+      ],
+      "answer": 1,
+      "explanation": "China tried to ban opium imports, sparking conflict.",
+      "image_keyword": null,
+      "topic": "Opium Wars"
+    },
+    {
+      "question": "Who was Hammurabi?",
+      "options": [
+        "An Egyptian pharaoh",
+        "A Babylonian king known for an early law code",
+        "A Roman senator",
+        "A Greek philosopher"
+      ],
+      "answer": 1,
+      "explanation": "His code is one of the earliest written legal systems.",
+      "image_keyword": null,
+      "topic": "Hammurabi"
+    },
+    {
+      "question": "What triggered the start of the American Revolutionary War?",
+      "options": [
+        "The Battles of Lexington and Concord",
+        "The signing of the Constitution",
+        "The Boston Massacre alone",
+        "The Louisiana Purchase"
+      ],
+      "answer": 0,
+      "explanation": "Fighting broke out there in April 1775.",
+      "image_keyword": null,
+      "topic": "American Revolutionary War"
+    },
+    {
+      "question": "What was the significance of the Domesday Book (1086)?",
+      "options": [
+        "It was England's first detailed land and property survey",
+        "It was a religious text",
+        "It ended a war",
+        "It was a trade agreement"
+      ],
+      "answer": 0,
+      "explanation": "William the Conqueror ordered it to assess his new kingdom.",
+      "image_keyword": null,
+      "topic": "Domesday Book"
+    },
+    {
+      "question": "Which revolution is associated with the phrase 'Let them eat cake'?",
+      "options": [
+        "Russian Revolution",
+        "French Revolution",
+        "American Revolution",
+        "Industrial Revolution"
+      ],
+      "answer": 1,
+      "explanation": "It's often (likely wrongly) attributed to Marie Antoinette.",
+      "image_keyword": null,
+      "topic": "French Revolution"
+    },
+    {
+      "question": "What was the main goal of the Marshall Plan's Cold War-era diplomacy?",
+      "options": [
+        "To rebuild Europe and limit the spread of communism",
+        "To invade the USSR",
+        "To colonize Africa",
+        "To end World War I"
+      ],
+      "answer": 0,
+      "explanation": "Economic aid aimed to stabilize war-torn Europe.",
+      "image_keyword": null,
+      "topic": "Marshall Plan"
     }
   ],
   "history:8": [
@@ -10194,6 +13405,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "It was signed in 1919 and punished Germany.",
       "image_keyword": null,
       "topic": "Treaty of Versailles"
+    },
+    {
+      "question": "What was the primary purpose of the Non-Aligned Movement during the Cold War?",
+      "options": [
+        "To avoid formally allying with either the US or USSR bloc",
+        "To join NATO",
+        "To support the Soviet Union",
+        "To colonize new territory"
+      ],
+      "answer": 0,
+      "explanation": "Countries like India and Yugoslavia led this stance.",
+      "image_keyword": null,
+      "topic": "Non-Aligned Movement"
+    },
+    {
+      "question": "What was the significance of the Magna Carta beyond limiting the king?",
+      "options": [
+        "It had no lasting influence",
+        "It influenced later constitutional documents like the US Bill of Rights",
+        "It created the parliament instantly",
+        "It ended feudalism immediately"
+      ],
+      "answer": 1,
+      "explanation": "Its principles echoed through centuries of legal thought.",
+      "image_keyword": null,
+      "topic": "Magna Carta"
+    },
+    {
+      "question": "What was the Taiping Rebellion in 19th-century China?",
+      "options": [
+        "A trade agreement",
+        "One of history's deadliest civil wars, led by a self-proclaimed prophet",
+        "A foreign invasion",
+        "A famine relief effort"
+      ],
+      "answer": 1,
+      "explanation": "It killed tens of millions between 1850-1864.",
+      "image_keyword": null,
+      "topic": "Taiping Rebellion"
+    },
+    {
+      "question": "What was the main economic system criticized in Marx's Das Kapital?",
+      "options": [
+        "Feudalism",
+        "Capitalism",
+        "Communism",
+        "Mercantilism"
+      ],
+      "answer": 1,
+      "explanation": "Marx analyzed capitalism's contradictions and labor exploitation.",
+      "image_keyword": null,
+      "topic": "Das Kapital"
+    },
+    {
+      "question": "Which empire's decline is often dated to the sack of Rome in 410 CE?",
+      "options": [
+        "Byzantine Empire",
+        "Western Roman Empire",
+        "Persian Empire",
+        "Ottoman Empire"
+      ],
+      "answer": 1,
+      "explanation": "It was a major blow before the empire's fall in 476.",
+      "image_keyword": null,
+      "topic": "Western Roman Empire"
+    },
+    {
+      "question": "What was the Great Schism of 1054?",
+      "options": [
+        "A split between Eastern Orthodox and Roman Catholic Christianity",
+        "A war between France and England",
+        "A split in Islam",
+        "A trade dispute"
+      ],
+      "answer": 0,
+      "explanation": "It formally divided Christianity's two major branches.",
+      "image_keyword": null,
+      "topic": "Great Schism"
+    },
+    {
+      "question": "Who was Vasco Nunez de Balboa known for?",
+      "options": [
+        "Circumnavigating the globe",
+        "Being the first European to see the Pacific Ocean from the Americas",
+        "Conquering the Aztecs",
+        "Founding Quebec"
+      ],
+      "answer": 1,
+      "explanation": "He crossed Panama and sighted the Pacific in 1513.",
+      "image_keyword": null,
+      "topic": "Balboa"
+    },
+    {
+      "question": "What was the primary purpose of the Congress of Berlin (1878)?",
+      "options": [
+        "To redraw Balkan borders after a Russo-Ottoman war",
+        "To end WWI",
+        "To divide Africa",
+        "To found the League of Nations"
+      ],
+      "answer": 0,
+      "explanation": "European powers reorganized the region's map.",
+      "image_keyword": null,
+      "topic": "Congress of Berlin"
+    },
+    {
+      "question": "What was the main significance of the printing of the Gutenberg Bible around 1455?",
+      "options": [
+        "It was the first major book printed with movable type in Europe",
+        "It ended the Renaissance",
+        "It started the Reformation directly",
+        "It was written in English"
+      ],
+      "answer": 0,
+      "explanation": "It revolutionized how quickly texts could be reproduced.",
+      "image_keyword": null,
+      "topic": "Gutenberg Bible"
+    },
+    {
+      "question": "What was the outcome of the Battle of Hastings in 1066?",
+      "options": [
+        "William the Conqueror took the English throne",
+        "England became a republic",
+        "France was conquered",
+        "The Vikings were expelled"
+      ],
+      "answer": 0,
+      "explanation": "It began Norman rule over England.",
+      "image_keyword": null,
+      "topic": "Battle of Hastings"
     }
   ],
   "history:9": [
@@ -10586,6 +13927,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "It was signed in 1919 and punished Germany.",
       "image_keyword": null,
       "topic": "Treaty of Versailles"
+    },
+    {
+      "question": "What was the primary purpose of the Non-Aligned Movement during the Cold War?",
+      "options": [
+        "To avoid formally allying with either the US or USSR bloc",
+        "To join NATO",
+        "To support the Soviet Union",
+        "To colonize new territory"
+      ],
+      "answer": 0,
+      "explanation": "Countries like India and Yugoslavia led this stance.",
+      "image_keyword": null,
+      "topic": "Non-Aligned Movement"
+    },
+    {
+      "question": "What was the significance of the Magna Carta beyond limiting the king?",
+      "options": [
+        "It had no lasting influence",
+        "It influenced later constitutional documents like the US Bill of Rights",
+        "It created the parliament instantly",
+        "It ended feudalism immediately"
+      ],
+      "answer": 1,
+      "explanation": "Its principles echoed through centuries of legal thought.",
+      "image_keyword": null,
+      "topic": "Magna Carta"
+    },
+    {
+      "question": "What was the Taiping Rebellion in 19th-century China?",
+      "options": [
+        "A trade agreement",
+        "One of history's deadliest civil wars, led by a self-proclaimed prophet",
+        "A foreign invasion",
+        "A famine relief effort"
+      ],
+      "answer": 1,
+      "explanation": "It killed tens of millions between 1850-1864.",
+      "image_keyword": null,
+      "topic": "Taiping Rebellion"
+    },
+    {
+      "question": "What was the main economic system criticized in Marx's Das Kapital?",
+      "options": [
+        "Feudalism",
+        "Capitalism",
+        "Communism",
+        "Mercantilism"
+      ],
+      "answer": 1,
+      "explanation": "Marx analyzed capitalism's contradictions and labor exploitation.",
+      "image_keyword": null,
+      "topic": "Das Kapital"
+    },
+    {
+      "question": "Which empire's decline is often dated to the sack of Rome in 410 CE?",
+      "options": [
+        "Byzantine Empire",
+        "Western Roman Empire",
+        "Persian Empire",
+        "Ottoman Empire"
+      ],
+      "answer": 1,
+      "explanation": "It was a major blow before the empire's fall in 476.",
+      "image_keyword": null,
+      "topic": "Western Roman Empire"
+    },
+    {
+      "question": "What was the Great Schism of 1054?",
+      "options": [
+        "A split between Eastern Orthodox and Roman Catholic Christianity",
+        "A war between France and England",
+        "A split in Islam",
+        "A trade dispute"
+      ],
+      "answer": 0,
+      "explanation": "It formally divided Christianity's two major branches.",
+      "image_keyword": null,
+      "topic": "Great Schism"
+    },
+    {
+      "question": "Who was Vasco Nunez de Balboa known for?",
+      "options": [
+        "Circumnavigating the globe",
+        "Being the first European to see the Pacific Ocean from the Americas",
+        "Conquering the Aztecs",
+        "Founding Quebec"
+      ],
+      "answer": 1,
+      "explanation": "He crossed Panama and sighted the Pacific in 1513.",
+      "image_keyword": null,
+      "topic": "Balboa"
+    },
+    {
+      "question": "What was the primary purpose of the Congress of Berlin (1878)?",
+      "options": [
+        "To redraw Balkan borders after a Russo-Ottoman war",
+        "To end WWI",
+        "To divide Africa",
+        "To found the League of Nations"
+      ],
+      "answer": 0,
+      "explanation": "European powers reorganized the region's map.",
+      "image_keyword": null,
+      "topic": "Congress of Berlin"
+    },
+    {
+      "question": "What was the main significance of the printing of the Gutenberg Bible around 1455?",
+      "options": [
+        "It was the first major book printed with movable type in Europe",
+        "It ended the Renaissance",
+        "It started the Reformation directly",
+        "It was written in English"
+      ],
+      "answer": 0,
+      "explanation": "It revolutionized how quickly texts could be reproduced.",
+      "image_keyword": null,
+      "topic": "Gutenberg Bible"
+    },
+    {
+      "question": "What was the outcome of the Battle of Hastings in 1066?",
+      "options": [
+        "William the Conqueror took the English throne",
+        "England became a republic",
+        "France was conquered",
+        "The Vikings were expelled"
+      ],
+      "answer": 0,
+      "explanation": "It began Norman rule over England.",
+      "image_keyword": null,
+      "topic": "Battle of Hastings"
     }
   ],
   "history:10": [
@@ -10978,6 +14449,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "It was signed in 1919 and punished Germany.",
       "image_keyword": null,
       "topic": "Treaty of Versailles"
+    },
+    {
+      "question": "What was the primary purpose of the Non-Aligned Movement during the Cold War?",
+      "options": [
+        "To avoid formally allying with either the US or USSR bloc",
+        "To join NATO",
+        "To support the Soviet Union",
+        "To colonize new territory"
+      ],
+      "answer": 0,
+      "explanation": "Countries like India and Yugoslavia led this stance.",
+      "image_keyword": null,
+      "topic": "Non-Aligned Movement"
+    },
+    {
+      "question": "What was the significance of the Magna Carta beyond limiting the king?",
+      "options": [
+        "It had no lasting influence",
+        "It influenced later constitutional documents like the US Bill of Rights",
+        "It created the parliament instantly",
+        "It ended feudalism immediately"
+      ],
+      "answer": 1,
+      "explanation": "Its principles echoed through centuries of legal thought.",
+      "image_keyword": null,
+      "topic": "Magna Carta"
+    },
+    {
+      "question": "What was the Taiping Rebellion in 19th-century China?",
+      "options": [
+        "A trade agreement",
+        "One of history's deadliest civil wars, led by a self-proclaimed prophet",
+        "A foreign invasion",
+        "A famine relief effort"
+      ],
+      "answer": 1,
+      "explanation": "It killed tens of millions between 1850-1864.",
+      "image_keyword": null,
+      "topic": "Taiping Rebellion"
+    },
+    {
+      "question": "What was the main economic system criticized in Marx's Das Kapital?",
+      "options": [
+        "Feudalism",
+        "Capitalism",
+        "Communism",
+        "Mercantilism"
+      ],
+      "answer": 1,
+      "explanation": "Marx analyzed capitalism's contradictions and labor exploitation.",
+      "image_keyword": null,
+      "topic": "Das Kapital"
+    },
+    {
+      "question": "Which empire's decline is often dated to the sack of Rome in 410 CE?",
+      "options": [
+        "Byzantine Empire",
+        "Western Roman Empire",
+        "Persian Empire",
+        "Ottoman Empire"
+      ],
+      "answer": 1,
+      "explanation": "It was a major blow before the empire's fall in 476.",
+      "image_keyword": null,
+      "topic": "Western Roman Empire"
+    },
+    {
+      "question": "What was the Great Schism of 1054?",
+      "options": [
+        "A split between Eastern Orthodox and Roman Catholic Christianity",
+        "A war between France and England",
+        "A split in Islam",
+        "A trade dispute"
+      ],
+      "answer": 0,
+      "explanation": "It formally divided Christianity's two major branches.",
+      "image_keyword": null,
+      "topic": "Great Schism"
+    },
+    {
+      "question": "Who was Vasco Nunez de Balboa known for?",
+      "options": [
+        "Circumnavigating the globe",
+        "Being the first European to see the Pacific Ocean from the Americas",
+        "Conquering the Aztecs",
+        "Founding Quebec"
+      ],
+      "answer": 1,
+      "explanation": "He crossed Panama and sighted the Pacific in 1513.",
+      "image_keyword": null,
+      "topic": "Balboa"
+    },
+    {
+      "question": "What was the primary purpose of the Congress of Berlin (1878)?",
+      "options": [
+        "To redraw Balkan borders after a Russo-Ottoman war",
+        "To end WWI",
+        "To divide Africa",
+        "To found the League of Nations"
+      ],
+      "answer": 0,
+      "explanation": "European powers reorganized the region's map.",
+      "image_keyword": null,
+      "topic": "Congress of Berlin"
+    },
+    {
+      "question": "What was the main significance of the printing of the Gutenberg Bible around 1455?",
+      "options": [
+        "It was the first major book printed with movable type in Europe",
+        "It ended the Renaissance",
+        "It started the Reformation directly",
+        "It was written in English"
+      ],
+      "answer": 0,
+      "explanation": "It revolutionized how quickly texts could be reproduced.",
+      "image_keyword": null,
+      "topic": "Gutenberg Bible"
+    },
+    {
+      "question": "What was the outcome of the Battle of Hastings in 1066?",
+      "options": [
+        "William the Conqueror took the English throne",
+        "England became a republic",
+        "France was conquered",
+        "The Vikings were expelled"
+      ],
+      "answer": 0,
+      "explanation": "It began Norman rule over England.",
+      "image_keyword": null,
+      "topic": "Battle of Hastings"
     }
   ],
   "famous_people:4": [
@@ -11370,6 +14971,123 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Gates co-founded Microsoft in 1975.",
       "image_keyword": null,
       "topic": "Bill Gates"
+    },
+    {
+      "question": "Who co-founded Apple and helped create the iPhone?",
+      "options": [
+        "Bill Gates",
+        "Steve Jobs",
+        "Jeff Bezos",
+        "Larry Page"
+      ],
+      "answer": 1,
+      "explanation": "Steve Jobs co-founded Apple in 1976.",
+      "image_keyword": null,
+      "topic": "Steve Jobs"
+    },
+    {
+      "question": "Who wrote the famous story Alice's Adventures in Wonderland?",
+      "options": [
+        "Lewis Carroll",
+        "Roald Dahl",
+        "J.K. Rowling",
+        "C.S. Lewis"
+      ],
+      "answer": 0,
+      "explanation": "Lewis Carroll published it in 1865.",
+      "image_keyword": null,
+      "topic": "Lewis Carroll"
+    },
+    {
+      "question": "Who was the scientist known for the famous equation E=mc²?",
+      "options": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Galileo",
+        "Stephen Hawking"
+      ],
+      "answer": 1,
+      "explanation": "Einstein's equation links mass and energy.",
+      "image_keyword": null,
+      "topic": "Albert Einstein"
+    },
+    {
+      "question": "Who was the first African American to play in Major League Baseball?",
+      "options": [
+        "Jackie Robinson",
+        "Hank Aaron",
+        "Willie Mays",
+        "Satchel Paige"
+      ],
+      "answer": 0,
+      "explanation": "Jackie Robinson broke the colour barrier in 1947.",
+      "image_keyword": null,
+      "topic": "Jackie Robinson"
+    },
+    {
+      "question": "Who painted famous water lily paintings in his garden at Giverny?",
+      "options": [
+        "Monet",
+        "Van Gogh",
+        "Picasso",
+        "Renoir"
+      ],
+      "answer": 0,
+      "explanation": "Claude Monet painted his water lily series there.",
+      "image_keyword": null,
+      "topic": "Monet"
+    },
+    {
+      "question": "Who was the astronomer who improved the telescope and supported the idea that Earth orbits the Sun?",
+      "options": [
+        "Galileo Galilei",
+        "Copernicus",
+        "Kepler",
+        "Newton"
+      ],
+      "answer": 0,
+      "explanation": "Galileo faced trial for his findings.",
+      "image_keyword": null,
+      "topic": "Galileo Galilei"
+    },
+    {
+      "question": "Who was Helen Keller?",
+      "options": [
+        "A famous singer",
+        "A deaf-blind author and activist",
+        "A queen",
+        "An astronaut"
+      ],
+      "answer": 1,
+      "explanation": "She overcame deaf-blindness to become an author and speaker.",
+      "image_keyword": null,
+      "topic": "Helen Keller"
+    },
+    {
+      "question": "Who directed and created many beloved animated films and Disneyland?",
+      "options": [
+        "Walt Disney",
+        "Steven Spielberg",
+        "George Lucas",
+        "Pixar's founder only"
+      ],
+      "answer": 0,
+      "explanation": "Walt Disney founded the studio and theme park.",
+      "image_keyword": null,
+      "topic": "Walt Disney"
+    },
+    {
+      "question": "Who was the scientist famous for his wheelchair and work on black holes?",
+      "options": [
+        "Stephen Hawking",
+        "Albert Einstein",
+        "Carl Sagan",
+        "Neil deGrasse Tyson"
+      ],
+      "answer": 0,
+      "explanation": "Hawking wrote A Brief History of Time.",
+      "image_keyword": null,
+      "topic": "Stephen Hawking"
     }
   ],
   "famous_people:5": [
@@ -11762,6 +15480,123 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Gates co-founded Microsoft in 1975.",
       "image_keyword": null,
       "topic": "Bill Gates"
+    },
+    {
+      "question": "Who co-founded Apple and helped create the iPhone?",
+      "options": [
+        "Bill Gates",
+        "Steve Jobs",
+        "Jeff Bezos",
+        "Larry Page"
+      ],
+      "answer": 1,
+      "explanation": "Steve Jobs co-founded Apple in 1976.",
+      "image_keyword": null,
+      "topic": "Steve Jobs"
+    },
+    {
+      "question": "Who wrote the famous story Alice's Adventures in Wonderland?",
+      "options": [
+        "Lewis Carroll",
+        "Roald Dahl",
+        "J.K. Rowling",
+        "C.S. Lewis"
+      ],
+      "answer": 0,
+      "explanation": "Lewis Carroll published it in 1865.",
+      "image_keyword": null,
+      "topic": "Lewis Carroll"
+    },
+    {
+      "question": "Who was the scientist known for the famous equation E=mc²?",
+      "options": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Galileo",
+        "Stephen Hawking"
+      ],
+      "answer": 1,
+      "explanation": "Einstein's equation links mass and energy.",
+      "image_keyword": null,
+      "topic": "Albert Einstein"
+    },
+    {
+      "question": "Who was the first African American to play in Major League Baseball?",
+      "options": [
+        "Jackie Robinson",
+        "Hank Aaron",
+        "Willie Mays",
+        "Satchel Paige"
+      ],
+      "answer": 0,
+      "explanation": "Jackie Robinson broke the colour barrier in 1947.",
+      "image_keyword": null,
+      "topic": "Jackie Robinson"
+    },
+    {
+      "question": "Who painted famous water lily paintings in his garden at Giverny?",
+      "options": [
+        "Monet",
+        "Van Gogh",
+        "Picasso",
+        "Renoir"
+      ],
+      "answer": 0,
+      "explanation": "Claude Monet painted his water lily series there.",
+      "image_keyword": null,
+      "topic": "Monet"
+    },
+    {
+      "question": "Who was the astronomer who improved the telescope and supported the idea that Earth orbits the Sun?",
+      "options": [
+        "Galileo Galilei",
+        "Copernicus",
+        "Kepler",
+        "Newton"
+      ],
+      "answer": 0,
+      "explanation": "Galileo faced trial for his findings.",
+      "image_keyword": null,
+      "topic": "Galileo Galilei"
+    },
+    {
+      "question": "Who was Helen Keller?",
+      "options": [
+        "A famous singer",
+        "A deaf-blind author and activist",
+        "A queen",
+        "An astronaut"
+      ],
+      "answer": 1,
+      "explanation": "She overcame deaf-blindness to become an author and speaker.",
+      "image_keyword": null,
+      "topic": "Helen Keller"
+    },
+    {
+      "question": "Who directed and created many beloved animated films and Disneyland?",
+      "options": [
+        "Walt Disney",
+        "Steven Spielberg",
+        "George Lucas",
+        "Pixar's founder only"
+      ],
+      "answer": 0,
+      "explanation": "Walt Disney founded the studio and theme park.",
+      "image_keyword": null,
+      "topic": "Walt Disney"
+    },
+    {
+      "question": "Who was the scientist famous for his wheelchair and work on black holes?",
+      "options": [
+        "Stephen Hawking",
+        "Albert Einstein",
+        "Carl Sagan",
+        "Neil deGrasse Tyson"
+      ],
+      "answer": 0,
+      "explanation": "Hawking wrote A Brief History of Time.",
+      "image_keyword": null,
+      "topic": "Stephen Hawking"
     }
   ],
   "famous_people:6": [
@@ -12154,6 +15989,123 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Mary Shelley wrote it in 1818, age 20.",
       "image_keyword": null,
       "topic": "Mary Shelley"
+    },
+    {
+      "question": "Who was Harriet Tubman?",
+      "options": [
+        "A queen of England",
+        "An abolitionist who led enslaved people to freedom",
+        "A scientist",
+        "A painter"
+      ],
+      "answer": 1,
+      "explanation": "She made repeated trips via the Underground Railroad.",
+      "image_keyword": null,
+      "topic": "Harriet Tubman"
+    },
+    {
+      "question": "Which composer, deaf later in life, wrote the famous Ninth Symphony?",
+      "options": [
+        "Mozart",
+        "Ludwig van Beethoven",
+        "Bach",
+        "Chopin"
+      ],
+      "answer": 1,
+      "explanation": "Beethoven premiered it in 1824 while almost totally deaf.",
+      "image_keyword": null,
+      "topic": "Beethoven"
+    },
+    {
+      "question": "Who was Sun Tzu, author of The Art of War?",
+      "options": [
+        "A Roman general",
+        "An ancient Chinese military strategist",
+        "A Japanese emperor",
+        "A Greek philosopher"
+      ],
+      "answer": 1,
+      "explanation": "His writings still influence strategy today.",
+      "image_keyword": null,
+      "topic": "Sun Tzu"
+    },
+    {
+      "question": "Who was Cesar Chavez?",
+      "options": [
+        "A labor leader who fought for farm workers' rights",
+        "A Mexican president",
+        "An astronaut",
+        "A painter"
+      ],
+      "answer": 0,
+      "explanation": "He co-founded the United Farm Workers union.",
+      "image_keyword": null,
+      "topic": "Cesar Chavez"
+    },
+    {
+      "question": "Who invented dynamite and later founded the Nobel Prizes?",
+      "options": [
+        "Alfred Nobel",
+        "Thomas Edison",
+        "Nikola Tesla",
+        "Louis Pasteur"
+      ],
+      "answer": 0,
+      "explanation": "He wanted his legacy tied to peace and achievement, not weapons.",
+      "image_keyword": null,
+      "topic": "Alfred Nobel"
+    },
+    {
+      "question": "Who was Malala Yousafzai?",
+      "options": [
+        "An education activist and the youngest Nobel Prize laureate",
+        "A queen",
+        "A scientist",
+        "An astronaut"
+      ],
+      "answer": 0,
+      "explanation": "She survived an attack and champions girls' education.",
+      "image_keyword": null,
+      "topic": "Malala Yousafzai"
+    },
+    {
+      "question": "Who composed the famous opera The Magic Flute?",
+      "options": [
+        "Wolfgang Amadeus Mozart",
+        "Beethoven",
+        "Bach",
+        "Verdi"
+      ],
+      "answer": 0,
+      "explanation": "Mozart wrote it in 1791, the year he died.",
+      "image_keyword": null,
+      "topic": "Mozart"
+    },
+    {
+      "question": "Who was Sacagawea?",
+      "options": [
+        "A Native American guide for the Lewis and Clark Expedition",
+        "A European queen",
+        "An astronaut",
+        "A painter"
+      ],
+      "answer": 0,
+      "explanation": "She helped the expedition navigate and communicate.",
+      "image_keyword": null,
+      "topic": "Sacagawea"
+    },
+    {
+      "question": "Who was the first person to reach the deepest part of the ocean, the Mariana Trench, in 1960?",
+      "options": [
+        "Jacques Piccard and Don Walsh",
+        "Jacques Cousteau",
+        "Robert Ballard",
+        "James Cameron alone"
+      ],
+      "answer": 0,
+      "explanation": "They descended in the bathyscaphe Trieste.",
+      "image_keyword": null,
+      "topic": "Jacques Piccard"
     }
   ],
   "famous_people:7": [
@@ -12546,6 +16498,123 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Mary Shelley wrote it in 1818, age 20.",
       "image_keyword": null,
       "topic": "Mary Shelley"
+    },
+    {
+      "question": "Who was Harriet Tubman?",
+      "options": [
+        "A queen of England",
+        "An abolitionist who led enslaved people to freedom",
+        "A scientist",
+        "A painter"
+      ],
+      "answer": 1,
+      "explanation": "She made repeated trips via the Underground Railroad.",
+      "image_keyword": null,
+      "topic": "Harriet Tubman"
+    },
+    {
+      "question": "Which composer, deaf later in life, wrote the famous Ninth Symphony?",
+      "options": [
+        "Mozart",
+        "Ludwig van Beethoven",
+        "Bach",
+        "Chopin"
+      ],
+      "answer": 1,
+      "explanation": "Beethoven premiered it in 1824 while almost totally deaf.",
+      "image_keyword": null,
+      "topic": "Beethoven"
+    },
+    {
+      "question": "Who was Sun Tzu, author of The Art of War?",
+      "options": [
+        "A Roman general",
+        "An ancient Chinese military strategist",
+        "A Japanese emperor",
+        "A Greek philosopher"
+      ],
+      "answer": 1,
+      "explanation": "His writings still influence strategy today.",
+      "image_keyword": null,
+      "topic": "Sun Tzu"
+    },
+    {
+      "question": "Who was Cesar Chavez?",
+      "options": [
+        "A labor leader who fought for farm workers' rights",
+        "A Mexican president",
+        "An astronaut",
+        "A painter"
+      ],
+      "answer": 0,
+      "explanation": "He co-founded the United Farm Workers union.",
+      "image_keyword": null,
+      "topic": "Cesar Chavez"
+    },
+    {
+      "question": "Who invented dynamite and later founded the Nobel Prizes?",
+      "options": [
+        "Alfred Nobel",
+        "Thomas Edison",
+        "Nikola Tesla",
+        "Louis Pasteur"
+      ],
+      "answer": 0,
+      "explanation": "He wanted his legacy tied to peace and achievement, not weapons.",
+      "image_keyword": null,
+      "topic": "Alfred Nobel"
+    },
+    {
+      "question": "Who was Malala Yousafzai?",
+      "options": [
+        "An education activist and the youngest Nobel Prize laureate",
+        "A queen",
+        "A scientist",
+        "An astronaut"
+      ],
+      "answer": 0,
+      "explanation": "She survived an attack and champions girls' education.",
+      "image_keyword": null,
+      "topic": "Malala Yousafzai"
+    },
+    {
+      "question": "Who composed the famous opera The Magic Flute?",
+      "options": [
+        "Wolfgang Amadeus Mozart",
+        "Beethoven",
+        "Bach",
+        "Verdi"
+      ],
+      "answer": 0,
+      "explanation": "Mozart wrote it in 1791, the year he died.",
+      "image_keyword": null,
+      "topic": "Mozart"
+    },
+    {
+      "question": "Who was Sacagawea?",
+      "options": [
+        "A Native American guide for the Lewis and Clark Expedition",
+        "A European queen",
+        "An astronaut",
+        "A painter"
+      ],
+      "answer": 0,
+      "explanation": "She helped the expedition navigate and communicate.",
+      "image_keyword": null,
+      "topic": "Sacagawea"
+    },
+    {
+      "question": "Who was the first person to reach the deepest part of the ocean, the Mariana Trench, in 1960?",
+      "options": [
+        "Jacques Piccard and Don Walsh",
+        "Jacques Cousteau",
+        "Robert Ballard",
+        "James Cameron alone"
+      ],
+      "answer": 0,
+      "explanation": "They descended in the bathyscaphe Trieste.",
+      "image_keyword": null,
+      "topic": "Jacques Piccard"
     }
   ],
   "famous_people:8": [
@@ -12938,6 +17007,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Darwin published it in 1859.",
       "image_keyword": null,
       "topic": "Charles Darwin"
+    },
+    {
+      "question": "Who developed the polio vaccine given orally instead of by injection?",
+      "options": [
+        "Jonas Salk",
+        "Albert Sabin",
+        "Louis Pasteur",
+        "Edward Jenner"
+      ],
+      "answer": 1,
+      "explanation": "Sabin's oral vaccine followed Salk's injected one.",
+      "image_keyword": null,
+      "topic": "Albert Sabin"
+    },
+    {
+      "question": "Who developed the first successful smallpox vaccine?",
+      "options": [
+        "Louis Pasteur",
+        "Edward Jenner",
+        "Alexander Fleming",
+        "Jonas Salk"
+      ],
+      "answer": 1,
+      "explanation": "Jenner's 1796 cowpox experiments led to vaccination.",
+      "image_keyword": null,
+      "topic": "Edward Jenner"
+    },
+    {
+      "question": "Who was Niels Bohr?",
+      "options": [
+        "A physicist who developed a key model of the atom",
+        "A chemist who discovered oxygen",
+        "An explorer",
+        "A composer"
+      ],
+      "answer": 0,
+      "explanation": "His model showed electrons in defined energy levels.",
+      "image_keyword": null,
+      "topic": "Niels Bohr"
+    },
+    {
+      "question": "Who was Marco Polo's most famous account describing?",
+      "options": [
+        "His travels through Asia along the Silk Road",
+        "The discovery of America",
+        "A voyage around Africa",
+        "The founding of Rome"
+      ],
+      "answer": 0,
+      "explanation": "His book introduced Europe to the wonders of Asia.",
+      "image_keyword": null,
+      "topic": "Marco Polo"
+    },
+    {
+      "question": "Who was Rosalind Franklin's key scientific contribution field?",
+      "options": [
+        "Astronomy",
+        "X-ray crystallography of DNA",
+        "Genetics of pea plants",
+        "Nuclear physics"
+      ],
+      "answer": 1,
+      "explanation": "Her Photo 51 was crucial to discovering DNA's structure.",
+      "image_keyword": null,
+      "topic": "Rosalind Franklin"
+    },
+    {
+      "question": "Who proposed the germ theory of disease alongside Pasteur?",
+      "options": [
+        "Robert Koch",
+        "Charles Darwin",
+        "Gregor Mendel",
+        "James Watson"
+      ],
+      "answer": 0,
+      "explanation": "Koch identified specific bacteria causing specific diseases.",
+      "image_keyword": null,
+      "topic": "Robert Koch"
+    },
+    {
+      "question": "Who was Werner Heisenberg's major rival collaborator in developing quantum mechanics?",
+      "options": [
+        "Erwin Schrödinger",
+        "Isaac Newton",
+        "Galileo",
+        "Faraday"
+      ],
+      "answer": 0,
+      "explanation": "Both developed competing but equivalent quantum formulations.",
+      "image_keyword": null,
+      "topic": "Erwin Schrödinger"
+    },
+    {
+      "question": "Who was the philosopher and mathematician who wrote Principia Mathematica with Bertrand Russell?",
+      "options": [
+        "Alfred North Whitehead",
+        "David Hume",
+        "John Locke",
+        "Immanuel Kant"
+      ],
+      "answer": 0,
+      "explanation": "They tried to derive mathematics from logic.",
+      "image_keyword": null,
+      "topic": "Alfred North Whitehead"
+    },
+    {
+      "question": "Who was Antoni van Leeuwenhoek?",
+      "options": [
+        "The first person to observe microorganisms with a microscope",
+        "A famous painter",
+        "An explorer",
+        "A composer"
+      ],
+      "answer": 0,
+      "explanation": "He is called the father of microbiology.",
+      "image_keyword": null,
+      "topic": "Antoni van Leeuwenhoek"
+    },
+    {
+      "question": "Who was Katherine Johnson's role at NASA?",
+      "options": [
+        "A mathematician who calculated orbital trajectories for early space missions",
+        "An astronaut who walked on the Moon",
+        "A rocket engineer",
+        "A telescope designer"
+      ],
+      "answer": 0,
+      "explanation": "Her calculations were vital to John Glenn's orbital flight.",
+      "image_keyword": null,
+      "topic": "Katherine Johnson"
     }
   ],
   "famous_people:9": [
@@ -13330,6 +17529,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Darwin published it in 1859.",
       "image_keyword": null,
       "topic": "Charles Darwin"
+    },
+    {
+      "question": "Who developed the polio vaccine given orally instead of by injection?",
+      "options": [
+        "Jonas Salk",
+        "Albert Sabin",
+        "Louis Pasteur",
+        "Edward Jenner"
+      ],
+      "answer": 1,
+      "explanation": "Sabin's oral vaccine followed Salk's injected one.",
+      "image_keyword": null,
+      "topic": "Albert Sabin"
+    },
+    {
+      "question": "Who developed the first successful smallpox vaccine?",
+      "options": [
+        "Louis Pasteur",
+        "Edward Jenner",
+        "Alexander Fleming",
+        "Jonas Salk"
+      ],
+      "answer": 1,
+      "explanation": "Jenner's 1796 cowpox experiments led to vaccination.",
+      "image_keyword": null,
+      "topic": "Edward Jenner"
+    },
+    {
+      "question": "Who was Niels Bohr?",
+      "options": [
+        "A physicist who developed a key model of the atom",
+        "A chemist who discovered oxygen",
+        "An explorer",
+        "A composer"
+      ],
+      "answer": 0,
+      "explanation": "His model showed electrons in defined energy levels.",
+      "image_keyword": null,
+      "topic": "Niels Bohr"
+    },
+    {
+      "question": "Who was Marco Polo's most famous account describing?",
+      "options": [
+        "His travels through Asia along the Silk Road",
+        "The discovery of America",
+        "A voyage around Africa",
+        "The founding of Rome"
+      ],
+      "answer": 0,
+      "explanation": "His book introduced Europe to the wonders of Asia.",
+      "image_keyword": null,
+      "topic": "Marco Polo"
+    },
+    {
+      "question": "Who was Rosalind Franklin's key scientific contribution field?",
+      "options": [
+        "Astronomy",
+        "X-ray crystallography of DNA",
+        "Genetics of pea plants",
+        "Nuclear physics"
+      ],
+      "answer": 1,
+      "explanation": "Her Photo 51 was crucial to discovering DNA's structure.",
+      "image_keyword": null,
+      "topic": "Rosalind Franklin"
+    },
+    {
+      "question": "Who proposed the germ theory of disease alongside Pasteur?",
+      "options": [
+        "Robert Koch",
+        "Charles Darwin",
+        "Gregor Mendel",
+        "James Watson"
+      ],
+      "answer": 0,
+      "explanation": "Koch identified specific bacteria causing specific diseases.",
+      "image_keyword": null,
+      "topic": "Robert Koch"
+    },
+    {
+      "question": "Who was Werner Heisenberg's major rival collaborator in developing quantum mechanics?",
+      "options": [
+        "Erwin Schrödinger",
+        "Isaac Newton",
+        "Galileo",
+        "Faraday"
+      ],
+      "answer": 0,
+      "explanation": "Both developed competing but equivalent quantum formulations.",
+      "image_keyword": null,
+      "topic": "Erwin Schrödinger"
+    },
+    {
+      "question": "Who was the philosopher and mathematician who wrote Principia Mathematica with Bertrand Russell?",
+      "options": [
+        "Alfred North Whitehead",
+        "David Hume",
+        "John Locke",
+        "Immanuel Kant"
+      ],
+      "answer": 0,
+      "explanation": "They tried to derive mathematics from logic.",
+      "image_keyword": null,
+      "topic": "Alfred North Whitehead"
+    },
+    {
+      "question": "Who was Antoni van Leeuwenhoek?",
+      "options": [
+        "The first person to observe microorganisms with a microscope",
+        "A famous painter",
+        "An explorer",
+        "A composer"
+      ],
+      "answer": 0,
+      "explanation": "He is called the father of microbiology.",
+      "image_keyword": null,
+      "topic": "Antoni van Leeuwenhoek"
+    },
+    {
+      "question": "Who was Katherine Johnson's role at NASA?",
+      "options": [
+        "A mathematician who calculated orbital trajectories for early space missions",
+        "An astronaut who walked on the Moon",
+        "A rocket engineer",
+        "A telescope designer"
+      ],
+      "answer": 0,
+      "explanation": "Her calculations were vital to John Glenn's orbital flight.",
+      "image_keyword": null,
+      "topic": "Katherine Johnson"
     }
   ],
   "famous_people:10": [
@@ -13722,6 +18051,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Darwin published it in 1859.",
       "image_keyword": null,
       "topic": "Charles Darwin"
+    },
+    {
+      "question": "Who developed the polio vaccine given orally instead of by injection?",
+      "options": [
+        "Jonas Salk",
+        "Albert Sabin",
+        "Louis Pasteur",
+        "Edward Jenner"
+      ],
+      "answer": 1,
+      "explanation": "Sabin's oral vaccine followed Salk's injected one.",
+      "image_keyword": null,
+      "topic": "Albert Sabin"
+    },
+    {
+      "question": "Who developed the first successful smallpox vaccine?",
+      "options": [
+        "Louis Pasteur",
+        "Edward Jenner",
+        "Alexander Fleming",
+        "Jonas Salk"
+      ],
+      "answer": 1,
+      "explanation": "Jenner's 1796 cowpox experiments led to vaccination.",
+      "image_keyword": null,
+      "topic": "Edward Jenner"
+    },
+    {
+      "question": "Who was Niels Bohr?",
+      "options": [
+        "A physicist who developed a key model of the atom",
+        "A chemist who discovered oxygen",
+        "An explorer",
+        "A composer"
+      ],
+      "answer": 0,
+      "explanation": "His model showed electrons in defined energy levels.",
+      "image_keyword": null,
+      "topic": "Niels Bohr"
+    },
+    {
+      "question": "Who was Marco Polo's most famous account describing?",
+      "options": [
+        "His travels through Asia along the Silk Road",
+        "The discovery of America",
+        "A voyage around Africa",
+        "The founding of Rome"
+      ],
+      "answer": 0,
+      "explanation": "His book introduced Europe to the wonders of Asia.",
+      "image_keyword": null,
+      "topic": "Marco Polo"
+    },
+    {
+      "question": "Who was Rosalind Franklin's key scientific contribution field?",
+      "options": [
+        "Astronomy",
+        "X-ray crystallography of DNA",
+        "Genetics of pea plants",
+        "Nuclear physics"
+      ],
+      "answer": 1,
+      "explanation": "Her Photo 51 was crucial to discovering DNA's structure.",
+      "image_keyword": null,
+      "topic": "Rosalind Franklin"
+    },
+    {
+      "question": "Who proposed the germ theory of disease alongside Pasteur?",
+      "options": [
+        "Robert Koch",
+        "Charles Darwin",
+        "Gregor Mendel",
+        "James Watson"
+      ],
+      "answer": 0,
+      "explanation": "Koch identified specific bacteria causing specific diseases.",
+      "image_keyword": null,
+      "topic": "Robert Koch"
+    },
+    {
+      "question": "Who was Werner Heisenberg's major rival collaborator in developing quantum mechanics?",
+      "options": [
+        "Erwin Schrödinger",
+        "Isaac Newton",
+        "Galileo",
+        "Faraday"
+      ],
+      "answer": 0,
+      "explanation": "Both developed competing but equivalent quantum formulations.",
+      "image_keyword": null,
+      "topic": "Erwin Schrödinger"
+    },
+    {
+      "question": "Who was the philosopher and mathematician who wrote Principia Mathematica with Bertrand Russell?",
+      "options": [
+        "Alfred North Whitehead",
+        "David Hume",
+        "John Locke",
+        "Immanuel Kant"
+      ],
+      "answer": 0,
+      "explanation": "They tried to derive mathematics from logic.",
+      "image_keyword": null,
+      "topic": "Alfred North Whitehead"
+    },
+    {
+      "question": "Who was Antoni van Leeuwenhoek?",
+      "options": [
+        "The first person to observe microorganisms with a microscope",
+        "A famous painter",
+        "An explorer",
+        "A composer"
+      ],
+      "answer": 0,
+      "explanation": "He is called the father of microbiology.",
+      "image_keyword": null,
+      "topic": "Antoni van Leeuwenhoek"
+    },
+    {
+      "question": "Who was Katherine Johnson's role at NASA?",
+      "options": [
+        "A mathematician who calculated orbital trajectories for early space missions",
+        "An astronaut who walked on the Moon",
+        "A rocket engineer",
+        "A telescope designer"
+      ],
+      "answer": 0,
+      "explanation": "Her calculations were vital to John Glenn's orbital flight.",
+      "image_keyword": null,
+      "topic": "Katherine Johnson"
     }
   ],
   "science:4": [
@@ -14114,6 +18573,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "We live on Earth.",
       "image_keyword": null,
       "topic": "Earth"
+    },
+    {
+      "question": "What do we call the process of a liquid turning into a gas?",
+      "options": [
+        "Freezing",
+        "Evaporation",
+        "Melting",
+        "Condensation"
+      ],
+      "answer": 1,
+      "explanation": "Heat turns liquid water into water vapor.",
+      "image_keyword": null,
+      "topic": "evaporation"
+    },
+    {
+      "question": "Which sense organ do we use to see?",
+      "options": [
+        "Ears",
+        "Eyes",
+        "Skin",
+        "Tongue"
+      ],
+      "answer": 1,
+      "explanation": "Eyes let us see light and colour.",
+      "image_keyword": null,
+      "topic": "eyes"
+    },
+    {
+      "question": "What do we call baby plants that grow from seeds?",
+      "options": [
+        "Seedlings",
+        "Sprouts only",
+        "Roots",
+        "Blossoms"
+      ],
+      "answer": 0,
+      "explanation": "Seedlings are young plants that just sprouted.",
+      "image_keyword": null,
+      "topic": "seedling"
+    },
+    {
+      "question": "What do we call the layer of gases surrounding Earth?",
+      "options": [
+        "Ozone",
+        "Atmosphere",
+        "Crust",
+        "Orbit"
+      ],
+      "answer": 1,
+      "explanation": "The atmosphere holds the air we breathe.",
+      "image_keyword": null,
+      "topic": "atmosphere"
+    },
+    {
+      "question": "What is the freezing point of water in Celsius?",
+      "options": [
+        "0",
+        "32",
+        "100",
+        "-10"
+      ],
+      "answer": 0,
+      "explanation": "Water freezes at 0°C.",
+      "image_keyword": null,
+      "topic": "freezing point"
+    },
+    {
+      "question": "What do we call an animal that only eats other animals?",
+      "options": [
+        "Herbivore",
+        "Carnivore",
+        "Omnivore",
+        "Producer"
+      ],
+      "answer": 1,
+      "explanation": "Carnivores eat meat.",
+      "image_keyword": null,
+      "topic": "carnivore"
+    },
+    {
+      "question": "Which body part protects your brain?",
+      "options": [
+        "Earring",
+        "Skull",
+        "Ribs",
+        "Spine"
+      ],
+      "answer": 1,
+      "explanation": "The skull is a hard bony shield.",
+      "image_keyword": null,
+      "topic": "skull"
+    },
+    {
+      "question": "What do we call a natural object that reflects the Sun's light and orbits Earth?",
+      "options": [
+        "The Moon",
+        "A star",
+        "A comet",
+        "A satellite dish"
+      ],
+      "answer": 0,
+      "explanation": "The Moon reflects sunlight; it makes no light of its own.",
+      "image_keyword": null,
+      "topic": "Moon"
+    },
+    {
+      "question": "Which simple tool helps you see very small things up close?",
+      "options": [
+        "Telescope",
+        "Microscope",
+        "Binoculars",
+        "Periscope"
+      ],
+      "answer": 1,
+      "explanation": "Microscopes magnify tiny objects.",
+      "image_keyword": null,
+      "topic": "microscope"
+    },
+    {
+      "question": "What do we call the natural process where a chick hatches from an egg?",
+      "options": [
+        "Hatching",
+        "Melting",
+        "Sprouting",
+        "Evaporating"
+      ],
+      "answer": 0,
+      "explanation": "The chick breaks out of its shell to hatch.",
+      "image_keyword": null,
+      "topic": "hatching"
     }
   ],
   "science:5": [
@@ -14506,6 +19095,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "We live on Earth.",
       "image_keyword": null,
       "topic": "Earth"
+    },
+    {
+      "question": "What do we call the process of a liquid turning into a gas?",
+      "options": [
+        "Freezing",
+        "Evaporation",
+        "Melting",
+        "Condensation"
+      ],
+      "answer": 1,
+      "explanation": "Heat turns liquid water into water vapor.",
+      "image_keyword": null,
+      "topic": "evaporation"
+    },
+    {
+      "question": "Which sense organ do we use to see?",
+      "options": [
+        "Ears",
+        "Eyes",
+        "Skin",
+        "Tongue"
+      ],
+      "answer": 1,
+      "explanation": "Eyes let us see light and colour.",
+      "image_keyword": null,
+      "topic": "eyes"
+    },
+    {
+      "question": "What do we call baby plants that grow from seeds?",
+      "options": [
+        "Seedlings",
+        "Sprouts only",
+        "Roots",
+        "Blossoms"
+      ],
+      "answer": 0,
+      "explanation": "Seedlings are young plants that just sprouted.",
+      "image_keyword": null,
+      "topic": "seedling"
+    },
+    {
+      "question": "What do we call the layer of gases surrounding Earth?",
+      "options": [
+        "Ozone",
+        "Atmosphere",
+        "Crust",
+        "Orbit"
+      ],
+      "answer": 1,
+      "explanation": "The atmosphere holds the air we breathe.",
+      "image_keyword": null,
+      "topic": "atmosphere"
+    },
+    {
+      "question": "What is the freezing point of water in Celsius?",
+      "options": [
+        "0",
+        "32",
+        "100",
+        "-10"
+      ],
+      "answer": 0,
+      "explanation": "Water freezes at 0°C.",
+      "image_keyword": null,
+      "topic": "freezing point"
+    },
+    {
+      "question": "What do we call an animal that only eats other animals?",
+      "options": [
+        "Herbivore",
+        "Carnivore",
+        "Omnivore",
+        "Producer"
+      ],
+      "answer": 1,
+      "explanation": "Carnivores eat meat.",
+      "image_keyword": null,
+      "topic": "carnivore"
+    },
+    {
+      "question": "Which body part protects your brain?",
+      "options": [
+        "Earring",
+        "Skull",
+        "Ribs",
+        "Spine"
+      ],
+      "answer": 1,
+      "explanation": "The skull is a hard bony shield.",
+      "image_keyword": null,
+      "topic": "skull"
+    },
+    {
+      "question": "What do we call a natural object that reflects the Sun's light and orbits Earth?",
+      "options": [
+        "The Moon",
+        "A star",
+        "A comet",
+        "A satellite dish"
+      ],
+      "answer": 0,
+      "explanation": "The Moon reflects sunlight; it makes no light of its own.",
+      "image_keyword": null,
+      "topic": "Moon"
+    },
+    {
+      "question": "Which simple tool helps you see very small things up close?",
+      "options": [
+        "Telescope",
+        "Microscope",
+        "Binoculars",
+        "Periscope"
+      ],
+      "answer": 1,
+      "explanation": "Microscopes magnify tiny objects.",
+      "image_keyword": null,
+      "topic": "microscope"
+    },
+    {
+      "question": "What do we call the natural process where a chick hatches from an egg?",
+      "options": [
+        "Hatching",
+        "Melting",
+        "Sprouting",
+        "Evaporating"
+      ],
+      "answer": 0,
+      "explanation": "The chick breaks out of its shell to hatch.",
+      "image_keyword": null,
+      "topic": "hatching"
     }
   ],
   "science:6": [
@@ -14898,6 +19617,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "They recycle nutrients from dead matter.",
       "image_keyword": null,
       "topic": "decomposers"
+    },
+    {
+      "question": "What is the function of chlorophyll in plants?",
+      "options": [
+        "Absorbing light for photosynthesis",
+        "Storing water",
+        "Fighting disease",
+        "Making seeds"
+      ],
+      "answer": 0,
+      "explanation": "Chlorophyll gives plants their green colour and captures light.",
+      "image_keyword": null,
+      "topic": "chlorophyll"
+    },
+    {
+      "question": "What is an ecosystem?",
+      "options": [
+        "A single animal's home",
+        "A community of living things and their environment",
+        "A type of rock",
+        "A weather pattern"
+      ],
+      "answer": 1,
+      "explanation": "It includes plants, animals, and their surroundings together.",
+      "image_keyword": null,
+      "topic": "ecosystem"
+    },
+    {
+      "question": "What causes tides in the ocean?",
+      "options": [
+        "Wind alone",
+        "The gravitational pull of the Moon and Sun",
+        "Ocean currents",
+        "Earth's rotation only"
+      ],
+      "answer": 1,
+      "explanation": "The Moon's gravity mainly drives the tides.",
+      "image_keyword": null,
+      "topic": "tides"
+    },
+    {
+      "question": "What is the boiling point of water in Fahrenheit?",
+      "options": [
+        "100",
+        "212",
+        "32",
+        "180"
+      ],
+      "answer": 1,
+      "explanation": "Water boils at 212°F at sea level.",
+      "image_keyword": null,
+      "topic": "boiling point"
+    },
+    {
+      "question": "What do we call the study of living things?",
+      "options": [
+        "Chemistry",
+        "Biology",
+        "Physics",
+        "Geology"
+      ],
+      "answer": 1,
+      "explanation": "Biology is the science of life.",
+      "image_keyword": null,
+      "topic": "biology"
+    },
+    {
+      "question": "What is an alloy?",
+      "options": [
+        "A pure element",
+        "A mixture of two or more metals",
+        "A type of gas",
+        "A living cell"
+      ],
+      "answer": 1,
+      "explanation": "Bronze and steel are common alloys.",
+      "image_keyword": null,
+      "topic": "alloy"
+    },
+    {
+      "question": "What is the main gas that makes up the air we exhale more of than we inhale?",
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Nitrogen",
+        "Helium"
+      ],
+      "answer": 1,
+      "explanation": "We breathe out more CO2 than we breathe in.",
+      "image_keyword": null,
+      "topic": "carbon dioxide"
+    },
+    {
+      "question": "What is the function of red blood cells?",
+      "options": [
+        "Fighting infection",
+        "Carrying oxygen around the body",
+        "Clotting wounds",
+        "Digesting food"
+      ],
+      "answer": 1,
+      "explanation": "Haemoglobin in red blood cells carries oxygen.",
+      "image_keyword": null,
+      "topic": "red blood cells"
+    },
+    {
+      "question": "What is the term for an object's resistance to a change in motion?",
+      "options": [
+        "Gravity",
+        "Inertia",
+        "Friction",
+        "Velocity"
+      ],
+      "answer": 1,
+      "explanation": "Newton's first law describes inertia.",
+      "image_keyword": null,
+      "topic": "inertia"
+    },
+    {
+      "question": "What do we call rock that has been changed by heat and pressure?",
+      "options": [
+        "Igneous rock",
+        "Metamorphic rock",
+        "Sedimentary rock",
+        "Mineral rock"
+      ],
+      "answer": 1,
+      "explanation": "Metamorphic rock forms from existing rock under pressure and heat.",
+      "image_keyword": null,
+      "topic": "metamorphic rock"
     }
   ],
   "science:7": [
@@ -15290,6 +20139,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "They recycle nutrients from dead matter.",
       "image_keyword": null,
       "topic": "decomposers"
+    },
+    {
+      "question": "What is the function of chlorophyll in plants?",
+      "options": [
+        "Absorbing light for photosynthesis",
+        "Storing water",
+        "Fighting disease",
+        "Making seeds"
+      ],
+      "answer": 0,
+      "explanation": "Chlorophyll gives plants their green colour and captures light.",
+      "image_keyword": null,
+      "topic": "chlorophyll"
+    },
+    {
+      "question": "What is an ecosystem?",
+      "options": [
+        "A single animal's home",
+        "A community of living things and their environment",
+        "A type of rock",
+        "A weather pattern"
+      ],
+      "answer": 1,
+      "explanation": "It includes plants, animals, and their surroundings together.",
+      "image_keyword": null,
+      "topic": "ecosystem"
+    },
+    {
+      "question": "What causes tides in the ocean?",
+      "options": [
+        "Wind alone",
+        "The gravitational pull of the Moon and Sun",
+        "Ocean currents",
+        "Earth's rotation only"
+      ],
+      "answer": 1,
+      "explanation": "The Moon's gravity mainly drives the tides.",
+      "image_keyword": null,
+      "topic": "tides"
+    },
+    {
+      "question": "What is the boiling point of water in Fahrenheit?",
+      "options": [
+        "100",
+        "212",
+        "32",
+        "180"
+      ],
+      "answer": 1,
+      "explanation": "Water boils at 212°F at sea level.",
+      "image_keyword": null,
+      "topic": "boiling point"
+    },
+    {
+      "question": "What do we call the study of living things?",
+      "options": [
+        "Chemistry",
+        "Biology",
+        "Physics",
+        "Geology"
+      ],
+      "answer": 1,
+      "explanation": "Biology is the science of life.",
+      "image_keyword": null,
+      "topic": "biology"
+    },
+    {
+      "question": "What is an alloy?",
+      "options": [
+        "A pure element",
+        "A mixture of two or more metals",
+        "A type of gas",
+        "A living cell"
+      ],
+      "answer": 1,
+      "explanation": "Bronze and steel are common alloys.",
+      "image_keyword": null,
+      "topic": "alloy"
+    },
+    {
+      "question": "What is the main gas that makes up the air we exhale more of than we inhale?",
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Nitrogen",
+        "Helium"
+      ],
+      "answer": 1,
+      "explanation": "We breathe out more CO2 than we breathe in.",
+      "image_keyword": null,
+      "topic": "carbon dioxide"
+    },
+    {
+      "question": "What is the function of red blood cells?",
+      "options": [
+        "Fighting infection",
+        "Carrying oxygen around the body",
+        "Clotting wounds",
+        "Digesting food"
+      ],
+      "answer": 1,
+      "explanation": "Haemoglobin in red blood cells carries oxygen.",
+      "image_keyword": null,
+      "topic": "red blood cells"
+    },
+    {
+      "question": "What is the term for an object's resistance to a change in motion?",
+      "options": [
+        "Gravity",
+        "Inertia",
+        "Friction",
+        "Velocity"
+      ],
+      "answer": 1,
+      "explanation": "Newton's first law describes inertia.",
+      "image_keyword": null,
+      "topic": "inertia"
+    },
+    {
+      "question": "What do we call rock that has been changed by heat and pressure?",
+      "options": [
+        "Igneous rock",
+        "Metamorphic rock",
+        "Sedimentary rock",
+        "Mineral rock"
+      ],
+      "answer": 1,
+      "explanation": "Metamorphic rock forms from existing rock under pressure and heat.",
+      "image_keyword": null,
+      "topic": "metamorphic rock"
     }
   ],
   "science:8": [
@@ -15682,6 +20661,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Fusion joins hydrogen into helium.",
       "image_keyword": null,
       "topic": "nuclear fusion"
+    },
+    {
+      "question": "What is the Heisenberg uncertainty principle about?",
+      "options": [
+        "You cannot precisely know both a particle's position and momentum at once",
+        "Time always moves forward",
+        "Energy is always lost as heat",
+        "Light always travels in straight lines"
+      ],
+      "answer": 0,
+      "explanation": "It's a fundamental limit in quantum mechanics.",
+      "image_keyword": null,
+      "topic": "uncertainty principle"
+    },
+    {
+      "question": "What is the function of enzymes in the body?",
+      "options": [
+        "Storing genetic information",
+        "Speeding up chemical reactions",
+        "Carrying oxygen",
+        "Fighting infection directly"
+      ],
+      "answer": 1,
+      "explanation": "Enzymes are biological catalysts.",
+      "image_keyword": null,
+      "topic": "enzymes"
+    },
+    {
+      "question": "What is the second law of thermodynamics essentially about?",
+      "options": [
+        "Energy can be created",
+        "Total entropy of an isolated system never decreases",
+        "Objects always attract each other",
+        "Light always bends"
+      ],
+      "answer": 1,
+      "explanation": "Disorder tends to increase over time.",
+      "image_keyword": null,
+      "topic": "second law of thermodynamics"
+    },
+    {
+      "question": "What is a black body in physics?",
+      "options": [
+        "A perfect absorber and emitter of radiation",
+        "A star that emits no light",
+        "A type of black hole",
+        "A material that reflects all light"
+      ],
+      "answer": 0,
+      "explanation": "It's an idealized object used to study radiation.",
+      "image_keyword": null,
+      "topic": "black body"
+    },
+    {
+      "question": "What is the role of mitochondrial DNA in genetics research?",
+      "options": [
+        "It's inherited only from the mother and used to trace ancestry",
+        "It's inherited only from the father",
+        "It never changes across generations at all",
+        "It doesn't exist"
+      ],
+      "answer": 0,
+      "explanation": "Mitochondria are passed down maternally.",
+      "image_keyword": null,
+      "topic": "mitochondrial DNA"
+    },
+    {
+      "question": "What is Avogadro's number used for?",
+      "options": [
+        "Counting particles in a mole of substance",
+        "Measuring temperature",
+        "Calculating gravity",
+        "Measuring sound speed"
+      ],
+      "answer": 0,
+      "explanation": "It's about 6.022 x 10^23 particles per mole.",
+      "image_keyword": null,
+      "topic": "Avogadro's number"
+    },
+    {
+      "question": "What is a superconductor?",
+      "options": [
+        "A material with zero electrical resistance below a critical temperature",
+        "A very strong magnet",
+        "A type of battery",
+        "A material that never conducts electricity"
+      ],
+      "answer": 0,
+      "explanation": "Superconductors carry current with no energy loss.",
+      "image_keyword": null,
+      "topic": "superconductor"
+    },
+    {
+      "question": "What is the Doppler effect?",
+      "options": [
+        "The change in frequency of a wave relative to a moving observer",
+        "The bending of light through water",
+        "The speeding up of falling objects",
+        "The cooling of gases"
+      ],
+      "answer": 0,
+      "explanation": "It explains why a siren's pitch changes as it passes you.",
+      "image_keyword": null,
+      "topic": "Doppler effect"
+    },
+    {
+      "question": "What is homeostasis?",
+      "options": [
+        "An organism's ability to maintain stable internal conditions",
+        "A type of cell division",
+        "A form of energy",
+        "A genetic mutation"
+      ],
+      "answer": 0,
+      "explanation": "Body temperature regulation is one example.",
+      "image_keyword": null,
+      "topic": "homeostasis"
+    },
+    {
+      "question": "What is the function of the ozone layer?",
+      "options": [
+        "Absorbing most of the Sun's harmful ultraviolet radiation",
+        "Producing oxygen for us to breathe",
+        "Trapping heat like a greenhouse gas mainly",
+        "Creating weather patterns"
+      ],
+      "answer": 0,
+      "explanation": "It shields life on Earth from UV damage.",
+      "image_keyword": null,
+      "topic": "ozone layer"
     }
   ],
   "science:9": [
@@ -16074,6 +21183,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Fusion joins hydrogen into helium.",
       "image_keyword": null,
       "topic": "nuclear fusion"
+    },
+    {
+      "question": "What is the Heisenberg uncertainty principle about?",
+      "options": [
+        "You cannot precisely know both a particle's position and momentum at once",
+        "Time always moves forward",
+        "Energy is always lost as heat",
+        "Light always travels in straight lines"
+      ],
+      "answer": 0,
+      "explanation": "It's a fundamental limit in quantum mechanics.",
+      "image_keyword": null,
+      "topic": "uncertainty principle"
+    },
+    {
+      "question": "What is the function of enzymes in the body?",
+      "options": [
+        "Storing genetic information",
+        "Speeding up chemical reactions",
+        "Carrying oxygen",
+        "Fighting infection directly"
+      ],
+      "answer": 1,
+      "explanation": "Enzymes are biological catalysts.",
+      "image_keyword": null,
+      "topic": "enzymes"
+    },
+    {
+      "question": "What is the second law of thermodynamics essentially about?",
+      "options": [
+        "Energy can be created",
+        "Total entropy of an isolated system never decreases",
+        "Objects always attract each other",
+        "Light always bends"
+      ],
+      "answer": 1,
+      "explanation": "Disorder tends to increase over time.",
+      "image_keyword": null,
+      "topic": "second law of thermodynamics"
+    },
+    {
+      "question": "What is a black body in physics?",
+      "options": [
+        "A perfect absorber and emitter of radiation",
+        "A star that emits no light",
+        "A type of black hole",
+        "A material that reflects all light"
+      ],
+      "answer": 0,
+      "explanation": "It's an idealized object used to study radiation.",
+      "image_keyword": null,
+      "topic": "black body"
+    },
+    {
+      "question": "What is the role of mitochondrial DNA in genetics research?",
+      "options": [
+        "It's inherited only from the mother and used to trace ancestry",
+        "It's inherited only from the father",
+        "It never changes across generations at all",
+        "It doesn't exist"
+      ],
+      "answer": 0,
+      "explanation": "Mitochondria are passed down maternally.",
+      "image_keyword": null,
+      "topic": "mitochondrial DNA"
+    },
+    {
+      "question": "What is Avogadro's number used for?",
+      "options": [
+        "Counting particles in a mole of substance",
+        "Measuring temperature",
+        "Calculating gravity",
+        "Measuring sound speed"
+      ],
+      "answer": 0,
+      "explanation": "It's about 6.022 x 10^23 particles per mole.",
+      "image_keyword": null,
+      "topic": "Avogadro's number"
+    },
+    {
+      "question": "What is a superconductor?",
+      "options": [
+        "A material with zero electrical resistance below a critical temperature",
+        "A very strong magnet",
+        "A type of battery",
+        "A material that never conducts electricity"
+      ],
+      "answer": 0,
+      "explanation": "Superconductors carry current with no energy loss.",
+      "image_keyword": null,
+      "topic": "superconductor"
+    },
+    {
+      "question": "What is the Doppler effect?",
+      "options": [
+        "The change in frequency of a wave relative to a moving observer",
+        "The bending of light through water",
+        "The speeding up of falling objects",
+        "The cooling of gases"
+      ],
+      "answer": 0,
+      "explanation": "It explains why a siren's pitch changes as it passes you.",
+      "image_keyword": null,
+      "topic": "Doppler effect"
+    },
+    {
+      "question": "What is homeostasis?",
+      "options": [
+        "An organism's ability to maintain stable internal conditions",
+        "A type of cell division",
+        "A form of energy",
+        "A genetic mutation"
+      ],
+      "answer": 0,
+      "explanation": "Body temperature regulation is one example.",
+      "image_keyword": null,
+      "topic": "homeostasis"
+    },
+    {
+      "question": "What is the function of the ozone layer?",
+      "options": [
+        "Absorbing most of the Sun's harmful ultraviolet radiation",
+        "Producing oxygen for us to breathe",
+        "Trapping heat like a greenhouse gas mainly",
+        "Creating weather patterns"
+      ],
+      "answer": 0,
+      "explanation": "It shields life on Earth from UV damage.",
+      "image_keyword": null,
+      "topic": "ozone layer"
     }
   ],
   "science:10": [
@@ -16466,6 +21705,136 @@ export const GROQ_BANK: Record<string, Question[]> = {
       "explanation": "Fusion joins hydrogen into helium.",
       "image_keyword": null,
       "topic": "nuclear fusion"
+    },
+    {
+      "question": "What is the Heisenberg uncertainty principle about?",
+      "options": [
+        "You cannot precisely know both a particle's position and momentum at once",
+        "Time always moves forward",
+        "Energy is always lost as heat",
+        "Light always travels in straight lines"
+      ],
+      "answer": 0,
+      "explanation": "It's a fundamental limit in quantum mechanics.",
+      "image_keyword": null,
+      "topic": "uncertainty principle"
+    },
+    {
+      "question": "What is the function of enzymes in the body?",
+      "options": [
+        "Storing genetic information",
+        "Speeding up chemical reactions",
+        "Carrying oxygen",
+        "Fighting infection directly"
+      ],
+      "answer": 1,
+      "explanation": "Enzymes are biological catalysts.",
+      "image_keyword": null,
+      "topic": "enzymes"
+    },
+    {
+      "question": "What is the second law of thermodynamics essentially about?",
+      "options": [
+        "Energy can be created",
+        "Total entropy of an isolated system never decreases",
+        "Objects always attract each other",
+        "Light always bends"
+      ],
+      "answer": 1,
+      "explanation": "Disorder tends to increase over time.",
+      "image_keyword": null,
+      "topic": "second law of thermodynamics"
+    },
+    {
+      "question": "What is a black body in physics?",
+      "options": [
+        "A perfect absorber and emitter of radiation",
+        "A star that emits no light",
+        "A type of black hole",
+        "A material that reflects all light"
+      ],
+      "answer": 0,
+      "explanation": "It's an idealized object used to study radiation.",
+      "image_keyword": null,
+      "topic": "black body"
+    },
+    {
+      "question": "What is the role of mitochondrial DNA in genetics research?",
+      "options": [
+        "It's inherited only from the mother and used to trace ancestry",
+        "It's inherited only from the father",
+        "It never changes across generations at all",
+        "It doesn't exist"
+      ],
+      "answer": 0,
+      "explanation": "Mitochondria are passed down maternally.",
+      "image_keyword": null,
+      "topic": "mitochondrial DNA"
+    },
+    {
+      "question": "What is Avogadro's number used for?",
+      "options": [
+        "Counting particles in a mole of substance",
+        "Measuring temperature",
+        "Calculating gravity",
+        "Measuring sound speed"
+      ],
+      "answer": 0,
+      "explanation": "It's about 6.022 x 10^23 particles per mole.",
+      "image_keyword": null,
+      "topic": "Avogadro's number"
+    },
+    {
+      "question": "What is a superconductor?",
+      "options": [
+        "A material with zero electrical resistance below a critical temperature",
+        "A very strong magnet",
+        "A type of battery",
+        "A material that never conducts electricity"
+      ],
+      "answer": 0,
+      "explanation": "Superconductors carry current with no energy loss.",
+      "image_keyword": null,
+      "topic": "superconductor"
+    },
+    {
+      "question": "What is the Doppler effect?",
+      "options": [
+        "The change in frequency of a wave relative to a moving observer",
+        "The bending of light through water",
+        "The speeding up of falling objects",
+        "The cooling of gases"
+      ],
+      "answer": 0,
+      "explanation": "It explains why a siren's pitch changes as it passes you.",
+      "image_keyword": null,
+      "topic": "Doppler effect"
+    },
+    {
+      "question": "What is homeostasis?",
+      "options": [
+        "An organism's ability to maintain stable internal conditions",
+        "A type of cell division",
+        "A form of energy",
+        "A genetic mutation"
+      ],
+      "answer": 0,
+      "explanation": "Body temperature regulation is one example.",
+      "image_keyword": null,
+      "topic": "homeostasis"
+    },
+    {
+      "question": "What is the function of the ozone layer?",
+      "options": [
+        "Absorbing most of the Sun's harmful ultraviolet radiation",
+        "Producing oxygen for us to breathe",
+        "Trapping heat like a greenhouse gas mainly",
+        "Creating weather patterns"
+      ],
+      "answer": 0,
+      "explanation": "It shields life on Earth from UV damage.",
+      "image_keyword": null,
+      "topic": "ozone layer"
     }
   ]
 };
