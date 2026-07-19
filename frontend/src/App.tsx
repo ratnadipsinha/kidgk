@@ -58,7 +58,8 @@ export default function App() {
   // round, or null to keep going unchanged. Custom (photo) rounds are
   // excluded - their content comes from the uploaded text, not a grade pool.
   const midRoundAdjust = async (
-    scoreSoFar: number
+    scoreSoFar: number,
+    alreadySeen: string[]
   ): Promise<{ questions: Question[]; direction: "up" | "down" } | null> => {
     if (!category || category.id === "custom") return null;
     let delta = 0;
@@ -68,7 +69,7 @@ export default function App() {
     const newGrade = Math.min(MAX_GRADE, Math.max(MIN_GRADE, grade + delta));
     if (newGrade === grade) return null;
     try {
-      const round = await getRound(category.id, newGrade, 15);
+      const round = await getRound(category.id, newGrade, 15, alreadySeen);
       if (round.questions.length === 0) return null;
       setGrade(newGrade);
       return { questions: round.questions, direction: delta > 0 ? "up" : "down" };

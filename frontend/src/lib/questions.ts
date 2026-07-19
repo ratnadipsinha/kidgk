@@ -118,12 +118,30 @@ async function getPool(
   }
 }
 
-export async function getRound(categoryId: string, grade: number, count = 5): Promise<Round> {
+function normalize(text: string): string {
+  return text.trim().toLowerCase();
+}
+
+// The static bank shares identical question pools across some adjacent
+// grades within the same difficulty band (e.g. grade 4 and 5 use the same
+// 30 questions per category), so a mid-round difficulty adjustment can land
+// on a pool that overlaps with what was already asked. excludeQuestions lets
+// the caller filter those out before sampling, so a round never repeats a
+// question the student has already seen.
+export async function getRound(
+  categoryId: string,
+  grade: number,
+  count = 5,
+  excludeQuestions: string[] = []
+): Promise<Round> {
   const category = CATEGORIES.find((c) => c.id === categoryId);
   if (!category) throw new Error(`Unknown category: ${categoryId}`);
 
   const { pool, source } = await getPool(categoryId, category.name, grade);
-  const questions = await attachImages(sample(pool, Math.min(count, pool.length)));
+  const exclude = new Set(excludeQuestions.map(normalize));
+  const available = exclude.size > 0 ? pool.filter((q) => !exclude.has(normalize(q.question))) : pool;
+  const usable = available.length >= Math.min(count, pool.length) ? available : pool;
+  const questions = await attachImages(sample(usable, Math.min(count, usable.length)));
 
   return { category: categoryId, source, questions };
 }

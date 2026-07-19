@@ -8,10 +8,13 @@ type Props = {
   questions: Question[];
   onFinish: (score: number) => void;
   // Called once, right after the 5th question is answered, with the score so
-  // far (0-5). May return replacement questions for the REST of the round
-  // (harder or easier), or null to continue unchanged.
+  // far (0-5) and the question texts already used in this round (so the
+  // replacement pool can avoid repeating them). May return replacement
+  // questions for the REST of the round (harder or easier), or null to
+  // continue unchanged.
   onCheckpoint?: (
-    scoreSoFar: number
+    scoreSoFar: number,
+    alreadySeen: string[]
   ) => Promise<{ questions: Question[]; direction: "up" | "down" } | null>;
 };
 
@@ -87,7 +90,8 @@ export default function Quiz({ category, questions, onFinish, onCheckpoint }: Pr
     // Checkpoint: just answered the 5th question of a longer round.
     if (index === CHECKPOINT_AFTER - 1 && onCheckpoint && items.length > CHECKPOINT_AFTER) {
       setAdjusting(true);
-      const result = await onCheckpoint(score);
+      const alreadySeen = items.map((q) => q.question);
+      const result = await onCheckpoint(score, alreadySeen);
       setAdjusting(false);
       if (result) {
         const remaining = items.length - CHECKPOINT_AFTER;
