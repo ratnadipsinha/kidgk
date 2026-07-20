@@ -533,6 +533,7 @@ button.ghost:disabled {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: center top;
   border-radius: 14px;
   border: 1px solid var(--card-border);
   display: block;
@@ -555,7 +556,7 @@ button.ghost:disabled {
   max-width: 380px;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   margin: 0 auto;
   border-radius: 18px;
   border: 2px solid var(--card-border);
